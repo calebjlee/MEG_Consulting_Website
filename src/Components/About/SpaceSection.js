@@ -1,0 +1,141 @@
+import styled from "styled-components";
+import { keyframes } from "styled-components";
+import space from "../../Images/About/space.mp4";
+import earth from "../../Images/About/help.mp4";
+import NextSection from "../General/NextSection";
+
+const Shift = keyframes`
+  to {transform: translateX(-200%);}
+`;
+
+const SectionContainer = styled.div`
+  width: 100vw;
+  height: 375vh;
+  background-color: #cce1cf;
+  position: sticky;
+  top: -1px;
+  max-width: 100%;
+  overflow: hidden;
+`;
+
+const TitleTextContainer = styled.div`
+  background-color: transparent;
+  width: fit-content;
+  max-width: 700px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-left: 5vw;
+  padding-right: 10vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+`;
+
+const TitleText = styled.h1`
+  font-size: 8vmin;
+  font-family: futura-pt, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: transparent;
+  font-weight: 900;
+  line-height: 82%;
+  color: white;
+`;
+
+const Spacer = styled.div`
+  width: 100%;
+  height: 50vh;
+`;
+
+const ShiftContainer = styled.div`
+  width: 200vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  z-index: -1;
+`;
+
+const VideoContainer = styled.div`
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  max-width: 50%;
+  position: relative;
+`;
+
+const ShiftVideoContainer = styled.div`
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  max-width: 100%;
+  position: relative;
+
+  transform: translateX(0);
+
+  animation: ${Shift} 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll1) * -4s);
+  z-index: 1;
+`;
+
+const Video = styled.video`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+`;
+
+function SpaceSection() {
+  function vh(v) {
+    var h = Math.max(
+      document.documentElement.clientHeight,
+      window.innerHeight || 0
+    );
+    return (v * h) / 100;
+  }
+
+  function calculatePosition() {
+    var temp = Math.max(0, window.pageYOffset / vh(950) - 0.75);
+    return Math.min(temp, 0.1252);
+  }
+
+  window.addEventListener(
+    "scroll",
+    () => {
+      document.body.style.setProperty("--scroll1", calculatePosition());
+    },
+    false
+  );
+
+  return (
+    <SectionContainer>
+      <ShiftContainer>
+        <VideoContainer>
+          <NextSection ScrollNext={188.5} ScrollAlready={650} color="white" />
+          <TitleTextContainer>
+            <TitleText>OUT OF THIS WORLD PROJECTS</TitleText>
+          </TitleTextContainer>
+          <Video autoPlay playsInline loop muted>
+            <source src={space} type="video/mp4" />
+          </Video>
+        </VideoContainer>
+        <ShiftVideoContainer>
+          <NextSection ScrollNext={376} ScrollAlready={650} color="white" />
+          <TitleTextContainer>
+            <TitleText style={{ textAlign: "right" }}>
+              DOWN TO EARTH PEOPLE
+            </TitleText>
+          </TitleTextContainer>
+          <Video autoPlay playsInline loop muted>
+            <source src={earth} type="video/mp4" />
+          </Video>
+        </ShiftVideoContainer>
+      </ShiftContainer>
+      <Spacer />
+    </SectionContainer>
+  );
+}
+
+export default SpaceSection;

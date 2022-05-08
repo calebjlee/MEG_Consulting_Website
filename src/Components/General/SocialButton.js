@@ -57,9 +57,9 @@ function SocialButton(props) {
         }}
       >
         <IconContainer>
-          <BsInstagram color={"#1e1e1e"} style = {{display: props.social == 0 ? "inline-block":"none"}} />
-          <BsLinkedin color={"#1e1e1e"} style = {{display: props.social == 1 ? "inline-block":"none"}} />
-          <BsEnvelope color={"#1e1e1e"} style = {{display: props.social == 2 ? "inline-block":"none"}} />
+          <BsInstagram color={"#1e1e1e"} style = {{display: props.social === 0 ? "inline-block":"none"}} />
+          <BsLinkedin color={"#1e1e1e"} style = {{display: props.social === 1 ? "inline-block":"none"}} />
+          <BsEnvelope color={"#1e1e1e"} style = {{display: props.social === 2 ? "inline-block":"none"}} />
         </IconContainer>
       </ButtonContainer>
     </a>

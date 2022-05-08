@@ -138,25 +138,25 @@ function UmichFlatlay() {
       <NextSection ScrollNext={151} ScrollAlready={1350} color="black"/>
       <FlatlayContainer>
         <FlatlayImage src={umichBackgrond} />
-        <ObjectContainer style={{ bottom: clickID1 !== 0 ? (clickID1 == 1 ? "25vh":"-50vh" ) : "8vh", left: clickID1 !== 1 ? "12vh":"8vh" }} onClick={() => {clickID1 == 0 ? setClickID1(1):setClickID1(0); setPreviousID1(1);}}>
+        <ObjectContainer style={{ bottom: clickID1 !== 0 ? (clickID1 === 1 ? "25vh":"-50vh" ) : "8vh", left: clickID1 !== 1 ? "12vh":"8vh" }} onClick={() => {clickID1 === 0 ? setClickID1(1):setClickID1(0); setPreviousID1(1);}}>
           <ObjectImage src={bottle} style={{ height: "15vh" }} />
         </ObjectContainer>
-        <ObjectContainer style={{ bottom: clickID1 !== 2 ? "24vh" : "22vh", left: clickID1 !== 0 ? (clickID1 == 2 ? "8vh":"-50vh" ):"12vh" }} onClick={() => {clickID1 == 0 ? setClickID1(2):setClickID1(0); setPreviousID1(2);}}>
+        <ObjectContainer style={{ bottom: clickID1 !== 2 ? "24vh" : "22vh", left: clickID1 !== 0 ? (clickID1 === 2 ? "8vh":"-50vh" ):"12vh" }} onClick={() => {clickID1 === 0 ? setClickID1(2):setClickID1(0); setPreviousID1(2);}}>
           <ObjectImage src={laptop} style={{ height: "28vh" }} />
         </ObjectContainer>
-        <ObjectContainer style={{ bottom: clickID1 !== 0 ? (clickID1 == 3 ? "60vh":"80vh" ) : "52vh", left: clickID1 !== 3 ? "4.5vh":"20vh", transform: clickID1 == 3 ? `rotate(90deg)`:`rotate(0deg)` }} onClick={() => {clickID1 == 0 ? setClickID1(3):setClickID1(0); setPreviousID1(3);}}>
+        <ObjectContainer style={{ bottom: clickID1 !== 0 ? (clickID1 === 3 ? "60vh":"80vh" ) : "52vh", left: clickID1 !== 3 ? "4.5vh":"20vh", transform: clickID1 === 3 ? `rotate(90deg)`:`rotate(0deg)` }} onClick={() => {clickID1 === 0 ? setClickID1(3):setClickID1(0); setPreviousID1(3);}}>
           <ObjectImage src={flag} style={{ height: "25vh" }} />
         </ObjectContainer>
-        <ObjectContainer style={{ bottom: clickID1 !== 0 ? (clickID1 == 4 ? "12vh":"-60vh" ) : "10vh", left: clickID1 !== 4 ? "52vh":"8vh" }} onClick={() => {clickID1 == 0 ? setClickID1(4):setClickID1(0); setPreviousID1(4);}}>
+        <ObjectContainer style={{ bottom: clickID1 !== 0 ? (clickID1 === 4 ? "12vh":"-60vh" ) : "10vh", left: clickID1 !== 4 ? "52vh":"8vh" }} onClick={() => {clickID1 === 0 ? setClickID1(4):setClickID1(0); setPreviousID1(4);}}>
           <ObjectImage src={tote} style={{ height: "52vh" }} />
         </ObjectContainer>
-        <ObjectContainer style={{ bottom: clickID1 !== 5 ? "36vh" : "32vh", left: clickID1 !== 0 ? (clickID1 == 5 ? "14vh":"125vh" ):"92vh" }} onClick={() => {clickID1 == 0 ? setClickID1(5):setClickID1(0); setPreviousID1(5);}}>
+        <ObjectContainer style={{ bottom: clickID1 !== 5 ? "36vh" : "32vh", left: clickID1 !== 0 ? (clickID1 === 5 ? "14vh":"125vh" ):"92vh" }} onClick={() => {clickID1 === 0 ? setClickID1(5):setClickID1(0); setPreviousID1(5);}}>
           <ObjectImage src={tickets} style={{ height: "16vh" }} />
         </ObjectContainer>
-        <ObjectContainer style={{ bottom: clickID1 !== 0 ? (clickID1 == 6 ? "25vh":"-50vh" ) : "8vh", left: clickID1 !== 6 ? "89vh":"14vh" }} onClick={() => {clickID1 == 0 ? setClickID1(6):setClickID1(0); setPreviousID1(6);}}>
+        <ObjectContainer style={{ bottom: clickID1 !== 0 ? (clickID1 === 6 ? "25vh":"-50vh" ) : "8vh", left: clickID1 !== 6 ? "89vh":"14vh" }} onClick={() => {clickID1 === 0 ? setClickID1(6):setClickID1(0); setPreviousID1(6);}}>
           <ObjectImage src={notebook} style={{ height: "27vh" }} />
         </ObjectContainer>
-        <ObjectContainer style={{ bottom: clickID1 == 0 ? "2vh" : "-50vh", left: "10vh"}}>
+        <ObjectContainer style={{ bottom: clickID1 === 0 ? "2vh" : "-50vh", left: "10vh"}}>
           <TitleText><span style={{color: "#00274C"}}>IMPACT IN YOUR</span> <span style={{color: "#FFCB05"}}> NEIGHBORHOOD </span></TitleText>
         </ObjectContainer>
         <InfoContainer style={{ opacity: clickID1 !== 0 ? "1":"0", transitionDelay: clickID1 !==0 ? ".5s":"0s", transitionDuration: clickID1 !==0 ? ".5s":".25s"}}>

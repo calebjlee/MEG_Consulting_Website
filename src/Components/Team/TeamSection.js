@@ -158,73 +158,73 @@ function TeamSection() {
             <NextSection ScrollNext={151} ScrollAlready={470} color="black" />
             <TeamContainer>
                 <TeamImage src={team}></TeamImage>
-                <ShadowContainer style={{opacity: hoverID == 1 ? "0":(hoverID == 0 ? "0":"1") }} >
+                <ShadowContainer style={{opacity: hoverID === 1 ? "0":(hoverID === 0 ? "0":"1") }} >
                     <TeamImage src={andrew}></TeamImage>
                 </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID == 2 ? "0":(hoverID == 0 ? "0":"1") }} >
+                <ShadowContainer style={{opacity: hoverID === 2 ? "0":(hoverID === 0 ? "0":"1") }} >
                     <TeamImage src={kapil}></TeamImage>
                 </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID == 3 ? "0":(hoverID == 0 ? "0":"1") }} >
+                <ShadowContainer style={{opacity: hoverID === 3 ? "0":(hoverID === 0 ? "0":"1") }} >
                     <TeamImage src={ashley}></TeamImage>
                 </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID == 4 ? "0":(hoverID == 0 ? "0":"1") }} >
+                <ShadowContainer style={{opacity: hoverID === 4 ? "0":(hoverID === 0 ? "0":"1") }} >
                     <TeamImage src={ragini}></TeamImage>
                 </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID == 5 ? "0":(hoverID == 0 ? "0":"1") }} >
+                <ShadowContainer style={{opacity: hoverID === 5 ? "0":(hoverID === 0 ? "0":"1") }} >
                     <TeamImage src={lizzy}></TeamImage>
                 </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID == 6 ? "0":(hoverID == 0 ? "0":"1") }} >
+                <ShadowContainer style={{opacity: hoverID === 6 ? "0":(hoverID === 0 ? "0":"1") }} >
                     <TeamImage src={anish}></TeamImage>
                 </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID == 7 ? "0":(hoverID == 0 ? "0":"1") }} >
+                <ShadowContainer style={{opacity: hoverID === 7 ? "0":(hoverID === 0 ? "0":"1") }} >
                     <TeamImage src={anthony}></TeamImage>
                 </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID == 8 ? "0":(hoverID == 0 ? "0":"1") }} >
+                <ShadowContainer style={{opacity: hoverID === 8 ? "0":(hoverID === 0 ? "0":"1") }} >
                     <TeamImage src={manan}></TeamImage>
                 </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID == 9 ? "0":(hoverID == 0 ? "0":"1") }} >
+                <ShadowContainer style={{opacity: hoverID === 9 ? "0":(hoverID === 0 ? "0":"1") }} >
                     <TeamImage src={kiran}></TeamImage>
                 </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID == 10 ? "0":(hoverID == 0 ? "0":"1") }} >
+                <ShadowContainer style={{opacity: hoverID === 10 ? "0":(hoverID === 0 ? "0":"1") }} >
                     <TeamImage src={zevik}></TeamImage>
                 </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID == 11 ? "0":(hoverID == 0 ? "0":"1") }} >
+                <ShadowContainer style={{opacity: hoverID === 11 ? "0":(hoverID === 0 ? "0":"1") }} >
                     <TeamImage src={nakul}></TeamImage>
                 </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID == 12 ? "0":(hoverID == 0 ? "0":"1") }} >
+                <ShadowContainer style={{opacity: hoverID === 12 ? "0":(hoverID === 0 ? "0":"1") }} >
                     <TeamImage src={pri}></TeamImage>
                 </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID == 13 ? "0":(hoverID == 0 ? "0":"1") }} >
+                <ShadowContainer style={{opacity: hoverID === 13 ? "0":(hoverID === 0 ? "0":"1") }} >
                     <TeamImage src={vinnie}></TeamImage>
                 </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID == 14 ? "0":(hoverID == 0 ? "0":"1") }} >
+                <ShadowContainer style={{opacity: hoverID === 14 ? "0":(hoverID === 0 ? "0":"1") }} >
                     <TeamImage src={jacob}></TeamImage>
                 </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID == 15 ? "0":(hoverID == 0 ? "0":"1") }} >
+                <ShadowContainer style={{opacity: hoverID === 15 ? "0":(hoverID === 0 ? "0":"1") }} >
                     <TeamImage src={rachelle}></TeamImage>
                 </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID == 16 ? "0":(hoverID == 0 ? "0":"1") }} >
+                <ShadowContainer style={{opacity: hoverID === 16 ? "0":(hoverID === 0 ? "0":"1") }} >
                     <TeamImage src={shub}></TeamImage>
                 </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID == 17 ? "0":(hoverID == 0 ? "0":"1") }} >
+                <ShadowContainer style={{opacity: hoverID === 17 ? "0":(hoverID === 0 ? "0":"1") }} >
                     <TeamImage src={charlie}></TeamImage>
                 </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID == 18 ? "0":(hoverID == 0 ? "0":"1") }} >
+                <ShadowContainer style={{opacity: hoverID === 18 ? "0":(hoverID === 0 ? "0":"1") }} >
                     <TeamImage src={dylan}></TeamImage>
                 </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID == 19 ? "0":(hoverID == 0 ? "0":"1") }} >
+                <ShadowContainer style={{opacity: hoverID === 19 ? "0":(hoverID === 0 ? "0":"1") }} >
                     <TeamImage src={meghna}></TeamImage>
                 </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID == 20 ? "0":(hoverID == 0 ? "0":"1") }} >
+                <ShadowContainer style={{opacity: hoverID === 20 ? "0":(hoverID === 0 ? "0":"1") }} >
                     <TeamImage src={caden}></TeamImage>
                 </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID == 21 ? "0":(hoverID == 0 ? "0":"1") }} >
+                <ShadowContainer style={{opacity: hoverID === 21 ? "0":(hoverID === 0 ? "0":"1") }} >
                     <TeamImage src={brandon}></TeamImage>
                 </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID == 22 ? "0":(hoverID == 0 ? "0":"1") }} >
+                <ShadowContainer style={{opacity: hoverID === 22 ? "0":(hoverID === 0 ? "0":"1") }} >
                     <TeamImage src={benny}></TeamImage>
                 </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID == 23 ? "0":(hoverID == 0 ? "0":"1") }} >
+                <ShadowContainer style={{opacity: hoverID === 23 ? "0":(hoverID === 0 ? "0":"1") }} >
                     <TeamImage src={alejandro}></TeamImage>
                 </ShadowContainer>
                 <HoverContainer>
@@ -1888,7 +1888,7 @@ function TeamSection() {
                 </HoverContainer>
             </TeamContainer>
 
-            <TextContainer style={{display: hoverID == 0 ? "flex":"none"}}>
+            <TextContainer style={{display: hoverID === 0 ? "flex":"none"}}>
                 <TitleText>Meet The Team</TitleText>
                 <SmallSpacer/>
                 <BodyText>

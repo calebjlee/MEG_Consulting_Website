@@ -133,31 +133,31 @@ function BusinessFlatlay() {
       <NextSection ScrollNext={151} ScrollAlready={1050} color="black"/>
       <FlatlayContainer>
         <FlatlayImage src={background} />
-        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID == 1 ? "20vh":"-50vh" ) : "8vh", left: clickID !== 1 ? "5vh":"13vh" }} onClick={() => {clickID == 0 ? setClickID(1):setClickID(0); setPreviousID(1); }}>
+        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID === 1 ? "20vh":"-50vh" ) : "8vh", left: clickID !== 1 ? "5vh":"13vh" }} onClick={() => {clickID === 0 ? setClickID(1):setClickID(0); setPreviousID(1); }}>
           <ObjectImage src={notebook} style={{ height: "35vh" }} />
         </ObjectContainer>
-        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID == 2 ? "20vh":"-50vh" ) : "6vh", left: clickID !== 2? "33vh":"2vh" }} onClick={() => {clickID == 0 ? setClickID(2):setClickID(0); setPreviousID(2);}}>
+        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID === 2 ? "20vh":"-50vh" ) : "6vh", left: clickID !== 2? "33vh":"2vh" }} onClick={() => {clickID === 0 ? setClickID(2):setClickID(0); setPreviousID(2);}}>
           <ObjectImage src={laptop} style={{ height: "40vh" }} />
         </ObjectContainer>
-        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID == 3 ? "25vh":"-50vh" ) : "8vh", left: clickID !== 3? "87vh":"17vh" }} onClick={() => {clickID == 0 ? setClickID(3):setClickID(0); setPreviousID(3);}}>
+        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID === 3 ? "25vh":"-50vh" ) : "8vh", left: clickID !== 3? "87vh":"17vh" }} onClick={() => {clickID === 0 ? setClickID(3):setClickID(0); setPreviousID(3);}}>
           <ObjectImage src={clip} style={{ height: "35vh" }} />
         </ObjectContainer>
-        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID == 4 ? "30vh":"-50vh" ) : "10vh", left: clickID !== 4? "113vh":"25vh" }} onClick={() => {clickID == 0 ? setClickID(4):setClickID(0); setPreviousID(4);}}>
+        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID === 4 ? "30vh":"-50vh" ) : "10vh", left: clickID !== 4? "113vh":"25vh" }} onClick={() => {clickID === 0 ? setClickID(4):setClickID(0); setPreviousID(4);}}>
           <ObjectImage src={phone} style={{ height: "20vh" }} />
         </ObjectContainer>
-        <ObjectContainer style={{ bottom: clickID !== 5 ? "30vh":"30vh", left: clickID !== 0? (clickID == 5 ? "20vh":"130vh" ) :"110vh" }} onClick={() => {clickID == 0 ? setClickID(5):setClickID(0); setPreviousID(5);}}>
+        <ObjectContainer style={{ bottom: clickID !== 5 ? "30vh":"30vh", left: clickID !== 0? (clickID === 5 ? "20vh":"130vh" ) :"110vh" }} onClick={() => {clickID === 0 ? setClickID(5):setClickID(0); setPreviousID(5);}}>
           <ObjectImage src={cup} style={{ height: "17vh" }} />
         </ObjectContainer>
-        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID == 6 ? "25vh":"80vh" ) : "45vh", left: clickID !== 6? "87vh":"10vh" }} onClick={() => {clickID == 0 ? setClickID(6):setClickID(0); setPreviousID(6);}}>
+        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID === 6 ? "25vh":"80vh" ) : "45vh", left: clickID !== 6? "87vh":"10vh" }} onClick={() => {clickID === 0 ? setClickID(6):setClickID(0); setPreviousID(6);}}>
           <ObjectImage src={bcase} style={{ height: "30vh" }} />
         </ObjectContainer>
-        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID == 7 ? "25vh":"80vh" ) : "47vh", left: clickID !== 7? "40vh":"7vh" }} onClick={() => {clickID == 0 ? setClickID(7):setClickID(0); setPreviousID(7);}}>
+        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID === 7 ? "25vh":"80vh" ) : "47vh", left: clickID !== 7? "40vh":"7vh" }} onClick={() => {clickID === 0 ? setClickID(7):setClickID(0); setPreviousID(7);}}>
           <ObjectImage src={map} style={{ height: "30vh" }} />
         </ObjectContainer>
         <ObjectContainer style={{ bottom: clickID !== 0 ? "80vh" : "50vh", left: "10vh"}}>
           <img src={plant} style={{ height: "20vh" }} />
         </ObjectContainer>
-        <ObjectContainer style={{ bottom: clickID == 0 ? "1vh" : "-50vh", left: "25vh"}}>
+        <ObjectContainer style={{ bottom: clickID === 0 ? "1vh" : "-50vh", left: "25vh"}}>
           <TextContainer>
               <TitleText> IMPACT FOR <span style={{color: "#5A4FCF"}}> YOUR CAREER </span> </TitleText>
           </TextContainer>

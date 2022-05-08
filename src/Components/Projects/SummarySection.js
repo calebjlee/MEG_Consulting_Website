@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import NextSection from "../General/NextSection";
 
 const SectionContainer = styled.div`
   width: 100vw;
@@ -55,6 +56,7 @@ const SmallSpacer = styled.div`
 function SummarySection() {
   return (
     <SectionContainer>
+      <NextSection ScrollNext={151} ScrollAlready={600} color="black"></NextSection>
       <TextContainer>
         <TitleText>FIND THE</TitleText>
         <br />
@@ -64,14 +66,7 @@ function SummarySection() {
         <SmallSpacer />
         <BodyText>
           {" "}
-          The best method for accelerating a computer is the one that boosts it
-          by 9.8 m/s2. (Anonymous) If debugging is the process of removing bugs,
-          then programming must be the process of putting them in. (Edsger W.
-          Dijkstra) It is not about bits, bytes and protocols, but profits,
-          losses and margins. (Lou Gerstner) Computers are like bikinis. They
-          save people a lot of guesswork. (Sam Ewing) It’s not a bug – it’s an
-          undocumented feature. (Anonymous)
-        </BodyText>
+          Good solutions take all the information given and provide useful analysis. Great solutions go deeper into the issue at hand, they explore the overlooked facets of a business, and they create analysis that will make the client say “Oh, I’ve never thought of that before!” At MEG, we strive to create the best solutions for our clients. Consequently, our frameworks are designed to dig deeper and uncover all the hidden insights required to create solutions that stand out.        </BodyText>
       </TextContainer>
       <Spacer />
     </SectionContainer>

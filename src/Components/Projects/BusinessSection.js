@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import bulb from "../../Images/Projects/bulb.jpg";
+import NextSection from "../General/NextSection";
 
 const SectionContainer = styled.div`
   width: 100vw;
@@ -64,18 +65,14 @@ const SmallSpacer = styled.div`
 function BusinessSection() {
   return (
     <SectionContainer>
+      <NextSection ScrollNext={151} ScrollAlready={900} color="black"/>
       <TextContainer>
         <TitleText>EXPLORE YOUR</TitleText>
         <br />
         <TitleText>BUSINESS POTENTIAL</TitleText>
         <SmallSpacer />
         <BodyText>
-          Fifty years of programming language research, and we end up with C++?
-          (Richard A. O’Keefe) Considering the current sad state of our computer
-          programs, software development is clearly still a black art, and
-          cannot yet be called an engineering discipline. (Bill Clinton) The
-          function of good software is to make the complex appear to be simple.
-          (Grady Booch)
+        Whether you have years of business experience or have never heard of consulting before we strive to expand your capabilities in the consulting field. From understanding earning reports to creating marketing schemes to exploring the supply chain, our projects spread across a wide variety of industries. We help you establish the fundamentals of business and delve into the specifics that you’re interested in.
         </BodyText>
       </TextContainer>
       <ImageContainer />

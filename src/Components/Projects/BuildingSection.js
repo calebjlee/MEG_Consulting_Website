@@ -90,6 +90,7 @@ const InvisibleTextLarge = styled.h1`
 function BuildingSection() {
   return (
     <SectionContainer>
+      
       <TextContainer>
         <OutlineText>WHETHER IT'S FOR A</OutlineText>
         <LineBreak />

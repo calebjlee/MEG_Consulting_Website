@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const SectionContainer = styled.div`
   width: 100vw;
@@ -86,7 +87,9 @@ function LookingSection() {
             <YouContainer>YOU</YouContainer>
           </BodyContainer>
           <SmallSpacer/>
-          <TitleText style={{textAlign: "right", width: "100%"}}>Apply Now</TitleText>
+          <a href= "https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+            <TitleText style={{textAlign: "right", width: "100%"}}>Apply Now</TitleText>
+          </a>
         </TextContainer>
         <Spacer />
       </SectionContainer>

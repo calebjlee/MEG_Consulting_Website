@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import chalkboard from "../../Images/Projects/chalkboard.mp4";
+import NextSection from "../General/NextSection";
 
 const SectionContainer = styled.div`
   width: 100vw;
@@ -62,6 +63,7 @@ const Video = styled.video`
 function SolutionSection() {
   return (
     <SectionContainer>
+      <NextSection ScrollNext={151} ScrollAlready={450} color="white"/>
       <TitleTextContainer>
         <TitleText>WE CREATE INNOVATIVE SOLUTIONS</TitleText>
       </TitleTextContainer>

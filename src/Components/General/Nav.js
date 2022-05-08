@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../../Images/Home/logo1.png";
 import logo1 from "../../Images/Home/logo2.png";
 import { useState, useEffect } from "react";
+import {BsList} from "react-icons/bs"
 
 const api = {
   key: "496b8228423df44de2d6d782eb53fb6d",
@@ -33,6 +34,7 @@ const NavContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 93vw;
+  z-index:100;
 `;
 
 const NavSelectionContainer = styled.div`
@@ -40,6 +42,9 @@ const NavSelectionContainer = styled.div`
   height: fit-content;
   width: fit-content;
   color: #1e1e1e;
+  @media (max-aspect-ratio: 650/870) {
+    display:none;
+  }
 `;
 
 const NavTextContainer = styled.div`
@@ -54,6 +59,47 @@ const NavText = styled.div`
   font-weight: 400;
 `;
 
+const DropdownContainer = styled.div`
+  position: relative;
+  display: inline-block;
+  background-color: transparent;
+  @media (min-aspect-ratio: 650/870) {
+    display:none;
+  }
+`
+
+const DropdownLink = styled.a`
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+
+  &:hover {
+    background-color: rgba(0,0,0,0.25);
+    cursor: pointer;
+  }
+`
+
+const DropdownButton = styled.button`
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+`
+
+const DropdownContent = styled.div`
+  display: none;
+  position: absolute;
+  right:0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  font-family: futura-pt, sans-serif;
+
+  ${DropdownContainer}:hover & {
+    display: block;
+  }
+`
+
 function Nav(props) {
   const [data, setData] = useState(undefined);
   const [error, setError] = useState(undefined);
@@ -67,7 +113,6 @@ function Nav(props) {
       .then((res) => res.json())
       .then((result) => {
         setData(Math.round(result.current.temp));
-        console.log(result.current.temp);
       })
       .catch((err) => setError(err));
   }, []);
@@ -138,7 +183,7 @@ function Nav(props) {
       <NavSelectionContainer
         style={{
           color: props.color ? "#DBBDD3" : "#1e1e1e",
-          display: props.home ? "none" : "flex"
+          display: !props.home ? "flex" : "none"
         }}
       >
         <NavTextContainer>
@@ -157,6 +202,31 @@ function Nav(props) {
           <NavText>{getCurrentDate(new Date())}</NavText>
         </NavTextContainer>
       </NavSelectionContainer>
+
+      <DropdownContainer
+        style={{
+          color: props.color ? "white" : "#1e1e1e",
+          display: props.home ? "felx" : "none"
+        }}>
+        <DropdownButton>
+          <BsList size={20}/>
+        </DropdownButton>
+        <DropdownContent>
+          <Link to="/about" style={{ textDecoration: "none", color: "#1e1e1e" }}> 
+            <DropdownLink>About Us</DropdownLink>
+          </Link>
+          <Link to="/projects" style={{ textDecoration: "none", color: "#1e1e1e" }}> 
+            <DropdownLink>Our Projects</DropdownLink>
+          </Link>
+          <Link to="/team" style={{ textDecoration: "none", color: "#1e1e1e" }}> 
+            <DropdownLink>Our Team</DropdownLink>
+          </Link>
+          <Link to="/application" style={{ textDecoration: "none", color: "#1e1e1e" }}> 
+            <DropdownLink>Application</DropdownLink>
+          </Link>
+        </DropdownContent>
+      </DropdownContainer>
+
     </NavContainer>
   );
 }

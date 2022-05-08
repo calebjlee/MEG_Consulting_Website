@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Nav from "../Components/General/Nav";
 import WebButton from "../Components/General/WebButton";
+import ClientButton from "../Components/General/ClientButton";
+import SocialButton from "../Components/General/SocialButton";
 
 const GoToHomePage = keyframes`
     0% { 
@@ -153,7 +155,7 @@ const HomeNavText = styled.h1`
     top: 0;
     bottom: 0;
     width: 0%;
-    transition: all 0.15s ease-out;
+    transition: all 0.3s ease-out;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -208,33 +210,33 @@ const ScrollText = styled.h1`
   animation-timing-function: linear;
 `;
 
-const AboutImage = styled.img`
-  max-width: 300px;
-  max-height: 200px;
-  height: auto;
-  width: 30vmin;
-  object-fit: cover;
-  transform: translate(100px, 0);
-  transform: scale(1.1);
-  clip-path: url(#svgPath);
+const ButtonContainer = styled.div`
   position: absolute;
-  bottom: 2vw;
-  right: 2vw;
-`;
-
-const BottomContainer = styled.div`
-  height: 15vmin;
-  width: 30vmin;
-  position: absolute;
-  bottom: 4vw;
-  right: 4vw;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  bottom: 4.5vmax;
+  left: 4.5vmax;
+`
+
+const SocialContainer = styled.div`
+  position: absolute;
+  display: flex;
   align-items: center;
-  align-content: center;
-  border: solid 0.15em #1e1e1e;
-  z-index: 3;
-`;
+  justify-content:center;
+  bottom: 3vmax;
+  right: 4.5vmax;
+`
+
+const HorizontalSpacer = styled.div`
+  height:1px;
+  width:3vh;
+  background-color:#1e1e1e;
+`
+
+const VerticalSpacer = styled.div`
+width:100%;
+height:1vh;
+` 
 
 function App() {
   const [scrollID, setScrollID] = useState(0);
@@ -252,7 +254,21 @@ function App() {
       <HomePageContainer
         style={{ backgroundColor: scrollID !== 0 ? "#1e1e1e" : "#DBBDD3" }}
       >
-        <WebButton visible={scrollID} />
+
+        <ButtonContainer>
+          <WebButton visible={scrollID} />
+          <VerticalSpacer/>
+          <ClientButton  visible={scrollID} />
+        </ButtonContainer>
+
+        <SocialContainer>
+          <SocialButton visible = {scrollID} social = {0}/>
+          <HorizontalSpacer/>
+          <SocialButton visible = {scrollID} social = {1}/>
+          <HorizontalSpacer/>
+          <SocialButton visible = {scrollID} social = {2}/>
+
+        </SocialContainer>
 
         <ScrollContainer style={{ top: "15vh" }}>
           <ScrollText

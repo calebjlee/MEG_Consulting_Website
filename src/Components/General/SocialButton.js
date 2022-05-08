@@ -1,43 +1,23 @@
 import styled from "styled-components";
-import { BsGlobe } from "react-icons/bs";
+import { BsInstagram, BsLinkedin, BsEnvelope } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const ButtonContainer = styled.div`
   & {
     z-index: 99;
-    height: 5vmax;
-    width: 5vmax;
-    border-radius: 999px;
+    height: 2.5vmax;
+    width: 2vmax;
     background-color: transparent;
 
     display: flex;
-    padding-left: 0.835vmax;
+    padding-left: 0.45vmax;
     justify-content: flex-start;
     align-items: center;
     align-content: center;
-    font-size: 3vmax;
+    font-size: 1.5vmax;
     overflow: hidden;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    border: solid 0.05em #1e1e1e;
     cursor: pointer;
-  }
-  transition: width 1s 0.25s, background-color 0.25s;
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0%;
-    width: 5vmax;
-    height: 50%;
-    z-index: 100;
-  }
-  &:hover::before{
-      width:19vmax;
-  }
-  &:hover {
-    width: 19vmax;
-    
   }
 `;
 
@@ -64,10 +44,12 @@ const TitleText = styled.h1`
   color: #1e1e1e;
 `;
 
-function WebButton(props) {
+function SocialButton(props) {
+
+  const urls = ["https://www.instagram.com/meg_consulting/?hl=en", "https://www.linkedin.com/company/megconsultinggroup/", "mailto:meg.eboard@umich.edu"]
 
   return (
-    <Link to="/BDT">
+    <a href={urls[props.social]} target="_blank">
       <ButtonContainer
         style={{
           display: props.visible ? "none" : "flex",
@@ -75,16 +57,13 @@ function WebButton(props) {
         }}
       >
         <IconContainer>
-          <BsGlobe color={"#1e1e1e"} />
+          <BsInstagram color={"#1e1e1e"} style = {{display: props.social == 0 ? "inline-block":"none"}} />
+          <BsLinkedin color={"#1e1e1e"} style = {{display: props.social == 1 ? "inline-block":"none"}} />
+          <BsEnvelope color={"#1e1e1e"} style = {{display: props.social == 2 ? "inline-block":"none"}} />
         </IconContainer>
-        <TextContaier>
-          <TitleText style={{ color: "#1e1e1e" }}>
-            This Website is Member Made Learn More
-          </TitleText>
-        </TextContaier>
       </ButtonContainer>
-    </Link>
+    </a>
   );
 }
 
-export default WebButton;
+export default SocialButton;

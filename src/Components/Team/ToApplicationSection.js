@@ -1,11 +1,10 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
-import journey from "../../Images/About/journey.jpg";
-import NextSection from "../../Components/General/NextSection.js";
 
 const SectionContainer = styled.div`
   width: 100vw;
-  height: 150vh;
-  background-color: #cce1cf;
+  height: 100vh;
+  background-color: #1e1e1e;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,14 +19,24 @@ const SectionContainer = styled.div`
 const TitleTextContainer = styled.div`
   background-color: transparent;
   width: fit-content;
-  max-width: 600px;
+  max-width: 700px;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  margin: 5vw;
 `;
 
 const TitleText = styled.h1`
+  font-size: 6vmin;
+  font-family: futura-pt, sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-text-stroke: 0.03em white;
+  color: transparent;
+  font-weight: 900;
+  line-height: 82%;
+`;
+
+const TitleTextStill = styled.h1`
   font-size: 8vmin;
   font-family: futura-pt, sans-serif;
   margin: 0;
@@ -36,37 +45,33 @@ const TitleText = styled.h1`
   font-weight: 900;
   line-height: 82%;
   color: white;
-  text-align: center;
+`;
+
+const LineBreak = styled.div`
+  width: 100%;
+  height: 2vh;
 `;
 
 const Spacer = styled.div`
   width: 100%;
-  height: 50vh;
+  height: 0vh;
 `;
 
-const ImageContainer = styled.div`
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  max-width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-image: url(${journey});
-`;
-
-function JourneySection() {
+function ToApplicationSection() {
   return (
     <SectionContainer>
-      <NextSection ScrollNext={151} ScrollAlready={1550} color="white" />
       <TitleTextContainer>
-        <TitleText>WE CAN HELP GET YOU THERE TOO</TitleText>
+        <TitleText>NEXT:</TitleText>
       </TitleTextContainer>
-      <ImageContainer />
-      <Spacer />
+      <LineBreak />
+      <Link to="/application" style={{ textDecoration: "none" }}>
+        <TitleTextContainer>
+          <TitleTextStill>APPLICATION</TitleTextStill>
+        </TitleTextContainer>
+        <Spacer />
+      </Link>
     </SectionContainer>
   );
 }
 
-export default JourneySection;
+export default ToApplicationSection;

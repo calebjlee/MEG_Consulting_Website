@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import jump from "../../Images/Team/jump.png";
+import NextSection from "../General/NextSection";
+
 
 const SectionContainer = styled.div`
   width: 100vw;
@@ -45,6 +47,7 @@ const Spacer = styled.div`
 function TeamIntro1() {
   return (
     <SectionContainer>
+      <NextSection ScrollNext={151} ScrollAlready={320} color="black" />
       <TextContainer>
         <Spacer />
         <TitleText>LIKE REALLY REALLY EXCITED</TitleText>

@@ -2,7 +2,8 @@ import Nav from "../Components/General/Nav";
 import TeamHome from "../Components/Team/TeamHome";
 import TeamIntro from "../Components/Team/TeamIntro";
 import TeamIntro1 from "../Components/Team/TeamIntro1";
-import ToProjectSection from "../Components/About/ToProjectSection";
+import TeamSection from "../Components/Team/TeamSection";
+import ToApplicationSection from "../Components/Team/ToApplicationSection";
 
 function Team() {
   return (
@@ -10,7 +11,8 @@ function Team() {
       <TeamHome />
       <TeamIntro />
       <TeamIntro1 />
-      <ToProjectSection />
+      <TeamSection/>
+      <ToApplicationSection/>
       <Nav color={0} home={1} />
     </div>
   );

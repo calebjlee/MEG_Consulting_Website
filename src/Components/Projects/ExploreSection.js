@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import explore from "../../Images/Projects/explore.mp4";
+import NextSection from "../General/NextSection";
 
 const SectionContainer = styled.div`
   width: 100vw;
@@ -62,6 +63,7 @@ const Video = styled.video`
 function ExploreSection() {
   return (
     <SectionContainer>
+      <NextSection ScrollNext={151} ScrollAlready={750} color="white"></NextSection>
       <TitleTextContainer>
         <TitleText>EXPLORE OUR PAST PROJECTS</TitleText>
       </TitleTextContainer>

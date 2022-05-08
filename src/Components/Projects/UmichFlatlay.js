@@ -7,6 +7,7 @@ import flag from "../../Images/Projects/Umich/flag.png";
 import tote from "../../Images/Projects/Umich/tote.png";
 import tickets from "../../Images/Projects/Umich/tickets.png";
 import notebook from "../../Images/Projects/Umich/notebook.png";
+import NextSection from "../General/NextSection";
 import React, { useState } from "react";
 
 const ProjectContainer = styled.div`
@@ -128,12 +129,13 @@ function UmichFlatlay() {
 
   const [clickID1, setClickID1] = useState(0);
   const [previousID1, setPreviousID1] = useState(0);
-  const Titles = ["Project Title 0","Project Title 1","Project Title 2","Project Title 3","Project Title 4","Project Title 5","Project Title 6"]
-  const sample = "Fifty years of programming language research, and we end up with C++? (Richard A. O’Keefe) Considering the current sad state of our computer programs, software development is clearly still a black art, and cannot yet be called an engineering discipline. (Bill Clinton) The function of good software is to make the complex appear to be simple. (Grady Booch)"
+  const Titles = ["YOU SHOULD NOT BE SEEING THIS","UM Intermurals","Michigan Online","UM Basketball","M&B Cupboard","UM Football & Big House","MCity Test Facility"]
+  const sample = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
   const Body = [sample,sample,sample,sample,sample,sample,sample,sample,sample,sample,sample]
 
   return (
     <ProjectContainer>
+      <NextSection ScrollNext={151} ScrollAlready={1350} color="black"/>
       <FlatlayContainer>
         <FlatlayImage src={umichBackgrond} />
         <ObjectContainer style={{ bottom: clickID1 !== 0 ? (clickID1 == 1 ? "25vh":"-50vh" ) : "8vh", left: clickID1 !== 1 ? "12vh":"8vh" }} onClick={() => {clickID1 == 0 ? setClickID1(1):setClickID1(0); setPreviousID1(1);}}>

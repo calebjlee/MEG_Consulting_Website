@@ -55,19 +55,12 @@ const SmallSpacer = styled.div`
 function ProfessionalSection() {
   return (
     <SectionContainer>
-      <NextSection ScrollNext={150} ScrollAlready={1325} color="black" />
+      <NextSection ScrollNext={151} ScrollAlready={1700} color="black" />
       <TextContainer>
         <TitleText>COMPREHENSIVE PROFESSIONAL DEVELOPMENT</TitleText>
         <SmallSpacer />
         <BodyText>
-          MEG Consulting is a pro-bono consulting group at the University of
-          Michigan. From local startups to million dollar companies, members
-          have the opportunity to provide the solutions for real world problems.
-          At our core, we believe in treating our people with kindness and
-          respect. From the executive board to our applicants, we strive to
-          create an enviornment where everyone can learn and grow. We see our
-          people as not only business professionals but also as our mentors,
-          teachers, peers, and most importantly, friends.
+        At MEG we want to help our members get to pursue their dreams and get into the position they want to be in. Our professional development sessions, open to all members, helps our members learn key business skills applicable to many fields. Our mentor problem assigns new members an upperclassman to help guide them through the complicated recruitment process. Lastly, our projects have a strong focus on real world frameworks that you’ll see in the professional world.
         </BodyText>
       </TextContainer>
       <Spacer />

@@ -5,7 +5,7 @@ const NextContainer = styled.div`
   height: 20vh;
   width: 100vw;
   position: absolute;
-  top: 80vh;
+  top: 85vh;
   background-color: transparent;
   cursor: pointer;
   display: flex;

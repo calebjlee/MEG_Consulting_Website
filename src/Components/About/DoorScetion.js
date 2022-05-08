@@ -2,6 +2,7 @@ import styled, { keyframes } from "styled-components";
 import door from "../../Images/About/door.png";
 import town from "../../Images/About/town1.jpg";
 import NextSection from "../../Components/General/NextSection.js";
+import { useState, useEffect } from "react";
 
 const SectionContainer = styled.div`
   width: 100vw;
@@ -21,7 +22,7 @@ const SectionContainer = styled.div`
 
 const TitleTextContainer = styled.div`
   background-color: transparent;
-  width: fit-content;
+  width: 100%;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -37,7 +38,9 @@ const TitleText = styled.h1`
   font-weight: 900;
   line-height: 82%;
   color: white;
-  text-align: center;
+  width:90%;
+  text-align:center;
+  margin-top:10vh;
 `;
 
 const Spacer = styled.div`
@@ -141,6 +144,15 @@ const TownContainer = styled.div`
 `;
 
 function DoorSection() {
+
+  const [scroll1, setScroll1] = useState(window.scrollY);
+  const handleScroll = () => setScroll1(window.scrollY);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  }, []);
+
+
   function vh(v) {
     var h = Math.max(
       document.documentElement.clientHeight,
@@ -166,26 +178,20 @@ function DoorSection() {
     <SectionContainer>
       <TownContainer />
       <ShiftContainer>
+      <NextSection ScrollNext={151} ScrollAlready={1250} color="black" />
         <TextContainer>
           <SmallSpacer />
           <BodyTitleText>COME ONE COME ALL</BodyTitleText>
           <SmallSpacer />
           <BodyText>
-            MEG Consulting is a pro-bono consulting group at the University of
-            Michigan. From local startups to million dollar companies, members
-            have the opportunity to provide the solutions for real world
-            problems. At our core, we believe in treating our people with
-            kindness and respect. From the executive board to our applicants, we
-            strive to create an enviornment where everyone can learn and grow.
-            We see our people as not only business professionals but also as our
-            mentors, teachers, peers, and most importantly, friends.
+          At MEG Consulting we encourage everyone and anyone to apply. Our members study everything from business administration to computer science to fine art to piano performance, and we continue to look for students pursuing whatever their passions are. We come from all over the United States and some are even from abroad. Our only prerequisite for applying is an unyielding desire to learn and a strong commitment to finding the best solutions for our clients.
           </BodyText>
         </TextContainer>
       </ShiftContainer>
-      <ImageContainer>
+      <ImageContainer style={{ display: scroll1 > vh(1200) ? "none" : "inline-block" }} >
+      <NextSection ScrollNext={151} ScrollAlready={1100} color="white" />
         <TitleTextContainer>
           <TitleText>WE KEEP OUR DOORS OPEN </TitleText>
-          <Spacer />
         </TitleTextContainer>
       </ImageContainer>
     </SectionContainer>

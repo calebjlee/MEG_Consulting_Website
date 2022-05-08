@@ -31,7 +31,7 @@ const ImageContainer = styled.div`
   align-content: center;
   background-color: #1e1e1e;
   background-image: url(${forest});
-  clip-path: circle(4vmax at center);
+  clip-path: circle(7vmax at center);
 
   animation: ${ClipScale} 1s linear forwards;
   animation-play-state: paused;

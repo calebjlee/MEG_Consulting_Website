@@ -38,9 +38,10 @@ const LogoContainer = styled.div`
 
 const TimelineContainer = styled.div`
     height: 27vh;
-    width: 58.15vw;
+    width: 57vw;
     outline: solid 3px #1e1e1e;
     margin:1.5px;
+    padding-right:3px;
     background-image: url(${timeline});
     background-size: cover;
     background-position: center;
@@ -63,7 +64,7 @@ const NewLine = styled.div`
 
 const CenterContinaer = styled.div`
     height: 54vh;
-    width: 38vw;
+    width: 37vw;
     outline: solid 3px #1e1e1e;
     margin: 1.5px;
     display:flex;
@@ -91,32 +92,35 @@ const TextContainer = styled.div`
 `
 
 const TitleText = styled.h1`
-    font-size: 6vmin;
+    font-size: 2.5vw;
     font-family: futura-pt, sans-serif;
     margin: 0;
     padding: 0;
     font-weight: 900;
     text-align: left;
     color: #1e1e1e;
+    word-wrap: break-word;
 `
 
 const HeaderText = styled.h1`
-    font-size: 4vmin;
+    font-size: 1.7vw;
     font-family: futura-pt, sans-serif;
     margin: 0;
     padding: 0;
     font-weight: 900;
     text-align: left;
     color: #1e1e1e;
+    word-wrap: break-word;
 `
 
 const BodyText = styled.p`
   display: inline-block;
-  font-size: 3.2vmin;
+  font-size: calc(.9vmax + .9vmin);
   font-family: futura-pt, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  word-wrap: break-word;
 `;
 
 const SmallSpacer = styled.div`
@@ -128,7 +132,7 @@ const ImageContainer = styled.div`
     width:100%;
     height: 30vh;
     background-image: url(${coffee});
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 `
@@ -150,22 +154,24 @@ function MenuSection() {
                     <HeaderText>FAQ's:</HeaderText>
                     <SmallSpacer/>
                     <BodyText>
-                        Q: Who let the dogs out? <br/> A: Did you know this song was about cat calling? <br/>
-                        Q: How much wood could a woodchuck chuck if a wood chuck could chuck wood? <br/> A: No, but check in later, and it is 1:33 AM as I write this <br/>
+                        Q: I'm not in Ross, can I still apply? <br/> A: Yes, we accept all majors! <br/>
+                        Q: Any advice to help me get in? <br/> A: There's a lot you can do, but being yourself and putting your best foot forward is the best advice we have. <br/>
                     </BodyText>
                 </TextContainer>
             </InfoContainer>
             <CenterContinaer>
                 <ApplyContinaer>
                     <TextContainer>
-                        <TitleText style={{width:"30vw", textAlign: "center"}}>APPLY NOW</TitleText>
+                        <a href= "https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" style={{textDecoration: "none"}}>
+                            <TitleText style={{width:"30vw", textAlign: "center"}}>APPLY NOW</TitleText>
+                        </a>
                     </TextContainer>
                 </ApplyContinaer>
                 <MoreContainer>
                     <TextContainer>
                         <HeaderText>Maxize Your Recruiting Experience</HeaderText>
                         <SmallSpacer/>
-                        <BodyText>This is filler text. Imagine a whole paragraph with well written stuff in here. This is filler text. Imagine a whole paragraph with well written stuff in here.</BodyText>
+                        <BodyText>Ross club recuiting can be an intimidating experience, but we're here to help you get thorugh it and to help you get the most out of it! Below we have advice and our recruiting philosiphy that'll help</BodyText>
                     </TextContainer>
                 </MoreContainer>
             </CenterContinaer>

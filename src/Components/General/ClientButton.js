@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import { BsGlobe } from "react-icons/bs";
+import { BsPersonPlusFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const ButtonContainer = styled.div`
   & {
@@ -27,17 +28,15 @@ const ButtonContainer = styled.div`
   &::before {
     content: "";
     position: absolute;
-    left: 0%;
+    right: 0%;
     width: 5vmax;
     height: 50%;
-    z-index: 100;
   }
   &:hover::before{
       width:19vmax;
   }
   &:hover {
     width: 19vmax;
-    
   }
 `;
 
@@ -55,7 +54,7 @@ const IconContainer = styled.div`
 const TitleText = styled.h1`
   display: inline-block;
   font-size: 0.9vmax;
-  font-family: futura-pt, sans-serif;
+  font-family: futu ra-pt, sans-serif;
   margin: 0;
   padding: 0;
   font-weight: 700;
@@ -64,10 +63,10 @@ const TitleText = styled.h1`
   color: #1e1e1e;
 `;
 
-function WebButton(props) {
+function ClientButton(props) {
 
   return (
-    <Link to="/BDT">
+    <Link to="/">
       <ButtonContainer
         style={{
           display: props.visible ? "none" : "flex",
@@ -75,11 +74,11 @@ function WebButton(props) {
         }}
       >
         <IconContainer>
-          <BsGlobe color={"#1e1e1e"} />
+          <BsPersonPlusFill color={"#1e1e1e"} />
         </IconContainer>
         <TextContaier>
           <TitleText style={{ color: "#1e1e1e" }}>
-            This Website is Member Made Learn More
+            Potential Client? See What We Can Do
           </TitleText>
         </TextContaier>
       </ButtonContainer>
@@ -87,4 +86,4 @@ function WebButton(props) {
   );
 }
 
-export default WebButton;
+export default ClientButton;

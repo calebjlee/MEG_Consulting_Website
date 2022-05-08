@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { keyframes } from "styled-components";
+import NextSection from "../General/NextSection";
 
 const TextShift = keyframes`
   0% {transform: translate(0,100%);}
@@ -70,6 +71,7 @@ const Spacer = styled.div`
 function ProjectHome() {
   return (
     <SectionContainer>
+      <NextSection ScrollNext={301} ScrollAlready={0} color="black" />
       <TitleTextContainer style={{ transform: "translate(0,75%)" }}>
         <TitleText style={{ transform: "translate(0,100%)" }}>
           OUR PROJECTS

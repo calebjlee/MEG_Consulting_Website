@@ -10,6 +10,7 @@ import notebook from "../../Images/Projects/Business/notebook.png";
 import phone from "../../Images/Projects/Business/phone.png";
 import plant from "../../Images/Projects/Business/plant.png";
 import React, { useState } from "react";
+import NextSection from "../General/NextSection";
 
 
 const ProjectContainer = styled.div`
@@ -122,13 +123,14 @@ function BusinessFlatlay() {
 
     const [clickID, setClickID] = useState(0);
     const [previousID, setPreviousID] = useState(0);
-    const Titles = ["Project Title 0","Project Title 1","Project Title 2","Filson: Supply Chain Management","Project Title 4","Zingerman's: Financial Restructuring","Project Title 6","Tremec: Global Operations","Project Title 8"]
-    const sample = "Fifty years of programming language research, and we end up with C++? (Richard A. O’Keefe) Considering the current sad state of our computer programs, software development is clearly still a black art, and cannot yet be called an engineering discipline. (Bill Clinton) The function of good software is to make the complex appear to be simple. (Grady Booch) The best thing about a boolean is even if you are wrong, you are only off by a bit. (Anonymous)"
+    const Titles = ["YOU SHOULD NOT BE SEEING THIS","Kaufman: Insurance & Portfolio Management","Workforce Software: Technology and Operations","Filson: Supply Chain Management","Underground Printing: Marketing","Zingerman's: Financial Restructuring","MadDog: Technology & Venture Capital","Tremec: Global Operations","Project Title 8"]
+    const sample = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     const Body = [sample,sample,sample,sample,sample,sample,sample,sample,sample,sample,sample]
     
 
   return (
     <ProjectContainer>
+      <NextSection ScrollNext={151} ScrollAlready={1050} color="black"/>
       <FlatlayContainer>
         <FlatlayImage src={background} />
         <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID == 1 ? "20vh":"-50vh" ) : "8vh", left: clickID !== 1 ? "5vh":"13vh" }} onClick={() => {clickID == 0 ? setClickID(1):setClickID(0); setPreviousID(1); }}>

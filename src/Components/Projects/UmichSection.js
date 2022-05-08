@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import tower from "../../Images/Projects/umich.jpg";
+import NextSection from "../General/NextSection";
 
 const SectionContainer = styled.div`
   width: 100vw;
@@ -64,6 +65,7 @@ const SmallSpacer = styled.div`
 function UmichSection() {
   return (
     <SectionContainer>
+      <NextSection ScrollNext={151} ScrollAlready={1200} color="black"/>
       <ImageContainer />
       <TextContainer>
         <TitleText>SOLVE THE PROBLEMS</TitleText>
@@ -71,12 +73,7 @@ function UmichSection() {
         <TitleText>CLOSEST TO YOU</TitleText>
         <SmallSpacer />
         <BodyText>
-          Fifty years of programming language research, and we end up with C++?
-          (Richard A. O’Keefe) Considering the current sad state of our computer
-          programs, software development is clearly still a black art, and
-          cannot yet be called an engineering discipline. (Bill Clinton) The
-          function of good software is to make the complex appear to be simple.
-          (Grady Booch)
+        One of the best feelings in consulting is seeing your solutions come to life. At MEG, we work with various local businesses as well as the university itself to create positive change that our members can see from their own backyard. Discover our past projects with the University and see how you can help your school become a better place.
         </BodyText>
       </TextContainer>
     </SectionContainer>

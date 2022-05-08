@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import building2 from "../../Images/Projects/Buildings/building2.png";
 import building1 from "../../Images/Projects/Buildings/building1.png";
+import NextSection from "../General/NextSection";
 import { useState, useEffect } from "react";
 
 const SectionContainer = styled.div`
@@ -126,6 +127,7 @@ function BuildingSection1() {
 
   return (
     <SectionContainer>
+      <NextSection ScrollNext={151} ScrollAlready={300} color="white" />
       <TextContainer>
         <InvisibleTextSmall>WHETHER IT'S FOR A</InvisibleTextSmall>
         <LineBreak />

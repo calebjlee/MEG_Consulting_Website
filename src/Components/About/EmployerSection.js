@@ -60,7 +60,7 @@ const ImageContainer = styled.div`
 function EmplyerSection() {
   return (
     <SectionContainer>
-      <NextSection ScrollNext={150} ScrollAlready={1025} color="black" />
+      <NextSection ScrollNext={151} ScrollAlready={1400} color="black" />
       <VisibleContainer>
         <ImageContainer />
       </VisibleContainer>

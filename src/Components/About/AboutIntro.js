@@ -3,6 +3,8 @@ import { keyframes } from "styled-components";
 import forest from "../../Images/About/forest.jpg";
 import NextSection from "../General/NextSection";
 
+{/*Forest Page*/}
+
 const SectionContainer = styled.div`
   width: 100vw;
   height: 350vh;
@@ -14,6 +16,7 @@ const SectionContainer = styled.div`
   max-width: 100%;
   overflow: hidden;
 `;
+
 
 const ClipScale = keyframes`
 to {clip-path:circle(100vmax at center)}
@@ -64,6 +67,8 @@ const SmallSpacer = styled.div`
 `;
 
 function AboutIntro() {
+
+  {/*Translate pixels into vh*/}
   function vh(v) {
     var h = Math.max(
       document.documentElement.clientHeight,
@@ -72,6 +77,7 @@ function AboutIntro() {
     return (v * h) / 100;
   }
 
+  {/*Calculate scroll position and change css scroll property (for circle animation)*/}
   window.addEventListener(
     "scroll",
     () => {

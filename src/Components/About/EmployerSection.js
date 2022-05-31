@@ -2,6 +2,11 @@ import styled from "styled-components";
 import NextSection from "../General/NextSection";
 import employers from "../../Images/About/employers.jpg";
 
+{/*Section to show the companies our members have gotten into*/}
+{/*To update: Update the "employers" image (see employers import above )  */}
+{/*TODO: Make a transparent employers image (Not sure, but I think if the image had a transparent background then we could
+continue the color scheme*/}
+
 const SectionContainer = styled.div`
   width: 100vw;
   height: 150vh;
@@ -26,26 +31,6 @@ const VisibleContainer = styled.div`
   flex-wrap: wrap;
   align-content: space-around;
   position: sticky;
-`;
-
-const TitleTextContainer = styled.div`
-  background-color: transparent;
-  width: fit-content;
-  max-width: 700px;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  margin-left: 5vw;
-`;
-
-const TitleText = styled.h1`
-  font-size: 8vmin;
-  font-family: futura-pt, sans-serif;
-  margin: 0;
-  padding: 0;
-  font-weight: 900;
-  line-height: 82%;
-  color: black;
 `;
 
 const ImageContainer = styled.div`

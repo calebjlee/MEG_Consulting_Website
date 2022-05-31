@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import earth from "../../Images/About/help.mp4";
 
+
+
 const SectionContainer = styled.div`
   width: 100vw;
   height: 150vh;

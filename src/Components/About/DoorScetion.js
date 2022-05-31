@@ -4,6 +4,10 @@ import town from "../../Images/About/town1.jpg";
 import NextSection from "../../Components/General/NextSection.js";
 import { useState, useEffect } from "react";
 
+{/*Door section including door, background image and text section*/}
+{/*Animation works by scaling in on the door picture and shifting the text up at the same time */}
+{/*TODO: Find a better door and background image (something corporate)*/}
+
 const SectionContainer = styled.div`
   width: 100vw;
   height: 350vh;
@@ -43,19 +47,17 @@ const TitleText = styled.h1`
   margin-top:10vh;
 `;
 
-const Spacer = styled.div`
-  width: 100%;
-  height: 55vh;
-`;
-
+{/*Zoom animation for door*/}
 const Zoom = keyframes`
   to {transform: scale(1000%)}
 `;
 
+{/*Shift animation for text section*/}
 const Shift = keyframes`
   to {transform: translateY(0vh)}
 `;
 
+{/*Door image*/}
 const ImageContainer = styled.div`
   width: 100vw;
   height: 100vh;
@@ -72,7 +74,7 @@ const ImageContainer = styled.div`
   flex-wrap: wrap;
   align-content: center;
 
-  transform-origin: 50% 70%;
+  transform-origin: 50% 70%; /* Zoom in on the transparent opening of the door */
   transform: scale(100%);
 
   animation: ${Zoom} 1s linear infinite;
@@ -81,6 +83,7 @@ const ImageContainer = styled.div`
   z-index: 1;
 `;
 
+{/*Shift container is the text container that shifts up on scroll*/}
 const ShiftContainer = styled.div`
   height: 100vh;
   width: 100vw;
@@ -131,6 +134,7 @@ const SmallSpacer = styled.div`
   height: 5vh;
 `;
 
+{/*Background Image of the town*/}
 const TownContainer = styled.div`
   position: absolute;
   top: 0;
@@ -153,6 +157,7 @@ function DoorSection() {
   }, []);
 
 
+  {/*Convert pixels to vh*/}
   function vh(v) {
     var h = Math.max(
       document.documentElement.clientHeight,
@@ -161,11 +166,16 @@ function DoorSection() {
     return (v * h) / 100;
   }
 
+  {/*if the section moves within the "about us page" (i.e. a change in the vertical size of the sections above this section) 
+  this function has to be changed: to change I just guessed and checked with the sibctracted value and the min value until it
+  looked right. you can console log temp to get the numbers right, sorry for the jank*/}
+  {/*TODO: Make less jank*/}
   function calculatePosition() {
     var temp = Math.max(0, window.pageYOffset / vh(1450) - 0.7653);
     return Math.min(temp, 0.0665655);
   }
 
+  {/*Set Css property based on calculate position ^*/}
   window.addEventListener(
     "scroll",
     () => {
@@ -188,7 +198,7 @@ function DoorSection() {
           </BodyText>
         </TextContainer>
       </ShiftContainer>
-      <ImageContainer style={{ display: scroll1 > vh(1200) ? "none" : "inline-block" }} >
+      <ImageContainer style={{ display: scroll1 > vh(1200) ? "none" : "inline-block" }} >   {/*after door is zoomed in, display none so you can interact with text underneath it*/}
       <NextSection ScrollNext={151} ScrollAlready={1100} color="white" />
         <TitleTextContainer>
           <TitleText>WE KEEP OUR DOORS OPEN </TitleText>

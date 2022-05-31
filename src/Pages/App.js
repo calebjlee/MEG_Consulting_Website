@@ -129,6 +129,7 @@ const HomeNavContainer = styled.div`
   white-space: nowrap;
   cursor: pointer;
 `;
+
 const HomeNavText = styled.h1`
   & {
     font-size: 6vmin;
@@ -242,11 +243,11 @@ function App() {
   const [scrollID, setScrollID] = useState(0);
 
   const scrollStatue = [
-    "",
-    "ABOUT US",
-    "OUR PROJECTS",
-    "OUR TEAM",
-    "APPLICATION"
+    [""],
+    ["WHO WE ARE", "OUR VALUES", "WHERE WE'VE BEEN", "HOW WE CAN HELP YOU", "WHERE YOU FIT"],
+    ["WHO WE WORK WITH", "OUR PAST PROJECTS", "THE IMPACT WE'VE MADE", "THE FRAMEWORKS WE USE", "WHAT YOU CAN ADD"],
+    ["MEET OUR MEMEBRS", "GET TO KNOW US", "DISCOVER OUR DIVERSITY", "EXPLORE OUR PASSIONS", "FIND WHERE YOU FIT"],
+    ["APPLY NOW", "SEE OUR TIMELINE", "APPLICATION FAQ", "HOW TO APPLY", "COME JOIN THE FAMILY"]
   ];
 
   return (
@@ -277,7 +278,7 @@ function App() {
               animationDelay: "-6s"
             }}
           >
-            {scrollStatue[scrollID]}
+            {scrollStatue[scrollID][0]}
           </ScrollText>
         </ScrollContainer>
         <ScrollContainer style={{ top: "25vh" }}>
@@ -288,7 +289,7 @@ function App() {
               animationDirection: "reverse"
             }}
           >
-            {scrollStatue[scrollID]}
+            {scrollStatue[scrollID][1]}
           </ScrollText>
         </ScrollContainer>
         <ScrollContainer style={{ top: "65vh" }}>
@@ -298,7 +299,7 @@ function App() {
               animationDelay: "-19s"
             }}
           >
-            {scrollStatue[scrollID]}
+            {scrollStatue[scrollID][2]}
           </ScrollText>
         </ScrollContainer>
         <ScrollContainer style={{ top: "75vh" }}>
@@ -309,7 +310,7 @@ function App() {
               animationDirection: "reverse"
             }}
           >
-            {scrollStatue[scrollID]}
+            {scrollStatue[scrollID][3]}
           </ScrollText>
         </ScrollContainer>
         <ScrollContainer style={{ top: "85vh" }}>
@@ -319,9 +320,10 @@ function App() {
               animationDelay: "-12s"
             }}
           >
-            {scrollStatue[scrollID]}
+            {scrollStatue[scrollID][4]}
           </ScrollText>
         </ScrollContainer>
+
         <LogoContainer style={{ visibility: scrollID === 0 ? "100%" : "0%" }}>
           <Nav color={0} home={0} />
         </LogoContainer>
@@ -338,9 +340,9 @@ function App() {
               onMouseLeave={() => {
                 setScrollID(0);
               }}
+              style ={{WebkitTextStroke: (setScrollID!== 1 || setScrollID!== 0) ? "1px #dbbdd3": "none"}}
             >
-              {" "}
-              ABOUT US{" "}
+              ABOUT US
             </HomeNavText>
           </HomeNavContainer>
         </Link>
@@ -355,6 +357,7 @@ function App() {
               onMouseLeave={() => {
                 setScrollID(0);
               }}
+              style ={{WebkitTextStroke: (setScrollID!== 2 || setScrollID!== 0) ? "1px #dbbdd3": "none"}}
             >
               OUR PROJECTS
             </HomeNavText>
@@ -371,6 +374,7 @@ function App() {
               onMouseLeave={() => {
                 setScrollID(0);
               }}
+              style ={{WebkitTextStroke: (setScrollID!== 3 || setScrollID!== 0) ? "1px #dbbdd3": "none"}}
             >
               OUR TEAM
             </HomeNavText>
@@ -387,6 +391,7 @@ function App() {
               onMouseLeave={() => {
                 setScrollID(0);
               }}
+              style ={{WebkitTextStroke: (setScrollID!== 4 || setScrollID!== 0) ? "1px #dbbdd3": "none"}}
             >
               APPLICATION
             </HomeNavText>

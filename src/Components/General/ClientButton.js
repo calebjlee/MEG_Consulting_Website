@@ -31,6 +31,7 @@ const ButtonContainer = styled.div`
     right: 0%;
     width: 5vmax;
     height: 50%;
+    z-index:10;
   }
   &:hover::before{
       width:19vmax;
@@ -54,7 +55,7 @@ const IconContainer = styled.div`
 const TitleText = styled.h1`
   display: inline-block;
   font-size: 0.9vmax;
-  font-family: futu ra-pt, sans-serif;
+  font-family: futura-pt, sans-serif;
   margin: 0;
   padding: 0;
   font-weight: 700;

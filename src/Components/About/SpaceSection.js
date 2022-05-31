@@ -4,6 +4,13 @@ import space from "../../Images/About/space.mp4";
 import earth from "../../Images/About/help.mp4";
 import NextSection from "../General/NextSection";
 
+{/*Down to earth section and Space Section*/}
+{/*TODO: Combine this page without the animation: have the two videos side by side with the same text
+I'm not in love with the side scrolling (plus it can get a bit laggy) also the wordplay might be more
+obvious if the two sections are on the same page 
+NOTE: If you do this you have to change the NextSections for all the sections after this one, also you
+have to change the calculate position function in DoorSection.js */}
+
 const Shift = keyframes`
   to {transform: translateX(-200%);}
 `;
@@ -49,6 +56,7 @@ const Spacer = styled.div`
   height: 50vh;
 `;
 
+{/*Container that has all the shifting divs, no aniamtion for itself*/}
 const ShiftContainer = styled.div`
   width: 200vw;
   height: 100vh;
@@ -65,6 +73,7 @@ const VideoContainer = styled.div`
   position: relative;
 `;
 
+{/*Container that contains the video divs and video and shifts*/}
 const ShiftVideoContainer = styled.div`
   width: 100vw;
   height: 100vh;
@@ -88,6 +97,8 @@ const Video = styled.video`
 `;
 
 function SpaceSection() {
+
+  {/*Convert pixels to vh*/}
   function vh(v) {
     var h = Math.max(
       document.documentElement.clientHeight,
@@ -96,11 +107,16 @@ function SpaceSection() {
     return (v * h) / 100;
   }
 
+  {/*if the section moves within the "about us page" (i.e. a change in the vertical size of the sections above this section) 
+  this function has to be changed: to change I just guessed and checked with the subctracted value and the min value until it
+  looked right. you can console log temp to get the numbers right, sorry for the jank*/}
+  {/*TODO: Make less jank*/}
   function calculatePosition() {
     var temp = Math.max(0, window.pageYOffset / vh(950) - 0.75);
     return Math.min(temp, 0.1252);
   }
 
+  {/*Set Css property based on calculate position ^*/}
   window.addEventListener(
     "scroll",
     () => {
@@ -121,6 +137,8 @@ function SpaceSection() {
             <source src={space} type="video/mp4" />
           </Video>
         </VideoContainer>
+        
+        {/*This div shifts over the "Out of this world div"*/}
         <ShiftVideoContainer>
           <NextSection ScrollNext={376} ScrollAlready={650} color="white" />
           <TitleTextContainer>

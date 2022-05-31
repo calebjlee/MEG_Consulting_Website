@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { keyframes } from "styled-components";
 import NextSection from "../General/NextSection";
 
+
+{/* Intro text animation */}
 const TextShift = keyframes`
   0% {transform: translate(0,100%);}
   100% {transform: translate(0,37.5%);}
@@ -31,6 +33,7 @@ const TitleTextContainer = styled.div`
   overflow: hidden;
 `;
 
+{/* Outlined Text */}
 const TitleText = styled.h1`
   font-size: 8vmin;
   font-family: futura-pt, sans-serif;
@@ -47,6 +50,7 @@ const TitleText = styled.h1`
   animation-fill-mode: forwards;
 `;
 
+{/* Filled in Text */}
 const TitleTextStill = styled.h1`
   font-size: 8vmin;
   font-family: futura-pt, sans-serif;

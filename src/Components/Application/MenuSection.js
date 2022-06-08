@@ -185,7 +185,7 @@ function MenuSection() {
             <CenterContinaer>
                 <ApplyContinaer>
                     <TextContainer>
-                        <a href= "https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" style={{textDecoration: "none"}}>
+                        <a href= "https://docs.google.com/forms/d/e/1FAIpQLSeHCJl6mIQEAhO2DPE_1x8zasWhHH_C8zrzZ_AK3pMhmnZ0BQ/viewform" target="_blank" style={{textDecoration: "none"}}>
                             <TitleText style={{width:"30vw", textAlign: "center", textDecoration: "underline"}}>APPLY NOW</TitleText>
                         </a>
                     </TextContainer>

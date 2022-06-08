@@ -75,6 +75,7 @@ const BodyText = styled.p`
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  text-align: justify;
 `;
 
 const InfoContainer = styled.div`
@@ -88,6 +89,8 @@ const InfoContainer = styled.div`
     transition: opacity 1s linear 1s;
     z-index: 0;
     color: #1e1e1e;
+    background-color: rgba(200,200,200,.5);
+    padding: 1vh;
 `
 
 const Spacer = styled.div`
@@ -98,13 +101,15 @@ const Spacer = styled.div`
 const TitleContainer = styled.div`
   display:flex;
   position: absolute;
-  width:40vh;
+  width:60vh;
   height:15vh;
   left:50vh;
   bottom:57vh;
   flex-wrap: wrap;
   transition: opacity 1s linear 1s;
   z-index: 0;
+  background-color: rgba(200,200,200,.5);
+  padding: 1vh;
 `
 
 const BackButton = styled.div`
@@ -131,7 +136,13 @@ function UmichFlatlay() {
   const [previousID1, setPreviousID1] = useState(0);
   const Titles = ["YOU SHOULD NOT BE SEEING THIS","UM Intermurals","Michigan Online","UM Basketball","M&B Cupboard","UM Football & Big House","MCity Test Facility"]
   const sample = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-  const Body = [sample,sample,sample,sample,sample,sample,sample,sample,sample,sample,sample]
+  const BasketballText = "We were approached by UM Athletics to increase student section attendance at Michigan Basketball games. In order to do this we suggested a streamlined version of their ticket claiming process, instituting various stadium promotions, and creating partnerships with other student organizations. "
+  const MBCText = 'The Maize & Blue Cupboard is a resource for students with food insecurity. Our team was tasked with transforming this cupboard into a "No Wrong Doors" initiative in which The Maize & Blue Cupboard becomes a one-stop shop for students in need. We also developed a marketing strategy to ensure that this resource is utilized by students'
+  const FootballText = "We were asked by UM Athletics to creatie a pricing model to generate additional revenue growth for Michigan Football tickets. The project focused on creating a new ticket pricing framework, identifying helpful customer segments, and introducing incentive programs to drive ticket sales."
+  const MCityText = "MCity is Umich's connected and automated (CAV) research group. We conducted a gap analysis of technical and non-technical challenges in the CAV space and identify the overarching challenges so MCity research priorities can be decided. We did this by researching CAV databases, interviews, and other CAV research groups."
+  const IntermuralText = "We worked with the intermural building to create a more efficient training program for their employees by identifying when and how they train. We also looked at their marketing and focused on ways we could imporve diversity and number of people using the facilities, all while keeping costs under control."
+  const MichiganOnlineText = "Michigan Online is a UM organization that focuses on giving an online and self-paced learning experience with their library of virtual classes. Our team was tasked with transforming the platform into something that is more widely used by students. We analyzed content, marketing, and accessibility to propose solutions."
+  const Body = ["YOU SHOULD NOT BE SEEING THIS",IntermuralText,MichiganOnlineText,BasketballText,MBCText,FootballText,MCityText]
 
   return (
     <ProjectContainer>
@@ -156,8 +167,8 @@ function UmichFlatlay() {
         <ObjectContainer style={{ bottom: clickID1 !== 0 ? (clickID1 === 6 ? "25vh":"-50vh" ) : "8vh", left: clickID1 !== 6 ? "89vh":"14vh" }} onClick={() => {clickID1 === 0 ? setClickID1(6):setClickID1(0); setPreviousID1(6);}}>
           <ObjectImage src={notebook} style={{ height: "27vh" }} />
         </ObjectContainer>
-        <ObjectContainer style={{ bottom: clickID1 === 0 ? "2vh" : "-50vh", left: "10vh"}}>
-          <TitleText><span style={{color: "#00274C"}}>IMPACT IN YOUR</span> <span style={{color: "#FFCB05"}}> NEIGHBORHOOD </span></TitleText>
+        <ObjectContainer style={{ bottom: clickID1 === 0 ? "3vh" : "-50vh", left: "15vh"}}>
+          <TitleText style={{textAlign:"center", fontSize:"5vh", lineHeight:"90%"}}> <span style={{fontSize:"2.5vh"}}>Click an object to see how we've created</span><br/> <span style = {{color: "#00274C"}}>IMPACT IN YOUR</span> <span style={{color: "#FFCB05"}}> NEIGHBOORHOOD </span> </TitleText>
         </ObjectContainer>
         <InfoContainer style={{ opacity: clickID1 !== 0 ? "1":"0", transitionDelay: clickID1 !==0 ? ".5s":"0s", transitionDuration: clickID1 !==0 ? ".5s":".25s"}}>
           <BodyText>{Body[previousID1]}</BodyText>
@@ -167,7 +178,7 @@ function UmichFlatlay() {
           </BackButton>
         </InfoContainer>
         <TitleContainer style={{ opacity: clickID1 !== 0 ? "1":"0", transitionDelay: clickID1 !==0 ? ".5s":"0s", transitionDuration: clickID1 !==0 ? ".5s":".25s"}}>
-          <TitleText>{Titles[previousID1]}</TitleText>
+          <TitleText style={{maxWidth: "40vh"}}>{Titles[previousID1]}</TitleText>
         </TitleContainer>
       </FlatlayContainer>
     </ProjectContainer>

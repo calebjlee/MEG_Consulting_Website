@@ -259,7 +259,7 @@ function App() {
         <ButtonContainer>
           <WebButton visible={scrollID} />
           <VerticalSpacer/>
-          <ClientButton  visible={scrollID} />
+          {/*<ClientButton  visible={scrollID} />*/}
         </ButtonContainer>
 
         <SocialContainer>

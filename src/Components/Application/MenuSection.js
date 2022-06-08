@@ -15,6 +15,10 @@ const SectionContainer = styled.div`
   flex-wrap: wrap;
   top: -1px;
   max-width: 100%;
+
+  @media (max-aspect-ratio: 1000/750){
+    display: none;
+  }
 `;
 
 const GridContainer = styled.div`
@@ -43,8 +47,10 @@ const TimelineContainer = styled.div`
     margin:1.5px;
     padding-right:3px;
     background-image: url(${timeline});
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 `
 
 const InfoContainer = styled.div`
@@ -55,6 +61,7 @@ const InfoContainer = styled.div`
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    position: relative;
 `
 
 const NewLine = styled.div`
@@ -137,6 +144,19 @@ const ImageContainer = styled.div`
     background-position: center;
 `
 
+const SoonContainer = styled.div`
+    background-color: rgba(255, 176, 97,.9);
+    width: 50%;
+    height: 50%;
+    transform: rotate(10deg) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+`
+
 function MenuSection() {
     return (
       <SectionContainer>
@@ -147,6 +167,9 @@ function MenuSection() {
                 </TextContainer>
             </LogoContainer>
             <TimelineContainer>
+                <SoonContainer>
+                    <TitleText style={{color: "white"}}>Coming Soon</TitleText>
+                </SoonContainer>
             </TimelineContainer>
             <NewLine/>
             <InfoContainer>
@@ -155,7 +178,7 @@ function MenuSection() {
                     <SmallSpacer/>
                     <BodyText>
                         Q: I'm not in Ross, can I still apply? <br/> A: Yes, we accept all majors! <br/>
-                        Q: Any advice to help me get in? <br/> A: There's a lot you can do, but being yourself and putting your best foot forward is the best advice we have. <br/>
+                        Q: Any advice to help me get in? <br/> A: There's a lot &#40;scroll down!&#41;, but being yourself and putting your best foot forward is the most important advice we have. <br/>
                     </BodyText>
                 </TextContainer>
             </InfoContainer>
@@ -163,7 +186,7 @@ function MenuSection() {
                 <ApplyContinaer>
                     <TextContainer>
                         <a href= "https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" style={{textDecoration: "none"}}>
-                            <TitleText style={{width:"30vw", textAlign: "center"}}>APPLY NOW</TitleText>
+                            <TitleText style={{width:"30vw", textAlign: "center", textDecoration: "underline"}}>APPLY NOW</TitleText>
                         </a>
                     </TextContainer>
                 </ApplyContinaer>
@@ -176,6 +199,9 @@ function MenuSection() {
                 </MoreContainer>
             </CenterContinaer>
             <InfoContainer>
+                <SoonContainer style={{height:"25%", width:"100%", left: "0%", top:"35%"}}>
+                    <TitleText style={{color: "white"}}>Coming Soon</TitleText>
+                </SoonContainer>
                 <TextContainer>
                     <TitleText style={{textAlign: "center"}}>Next Event</TitleText>
                     <ImageContainer/>

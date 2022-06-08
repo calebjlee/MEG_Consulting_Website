@@ -123,9 +123,15 @@ function BusinessFlatlay() {
 
     const [clickID, setClickID] = useState(0);
     const [previousID, setPreviousID] = useState(0);
-    const Titles = ["YOU SHOULD NOT BE SEEING THIS","Kaufman: Insurance & Portfolio Management","Workforce Software: Technology and Operations","Filson: Supply Chain Management","Underground Printing: Marketing","Zingerman's: Financial Restructuring","MadDog: Technology & Venture Capital","Tremec: Global Operations","Project Title 8"]
-    const sample = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-    const Body = [sample,sample,sample,sample,sample,sample,sample,sample,sample,sample,sample]
+    const Titles = ["YOU SHOULD NOT BE SEEING THIS","Kaufman: Insurance & Portfolio Management","Workforce Software: Technology and Operations","Filson: Supply Chain Management","Underground Printing: Marketing","Zingerman's: Financial Restructuring","MadDog: Technology & Venture Capital","Tremec: Global Operations"]
+    const TremecText = "TREMEC is a leading manufacturer of automobile components. We worked with TREMEC's engineering and finance team to develop a method to baseline ED&D (Engineering Development and Design) for a given project and track spending over time, predicting significant variances and providing key process indicators that can aid leadership in making decisions."
+    const KaufmanText = "H.W. Kaufman houses Atain Insurance, an insurance company within the Financial industry. We worked with Atain Insurance to analyze their fixed income portfolios and identify causes for differences in returns from two portfolio managers. This included analyzing compositions of the portfolios, such as maturities, credit ratings, and industries, and investigating correlations with economic events."
+    const WorkforceText = "Workforce Software creates powerful workforce management software for companies including Air Canada, Honda and Nike. We developed a report to help optimize the client’s customer service process flows and provide recommendations on where to improve within specific teams and operations."
+    const FilsonText = "Filson is an American privately owned outfitter and manufacturer of goods for outdoor enthusiasts. We worked on handling Filson's unmet demand problem. We worked through analyzing purchasing and waitlisting data to find problem areas and address them using UX/operational changes to their website to better customer experience."
+    const UgpText = "Underground Printing is a custom t-shirt retailer. We were tasked with developing a go to market strategy for the shirt fundraising part of the business. This included help defining ideal customers, coordinating UGP's core messaging, and defining the correct position within the market for launch."
+    const ZingermanText = "Zingerman, a local bakery, uses a specialized software to deal with the finances of their many locations called the Zingerman's Service Network (ZSN). We provided ZSN with a new funding model through research of market rates for financial services and a marketing deliverable to promote the model to the Zingerman’s community of businesses."
+    const MadDogText = "We worked with MadDog Technology, a venture capital firm, to lay the ground work for their second fund by creating an organizational structure, researching industry success metrics, preparing compensation information and a library of potential institutional investors. Our research helped gain a better understanding of the positioning of the new market"
+    const Body = ["YOU SHOULD NOT BE SEEING THIS",KaufmanText,WorkforceText,FilsonText,UgpText,ZingermanText,MadDogText,TremecText]
     
 
   return (
@@ -133,13 +139,13 @@ function BusinessFlatlay() {
       <NextSection ScrollNext={151} ScrollAlready={1050} color="black"/>
       <FlatlayContainer>
         <FlatlayImage src={background} />
-        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID === 1 ? "20vh":"-50vh" ) : "8vh", left: clickID !== 1 ? "5vh":"13vh" }} onClick={() => {clickID === 0 ? setClickID(1):setClickID(0); setPreviousID(1); }}>
+        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID === 1 ? "20vh":"-50vh" ) : "12vh", left: clickID !== 1 ? "5vh":"13vh" }} onClick={() => {clickID === 0 ? setClickID(1):setClickID(0); setPreviousID(1); }}>
           <ObjectImage src={notebook} style={{ height: "35vh" }} />
         </ObjectContainer>
-        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID === 2 ? "20vh":"-50vh" ) : "6vh", left: clickID !== 2? "33vh":"2vh" }} onClick={() => {clickID === 0 ? setClickID(2):setClickID(0); setPreviousID(2);}}>
+        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID === 2 ? "20vh":"-50vh" ) : "8vh", left: clickID !== 2? "33vh":"2vh" }} onClick={() => {clickID === 0 ? setClickID(2):setClickID(0); setPreviousID(2);}}>
           <ObjectImage src={laptop} style={{ height: "40vh" }} />
         </ObjectContainer>
-        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID === 3 ? "25vh":"-50vh" ) : "8vh", left: clickID !== 3? "87vh":"17vh" }} onClick={() => {clickID === 0 ? setClickID(3):setClickID(0); setPreviousID(3);}}>
+        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID === 3 ? "25vh":"-50vh" ) : "12vh", left: clickID !== 3? "87vh":"17vh" }} onClick={() => {clickID === 0 ? setClickID(3):setClickID(0); setPreviousID(3);}}>
           <ObjectImage src={clip} style={{ height: "35vh" }} />
         </ObjectContainer>
         <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID === 4 ? "30vh":"-50vh" ) : "10vh", left: clickID !== 4? "113vh":"25vh" }} onClick={() => {clickID === 0 ? setClickID(4):setClickID(0); setPreviousID(4);}}>
@@ -157,9 +163,9 @@ function BusinessFlatlay() {
         <ObjectContainer style={{ bottom: clickID !== 0 ? "80vh" : "50vh", left: "10vh"}}>
           <img src={plant} style={{ height: "20vh" }} />
         </ObjectContainer>
-        <ObjectContainer style={{ bottom: clickID === 0 ? "1vh" : "-50vh", left: "25vh"}}>
+        <ObjectContainer style={{ bottom: clickID === 0 ? "3vh" : "-50vh", left: "30vh"}}>
           <TextContainer>
-              <TitleText> IMPACT FOR <span style={{color: "#5A4FCF"}}> YOUR CAREER </span> </TitleText>
+              <TitleText style={{textAlign:"center", fontSize:"5vh", lineHeight:"90%"}}> <span style={{fontSize:"2.5vh"}}>Click an object to see how we can create</span><br/> IMPACT FOR <span style={{color: "#5A4FCF"}}> YOUR CAREER </span> </TitleText>
           </TextContainer>
         </ObjectContainer>
         <InfoContainer style={{ opacity: clickID !== 0 ? "1":"0", transitionDelay: clickID !==0 ? ".5s":"0s", transitionDuration: clickID !==0 ? ".5s":".25s"}}>

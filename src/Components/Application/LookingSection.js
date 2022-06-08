@@ -88,7 +88,7 @@ function LookingSection() {
           </BodyContainer>
           <SmallSpacer/>
           <a href= "https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-            <TitleText style={{textAlign: "right", width: "100%"}}>Apply Now</TitleText>
+            <TitleText style={{textAlign: "right", width: "100%", textDecoration: "underline"}}>Apply Now</TitleText>
           </a>
         </TextContainer>
         <Spacer />

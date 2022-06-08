@@ -1897,7 +1897,7 @@ function TeamSection() {
                     solutions. We'd love for you to get to know us better and join the team in the future.
                 </BodyText>
                 <SmallSpacer/>
-                <BodyText><b>(Hover over the picture to learn about one of us!)</b> </BodyText>
+                <BodyText><b>(Hover over or tap the picture to learn about one of us!)</b> </BodyText>
             </TextContainer>
             <TextContainer style={{display: hoverID !== 0 ? "flex":"none"}}>
                 <TitleText>{names[hoverID]}</TitleText>
@@ -1905,7 +1905,7 @@ function TeamSection() {
                 <BodyText>Year: {years[hoverID]}</BodyText>
                 <BodyText>Major: {majors[hoverID]}</BodyText>
                 <SmallSpacer/>
-                <BodyText>About Me: {abouts[0]} </BodyText>
+                {/*<BodyText>About Me: {abouts[0]} </BodyText>*/}
             </TextContainer>
         </SectionContainer>
     );

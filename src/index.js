@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import "./styles.css";
 
 import App from "./Pages/App";
@@ -10,8 +10,21 @@ import ScrollToTop from "./Components/General/ScrollToTop";
 import BDT from "./Pages/BDT";
 import Team from "./Pages/Team";
 import Application from "./Pages/Application";
+import PageNotFound from "./Components/General/PageNotFound";
+import ReactGA from "react-ga4";
 
 const rootElement = document.getElementById("root");
+
+ReactGA.initialize("your GA measurement id");
+ReactGA.send({ hitType: "pageview", page: "/" });
+ReactGA.send({ hitType: "pageview", page: "/projects" });
+ReactGA.send({ hitType: "pageview", page: "/about" });
+ReactGA.send({ hitType: "pageview", page: "/BDT" });
+ReactGA.send({ hitType: "pageview", page: "/team" });
+ReactGA.send({ hitType: "pageview", page: "/application" });
+
+
+
 ReactDOM.render(
   <StrictMode>
     <BrowserRouter>
@@ -23,6 +36,7 @@ ReactDOM.render(
         <Route path="/BDT" element={<BDT />} />
         <Route path="/team" element={<Team />} />
         <Route path="/application" element={<Application/>} />
+        <Route path="*" element={<PageNotFound/>} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

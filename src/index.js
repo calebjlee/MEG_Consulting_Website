@@ -16,12 +16,7 @@ import ReactGA from "react-ga4";
 const rootElement = document.getElementById("root");
 
 ReactGA.initialize("your GA measurement id");
-ReactGA.send({ hitType: "pageview", page: "/" });
-ReactGA.send({ hitType: "pageview", page: "/projects" });
-ReactGA.send({ hitType: "pageview", page: "/about" });
-ReactGA.send({ hitType: "pageview", page: "/BDT" });
-ReactGA.send({ hitType: "pageview", page: "/team" });
-ReactGA.send({ hitType: "pageview", page: "/application" });
+ReactGA.send({ hitType: "pageview", page: window.location.pathname});
 
 
 

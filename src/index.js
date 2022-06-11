@@ -15,7 +15,7 @@ import ReactGA from "react-ga4";
 
 const rootElement = document.getElementById("root");
 
-ReactGA.initialize("your GA measurement id");
+ReactGA.initialize("G-GC3DF08WD9");
 ReactGA.send({ hitType: "pageview", page: window.location.pathname});
 
 

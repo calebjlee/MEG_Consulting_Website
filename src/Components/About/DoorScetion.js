@@ -167,7 +167,7 @@ function DoorSection() {
   }
 
   {/*if the section moves within the "about us page" (i.e. a change in the vertical size of the sections above this section) 
-  this function has to be changed: to change I just guessed and checked with the sibctracted value and the min value until it
+  this function has to be changed: to change I just guessed and checked with the subtracted value and the min value until it
   looked right. you can console log temp to get the numbers right, sorry for the jank*/}
   {/*TODO: Make less jank*/}
   function calculatePosition() {

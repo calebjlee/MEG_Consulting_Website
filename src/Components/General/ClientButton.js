@@ -41,7 +41,7 @@ const ButtonContainer = styled.div`
   }
 `;
 
-const TextContaier = styled.div`
+const TextContainer = styled.div`
   margin-left: 1vmax;
 `;
 
@@ -77,11 +77,11 @@ function ClientButton(props) {
         <IconContainer>
           <BsPersonPlusFill color={"#1e1e1e"} />
         </IconContainer>
-        <TextContaier>
+        <TextContainer>
           <TitleText style={{ color: "#1e1e1e" }}>
             Potential Client? See What We Can Do
           </TitleText>
-        </TextContaier>
+        </TextContainer>
       </ButtonContainer>
     </Link>
   );

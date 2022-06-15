@@ -63,7 +63,7 @@ function BdtInfo() {
           have the opportunity to provide the solutions for real world problems.
           At our core, we believe in treating our people with kindness and
           respect. From the executive board to our applicants, we strive to
-          create an enviornment where everyone can learn and grow. We see our
+          create an environment where everyone can learn and grow. We see our
           people as not only business professionals but also as our mentors,
           teachers, peers, and most importantly, friends.
         </BodyText>

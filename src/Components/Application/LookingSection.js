@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 const SectionContainer = styled.div`
   width: 100vw;

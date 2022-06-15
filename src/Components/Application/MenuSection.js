@@ -69,7 +69,7 @@ const NewLine = styled.div`
     width:100vw;
 `
 
-const CenterContinaer = styled.div`
+const CenterContainer = styled.div`
     height: 54vh;
     width: 37vw;
     outline: solid 3px #1e1e1e;
@@ -78,7 +78,7 @@ const CenterContinaer = styled.div`
     flex-direction: column;
 `
 
-const ApplyContinaer = styled.div`
+const ApplyContainer = styled.div`
     height:27vh;
     outline: solid 3px #1e1e1e;
     margin-bottom: .75px;
@@ -182,22 +182,22 @@ function MenuSection() {
                     </BodyText>
                 </TextContainer>
             </InfoContainer>
-            <CenterContinaer>
-                <ApplyContinaer>
+            <CenterContainer>
+                <ApplyContainer>
                     <TextContainer>
                         <a href= "https://docs.google.com/forms/d/e/1FAIpQLSeHCJl6mIQEAhO2DPE_1x8zasWhHH_C8zrzZ_AK3pMhmnZ0BQ/viewform" target="_blank" style={{textDecoration: "none"}}>
                             <TitleText style={{width:"30vw", textAlign: "center", textDecoration: "underline"}}>APPLY NOW</TitleText>
                         </a>
                     </TextContainer>
-                </ApplyContinaer>
+                </ApplyContainer>
                 <MoreContainer>
                     <TextContainer>
-                        <HeaderText>Maxize Your Recruiting Experience</HeaderText>
+                        <HeaderText>Maximize Your Recruiting Experience</HeaderText>
                         <SmallSpacer/>
-                        <BodyText>Ross club recuiting can be an intimidating experience, but we're here to help you get thorugh it and to help you get the most out of it! Below we have advice and our recruiting philosiphy that'll help</BodyText>
+                        <BodyText>Ross club recruiting can be an intimidating experience, but we're here to help you get through it and to help you get the most out of it! Below we have advice and our recruiting philosophy that'll help</BodyText>
                     </TextContainer>
                 </MoreContainer>
-            </CenterContinaer>
+            </CenterContainer>
             <InfoContainer>
                 <SoonContainer style={{height:"25%", width:"100%", left: "0%", top:"35%"}}>
                     <TitleText style={{color: "white"}}>Coming Soon</TitleText>

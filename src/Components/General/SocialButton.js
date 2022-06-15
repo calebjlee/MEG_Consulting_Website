@@ -21,27 +21,12 @@ const ButtonContainer = styled.div`
   }
 `;
 
-const TextContaier = styled.div`
-  margin-left: 1vmax;
-`;
 
 const IconContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
-`;
-
-const TitleText = styled.h1`
-  display: inline-block;
-  font-size: 0.9vmax;
-  font-family: futura-pt, sans-serif;
-  margin: 0;
-  padding: 0;
-  font-weight: 700;
-  width: 14vmax;
-  text-align: left;
-  color: #1e1e1e;
 `;
 
 function SocialButton(props) {

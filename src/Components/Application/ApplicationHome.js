@@ -32,7 +32,7 @@ const TitleTextContainer = styled.div`
 
 const TitleText = styled.h1`
   font-size: 8vmin;
-  font-family: futura-pt, sans-serif;
+  font-family: montserrat-pt, sans-serif;
   margin: 0;
   padding: 0;
   -webkit-text-stroke: 0.03em #1e1e1e;

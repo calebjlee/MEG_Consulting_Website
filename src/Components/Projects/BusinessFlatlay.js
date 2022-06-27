@@ -35,6 +35,7 @@ const FlatlayContainer = styled.div`
   position: relative;
   margin-bottom: 50vh;
   overflow: hidden;
+  display: flex;
 `;
 
 const FlatlayImage = styled.img`
@@ -122,7 +123,9 @@ const Spacer = styled.div`
 function BusinessFlatlay() {
 
     const [clickID, setClickID] = useState(0);
+    const [hoverId, setHoverID] = useState(0);
     const [previousID, setPreviousID] = useState(0);
+    const Names = ["YOUR CAREER","KAUFMAN INSURANCE", "WORKFORCE SOFTWARE", "FILSON CLOTHING","UNDERGROUND PRINTING","ZINGERMAN'S FOODS","MADDOG VENTURES","TREMEC ENGINEERING"]
     const Titles = ["YOU SHOULD NOT BE SEEING THIS","Kaufman: Insurance & Portfolio Management","Workforce Software: Technology and Operations","Filson: Supply Chain Management","Underground Printing: Marketing","Zingerman's: Financial Restructuring","MadDog: Technology & Venture Capital","Tremec: Global Operations"]
     const TremecText = "TREMEC is a leading manufacturer of automobile components. We worked with TREMEC's engineering and finance team to develop a method to baseline ED&D (Engineering Development and Design) for a given project and track spending over time, predicting significant variances and providing key process indicators that can aid leadership in making decisions."
     const KaufmanText = "H.W. Kaufman houses Atain Insurance, an insurance company within the Financial industry. We worked with Atain Insurance to analyze their fixed income portfolios and identify causes for differences in returns from two portfolio managers. This included analyzing compositions of the portfolios, such as maturities, credit ratings, and industries, and investigating correlations with economic events."
@@ -139,33 +142,33 @@ function BusinessFlatlay() {
       <NextSection ScrollNext={151} ScrollAlready={1050} color="black"/>
       <FlatlayContainer>
         <FlatlayImage src={background} />
-        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID === 1 ? "20vh":"-50vh" ) : "12vh", left: clickID !== 1 ? "5vh":"13vh" }} onClick={() => {clickID === 0 ? setClickID(1):setClickID(0); setPreviousID(1); }}>
+        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID === 1 ? "20vh":"-50vh" ) : "12vh", left: clickID !== 1 ? "5vh":"13vh" }} onClick={() => {clickID === 0 ? setClickID(1):setClickID(0); setPreviousID(1); }} onMouseEnter={() => {setHoverID(1)}} onMouseLeave = {() => setHoverID(0)}>
           <ObjectImage src={notebook} style={{ height: "35vh" }} />
         </ObjectContainer>
-        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID === 2 ? "20vh":"-50vh" ) : "8vh", left: clickID !== 2? "33vh":"2vh" }} onClick={() => {clickID === 0 ? setClickID(2):setClickID(0); setPreviousID(2);}}>
+        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID === 2 ? "20vh":"-50vh" ) : "8vh", left: clickID !== 2? "33vh":"2vh", zIndex:"2" }} onClick={() => {clickID === 0 ? setClickID(2):setClickID(0); setPreviousID(2);}} onMouseEnter={() => {setHoverID(2)}} onMouseLeave = {() => setHoverID(0)}>
           <ObjectImage src={laptop} style={{ height: "40vh" }} />
         </ObjectContainer>
-        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID === 3 ? "25vh":"-50vh" ) : "12vh", left: clickID !== 3? "87vh":"17vh" }} onClick={() => {clickID === 0 ? setClickID(3):setClickID(0); setPreviousID(3);}}>
+        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID === 3 ? "25vh":"-50vh" ) : "12vh", left: clickID !== 3? "87vh":"17vh" }} onClick={() => {clickID === 0 ? setClickID(3):setClickID(0); setPreviousID(3);}} onMouseEnter={() => {setHoverID(3)}} onMouseLeave = {() => setHoverID(0)}>
           <ObjectImage src={clip} style={{ height: "35vh" }} />
         </ObjectContainer>
-        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID === 4 ? "30vh":"-50vh" ) : "10vh", left: clickID !== 4? "113vh":"25vh" }} onClick={() => {clickID === 0 ? setClickID(4):setClickID(0); setPreviousID(4);}}>
+        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID === 4 ? "30vh":"-50vh" ) : "10vh", left: clickID !== 4? "113vh":"25vh" }} onClick={() => {clickID === 0 ? setClickID(4):setClickID(0); setPreviousID(4);}} onMouseEnter={() => {setHoverID(4)}} onMouseLeave = {() => setHoverID(0)}>
           <ObjectImage src={phone} style={{ height: "20vh" }} />
         </ObjectContainer>
-        <ObjectContainer style={{ bottom: clickID !== 5 ? "30vh":"30vh", left: clickID !== 0? (clickID === 5 ? "20vh":"130vh" ) :"110vh" }} onClick={() => {clickID === 0 ? setClickID(5):setClickID(0); setPreviousID(5);}}>
+        <ObjectContainer style={{ bottom: clickID !== 5 ? "30vh":"30vh", left: clickID !== 0? (clickID === 5 ? "20vh":"130vh" ) :"110vh" }} onClick={() => {clickID === 0 ? setClickID(5):setClickID(0); setPreviousID(5);}} onMouseEnter={() => {setHoverID(5)}} onMouseLeave = {() => setHoverID(0)}>
           <ObjectImage src={cup} style={{ height: "17vh" }} />
         </ObjectContainer>
-        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID === 6 ? "25vh":"80vh" ) : "45vh", left: clickID !== 6? "87vh":"10vh" }} onClick={() => {clickID === 0 ? setClickID(6):setClickID(0); setPreviousID(6);}}>
+        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID === 6 ? "25vh":"80vh" ) : "45vh", left: clickID !== 6? "87vh":"10vh" }} onClick={() => {clickID === 0 ? setClickID(6):setClickID(0); setPreviousID(6);}} onMouseEnter={() => {setHoverID(6)}} onMouseLeave = {() => setHoverID(0)}>
           <ObjectImage src={bcase} style={{ height: "30vh" }} />
         </ObjectContainer>
-        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID === 7 ? "25vh":"80vh" ) : "47vh", left: clickID !== 7? "40vh":"7vh" }} onClick={() => {clickID === 0 ? setClickID(7):setClickID(0); setPreviousID(7);}}>
+        <ObjectContainer style={{ bottom: clickID !== 0 ? (clickID === 7 ? "25vh":"80vh" ) : "47vh", left: clickID !== 7? "40vh":"7vh" }} onClick={() => {clickID === 0 ? setClickID(7):setClickID(0); setPreviousID(7);}} onMouseEnter={() => {setHoverID(7)}} onMouseLeave = {() => setHoverID(0)}>
           <ObjectImage src={map} style={{ height: "30vh" }} />
         </ObjectContainer>
         <ObjectContainer style={{ bottom: clickID !== 0 ? "80vh" : "50vh", left: "10vh"}}>
           <img src={plant} style={{ height: "20vh" }} />
         </ObjectContainer>
-        <ObjectContainer style={{ bottom: clickID === 0 ? "3vh" : "-50vh", left: "30vh"}}>
+        <ObjectContainer style={{ bottom: clickID === 0 ? "3vh" : "-50vh", left: "50%",transform: "translateX(-50%)", whiteSpace:"nowrap"}}>
           <TextContainer>
-              <TitleText style={{textAlign:"center", fontSize:"5vh", lineHeight:"90%"}}> <span style={{fontSize:"2.5vh"}}>Click an object to see how we can create</span><br/> IMPACT FOR <span style={{color: "#5A4FCF"}}> YOUR CAREER </span> </TitleText>
+              <TitleText style={{textAlign:"center", fontSize:"5vh", lineHeight:"90%"}}> <span style={{fontSize:"2.5vh"}}>Click an object to see how we create</span><br/> IMPACT FOR <span style={{color: "#5A4FCF"}}> {Names[hoverId]} </span> </TitleText>
           </TextContainer>
         </ObjectContainer>
         <InfoContainer style={{ opacity: clickID !== 0 ? "1":"0", transitionDelay: clickID !==0 ? ".5s":"0s", transitionDuration: clickID !==0 ? ".5s":".25s"}}>

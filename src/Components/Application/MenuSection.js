@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import timeline from "../../Images/Application/timeline.png"
 import coffee from "../../Images/Application/coffee.png"
+import north from "../../Images/Application/north.png"
 
 const SectionContainer = styled.div`
   width: 100vw;
@@ -59,7 +60,7 @@ const InfoContainer = styled.div`
     outline: solid 3px #1e1e1e;
     margin: 1.5px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     position: relative;
 `
@@ -91,11 +92,19 @@ const MoreContainer = styled.div`
     height:27vh;
     outline: solid 3px #1e1e1e;
     margin-top: .75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `
 
 const TextContainer = styled.div`
     display: inline-block;
-    margin: 20px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    display: flex;
+    height: 80%;
+    flex-direction: column;
+    justify-content: space-evenly;
 `
 
 const TitleText = styled.h1`
@@ -122,7 +131,7 @@ const HeaderText = styled.h1`
 
 const BodyText = styled.p`
   display: inline-block;
-  font-size: calc(.9vmax + .9vmin);
+  font-size: calc(2.7vmin);
   font-family: futura-pt, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
@@ -137,8 +146,10 @@ const SmallSpacer = styled.div`
 
 const ImageContainer = styled.div`
     width:100%;
-    height: 30vh;
-    background-image: url(${coffee});
+    height: 25vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    background-image: url(${north});
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -167,9 +178,6 @@ function MenuSection() {
                 </TextContainer>
             </LogoContainer>
             <TimelineContainer>
-                <SoonContainer>
-                    <TitleText style={{color: "white"}}>Coming Soon</TitleText>
-                </SoonContainer>
             </TimelineContainer>
             <NewLine/>
             <InfoContainer>
@@ -199,14 +207,11 @@ function MenuSection() {
                 </MoreContainer>
             </CenterContainer>
             <InfoContainer>
-                <SoonContainer style={{height:"25%", width:"100%", left: "0%", top:"35%"}}>
-                    <TitleText style={{color: "white"}}>Coming Soon</TitleText>
-                </SoonContainer>
                 <TextContainer>
                     <TitleText style={{textAlign: "center"}}>Next Event</TitleText>
                     <ImageContainer/>
-                    <HeaderText style={{textAlign: "center"}}>Coffee Chats #1</HeaderText>
-                    <HeaderText style={{textAlign: "center"}}>Date and Location</HeaderText>
+                    <HeaderText style={{textAlign: "center", width: "100%"}}>Festifall North</HeaderText>
+                    <BodyText style={{textAlign: "center", width: "100%"}}> Gerstacker Grove <br/> 8/30 at 5-8 pm </BodyText>
                 </TextContainer>
             </InfoContainer>
             <NewLine/>

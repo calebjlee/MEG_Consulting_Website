@@ -36,9 +36,11 @@ ReactDOM.render(
         <Route path="/" element={<App />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<About />} />
+        <Route path="/about-us" element={<About />} />
         <Route path="/BDT" element={<BDT />} />
         <Route path="/team" element={<Team />} />
         <Route path="/application" element={<Application/>} />
+        <Route path="/applicants" element={<Application/>} />
         <Route path="*" element={<PageNotFound/>} />
       </Routes>
     </BrowserRouter>

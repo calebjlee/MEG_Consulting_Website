@@ -45,7 +45,6 @@ const TextContainer = styled.div`
   background-color: transparent;
   width: fit-content;
   max-width: 80vw;
-  margin: 0;
   padding: 0;
   overflow: hidden;
 `;
@@ -59,11 +58,12 @@ const TitleText = styled.h1`
   font-weight: 900;
   text-align: left;
   color: white;
+  text-align: center;
 `;
 
 const SmallSpacer = styled.div`
   width: 100%;
-  height: 45vmin;
+  height: 40vh;
 `;
 
 function AboutIntro() {

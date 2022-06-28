@@ -60,7 +60,7 @@ function ProfessionalSection() {
         <TitleText>COMPREHENSIVE PROFESSIONAL DEVELOPMENT</TitleText>
         <SmallSpacer />
         <BodyText>
-        At MEG we want to help our members get to pursue their dreams and get into the position they want to be in. Our professional development sessions, open to all members, helps our members learn key business skills applicable to many fields. Our mentor problem assigns new members an upperclassman to help guide them through the complicated recruitment process. Lastly, our projects have a strong focus on real world frameworks that you’ll see in the professional world.
+        At MEG we want to help our members get to pursue their dreams and get into the position they have always wanted. Our professional development sessions, open to all members, help our members learn key business skills applicable to many fields. Our mentor program assigns new members to an upperclassman to help guide them through the complicated business and technology recruitment process. Lastly, our projects have a strong focus on real world frameworks that you’ll see in the professional world.
         </BodyText>
       </TextContainer>
       <Spacer />

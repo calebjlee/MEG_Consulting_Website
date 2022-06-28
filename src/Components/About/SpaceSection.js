@@ -130,7 +130,7 @@ function SpaceSection() {
       <ShiftContainer>
         <VideoContainer>
           <NextSection ScrollNext={188.5} ScrollAlready={650} color="white" />
-          <TitleTextContainer>
+          <TitleTextContainer style={{ zIndex: "5"}}>
             <TitleText>OUT OF THIS WORLD PROJECTS</TitleText>
           </TitleTextContainer>
           <Video autoPlay playsInline loop muted>
@@ -141,7 +141,7 @@ function SpaceSection() {
         {/*This div shifts over the "Out of this world div"*/}
         <ShiftVideoContainer>
           <NextSection ScrollNext={376} ScrollAlready={650} color="white" />
-          <TitleTextContainer>
+          <TitleTextContainer style={{ zIndex: "5"}}>
             <TitleText style={{ textAlign: "right" }}>
               DOWN TO EARTH PEOPLE
             </TitleText>

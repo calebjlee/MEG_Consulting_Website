@@ -104,7 +104,7 @@ const ShiftContainer = styled.div`
 
 const TextContainer = styled.div`
   width: 60vw;
-  height: 50vh;
+  display: inline-block;
   background-color: #faccc7;
 `;
 

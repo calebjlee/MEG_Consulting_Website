@@ -4,7 +4,7 @@ import AboutHome from "../Components/About/AboutHome.js";
 import AboutIntro from "../Components/About/AboutIntro";
 import SpaceSection from "../Components/About/SpaceSection";
 import DifferentSection from "../Components/About/DifferentSection";
-import EmplyerSection from "../Components/About/EmployerSection";
+import EmployerSection from "../Components/About/EmployerSection";
 import JourneySection from "../Components/About/JourneySection";
 import ProfessionalSection from "../Components/About/ProfessionalSection";
 import DoorSection from "../Components/About/DoorScetion";
@@ -18,7 +18,7 @@ function About() {
       <DifferentSection />
       <SpaceSection />
       <DoorSection />
-      <EmplyerSection />
+      <EmployerSection />
       <JourneySection />
       <ProfessionalSection />
       <ToProjectSection />

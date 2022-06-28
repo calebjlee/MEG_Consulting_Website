@@ -19,6 +19,7 @@ const SectionContainer = styled.div`
 const TextContainer = styled.div`
   margin-left: 20vw;
   margin-right: 20vw;
+  display: inline-block;
   color: #1e1e1e;
 `;
 
@@ -67,7 +68,7 @@ function TipIntroSection(){
     return(
         <SectionContainer>
             <TextContainer>
-                <TitleText>We get it, </TitleText>
+                <TitleText>We get it, </TitleText> <br/>
                     <TitleText>Recruiting can be&nbsp;
                         <ShiftContainer>
                             <ShiftSpan style={{position:"relative"}}>confusing.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ShiftSpan>

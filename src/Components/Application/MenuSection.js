@@ -16,10 +16,6 @@ const SectionContainer = styled.div`
   flex-wrap: wrap;
   top: -1px;
   max-width: 100%;
-
-  @media (max-aspect-ratio: 1000/750){
-    display: none;
-  }
 `;
 
 const GridContainer = styled.div`
@@ -29,6 +25,11 @@ const GridContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
+    transform: translateX( .5vw);
+    @media (max-aspect-ratio: 610/835){
+        height: 54vh;
+        margin-top: 25vh;
+    }
 `
 
 const LogoContainer = styled.div`
@@ -39,6 +40,10 @@ const LogoContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-aspect-ratio: 1217/835){
+    display: none;
+    }
 `
 
 const TimelineContainer = styled.div`
@@ -52,6 +57,10 @@ const TimelineContainer = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+
+    @media (max-aspect-ratio: 1217/835){
+    width: 79vw;
+    }
 `
 
 const InfoContainer = styled.div`
@@ -63,6 +72,28 @@ const InfoContainer = styled.div`
     align-items: center;
     justify-content: center;
     position: relative;
+
+    @media (max-aspect-ratio: 1217/835){
+    width: 26vw;
+    }
+    @media (max-aspect-ratio: 610/835){
+        display:none;
+    }
+`
+
+const FaqContainer = styled.div`
+    height: 54vh;
+    width:20vw;
+    outline: solid 3px #1e1e1e;
+    margin: 1.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    @media (max-aspect-ratio: 1217/835){
+    display: none;
+    }
 `
 
 const NewLine = styled.div`
@@ -77,6 +108,15 @@ const CenterContainer = styled.div`
     margin: 1.5px;
     display:flex;
     flex-direction: column;
+
+    @media (max-aspect-ratio: 1217/835){
+    width: 53vw;
+    }
+
+    @media (max-aspect-ratio: 610/835){
+        height:27vh;
+        width: 80vw;
+    }
 `
 
 const ApplyContainer = styled.div`
@@ -95,6 +135,10 @@ const MoreContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-aspect-ratio: 610/835){
+        display:none;
+    }
 `
 
 const TextContainer = styled.div`
@@ -119,7 +163,7 @@ const TitleText = styled.h1`
 `
 
 const HeaderText = styled.h1`
-    font-size: 1.7vw;
+    font-size: 1.7vmax;
     font-family: futura-pt, sans-serif;
     margin: 0;
     padding: 0;
@@ -180,24 +224,23 @@ function MenuSection() {
             <TimelineContainer>
             </TimelineContainer>
             <NewLine/>
-            <InfoContainer>
+            <FaqContainer>
                 <TextContainer>
                     <HeaderText>FAQ's:</HeaderText>
-                    <SmallSpacer/>
                     <BodyText>
                         Q: I'm not in Ross, can I still apply? <br/> A: Yes, we accept all majors! <br/>
                         Q: Any advice to help me get in? <br/> A: There's a lot &#40;scroll down!&#41;, but being yourself and putting your best foot forward is the most important advice we have. <br/>
                     </BodyText>
                 </TextContainer>
-            </InfoContainer>
+            </FaqContainer>
             <CenterContainer>
-                <ApplyContainer>
-                    <TextContainer>
-                        <a href= "https://docs.google.com/forms/d/e/1FAIpQLSeHCJl6mIQEAhO2DPE_1x8zasWhHH_C8zrzZ_AK3pMhmnZ0BQ/viewform" target="_blank" style={{textDecoration: "none"}}>
-                            <TitleText style={{width:"30vw", textAlign: "center", textDecoration: "underline"}}>APPLY NOW</TitleText>
-                        </a>
-                    </TextContainer>
-                </ApplyContainer>
+                <a href= "https://docs.google.com/forms/d/e/1FAIpQLSeHCJl6mIQEAhO2DPE_1x8zasWhHH_C8zrzZ_AK3pMhmnZ0BQ/viewform" target="_blank" style={{textDecoration: "none"}}>
+                    <ApplyContainer>                    
+                        <TextContainer>
+                            <TitleText style={{width:"100%", textAlign: "center", textDecoration: "underline", fontSize:"250%"}}>Apply Now</TitleText>
+                        </TextContainer>
+                    </ApplyContainer>
+                </a>
                 <MoreContainer>
                     <TextContainer>
                         <HeaderText>Maximize Your Recruiting Experience</HeaderText>

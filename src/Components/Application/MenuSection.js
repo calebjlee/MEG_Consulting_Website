@@ -2,6 +2,13 @@ import styled from "styled-components";
 import timeline from "../../Images/Application/timeline.png"
 import coffee from "../../Images/Application/coffee.png"
 import north from "../../Images/Application/north.png"
+import central from "../../Images/Application/central.png"
+import ross from "../../Images/Application/ross.png"
+import mass from "../../Images/Application/mass.png"
+import workshop from "../../Images/Application/workshop.png"
+import dei from "../../Images/Application/dei.png"
+import apply from "../../Images/Application/apply.png"
+
 
 const SectionContainer = styled.div`
   width: 100vw;
@@ -213,6 +220,50 @@ const SoonContainer = styled.div`
 `
 
 function MenuSection() {
+
+    const eventDates = ["8/30/2022, 8:00:00 PM","9/1/2022, 8:30 PM","9/8/2022, 8:00 PM", "9/9/2022, 11:59 PM", "9/11/2022, 11:59 PM", "9/14/2022, 11:59 PM", "9/16/2022, 11:59 PM","9/18/2022, 11:59 PM", "9/20/2022, 11:59 PM" ]
+    const eventImages = [north, central, ross, mass, coffee, mass, workshop, dei, apply]
+    const eventName = ["Festifall North", "Festifall Center", "Ross Meet the Clubs", "Mass Meeting 1", "Coffee Chats", "Mass Meeting 2", "Case/Resume Workshop", "DEI Event", "Application Due"]
+    const eventLocation = ["Gerstacker Grove","Ingalls Mall", "Ross Wintergarden", "TBD", "TBD", "TBD", "TBD", "TBD", "Online"]
+    const eventTime = ["8/30 at 8:00 PM","9/1 at 8:30 PM","9/8 at 8:00 PM","TBD","TBD","TBD","TBD","TBD", "9/20 at 11:59 PM"]
+   
+
+    function eventDateDetector(){
+        const d = Date.parse(new Date().toLocaleString("en-US", {timeZone: "America/New_York"}))
+        //For debugging:
+        //const d = Date.parse("9/20/2022")
+        console.log(new Date().toLocaleString("en-US", {timeZone: "America/New_York"}))
+        if(d <= Date.parse(eventDates[0])){
+            return(0);
+        }
+        else if(d <= Date.parse(eventDates[1])){
+            return(1);
+        }
+        else if(d <= Date.parse(eventDates[2])){
+            return(2);
+        }
+        else if(d <= Date.parse(eventDates[3])){
+            return(3);
+        }
+        else if(d <= Date.parse(eventDates[4])){
+            return(4);
+        }
+        else if(d <= Date.parse(eventDates[5])){
+            return(5);
+        }
+        else if(d <= Date.parse(eventDates[6])){
+            return(6);
+        }
+        else if(d <= Date.parse(eventDates[7])){
+            return(7);
+        }
+        else{
+            return(8);
+        }
+    }
+
+    const eventID = eventDateDetector();
+
     return (
       <SectionContainer>
         <GridContainer>
@@ -252,9 +303,9 @@ function MenuSection() {
             <InfoContainer>
                 <TextContainer>
                     <TitleText style={{textAlign: "center"}}>Next Event</TitleText>
-                    <ImageContainer/>
-                    <HeaderText style={{textAlign: "center", width: "100%"}}>Festifall North</HeaderText>
-                    <BodyText style={{textAlign: "center", width: "100%"}}> Gerstacker Grove <br/> 8/30 at 5-8 pm </BodyText>
+                    <ImageContainer style={{backgroundImage: "url(" + eventImages[eventID] +")"}}/>
+                    <HeaderText style={{textAlign: "center", width: "100%"}}>{eventName[eventID]}</HeaderText>
+                    <BodyText style={{textAlign: "center", width: "100%"}}> {eventLocation[eventID]} <br/> {eventTime[eventID]} </BodyText>
                 </TextContainer>
             </InfoContainer>
             <NewLine/>

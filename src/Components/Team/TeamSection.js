@@ -96,6 +96,7 @@ const ShadowContainer = styled.div`
     position: absolute;
     top:0;
     left: 0;
+    transition: opacity .1s;
 `
 
 const HoverContainer = styled.div`
@@ -128,6 +129,7 @@ const TitleText = styled.h1`
   font-weight: 900;
   text-align: left;
   color: #1e1e1e;
+  transition: opacity .5s;
 `
 
 const BodyText = styled.p`
@@ -148,6 +150,7 @@ const SmallSpacer = styled.div`
 function TeamSection() {
 
     const [hoverID, setHoverID] = useState(0);
+    const [hoverID1, setHoverID1] = useState(0);
     const names = ["YOU SHOULD NOT BE SEEING THIS","Andrew Zhou", "Kapil Pownikar", "Ashley Winger", "Ragini Chaudhari", "Elizabeth Lu", "Anish Vankayalapati", "Anthony Remick", "Manan Jain", "Kiran Sequeira", "Zevik Citron", "Nakul Chadha", "Priyanka Madhavan", "Vincent Larsson", "Jacob Blumenstein", "Rachelle Deng", "Shubh Yadav", "Charlie Schuetze", "Dylan Roussel", "Meghna Gupta", "Caden Rubischko", "Brandon Geng", "Benny Shaevsky", "Alejandro Borrego" ]
     const majors = ["YOU SHOULD NOT BE SEEING THIS","BBA","Economics and Data Science","BBA","BHS & Economics","Computer Science","BBA","Computer Science","BBA","Computer Science","BBA","BBA","Mechanical Engineering and BBA","Industrial Operations","BBA","BBA","BBA","BBA","BBA","Mechanical Engineering","BBA","CS and BBA","BBA","Biochemistry"]
     const years = ["YOU SHOULD NOT BE SEEING THIS","Sophomore","Sophomore","Junior","Sophomore","Senior","Sophomore","Sophomore","Sophomore","Junior","Sophomore","Senior","Junior","Senior","Junior","Junior","Sophomore","Junior","Junior","Junior","Junior","Senior","Junior","Junior"]
@@ -156,7 +159,8 @@ function TeamSection() {
     return (
         <SectionContainer>
             <NextSection ScrollNext={151} ScrollAlready={470} color="black" />
-            <TeamContainer>
+            <TeamContainer onMouseEnter={()=>{setHoverID1(1)}} onMouseLeave={()=>{setHoverID1(0)}}>
+                <TitleText style={{position:"absolute", bottom: "5vh", left: "center", width:"100%", textAlign: "center", color:"white", opacity: hoverID1 ? "0%":"100%"}}>Hover Over to Meet Our Team</TitleText>
                 <TeamImage src={team}></TeamImage>
                 <ShadowContainer style={{opacity: hoverID === 1 ? "0":(hoverID === 0 ? "0":"1") }} >
                     <TeamImage src={andrew}></TeamImage>

@@ -1,11 +1,14 @@
 import styled from "styled-components";
 import { keyframes } from "styled-components";
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import Nav from "../Components/General/Nav";
 import WebButton from "../Components/General/WebButton";
 import ClientButton from "../Components/General/ClientButton";
 import SocialButton from "../Components/General/SocialButton";
+
+import ReactGA from "react-ga4";
+import rg4js from "raygun4js";
 
 const GoToHomePage = keyframes`
     0% { 
@@ -240,6 +243,22 @@ height:1vh;
 ` 
 
 function App() {
+
+
+  let location = useLocation();
+  ReactGA.initialize("G-GC3DF08WD9");
+
+  useEffect(() => {
+    ReactGA.set({ page: window.location.pathname }); // Update the user's current page
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname});
+    rg4js('trackEvent', {
+      type: 'pageView',
+      path: '/' + window.location.pathname // Or perhaps window.location.hash
+    });
+    console.log(`You changed the page to: ${location.pathname}`) 
+  },[location]) 
+
+
   const [scrollID, setScrollID] = useState(0);
 
   const scrollStatue = [

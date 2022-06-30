@@ -58,14 +58,7 @@ function BdtInfo() {
         <TitleText>MEG BUSINESS DESIGN AND TECHNOLOGY</TitleText>
         <SmallSpacer />
         <BodyText>
-          MEG Consulting is a pro-bono consulting group at the University of
-          Michigan. From local startups to million dollar companies, members
-          have the opportunity to provide the solutions for real world problems.
-          At our core, we believe in treating our people with kindness and
-          respect. From the executive board to our applicants, we strive to
-          create an environment where everyone can learn and grow. We see our
-          people as not only business professionals but also as our mentors,
-          teachers, peers, and most importantly, friends.
+          At the website team on MEG Consulting we are looking for exceptional designers and programmers to continue to create the website you are looking at right now! This website was 100% member made and we hope to keep it that way for years to come. So if you have an eye for design, a passion for coding, or are just plain old curious as to how a website is made, consider joining today! <br/><br/> Also if you see any visual bugs anywhere on the website or horrific syntax in the source code please reach out to gengb@umich.edu
         </BodyText>
       </TextContainer>
       <Spacer />

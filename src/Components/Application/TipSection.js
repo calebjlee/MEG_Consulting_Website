@@ -153,7 +153,7 @@ function TipSection(){
                         <TitleText>What are recruiting events and do I have to go to them?</TitleText>
                         <BsPlusLg style={{marginRight:"1vw", marginLeft:"5vw", transform: clickId === 4 ? "rotate(45deg)":"none", transition: "transform .5s", fontSize: "3vmin", flexShrink:0}}/>
                     </TitleTextContainer>
-                    <BodyText ref={measuredRef3}>Recruiting events are ways for you to get to know each club before applying. Clubs might hold mass meetings, coffee chats, case workshops, and DEI panels. While you don't need to go to any to apply, at MEG we strongly suggest you go because it will help you figure out what clubs you like &#40;See Recruiting is a Two Way Street&#41;  </BodyText>
+                    <BodyText ref={measuredRef3}>Recruiting events are ways for you to get to know each club before applying. Clubs might hold mass meetings, coffee chats, case workshops, and DEI panels. While you don't need to go to any to apply, at MEG we strongly suggest you go because it will help you figure out what clubs you like!  </BodyText>
                 </TipContainer>
                 
                 <TipContainer style={{height: clickId === 5 ? `${height4}px`:"15vh"}} onClick={() => clickId !== 5 ? setClickId(5):setClickId(0)}>

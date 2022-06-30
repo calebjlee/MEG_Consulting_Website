@@ -28,11 +28,11 @@ const SectionContainer = styled.div`
 const GridContainer = styled.div`
     margin: 15vh 15vw 15vh 15vw;
     height: 81vh;
-    width: 80vw;
+    width: 82vw;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    transform: translateX( .5vw);
+    transform: translateX( 1.5vw);
     @media (max-aspect-ratio: 610/835){
         height: 54vh;
         margin-top: 25vh;
@@ -223,7 +223,7 @@ function MenuSection() {
 
     const eventDates = ["8/30/2022, 8:00:00 PM","9/1/2022, 8:30 PM","9/8/2022, 8:00 PM", "9/9/2022, 11:59 PM", "9/11/2022, 11:59 PM", "9/14/2022, 11:59 PM", "9/16/2022, 11:59 PM","9/18/2022, 11:59 PM", "9/20/2022, 11:59 PM" ]
     const eventImages = [north, central, ross, mass, coffee, mass, workshop, dei, apply]
-    const eventName = ["Festifall North", "Festifall Center", "Ross Meet the Clubs", "Mass Meeting 1", "Coffee Chats", "Mass Meeting 2", "Case/Resume Workshop", "DEI Event", "Application Due"]
+    const eventName = ["Festifall North", "Festifall Central", "Ross Meet the Clubs", "Mass Meeting 1", "Coffee Chats", "Mass Meeting 2", "Case/Resume Workshop", "DEI Event", "Application Due"]
     const eventLocation = ["Gerstacker Grove","Ingalls Mall", "Ross Wintergarden", "TBD", "TBD", "TBD", "TBD", "TBD", "Online"]
     const eventTime = ["8/30 at 8:00 PM","9/1 at 8:30 PM","9/8 at 8:00 PM","TBD","TBD","TBD","TBD","TBD", "9/20 at 11:59 PM"]
    

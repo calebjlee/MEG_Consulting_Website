@@ -252,7 +252,7 @@ function App() {
     ReactGA.send({ hitType: "pageview", page: '/' + window.location.pathname });
     rg4js('trackEvent', {
       type: 'pageView',
-      path: '/' + window.location.pathname // Or perhaps window.location.hash
+      path: '/' + window.location.hash // Or perhaps window.location.hash
     });
     console.log(`You changed the page to: ${location.pathname}`) 
   },[location]) 

@@ -23,8 +23,7 @@ function About() {
   ReactGA.initialize("G-GC3DF08WD9");
 
   useEffect(() => {
-    ReactGA.set({ page: window.location.pathname }); // Update the user's current page
-    ReactGA.send({ hitType: "pageview", page: window.location.pathname});
+    ReactGA.send({ hitType: "pageview", page: '/' + window.location.pathname });
     rg4js('trackEvent', {
       type: 'pageView',
       path: '/' + window.location.pathname // Or perhaps window.location.hash

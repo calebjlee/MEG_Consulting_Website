@@ -31,7 +31,7 @@ import NextSection from "../General/NextSection";
 const SectionContainer = styled.div`
   width: 100vw;
   height: 150vh;
-  background-color: #D9D9FF;
+  background-color: #E0CFF2;
   display: flex;
   justify-content: space-around;
   align-items: center;

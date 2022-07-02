@@ -9,7 +9,7 @@ const TextShift = keyframes`
 const SectionContainer = styled.div`
   width: 100vw;
   height: 150vh;
-  background-color: #D9D9FF;
+  background-color: #E0CFF2;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -5,7 +5,7 @@ import NextSection from "../General/NextSection";
 const SectionContainer = styled.div`
   width: 100vw;
   height: 150vh;
-  background-color: #bfbdc7;
+  background-color: #D6F4FF;
   display: flex;
   justify-content: flex-end;
   position: sticky;
@@ -26,7 +26,7 @@ const ImageContainer = styled.div`
 const TextContainer = styled.div`
   width: 50vw;
   height: 100vh;
-  background-color: #bfbdc7;
+  background-color: #D9D9FF;
   display: flex;
   justify-content: flex-start;
   align-items: center;

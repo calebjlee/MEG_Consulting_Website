@@ -16,7 +16,7 @@ import NextSection from "../General/NextSection";
 const ProjectContainer = styled.div`
   height: 150vh;
   width: 100vw;
-  background-color: #c5c1c2;
+  background-color: #DFDFDF;
   display: flex;
   justify-content: center;
   align-items: center;

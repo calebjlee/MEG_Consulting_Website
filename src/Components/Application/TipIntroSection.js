@@ -4,7 +4,7 @@ import styled from "styled-components";
 const SectionContainer = styled.div`
   width: 100vw;
   height: 150vh;
-  background-color: #ffb061;
+  background-color: #C2C2FF;
   display: flex;
   justify-content: center;
   align-items: center;

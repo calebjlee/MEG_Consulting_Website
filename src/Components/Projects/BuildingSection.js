@@ -4,7 +4,7 @@ import building1 from "../../Images/Projects/Buildings/building1.jpg";
 const SectionContainer = styled.div`
   width: 100vw;
   height: 125vh;
-  background-color: #bec8da;
+  background-color: #D9D9FF;
   display: flex;
   justify-content: flex-end;
   position: sticky;
@@ -27,7 +27,7 @@ const ImageContainer = styled.div`
 const TextContainer = styled.div`
   width: 50vw;
   height: 100vh;
-  background-color: #bfbdc7;
+  background-color: #D9D9FF;
   display: flex;
   justify-content: center;
   align-items: center;

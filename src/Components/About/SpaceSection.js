@@ -18,7 +18,7 @@ const Shift = keyframes`
 const SectionContainer = styled.div`
   width: 100vw;
   height: 375vh;
-  background-color: #cce1cf;
+  background-color: #D9D9FF;
   position: sticky;
   top: -1px;
   max-width: 100%;

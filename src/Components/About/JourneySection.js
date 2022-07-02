@@ -5,7 +5,7 @@ import NextSection from "../../Components/General/NextSection.js";
 const SectionContainer = styled.div`
   width: 100vw;
   height: 150vh;
-  background-color: #cce1cf;
+  background-color: #D9D9FF;
   display: flex;
   justify-content: center;
   align-items: center;

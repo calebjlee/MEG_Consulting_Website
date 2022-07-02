@@ -26,7 +26,7 @@ const ImageContainer = styled.div`
 const TextContainer = styled.div`
   width: 50vw;
   height: 100vh;
-  background-color: #bfbdc7;
+  background-color: #D9D9FF;
   display: flex;
   justify-content: flex-start;
   align-items: center;

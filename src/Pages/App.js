@@ -66,7 +66,7 @@ const HomeTitleTextTop = styled.h1`
   font-family: futura-pt, sans-serif;
   margin: 0;
   padding: 0;
-  -webkit-text-stroke: 0.02em #dbbdd3;
+  -webkit-text-stroke: 0.02em #D9D9FF;
   text-decoration: none;
   color: transparent;
   font-weight: 900;
@@ -83,7 +83,7 @@ const HomeTitleTextBottom = styled.h1`
   font-family: futura-pt, sans-serif;
   margin: 0;
   padding: 0;
-  -webkit-text-stroke: 0.02em #dbbdd3;
+  -webkit-text-stroke: 0.02em #D9D9FF;
   text-decoration: none;
   color: transparent;
   font-weight: 900;
@@ -99,9 +99,9 @@ const HomeTitleTextCenter = styled.h1`
   font-family: futura-pt, sans-serif;
   margin: 0;
   padding: 0;
-  -webkit-text-stroke: 0.02em #dbbdd3;
+  -webkit-text-stroke: 0.02em #D9D9FF;
   text-decoration: none;
-  color: #dbbdd3;
+  color: #D9D9FF;
   font-weight: 900;
   line-height: 82%;
   padding-bottom: 0.5%;
@@ -116,7 +116,7 @@ const HomeContainer = styled.div`
 const HomePageContainer = styled.div`
   height: 100vh;
   width: 100vw;
-  background-color: #dbbdd3;
+  background-color: #D9D9FF;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -152,7 +152,7 @@ const HomeNavText = styled.h1`
   &:before {
     -webkit-text-stroke: 0;
     content: attr(data-title);
-    background: #dbbdd3;
+    background: #D9D9FF;
     position: absolute;
     left: 0;
     right: 0;
@@ -207,7 +207,7 @@ const ScrollText = styled.h1`
   margin: 0;
   padding: 0;
   font-weight: 900;
-  color: #dbbdd3;
+  color: #D9D9FF;
   animation-name: ${Scroll};
   animation-duration: 20s;
   animation-iteration-count: infinite;
@@ -271,7 +271,7 @@ function App() {
   return (
     <HomeContainer>
       <HomePageContainer
-        style={{ backgroundColor: scrollID !== 0 ? "#1e1e1e" : "#DBBDD3" }}
+        style={{ backgroundColor: scrollID !== 0 ? "#1e1e1e" : "#D9D9FF" }}
       >
 
         <ButtonContainer>
@@ -358,7 +358,7 @@ function App() {
               onMouseLeave={() => {
                 setScrollID(0);
               }}
-              style ={{WebkitTextStroke: (setScrollID!== 1 || setScrollID!== 0) ? "1px #dbbdd3": "none"}}
+              style ={{WebkitTextStroke: (setScrollID!== 1 || setScrollID!== 0) ? "1px #D9D9FF": "none"}}
             >
               ABOUT US
             </HomeNavText>
@@ -375,7 +375,7 @@ function App() {
               onMouseLeave={() => {
                 setScrollID(0);
               }}
-              style ={{WebkitTextStroke: (setScrollID!== 2 || setScrollID!== 0) ? "1px #dbbdd3": "none"}}
+              style ={{WebkitTextStroke: (setScrollID!== 2 || setScrollID!== 0) ? "1px #D9D9FF": "none"}}
             >
               OUR PROJECTS
             </HomeNavText>
@@ -392,7 +392,7 @@ function App() {
               onMouseLeave={() => {
                 setScrollID(0);
               }}
-              style ={{WebkitTextStroke: (setScrollID!== 3 || setScrollID!== 0) ? "1px #dbbdd3": "none"}}
+              style ={{WebkitTextStroke: (setScrollID!== 3 || setScrollID!== 0) ? "1px #D9D9FF": "none"}}
             >
               OUR TEAM
             </HomeNavText>
@@ -409,7 +409,7 @@ function App() {
               onMouseLeave={() => {
                 setScrollID(0);
               }}
-              style ={{WebkitTextStroke: (setScrollID!== 4 || setScrollID!== 0) ? "1px #dbbdd3": "none"}}
+              style ={{WebkitTextStroke: (setScrollID!== 4 || setScrollID!== 0) ? "1px #D9D9FF": "none"}}
             >
               APPLICATION
             </HomeNavText>

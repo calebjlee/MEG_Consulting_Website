@@ -31,7 +31,7 @@ import NextSection from "../General/NextSection";
 const SectionContainer = styled.div`
   width: 100vw;
   height: 150vh;
-  background-color: #d9d9ff;
+  background-color: #D9D9FF;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -160,7 +160,7 @@ function TeamSection() {
         <SectionContainer>
             <NextSection ScrollNext={151} ScrollAlready={470} color="black" />
             <TeamContainer onMouseEnter={()=>{setHoverID1(1)}} onMouseLeave={()=>{setHoverID1(0)}}>
-                <TitleText style={{position:"absolute", bottom: "5vh", left: "center", width:"100%", textAlign: "center", color:"white", opacity: hoverID1 ? "0%":"100%"}}>Hover Over to Meet Our Team</TitleText>
+                <TitleText style={{position:"absolute", bottom: "5vmin", left: "center", width:"100%", textAlign: "center", color:"white", opacity: hoverID1 ? "0%":"100%", zIndex:"999", fontSize:"4vmin"}}>Hover Over to Meet Our Team</TitleText>
                 <TeamImage src={team}></TeamImage>
                 <ShadowContainer style={{opacity: hoverID === 1 ? "0":(hoverID === 0 ? "0":"1") }} >
                     <TeamImage src={andrew}></TeamImage>

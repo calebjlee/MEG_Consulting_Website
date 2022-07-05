@@ -64,7 +64,6 @@ const SectionContainer = styled.div`
   align-content: center;
   position: relative;
   flex-wrap: wrap;
-  top: -1px;
   max-width: 100%;
 `;
 

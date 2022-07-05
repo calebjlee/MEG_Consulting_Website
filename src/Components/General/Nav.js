@@ -37,7 +37,7 @@ const NavContainer = styled.div`
   height:20vh;
   padding-bottom: 10vh;
   z-index:100;
-  transition: transform 1s;
+  transition: transform 1s, padding-bottom 1s;
 `;
 
 const NavSelectionContainer = styled.div`
@@ -238,7 +238,7 @@ function Nav(props) {
   };
 
   return (
-    <NavContainer style={{transform: (hideOnScroll !== 1) || (hoverNav) || (scrollDirection) ? "translateY(0vh)":"translateY(-20vh)"}}onMouseOver={()=>{setHoverNav(1)}} onMouseOut={()=>{setHoverNav(0)}}>
+    <NavContainer style={{transform: (hideOnScroll !== 1) || (hoverNav) || (scrollDirection) ? "translateY(0vh)":"translateY(-20vh)", paddingBottom: (hideOnScroll !== 1) || (hoverNav) || (scrollDirection) ? "0vh":"10vh"}}onMouseOver={()=>{setHoverNav(1)}} onMouseOut={()=>{setHoverNav(0)}}>
       <Link to="/">
         <LogoContainer >
           <LogoImage src={logos[props.color]} />

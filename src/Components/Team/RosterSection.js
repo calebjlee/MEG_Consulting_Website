@@ -43,6 +43,14 @@ import dylan0 from '../../Images/Team/headshots/dylan0.png'
 import anish0 from '../../Images/Team/headshots/anish0.png'
 import maxym0 from '../../Images/Team/headshots/maxym0.png'
 import jack0 from '../../Images/Team/headshots/jack0.png'
+import charlie0 from '../../Images/Team/headshots/charlie0.png'
+import charlie1 from '../../Images/Team/headshots/charlie1.png'
+import kapil0 from '../../Images/Team/headshots/kapil0.png'
+import kapil1 from '../../Images/Team/headshots/kapil1.png'
+import manan0 from '../../Images/Team/headshots/manan0.png'
+import john0 from '../../Images/Team/headshots/john0.png'
+import manan1 from '../../Images/Team/headshots/manan1.png'
+import john1 from '../../Images/Team/headshots/john1.png'
 
 
 const SectionContainer = styled.div`
@@ -63,7 +71,7 @@ const SectionContainer = styled.div`
 const PositionContainer = styled.div`
   width: 90%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   align-content: center;
@@ -119,7 +127,7 @@ const TextContainer = styled.div`
     height: fit-content;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     padding-left: 2vmin;
     padding-right: 2vmin;
@@ -189,6 +197,7 @@ function RosterSection (){
             ID: 3
         },
         {name: 'Rachelle Deng', image0: rachelle0, image1: rachelle1, position: 'VP of Operations & Finance', ID: 4},
+        {name: 'Charlie Schuetze', image0: charlie0, image1: charlie1, position: 'Eboard', ID: 5},
         {
             name: "Brandon Geng",
             image0: brandon0,
@@ -213,12 +222,15 @@ function RosterSection (){
     {name: 'Genta Gollopeni', image0: genta0, image1: genta1, position: 'Analyst', ID: 16},
     {name: 'Ragini Chaudhari', image0: ragini0, image1: ragini1, position: 'Analyst', ID: 17},
     {name: 'Jackie Newman', image0: jackie0, image1: jackie1, position: 'Analyst', ID: 18},
-    {name: 'Tylan Porterfield', image0: tylan0, image1: tylan1, position: 'Analyst', ID: 19}]
+    {name: 'Tylan Porterfield', image0: tylan0, image1: tylan1, position: 'Analyst', ID: 19},
+    {name: 'Jack Watson', image0: jack0, image1: jack1, position: 'Analyst', ID: 23},
+    {name: 'Manan Jain', image0: manan0, image1: manan1, position: 'Analyst', ID: 25},
+    {name: 'John Zhou', image0: john0, image1: john1, position: 'Analyst', ID: 26}]
 
     const managerData = [{name: 'Dylan Roussel', image0: dylan0, image1: dylan1, position: 'Project Manager', ID: 20},
     {name: 'Anish Vankayalapati', image0: anish0, image1: anish1, position: 'Project Manager', ID: 21},
     {name: 'Maxym Wolberg', image0: maxym0, image1: maxym1, position: 'Project Manager', ID: 22},
-    {name: 'Jack Watson', image0: jack0, image1: jack1, position: 'Project Manager', ID: 23},]
+    {name: 'Kapil Pownikar', image0: kapil0, image1: kapil1, position: 'Project Manager', ID: 24}]
 
     return(
         <SectionContainer>

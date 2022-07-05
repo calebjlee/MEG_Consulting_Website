@@ -9,6 +9,7 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import ReactGA from "react-ga4";
 import rg4js from "raygun4js";
+import RosterSection from "../Components/Team/RosterSection";
 
 function Team() {
 
@@ -30,6 +31,7 @@ function Team() {
       <TeamIntro />
       <TeamIntro1 />
       <TeamSection/>
+      <RosterSection/>
       <ToApplicationSection/>
       <Nav color={0} home={1} />
     </div>

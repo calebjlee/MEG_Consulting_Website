@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import logo from "../../Images/Home/logo1.png";
 import logo1 from "../../Images/Home/logo2.png";
-import { useState, useEffect } from "react";
+import { useRef, useLayoutEffect, useState, useEffect, useCallback } from "react";
 import {BsList} from "react-icons/bs"
 
 const api = {
@@ -28,13 +28,16 @@ const LogoImage = styled.img`
 
 const NavContainer = styled.div`
   position: fixed;
-  top: 4vw;
+  top: 0vw;
   left: 4vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 93vw;
+  height:20vh;
+  padding-bottom: 10vh;
   z-index:100;
+  transition: transform 1s;
 `;
 
 const NavSelectionContainer = styled.div`
@@ -100,9 +103,101 @@ const DropdownContent = styled.div`
   }
 `
 
+const isBrowser = typeof window !== `undefined`
+
+function getScrollPosition({ element, useWindow }) {
+  if (!isBrowser) return { x: 0, y: 0 }
+
+  const target = element ? element.current : document.body
+  const position = target.getBoundingClientRect()
+
+  return useWindow
+    ? { x: window.scrollX, y: window.scrollY }
+    : { x: position.left, y: position.top }
+}
+
+export function useScrollPosition(effect, deps, element, useWindow, wait) {
+  const position = useRef(getScrollPosition({ useWindow }))
+
+  let throttleTimeout = null
+
+  const callBack = () => {
+    const currPos = getScrollPosition({ element, useWindow })
+    effect({ prevPos: position.current, currPos })
+    position.current = currPos
+    throttleTimeout = null
+  }
+
+  useLayoutEffect(() => {
+    const handleScroll = () => {
+      if (wait) {
+        if (throttleTimeout === null) {
+          throttleTimeout = setTimeout(callBack, wait)
+        }
+      } else {
+        callBack()
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, deps)
+}
+
 function Nav(props) {
   const [data, setData] = useState(undefined);
   const [error, setError] = useState(undefined);
+
+  const [hideOnScroll, setHideOnScroll] = useState(0);
+  const [hoverNav, setHoverNav] = useState(0);
+
+  const [y,
+    setY] = useState(document.scrollingElement.scrollHeight);
+  const [scrollDirection,
+    setScrollDirection] = useState("you have not scrolled yet");
+
+    const handleNavigation = useCallback((e) => {
+
+      if (y > window.scrollY) {
+        setScrollDirection(1);
+        console.log("scrolling up");
+      } else if (y < window.scrollY) {
+        setScrollDirection(0);
+        console.log("scrolling down");
+      }
+      setY(window.scrollY)
+    }, [y]);
+  
+    useEffect(() => {
+  
+      window.addEventListener("scroll", handleNavigation);
+  
+      return () => {
+        window.removeEventListener("scroll", handleNavigation);
+      };
+    }, [handleNavigation]);
+
+
+  function vh(v) {
+    var h = Math.max(
+      document.documentElement.clientHeight,
+      window.innerHeight || 0
+    );
+    return -1*(v * 100) / h;
+  }
+
+  useScrollPosition(({ currPos }) => {
+    var body = document.body,
+    html = document.documentElement;
+
+    var height = Math.max( body.scrollHeight, body.offsetHeight, 
+                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+    var pos = currPos.y
+    if(vh(pos) >= 75){setHideOnScroll(1)}
+    else{setHideOnScroll(0)}
+  }, [hideOnScroll])
+
 
   useEffect(() => {
     // call an API and in the success or failure fill the data buy using setData function
@@ -143,16 +238,16 @@ function Nav(props) {
   };
 
   return (
-    <NavContainer>
+    <NavContainer style={{transform: (hideOnScroll !== 1) || (hoverNav) || (scrollDirection) ? "translateY(0vh)":"translateY(-20vh)"}}onMouseOver={()=>{setHoverNav(1)}} onMouseOut={()=>{setHoverNav(0)}}>
       <Link to="/">
-        <LogoContainer>
+        <LogoContainer >
           <LogoImage src={logos[props.color]} />
         </LogoContainer>
       </Link>
       <NavSelectionContainer
         style={{
           color: props.color ? "white" : "#1e1e1e",
-          display: props.home ? "felx" : "none"
+          display: props.home ? "felx" : "none",
         }}
       >
         <Link to="/about" style={{ textDecoration: "none", color: "#1e1e1e" }}>

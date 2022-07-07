@@ -175,7 +175,7 @@ function RosterSection (){
 
     const eboardData = [
         {
-            name: "Vincent Larson",
+            name: "Vincent Larsson",
             image0: vinnie0,
             image1: vinnie1,
             position: "President",
@@ -196,7 +196,7 @@ function RosterSection (){
             ID: 3
         },
         {name: 'Rachelle Deng', image0: rachelle0, image1: rachelle1, position: 'VP of Operations & Finance', ID: 4},
-        {name: 'Charlie Schuetze', image0: charlie0, image1: charlie1, position: 'Eboard', ID: 5},
+        {name: 'Charlie Schuetze', image0: charlie0, image1: charlie1, position: 'VP of Internal', ID: 5},
         {
             name: "Brandon Geng",
             image0: brandon0,
@@ -224,12 +224,13 @@ function RosterSection (){
     {name: 'Tylan Porterfield', image0: tylan0, image1: tylan1, position: 'Analyst', ID: 19},
     {name: 'Jack Watson', image0: jack0, image1: jack1, position: 'Analyst', ID: 23},
     {name: 'Manan Jain', image0: manan0, image1: manan1, position: 'Analyst', ID: 25},
-    {name: 'John Zhou', image0: john0, image1: john1, position: 'Analyst', ID: 26}]
-
-    const managerData = [{name: 'Dylan Roussel', image0: dylan0, image1: dylan1, position: 'Project Manager', ID: 20},
+    {name: 'John Zhou', image0: john0, image1: john1, position: 'Analyst', ID: 26},
+    {name: 'Dylan Roussel', image0: dylan0, image1: dylan1, position: 'Project Manager', ID: 20},
     {name: 'Anish Vankayalapati', image0: anish0, image1: anish1, position: 'Project Manager', ID: 21},
     {name: 'Maxym Wolberg', image0: maxym0, image1: maxym1, position: 'Project Manager', ID: 22},
     {name: 'Kapil Pownikar', image0: kapil0, image1: kapil1, position: 'Project Manager', ID: 24}]
+
+    const managerData = []
 
     return(
         <SectionContainer>
@@ -271,7 +272,7 @@ function RosterSection (){
                 </CardContainer>
             ))}
             </PositionContainer>
-            <PositionContainer>
+            {/*<PositionContainer>
             <SmallSpacer/>
             <TextContainer>
                 <TitleText style={{marginLeft: "2vmin"}}>Project Managers</TitleText>
@@ -289,7 +290,7 @@ function RosterSection (){
                     </TextContainer>
                 </CardContainer>
             ))}
-            </PositionContainer>
+            </PositionContainer>*/}
             <PositionContainer>
             <SmallSpacer/>
             <TextContainer>

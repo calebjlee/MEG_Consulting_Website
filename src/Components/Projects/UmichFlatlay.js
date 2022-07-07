@@ -90,7 +90,9 @@ const InfoContainer = styled.div`
     z-index: 0;
     color: #1e1e1e;
     background-color: rgba(200,200,200,.5);
-    padding: 1vh;
+    padding: 2vh;
+    padding-top: 0;
+    border-radius: 0 0 2vh 2vh;
 `
 
 const Spacer = styled.div`
@@ -109,7 +111,8 @@ const TitleContainer = styled.div`
   transition: opacity 1s linear 1s;
   z-index: 0;
   background-color: rgba(200,200,200,.5);
-  padding: 1vh;
+  padding: 2vh;
+  border-radius: 2vh 2vh 0vh 0vh;
 `
 
 const BackButton = styled.div`

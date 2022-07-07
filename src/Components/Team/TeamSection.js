@@ -96,7 +96,7 @@ const ShadowContainer = styled.div`
     position: absolute;
     top:0;
     left: 0;
-    transition: opacity .05s;
+    transition: opacity .25s;
 `
 
 const HoverContainer = styled.div`

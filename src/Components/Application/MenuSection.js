@@ -26,7 +26,7 @@ const SectionContainer = styled.div`
 `;
 
 const GridContainer = styled.div`
-    margin: 15vh 15vw 15vh 15vw;
+    margin: 10vh 15vw 15vh 15vw;
     height: 81vh;
     width: 82vw;
     display: flex;

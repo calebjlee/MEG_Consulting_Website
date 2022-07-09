@@ -51,6 +51,14 @@ import manan0 from '../../Images/Team/headshots/manan0.png'
 import john0 from '../../Images/Team/headshots/john0.png'
 import manan1 from '../../Images/Team/headshots/manan1.png'
 import john1 from '../../Images/Team/headshots/john1.png'
+import jacob0 from '../../Images/Team/headshots/jacob0.png'
+import kiran0 from '../../Images/Team/headshots/kiran0.png'
+import carly0 from '../../Images/Team/headshots/carly0.png'
+import madelyn0 from '../../Images/Team/headshots/madelyn0.png'
+import jacob1 from '../../Images/Team/headshots/jacob1.png'
+import kiran1 from '../../Images/Team/headshots/kiran1.png'
+import carly1 from '../../Images/Team/headshots/carly1.png'
+import madelyn1 from '../../Images/Team/headshots/madelyn1.png'
 
 
 const SectionContainer = styled.div`
@@ -165,10 +173,6 @@ const CardHeader = styled.h2`
   color: #4d4d4d;
 `
 
-const test = ({data}) => (
-    <h1>{data.name}</h1>
-);
-
 function RosterSection (){
 
     const [hoverID2, setHoverID2] = useState(0);
@@ -179,56 +183,60 @@ function RosterSection (){
             image0: vinnie0,
             image1: vinnie1,
             position: "President",
-            ID: 1
+            ID: 1, url: 'https://www.linkedin.com/in/vinnielarsson'
         },
         {
             name: "Benny Shaevsky",
             image0: benny0,
             image1: benny1,
             position: "VP of Client Acquisition",
-            ID: 2
+            ID: 2, url: 'https://www.linkedin.com/in/benny-shaevsky'
         },
         {
             name: "Priyanka Madhavan",
             image0: pri0,
             image1: pri1,
             position: "VP of Recruitment",
-            ID: 3
+            ID: 3, url: 'https://www.linkedin.com/in/primadhavan/'
         },
-        {name: 'Rachelle Deng', image0: rachelle0, image1: rachelle1, position: 'VP of Operations & Finance', ID: 4},
-        {name: 'Charlie Schuetze', image0: charlie0, image1: charlie1, position: 'VP of Internal', ID: 5},
+        {name: 'Rachelle Deng', image0: rachelle0, image1: rachelle1, position: 'VP of Operations & Finance', ID: 4, url: 'https://www.linkedin.com/in/rachelle-deng-4a7203202/'},
+        {name: 'Charlie Schuetze', image0: charlie0, image1: charlie1, position: 'VP of Internal Development', ID: 5, url: 'https://linkedin.com/in/charlie-schuetze'},
+        {name: 'Jacob Blumenstein', image0: jacob0, image1: jacob1, position: 'VP of External Development', ID: 30, url: 'https://www.linkedin.com/in/jacobblumenstein/'},
         {
             name: "Brandon Geng",
             image0: brandon0,
             image1: brandon1,
             position: "VP of Community Engagement",
-            ID: 7
+            ID: 7, url: 'https://www.linkedin.com/in/brandon-geng-5b99241b6/'
         }
     ]
 
     const seniorData = [
-        {name: 'Lizzy Lu', image0: lizzy0, image1: lizzy1, position: 'Senior Advisor', ID: 8},
-        {name: 'Ben Millen', image0: ben0, image1: ben1, position: 'Senior Advisor', ID: 9},
-        {name: 'Hana Yu', image0: hana0, image1: hana1, position: 'Senior Advisor', ID: 10},
-        {name: 'Kate Miele ', image0: kate0, image1: kate1, position: 'Senior Advisor', ID: 11},
-        {name: 'Brianna Patel', image0: brianna0, image1: brianna1, position: 'Senior Advisor', ID: 12}
+        {name: 'Lizzy Lu', image0: lizzy0, image1: lizzy1, position: 'Senior Advisor', ID: 8, url: 'https://www.linkedin.com/in/elizabeth-lu/'},
+        {name: 'Ben Millen', image0: ben0, image1: ben1, position: 'Senior Advisor', ID: 9, url: 'https://www.linkedin.com/in/benjmillen'},
+        {name: 'Hana Yu', image0: hana0, image1: hana1, position: 'Senior Advisor', ID: 10, url: 'https://www.linkedin.com/in/hanayu2001/'},
+        {name: 'Kate Miele ', image0: kate0, image1: kate1, position: 'Senior Advisor', ID: 11, url: 'https://www.linkedin.com/in/kate-miele-320'},
+        {name: 'Brianna Patel', image0: brianna0, image1: brianna1, position: 'Senior Advisor', ID: 12, url: 'https://www.linkedin.com/in/brianna-patel/'},
+        {name: 'Carly May', image0: carly0, image1: carly1, position: 'Senior Advisor', ID: 27, url: 'https://www.linkedin.com/in/carly-may-b33792194'},
+        {name: 'Madelyn Woodrow', image0: madelyn0, image1: madelyn1, position: 'Senior Advisor', ID: 28, url: "https://www.linkedin.com/in/madelyn-woodrow-1446661a0"}
     ]
 
     const analystData = [
-    {name: 'Alejandro Borrego', image0: alejandro0, image1: alejandro1, position: 'Analyst', ID: 13},
-    {name: 'Caden Rubischko', image0: caden0, image1: caden1, position: 'Analyst', ID: 14},
-    {name: 'Anthony Remick', image0: anthony0, image1: anthony1, position: 'Analyst', ID: 15},
-    {name: 'Genta Gollopeni', image0: genta0, image1: genta1, position: 'Analyst', ID: 16},
-    {name: 'Ragini Chaudhari', image0: ragini0, image1: ragini1, position: 'Analyst', ID: 17},
-    {name: 'Jackie Newman', image0: jackie0, image1: jackie1, position: 'Analyst', ID: 18},
-    {name: 'Tylan Porterfield', image0: tylan0, image1: tylan1, position: 'Analyst', ID: 19},
-    {name: 'Jack Watson', image0: jack0, image1: jack1, position: 'Analyst', ID: 23},
-    {name: 'Manan Jain', image0: manan0, image1: manan1, position: 'Analyst', ID: 25},
-    {name: 'John Zhou', image0: john0, image1: john1, position: 'Analyst', ID: 26},
-    {name: 'Dylan Roussel', image0: dylan0, image1: dylan1, position: 'Project Manager', ID: 20},
-    {name: 'Anish Vankayalapati', image0: anish0, image1: anish1, position: 'Project Manager', ID: 21},
-    {name: 'Maxym Wolberg', image0: maxym0, image1: maxym1, position: 'Project Manager', ID: 22},
-    {name: 'Kapil Pownikar', image0: kapil0, image1: kapil1, position: 'Project Manager', ID: 24}]
+    {name: 'Alejandro Borrego', image0: alejandro0, image1: alejandro1, position: 'Analyst', ID: 13, url: 'https://www.linkedin.com/in/alejandro-borrego-8329671b1'},
+    {name: 'Caden Rubischko', image0: caden0, image1: caden1, position: 'Analyst', ID: 14, url: 'https://www.linkedin.com/in/caden-rubischko-7a3a08206/'},
+    {name: 'Anthony Remick', image0: anthony0, image1: anthony1, position: 'Analyst', ID: 15, url: 'https://www.linkedin.com/in/anthony-remick'},
+    {name: 'Genta Gollopeni', image0: genta0, image1: genta1, position: 'Analyst', ID: 16, url: 'https://www.linkedin.com/in/gentagollopeni'},
+    {name: 'Ragini Chaudhari', image0: ragini0, image1: ragini1, position: 'Analyst', ID: 17, url: 'https://www.linkedin.com/in/ragini-chaudhari-178369191/'},
+    {name: 'Jackie Newman', image0: jackie0, image1: jackie1, position: 'Analyst', ID: 18, url: 'https://www.linkedin.com/in/newman-jacqueline/'},
+    {name: 'Tylan Porterfield', image0: tylan0, image1: tylan1, position: 'Analyst', ID: 19, url: 'https://www.linkedin.com/mwlite/in/tylan-porterfield-780a221bb'},
+    {name: 'Jack Watson', image0: jack0, image1: jack1, position: 'Analyst', ID: 23, url: 'https://www.linkedin.com/in/jack-m-watson/'},
+    {name: 'Manan Jain', image0: manan0, image1: manan1, position: 'Analyst', ID: 25, url: 'https://www.linkedin.com/in/manan-jain1803/'},
+    {name: 'John Zhou', image0: john0, image1: john1, position: 'Analyst', ID: 26, url: "https://www.linkedin.com/in/john-zhou-45a878166/"},
+    {name: 'Dylan Roussel', image0: dylan0, image1: dylan1, position: 'Analyst', ID: 20, url: 'https://www.linkedin.com/in/dylan-roussel-4a79891b4/'},
+    {name: 'Anish Vankayalapati', image0: anish0, image1: anish1, position: 'Analyst', ID: 21, url: 'https://linkedin.com/in/anish-vankayalapati-6b4914223'},
+    {name: 'Maxym Wolberg', image0: maxym0, image1: maxym1, position: 'Analyst', ID: 22, url: 'https://www.linkedin.com/in/maxymw/'},
+    {name: 'Kapil Pownikar', image0: kapil0, image1: kapil1, position: 'Analyst', ID: 24, url: 'https://www.linkedin.com/in/kapil-pownikar'},
+    {name: 'Kiran Sequeira', image0: kiran0, image1: kiran1, position: 'Analyst', ID: 29, url: "https://www.linkedin.com/in/kiran-sequeira"},]
 
     const managerData = []
 
@@ -241,6 +249,28 @@ function RosterSection (){
             </TextContainer>
             <NewLine/>
                 {eboardData.map((data) => (
+                    <a href={data.url} target="_blank" style={{textDecoration:"none"}}>
+                        <CardContainer >
+                            <CardImage style={{backgroundImage: `url(${data.image0})`}} />
+                            <CardImageHover onMouseEnter={()=>setHoverID2(data.ID)} onMouseLeave={()=>setHoverID2(0)} style={{opacity: hoverID2 === data.ID ? "100%":"0%", backgroundImage: `url(${data.image1})`}}/>
+                            <NewLine/>
+                            <TextContainer>
+                                <CardTitle>{data.name}</CardTitle>
+                                <TinySpacer/>
+                                <CardHeader>{data.position}</CardHeader>
+                            </TextContainer>
+                        </CardContainer>
+                    </a>
+                ))}
+            </PositionContainer>
+            <PositionContainer>
+            <SmallSpacer/>
+            <TextContainer>
+                <TitleText style={{marginLeft: "2vmin"}}>Senior Advisors</TitleText>
+            </TextContainer>
+            <NewLine/>
+            {seniorData.map((data) => (
+                <a href={data.url} target="_blank" style={{textDecoration:"none"}}>
                     <CardContainer >
                         <CardImage style={{backgroundImage: `url(${data.image0})`}} />
                         <CardImageHover onMouseEnter={()=>setHoverID2(data.ID)} onMouseLeave={()=>setHoverID2(0)} style={{opacity: hoverID2 === data.ID ? "100%":"0%", backgroundImage: `url(${data.image1})`}}/>
@@ -251,25 +281,7 @@ function RosterSection (){
                             <CardHeader>{data.position}</CardHeader>
                         </TextContainer>
                     </CardContainer>
-                ))}
-            </PositionContainer>
-            <PositionContainer>
-            <SmallSpacer/>
-            <TextContainer>
-                <TitleText style={{marginLeft: "2vmin"}}>Senior Advisors</TitleText>
-            </TextContainer>
-            <NewLine/>
-            {seniorData.map((data) => (
-                <CardContainer >
-                    <CardImage style={{backgroundImage: `url(${data.image0})`}} />
-                    <CardImageHover onMouseEnter={()=>setHoverID2(data.ID)} onMouseLeave={()=>setHoverID2(0)} style={{opacity: hoverID2 === data.ID ? "100%":"0%", backgroundImage: `url(${data.image1})`}}/>
-                    <NewLine/>
-                    <TextContainer>
-                        <CardTitle>{data.name}</CardTitle>
-                        <TinySpacer/>
-                        <CardHeader>{data.position}</CardHeader>
-                    </TextContainer>
-                </CardContainer>
+                </a>
             ))}
             </PositionContainer>
             {/*<PositionContainer>
@@ -298,16 +310,18 @@ function RosterSection (){
             </TextContainer>
             <NewLine/>
             {analystData.map((data) => (
-                <CardContainer >
-                    <CardImage style={{backgroundImage: `url(${data.image0})`}} />
-                    <CardImageHover onMouseEnter={()=>setHoverID2(data.ID)} onMouseLeave={()=>setHoverID2(0)} style={{opacity: hoverID2 === data.ID ? "100%":"0%", backgroundImage: `url(${data.image1})`}}/>
-                    <NewLine/>
-                    <TextContainer>
-                        <CardTitle>{data.name}</CardTitle>
-                        <TinySpacer/>
-                        <CardHeader>{data.position}</CardHeader>
-                    </TextContainer>
-                </CardContainer>
+                <a href={data.url} target="_blank" style={{textDecoration:"none"}}>
+                    <CardContainer >
+                        <CardImage style={{backgroundImage: `url(${data.image0})`}} />
+                        <CardImageHover onMouseEnter={()=>setHoverID2(data.ID)} onMouseLeave={()=>setHoverID2(0)} style={{opacity: hoverID2 === data.ID ? "100%":"0%", backgroundImage: `url(${data.image1})`}}/>
+                        <NewLine/>
+                        <TextContainer>
+                            <CardTitle>{data.name}</CardTitle>
+                            <TinySpacer/>
+                            <CardHeader>{data.position}</CardHeader>
+                        </TextContainer>
+                    </CardContainer>
+                </a>
             ))}
             </PositionContainer>
         </SectionContainer>

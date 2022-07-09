@@ -4,6 +4,7 @@ import logo from "../../Images/Home/logo1.png";
 import logo1 from "../../Images/Home/logo2.png";
 import { useRef, useLayoutEffect, useState, useEffect, useCallback } from "react";
 import {BsList} from "react-icons/bs"
+import { wait } from "@testing-library/user-event/dist/utils";
 
 const api = {
   key: "496b8228423df44de2d6d782eb53fb6d",
@@ -161,10 +162,8 @@ function Nav(props) {
 
       if (y > window.scrollY) {
         setScrollDirection(1);
-        console.log("scrolling up");
       } else if (y < window.scrollY) {
         setScrollDirection(0);
-        console.log("scrolling down");
       }
       setY(window.scrollY)
     }, [y]);

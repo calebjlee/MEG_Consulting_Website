@@ -31,7 +31,7 @@ import NextSection from "../General/NextSection";
 const SectionContainer = styled.div`
   width: 100vw;
   height: 150vh;
-  background-color: #E0CFF2;
+  background-color: #D0D1F2;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -45,7 +45,7 @@ const SectionContainer = styled.div`
 
 const TeamContainer = styled.div`
   position: relative;
-  margin-bottom: 40vh;
+  margin-bottom: 50vh;
   overflow: hidden;
   @media (max-aspect-ratio: 1233/870) {
     margin-bottom: 5vh;

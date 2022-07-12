@@ -38,7 +38,7 @@ const TitleText = styled.h1`
 `;
 
 const Spacer = styled.div`
-  height: 100vh;
+  height: 110vh;
 `;
 
 function TeamIntro() {

@@ -10,6 +10,8 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import ReactGA from "react-ga4";
 import rg4js from "raygun4js";
+import PracticeSection from "../Components/Application/PracticeSection";
+import ResizePractice from "../Components/Application/ResizePractice";
 
 function Application (){
 
@@ -33,6 +35,8 @@ function Application (){
             <MenuSection/>
             <TipIntroSection/>
             <TipSection/>
+            <PracticeSection/>
+            <ResizePractice/>
             <Nav color={0} home={1} />
             <ToHomeSection/>
         </div>

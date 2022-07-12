@@ -9,7 +9,7 @@ const SectionContainer = styled.div`
   background-image: url(${jump});
   background-repeat: no-repeat;
   background-size: auto 60vh;
-  background-position: center 25%;
+  background-position: center 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +41,7 @@ const TitleText = styled.h1`
 `;
 
 const Spacer = styled.div`
-  height: 20vh;
+  height: 10vh;
 `;
 
 function TeamIntro1() {

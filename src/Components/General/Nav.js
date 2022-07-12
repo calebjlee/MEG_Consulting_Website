@@ -158,14 +158,21 @@ function Nav(props) {
   const [scrollDirection,
     setScrollDirection] = useState("you have not scrolled yet");
 
+    const [delayHandler, setDelayHandler] = useState(null);
+
     const handleNavigation = useCallback((e) => {
 
       if (y > window.scrollY) {
         setScrollDirection(1);
-      } else if (y < window.scrollY) {
+        setDelayHandler(setTimeout(() => {
+          setScrollDirection(0);
+        }, 2000))
+      } 
+      else if (y < window.scrollY) {
         setScrollDirection(0);
       }
-      setY(window.scrollY)
+      clearTimeout(delayHandler);
+      setY(window.scrollY);
     }, [y]);
   
     useEffect(() => {

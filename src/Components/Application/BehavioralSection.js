@@ -104,6 +104,7 @@ const ChevronContainer = styled.div`
     align-items: center;
     justify-content: center;
     z-index:10;
+    font-size: 5vw;
 `
 
 const SmallSpacer = styled.div`
@@ -119,7 +120,6 @@ function BehavioralSection(props){
         if (props.display === 0){
             setTimeout(()=>{
                 setBehavioralID(0);
-                console.log("Reset!")
             },1000)
         }
     },[props.display])

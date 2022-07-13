@@ -113,7 +113,7 @@ const ChevronContainer = styled.div`
     align-items: center;
     justify-content: center;
     z-index:10;
-    font-size: 10vw;
+    font-size: 5vw;
 `
 
 const SmallSpacer = styled.div`
@@ -133,7 +133,6 @@ function WrittenSection(props){
         if (props.display === 0){
             setTimeout(()=>{
                 setWrittenID(0);
-                console.log("Reset!")
             },1000)
         }
     },[props.display])

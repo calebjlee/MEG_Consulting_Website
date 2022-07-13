@@ -119,7 +119,6 @@ function CaseSection(props){
         if (props.display === 0){
             setTimeout(()=>{
                 setBehavioralID(0);
-                console.log("Reset!")
             },1000)
         }
     },[props.display])

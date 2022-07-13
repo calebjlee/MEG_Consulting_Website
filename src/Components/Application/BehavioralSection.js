@@ -127,7 +127,7 @@ function BehavioralSection(props){
     return(
         <SectionContainer style={{transform: props.display === 2 ? "translateY(-100vh)":"none"}}>
             <ChevronContainer>
-                <BsChevronDoubleLeft size={60} style={{marginRight:"2.5vw", marginTop: "25vh", color: behavioralID === 0 ? "#bebebe":"black", cursor: behavioralID === 0 ? "default":"pointer", pointerEvents: behavioralID === 0 ? "none":"auto"}}  onClick={()=>{setBehavioralID(behavioralID-1)}}/>
+                <BsChevronDoubleLeft style={{marginRight:"2.5vw", marginTop: "25vh", color: behavioralID === 0 ? "#bebebe":"black", cursor: behavioralID === 0 ? "default":"pointer", pointerEvents: behavioralID === 0 ? "none":"auto"}}  onClick={()=>{setBehavioralID(behavioralID-1)}}/>
             </ChevronContainer>
             <GhostContainer/>
 
@@ -181,7 +181,7 @@ function BehavioralSection(props){
             </SlideContainer>
 
             <ChevronContainer>
-                <BsChevronDoubleRight size={60} style={{marginLeft:"2.5vw", marginTop: "25vh", color: behavioralID === 2 ? "grey":"black",  cursor: behavioralID === 2 ? "default":"pointer", pointerEvents: behavioralID === 2 ? "none":"auto"}} onClick={()=>{setBehavioralID(behavioralID+1)}}/>
+                <BsChevronDoubleRight style={{marginLeft:"2.5vw", marginTop: "25vh", color: behavioralID === 2 ? "grey":"black",  cursor: behavioralID === 2 ? "default":"pointer", pointerEvents: behavioralID === 2 ? "none":"auto"}} onClick={()=>{setBehavioralID(behavioralID+1)}}/>
             </ChevronContainer>
             <BodyText style={{position:"absolute",bottom: "12.5vh"}}>{behavioralID+1}/3</BodyText>
         </SectionContainer>

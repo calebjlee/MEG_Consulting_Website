@@ -113,6 +113,7 @@ const ChevronContainer = styled.div`
     align-items: center;
     justify-content: center;
     z-index:10;
+    font-size: 10vw;
 `
 
 const SmallSpacer = styled.div`
@@ -140,7 +141,7 @@ function WrittenSection(props){
     return(
         <SectionContainer style={{transform: props.display === 1 ? "translateY(-100vh)":"none"}}>
             <ChevronContainer>
-                <BsChevronDoubleLeft size={60} style={{marginRight:"2.5vw", marginTop: "25vh", color: writtenID === 0 ? "#bebebe":"black", cursor: writtenID === 0 ? "default":"pointer", pointerEvents: writtenID === 0 ? "none":"auto"}}  onClick={()=>{setWrittenID(writtenID-1)}}/>
+                <BsChevronDoubleLeft style={{marginRight:"2.5vw", marginTop: "25vh", color: writtenID === 0 ? "#bebebe":"black", cursor: writtenID === 0 ? "default":"pointer", pointerEvents: writtenID === 0 ? "none":"auto"}}  onClick={()=>{setWrittenID(writtenID-1)}}/>
             </ChevronContainer>
             <GhostContainer/>
 
@@ -242,7 +243,7 @@ function WrittenSection(props){
             </SlideContainer>
 
             <ChevronContainer>
-                <BsChevronDoubleRight size={60} style={{marginLeft:"2.5vw", marginTop: "25vh", color: writtenID === 6 ? "grey":"black",  cursor: writtenID === 6 ? "default":"pointer", pointerEvents: writtenID === 6 ? "none":"auto"}} onClick={()=>{setWrittenID(writtenID+1)}}/>
+                <BsChevronDoubleRight style={{marginLeft:"2.5vw", marginTop: "25vh", color: writtenID === 6 ? "grey":"black",  cursor: writtenID === 6 ? "default":"pointer", pointerEvents: writtenID === 6 ? "none":"auto"}} onClick={()=>{setWrittenID(writtenID+1)}}/>
             </ChevronContainer>
             <BodyText style={{position:"absolute",bottom: "12.5vh"}}>{writtenID+1}/7</BodyText>
         </SectionContainer>

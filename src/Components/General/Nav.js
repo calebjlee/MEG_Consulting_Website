@@ -4,7 +4,6 @@ import logo from "../../Images/Home/logo1.png";
 import logo1 from "../../Images/Home/logo2.png";
 import { useRef, useLayoutEffect, useState, useEffect, useCallback } from "react";
 import {BsList} from "react-icons/bs"
-import { wait } from "@testing-library/user-event/dist/utils";
 
 const api = {
   key: "496b8228423df44de2d6d782eb53fb6d",
@@ -47,7 +46,8 @@ const NavSelectionContainer = styled.div`
   width: fit-content;
   color: #1e1e1e;
   @media (max-aspect-ratio: 650/870) {
-    display:none;
+    visibility:hidden;
+    width:0;
   }
 `;
 

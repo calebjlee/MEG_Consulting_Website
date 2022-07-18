@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { BsBriefcase } from "react-icons/bs";
+import { BsPencil } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 const ButtonContainer = styled.div`
@@ -27,16 +27,17 @@ const ButtonContainer = styled.div`
   &::before {
     content: "";
     position: absolute;
-    right: 0%;
+    left: 0%;
     width: 5vmax;
     height: 50%;
-    z-index:10;
+    z-index: 100;
   }
   &:hover::before{
       width:19vmax;
   }
   &:hover {
     width: 19vmax;
+    
   }
 `;
 
@@ -63,26 +64,26 @@ const TitleText = styled.h1`
   color: #1e1e1e;
 `;
 
-function ClientButton(props) {
+function FormButton(props) {
 
   return (
-    <Link to="/clients">
+    <a href="https://forms.gle/cQsTZp6rQfzZx3Q7A" target="_blank">
       <ButtonContainer
         style={{
           display: props.visible ? "none" : "flex",
         }}
       >
         <IconContainer>
-          <BsBriefcase color={"#1e1e1e"} />
+          <BsPencil color={"#1e1e1e"} />
         </IconContainer>
         <TextContainer>
           <TitleText style={{ color: "#1e1e1e" }}>
-            Potential Client? See What We Can Do
+            Tell Us About Your Experience With Our Website
           </TitleText>
         </TextContainer>
       </ButtonContainer>
-    </Link>
+    </a>
   );
 }
 
-export default ClientButton;
+export default FormButton;

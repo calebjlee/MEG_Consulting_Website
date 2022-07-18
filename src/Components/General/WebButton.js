@@ -8,7 +8,7 @@ const ButtonContainer = styled.div`
     height: 5vmax;
     width: 5vmax;
     border-radius: 999px;
-    background-color: transparent;
+    background-color: #E0CFF2;
 
     display: flex;
     padding-left: 0.835vmax;
@@ -71,7 +71,6 @@ function WebButton(props) {
       <ButtonContainer
         style={{
           display: props.visible ? "none" : "flex",
-          backgroundColor:"transparent"
         }}
       >
         <IconContainer>

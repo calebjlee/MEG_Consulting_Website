@@ -9,6 +9,7 @@ import SocialButton from "../Components/General/SocialButton";
 
 import ReactGA from "react-ga4";
 import rg4js from "raygun4js";
+import ButtonMenu from "../Components/General/ButtonMenu";
 
 const GoToHomePage = keyframes`
     0% { 
@@ -42,6 +43,7 @@ const LoadContainer = styled.div`
   position: absolute;
   top: 0;
   right: 0;
+  z-index:1000;
 `;
 
 const TextContainer = styled.div`
@@ -274,11 +276,7 @@ function App() {
         style={{ backgroundColor: scrollID !== 0 ? "#1e1e1e" : "#E0CFF2" }}
       >
 
-        <ButtonContainer>
-          <WebButton visible={scrollID} />
-          <VerticalSpacer/>
-          {/*<ClientButton  visible={scrollID} />*/}
-        </ButtonContainer>
+        <ButtonMenu buttonScrollID = {scrollID}/>
 
         <SocialContainer>
           <SocialButton visible = {scrollID} social = {0}/>

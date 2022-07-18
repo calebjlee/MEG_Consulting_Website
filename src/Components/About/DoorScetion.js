@@ -11,7 +11,7 @@ import { useState, useEffect } from "react";
 const SectionContainer = styled.div`
   width: 100vw;
   height: 350vh;
-  background-color: #D0D1F2;
+  background-color: #E0CFF2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,7 +87,7 @@ const ImageContainer = styled.div`
 const ShiftContainer = styled.div`
   height: 100vh;
   width: 100vw;
-  background-color: #D0D1F2;
+  background-color: #E0CFF2;
 
   display: flex;
   justify-content: center;
@@ -105,7 +105,7 @@ const ShiftContainer = styled.div`
 const TextContainer = styled.div`
   width: 60vw;
   display: inline-block;
-  background-color: #D0D1F2;
+  background-color: #E0CFF2;
 `;
 
 const BodyTitleText = styled.h1`

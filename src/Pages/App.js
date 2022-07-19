@@ -246,7 +246,6 @@ height:1vh;
 
 function App() {
 
-
   let location = useLocation();
   ReactGA.initialize("G-GC3DF08WD9");
 
@@ -254,7 +253,8 @@ function App() {
     ReactGA.send({ hitType: "pageview", page: '/' + window.location.pathname });
     rg4js('trackEvent', {
       type: 'pageView',
-      path: '/' + window.location.hash // Or perhaps window.location.hash
+      path: '/' + window.location.hash, // Or perhaps window.location.hash
+      page: window.location.pathname
     });
     console.log(`You changed the page to: ${location.pathname}`) 
   },[location]) 

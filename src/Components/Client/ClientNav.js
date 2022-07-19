@@ -128,17 +128,14 @@ function ClientNav (){
                 <BsList color="white" size={20}/>
             </DropdownButton>
             <DropdownContent>
-            <Link to="/about" style={{ textDecoration: "none", color: "#1e1e1e" }}> 
-                <DropdownLink>About Us</DropdownLink>
+            <Link to="/clients" style={{ textDecoration: "none", color: "#1e1e1e" }}> 
+                <DropdownLink>Client Home</DropdownLink>
             </Link>
-            <Link to="/projects" style={{ textDecoration: "none", color: "#1e1e1e" }}> 
-                <DropdownLink>Our Projects</DropdownLink>
+            <Link to="/client-projects" style={{ textDecoration: "none", color: "#1e1e1e" }}> 
+                <DropdownLink>Project Showcase</DropdownLink>
             </Link>
-            <Link to="/team" style={{ textDecoration: "none", color: "#1e1e1e" }}> 
-                <DropdownLink>Our Team</DropdownLink>
-            </Link>
-            <Link to="/application" style={{ textDecoration: "none", color: "#1e1e1e" }}> 
-                <DropdownLink>Application</DropdownLink>
+            <Link to="/" style={{ textDecoration: "none", color: "#1e1e1e" }}> 
+                <DropdownLink>Back to Main Page</DropdownLink>
             </Link>
             </DropdownContent>
         </DropdownContainer>

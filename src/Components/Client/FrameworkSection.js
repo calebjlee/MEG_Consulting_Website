@@ -173,7 +173,7 @@ function FrameworkSection (){
                     </IconContainer>
                     <CardHeader>McKinsey 7 Steps </CardHeader>
                     <CardBody>
-                        Comprehensive problem solving for the best solution
+                        Comprehensive problem solving for the fullest solution
                     </CardBody>
                 </CardContainer>
 

@@ -4,6 +4,7 @@ import WebButton from "./WebButton";
 import FormButton from "./FormButton";
 import { useState } from "react";
 import { BsThreeDots } from "react-icons/bs";
+import { hover } from "@testing-library/user-event/dist/hover";
 
 
 const ButtonContainer = styled.div`
@@ -43,6 +44,7 @@ const ExpandButton = styled.div`
     -webkit-box-sizing: border-box;
     border: solid 0.05em #1e1e1e;
     transition: background-color .2s;
+    cursor: pointer;
 `
 
 
@@ -52,6 +54,15 @@ function ButtonMenu (props){
     const [hoverButtonID, setHoverButtonID] = useState(0);
     const [delayHandler, setDelayHandler] = useState(null);
 
+
+    function handleMouseClick(){
+        if (menuHoverID === 0){
+            setMenuHoverID(1)
+        }
+        else{
+            setMenuHoverID(0);
+        }
+    }
 
     function handleMouseLeave(){
         if (hoverButtonID === 0){
@@ -66,18 +77,18 @@ function ButtonMenu (props){
 
     return(
         <ButtonContainer>
-            <MenuContainer onMouseEnter={()=>{setMenuHoverID(1); clearTimeout(delayHandler);}} onMouseLeave={()=>{handleMouseLeave()}} style={{paddingTop: menuHoverID ? "18vmax":"0"}}>
-                <ShiftContainer style={{bottom: menuHoverID ? "18vmax":"0vmax" }} onMouseEnter={()=>{setHoverButtonID(1)}} onMouseLeave={()=>{setHoverButtonID(0)}}>
+            <MenuContainer onMouseEnter={()=>{clearTimeout(delayHandler)}} onMouseLeave={()=>{handleMouseLeave()}} style={{paddingTop: menuHoverID ? "18vmax":"0"}}>
+                <ShiftContainer style={{bottom: menuHoverID ? "18vmax":"0vmax", pointerEvents: menuHoverID ? "auto":"none" }} onMouseEnter={()=>{setHoverButtonID(1)}} onMouseLeave={()=>{setHoverButtonID(0)}}>
                     <FormButton visible={props.buttonScrollID} />
                 </ShiftContainer>
-                <ShiftContainer style={{bottom: menuHoverID ? "12vmax":"0vmax" }} onMouseEnter={()=>{setHoverButtonID(1)}} onMouseLeave={()=>{setHoverButtonID(0)}}>
+                <ShiftContainer style={{bottom: menuHoverID ? "12vmax":"0vmax", pointerEvents: menuHoverID ? "auto":"none"  }} onMouseEnter={()=>{setHoverButtonID(1)}} onMouseLeave={()=>{setHoverButtonID(0)}}>
                     <ClientButton  visible={props.buttonScrollID}/>
                 </ShiftContainer>
-                <ShiftContainer style={{bottom: menuHoverID ? "6vmax":"0vmax" }} onMouseEnter={()=>{setHoverButtonID(1)}} onMouseLeave={()=>{setHoverButtonID(0)}}>
+                <ShiftContainer style={{bottom: menuHoverID ? "6vmax":"0vmax", pointerEvents: menuHoverID ? "auto":"none"  }} onMouseEnter={()=>{setHoverButtonID(1)}} onMouseLeave={()=>{setHoverButtonID(0)}}>
                     <WebButton visible={props.buttonScrollID} />
                 </ShiftContainer>
                 <ShiftContainer>
-                    <ExpandButton style={{backgroundColor: props.buttonScrollID ? "#1e1e1e":"#E0CFF2"}}>
+                    <ExpandButton style={{backgroundColor: props.buttonScrollID ? "#1e1e1e":"#E0CFF2"}} onMouseDown={()=>{handleMouseClick(); clearTimeout(delayHandler);}} >
                         <BsThreeDots color={"#1e1e1e"}/>
                     </ExpandButton>
                 </ShiftContainer>

@@ -150,8 +150,8 @@ function WrittenSection(props){
                         <TitleText>The Written Application: It's All About You! </TitleText>
                         <SmallSpacer/>
                         <ContentText>
-                            The <span onMouseLeave={()=>{setHoverWritten(0)}} onMouseEnter={()=>{setHoverWritten(1)}} style={{fontFamily: "hachura, sansSerif", fontWeight: 400, fontStyle: "normal", textDecoration: "underline", textDecorationColor:"gray"}}>written application</span> is your first opportunity to <i>really</i> let us know more about <b onMouseLeave={()=>{setHoverWritten(0)}} onMouseEnter={()=>{setHoverWritten(2)}}><u>you!</u></b>
-                            <br/><br/> Let us know why you should be a member of MEG: What are your <b onMouseLeave={()=>{setHoverWritten(0)}} onMouseEnter={()=>{setHoverWritten(3)}}><u>strengths</u></b> and what makes you <b onMouseLeave={()=>{setHoverWritten(0)}} onMouseEnter={()=>{setHoverWritten(4)}}><u>unique</u></b>! 
+                            The <span onMouseLeave={()=>{setHoverWritten(0)}} onMouseEnter={()=>{setHoverWritten(1)}} style={{fontFamily: "hachura, sansSerif", fontWeight: 400, fontStyle: "normal", textDecoration: "underline", textDecorationColor:"gray", cursor: "default"}}>written application</span> is your first opportunity to <i>really</i> let us know more about <b style={{cursor: "default"}} onMouseLeave={()=>{setHoverWritten(0)}} onMouseEnter={()=>{setHoverWritten(2)}}><u>you!</u></b>
+                            <br/><br/> Let us know why you should be a member of MEG: What are your <b style={{cursor: "default"}} onMouseLeave={()=>{setHoverWritten(0)}} onMouseEnter={()=>{setHoverWritten(3)}}><u>strengths</u></b> and what makes you <b style={{cursor: "default"}} onMouseLeave={()=>{setHoverWritten(0)}} onMouseEnter={()=>{setHoverWritten(4)}}><u>unique</u></b>! 
                         </ContentText>
                     </TextContainer>
                     <ContentImage src={images1[hoverWritten]}/>
@@ -165,7 +165,7 @@ function WrittenSection(props){
                         <TitleText>Ok Fine, It's A Bit About Us</TitleText>
                         <SmallSpacer/>
                         <ContentText>
-                            We also want to know <b onMouseLeave={()=>{setHoverWritten(0)}} onMouseEnter={()=>{setHoverWritten(1)}}><u>why</u></b> you chose to apply to MEG? We want to make sure you're excited to apply because we're <b onMouseLeave={()=>{setHoverWritten(0)}} onMouseEnter={()=>{setHoverWritten(2)}}><u>excited</u></b> to meet you.
+                            We also want to know <b style={{cursor: "default"}} onMouseLeave={()=>{setHoverWritten(0)}} onMouseEnter={()=>{setHoverWritten(1)}}><u>why</u></b> you chose to apply to MEG? We want to make sure you're excited to apply because we're <b style={{cursor: "default"}} onMouseLeave={()=>{setHoverWritten(0)}} onMouseEnter={()=>{setHoverWritten(2)}}><u>excited</u></b> to meet you.
                             <br/><br/> If you're genuinely interested in us, we're going to be genuinely interested in you! 
                         </ContentText>
                     </TextContainer>

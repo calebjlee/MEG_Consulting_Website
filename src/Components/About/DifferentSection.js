@@ -29,7 +29,7 @@ const TitleText = styled.h1`
   font-family: futura-pt, sans-serif;
   margin: 0;
   padding: 0;
-  font-weight: 900;
+  font-weight: 700;
   text-align: left;
   -webkit-text-stroke: 0.03em #1e1e1e;
   color: transparent;
@@ -41,9 +41,9 @@ const TitleTextBold = styled.h1`
   font-family: futura-pt, sans-serif;
   margin: 0;
   padding: 0;
-  font-weight: 900;
   text-align: left;
   color: #1e1e1e;
+  font-display:auto;font-style:normal;font-weight:900;font-stretch:normal;
 `;
 
 const BodyText = styled.p`

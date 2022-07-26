@@ -13,6 +13,7 @@ const SectionContainer = styled.div`
   flex-wrap: wrap;
   max-width: 100%;
   flex-direction: column;
+  overflow: hidden;
 `;
 
 const MenuContainer = styled.div`
@@ -38,8 +39,8 @@ const CardContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 250px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
     flex-direction: column;
     margin: 50px;
     margin-top:25px;

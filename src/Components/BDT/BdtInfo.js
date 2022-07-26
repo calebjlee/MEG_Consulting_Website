@@ -58,7 +58,7 @@ function BdtInfo() {
         <TitleText>MEG BUSINESS DESIGN AND TECHNOLOGY</TitleText>
         <SmallSpacer />
         <BodyText>
-          At the website team on MEG Consulting we are looking for exceptional designers and programmers to continue to create the website you are looking at right now! This website was 100% member made and we hope to keep it that way for years to come. So if you have an eye for design, a passion for coding, or are just plain old curious as to how a website is made, consider joining today! <br/><br/> Also if you see any visual bugs anywhere on the website or horrific syntax in the source code please reach out to gengb@umich.edu
+          At the website team on MEG Consulting we are looking for exceptional designers and programmers to continue to create the website you are looking at right now! This website was 100% member made and we hope to keep it that way for years to come. So if you have an eye for design, a passion for coding, or are just plain old curious as to how a website is made, consider joining today! <br/><br/> Also if you see any visual bugs anywhere on the website or bad syntax in the source code please reach out to gengb@umich.edu
         </BodyText>
       </TextContainer>
       <Spacer />

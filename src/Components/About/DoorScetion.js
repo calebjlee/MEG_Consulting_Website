@@ -22,6 +22,9 @@ const SectionContainer = styled.div`
   top: -1px;
   max-width: 100%;
   overflow: hidden;
+  @media (max-width: 700px) {
+    display:none;
+  }
 `;
 
 const TitleTextContainer = styled.div`

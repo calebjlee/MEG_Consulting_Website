@@ -6,6 +6,7 @@ import background from "../Images/Client/background.jpg"
 import styled from "styled-components";
 import ClientNav from "../Components/Client/ClientNav";
 import FrameworkSection from "../Components/Client/FrameworkSection";
+import ClientPast from "../Components/Client/ClientPast";
 
 const BackgroundImage = styled.div`
     position: fixed;
@@ -25,7 +26,7 @@ function Clients (){
             <WhatWeDoSection/>
             <TestimonialSection/>
             <FrameworkSection/>
-
+            <ClientPast/>
         </div>
     )
 }

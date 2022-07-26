@@ -3,7 +3,7 @@ import styled from "styled-components";
 const SectionContainer = styled.div`
     height:60vh;
     width:100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +21,13 @@ function TestimonialSection (){
     return(
         <SectionContainer>
             <QuoteText>
-                "MEG's team was very professional and helpful. They helped us reach our goals and were professional and organized. I would recommend MEG to any company looking for help reaching their goals, whatever they might be."
+                "The group of four students from MEG conducted a thorough interview with me on my needs and
+                expectations.
+                They then proceeded to develop a detailed report on U.S. venture capital funds in the size-range we are
+                considering and completed it in 4 months.
+                The report was submitted and is our working document as we develop our plan for our new fund. We
+                are very impressed with the Ross MEG Club and team and the specific work product."
+                <br/><br/>-Bobby Schostak, CEO of Mad Dog Ventures
             </QuoteText>
         </SectionContainer>
     )

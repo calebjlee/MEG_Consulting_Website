@@ -216,14 +216,6 @@ const ScrollText = styled.h1`
   animation-timing-function: linear;
 `;
 
-const ButtonContainer = styled.div`
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  bottom: 4.5vmax;
-  left: 4.5vmax;
-`
-
 const SocialContainer = styled.div`
   position: absolute;
   display: flex;
@@ -250,11 +242,10 @@ function App() {
   ReactGA.initialize("G-GC3DF08WD9");
 
   useEffect(() => {
-    ReactGA.send({ hitType: "pageview", page: '/' + window.location.pathname });
+    ReactGA.send({ hitType: "pageview", page: '/' + window.location.pathname, title: "Home Page" });
     rg4js('trackEvent', {
       type: 'pageView',
-      path: '/' + window.location.hash, // Or perhaps window.location.hash
-      page: window.location.pathname
+      path: '/' + window.location.hash // Or perhaps window.location.hash
     });
     console.log(`You changed the page to: ${location.pathname}`) 
   },[location]) 
@@ -269,6 +260,20 @@ function App() {
     ["MEET OUR MEMEBRS", "GET TO KNOW US", "DISCOVER OUR DIVERSITY", "EXPLORE OUR PASSIONS", "FIND WHERE YOU FIT"],
     ["APPLY NOW", "SEE OUR TIMELINE", "APPLICATION FAQ", "HOW TO APPLY", "COME JOIN THE FAMILY"]
   ];
+
+
+  const [firstAnimation, setFirstAnimation] = useState(true)
+
+  useEffect(()=>{
+    if(window.sessionStorage.getItem("FirstLoad") === null){
+      setFirstAnimation(true);
+      window.sessionStorage.setItem("FirstLoad",1);
+    }
+    else{
+      setFirstAnimation(false)
+    }
+
+  },[]);
 
   return (
     <HomeContainer>
@@ -414,7 +419,7 @@ function App() {
           </HomeNavContainer>
           </Link>
       </HomePageContainer>
-      <LoadContainer>
+      <LoadContainer style={{display: firstAnimation ? "flex":"none"}}>
         <TextContainer style={{ transform: "translate(0,75%)" }}>
           <HomeTitleTextTop style={{ transform: "translate(0,37.5%)" }}>
             MEG CONSULTING

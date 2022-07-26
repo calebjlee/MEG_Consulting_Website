@@ -4,8 +4,6 @@ import WebButton from "./WebButton";
 import FormButton from "./FormButton";
 import { useState } from "react";
 import { BsThreeDots } from "react-icons/bs";
-import { hover } from "@testing-library/user-event/dist/hover";
-
 
 const ButtonContainer = styled.div`
     position: absolute;
@@ -77,7 +75,7 @@ function ButtonMenu (props){
 
     return(
         <ButtonContainer>
-            <MenuContainer onMouseEnter={()=>{clearTimeout(delayHandler)}} onMouseLeave={()=>{handleMouseLeave()}} style={{paddingTop: menuHoverID ? "18vmax":"0"}}>
+            <MenuContainer onMouseEnter={ ()=>{setTimeout(()=>{setMenuHoverID(1)},100); clearTimeout(delayHandler)}} onMouseLeave={()=>{handleMouseLeave()}} style={{paddingTop: menuHoverID ? "18vmax":"0"}}>
                 <ShiftContainer style={{bottom: menuHoverID ? "18vmax":"0vmax", pointerEvents: menuHoverID ? "auto":"none" }} onMouseEnter={()=>{setHoverButtonID(1)}} onMouseLeave={()=>{setHoverButtonID(0)}}>
                     <FormButton visible={props.buttonScrollID} />
                 </ShiftContainer>

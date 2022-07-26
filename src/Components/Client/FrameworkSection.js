@@ -17,7 +17,7 @@ const SectionContainer = styled.div`
 
 const MenuContainer = styled.div`
     width:50%;
-    height: 70vh;
+    height:70vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -29,13 +29,13 @@ const MenuContainer = styled.div`
     border-radius: 20px;
     @media (max-aspect-ratio: 1315/1044) {
         width: 80%;
-        height: 40vh;
+        height: 45vh;
         flex-wrap: wrap;
         margin-bottom:0vh;
     }
     @media (max-aspect-ratio: 805/1044) {
         width: 80%;
-        height: 80vh;
+        height: 90vh;
         margin:0;
     }
 `

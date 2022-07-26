@@ -9,6 +9,7 @@ const SectionContainer = styled.div`
     align-items: center;
     flex-direction: column;
     overflow: hidden;
+    top: -1px;
 `
 
 const ContactContainer = styled.div`
@@ -24,6 +25,7 @@ const PastClientImages = styled.img`
     margin: 5vmin;
     margin-top:0;
     margin-bottom:0;
+    width: 70%;
 `
 
 const TitleText = styled.h2`

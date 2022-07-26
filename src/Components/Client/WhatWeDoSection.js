@@ -40,9 +40,9 @@ const CardContainer = styled.div`
     justify-content: center;
     align-items: center;
     height: 300px;
-    width: 300px;
+    width: 250px;
     flex-direction: column;
-    margin: 50px;
+    margin: 5%;
     margin-top:25px;
     align-self: center;
 `

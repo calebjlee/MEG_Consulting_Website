@@ -59,6 +59,10 @@ import jacob1 from '../../Images/Team/headshots/jacob1.png'
 import kiran1 from '../../Images/Team/headshots/kiran1.png'
 import carly1 from '../../Images/Team/headshots/carly1.png'
 import madelyn1 from '../../Images/Team/headshots/madelyn1.png'
+import lawder0 from '../../Images/Team/headshots/lawder0.png'
+import lawder1 from '../../Images/Team/headshots/lawder1.png'
+import christine0 from '../../Images/Team/headshots/christine0.png'
+import christine1 from '../../Images/Team/headshots/christine1.png'
 
 
 const SectionContainer = styled.div`
@@ -218,7 +222,8 @@ function RosterSection (){
         {name: 'Kate Miele ', image0: kate0, image1: kate1, position: 'Senior Advisor', ID: 11, url: 'https://www.linkedin.com/in/kate-miele-320'},
         {name: 'Brianna Patel', image0: brianna0, image1: brianna1, position: 'Senior Advisor', ID: 12, url: 'https://www.linkedin.com/in/brianna-patel/'},
         {name: 'Carly May', image0: carly0, image1: carly1, position: 'Senior Advisor', ID: 27, url: 'https://www.linkedin.com/in/carly-may-b33792194'},
-        {name: 'Madelyn Woodrow', image0: madelyn0, image1: madelyn1, position: 'Senior Advisor', ID: 28, url: "https://www.linkedin.com/in/madelyn-woodrow-1446661a0"}
+        {name: 'Madelyn Woodrow', image0: madelyn0, image1: madelyn1, position: 'Senior Advisor', ID: 28, url: "https://www.linkedin.com/in/madelyn-woodrow-1446661a0"},
+        {name: 'Christine Yan', image0: christine0, image1: christine1, position: 'Senior Advisor', ID: 32, url: "https://www.linkedin.com/in/christineyan-915"}    
     ]
 
     const analystData = [
@@ -236,7 +241,8 @@ function RosterSection (){
     {name: 'Anish Vankayalapati', image0: anish0, image1: anish1, position: 'Analyst', ID: 21, url: 'https://linkedin.com/in/anish-vankayalapati-6b4914223'},
     {name: 'Maxym Wolberg', image0: maxym0, image1: maxym1, position: 'Analyst', ID: 22, url: 'https://www.linkedin.com/in/maxymw/'},
     {name: 'Kapil Pownikar', image0: kapil0, image1: kapil1, position: 'Analyst', ID: 24, url: 'https://www.linkedin.com/in/kapil-pownikar'},
-    {name: 'Kiran Sequeira', image0: kiran0, image1: kiran1, position: 'Analyst', ID: 29, url: "https://www.linkedin.com/in/kiran-sequeira"},]
+    {name: 'Kiran Sequeira', image0: kiran0, image1: kiran1, position: 'Analyst', ID: 29, url: "https://www.linkedin.com/in/kiran-sequeira"},
+    {name: 'Lawder Desantis', image0: lawder0, image1: lawder1, position: 'Analyst', ID: 31, url: "https://www.linkedin.com/in/lawder-desantis-50a733232"}]
 
     const managerData = []
 

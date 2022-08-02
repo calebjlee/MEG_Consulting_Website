@@ -47,6 +47,7 @@ const MailLink = styled.a`
 `
 
 function ClientPast (){
+
     return(
         <SectionContainer>
             <TitleText style={{marginBottom: "0"}}>Who We've Worked With</TitleText>

@@ -25,8 +25,8 @@ const YouContainer = styled.div`
     z-index:1;
     background-color: transparent;
     margin:0;
-    line-height: 12vmin;
-    z-index:-1;
+    line-height: 12vmin;    
+    background-color: #CBAFE9;
 `
 
 const TextContainer = styled.div`
@@ -83,7 +83,7 @@ function LookingSection() {
           <TitleText>Who We're Looking For:</TitleText>
           <BodyContainer>
           <BodyText>Business Students, Tech Wizards, Witty Friends, Stylish Designers, Confident Speakers, Passionate Learners, Healthcare Gurus, Flamboyant Actors, Fervent Environmentalists, Real Estate Experts, Stock Specialists, Coffee Chat Partners, Supply Chain Savants, Helpful Mentors, Revolutionary Artists, Spikeball Partners, Pioneering Engineers, Karaoke Companions, Math Prodigies, Curious Scientists, Clever Comedians, Pioneering Creatives, Innovative Thinkers, Problem Solvers, Life-Long Friends, Cooperative Teammates, Business Students, Tech Wizards, Witty Friends, Stylish Designers, Confident Speakers, Passionate Learners, Healthcare Gurus, Flamboyant Actors, Fervent Environmentalists, Real Estate Experts, Stock Specialists, Coffee Chat Partners, Supply Chain Savants, Helpful Mentors, Revolutionary Artists, Spikeball Partners, Pioneering Engineers, Karaoke Companions, Math Prodigies, Curious Scientists, Clever Comedians, Pioneering Creatives, Innovative Thinkers, Problem Solvers, Life-Long Friends </BodyText>
-            <YouContainer>YOU</YouContainer>
+            <YouContainer>YOU!</YouContainer>
           </BodyContainer>
           <SmallSpacer/>
           <a href= "https://docs.google.com/forms/d/e/1FAIpQLSeHCJl6mIQEAhO2DPE_1x8zasWhHH_C8zrzZ_AK3pMhmnZ0BQ/viewform" target="_blank">

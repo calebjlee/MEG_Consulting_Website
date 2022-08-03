@@ -29,15 +29,17 @@ const LogoImage = styled.img`
 const NavContainer = styled.div`
   position: fixed;
   top: 0vw;
-  left: 4vw;
+  left: 0vw;
+  padding-left:2vw;
+  padding-right:2vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 93vw;
-  height:20vh;
+  width: 96vw;
+  height:15vh;
   padding-bottom: 10vh;
-  z-index:100;
-  transition: transform 1s, padding-bottom 1s;
+  z-index:1000;
+  transition: transform 1s, padding-bottom 1s, background-color 1s;
 `;
 
 const NavSelectionContainer = styled.div`
@@ -244,7 +246,7 @@ function Nav(props) {
   };
 
   return (
-    <NavContainer style={{transform: (hideOnScroll !== 1) || (hoverNav) || (scrollDirection) ? "translateY(0vh)":"translateY(-20vh)", paddingBottom: (hideOnScroll !== 1) || (hoverNav) || (scrollDirection) ? "0vh":"10vh"}}onMouseOver={()=>{setHoverNav(1)}} onMouseOut={()=>{setHoverNav(0)}}>
+    <NavContainer style={{transform: (hideOnScroll !== 1) || (hoverNav) || (scrollDirection) ? "translateY(0vh)":"translateY(-15vh)", paddingBottom: (hideOnScroll !== 1) || (hoverNav) || (scrollDirection) ? "0vh":"10vh", backgroundColor: (vh(y) <= -150) && (hoverNav) && props.home ? "rgba(255,255,255,0.8)":"transparent"}}onMouseOver={()=>{setHoverNav(1)}} onMouseOut={()=>{setHoverNav(0)}}>
       <Link to="/">
         <LogoContainer >
           <LogoImage src={logos[props.color]} />

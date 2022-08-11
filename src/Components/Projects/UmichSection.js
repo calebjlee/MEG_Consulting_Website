@@ -65,7 +65,7 @@ const SmallSpacer = styled.div`
 function UmichSection() {
   return (
     <SectionContainer>
-      <NextSection ScrollNext={151} ScrollAlready={1200} color="black"/>
+      <NextSection ScrollNext={151} ScrollAlready={900} color="black"/>
       <ImageContainer />
       <TextContainer>
         <TitleText>SOLVE THE PROBLEMS</TitleText>

@@ -5,7 +5,7 @@ import NextSection from "../General/NextSection";
 const SectionContainer = styled.div`
   width: 100vw;
   height: 150vh;
-  background-color: #D6F4FF;
+  background-color: #D0D1F2;
   display: flex;
   justify-content: flex-end;
   position: sticky;
@@ -65,14 +65,14 @@ const SmallSpacer = styled.div`
 function BusinessSection() {
   return (
     <SectionContainer>
-      <NextSection ScrollNext={151} ScrollAlready={900} color="black"/>
+      <NextSection ScrollNext={151} ScrollAlready={600} color="black"/>
       <TextContainer>
         <TitleText>EXPLORE YOUR</TitleText>
         <br />
         <TitleText>BUSINESS POTENTIAL</TitleText>
         <SmallSpacer />
         <BodyText>
-        Whether you have years of business experience or have never heard of consulting before we strive to expand your capabilities in the consulting field. From understanding earning reports to creating marketing schemes to exploring the supply chain, our projects spread across a wide variety of industries. We help you establish the fundamentals of business and delve into the specifics that you’re interested in.
+        Whether you have years of business experience or have never heard of consulting before, we strive to expand your capabilities as a future consultant. From understanding earning reports to creating marketing plans to analyzing the supply chain, our projects spread across a wide variety of industries. We help you establish the fundamentals of business and also delve into the specifics that you’re interested in.
         </BodyText>
       </TextContainer>
       <ImageContainer />

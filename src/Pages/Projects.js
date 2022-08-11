@@ -17,6 +17,7 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import ReactGA from "react-ga4";
 import rg4js from "raygun4js";
+import FitSection from "../Components/Projects/FitSection";
 
 function Projects() {
   
@@ -38,14 +39,15 @@ function Projects() {
       <BuildingSection />
       <BuildingSection1 />
       <SolutionSection />
-      <SummarySection />
-      <ExploreSection />
+      {/*<SummarySection />
+      <ExploreSection />*/}
       <BusinessSection/>
       <ResizeSection/>
       <BusinessFlatlay/>
       <UmichSection />
       <ResizeSection/>
       <UmichFlatlay />
+      {/*<FitSection/>*/}
       <ToTeamSection />
       <Nav color={0} home={1} />
     </div>

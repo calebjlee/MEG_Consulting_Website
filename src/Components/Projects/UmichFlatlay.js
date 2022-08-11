@@ -149,7 +149,7 @@ function UmichFlatlay() {
   const Category = ["NEIGHBORHOOD", "FITNESS", "EDUCATION", "BASKETBALL TEAM", "PANTRY","FOOTBALL TEAM", "RESEARCH"]
   return (
     <ProjectContainer>
-      <NextSection ScrollNext={151} ScrollAlready={1350} color="black"/>
+      <NextSection ScrollNext={151} ScrollAlready={1050} color="black"/>
       <FlatlayContainer>
         <FlatlayImage src={umichBackgrond} />
         <ObjectContainer style={{ bottom: clickID1 !== 0 ? (clickID1 === 1 ? "25vh":"-50vh" ) : "8vh", left: clickID1 !== 1 ? "12vh":"8vh" }} onClick={() => {clickID1 === 0 ? setClickID1(1):setClickID1(0); setPreviousID1(1);}} onMouseEnter={() => {setHoverID1(1)}} onMouseLeave = {() => setHoverID1(0)}>

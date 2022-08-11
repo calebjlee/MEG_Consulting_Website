@@ -1,7 +1,6 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { createBrowserHistory } from 'history';
 import "./styles.css";
 
 import App from "./Pages/App";

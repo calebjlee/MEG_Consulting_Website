@@ -79,9 +79,10 @@ const DropdownLink = styled.a`
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  background-color: rgba(255,255,255,0.8);
 
   &:hover {
-    background-color: rgba(0,0,0,0.25);
+    background-color: rgba(255,255,255,0.8);
     cursor: pointer;
   }
 `

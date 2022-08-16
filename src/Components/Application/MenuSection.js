@@ -235,11 +235,7 @@ function MenuSection() {
         const d = Date.parse(new Date().toLocaleString("en-US", {timeZone: "America/New_York"}))
         //For debugging:
         //const d = Date.parse("9/20/2022")
-        console.log(new Date().toLocaleString("en-US", {timeZone: "America/New_York"}))
-        if(d <= Date.parse(eventDates[0])){
-            return(0);
-        }
-        else if(d <= Date.parse(eventDates[1])){
+        if(d <= Date.parse(eventDates[1])){
             return(1);
         }
         else if(d <= Date.parse(eventDates[2])){

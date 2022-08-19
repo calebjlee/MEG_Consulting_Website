@@ -95,6 +95,7 @@ const Video = styled.video`
   height: 100%;
   object-fit: cover;
   z-index: 0;
+  -webkit-transform: translate3d(0,0,0)
 `;
 
 function SpaceSection() {
@@ -142,7 +143,7 @@ function SpaceSection() {
         {/*This div shifts over the "Out of this world div"*/}
         <ShiftVideoContainer>
           <NextSection ScrollNext={376} ScrollAlready={650} color="white" />
-          <TitleTextContainer style={{ zIndex: 10, WebkitTransform: "translate3d(0,0,1000px);"}}>
+          <TitleTextContainer style={{ zIndex: 10, WebkitTransform: "translate3d(-50%,-50%,100px)"}}>
             <TitleText style={{ textAlign: "right" }}>
               DOWN TO EARTH PEOPLE
             </TitleText>

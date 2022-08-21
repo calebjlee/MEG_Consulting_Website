@@ -246,10 +246,6 @@ function Nav(props) {
     return `${date} ${month} ${year}`;
   };
 
-  useEffect(()=>{
-    console.log(document.documentElement.scrollTop)
-  },[y])
-
   return (
     <NavContainer style={{transform: (hideOnScroll !== 1) || (hoverNav) || (scrollDirection) ? "translateY(0vh)":"translateY(-15vh)", paddingBottom: (hideOnScroll !== 1) || (hoverNav) || (scrollDirection) ? "0vh":"10vh", backgroundColor: (vh(y) < -150) && (hoverNav) && props.home && document.documentElement.scrollTop ? "rgba(255,255,255,0.8)":"transparent"}}onMouseOver={()=>{setHoverNav(1)}} onMouseOut={()=>{setHoverNav(0)}}>
       <Link to="/">

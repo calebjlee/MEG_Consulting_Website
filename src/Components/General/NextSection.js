@@ -36,7 +36,6 @@ function NextSection(props) {
             document.body.parentNode ||
             document.body
           ).scrollTop;
-    console.log(vh(scrollTop));
     return vh(props.ScrollNext) - (scrollTop - vh(props.ScrollAlready));
   }
 

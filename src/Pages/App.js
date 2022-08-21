@@ -247,7 +247,6 @@ function App() {
       type: 'pageView',
       path: '/' + window.location.hash // Or perhaps window.location.hash
     });
-    console.log(`You changed the page to: ${location.pathname}`) 
   },[location]) 
 
 

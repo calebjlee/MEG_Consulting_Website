@@ -164,7 +164,6 @@ function ClientProjectSection (){
     function playAnimation(n){
         setAnimationScrollID(1);
         setSectionID(n);
-        console.log("PLAYING ANIMATION")
         setReadyHandler(0);
         setTimeout(()=>{
             setAnimationScrollID(0);

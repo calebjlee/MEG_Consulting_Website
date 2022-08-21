@@ -152,9 +152,10 @@ function TeamSection() {
     const [hoverID, setHoverID] = useState(0);
     const [hoverID1, setHoverID1] = useState(0);
     const names = ["YOU SHOULD NOT BE SEEING THIS","Andrew Zhou", "Kapil Pownikar", "Ashley Winger", "Ragini Chaudhari", "Elizabeth Lu", "Anish Vankayalapati", "Anthony Remick", "Manan Jain", "Kiran Sequeira", "Zevik Citron", "Nakul Chadha", "Priyanka Madhavan", "Vincent Larsson", "Jacob Blumenstein", "Rachelle Deng", "Shubh Yadav", "Charlie Schuetze", "Dylan Roussel", "Meghna Gupta", "Caden Rubischko", "Brandon Geng", "Benny Shaevsky", "Alejandro Borrego" ]
-    const majors = ["YOU SHOULD NOT BE SEEING THIS","BBA","Economics and Data Science","BBA","BHS & Economics","Computer Science","BBA","Computer Science","BBA","Computer Science","BBA","BBA","Mechanical Engineering and BBA","Industrial Operations","BBA","BBA","BBA","BBA","BBA","Mechanical Engineering","BBA","CS and BBA","BBA","Biochemistry"]
-    const years = ["YOU SHOULD NOT BE SEEING THIS","Sophomore","Sophomore","Junior","Sophomore","Senior","Sophomore","Sophomore","Sophomore","Junior","Sophomore","Senior","Junior","Senior","Junior","Junior","Sophomore","Junior","Junior","Junior","Junior","Senior","Junior","Junior"]
-    const abouts = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"]
+    const majors =  ["YOU SHOULD NOT BE SEEING THIS", "BBA", "Economics & Computer Science", "BBA", "BHS & Economics", "Computer Science", "BBA and Computer Science", "Computer Science", "BBA", "Computer Science", "BBA", "BBA", "Mechanical Engineering and BBA", "Industrial Operations", "BBA", "BBA", "BBA", "BBA", "BBA", "Mechanical Engineering", "BBA", "BBA and Computer Science", "BBA", "CS"]
+    const years = ["YOU SHOULD NOT BE SEEING THIS", "Sophomore", "Sophomore", "Junior", "Sophomore", "Senior", "Sophomore", "Sophomore", "Sophomore", "Junior", "Sophomore", "Graduated", "Junior", "Senior", "Junior", "Junior", "Sophomore", "Junior", "Junior", "Junior", "Junior", "Senior", "Junior", "Junior"]
+    const abouts = ["YOU SHOULD NOT BE SEEING THIS", "I like to cook and play ping-pong", "I have 5 cats, all are strays :)", "I run an Etsy store selling necklaces and bracelets", "I love skiing", "I enjoy a making good cup of pourover, playing tennis, and meeting new people!", "I like to play soccer, basketball, and volleyball", "I like Hockey, baseball, skiing", "I’ve been scuba diving for the past 7 years and was once chased by a 7-foot fish", "In my free time, I love playing the piano or going for walks in the Arb!", "In my spare time I like to flip samples and cook up beats in FL Studio", "I’m currently working at Morgan Stanley", "I love photography and the outdoors!", "I love playing hockey, learned from my dad to skate backwards before I could skate forwards", "I like writing alternative rock music", "I've met 8 Olympic figure skaters!", "I Love playing soccer, coin collecting, and photography", "I’m a Golf enthusiast, banjo player in training, future pilot and scuba diving connoisseur", "Anything outdoors is my hobby, I love to travel and get lost", "I like cooking, music, and dogs", "I enjoy fishing and hockey", "I got Franz Wagner sick once", "I have seen Michigan play football in 6 states", "I sat in the Stanley Cup as a baby"]
+    const projects = ["YOU SHOULD NOT BE SEEING THIS", "Argus Farm Stop", "Kaufmann Insurance", "Argus Farm Stop", "Emagine", "MCity, Community Action Network, Freezer Recycling, TREMEC ", "Workforce Software, Zoominfo (2)", "ZoomInfo (1)", "Kaufman Insurance ", "Community Action Network, Workforce, ZoomInfo 2", "MadDog Ventures, ZoomInfo (1)", "Second to None, Give and Take", "Academic Innovation, Gritter Real Estate, Zingerman's Service Network", "M City, Second to None, Cayman Chemical, HSHV, TREMEC", "Workforce, Filson, Cayman Chemicals", "Avicenna Healthcare, Hope Clinic", "Bouma Real Estate, Kaufman Insurance", "Gritter Real Estate, MadDog Ventures, Beer City Dog Biscuits", "Argus Farmstop, CAN Group, Exchange Capital Wealth Management", "Beer City Dog Biscuits", "Emagine", "CAN Group, M&B Cupboard, Hope Clinic", "Underground Printing, Kaufman (Atain), MadDog Technology", "Argus Farm Stop"]
 
     return (
         <SectionContainer>
@@ -1906,10 +1907,11 @@ function TeamSection() {
             <TextContainer style={{display: hoverID !== 0 ? "flex":"none"}}>
                 <TitleText>{names[hoverID]}</TitleText>
                 <SmallSpacer/>
-                <BodyText>Year: {years[hoverID]}</BodyText>
-                <BodyText>Major: {majors[hoverID]}</BodyText>
+                <BodyText><b>Year:</b> {years[hoverID]}</BodyText>
+                <BodyText><b>Major:</b> {majors[hoverID]}</BodyText>
+                <BodyText><b>About Me:</b> {abouts[hoverID]}</BodyText>
+                <BodyText><b>Past Projects:</b> {projects[hoverID]}</BodyText>
                 <SmallSpacer/>
-                {/*<BodyText>About Me: {abouts[0]} </BodyText>*/}
             </TextContainer>
         </SectionContainer>
     );

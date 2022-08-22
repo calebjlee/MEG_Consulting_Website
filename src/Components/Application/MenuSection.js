@@ -8,6 +8,7 @@ import mass from "../../Images/Application/mass.png"
 import workshop from "../../Images/Application/workshop.png"
 import dei from "../../Images/Application/dei.png"
 import apply from "../../Images/Application/apply.png"
+import NextSection from "../General/NextSection";
 
 
 const SectionContainer = styled.div`
@@ -265,6 +266,7 @@ function MenuSection() {
 
     return (
       <SectionContainer>
+        <NextSection ScrollNext = {150} ScrollAlready = {300}/>
         <GridContainer>
             <LogoContainer>
                 <TextContainer>

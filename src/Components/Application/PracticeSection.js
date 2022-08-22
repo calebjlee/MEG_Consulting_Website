@@ -6,6 +6,7 @@ import { useState } from "react";
 import WrittenSection from "./WrittenSection";
 import BehavioralSection from "./BehavioralSection";
 import CaseSection from "./CaseSection";
+import NextSection from "../General/NextSection";
 
 const SectionContainer = styled.div`
   width: 100vw;
@@ -157,6 +158,7 @@ function PracticeSection(){
 
     return(
         <SectionContainer>
+            <NextSection ScrollNext = {150} ScrollAlready = {900}/>
             <TitleText onClick={()=>{setClickID(0); setDisplayID(0)}} style={{transform: clickID !== 0 ? "translateY(-50vh)":"translateY(0)"}}>Practice, Tips, and More!</TitleText>
             <SmallSpacer/>
             <SelectionContainer>

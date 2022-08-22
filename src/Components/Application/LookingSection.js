@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import NextSection from "../General/NextSection";
 
 const SectionContainer = styled.div`
   width: 100vw;
@@ -79,6 +80,7 @@ const SmallSpacer = styled.div`
 function LookingSection() {
     return (
       <SectionContainer>
+        <NextSection ScrollNext = {150} ScrollAlready = {150}/>
         <TextContainer>
           <TitleText>Who We're Looking For:</TitleText>
           <BodyContainer>

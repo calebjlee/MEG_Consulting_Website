@@ -1,5 +1,6 @@
 import { keyframes} from "styled-components";
 import styled from "styled-components";
+import NextSection from "../General/NextSection";
 
 const SectionContainer = styled.div`
   width: 100vw;
@@ -67,6 +68,7 @@ const ShiftSpan = styled.span`
 function TipIntroSection(){
     return(
         <SectionContainer>
+            <NextSection ScrollNext = {150} ScrollAlready = {450}/>
             <TextContainer>
                 <TitleText>We get it, </TitleText> <br/>
                     <TitleText>Recruiting can be&nbsp;

@@ -77,6 +77,8 @@ const SectionContainer = styled.div`
   position: relative;
   flex-wrap: wrap;
   max-width: 100%;
+  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,1000px);
 `;
 
 const PositionContainer = styled.div`

@@ -244,7 +244,7 @@ function WrittenSection(props){
             <ChevronContainer>
                 <BsChevronDoubleRight style={{marginLeft:"2.5vw", marginTop: "25vh", color: writtenID === 6 ? "grey":"black",  cursor: writtenID === 6 ? "default":"pointer", pointerEvents: writtenID === 6 ? "none":"auto"}} onClick={()=>{setWrittenID(writtenID+1)}}/>
             </ChevronContainer>
-            <BodyText style={{position:"absolute",bottom: "12.5vh"}}>{writtenID+1}/7</BodyText>
+            <BodyText style={{position:"absolute",bottom: "17vh"}}>{writtenID+1}/7</BodyText>
         </SectionContainer>
     )
 }

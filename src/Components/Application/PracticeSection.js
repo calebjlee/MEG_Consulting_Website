@@ -113,7 +113,7 @@ const BackButton = styled.div`
     padding-right:1vh;
     margin-bottom: 2.5vh;
     position: absolute;
-    top: 55%;
+    top: 51%;
     left: 10%;
     transition: opacity .5s;
     &:hover {

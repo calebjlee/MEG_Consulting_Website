@@ -4,7 +4,7 @@ import {MdCropRotate} from "react-icons/md";
 const SectionContainer = styled.div`
   width: 100vw;
   height: 150vh;
-  background-color: white;
+  background-color: #E0CFF2;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -183,7 +183,7 @@ function BehavioralSection(props){
             <ChevronContainer>
                 <BsChevronDoubleRight style={{marginLeft:"2.5vw", marginTop: "25vh", color: behavioralID === 2 ? "grey":"black",  cursor: behavioralID === 2 ? "default":"pointer", pointerEvents: behavioralID === 2 ? "none":"auto"}} onClick={()=>{setBehavioralID(behavioralID+1)}}/>
             </ChevronContainer>
-            <BodyText style={{position:"absolute",bottom: "12.5vh"}}>{behavioralID+1}/3</BodyText>
+            <BodyText style={{position:"absolute",bottom: "18vh"}}>{behavioralID+1}/3</BodyText>
         </SectionContainer>
     )
 }

@@ -43,3 +43,7 @@ MEG Consulting is a pro-bono consulting club at the University of Michigan. This
 [Brandon Geng](https://github.com/brandongeng)
 
 This website was made by MEG members. Are you interested in website development and a UM undergraduate? Consider applying to MEG and joining the website team. You can learn more about applying [here](https://www.megconsulting.org/application).
+
+## Issues
+
+If you see any issues on the website or source code email gengb@umich.edu

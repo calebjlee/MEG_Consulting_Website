@@ -225,11 +225,11 @@ const SoonContainer = styled.div`
 
 function MenuSection() {
 
-    const eventDates = ["8/30/2022, 2:30:00 PM","9/1/2022, 8:30 PM","9/8/2022, 8:00 PM", "9/9/2022, 11:59 PM", "9/11/2022, 11:59 PM", "9/14/2022, 11:59 PM", "9/16/2022, 11:59 PM","9/18/2022, 11:59 PM", "9/20/2022, 11:59 PM" ]
+    const eventDates = ["8/30/2022, 5:00:00 PM","9/1/2022, 5:00 PM","9/8/2022, 8:00 PM", "9/9/2022, 6:00 PM", "9/11/2022, 5:00 PM", "9/13/2022, 8:00 PM", "9/16/2022, 5:00 PM","9/18/2022, 3:00 PM", "9/20/2022, 11:59 PM" ]
     const eventImages = [north, central, ross, mass, coffee, mass, workshop, dei, apply]
     const eventName = ["Festifall North", "Festifall Central", "Ross Meet the Clubs", "Mass Meeting 1", "Coffee Chats", "Mass Meeting 2", "Case/Resume Workshop", "DEI Event", "Application Due"]
     const eventLocation = ["Gerstacker Grove","Ingalls Mall", "Ross Wintergarden", "TBD", "TBD", "TBD", "TBD", "TBD", "Online"]
-    const eventTime = ["8/30 at 2:30 PM","9/1 at 2:30 PM","9/8 at 8:00 PM","TBD","TBD","TBD","TBD","TBD", "9/20 at 11:59 PM"]
+    const eventTime = ["8/30 at 2:30 PM","9/1 at 2:30 PM","9/8 at 6:00 PM","9/9 from 5-6 pm","9/11 from 3-5 pm","9/13 from 7-8 pm","9/16 from 3-5 pm","9/18 from 1-3 pm", "9/20 at 11:59 PM"]
    
 
     function eventDateDetector(){
@@ -297,7 +297,7 @@ function MenuSection() {
                     <TextContainer>
                         <HeaderText>Maximize Your Recruiting Experience</HeaderText>
                         <SmallSpacer/>
-                        <BodyText>Ross club recruiting can be an intimidating experience, but we're here to help you get through it and to help you get the most out of it! Below we have advice and our recruiting philosophy that'll help</BodyText>
+                        <BodyText>Ross club recruiting can be an intimidating experience, but we're here to help you get through it and to help you get the most out of it! Below we have some advice and FAQs that might help you out!</BodyText>
                     </TextContainer>
                 </MoreContainer>
             </CenterContainer>

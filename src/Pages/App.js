@@ -27,6 +27,17 @@ const GoToHomePage = keyframes`
 
 `;
 
+const WiggleWiggle = keyframes`
+  0% { transform: rotate(0deg); }
+  88% { transform: rotate(0deg); }
+  90% { transform: rotate(5deg); }
+  92% { transform: rotate(0deg); }
+  94% { transform: rotate(-5deg); }
+  96% { transform: rotate(0deg); }
+  98% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+`
+
 const LoadContainer = styled.div`
   height: 100%;
   width: 100%;
@@ -221,8 +232,26 @@ const SocialContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content:center;
+  flex-wrap: wrap;
   bottom: 3vmax;
   right: 4.5vmax;
+`
+
+const InterestContainer = styled.div`
+  font-family: futura-pt, sans-serif;
+  font-size: 2vh;
+  width:12vw;
+  border: 1px solid;
+  color: #1e1e1e;
+  border-radius:2vw;
+  padding:1vh;
+  text-align: center;
+  margin-right:10px;
+  animation: ${WiggleWiggle} 4s infinite linear;
+  font-weight:600;
+  @media (max-aspect-ratio: 1/1) {
+    display: none;
+  }
 `
 
 const HorizontalSpacer = styled.div`
@@ -283,12 +312,16 @@ function App() {
         <ButtonMenu buttonScrollID = {scrollID}/>
 
         <SocialContainer>
+          <a color="#1e1e1e" style={{textDecoration: "none"}} href="https://docs.google.com/forms/d/e/1FAIpQLSeHCJl6mIQEAhO2DPE_1x8zasWhHH_C8zrzZ_AK3pMhmnZ0BQ/viewform" target={"_blank"}>
+            <InterestContainer style={{visibility: !scrollID ? "visible":"hidden"}}>
+              <p style={{margin:0}}>Fill Out Our Interest Form</p>
+            </InterestContainer>
+          </a>
           <SocialButton visible = {scrollID} social = {0}/>
           <HorizontalSpacer/>
           <SocialButton visible = {scrollID} social = {1}/>
           <HorizontalSpacer/>
           <SocialButton visible = {scrollID} social = {2}/>
-
         </SocialContainer>
 
         <ScrollContainer style={{ top: "15vh" }}>

@@ -20,7 +20,6 @@ const SectionContainer = styled.div`
 const TitleTextContainer = styled.div`
   background-color: transparent;
   width: fit-content;
-  max-width: 600px;
   margin: 0;
   padding: 0;
   overflow: hidden;

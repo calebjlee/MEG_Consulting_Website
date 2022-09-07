@@ -94,7 +94,7 @@ const Video = styled.video`
   height: 100%;
   object-fit: cover;
   z-index: 0;
-  -webkit-transform: translate3d(0,0,0)
+  -webkit-transform: translate3d(0,0,0);
 `;
 
 function SpaceSection() {

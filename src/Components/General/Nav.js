@@ -19,7 +19,6 @@ const LogoContainer = styled.div`
 const LogoImage = styled.img`
   height: auto;
   width: 30vw;
-  max-width: 700px;
   max-height: 100px;
   min-width: 250px;
   margin: 0;

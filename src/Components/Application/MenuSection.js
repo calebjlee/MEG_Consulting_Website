@@ -289,7 +289,7 @@ function MenuSection() {
                 <a href= "https://docs.google.com/forms/d/e/1FAIpQLSeHCJl6mIQEAhO2DPE_1x8zasWhHH_C8zrzZ_AK3pMhmnZ0BQ/viewform" target="_blank" style={{textDecoration: "none"}}>
                     <ApplyContainer>                    
                         <TextContainer>
-                            <TitleText style={{width:"100%", textAlign: "center", textDecoration: "underline", fontSize:"250%"}}>Apply Now</TitleText>
+                            <TitleText style={{width:"100%", textAlign: "center", textDecoration: "underline", fontSize:"4vw"}}>Apply Now</TitleText>
                         </TextContainer>
                     </ApplyContainer>
                 </a>

@@ -286,7 +286,7 @@ function MenuSection() {
                 </TextContainer>
             </FaqContainer>
             <CenterContainer>
-                <a href= "https://docs.google.com/forms/d/e/1FAIpQLSeHCJl6mIQEAhO2DPE_1x8zasWhHH_C8zrzZ_AK3pMhmnZ0BQ/viewform" target="_blank" style={{textDecoration: "none"}}>
+                <a href= "https://forms.gle/954i5LTCcaungiSRA" target="_blank" style={{textDecoration: "none"}}>
                     <ApplyContainer>                    
                         <TextContainer>
                             <TitleText style={{width:"100%", textAlign: "center", textDecoration: "underline", fontSize:"4vw"}}>Apply Now</TitleText>

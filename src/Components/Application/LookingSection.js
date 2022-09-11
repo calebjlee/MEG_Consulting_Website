@@ -4,7 +4,7 @@ import NextSection from "../General/NextSection";
 const SectionContainer = styled.div`
   width: 100vw;
   height: 150vh;
-  background-color: #CBAFE9;
+  background-color: #E0CFF2 ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,10 +24,9 @@ const YouContainer = styled.div`
     font-family: futura-pt, sans-serif;
     font-weight: 700;
     z-index:1;
-    background-color: transparent;
     margin:0;
     line-height: 12vmin;    
-    background-color: #CBAFE9;
+    background-color: #E0CFF2;
 `
 
 const TextContainer = styled.div`
@@ -62,6 +61,7 @@ const BodyText = styled.p`
   margin: 0;
   padding: 0;
   color: white;
+  text-shadow: 0 0 1px gray, 0 0 1px gray, 0 0 1px gray, 0 0 1px gray;
   line-height: 2;
   font-weight: 700;
   text-align:justify;

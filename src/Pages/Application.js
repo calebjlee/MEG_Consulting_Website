@@ -30,8 +30,8 @@ function Application (){
     return(
         <div>
             <ApplicationHome/>
-            <LookingSection/>
             <MenuSection/>
+            <LookingSection/>
             <TipIntroSection/>
             <TipSection/>
             <PracticeSection/>

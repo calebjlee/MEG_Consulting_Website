@@ -229,7 +229,7 @@ function MenuSection() {
     const eventImages = [north, central, ross, mass, coffee, mass, workshop, dei, apply]
     const eventName = ["Festifall North", "Festifall Central", "Ross Meet the Clubs", "Mass Meeting 1", "Coffee Chats", "Mass Meeting 2", "Case/Resume Workshop", "DEI Event", "Application Due"]
     const eventLocation = ["Gerstacker Grove","Ingalls Mall", "Ross Wintergarden", "R0220", "B2560", "R2230", "B2560", "B0560", "Online"]
-    const eventTime = ["8/30 at 2:30 PM","9/1 at 2:30 PM","9/8 at 5:30 - 7:30 PM","9/9 from 5-6 pm","9/11 from 2-4 pm","9/13 from 7-8 pm","9/16 from 3-5 pm","9/18 from 1-3 pm", "9/20 at 11:59 PM"]
+    const eventTime = ["8/30 at 2:30 PM","9/1 at 2:30 PM","9/8 at 5:30 - 7:30 PM","9/9 from 5-6 pm","9/11 from 2-4 pm","9/13 from 7:30-8:30 pm","9/16 from 3-5 pm","9/18 from 1-3 pm", "9/20 at 11:59 PM"]
    
 
     function eventDateDetector(){

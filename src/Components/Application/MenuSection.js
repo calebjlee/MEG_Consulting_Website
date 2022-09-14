@@ -228,7 +228,7 @@ function MenuSection() {
     const eventDates = ["8/30/2022, 5:00:00 PM","9/1/2022, 5:00 PM","9/8/2022, 7:30 PM", "9/9/2022, 6:00 PM", "9/11/2022, 4:00 PM", "9/13/2022, 8:00 PM", "9/16/2022, 5:00 PM","9/18/2022, 3:00 PM", "9/20/2022, 11:59 PM" ]
     const eventImages = [north, central, ross, mass, coffee, mass, workshop, dei, apply]
     const eventName = ["Festifall North", "Festifall Central", "Ross Meet the Clubs", "Mass Meeting 1", "Coffee Chats", "Mass Meeting 2", "Case/Resume Workshop", "DEI Event", "Application Due"]
-    const eventLocation = ["Gerstacker Grove","Ingalls Mall", "Ross Wintergarden", "R0220", "B2560", "R2230", "B2560", "B0560", "Online"]
+    const eventLocation = ["Gerstacker Grove","Ingalls Mall", "Ross Wintergarden", "R0220", "B2560", "R2230", "B0560", "B0560", "Online"]
     const eventTime = ["8/30 at 2:30 PM","9/1 at 2:30 PM","9/8 at 5:30 - 7:30 PM","9/9 from 5-6 pm","9/11 from 2-4 pm","9/13 from 7:30-8:30 pm","9/16 from 3-5 pm","9/18 from 1-3 pm", "9/20 at 11:59 PM"]
    
 

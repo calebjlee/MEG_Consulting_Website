@@ -230,7 +230,7 @@ function WrittenSection(props){
             <SlideContainer style={{transform: writtenID >= 6 ? "translateX(0vw)": "translateX(100vw)" }}>
                 <ContentContainer>
                 <TextContainer>
-                    <a href= "https://docs.google.com/forms/d/e/1FAIpQLSeHCJl6mIQEAhO2DPE_1x8zasWhHH_C8zrzZ_AK3pMhmnZ0BQ/viewform" target="_blank" style={{textDecoration: "none"}}>
+                    <a href= "https://forms.gle/7c3hhtvTDGoqNLQd8" target="_blank" style={{textDecoration: "none"}}>
                         <TitleText style={{fontSize: "5vw"}}>
                             <u>Apply Now</u>
                         </TitleText>

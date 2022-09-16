@@ -184,37 +184,13 @@ function RosterSection (){
     const [hoverID2, setHoverID2] = useState(0);
 
     const eboardData = [
-        {
-            name: "Vincent Larsson",
-            image0: vinnie0,
-            image1: vinnie1,
-            position: "President",
-            ID: 1, url: 'https://www.linkedin.com/in/vinnielarsson'
-        },
-        {
-            name: "Benny Shaevsky",
-            image0: benny0,
-            image1: benny1,
-            position: "VP of Client Acquisition",
-            ID: 2, url: 'https://www.linkedin.com/in/benny-shaevsky'
-        },
-        {
-            name: "Priyanka Madhavan",
-            image0: pri0,
-            image1: pri1,
-            position: "VP of Recruitment",
-            ID: 3, url: 'https://www.linkedin.com/in/primadhavan/'
-        },
+        {name: "Vincent Larsson",image0: vinnie0, image1: vinnie1, position: "President", ID: 1, url: 'https://www.linkedin.com/in/vinnielarsson'},
+        {name: "Benny Shaevsky", image0: benny0, image1: benny1, position: "VP of Client Acquisition", ID: 2, url: 'https://www.linkedin.com/in/benny-shaevsky'},
+        {name: "Priyanka Madhavan", image0: pri0, image1: pri1, position: "VP of Recruitment",ID: 3, url: 'https://www.linkedin.com/in/primadhavan/'},
         {name: 'Rachelle Deng', image0: rachelle0, image1: rachelle1, position: 'VP of Operations & Finance', ID: 4, url: 'https://www.linkedin.com/in/rachelle-deng-4a7203202/'},
         {name: 'Charlie Schuetze', image0: charlie0, image1: charlie1, position: 'VP of Internal Development', ID: 5, url: 'https://linkedin.com/in/charlie-schuetze'},
         {name: 'Jacob Blumenstein', image0: jacob0, image1: jacob1, position: 'VP of External Development', ID: 30, url: 'https://www.linkedin.com/in/jacobblumenstein/'},
-        {
-            name: "Brandon Geng",
-            image0: brandon0,
-            image1: brandon1,
-            position: "VP of Community Engagement",
-            ID: 7, url: 'https://www.linkedin.com/in/brandon-geng-5b99241b6/'
-        }
+        {name: "Brandon Geng", image0: brandon0, image1: brandon1, position: "VP of Community Engagement", ID: 7, url: 'https://www.linkedin.com/in/brandon-geng-5b99241b6/'}
     ]
 
     const seniorData = [

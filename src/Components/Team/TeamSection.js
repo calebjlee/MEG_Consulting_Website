@@ -1,247 +1,516 @@
 import styled from "styled-components";
 import team from "../../Images/Team/team.jpg";
-import alejandro from '../../Images/Team/shadows/alejandro.png';
-import anish from '../../Images/Team/shadows/anish.png';
-import anthony from '../../Images/Team/shadows/anthony.png';
-import ashley from '../../Images/Team/shadows/ashley.png';
-import benny from '../../Images/Team/shadows/benny.png';
-import brandon from '../../Images/Team/shadows/brandon.png';
-import caden from '../../Images/Team/shadows/caden.png';
-import charlie from '../../Images/Team/shadows/charlie.png';
-import dylan from '../../Images/Team/shadows/dylan.png';
-import jacob from '../../Images/Team/shadows/jacob.png';
-import kapil from '../../Images/Team/shadows/kapil.png';
-import kiran from '../../Images/Team/shadows/kiran.png';
-import lizzy from '../../Images/Team/shadows/lizzy.png';
-import manan from '../../Images/Team/shadows/manan.png';
-import meghna from '../../Images/Team/shadows/meghna.png';
-import nakul from '../../Images/Team/shadows/nakul.png';
-import pri from '../../Images/Team/shadows/pri.png';
-import rachelle from '../../Images/Team/shadows/rachelle.png';
-import ragini from '../../Images/Team/shadows/ragini.png';
-import shub from '../../Images/Team/shadows/shub.png';
-import vinnie from '../../Images/Team/shadows/vinnie.png';
-import zevik from '../../Images/Team/shadows/zevik.png';
-import andrew from '../../Images/Team/shadows/andrew.png';
+import alejandro from "../../Images/Team/shadows/alejandro.png";
+import anish from "../../Images/Team/shadows/anish.png";
+import anthony from "../../Images/Team/shadows/anthony.png";
+import ashley from "../../Images/Team/shadows/ashley.png";
+import benny from "../../Images/Team/shadows/benny.png";
+import brandon from "../../Images/Team/shadows/brandon.png";
+import caden from "../../Images/Team/shadows/caden.png";
+import charlie from "../../Images/Team/shadows/charlie.png";
+import dylan from "../../Images/Team/shadows/dylan.png";
+import jacob from "../../Images/Team/shadows/jacob.png";
+import kapil from "../../Images/Team/shadows/kapil.png";
+import kiran from "../../Images/Team/shadows/kiran.png";
+import lizzy from "../../Images/Team/shadows/lizzy.png";
+import manan from "../../Images/Team/shadows/manan.png";
+import meghna from "../../Images/Team/shadows/meghna.png";
+import nakul from "../../Images/Team/shadows/nakul.png";
+import pri from "../../Images/Team/shadows/pri.png";
+import rachelle from "../../Images/Team/shadows/rachelle.png";
+import ragini from "../../Images/Team/shadows/ragini.png";
+import shub from "../../Images/Team/shadows/shub.png";
+import vinnie from "../../Images/Team/shadows/vinnie.png";
+import zevik from "../../Images/Team/shadows/zevik.png";
+import andrew from "../../Images/Team/shadows/andrew.png";
 
 import React, { useState } from "react";
 import NextSection from "../General/NextSection";
 
-
 const SectionContainer = styled.div`
-  width: 100vw;
-  height: 150vh;
-  background-color: #D0D1F2;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  position: sticky;
-  top: -1px;
-  max-width: 100%;
-  overflow: hidden;
-  flex-wrap: wrap;
+	width: 100vw;
+	height: 150vh;
+	background-color: #d0d1f2;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	position: sticky;
+	top: -1px;
+	max-width: 100%;
+	overflow: hidden;
+	flex-wrap: wrap;
 `;
 
 const TeamContainer = styled.div`
-  position: relative;
-  margin-bottom: 50vh;
-  overflow: hidden;
-  @media (max-aspect-ratio: 1233/870) {
-    margin-bottom: 5vh;
-    margin-top: 40vh;
-  }
+	position: relative;
+	margin-bottom: 50vh;
+	overflow: hidden;
+	@media (max-aspect-ratio: 1233/870) {
+		margin-bottom: 5vh;
+		margin-top: 40vh;
+	}
 `;
 
 const TeamImage = styled.img`
-  width: 55vw;
-  @media (max-aspect-ratio: 1233/870) {
-      width: 50vw;
-  }
-  @media (max-aspect-ratio: 850/870) {
-      width: 80vw;
-  }
+	width: 55vw;
+	@media (max-aspect-ratio: 1233/870) {
+		width: 50vw;
+	}
+	@media (max-aspect-ratio: 850/870) {
+		width: 80vw;
+	}
 `;
 
 const SvgDesktop = styled.div`
-    @media (max-aspect-ratio: 1233/870) {
-      display:none
-    }
-    @media (max-aspect-ratio: 850/870) {
-      display:none
-    }
-`
+	@media (max-aspect-ratio: 1233/870) {
+		display: none;
+	}
+	@media (max-aspect-ratio: 850/870) {
+		display: none;
+	}
+`;
 
 const SvgTablet = styled.div`
-    display:none;
-    @media (max-aspect-ratio: 1233/870) {
-      display:inline-block;
-    }
-    @media (max-aspect-ratio: 850/870) {
-      display:none;
-    }
-`
+	display: none;
+	@media (max-aspect-ratio: 1233/870) {
+		display: inline-block;
+	}
+	@media (max-aspect-ratio: 850/870) {
+		display: none;
+	}
+`;
 
 const SvgPhone = styled.div`
-    display:none;
-    @media (max-aspect-ratio: 1233/870) {
-      display:none;
-    }
-    @media (max-aspect-ratio: 850/870) {
-      display:inline-block;
-    }
-`
+	display: none;
+	@media (max-aspect-ratio: 1233/870) {
+		display: none;
+	}
+	@media (max-aspect-ratio: 850/870) {
+		display: inline-block;
+	}
+`;
 
 const ShadowContainer = styled.div`
-    position: absolute;
-    top:0;
-    left: 0;
-    transition: opacity .25s;
-`
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: opacity 0.25s;
+`;
 
 const HoverContainer = styled.div`
-    position: absolute;
-    top:0;
-    left: 0;
-`
+	position: absolute;
+	top: 0;
+	left: 0;
+`;
 
 const TextContainer = styled.div`
-    width: 30vw;
-    height: 80vh;
-    margin-bottom: 40vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    align-content:center;
-    flex-wrap: wrap;
-    @media (max-aspect-ratio: 1233/870) {
-        align-content:flex-start;
-        width:80vw;
-    }
-`
+	width: 30vw;
+	height: 80vh;
+	margin-bottom: 40vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+	@media (max-aspect-ratio: 1233/870) {
+		align-content: flex-start;
+		width: 80vw;
+	}
+`;
 
 const TitleText = styled.h1`
-  display: inline-block;
-  font-size: 6vmin;
-  font-family: futura-pt, sans-serif;
-  margin: 0;
-  padding: 0;
-  font-weight: 900;
-  text-align: left;
-  color: #1e1e1e;
-  transition: opacity .5s;
-`
+	display: inline-block;
+	font-size: 6vmin;
+	font-family: futura-pt, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-weight: 900;
+	text-align: left;
+	color: #1e1e1e;
+	transition: opacity 0.5s;
+`;
 
 const BodyText = styled.p`
-  display: inline-block;
-  font-size: 3.2vmin;
-  font-family: futura-pt, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  width:100%;
+	display: inline-block;
+	font-size: 3.2vmin;
+	font-family: futura-pt, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	line-height: 1.6;
+	width: 100%;
 `;
 
 const SmallSpacer = styled.div`
-    width: 100%;
-    height: 3vh;
-`
+	width: 100%;
+	height: 3vh;
+`;
 
 function TeamSection() {
+	const [hoverID, setHoverID] = useState(0);
+	const [hoverID1, setHoverID1] = useState(0);
+	const names = [
+		"YOU SHOULD NOT BE SEEING THIS",
+		"Andrew Zhou",
+		"Kapil Pownikar",
+		"Ashley Winger",
+		"Ragini Chaudhari",
+		"Elizabeth Lu",
+		"Anish Vankayalapati",
+		"Anthony Remick",
+		"Manan Jain",
+		"Kiran Sequeira",
+		"Zevik Citron",
+		"Nakul Chadha",
+		"Priyanka Madhavan",
+		"Vincent Larsson",
+		"Jacob Blumenstein",
+		"Rachelle Deng",
+		"Shubh Yadav",
+		"Charlie Schuetze",
+		"Dylan Roussel",
+		"Meghna Gupta",
+		"Caden Rubischko",
+		"Brandon Geng",
+		"Benny Shaevsky",
+		"Alejandro Borrego",
+	];
+	const majors = [
+		"YOU SHOULD NOT BE SEEING THIS",
+		"BBA",
+		"Economics & Computer Science",
+		"BBA",
+		"BHS & Economics",
+		"Computer Science",
+		"BBA and Computer Science",
+		"Computer Science",
+		"BBA",
+		"Computer Science",
+		"BBA",
+		"BBA",
+		"Mechanical Engineering and BBA",
+		"Industrial Operations",
+		"BBA",
+		"BBA",
+		"BBA",
+		"BBA",
+		"BBA",
+		"Mechanical Engineering",
+		"BBA",
+		"BBA and Computer Science",
+		"BBA",
+		"CS",
+	];
+	const years = [
+		"YOU SHOULD NOT BE SEEING THIS",
+		"Sophomore",
+		"Sophomore",
+		"Junior",
+		"Sophomore",
+		"Senior",
+		"Sophomore",
+		"Sophomore",
+		"Sophomore",
+		"Junior",
+		"Sophomore",
+		"Graduated",
+		"Junior",
+		"Senior",
+		"Junior",
+		"Junior",
+		"Sophomore",
+		"Junior",
+		"Junior",
+		"Junior",
+		"Junior",
+		"Senior",
+		"Junior",
+		"Junior",
+	];
+	const abouts = [
+		"YOU SHOULD NOT BE SEEING THIS",
+		"I like to cook and play ping-pong",
+		"I have 5 cats, all are strays :)",
+		"I run an Etsy store selling necklaces and bracelets",
+		"I love skiing",
+		"I enjoy a making good cup of pourover, playing tennis, and meeting new people!",
+		"I like to play soccer, basketball, and volleyball",
+		"I like Hockey, baseball, skiing",
+		"I’ve been scuba diving for the past 7 years and was once chased by a 7-foot fish",
+		"In my free time, I love playing the piano or going for walks in the Arb!",
+		"In my spare time I like to flip samples and cook up beats in FL Studio",
+		"I’m currently working at Morgan Stanley",
+		"I love photography and the outdoors!",
+		"I love playing hockey, learned from my dad to skate backwards before I could skate forwards",
+		"I like writing alternative rock music",
+		"I've met 8 Olympic figure skaters!",
+		"I Love playing soccer, coin collecting, and photography",
+		"I’m a Golf enthusiast, banjo player in training, future pilot and scuba diving connoisseur",
+		"Anything outdoors is my hobby, I love to travel and get lost",
+		"I like cooking, music, and dogs",
+		"I enjoy fishing and hockey",
+		"I got Franz Wagner sick once",
+		"I have seen Michigan play football in 6 states",
+		"I sat in the Stanley Cup as a baby",
+	];
+	const projects = [
+		"YOU SHOULD NOT BE SEEING THIS",
+		"Argus Farm Stop",
+		"Kaufmann Insurance",
+		"Argus Farm Stop",
+		"Emagine",
+		"MCity, Community Action Network, Freezer Recycling, TREMEC ",
+		"Workforce Software, Zoominfo (2)",
+		"ZoomInfo (1)",
+		"Kaufman Insurance ",
+		"Community Action Network, Workforce, ZoomInfo 2",
+		"MadDog Ventures, ZoomInfo (1)",
+		"Second to None, Give and Take",
+		"Academic Innovation, Gritter Real Estate, Zingerman's Service Network",
+		"M City, Second to None, Cayman Chemical, HSHV, TREMEC",
+		"Workforce, Filson, Cayman Chemicals",
+		"Avicenna Healthcare, Hope Clinic",
+		"Bouma Real Estate, Kaufman Insurance",
+		"Gritter Real Estate, MadDog Ventures, Beer City Dog Biscuits",
+		"Argus Farmstop, CAN Group, Exchange Capital Wealth Management",
+		"Beer City Dog Biscuits",
+		"Emagine",
+		"CAN Group, M&B Cupboard, Hope Clinic",
+		"Underground Printing, Kaufman (Atain), MadDog Technology",
+		"Argus Farm Stop",
+	];
 
-    const [hoverID, setHoverID] = useState(0);
-    const [hoverID1, setHoverID1] = useState(0);
-    const names = ["YOU SHOULD NOT BE SEEING THIS","Andrew Zhou", "Kapil Pownikar", "Ashley Winger", "Ragini Chaudhari", "Elizabeth Lu", "Anish Vankayalapati", "Anthony Remick", "Manan Jain", "Kiran Sequeira", "Zevik Citron", "Nakul Chadha", "Priyanka Madhavan", "Vincent Larsson", "Jacob Blumenstein", "Rachelle Deng", "Shubh Yadav", "Charlie Schuetze", "Dylan Roussel", "Meghna Gupta", "Caden Rubischko", "Brandon Geng", "Benny Shaevsky", "Alejandro Borrego" ]
-    const majors =  ["YOU SHOULD NOT BE SEEING THIS", "BBA", "Economics & Computer Science", "BBA", "BHS & Economics", "Computer Science", "BBA and Computer Science", "Computer Science", "BBA", "Computer Science", "BBA", "BBA", "Mechanical Engineering and BBA", "Industrial Operations", "BBA", "BBA", "BBA", "BBA", "BBA", "Mechanical Engineering", "BBA", "BBA and Computer Science", "BBA", "CS"]
-    const years = ["YOU SHOULD NOT BE SEEING THIS", "Sophomore", "Sophomore", "Junior", "Sophomore", "Senior", "Sophomore", "Sophomore", "Sophomore", "Junior", "Sophomore", "Graduated", "Junior", "Senior", "Junior", "Junior", "Sophomore", "Junior", "Junior", "Junior", "Junior", "Senior", "Junior", "Junior"]
-    const abouts = ["YOU SHOULD NOT BE SEEING THIS", "I like to cook and play ping-pong", "I have 5 cats, all are strays :)", "I run an Etsy store selling necklaces and bracelets", "I love skiing", "I enjoy a making good cup of pourover, playing tennis, and meeting new people!", "I like to play soccer, basketball, and volleyball", "I like Hockey, baseball, skiing", "I’ve been scuba diving for the past 7 years and was once chased by a 7-foot fish", "In my free time, I love playing the piano or going for walks in the Arb!", "In my spare time I like to flip samples and cook up beats in FL Studio", "I’m currently working at Morgan Stanley", "I love photography and the outdoors!", "I love playing hockey, learned from my dad to skate backwards before I could skate forwards", "I like writing alternative rock music", "I've met 8 Olympic figure skaters!", "I Love playing soccer, coin collecting, and photography", "I’m a Golf enthusiast, banjo player in training, future pilot and scuba diving connoisseur", "Anything outdoors is my hobby, I love to travel and get lost", "I like cooking, music, and dogs", "I enjoy fishing and hockey", "I got Franz Wagner sick once", "I have seen Michigan play football in 6 states", "I sat in the Stanley Cup as a baby"]
-    const projects = ["YOU SHOULD NOT BE SEEING THIS", "Argus Farm Stop", "Kaufmann Insurance", "Argus Farm Stop", "Emagine", "MCity, Community Action Network, Freezer Recycling, TREMEC ", "Workforce Software, Zoominfo (2)", "ZoomInfo (1)", "Kaufman Insurance ", "Community Action Network, Workforce, ZoomInfo 2", "MadDog Ventures, ZoomInfo (1)", "Second to None, Give and Take", "Academic Innovation, Gritter Real Estate, Zingerman's Service Network", "M City, Second to None, Cayman Chemical, HSHV, TREMEC", "Workforce, Filson, Cayman Chemicals", "Avicenna Healthcare, Hope Clinic", "Bouma Real Estate, Kaufman Insurance", "Gritter Real Estate, MadDog Ventures, Beer City Dog Biscuits", "Argus Farmstop, CAN Group, Exchange Capital Wealth Management", "Beer City Dog Biscuits", "Emagine", "CAN Group, M&B Cupboard, Hope Clinic", "Underground Printing, Kaufman (Atain), MadDog Technology", "Argus Farm Stop"]
-
-    return (
-        <SectionContainer>
-            <NextSection ScrollNext={151} ScrollAlready={470} color="black" />
-            <TeamContainer onMouseEnter={()=>{setHoverID1(1)}} onMouseLeave={()=>{setHoverID1(0)}}>
-                <TitleText style={{position:"absolute", bottom: "5vmin", left: "center", width:"100%", textAlign: "center", color:"white", opacity: hoverID1 ? "0%":"100%", zIndex:"999", fontSize:"4vmin"}}>Hover Over to Meet Our Team</TitleText>
-                <TeamImage src={team}></TeamImage>
-                <ShadowContainer style={{opacity: hoverID === 1 ? "0":(hoverID === 0 ? "0":"1") }} >
-                    <TeamImage src={andrew}></TeamImage>
-                </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID === 2 ? "0":(hoverID === 0 ? "0":"1") }} >
-                    <TeamImage src={kapil}></TeamImage>
-                </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID === 3 ? "0":(hoverID === 0 ? "0":"1") }} >
-                    <TeamImage src={ashley}></TeamImage>
-                </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID === 4 ? "0":(hoverID === 0 ? "0":"1") }} >
-                    <TeamImage src={ragini}></TeamImage>
-                </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID === 5 ? "0":(hoverID === 0 ? "0":"1") }} >
-                    <TeamImage src={lizzy}></TeamImage>
-                </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID === 6 ? "0":(hoverID === 0 ? "0":"1") }} >
-                    <TeamImage src={anish}></TeamImage>
-                </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID === 7 ? "0":(hoverID === 0 ? "0":"1") }} >
-                    <TeamImage src={anthony}></TeamImage>
-                </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID === 8 ? "0":(hoverID === 0 ? "0":"1") }} >
-                    <TeamImage src={manan}></TeamImage>
-                </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID === 9 ? "0":(hoverID === 0 ? "0":"1") }} >
-                    <TeamImage src={kiran}></TeamImage>
-                </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID === 10 ? "0":(hoverID === 0 ? "0":"1") }} >
-                    <TeamImage src={zevik}></TeamImage>
-                </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID === 11 ? "0":(hoverID === 0 ? "0":"1") }} >
-                    <TeamImage src={nakul}></TeamImage>
-                </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID === 12 ? "0":(hoverID === 0 ? "0":"1") }} >
-                    <TeamImage src={pri}></TeamImage>
-                </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID === 13 ? "0":(hoverID === 0 ? "0":"1") }} >
-                    <TeamImage src={vinnie}></TeamImage>
-                </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID === 14 ? "0":(hoverID === 0 ? "0":"1") }} >
-                    <TeamImage src={jacob}></TeamImage>
-                </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID === 15 ? "0":(hoverID === 0 ? "0":"1") }} >
-                    <TeamImage src={rachelle}></TeamImage>
-                </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID === 16 ? "0":(hoverID === 0 ? "0":"1") }} >
-                    <TeamImage src={shub}></TeamImage>
-                </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID === 17 ? "0":(hoverID === 0 ? "0":"1") }} >
-                    <TeamImage src={charlie}></TeamImage>
-                </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID === 18 ? "0":(hoverID === 0 ? "0":"1") }} >
-                    <TeamImage src={dylan}></TeamImage>
-                </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID === 19 ? "0":(hoverID === 0 ? "0":"1") }} >
-                    <TeamImage src={meghna}></TeamImage>
-                </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID === 20 ? "0":(hoverID === 0 ? "0":"1") }} >
-                    <TeamImage src={caden}></TeamImage>
-                </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID === 21 ? "0":(hoverID === 0 ? "0":"1") }} >
-                    <TeamImage src={brandon}></TeamImage>
-                </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID === 22 ? "0":(hoverID === 0 ? "0":"1") }} >
-                    <TeamImage src={benny}></TeamImage>
-                </ShadowContainer>
-                <ShadowContainer style={{opacity: hoverID === 23 ? "0":(hoverID === 0 ? "0":"1") }} >
-                    <TeamImage src={alejandro}></TeamImage>
-                </ShadowContainer>
-                <HoverContainer>
-
-                <SvgDesktop>
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-                width="55vw" viewBox="0 0 1911.000000 1147.000000"
-                preserveAspectRatio="xMidYMid meet">
-                {/*Andrew */}
-                <g fillOpacity={0} transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(1) } onMouseOut = {()=>setHoverID(0)}>
-                <path d="M1620 9131 c-128 -35 -204 -89 -297 -212 -64 -84 -76 -125 -68 -241
+	return (
+		<SectionContainer>
+			<NextSection ScrollNext={151} ScrollAlready={470} color="black" />
+			<TeamContainer
+				onMouseEnter={() => {
+					setHoverID1(1);
+				}}
+				onMouseLeave={() => {
+					setHoverID1(0);
+				}}
+			>
+				<TitleText
+					style={{
+						position: "absolute",
+						bottom: "5vmin",
+						left: "center",
+						width: "100%",
+						textAlign: "center",
+						color: "white",
+						opacity: hoverID1 ? "0%" : "100%",
+						zIndex: "999",
+						fontSize: "4vmin",
+					}}
+				>
+					Hover Over to Meet Our Team
+				</TitleText>
+				<TeamImage src={team}></TeamImage>
+				<ShadowContainer
+					style={{
+						opacity:
+							hoverID === 1 ? "0" : hoverID === 0 ? "0" : "1",
+					}}
+				>
+					<TeamImage src={andrew}></TeamImage>
+				</ShadowContainer>
+				<ShadowContainer
+					style={{
+						opacity:
+							hoverID === 2 ? "0" : hoverID === 0 ? "0" : "1",
+					}}
+				>
+					<TeamImage src={kapil}></TeamImage>
+				</ShadowContainer>
+				<ShadowContainer
+					style={{
+						opacity:
+							hoverID === 3 ? "0" : hoverID === 0 ? "0" : "1",
+					}}
+				>
+					<TeamImage src={ashley}></TeamImage>
+				</ShadowContainer>
+				<ShadowContainer
+					style={{
+						opacity:
+							hoverID === 4 ? "0" : hoverID === 0 ? "0" : "1",
+					}}
+				>
+					<TeamImage src={ragini}></TeamImage>
+				</ShadowContainer>
+				<ShadowContainer
+					style={{
+						opacity:
+							hoverID === 5 ? "0" : hoverID === 0 ? "0" : "1",
+					}}
+				>
+					<TeamImage src={lizzy}></TeamImage>
+				</ShadowContainer>
+				<ShadowContainer
+					style={{
+						opacity:
+							hoverID === 6 ? "0" : hoverID === 0 ? "0" : "1",
+					}}
+				>
+					<TeamImage src={anish}></TeamImage>
+				</ShadowContainer>
+				<ShadowContainer
+					style={{
+						opacity:
+							hoverID === 7 ? "0" : hoverID === 0 ? "0" : "1",
+					}}
+				>
+					<TeamImage src={anthony}></TeamImage>
+				</ShadowContainer>
+				<ShadowContainer
+					style={{
+						opacity:
+							hoverID === 8 ? "0" : hoverID === 0 ? "0" : "1",
+					}}
+				>
+					<TeamImage src={manan}></TeamImage>
+				</ShadowContainer>
+				<ShadowContainer
+					style={{
+						opacity:
+							hoverID === 9 ? "0" : hoverID === 0 ? "0" : "1",
+					}}
+				>
+					<TeamImage src={kiran}></TeamImage>
+				</ShadowContainer>
+				<ShadowContainer
+					style={{
+						opacity:
+							hoverID === 10 ? "0" : hoverID === 0 ? "0" : "1",
+					}}
+				>
+					<TeamImage src={zevik}></TeamImage>
+				</ShadowContainer>
+				<ShadowContainer
+					style={{
+						opacity:
+							hoverID === 11 ? "0" : hoverID === 0 ? "0" : "1",
+					}}
+				>
+					<TeamImage src={nakul}></TeamImage>
+				</ShadowContainer>
+				<ShadowContainer
+					style={{
+						opacity:
+							hoverID === 12 ? "0" : hoverID === 0 ? "0" : "1",
+					}}
+				>
+					<TeamImage src={pri}></TeamImage>
+				</ShadowContainer>
+				<ShadowContainer
+					style={{
+						opacity:
+							hoverID === 13 ? "0" : hoverID === 0 ? "0" : "1",
+					}}
+				>
+					<TeamImage src={vinnie}></TeamImage>
+				</ShadowContainer>
+				<ShadowContainer
+					style={{
+						opacity:
+							hoverID === 14 ? "0" : hoverID === 0 ? "0" : "1",
+					}}
+				>
+					<TeamImage src={jacob}></TeamImage>
+				</ShadowContainer>
+				<ShadowContainer
+					style={{
+						opacity:
+							hoverID === 15 ? "0" : hoverID === 0 ? "0" : "1",
+					}}
+				>
+					<TeamImage src={rachelle}></TeamImage>
+				</ShadowContainer>
+				<ShadowContainer
+					style={{
+						opacity:
+							hoverID === 16 ? "0" : hoverID === 0 ? "0" : "1",
+					}}
+				>
+					<TeamImage src={shub}></TeamImage>
+				</ShadowContainer>
+				<ShadowContainer
+					style={{
+						opacity:
+							hoverID === 17 ? "0" : hoverID === 0 ? "0" : "1",
+					}}
+				>
+					<TeamImage src={charlie}></TeamImage>
+				</ShadowContainer>
+				<ShadowContainer
+					style={{
+						opacity:
+							hoverID === 18 ? "0" : hoverID === 0 ? "0" : "1",
+					}}
+				>
+					<TeamImage src={dylan}></TeamImage>
+				</ShadowContainer>
+				<ShadowContainer
+					style={{
+						opacity:
+							hoverID === 19 ? "0" : hoverID === 0 ? "0" : "1",
+					}}
+				>
+					<TeamImage src={meghna}></TeamImage>
+				</ShadowContainer>
+				<ShadowContainer
+					style={{
+						opacity:
+							hoverID === 20 ? "0" : hoverID === 0 ? "0" : "1",
+					}}
+				>
+					<TeamImage src={caden}></TeamImage>
+				</ShadowContainer>
+				<ShadowContainer
+					style={{
+						opacity:
+							hoverID === 21 ? "0" : hoverID === 0 ? "0" : "1",
+					}}
+				>
+					<TeamImage src={brandon}></TeamImage>
+				</ShadowContainer>
+				<ShadowContainer
+					style={{
+						opacity:
+							hoverID === 22 ? "0" : hoverID === 0 ? "0" : "1",
+					}}
+				>
+					<TeamImage src={benny}></TeamImage>
+				</ShadowContainer>
+				<ShadowContainer
+					style={{
+						opacity:
+							hoverID === 23 ? "0" : hoverID === 0 ? "0" : "1",
+					}}
+				>
+					<TeamImage src={alejandro}></TeamImage>
+				</ShadowContainer>
+				<HoverContainer>
+					<SvgDesktop>
+						<svg
+							version="1.0"
+							xmlns="http://www.w3.org/2000/svg"
+							width="55vw"
+							viewBox="0 0 1911.000000 1147.000000"
+							preserveAspectRatio="xMidYMid meet"
+						>
+							{/*Andrew */}
+							<g
+								fillOpacity={0}
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(1)}
+								onMouseOut={() => setHoverID(0)}
+							>
+								<path
+									d="M1620 9131 c-128 -35 -204 -89 -297 -212 -64 -84 -76 -125 -68 -241
                 4 -69 2 -104 -6 -120 -26 -47 -11 -208 25 -276 23 -43 63 -80 95 -87 29 -6 29
                 -6 36 -100 8 -108 1 -178 -21 -196 -8 -7 -21 -27 -29 -45 -13 -32 -62 -83
                 -151 -159 -26 -22 -56 -48 -66 -58 -26 -24 -122 -57 -168 -57 -20 0 -41 -5
@@ -260,8 +529,10 @@ function TeamSection() {
                 -60 27 -27 10 -62 28 -77 41 -15 12 -31 24 -35 26 -4 1 -26 28 -49 58 -35 48
                 -42 66 -53 143 -15 99 -15 98 65 192 46 55 114 172 114 198 0 9 11 52 25 94
                 14 43 31 93 36 112 11 34 24 258 22 382 -2 126 -91 278 -183 314 -25 10 -61
-                30 -80 45 -63 48 -123 63 -260 66 -95 2 -141 -2 -190 -15z"/>
-                <path d="M692 4458 c-11 -24 -47 -92 -81 -153 l-62 -110 1 -100 c1 -55 0 -116
+                30 -80 45 -63 48 -123 63 -260 66 -95 2 -141 -2 -190 -15z"
+								/>
+								<path
+									d="M692 4458 c-11 -24 -47 -92 -81 -153 l-62 -110 1 -100 c1 -55 0 -116
                 -2 -135 -3 -34 -1 -36 72 -75 66 -35 76 -44 82 -75 25 -123 42 -224 49 -286 4
                 -39 22 -134 40 -210 31 -134 32 -147 34 -369 1 -177 6 -255 21 -340 21 -124
                 22 -148 5 -665 -7 -232 -19 -418 -31 -510 -10 -80 -21 -199 -25 -265 -4 -66
@@ -269,13 +540,21 @@ function TeamSection() {
                 -41 15 -68 l6 -49 543 0 544 0 1 53 c1 28 3 212 4 407 2 195 7 630 11 965 5
                 336 8 630 8 655 0 46 -53 162 -160 351 -24 42 -143 274 -265 515 -122 242
                 -266 522 -319 624 -54 102 -170 328 -259 504 -163 320 -222 426 -240 426 -6 0
-                -19 -19 -29 -42z"/>
-                </g>
+                -19 -19 -29 -42z"
+								/>
+							</g>
 
-                {/*Kapil */}
-                <g fillOpacity={0} transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(2)} onMouseOut = {()=>setHoverID(0)}>
-                <path d="M4724 6955 c-12 -19 -27 -23 -100 -29 -52 -4 -91 -2 -98 3 -7 6 -22
+							{/*Kapil */}
+							<g
+								fillOpacity={0}
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(2)}
+								onMouseOut={() => setHoverID(0)}
+							>
+								<path
+									d="M4724 6955 c-12 -19 -27 -23 -100 -29 -52 -4 -91 -2 -98 3 -7 6 -22
                 8 -34 4 -12 -3 -28 0 -35 6 -8 6 -17 8 -21 4 -3 -4 -35 -6 -71 -5 -69 2 -134
                 -17 -171 -50 -11 -10 -24 -18 -30 -18 -16 -1 -194 -177 -194 -192 0 -8 -11
                 -25 -25 -38 -14 -13 -25 -29 -25 -36 0 -6 -7 -18 -17 -25 -9 -8 -27 -36 -39
@@ -304,13 +583,21 @@ function TeamSection() {
                 267 67 312 14 18 17 33 12 55 -4 17 -6 58 -6 90 2 57 -29 190 -49 211 -5 5 -9
                 20 -9 33 0 13 -13 36 -28 50 -61 58 -102 91 -119 96 -10 3 -26 19 -35 36 -12
                 21 -25 30 -42 30 -15 0 -27 7 -31 19 -3 10 -27 41 -53 68 -55 60 -95 73 -118
-                38z"/>
-                </g>
+                38z"
+								/>
+							</g>
 
-                {/* Ashley */}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(3)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M6765 6543 c-103 -44 -210 -128 -265 -208 -44 -64 -109 -273 -121
+							{/* Ashley */}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(3)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M6765 6543 c-103 -44 -210 -128 -265 -208 -44 -64 -109 -273 -121
                 -390 -6 -55 -14 -118 -19 -141 -24 -105 -40 -468 -26 -575 l8 -66 -93 -45
                 c-52 -25 -114 -53 -139 -64 -75 -31 -242 -124 -291 -161 -56 -42 -69 -68 -69
                 -131 0 -26 -6 -57 -14 -68 -11 -15 -14 -45 -12 -115 2 -54 -4 -135 -13 -189
@@ -329,13 +616,21 @@ function TeamSection() {
                 80 -115 197 -115 224 0 12 -4 25 -9 31 -14 14 -106 280 -126 364 -55 231 -77
                 305 -113 376 -22 44 -51 112 -66 153 -24 67 -27 87 -26 205 3 254 -47 714 -97
                 896 -14 52 -29 115 -32 140 -8 57 -66 161 -125 227 -52 57 -155 124 -236 151
-                -37 13 -98 21 -185 25 -124 6 -133 5 -190 -20z"/>
-                </g>
+                -37 13 -98 21 -185 25 -124 6 -133 5 -190 -20z"
+								/>
+							</g>
 
-                {/*ragini*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(4)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M2758 7581 c-108 -26 -185 -76 -320 -206 -46 -45 -128 -227 -150
+							{/*ragini*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(4)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M2758 7581 c-108 -26 -185 -76 -320 -206 -46 -45 -128 -227 -150
                 -334 -10 -52 -22 -99 -25 -105 -4 -5 -10 -69 -14 -141 -12 -210 -26 -283 -103
                 -538 -45 -153 -71 -201 -111 -205 -17 -2 -43 -9 -60 -16 -16 -8 -57 -26 -90
                 -41 -166 -74 -262 -135 -300 -191 -11 -17 -26 -62 -34 -100 -7 -38 -21 -114
@@ -358,13 +653,21 @@ function TeamSection() {
                 197 0 30 -11 100 -24 155 -13 55 -27 123 -31 150 -13 91 -54 326 -59 334 -3 4
                 -16 57 -30 117 -14 60 -29 126 -34 146 -11 42 -134 273 -162 303 -10 11 -23
                 32 -29 47 -7 18 -28 36 -59 52 -27 14 -64 38 -83 53 -18 15 -47 29 -63 30
-                -158 12 -175 11 -248 -6z"/>
-                </g>
+                -158 12 -175 11 -248 -6z"
+								/>
+							</g>
 
-                {/*lizzy*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(5)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M3590 8080 c-100 -8 -118 -13 -216 -61 -73 -36 -217 -173 -245 -233
+							{/*lizzy*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(5)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M3590 8080 c-100 -8 -118 -13 -216 -61 -73 -36 -217 -173 -245 -233
                 -10 -22 -34 -62 -53 -87 -42 -57 -54 -110 -33 -142 8 -13 47 -40 86 -61 39
                 -20 71 -44 71 -51 0 -8 16 -36 37 -62 46 -61 125 -228 148 -313 10 -36 28
                 -105 42 -155 22 -82 36 -159 78 -420 7 -49 21 -120 29 -156 9 -37 20 -109 26
@@ -373,13 +676,21 @@ function TeamSection() {
                 11 32 53 65 93 33 39 60 76 60 81 0 25 189 199 216 199 3 0 18 9 34 20 40 28
                 43 66 16 183 -31 130 -42 184 -56 277 -6 41 -20 98 -30 125 -70 185 -96 246
                 -126 295 -18 30 -36 67 -40 83 -6 26 -56 77 -75 77 -5 0 -43 27 -84 60 -69 54
-                -127 82 -165 78 -8 0 -58 -4 -110 -8z"/>
-                </g>
+                -127 82 -165 78 -8 0 -58 -4 -110 -8z"
+								/>
+							</g>
 
-                {/*anish*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(6)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M5186 7794 c-21 -8 -55 -27 -75 -42 -20 -15 -45 -33 -56 -40 -92 -58
+							{/*anish*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(6)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M5186 7794 c-21 -8 -55 -27 -75 -42 -20 -15 -45 -33 -56 -40 -92 -58
                 -114 -76 -125 -103 -7 -17 -34 -48 -59 -69 -72 -61 -84 -109 -77 -296 10 -256
                 18 -319 44 -347 13 -13 26 -37 31 -52 5 -19 17 -32 37 -39 17 -6 61 -38 98
                 -71 37 -33 79 -66 93 -73 17 -9 23 -20 20 -32 -3 -10 1 -27 8 -37 6 -10 23
@@ -396,13 +707,21 @@ function TeamSection() {
                 62 11 17 27 58 37 91 21 74 40 105 66 105 33 0 75 28 86 57 9 25 26 114 52
                 291 5 29 16 64 24 77 9 13 16 33 16 43 0 11 9 31 21 45 26 34 18 86 -22 144
                 -16 23 -29 44 -29 48 0 4 -14 26 -31 50 -18 24 -48 77 -68 117 -36 73 -37 73
-                -121 116 -46 23 -99 57 -118 75 l-33 32 -172 2 c-128 1 -182 -2 -211 -13z"/>
-                </g>
+                -121 116 -46 23 -99 57 -118 75 l-33 32 -172 2 c-128 1 -182 -2 -211 -13z"
+								/>
+							</g>
 
-                {/*anthony*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(7)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M4285 9156 c-114 -40 -267 -105 -303 -129 -39 -26 -118 -148 -137
+							{/*anthony*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(7)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M4285 9156 c-114 -40 -267 -105 -303 -129 -39 -26 -118 -148 -137
                 -211 -7 -24 -23 -62 -34 -84 -28 -55 -27 -94 4 -130 17 -21 26 -47 31 -88 3
                 -33 13 -70 22 -84 9 -14 19 -41 23 -60 9 -43 50 -143 68 -164 8 -9 25 -22 39
                 -29 38 -18 54 -76 50 -178 -2 -66 -7 -92 -20 -106 -25 -27 -22 -51 10 -98 15
@@ -412,13 +731,21 @@ function TeamSection() {
                 353 -21 35 -25 51 -19 80 4 22 1 63 -8 102 -9 36 -24 102 -34 146 -15 65 -17
                 98 -10 175 9 119 50 244 88 271 58 41 114 269 113 465 -1 113 -3 126 -28 175
                 -16 30 -45 74 -65 99 -20 25 -48 61 -61 80 -37 55 -60 70 -112 70 -38 0 -54 6
-                -82 30 -31 28 -43 31 -118 36 -70 4 -94 1 -153 -20z"/>
-                </g>
+                -82 30 -31 28 -43 31 -118 36 -70 4 -94 1 -153 -20z"
+								/>
+							</g>
 
-                {/*manan*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(8)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M6115 8753 c-65 -14 -246 -77 -277 -96 -40 -24 -133 -124 -165 -178
+							{/*manan*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(8)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M6115 8753 c-65 -14 -246 -77 -277 -96 -40 -24 -133 -124 -165 -178
                 -32 -52 -51 -126 -57 -219 -4 -56 -13 -99 -26 -125 -24 -47 -26 -99 -4 -151
                 19 -46 98 -150 123 -164 14 -7 20 -25 23 -70 4 -50 9 -65 35 -93 17 -17 47
                 -66 68 -107 20 -41 44 -84 54 -95 36 -41 82 -125 88 -159 4 -28 -1 -51 -25
@@ -431,13 +758,21 @@ function TeamSection() {
                 -35 52 -30 122 6 79 14 99 64 158 19 22 52 78 75 125 22 47 50 95 61 108 20
                 21 22 33 20 125 -2 68 4 136 17 204 11 56 21 112 21 125 2 50 -22 130 -67 217
                 -48 95 -95 147 -142 156 -15 3 -38 12 -52 20 -81 47 -106 55 -175 54 -38 -1
-                -79 -3 -90 -6z"/>
-                </g>
+                -79 -3 -90 -6z"
+								/>
+							</g>
 
-                {/*kiran*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(9)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M7975 7711 c-11 -5 -36 -10 -56 -10 -69 -2 -99 -13 -156 -62 -32 -26
+							{/*kiran*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(9)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M7975 7711 c-11 -5 -36 -10 -56 -10 -69 -2 -99 -13 -156 -62 -32 -26
                 -74 -62 -94 -78 -76 -65 -106 -133 -129 -301 -5 -36 -7 -84 -4 -107 5 -32 1
                 -50 -15 -76 -24 -39 -27 -100 -7 -138 7 -14 16 -36 19 -50 4 -13 27 -47 52
                 -76 25 -28 45 -56 45 -62 0 -5 9 -16 20 -24 31 -22 50 -80 50 -155 l0 -69 -42
@@ -451,13 +786,21 @@ function TeamSection() {
                 24 214 64 420 53 277 53 279 31 299 -20 18 -141 56 -179 56 -27 0 -90 41 -143
                 93 -50 48 -77 109 -85 190 -6 62 -4 73 26 140 18 39 43 83 56 97 72 76 87 105
                 99 188 6 44 4 57 -11 74 -17 18 -19 35 -16 137 4 164 -6 206 -70 287 -29 37
-                -70 84 -91 104 -53 51 -146 99 -188 98 -19 0 -65 2 -104 6 -38 3 -79 2 -90 -3z"/>
-                </g>
+                -70 84 -91 104 -53 51 -146 99 -188 98 -19 0 -65 2 -104 6 -38 3 -79 2 -90 -3z"
+								/>
+							</g>
 
-                {/*zevik*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(10)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M7068 9353 c-43 -4 -54 -10 -121 -76 -40 -40 -84 -90 -97 -112 -12
+							{/*zevik*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(10)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M7068 9353 c-43 -4 -54 -10 -121 -76 -40 -40 -84 -90 -97 -112 -12
                 -22 -33 -56 -46 -75 -32 -48 -55 -145 -57 -240 -2 -65 -5 -80 -19 -83 -49 -13
                 -73 -121 -46 -210 16 -53 84 -125 126 -133 38 -8 47 -34 56 -161 5 -77 4 -83
                 -18 -100 -13 -10 -31 -34 -41 -53 -9 -19 -75 -92 -146 -163 -109 -108 -134
@@ -472,14 +815,22 @@ function TeamSection() {
                 -10 45 -4 125 9 123 21 160 50 160 53 0 115 59 160 153 31 66 24 146 -17 189
                 -26 27 -28 34 -26 106 1 42 3 94 4 114 2 25 -7 61 -28 105 -17 38 -37 88 -45
                 113 -18 56 -74 97 -145 107 -26 3 -81 23 -121 44 -72 38 -76 39 -170 37 -54
-                -1 -118 -3 -144 -5z"/>
-                </g>
+                -1 -118 -3 -144 -5z"
+								/>
+							</g>
 
-                {/*nakul*/}
+							{/*nakul*/}
 
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(11)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M8640 8521 c0 -5 -11 -11 -23 -15 -13 -3 -40 -19 -61 -35 -21 -17
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(11)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M8640 8521 c0 -5 -11 -11 -23 -15 -13 -3 -40 -19 -61 -35 -21 -17
                 -52 -35 -69 -41 -50 -16 -146 -159 -147 -217 0 -29 -16 -123 -40 -228 -5 -23
                 -5 -59 0 -85 5 -25 9 -48 10 -51 0 -4 -11 -10 -24 -13 -14 -3 -28 -16 -32 -29
                 -4 -12 -10 -24 -14 -27 -4 -3 -10 -24 -13 -48 -4 -37 -2 -46 21 -68 15 -13 35
@@ -493,12 +844,20 @@ function TeamSection() {
                 164 50 207 5 46 4 48 -26 60 -29 11 -31 14 -31 63 0 34 5 54 13 57 22 8 34
                 103 33 242 -2 117 -4 136 -26 180 -33 66 -87 95 -176 95 -59 0 -64 2 -85 33
                 -28 40 -38 47 -66 47 -12 0 -33 11 -47 25 -21 20 -35 25 -79 25 -31 0 -61 6
-                -73 15 -21 16 -44 19 -44 6z"/>
-                </g>
+                -73 15 -21 16 -44 19 -44 6z"
+								/>
+							</g>
 
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(12)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M9360 6773 c-14 -3 -31 -9 -37 -15 -7 -6 -84 -46 -170 -90 -87 -44
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(12)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M9360 6773 c-14 -3 -31 -9 -37 -15 -7 -6 -84 -46 -170 -90 -87 -44
                 -164 -89 -172 -101 -9 -12 -36 -42 -61 -67 -52 -51 -109 -145 -121 -199 -4
                 -20 -19 -67 -33 -106 -13 -38 -27 -94 -30 -124 -4 -29 -8 -57 -11 -61 -3 -6
                 -13 -44 -46 -195 -4 -22 -13 -89 -19 -150 -6 -60 -15 -141 -20 -180 -6 -38
@@ -523,12 +882,20 @@ function TeamSection() {
                 -61 89 -14 25 -38 66 -54 91 -66 99 -108 202 -119 290 -18 140 -20 147 -56
                 190 -19 23 -35 52 -35 65 0 12 -7 28 -15 35 -8 7 -15 18 -15 24 0 30 -116 241
                 -159 289 -26 29 -56 66 -66 83 -26 41 -152 153 -190 169 -108 46 -151 56 -195
-                48z"/>
-                </g>
+                48z"
+								/>
+							</g>
 
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(13)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M9050 9559 c-97 -23 -256 -99 -304 -145 -18 -18 -40 -47 -49 -66 -9
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(13)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M9050 9559 c-97 -23 -256 -99 -304 -145 -18 -18 -40 -47 -49 -66 -9
                 -19 -26 -43 -38 -54 -39 -35 -96 -166 -119 -274 -12 -56 -10 -121 9 -220 22
                 -120 39 -154 86 -171 32 -12 35 -16 35 -54 0 -60 16 -75 80 -80 91 -7 154 -34
                 192 -83 26 -34 38 -42 65 -42 46 0 134 -20 159 -37 46 -30 63 -98 67 -264 3
@@ -541,15 +908,25 @@ function TeamSection() {
                 41 -99 49 -47 16 -213 104 -271 142 -35 23 -36 26 -47 116 -20 166 14 301 85
                 335 29 14 42 31 69 89 18 39 38 98 45 130 7 32 19 72 28 88 12 24 15 67 15
                 210 l1 180 -32 55 c-41 70 -85 116 -127 134 -18 7 -60 41 -93 75 -33 33 -72
-                65 -87 71 -40 15 -110 11 -206 -11z"/>
-                <path d="M8195 8005 c-47 -23 -112 -43 -195 -60 -143 -29 -248 -61 -280 -85
+                65 -87 71 -40 15 -110 11 -206 -11z"
+								/>
+								<path
+									d="M8195 8005 c-47 -23 -112 -43 -195 -60 -143 -29 -248 -61 -280 -85
                 l-22 -16 39 -38 c21 -21 63 -50 93 -65 52 -25 63 -26 219 -26 l164 0 11 45 c8
-                33 18 48 39 58 27 13 27 13 27 118 0 77 -3 104 -12 104 -7 -1 -44 -16 -83 -35z"/>
-                </g>
+                33 18 48 39 58 27 13 27 13 27 118 0 77 -3 104 -12 104 -7 -1 -44 -16 -83 -35z"
+								/>
+							</g>
 
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(14)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M10305 7661 c-27 -4 -63 -15 -80 -26 -52 -34 -166 -138 -180 -165
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(14)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M10305 7661 c-27 -4 -63 -15 -80 -26 -52 -34 -166 -138 -180 -165
                 -13 -26 -29 -97 -45 -204 -5 -32 -16 -67 -26 -77 -13 -14 -19 -51 -27 -146
                 l-10 -128 51 -101 c32 -64 63 -111 83 -127 25 -19 37 -41 52 -93 28 -101 32
                 -191 10 -231 -61 -108 -107 -173 -138 -198 -43 -32 -42 -49 5 -118 40 -59 48
@@ -561,13 +938,21 @@ function TeamSection() {
                 197 0 18 -5 52 -11 76 -17 61 10 178 55 241 18 26 41 76 51 112 15 54 21 64
                 40 64 12 0 29 8 37 18 37 41 88 179 88 236 0 28 24 73 50 93 33 25 16 125 -51
                 306 -16 42 -32 104 -36 137 -8 84 -43 120 -138 144 -38 9 -108 29 -155 43
-                -199 60 -213 63 -305 62 -49 -1 -112 -5 -140 -8z"/>
-                </g>
+                -199 60 -213 63 -305 62 -49 -1 -112 -5 -140 -8z"
+								/>
+							</g>
 
-                {/*rachelle*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(15)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M11660 6664 c-19 -9 -54 -26 -78 -37 -57 -27 -225 -209 -280 -302
+							{/*rachelle*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(15)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M11660 6664 c-19 -9 -54 -26 -78 -37 -57 -27 -225 -209 -280 -302
                 -45 -76 -135 -297 -146 -358 -10 -54 -51 -172 -106 -309 -73 -177 -75 -194
                 -60 -344 17 -172 17 -233 -2 -269 -29 -53 -160 -179 -208 -199 -156 -67 -191
                 -87 -201 -114 -13 -32 -5 -143 13 -174 7 -13 13 -34 14 -48 1 -14 7 -61 14
@@ -587,39 +972,59 @@ function TeamSection() {
                 -20 0 -74 84 -75 115 0 11 5 67 11 125 12 108 19 533 9 560 -3 8 -10 52 -16
                 97 -7 45 -23 119 -36 165 -14 46 -25 94 -25 107 0 13 -14 44 -31 70 -18 25
                 -46 78 -64 116 -43 95 -94 172 -159 243 -105 112 -146 129 -411 168 -16 2 -46
-                -3 -65 -12z"/>
-                </g>
+                -3 -65 -12z"
+								/>
+							</g>
 
-                {/*shub*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(16)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M10715 8900 c-16 -11 -38 -20 -48 -20 -10 0 -40 -11 -67 -25 -27 -14
+							{/*shub*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(16)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M10715 8900 c-16 -11 -38 -20 -48 -20 -10 0 -40 -11 -67 -25 -27 -14
                 -62 -25 -77 -25 -15 0 -60 -16 -99 -35 -74 -37 -73 -35 -124 -150 -27 -60 -30
                 -189 -6 -245 8 -20 18 -68 21 -108 l8 -72 -37 -40 c-43 -47 -46 -77 -16 -168
                 24 -74 54 -127 92 -166 26 -26 58 -107 58 -147 0 -31 48 -59 101 -59 36 0 66
                 -10 125 -40 43 -22 91 -40 107 -40 43 0 90 -26 145 -81 50 -49 107 -79 121
                 -63 5 5 17 32 27 59 10 28 43 78 75 115 37 43 66 89 84 134 27 70 65 272 70
                 381 5 85 40 234 65 266 23 33 26 82 6 121 -32 62 -112 159 -136 165 -29 7
-                -103 63 -194 144 -75 68 -89 76 -175 100 -82 24 -89 24 -126 -1z"/>
-                <path d="M9920 7329 c-52 -21 -122 -45 -155 -55 -33 -10 -80 -26 -103 -36 -53
+                -103 63 -194 144 -75 68 -89 76 -175 100 -82 24 -89 24 -126 -1z"
+								/>
+								<path
+									d="M9920 7329 c-52 -21 -122 -45 -155 -55 -33 -10 -80 -26 -103 -36 -53
                 -22 -148 -101 -168 -140 -19 -36 -38 -233 -30 -301 l7 -52 94 -58 c94 -58 154
                 -115 203 -192 14 -22 39 -62 57 -90 17 -27 58 -94 90 -147 32 -54 60 -98 64
                 -98 3 0 29 28 56 62 28 34 64 76 81 92 29 29 32 38 38 118 6 68 3 99 -10 140
                 -26 82 -38 103 -62 106 -32 5 -98 110 -123 197 -12 40 10 293 27 322 12 19 39
-                163 32 167 -2 1 -46 -15 -98 -35z"/>
-                <path d="M11114 7203 c-8 -9 -12 -23 -9 -32 3 -8 9 -59 12 -113 l6 -98 -29 -6
+                163 32 167 -2 1 -46 -15 -98 -35z"
+								/>
+								<path
+									d="M11114 7203 c-8 -9 -12 -23 -9 -32 3 -8 9 -59 12 -113 l6 -98 -29 -6
                 c-28 -5 -30 -8 -30 -57 0 -51 -28 -146 -62 -217 -12 -25 -25 -36 -43 -38 -22
                 -3 -28 -10 -33 -40 -4 -20 -19 -60 -34 -88 -95 -180 -104 -202 -98 -246 3 -24
                 9 -75 14 -115 13 -108 23 -119 222 -258 36 -25 70 -45 75 -45 17 0 55 86 55
                 123 0 49 19 106 55 167 18 30 58 102 90 160 35 63 82 131 121 173 35 38 64 73
                 64 77 0 14 111 92 166 116 78 34 89 64 63 164 -25 96 -42 117 -122 160 -36 19
                 -70 44 -75 55 -9 20 -183 115 -210 115 -7 0 -31 9 -53 20 -60 31 -126 41 -145
-                23z"/>
-                </g>
+                23z"
+								/>
+							</g>
 
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(17)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M12463 8600 c-53 -4 -81 -13 -110 -32 -21 -14 -48 -29 -60 -33 -16
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(17)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M12463 8600 c-53 -4 -81 -13 -110 -32 -21 -14 -48 -29 -60 -33 -16
                 -4 -40 -43 -90 -143 -37 -75 -80 -155 -95 -177 l-27 -40 14 -185 c7 -102 17
                 -196 22 -210 14 -42 91 -136 147 -179 75 -56 101 -111 109 -228 6 -79 4 -97
                 -12 -125 -10 -18 -26 -62 -35 -98 -14 -56 -22 -69 -54 -89 -59 -39 -111 -65
@@ -633,12 +1038,20 @@ function TeamSection() {
                 -45 71 -114 299 -21 71 -31 90 -50 97 -33 13 -161 147 -174 184 -7 17 -18 46
                 -26 64 -37 85 -1 331 59 414 17 23 19 37 13 97 -4 51 -2 81 8 108 23 60 38
                 182 30 253 -4 39 -19 90 -36 127 -30 63 -32 64 -168 152 -22 14 -132 50 -225
-                72 -44 11 -93 26 -108 34 -30 16 -39 16 -154 5z"/>
-                </g>
+                72 -44 11 -93 26 -108 34 -30 16 -39 16 -154 5z"
+								/>
+							</g>
 
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(18)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M11790 9099 c-19 -5 -66 -7 -105 -4 l-70 6 -145 -73 c-102 -51 -149
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(18)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M11790 9099 c-19 -5 -66 -7 -105 -4 l-70 6 -145 -73 c-102 -51 -149
                 -81 -160 -100 -8 -14 -27 -46 -42 -71 -31 -51 -47 -111 -48 -177 0 -42 6 -53
                 65 -124 l64 -77 -4 -76 c-3 -56 0 -83 11 -105 9 -17 17 -45 19 -62 2 -17 13
                 -68 24 -114 25 -100 29 -266 7 -297 -7 -11 -17 -31 -21 -45 -24 -82 -100 -139
@@ -648,13 +1061,21 @@ function TeamSection() {
                 102 11 10 52 156 115 406 31 121 74 270 95 333 44 123 49 185 21 256 -12 31
                 -13 67 -8 189 7 140 10 155 39 217 17 36 43 84 57 106 32 49 50 90 50 113 0
                 10 9 35 21 57 32 60 23 129 -30 235 -24 47 -53 96 -66 110 -12 14 -40 51 -60
-                84 -46 73 -100 133 -136 152 -31 16 -143 17 -199 3z"/>
-                </g>
+                84 -46 73 -100 133 -136 152 -31 16 -143 17 -199 3z"
+								/>
+							</g>
 
-                {/*meghna*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(19)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M14120 6901 c-41 -20 -93 -48 -115 -63 -52 -35 -145 -131 -145 -151
+							{/*meghna*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(19)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M14120 6901 c-41 -20 -93 -48 -115 -63 -52 -35 -145 -131 -145 -151
                 0 -8 -13 -44 -30 -79 -16 -34 -30 -73 -30 -85 0 -13 -17 -49 -37 -80 -50 -79
                 -75 -148 -77 -211 -1 -42 3 -53 17 -58 23 -7 22 -41 -4 -83 -16 -26 -20 -45
                 -16 -75 3 -23 1 -63 -5 -90 -8 -36 -7 -54 2 -71 10 -19 9 -32 -4 -71 -9 -26
@@ -675,13 +1096,21 @@ function TeamSection() {
                 -11 71 -12 109 0 39 -4 74 -7 80 -4 5 -8 60 -9 120 -2 90 -7 119 -23 151 -12
                 21 -21 52 -21 67 0 15 -6 45 -14 65 -8 21 -17 50 -20 64 -3 16 -29 46 -63 74
                 -32 27 -65 56 -74 65 -8 10 -39 30 -67 44 -46 24 -59 26 -122 20 -55 -5 -74
-                -4 -88 8 -11 10 -39 15 -82 15 -55 0 -77 -5 -140 -36z"/>
-                </g>
+                -4 -88 8 -11 10 -39 15 -82 15 -55 0 -77 -5 -140 -36z"
+								/>
+							</g>
 
-                {/*caden*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(20)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M14426 8959 c-21 -5 -50 -17 -65 -28 -14 -10 -41 -23 -60 -29 -31
+							{/*caden*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(20)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M14426 8959 c-21 -5 -50 -17 -65 -28 -14 -10 -41 -23 -60 -29 -31
                 -11 -83 -54 -153 -127 -73 -76 -93 -193 -63 -370 9 -55 18 -134 20 -175 3 -78
                 30 -167 61 -201 9 -11 30 -19 45 -19 25 0 30 -5 44 -52 19 -64 19 -143 1 -196
                 -25 -71 -29 -141 -11 -242 15 -91 17 -97 60 -137 54 -51 56 -72 19 -194 -21
@@ -694,13 +1123,21 @@ function TeamSection() {
                 48 -3 264 44 347 28 49 28 53 11 68 -10 9 -46 28 -82 42 -151 61 -189 84 -221
                 129 -18 25 -35 45 -39 45 -13 0 -39 93 -39 141 0 100 18 147 76 204 l54 52 -1
                 94 c0 72 -5 101 -19 126 -13 22 -20 63 -25 135 -9 120 -32 191 -85 263 -57 76
-                -88 101 -180 143 -131 61 -215 74 -314 51z"/>
-                </g>
+                -88 101 -180 143 -131 61 -215 74 -314 51z"
+								/>
+							</g>
 
-                {/*brandon*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(21)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M15670 7733 c-107 -18 -264 -111 -350 -206 -68 -76 -77 -92 -98 -191
+							{/*brandon*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(21)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M15670 7733 c-107 -18 -264 -111 -350 -206 -68 -76 -77 -92 -98 -191
                 -14 -64 -16 -97 -9 -156 4 -41 10 -138 12 -215 3 -77 7 -155 10 -173 5 -29 65
                 -103 91 -113 6 -2 30 -44 53 -93 39 -80 42 -94 38 -145 -7 -74 -34 -188 -53
                 -220 -22 -38 -117 -101 -151 -101 -15 0 -42 -9 -59 -19 -18 -11 -42 -21 -55
@@ -724,13 +1161,21 @@ function TeamSection() {
                 44 -74 37 -92 51 -120 94 -17 27 -32 54 -32 59 0 6 -20 41 -45 79 -43 65 -55
                 109 -36 129 11 13 31 97 31 132 0 17 8 33 20 41 14 8 20 23 20 48 0 39 15 104
                 33 141 13 28 4 132 -16 168 -11 21 -12 38 -5 69 6 27 6 85 -2 166 -10 116 -14
-                129 -45 176 -36 55 -133 134 -218 177 -81 41 -225 71 -287 60z"/>
-                </g>
+                129 -45 176 -36 55 -133 134 -218 177 -81 41 -225 71 -287 60z"
+								/>
+							</g>
 
-                {/*benny*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(22)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M17165 6940 c-22 -4 -53 -13 -70 -19 -16 -6 -60 -20 -97 -31 -51 -16
+							{/*benny*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(22)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M17165 6940 c-22 -4 -53 -13 -70 -19 -16 -6 -60 -20 -97 -31 -51 -16
                 -75 -31 -102 -61 -20 -21 -36 -45 -36 -51 0 -7 -25 -65 -56 -130 -53 -110 -56
                 -122 -56 -192 0 -40 6 -93 12 -116 6 -23 10 -74 9 -114 -4 -145 72 -396 146
                 -484 22 -27 24 -34 14 -53 -6 -12 -19 -50 -28 -83 -15 -57 -20 -63 -77 -102
@@ -754,12 +1199,20 @@ function TeamSection() {
                 -187 86 -166 80 -360 164 -380 164 -5 0 -40 33 -78 73 -61 63 -75 86 -108 170
                 l-39 97 23 75 c19 67 26 77 56 92 47 22 68 52 92 133 27 88 21 167 -15 201
                 -13 12 -24 32 -24 44 0 12 -7 64 -16 116 -17 100 -51 176 -126 276 -48 66
-                -166 144 -248 165 -45 12 -111 28 -130 32 -8 2 -33 0 -55 -4z"/>
-                </g>
+                -166 144 -248 165 -45 12 -111 28 -130 32 -8 2 -33 0 -55 -4z"
+								/>
+							</g>
 
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(23)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M13730 7750 c-30 -32 -63 -59 -72 -59 -9 -1 -20 -5 -23 -11 -3 -5
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(23)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M13730 7750 c-30 -32 -63 -59 -72 -59 -9 -1 -20 -5 -23 -11 -3 -5
                 -20 -10 -36 -10 -16 0 -39 -8 -50 -19 -17 -15 -37 -19 -119 -19 l-99 -1 -56
                 -55 -55 -56 0 -120 c0 -107 2 -123 20 -142 16 -17 20 -36 20 -90 0 -37 6 -85
                 14 -105 14 -40 28 -113 47 -251 11 -81 12 -83 56 -119 25 -20 59 -57 76 -82
@@ -777,23 +1230,37 @@ function TeamSection() {
                 10 66 6 3 10 21 10 40 0 19 5 37 10 40 6 3 10 35 10 71 0 61 -2 66 -40 105
                 -34 35 -40 48 -40 85 0 23 -4 46 -10 49 -5 3 -10 14 -10 24 0 21 -27 78 -41
                 87 -5 3 -16 0 -24 -6 -17 -14 -29 -7 -77 43 -14 15 -35 27 -46 27 -11 0 -43
-                23 -71 50 l-51 50 -83 -1 -82 0 -55 -59z"/>
-                <path d="M14886 5982 c-3 -6 0 -30 9 -54 18 -52 18 -58 4 -58 -16 0 -33 -20
+                23 -71 50 l-51 50 -83 -1 -82 0 -55 -59z"
+								/>
+								<path
+									d="M14886 5982 c-3 -6 0 -30 9 -54 18 -52 18 -58 4 -58 -16 0 -33 -20
                 -53 -64 -14 -30 -17 -54 -13 -102 4 -61 6 -63 72 -129 65 -65 69 -67 117 -67
                 27 0 55 5 61 11 6 6 21 11 33 11 20 0 23 7 30 56 14 112 -9 284 -38 284 -4 0
-                -14 14 -23 30 -9 17 -33 41 -54 55 -41 28 -134 45 -145 27z"/>
-                </g>
-                </svg>
-                </SvgDesktop>
+                -14 14 -23 30 -9 17 -33 41 -54 55 -41 28 -134 45 -145 27z"
+								/>
+							</g>
+						</svg>
+					</SvgDesktop>
 
-                <SvgTablet>
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-                width="50vw" viewBox="0 0 1911.000000 1147.000000"
-                preserveAspectRatio="xMidYMid meet">
-                {/*Andrew */}
-                <g fillOpacity={0} transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(1) } onMouseOut = {()=>setHoverID(0)}>
-                <path d="M1620 9131 c-128 -35 -204 -89 -297 -212 -64 -84 -76 -125 -68 -241
+					<SvgTablet>
+						<svg
+							version="1.0"
+							xmlns="http://www.w3.org/2000/svg"
+							width="50vw"
+							viewBox="0 0 1911.000000 1147.000000"
+							preserveAspectRatio="xMidYMid meet"
+						>
+							{/*Andrew */}
+							<g
+								fillOpacity={0}
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(1)}
+								onMouseOut={() => setHoverID(0)}
+							>
+								<path
+									d="M1620 9131 c-128 -35 -204 -89 -297 -212 -64 -84 -76 -125 -68 -241
                 4 -69 2 -104 -6 -120 -26 -47 -11 -208 25 -276 23 -43 63 -80 95 -87 29 -6 29
                 -6 36 -100 8 -108 1 -178 -21 -196 -8 -7 -21 -27 -29 -45 -13 -32 -62 -83
                 -151 -159 -26 -22 -56 -48 -66 -58 -26 -24 -122 -57 -168 -57 -20 0 -41 -5
@@ -812,8 +1279,10 @@ function TeamSection() {
                 -60 27 -27 10 -62 28 -77 41 -15 12 -31 24 -35 26 -4 1 -26 28 -49 58 -35 48
                 -42 66 -53 143 -15 99 -15 98 65 192 46 55 114 172 114 198 0 9 11 52 25 94
                 14 43 31 93 36 112 11 34 24 258 22 382 -2 126 -91 278 -183 314 -25 10 -61
-                30 -80 45 -63 48 -123 63 -260 66 -95 2 -141 -2 -190 -15z"/>
-                <path d="M692 4458 c-11 -24 -47 -92 -81 -153 l-62 -110 1 -100 c1 -55 0 -116
+                30 -80 45 -63 48 -123 63 -260 66 -95 2 -141 -2 -190 -15z"
+								/>
+								<path
+									d="M692 4458 c-11 -24 -47 -92 -81 -153 l-62 -110 1 -100 c1 -55 0 -116
                 -2 -135 -3 -34 -1 -36 72 -75 66 -35 76 -44 82 -75 25 -123 42 -224 49 -286 4
                 -39 22 -134 40 -210 31 -134 32 -147 34 -369 1 -177 6 -255 21 -340 21 -124
                 22 -148 5 -665 -7 -232 -19 -418 -31 -510 -10 -80 -21 -199 -25 -265 -4 -66
@@ -821,13 +1290,21 @@ function TeamSection() {
                 -41 15 -68 l6 -49 543 0 544 0 1 53 c1 28 3 212 4 407 2 195 7 630 11 965 5
                 336 8 630 8 655 0 46 -53 162 -160 351 -24 42 -143 274 -265 515 -122 242
                 -266 522 -319 624 -54 102 -170 328 -259 504 -163 320 -222 426 -240 426 -6 0
-                -19 -19 -29 -42z"/>
-                </g>
+                -19 -19 -29 -42z"
+								/>
+							</g>
 
-                {/*Kapil */}
-                <g fillOpacity={0} transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(2)} onMouseOut = {()=>setHoverID(0)}>
-                <path d="M4724 6955 c-12 -19 -27 -23 -100 -29 -52 -4 -91 -2 -98 3 -7 6 -22
+							{/*Kapil */}
+							<g
+								fillOpacity={0}
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(2)}
+								onMouseOut={() => setHoverID(0)}
+							>
+								<path
+									d="M4724 6955 c-12 -19 -27 -23 -100 -29 -52 -4 -91 -2 -98 3 -7 6 -22
                 8 -34 4 -12 -3 -28 0 -35 6 -8 6 -17 8 -21 4 -3 -4 -35 -6 -71 -5 -69 2 -134
                 -17 -171 -50 -11 -10 -24 -18 -30 -18 -16 -1 -194 -177 -194 -192 0 -8 -11
                 -25 -25 -38 -14 -13 -25 -29 -25 -36 0 -6 -7 -18 -17 -25 -9 -8 -27 -36 -39
@@ -856,13 +1333,21 @@ function TeamSection() {
                 267 67 312 14 18 17 33 12 55 -4 17 -6 58 -6 90 2 57 -29 190 -49 211 -5 5 -9
                 20 -9 33 0 13 -13 36 -28 50 -61 58 -102 91 -119 96 -10 3 -26 19 -35 36 -12
                 21 -25 30 -42 30 -15 0 -27 7 -31 19 -3 10 -27 41 -53 68 -55 60 -95 73 -118
-                38z"/>
-                </g>
+                38z"
+								/>
+							</g>
 
-                {/* Ashley */}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(3)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M6765 6543 c-103 -44 -210 -128 -265 -208 -44 -64 -109 -273 -121
+							{/* Ashley */}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(3)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M6765 6543 c-103 -44 -210 -128 -265 -208 -44 -64 -109 -273 -121
                 -390 -6 -55 -14 -118 -19 -141 -24 -105 -40 -468 -26 -575 l8 -66 -93 -45
                 c-52 -25 -114 -53 -139 -64 -75 -31 -242 -124 -291 -161 -56 -42 -69 -68 -69
                 -131 0 -26 -6 -57 -14 -68 -11 -15 -14 -45 -12 -115 2 -54 -4 -135 -13 -189
@@ -881,13 +1366,21 @@ function TeamSection() {
                 80 -115 197 -115 224 0 12 -4 25 -9 31 -14 14 -106 280 -126 364 -55 231 -77
                 305 -113 376 -22 44 -51 112 -66 153 -24 67 -27 87 -26 205 3 254 -47 714 -97
                 896 -14 52 -29 115 -32 140 -8 57 -66 161 -125 227 -52 57 -155 124 -236 151
-                -37 13 -98 21 -185 25 -124 6 -133 5 -190 -20z"/>
-                </g>
+                -37 13 -98 21 -185 25 -124 6 -133 5 -190 -20z"
+								/>
+							</g>
 
-                {/*ragini*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(4)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M2758 7581 c-108 -26 -185 -76 -320 -206 -46 -45 -128 -227 -150
+							{/*ragini*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(4)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M2758 7581 c-108 -26 -185 -76 -320 -206 -46 -45 -128 -227 -150
                 -334 -10 -52 -22 -99 -25 -105 -4 -5 -10 -69 -14 -141 -12 -210 -26 -283 -103
                 -538 -45 -153 -71 -201 -111 -205 -17 -2 -43 -9 -60 -16 -16 -8 -57 -26 -90
                 -41 -166 -74 -262 -135 -300 -191 -11 -17 -26 -62 -34 -100 -7 -38 -21 -114
@@ -910,13 +1403,21 @@ function TeamSection() {
                 197 0 30 -11 100 -24 155 -13 55 -27 123 -31 150 -13 91 -54 326 -59 334 -3 4
                 -16 57 -30 117 -14 60 -29 126 -34 146 -11 42 -134 273 -162 303 -10 11 -23
                 32 -29 47 -7 18 -28 36 -59 52 -27 14 -64 38 -83 53 -18 15 -47 29 -63 30
-                -158 12 -175 11 -248 -6z"/>
-                </g>
+                -158 12 -175 11 -248 -6z"
+								/>
+							</g>
 
-                {/*lizzy*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(5)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M3590 8080 c-100 -8 -118 -13 -216 -61 -73 -36 -217 -173 -245 -233
+							{/*lizzy*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(5)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M3590 8080 c-100 -8 -118 -13 -216 -61 -73 -36 -217 -173 -245 -233
                 -10 -22 -34 -62 -53 -87 -42 -57 -54 -110 -33 -142 8 -13 47 -40 86 -61 39
                 -20 71 -44 71 -51 0 -8 16 -36 37 -62 46 -61 125 -228 148 -313 10 -36 28
                 -105 42 -155 22 -82 36 -159 78 -420 7 -49 21 -120 29 -156 9 -37 20 -109 26
@@ -925,13 +1426,21 @@ function TeamSection() {
                 11 32 53 65 93 33 39 60 76 60 81 0 25 189 199 216 199 3 0 18 9 34 20 40 28
                 43 66 16 183 -31 130 -42 184 -56 277 -6 41 -20 98 -30 125 -70 185 -96 246
                 -126 295 -18 30 -36 67 -40 83 -6 26 -56 77 -75 77 -5 0 -43 27 -84 60 -69 54
-                -127 82 -165 78 -8 0 -58 -4 -110 -8z"/>
-                </g>
+                -127 82 -165 78 -8 0 -58 -4 -110 -8z"
+								/>
+							</g>
 
-                {/*anish*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(6)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M5186 7794 c-21 -8 -55 -27 -75 -42 -20 -15 -45 -33 -56 -40 -92 -58
+							{/*anish*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(6)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M5186 7794 c-21 -8 -55 -27 -75 -42 -20 -15 -45 -33 -56 -40 -92 -58
                 -114 -76 -125 -103 -7 -17 -34 -48 -59 -69 -72 -61 -84 -109 -77 -296 10 -256
                 18 -319 44 -347 13 -13 26 -37 31 -52 5 -19 17 -32 37 -39 17 -6 61 -38 98
                 -71 37 -33 79 -66 93 -73 17 -9 23 -20 20 -32 -3 -10 1 -27 8 -37 6 -10 23
@@ -948,13 +1457,21 @@ function TeamSection() {
                 62 11 17 27 58 37 91 21 74 40 105 66 105 33 0 75 28 86 57 9 25 26 114 52
                 291 5 29 16 64 24 77 9 13 16 33 16 43 0 11 9 31 21 45 26 34 18 86 -22 144
                 -16 23 -29 44 -29 48 0 4 -14 26 -31 50 -18 24 -48 77 -68 117 -36 73 -37 73
-                -121 116 -46 23 -99 57 -118 75 l-33 32 -172 2 c-128 1 -182 -2 -211 -13z"/>
-                </g>
+                -121 116 -46 23 -99 57 -118 75 l-33 32 -172 2 c-128 1 -182 -2 -211 -13z"
+								/>
+							</g>
 
-                {/*anthony*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(7)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M4285 9156 c-114 -40 -267 -105 -303 -129 -39 -26 -118 -148 -137
+							{/*anthony*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(7)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M4285 9156 c-114 -40 -267 -105 -303 -129 -39 -26 -118 -148 -137
                 -211 -7 -24 -23 -62 -34 -84 -28 -55 -27 -94 4 -130 17 -21 26 -47 31 -88 3
                 -33 13 -70 22 -84 9 -14 19 -41 23 -60 9 -43 50 -143 68 -164 8 -9 25 -22 39
                 -29 38 -18 54 -76 50 -178 -2 -66 -7 -92 -20 -106 -25 -27 -22 -51 10 -98 15
@@ -964,13 +1481,21 @@ function TeamSection() {
                 353 -21 35 -25 51 -19 80 4 22 1 63 -8 102 -9 36 -24 102 -34 146 -15 65 -17
                 98 -10 175 9 119 50 244 88 271 58 41 114 269 113 465 -1 113 -3 126 -28 175
                 -16 30 -45 74 -65 99 -20 25 -48 61 -61 80 -37 55 -60 70 -112 70 -38 0 -54 6
-                -82 30 -31 28 -43 31 -118 36 -70 4 -94 1 -153 -20z"/>
-                </g>
+                -82 30 -31 28 -43 31 -118 36 -70 4 -94 1 -153 -20z"
+								/>
+							</g>
 
-                {/*manan*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(8)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M6115 8753 c-65 -14 -246 -77 -277 -96 -40 -24 -133 -124 -165 -178
+							{/*manan*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(8)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M6115 8753 c-65 -14 -246 -77 -277 -96 -40 -24 -133 -124 -165 -178
                 -32 -52 -51 -126 -57 -219 -4 -56 -13 -99 -26 -125 -24 -47 -26 -99 -4 -151
                 19 -46 98 -150 123 -164 14 -7 20 -25 23 -70 4 -50 9 -65 35 -93 17 -17 47
                 -66 68 -107 20 -41 44 -84 54 -95 36 -41 82 -125 88 -159 4 -28 -1 -51 -25
@@ -983,13 +1508,21 @@ function TeamSection() {
                 -35 52 -30 122 6 79 14 99 64 158 19 22 52 78 75 125 22 47 50 95 61 108 20
                 21 22 33 20 125 -2 68 4 136 17 204 11 56 21 112 21 125 2 50 -22 130 -67 217
                 -48 95 -95 147 -142 156 -15 3 -38 12 -52 20 -81 47 -106 55 -175 54 -38 -1
-                -79 -3 -90 -6z"/>
-                </g>
+                -79 -3 -90 -6z"
+								/>
+							</g>
 
-                {/*kiran*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(9)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M7975 7711 c-11 -5 -36 -10 -56 -10 -69 -2 -99 -13 -156 -62 -32 -26
+							{/*kiran*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(9)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M7975 7711 c-11 -5 -36 -10 -56 -10 -69 -2 -99 -13 -156 -62 -32 -26
                 -74 -62 -94 -78 -76 -65 -106 -133 -129 -301 -5 -36 -7 -84 -4 -107 5 -32 1
                 -50 -15 -76 -24 -39 -27 -100 -7 -138 7 -14 16 -36 19 -50 4 -13 27 -47 52
                 -76 25 -28 45 -56 45 -62 0 -5 9 -16 20 -24 31 -22 50 -80 50 -155 l0 -69 -42
@@ -1003,13 +1536,21 @@ function TeamSection() {
                 24 214 64 420 53 277 53 279 31 299 -20 18 -141 56 -179 56 -27 0 -90 41 -143
                 93 -50 48 -77 109 -85 190 -6 62 -4 73 26 140 18 39 43 83 56 97 72 76 87 105
                 99 188 6 44 4 57 -11 74 -17 18 -19 35 -16 137 4 164 -6 206 -70 287 -29 37
-                -70 84 -91 104 -53 51 -146 99 -188 98 -19 0 -65 2 -104 6 -38 3 -79 2 -90 -3z"/>
-                </g>
+                -70 84 -91 104 -53 51 -146 99 -188 98 -19 0 -65 2 -104 6 -38 3 -79 2 -90 -3z"
+								/>
+							</g>
 
-                {/*zevik*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(10)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M7068 9353 c-43 -4 -54 -10 -121 -76 -40 -40 -84 -90 -97 -112 -12
+							{/*zevik*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(10)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M7068 9353 c-43 -4 -54 -10 -121 -76 -40 -40 -84 -90 -97 -112 -12
                 -22 -33 -56 -46 -75 -32 -48 -55 -145 -57 -240 -2 -65 -5 -80 -19 -83 -49 -13
                 -73 -121 -46 -210 16 -53 84 -125 126 -133 38 -8 47 -34 56 -161 5 -77 4 -83
                 -18 -100 -13 -10 -31 -34 -41 -53 -9 -19 -75 -92 -146 -163 -109 -108 -134
@@ -1024,14 +1565,22 @@ function TeamSection() {
                 -10 45 -4 125 9 123 21 160 50 160 53 0 115 59 160 153 31 66 24 146 -17 189
                 -26 27 -28 34 -26 106 1 42 3 94 4 114 2 25 -7 61 -28 105 -17 38 -37 88 -45
                 113 -18 56 -74 97 -145 107 -26 3 -81 23 -121 44 -72 38 -76 39 -170 37 -54
-                -1 -118 -3 -144 -5z"/>
-                </g>
+                -1 -118 -3 -144 -5z"
+								/>
+							</g>
 
-                {/*nakul*/}
+							{/*nakul*/}
 
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(11)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M8640 8521 c0 -5 -11 -11 -23 -15 -13 -3 -40 -19 -61 -35 -21 -17
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(11)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M8640 8521 c0 -5 -11 -11 -23 -15 -13 -3 -40 -19 -61 -35 -21 -17
                 -52 -35 -69 -41 -50 -16 -146 -159 -147 -217 0 -29 -16 -123 -40 -228 -5 -23
                 -5 -59 0 -85 5 -25 9 -48 10 -51 0 -4 -11 -10 -24 -13 -14 -3 -28 -16 -32 -29
                 -4 -12 -10 -24 -14 -27 -4 -3 -10 -24 -13 -48 -4 -37 -2 -46 21 -68 15 -13 35
@@ -1045,12 +1594,20 @@ function TeamSection() {
                 164 50 207 5 46 4 48 -26 60 -29 11 -31 14 -31 63 0 34 5 54 13 57 22 8 34
                 103 33 242 -2 117 -4 136 -26 180 -33 66 -87 95 -176 95 -59 0 -64 2 -85 33
                 -28 40 -38 47 -66 47 -12 0 -33 11 -47 25 -21 20 -35 25 -79 25 -31 0 -61 6
-                -73 15 -21 16 -44 19 -44 6z"/>
-                </g>
+                -73 15 -21 16 -44 19 -44 6z"
+								/>
+							</g>
 
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(12)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M9360 6773 c-14 -3 -31 -9 -37 -15 -7 -6 -84 -46 -170 -90 -87 -44
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(12)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M9360 6773 c-14 -3 -31 -9 -37 -15 -7 -6 -84 -46 -170 -90 -87 -44
                 -164 -89 -172 -101 -9 -12 -36 -42 -61 -67 -52 -51 -109 -145 -121 -199 -4
                 -20 -19 -67 -33 -106 -13 -38 -27 -94 -30 -124 -4 -29 -8 -57 -11 -61 -3 -6
                 -13 -44 -46 -195 -4 -22 -13 -89 -19 -150 -6 -60 -15 -141 -20 -180 -6 -38
@@ -1075,12 +1632,20 @@ function TeamSection() {
                 -61 89 -14 25 -38 66 -54 91 -66 99 -108 202 -119 290 -18 140 -20 147 -56
                 190 -19 23 -35 52 -35 65 0 12 -7 28 -15 35 -8 7 -15 18 -15 24 0 30 -116 241
                 -159 289 -26 29 -56 66 -66 83 -26 41 -152 153 -190 169 -108 46 -151 56 -195
-                48z"/>
-                </g>
+                48z"
+								/>
+							</g>
 
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(13)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M9050 9559 c-97 -23 -256 -99 -304 -145 -18 -18 -40 -47 -49 -66 -9
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(13)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M9050 9559 c-97 -23 -256 -99 -304 -145 -18 -18 -40 -47 -49 -66 -9
                 -19 -26 -43 -38 -54 -39 -35 -96 -166 -119 -274 -12 -56 -10 -121 9 -220 22
                 -120 39 -154 86 -171 32 -12 35 -16 35 -54 0 -60 16 -75 80 -80 91 -7 154 -34
                 192 -83 26 -34 38 -42 65 -42 46 0 134 -20 159 -37 46 -30 63 -98 67 -264 3
@@ -1093,15 +1658,25 @@ function TeamSection() {
                 41 -99 49 -47 16 -213 104 -271 142 -35 23 -36 26 -47 116 -20 166 14 301 85
                 335 29 14 42 31 69 89 18 39 38 98 45 130 7 32 19 72 28 88 12 24 15 67 15
                 210 l1 180 -32 55 c-41 70 -85 116 -127 134 -18 7 -60 41 -93 75 -33 33 -72
-                65 -87 71 -40 15 -110 11 -206 -11z"/>
-                <path d="M8195 8005 c-47 -23 -112 -43 -195 -60 -143 -29 -248 -61 -280 -85
+                65 -87 71 -40 15 -110 11 -206 -11z"
+								/>
+								<path
+									d="M8195 8005 c-47 -23 -112 -43 -195 -60 -143 -29 -248 -61 -280 -85
                 l-22 -16 39 -38 c21 -21 63 -50 93 -65 52 -25 63 -26 219 -26 l164 0 11 45 c8
-                33 18 48 39 58 27 13 27 13 27 118 0 77 -3 104 -12 104 -7 -1 -44 -16 -83 -35z"/>
-                </g>
+                33 18 48 39 58 27 13 27 13 27 118 0 77 -3 104 -12 104 -7 -1 -44 -16 -83 -35z"
+								/>
+							</g>
 
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(14)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M10305 7661 c-27 -4 -63 -15 -80 -26 -52 -34 -166 -138 -180 -165
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(14)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M10305 7661 c-27 -4 -63 -15 -80 -26 -52 -34 -166 -138 -180 -165
                 -13 -26 -29 -97 -45 -204 -5 -32 -16 -67 -26 -77 -13 -14 -19 -51 -27 -146
                 l-10 -128 51 -101 c32 -64 63 -111 83 -127 25 -19 37 -41 52 -93 28 -101 32
                 -191 10 -231 -61 -108 -107 -173 -138 -198 -43 -32 -42 -49 5 -118 40 -59 48
@@ -1113,13 +1688,21 @@ function TeamSection() {
                 197 0 18 -5 52 -11 76 -17 61 10 178 55 241 18 26 41 76 51 112 15 54 21 64
                 40 64 12 0 29 8 37 18 37 41 88 179 88 236 0 28 24 73 50 93 33 25 16 125 -51
                 306 -16 42 -32 104 -36 137 -8 84 -43 120 -138 144 -38 9 -108 29 -155 43
-                -199 60 -213 63 -305 62 -49 -1 -112 -5 -140 -8z"/>
-                </g>
+                -199 60 -213 63 -305 62 -49 -1 -112 -5 -140 -8z"
+								/>
+							</g>
 
-                {/*rachelle*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(15)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M11660 6664 c-19 -9 -54 -26 -78 -37 -57 -27 -225 -209 -280 -302
+							{/*rachelle*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(15)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M11660 6664 c-19 -9 -54 -26 -78 -37 -57 -27 -225 -209 -280 -302
                 -45 -76 -135 -297 -146 -358 -10 -54 -51 -172 -106 -309 -73 -177 -75 -194
                 -60 -344 17 -172 17 -233 -2 -269 -29 -53 -160 -179 -208 -199 -156 -67 -191
                 -87 -201 -114 -13 -32 -5 -143 13 -174 7 -13 13 -34 14 -48 1 -14 7 -61 14
@@ -1139,39 +1722,59 @@ function TeamSection() {
                 -20 0 -74 84 -75 115 0 11 5 67 11 125 12 108 19 533 9 560 -3 8 -10 52 -16
                 97 -7 45 -23 119 -36 165 -14 46 -25 94 -25 107 0 13 -14 44 -31 70 -18 25
                 -46 78 -64 116 -43 95 -94 172 -159 243 -105 112 -146 129 -411 168 -16 2 -46
-                -3 -65 -12z"/>
-                </g>
+                -3 -65 -12z"
+								/>
+							</g>
 
-                {/*shub*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(16)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M10715 8900 c-16 -11 -38 -20 -48 -20 -10 0 -40 -11 -67 -25 -27 -14
+							{/*shub*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(16)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M10715 8900 c-16 -11 -38 -20 -48 -20 -10 0 -40 -11 -67 -25 -27 -14
                 -62 -25 -77 -25 -15 0 -60 -16 -99 -35 -74 -37 -73 -35 -124 -150 -27 -60 -30
                 -189 -6 -245 8 -20 18 -68 21 -108 l8 -72 -37 -40 c-43 -47 -46 -77 -16 -168
                 24 -74 54 -127 92 -166 26 -26 58 -107 58 -147 0 -31 48 -59 101 -59 36 0 66
                 -10 125 -40 43 -22 91 -40 107 -40 43 0 90 -26 145 -81 50 -49 107 -79 121
                 -63 5 5 17 32 27 59 10 28 43 78 75 115 37 43 66 89 84 134 27 70 65 272 70
                 381 5 85 40 234 65 266 23 33 26 82 6 121 -32 62 -112 159 -136 165 -29 7
-                -103 63 -194 144 -75 68 -89 76 -175 100 -82 24 -89 24 -126 -1z"/>
-                <path d="M9920 7329 c-52 -21 -122 -45 -155 -55 -33 -10 -80 -26 -103 -36 -53
+                -103 63 -194 144 -75 68 -89 76 -175 100 -82 24 -89 24 -126 -1z"
+								/>
+								<path
+									d="M9920 7329 c-52 -21 -122 -45 -155 -55 -33 -10 -80 -26 -103 -36 -53
                 -22 -148 -101 -168 -140 -19 -36 -38 -233 -30 -301 l7 -52 94 -58 c94 -58 154
                 -115 203 -192 14 -22 39 -62 57 -90 17 -27 58 -94 90 -147 32 -54 60 -98 64
                 -98 3 0 29 28 56 62 28 34 64 76 81 92 29 29 32 38 38 118 6 68 3 99 -10 140
                 -26 82 -38 103 -62 106 -32 5 -98 110 -123 197 -12 40 10 293 27 322 12 19 39
-                163 32 167 -2 1 -46 -15 -98 -35z"/>
-                <path d="M11114 7203 c-8 -9 -12 -23 -9 -32 3 -8 9 -59 12 -113 l6 -98 -29 -6
+                163 32 167 -2 1 -46 -15 -98 -35z"
+								/>
+								<path
+									d="M11114 7203 c-8 -9 -12 -23 -9 -32 3 -8 9 -59 12 -113 l6 -98 -29 -6
                 c-28 -5 -30 -8 -30 -57 0 -51 -28 -146 -62 -217 -12 -25 -25 -36 -43 -38 -22
                 -3 -28 -10 -33 -40 -4 -20 -19 -60 -34 -88 -95 -180 -104 -202 -98 -246 3 -24
                 9 -75 14 -115 13 -108 23 -119 222 -258 36 -25 70 -45 75 -45 17 0 55 86 55
                 123 0 49 19 106 55 167 18 30 58 102 90 160 35 63 82 131 121 173 35 38 64 73
                 64 77 0 14 111 92 166 116 78 34 89 64 63 164 -25 96 -42 117 -122 160 -36 19
                 -70 44 -75 55 -9 20 -183 115 -210 115 -7 0 -31 9 -53 20 -60 31 -126 41 -145
-                23z"/>
-                </g>
+                23z"
+								/>
+							</g>
 
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(17)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M12463 8600 c-53 -4 -81 -13 -110 -32 -21 -14 -48 -29 -60 -33 -16
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(17)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M12463 8600 c-53 -4 -81 -13 -110 -32 -21 -14 -48 -29 -60 -33 -16
                 -4 -40 -43 -90 -143 -37 -75 -80 -155 -95 -177 l-27 -40 14 -185 c7 -102 17
                 -196 22 -210 14 -42 91 -136 147 -179 75 -56 101 -111 109 -228 6 -79 4 -97
                 -12 -125 -10 -18 -26 -62 -35 -98 -14 -56 -22 -69 -54 -89 -59 -39 -111 -65
@@ -1185,12 +1788,20 @@ function TeamSection() {
                 -45 71 -114 299 -21 71 -31 90 -50 97 -33 13 -161 147 -174 184 -7 17 -18 46
                 -26 64 -37 85 -1 331 59 414 17 23 19 37 13 97 -4 51 -2 81 8 108 23 60 38
                 182 30 253 -4 39 -19 90 -36 127 -30 63 -32 64 -168 152 -22 14 -132 50 -225
-                72 -44 11 -93 26 -108 34 -30 16 -39 16 -154 5z"/>
-                </g>
+                72 -44 11 -93 26 -108 34 -30 16 -39 16 -154 5z"
+								/>
+							</g>
 
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(18)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M11790 9099 c-19 -5 -66 -7 -105 -4 l-70 6 -145 -73 c-102 -51 -149
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(18)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M11790 9099 c-19 -5 -66 -7 -105 -4 l-70 6 -145 -73 c-102 -51 -149
                 -81 -160 -100 -8 -14 -27 -46 -42 -71 -31 -51 -47 -111 -48 -177 0 -42 6 -53
                 65 -124 l64 -77 -4 -76 c-3 -56 0 -83 11 -105 9 -17 17 -45 19 -62 2 -17 13
                 -68 24 -114 25 -100 29 -266 7 -297 -7 -11 -17 -31 -21 -45 -24 -82 -100 -139
@@ -1200,13 +1811,21 @@ function TeamSection() {
                 102 11 10 52 156 115 406 31 121 74 270 95 333 44 123 49 185 21 256 -12 31
                 -13 67 -8 189 7 140 10 155 39 217 17 36 43 84 57 106 32 49 50 90 50 113 0
                 10 9 35 21 57 32 60 23 129 -30 235 -24 47 -53 96 -66 110 -12 14 -40 51 -60
-                84 -46 73 -100 133 -136 152 -31 16 -143 17 -199 3z"/>
-                </g>
+                84 -46 73 -100 133 -136 152 -31 16 -143 17 -199 3z"
+								/>
+							</g>
 
-                {/*meghna*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(19)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M14120 6901 c-41 -20 -93 -48 -115 -63 -52 -35 -145 -131 -145 -151
+							{/*meghna*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(19)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M14120 6901 c-41 -20 -93 -48 -115 -63 -52 -35 -145 -131 -145 -151
                 0 -8 -13 -44 -30 -79 -16 -34 -30 -73 -30 -85 0 -13 -17 -49 -37 -80 -50 -79
                 -75 -148 -77 -211 -1 -42 3 -53 17 -58 23 -7 22 -41 -4 -83 -16 -26 -20 -45
                 -16 -75 3 -23 1 -63 -5 -90 -8 -36 -7 -54 2 -71 10 -19 9 -32 -4 -71 -9 -26
@@ -1227,13 +1846,21 @@ function TeamSection() {
                 -11 71 -12 109 0 39 -4 74 -7 80 -4 5 -8 60 -9 120 -2 90 -7 119 -23 151 -12
                 21 -21 52 -21 67 0 15 -6 45 -14 65 -8 21 -17 50 -20 64 -3 16 -29 46 -63 74
                 -32 27 -65 56 -74 65 -8 10 -39 30 -67 44 -46 24 -59 26 -122 20 -55 -5 -74
-                -4 -88 8 -11 10 -39 15 -82 15 -55 0 -77 -5 -140 -36z"/>
-                </g>
+                -4 -88 8 -11 10 -39 15 -82 15 -55 0 -77 -5 -140 -36z"
+								/>
+							</g>
 
-                {/*caden*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(20)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M14426 8959 c-21 -5 -50 -17 -65 -28 -14 -10 -41 -23 -60 -29 -31
+							{/*caden*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(20)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M14426 8959 c-21 -5 -50 -17 -65 -28 -14 -10 -41 -23 -60 -29 -31
                 -11 -83 -54 -153 -127 -73 -76 -93 -193 -63 -370 9 -55 18 -134 20 -175 3 -78
                 30 -167 61 -201 9 -11 30 -19 45 -19 25 0 30 -5 44 -52 19 -64 19 -143 1 -196
                 -25 -71 -29 -141 -11 -242 15 -91 17 -97 60 -137 54 -51 56 -72 19 -194 -21
@@ -1246,13 +1873,21 @@ function TeamSection() {
                 48 -3 264 44 347 28 49 28 53 11 68 -10 9 -46 28 -82 42 -151 61 -189 84 -221
                 129 -18 25 -35 45 -39 45 -13 0 -39 93 -39 141 0 100 18 147 76 204 l54 52 -1
                 94 c0 72 -5 101 -19 126 -13 22 -20 63 -25 135 -9 120 -32 191 -85 263 -57 76
-                -88 101 -180 143 -131 61 -215 74 -314 51z"/>
-                </g>
+                -88 101 -180 143 -131 61 -215 74 -314 51z"
+								/>
+							</g>
 
-                {/*brandon*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(21)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M15670 7733 c-107 -18 -264 -111 -350 -206 -68 -76 -77 -92 -98 -191
+							{/*brandon*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(21)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M15670 7733 c-107 -18 -264 -111 -350 -206 -68 -76 -77 -92 -98 -191
                 -14 -64 -16 -97 -9 -156 4 -41 10 -138 12 -215 3 -77 7 -155 10 -173 5 -29 65
                 -103 91 -113 6 -2 30 -44 53 -93 39 -80 42 -94 38 -145 -7 -74 -34 -188 -53
                 -220 -22 -38 -117 -101 -151 -101 -15 0 -42 -9 -59 -19 -18 -11 -42 -21 -55
@@ -1276,13 +1911,21 @@ function TeamSection() {
                 44 -74 37 -92 51 -120 94 -17 27 -32 54 -32 59 0 6 -20 41 -45 79 -43 65 -55
                 109 -36 129 11 13 31 97 31 132 0 17 8 33 20 41 14 8 20 23 20 48 0 39 15 104
                 33 141 13 28 4 132 -16 168 -11 21 -12 38 -5 69 6 27 6 85 -2 166 -10 116 -14
-                129 -45 176 -36 55 -133 134 -218 177 -81 41 -225 71 -287 60z"/>
-                </g>
+                129 -45 176 -36 55 -133 134 -218 177 -81 41 -225 71 -287 60z"
+								/>
+							</g>
 
-                {/*benny*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(22)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M17165 6940 c-22 -4 -53 -13 -70 -19 -16 -6 -60 -20 -97 -31 -51 -16
+							{/*benny*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(22)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M17165 6940 c-22 -4 -53 -13 -70 -19 -16 -6 -60 -20 -97 -31 -51 -16
                 -75 -31 -102 -61 -20 -21 -36 -45 -36 -51 0 -7 -25 -65 -56 -130 -53 -110 -56
                 -122 -56 -192 0 -40 6 -93 12 -116 6 -23 10 -74 9 -114 -4 -145 72 -396 146
                 -484 22 -27 24 -34 14 -53 -6 -12 -19 -50 -28 -83 -15 -57 -20 -63 -77 -102
@@ -1306,12 +1949,20 @@ function TeamSection() {
                 -187 86 -166 80 -360 164 -380 164 -5 0 -40 33 -78 73 -61 63 -75 86 -108 170
                 l-39 97 23 75 c19 67 26 77 56 92 47 22 68 52 92 133 27 88 21 167 -15 201
                 -13 12 -24 32 -24 44 0 12 -7 64 -16 116 -17 100 -51 176 -126 276 -48 66
-                -166 144 -248 165 -45 12 -111 28 -130 32 -8 2 -33 0 -55 -4z"/>
-                </g>
+                -166 144 -248 165 -45 12 -111 28 -130 32 -8 2 -33 0 -55 -4z"
+								/>
+							</g>
 
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(23)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M13730 7750 c-30 -32 -63 -59 -72 -59 -9 -1 -20 -5 -23 -11 -3 -5
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(23)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M13730 7750 c-30 -32 -63 -59 -72 -59 -9 -1 -20 -5 -23 -11 -3 -5
                 -20 -10 -36 -10 -16 0 -39 -8 -50 -19 -17 -15 -37 -19 -119 -19 l-99 -1 -56
                 -55 -55 -56 0 -120 c0 -107 2 -123 20 -142 16 -17 20 -36 20 -90 0 -37 6 -85
                 14 -105 14 -40 28 -113 47 -251 11 -81 12 -83 56 -119 25 -20 59 -57 76 -82
@@ -1329,23 +1980,37 @@ function TeamSection() {
                 10 66 6 3 10 21 10 40 0 19 5 37 10 40 6 3 10 35 10 71 0 61 -2 66 -40 105
                 -34 35 -40 48 -40 85 0 23 -4 46 -10 49 -5 3 -10 14 -10 24 0 21 -27 78 -41
                 87 -5 3 -16 0 -24 -6 -17 -14 -29 -7 -77 43 -14 15 -35 27 -46 27 -11 0 -43
-                23 -71 50 l-51 50 -83 -1 -82 0 -55 -59z"/>
-                <path d="M14886 5982 c-3 -6 0 -30 9 -54 18 -52 18 -58 4 -58 -16 0 -33 -20
+                23 -71 50 l-51 50 -83 -1 -82 0 -55 -59z"
+								/>
+								<path
+									d="M14886 5982 c-3 -6 0 -30 9 -54 18 -52 18 -58 4 -58 -16 0 -33 -20
                 -53 -64 -14 -30 -17 -54 -13 -102 4 -61 6 -63 72 -129 65 -65 69 -67 117 -67
                 27 0 55 5 61 11 6 6 21 11 33 11 20 0 23 7 30 56 14 112 -9 284 -38 284 -4 0
-                -14 14 -23 30 -9 17 -33 41 -54 55 -41 28 -134 45 -145 27z"/>
-                </g>
-                </svg>
-                </SvgTablet>
+                -14 14 -23 30 -9 17 -33 41 -54 55 -41 28 -134 45 -145 27z"
+								/>
+							</g>
+						</svg>
+					</SvgTablet>
 
-                <SvgPhone>
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-                width="80vw" viewBox="0 0 1911.000000 1147.000000"
-                preserveAspectRatio="xMidYMid meet">
-                {/*Andrew */}
-                <g fillOpacity={0} transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(1) } onMouseOut = {()=>setHoverID(0)}>
-                <path d="M1620 9131 c-128 -35 -204 -89 -297 -212 -64 -84 -76 -125 -68 -241
+					<SvgPhone>
+						<svg
+							version="1.0"
+							xmlns="http://www.w3.org/2000/svg"
+							width="80vw"
+							viewBox="0 0 1911.000000 1147.000000"
+							preserveAspectRatio="xMidYMid meet"
+						>
+							{/*Andrew */}
+							<g
+								fillOpacity={0}
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(1)}
+								onMouseOut={() => setHoverID(0)}
+							>
+								<path
+									d="M1620 9131 c-128 -35 -204 -89 -297 -212 -64 -84 -76 -125 -68 -241
                 4 -69 2 -104 -6 -120 -26 -47 -11 -208 25 -276 23 -43 63 -80 95 -87 29 -6 29
                 -6 36 -100 8 -108 1 -178 -21 -196 -8 -7 -21 -27 -29 -45 -13 -32 -62 -83
                 -151 -159 -26 -22 -56 -48 -66 -58 -26 -24 -122 -57 -168 -57 -20 0 -41 -5
@@ -1364,8 +2029,10 @@ function TeamSection() {
                 -60 27 -27 10 -62 28 -77 41 -15 12 -31 24 -35 26 -4 1 -26 28 -49 58 -35 48
                 -42 66 -53 143 -15 99 -15 98 65 192 46 55 114 172 114 198 0 9 11 52 25 94
                 14 43 31 93 36 112 11 34 24 258 22 382 -2 126 -91 278 -183 314 -25 10 -61
-                30 -80 45 -63 48 -123 63 -260 66 -95 2 -141 -2 -190 -15z"/>
-                <path d="M692 4458 c-11 -24 -47 -92 -81 -153 l-62 -110 1 -100 c1 -55 0 -116
+                30 -80 45 -63 48 -123 63 -260 66 -95 2 -141 -2 -190 -15z"
+								/>
+								<path
+									d="M692 4458 c-11 -24 -47 -92 -81 -153 l-62 -110 1 -100 c1 -55 0 -116
                 -2 -135 -3 -34 -1 -36 72 -75 66 -35 76 -44 82 -75 25 -123 42 -224 49 -286 4
                 -39 22 -134 40 -210 31 -134 32 -147 34 -369 1 -177 6 -255 21 -340 21 -124
                 22 -148 5 -665 -7 -232 -19 -418 -31 -510 -10 -80 -21 -199 -25 -265 -4 -66
@@ -1373,13 +2040,21 @@ function TeamSection() {
                 -41 15 -68 l6 -49 543 0 544 0 1 53 c1 28 3 212 4 407 2 195 7 630 11 965 5
                 336 8 630 8 655 0 46 -53 162 -160 351 -24 42 -143 274 -265 515 -122 242
                 -266 522 -319 624 -54 102 -170 328 -259 504 -163 320 -222 426 -240 426 -6 0
-                -19 -19 -29 -42z"/>
-                </g>
+                -19 -19 -29 -42z"
+								/>
+							</g>
 
-                {/*Kapil */}
-                <g fillOpacity={0} transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(2)} onMouseOut = {()=>setHoverID(0)}>
-                <path d="M4724 6955 c-12 -19 -27 -23 -100 -29 -52 -4 -91 -2 -98 3 -7 6 -22
+							{/*Kapil */}
+							<g
+								fillOpacity={0}
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(2)}
+								onMouseOut={() => setHoverID(0)}
+							>
+								<path
+									d="M4724 6955 c-12 -19 -27 -23 -100 -29 -52 -4 -91 -2 -98 3 -7 6 -22
                 8 -34 4 -12 -3 -28 0 -35 6 -8 6 -17 8 -21 4 -3 -4 -35 -6 -71 -5 -69 2 -134
                 -17 -171 -50 -11 -10 -24 -18 -30 -18 -16 -1 -194 -177 -194 -192 0 -8 -11
                 -25 -25 -38 -14 -13 -25 -29 -25 -36 0 -6 -7 -18 -17 -25 -9 -8 -27 -36 -39
@@ -1408,13 +2083,21 @@ function TeamSection() {
                 267 67 312 14 18 17 33 12 55 -4 17 -6 58 -6 90 2 57 -29 190 -49 211 -5 5 -9
                 20 -9 33 0 13 -13 36 -28 50 -61 58 -102 91 -119 96 -10 3 -26 19 -35 36 -12
                 21 -25 30 -42 30 -15 0 -27 7 -31 19 -3 10 -27 41 -53 68 -55 60 -95 73 -118
-                38z"/>
-                </g>
+                38z"
+								/>
+							</g>
 
-                {/* Ashley */}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(3)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M6765 6543 c-103 -44 -210 -128 -265 -208 -44 -64 -109 -273 -121
+							{/* Ashley */}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(3)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M6765 6543 c-103 -44 -210 -128 -265 -208 -44 -64 -109 -273 -121
                 -390 -6 -55 -14 -118 -19 -141 -24 -105 -40 -468 -26 -575 l8 -66 -93 -45
                 c-52 -25 -114 -53 -139 -64 -75 -31 -242 -124 -291 -161 -56 -42 -69 -68 -69
                 -131 0 -26 -6 -57 -14 -68 -11 -15 -14 -45 -12 -115 2 -54 -4 -135 -13 -189
@@ -1433,13 +2116,21 @@ function TeamSection() {
                 80 -115 197 -115 224 0 12 -4 25 -9 31 -14 14 -106 280 -126 364 -55 231 -77
                 305 -113 376 -22 44 -51 112 -66 153 -24 67 -27 87 -26 205 3 254 -47 714 -97
                 896 -14 52 -29 115 -32 140 -8 57 -66 161 -125 227 -52 57 -155 124 -236 151
-                -37 13 -98 21 -185 25 -124 6 -133 5 -190 -20z"/>
-                </g>
+                -37 13 -98 21 -185 25 -124 6 -133 5 -190 -20z"
+								/>
+							</g>
 
-                {/*ragini*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(4)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M2758 7581 c-108 -26 -185 -76 -320 -206 -46 -45 -128 -227 -150
+							{/*ragini*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(4)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M2758 7581 c-108 -26 -185 -76 -320 -206 -46 -45 -128 -227 -150
                 -334 -10 -52 -22 -99 -25 -105 -4 -5 -10 -69 -14 -141 -12 -210 -26 -283 -103
                 -538 -45 -153 -71 -201 -111 -205 -17 -2 -43 -9 -60 -16 -16 -8 -57 -26 -90
                 -41 -166 -74 -262 -135 -300 -191 -11 -17 -26 -62 -34 -100 -7 -38 -21 -114
@@ -1462,13 +2153,21 @@ function TeamSection() {
                 197 0 30 -11 100 -24 155 -13 55 -27 123 -31 150 -13 91 -54 326 -59 334 -3 4
                 -16 57 -30 117 -14 60 -29 126 -34 146 -11 42 -134 273 -162 303 -10 11 -23
                 32 -29 47 -7 18 -28 36 -59 52 -27 14 -64 38 -83 53 -18 15 -47 29 -63 30
-                -158 12 -175 11 -248 -6z"/>
-                </g>
+                -158 12 -175 11 -248 -6z"
+								/>
+							</g>
 
-                {/*lizzy*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(5)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M3590 8080 c-100 -8 -118 -13 -216 -61 -73 -36 -217 -173 -245 -233
+							{/*lizzy*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(5)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M3590 8080 c-100 -8 -118 -13 -216 -61 -73 -36 -217 -173 -245 -233
                 -10 -22 -34 -62 -53 -87 -42 -57 -54 -110 -33 -142 8 -13 47 -40 86 -61 39
                 -20 71 -44 71 -51 0 -8 16 -36 37 -62 46 -61 125 -228 148 -313 10 -36 28
                 -105 42 -155 22 -82 36 -159 78 -420 7 -49 21 -120 29 -156 9 -37 20 -109 26
@@ -1477,13 +2176,21 @@ function TeamSection() {
                 11 32 53 65 93 33 39 60 76 60 81 0 25 189 199 216 199 3 0 18 9 34 20 40 28
                 43 66 16 183 -31 130 -42 184 -56 277 -6 41 -20 98 -30 125 -70 185 -96 246
                 -126 295 -18 30 -36 67 -40 83 -6 26 -56 77 -75 77 -5 0 -43 27 -84 60 -69 54
-                -127 82 -165 78 -8 0 -58 -4 -110 -8z"/>
-                </g>
+                -127 82 -165 78 -8 0 -58 -4 -110 -8z"
+								/>
+							</g>
 
-                {/*anish*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(6)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M5186 7794 c-21 -8 -55 -27 -75 -42 -20 -15 -45 -33 -56 -40 -92 -58
+							{/*anish*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(6)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M5186 7794 c-21 -8 -55 -27 -75 -42 -20 -15 -45 -33 -56 -40 -92 -58
                 -114 -76 -125 -103 -7 -17 -34 -48 -59 -69 -72 -61 -84 -109 -77 -296 10 -256
                 18 -319 44 -347 13 -13 26 -37 31 -52 5 -19 17 -32 37 -39 17 -6 61 -38 98
                 -71 37 -33 79 -66 93 -73 17 -9 23 -20 20 -32 -3 -10 1 -27 8 -37 6 -10 23
@@ -1500,13 +2207,21 @@ function TeamSection() {
                 62 11 17 27 58 37 91 21 74 40 105 66 105 33 0 75 28 86 57 9 25 26 114 52
                 291 5 29 16 64 24 77 9 13 16 33 16 43 0 11 9 31 21 45 26 34 18 86 -22 144
                 -16 23 -29 44 -29 48 0 4 -14 26 -31 50 -18 24 -48 77 -68 117 -36 73 -37 73
-                -121 116 -46 23 -99 57 -118 75 l-33 32 -172 2 c-128 1 -182 -2 -211 -13z"/>
-                </g>
+                -121 116 -46 23 -99 57 -118 75 l-33 32 -172 2 c-128 1 -182 -2 -211 -13z"
+								/>
+							</g>
 
-                {/*anthony*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(7)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M4285 9156 c-114 -40 -267 -105 -303 -129 -39 -26 -118 -148 -137
+							{/*anthony*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(7)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M4285 9156 c-114 -40 -267 -105 -303 -129 -39 -26 -118 -148 -137
                 -211 -7 -24 -23 -62 -34 -84 -28 -55 -27 -94 4 -130 17 -21 26 -47 31 -88 3
                 -33 13 -70 22 -84 9 -14 19 -41 23 -60 9 -43 50 -143 68 -164 8 -9 25 -22 39
                 -29 38 -18 54 -76 50 -178 -2 -66 -7 -92 -20 -106 -25 -27 -22 -51 10 -98 15
@@ -1516,13 +2231,21 @@ function TeamSection() {
                 353 -21 35 -25 51 -19 80 4 22 1 63 -8 102 -9 36 -24 102 -34 146 -15 65 -17
                 98 -10 175 9 119 50 244 88 271 58 41 114 269 113 465 -1 113 -3 126 -28 175
                 -16 30 -45 74 -65 99 -20 25 -48 61 -61 80 -37 55 -60 70 -112 70 -38 0 -54 6
-                -82 30 -31 28 -43 31 -118 36 -70 4 -94 1 -153 -20z"/>
-                </g>
+                -82 30 -31 28 -43 31 -118 36 -70 4 -94 1 -153 -20z"
+								/>
+							</g>
 
-                {/*manan*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(8)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M6115 8753 c-65 -14 -246 -77 -277 -96 -40 -24 -133 -124 -165 -178
+							{/*manan*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(8)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M6115 8753 c-65 -14 -246 -77 -277 -96 -40 -24 -133 -124 -165 -178
                 -32 -52 -51 -126 -57 -219 -4 -56 -13 -99 -26 -125 -24 -47 -26 -99 -4 -151
                 19 -46 98 -150 123 -164 14 -7 20 -25 23 -70 4 -50 9 -65 35 -93 17 -17 47
                 -66 68 -107 20 -41 44 -84 54 -95 36 -41 82 -125 88 -159 4 -28 -1 -51 -25
@@ -1535,13 +2258,21 @@ function TeamSection() {
                 -35 52 -30 122 6 79 14 99 64 158 19 22 52 78 75 125 22 47 50 95 61 108 20
                 21 22 33 20 125 -2 68 4 136 17 204 11 56 21 112 21 125 2 50 -22 130 -67 217
                 -48 95 -95 147 -142 156 -15 3 -38 12 -52 20 -81 47 -106 55 -175 54 -38 -1
-                -79 -3 -90 -6z"/>
-                </g>
+                -79 -3 -90 -6z"
+								/>
+							</g>
 
-                {/*kiran*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(9)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M7975 7711 c-11 -5 -36 -10 -56 -10 -69 -2 -99 -13 -156 -62 -32 -26
+							{/*kiran*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(9)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M7975 7711 c-11 -5 -36 -10 -56 -10 -69 -2 -99 -13 -156 -62 -32 -26
                 -74 -62 -94 -78 -76 -65 -106 -133 -129 -301 -5 -36 -7 -84 -4 -107 5 -32 1
                 -50 -15 -76 -24 -39 -27 -100 -7 -138 7 -14 16 -36 19 -50 4 -13 27 -47 52
                 -76 25 -28 45 -56 45 -62 0 -5 9 -16 20 -24 31 -22 50 -80 50 -155 l0 -69 -42
@@ -1555,13 +2286,21 @@ function TeamSection() {
                 24 214 64 420 53 277 53 279 31 299 -20 18 -141 56 -179 56 -27 0 -90 41 -143
                 93 -50 48 -77 109 -85 190 -6 62 -4 73 26 140 18 39 43 83 56 97 72 76 87 105
                 99 188 6 44 4 57 -11 74 -17 18 -19 35 -16 137 4 164 -6 206 -70 287 -29 37
-                -70 84 -91 104 -53 51 -146 99 -188 98 -19 0 -65 2 -104 6 -38 3 -79 2 -90 -3z"/>
-                </g>
+                -70 84 -91 104 -53 51 -146 99 -188 98 -19 0 -65 2 -104 6 -38 3 -79 2 -90 -3z"
+								/>
+							</g>
 
-                {/*zevik*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(10)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M7068 9353 c-43 -4 -54 -10 -121 -76 -40 -40 -84 -90 -97 -112 -12
+							{/*zevik*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(10)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M7068 9353 c-43 -4 -54 -10 -121 -76 -40 -40 -84 -90 -97 -112 -12
                 -22 -33 -56 -46 -75 -32 -48 -55 -145 -57 -240 -2 -65 -5 -80 -19 -83 -49 -13
                 -73 -121 -46 -210 16 -53 84 -125 126 -133 38 -8 47 -34 56 -161 5 -77 4 -83
                 -18 -100 -13 -10 -31 -34 -41 -53 -9 -19 -75 -92 -146 -163 -109 -108 -134
@@ -1576,14 +2315,22 @@ function TeamSection() {
                 -10 45 -4 125 9 123 21 160 50 160 53 0 115 59 160 153 31 66 24 146 -17 189
                 -26 27 -28 34 -26 106 1 42 3 94 4 114 2 25 -7 61 -28 105 -17 38 -37 88 -45
                 113 -18 56 -74 97 -145 107 -26 3 -81 23 -121 44 -72 38 -76 39 -170 37 -54
-                -1 -118 -3 -144 -5z"/>
-                </g>
+                -1 -118 -3 -144 -5z"
+								/>
+							</g>
 
-                {/*nakul*/}
+							{/*nakul*/}
 
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(11)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M8640 8521 c0 -5 -11 -11 -23 -15 -13 -3 -40 -19 -61 -35 -21 -17
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(11)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M8640 8521 c0 -5 -11 -11 -23 -15 -13 -3 -40 -19 -61 -35 -21 -17
                 -52 -35 -69 -41 -50 -16 -146 -159 -147 -217 0 -29 -16 -123 -40 -228 -5 -23
                 -5 -59 0 -85 5 -25 9 -48 10 -51 0 -4 -11 -10 -24 -13 -14 -3 -28 -16 -32 -29
                 -4 -12 -10 -24 -14 -27 -4 -3 -10 -24 -13 -48 -4 -37 -2 -46 21 -68 15 -13 35
@@ -1597,12 +2344,20 @@ function TeamSection() {
                 164 50 207 5 46 4 48 -26 60 -29 11 -31 14 -31 63 0 34 5 54 13 57 22 8 34
                 103 33 242 -2 117 -4 136 -26 180 -33 66 -87 95 -176 95 -59 0 -64 2 -85 33
                 -28 40 -38 47 -66 47 -12 0 -33 11 -47 25 -21 20 -35 25 -79 25 -31 0 -61 6
-                -73 15 -21 16 -44 19 -44 6z"/>
-                </g>
+                -73 15 -21 16 -44 19 -44 6z"
+								/>
+							</g>
 
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(12)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M9360 6773 c-14 -3 -31 -9 -37 -15 -7 -6 -84 -46 -170 -90 -87 -44
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(12)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M9360 6773 c-14 -3 -31 -9 -37 -15 -7 -6 -84 -46 -170 -90 -87 -44
                 -164 -89 -172 -101 -9 -12 -36 -42 -61 -67 -52 -51 -109 -145 -121 -199 -4
                 -20 -19 -67 -33 -106 -13 -38 -27 -94 -30 -124 -4 -29 -8 -57 -11 -61 -3 -6
                 -13 -44 -46 -195 -4 -22 -13 -89 -19 -150 -6 -60 -15 -141 -20 -180 -6 -38
@@ -1627,12 +2382,20 @@ function TeamSection() {
                 -61 89 -14 25 -38 66 -54 91 -66 99 -108 202 -119 290 -18 140 -20 147 -56
                 190 -19 23 -35 52 -35 65 0 12 -7 28 -15 35 -8 7 -15 18 -15 24 0 30 -116 241
                 -159 289 -26 29 -56 66 -66 83 -26 41 -152 153 -190 169 -108 46 -151 56 -195
-                48z"/>
-                </g>
+                48z"
+								/>
+							</g>
 
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(13)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M9050 9559 c-97 -23 -256 -99 -304 -145 -18 -18 -40 -47 -49 -66 -9
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(13)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M9050 9559 c-97 -23 -256 -99 -304 -145 -18 -18 -40 -47 -49 -66 -9
                 -19 -26 -43 -38 -54 -39 -35 -96 -166 -119 -274 -12 -56 -10 -121 9 -220 22
                 -120 39 -154 86 -171 32 -12 35 -16 35 -54 0 -60 16 -75 80 -80 91 -7 154 -34
                 192 -83 26 -34 38 -42 65 -42 46 0 134 -20 159 -37 46 -30 63 -98 67 -264 3
@@ -1645,15 +2408,25 @@ function TeamSection() {
                 41 -99 49 -47 16 -213 104 -271 142 -35 23 -36 26 -47 116 -20 166 14 301 85
                 335 29 14 42 31 69 89 18 39 38 98 45 130 7 32 19 72 28 88 12 24 15 67 15
                 210 l1 180 -32 55 c-41 70 -85 116 -127 134 -18 7 -60 41 -93 75 -33 33 -72
-                65 -87 71 -40 15 -110 11 -206 -11z"/>
-                <path d="M8195 8005 c-47 -23 -112 -43 -195 -60 -143 -29 -248 -61 -280 -85
+                65 -87 71 -40 15 -110 11 -206 -11z"
+								/>
+								<path
+									d="M8195 8005 c-47 -23 -112 -43 -195 -60 -143 -29 -248 -61 -280 -85
                 l-22 -16 39 -38 c21 -21 63 -50 93 -65 52 -25 63 -26 219 -26 l164 0 11 45 c8
-                33 18 48 39 58 27 13 27 13 27 118 0 77 -3 104 -12 104 -7 -1 -44 -16 -83 -35z"/>
-                </g>
+                33 18 48 39 58 27 13 27 13 27 118 0 77 -3 104 -12 104 -7 -1 -44 -16 -83 -35z"
+								/>
+							</g>
 
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(14)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M10305 7661 c-27 -4 -63 -15 -80 -26 -52 -34 -166 -138 -180 -165
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(14)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M10305 7661 c-27 -4 -63 -15 -80 -26 -52 -34 -166 -138 -180 -165
                 -13 -26 -29 -97 -45 -204 -5 -32 -16 -67 -26 -77 -13 -14 -19 -51 -27 -146
                 l-10 -128 51 -101 c32 -64 63 -111 83 -127 25 -19 37 -41 52 -93 28 -101 32
                 -191 10 -231 -61 -108 -107 -173 -138 -198 -43 -32 -42 -49 5 -118 40 -59 48
@@ -1665,13 +2438,21 @@ function TeamSection() {
                 197 0 18 -5 52 -11 76 -17 61 10 178 55 241 18 26 41 76 51 112 15 54 21 64
                 40 64 12 0 29 8 37 18 37 41 88 179 88 236 0 28 24 73 50 93 33 25 16 125 -51
                 306 -16 42 -32 104 -36 137 -8 84 -43 120 -138 144 -38 9 -108 29 -155 43
-                -199 60 -213 63 -305 62 -49 -1 -112 -5 -140 -8z"/>
-                </g>
+                -199 60 -213 63 -305 62 -49 -1 -112 -5 -140 -8z"
+								/>
+							</g>
 
-                {/*rachelle*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(15)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M11660 6664 c-19 -9 -54 -26 -78 -37 -57 -27 -225 -209 -280 -302
+							{/*rachelle*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(15)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M11660 6664 c-19 -9 -54 -26 -78 -37 -57 -27 -225 -209 -280 -302
                 -45 -76 -135 -297 -146 -358 -10 -54 -51 -172 -106 -309 -73 -177 -75 -194
                 -60 -344 17 -172 17 -233 -2 -269 -29 -53 -160 -179 -208 -199 -156 -67 -191
                 -87 -201 -114 -13 -32 -5 -143 13 -174 7 -13 13 -34 14 -48 1 -14 7 -61 14
@@ -1691,39 +2472,59 @@ function TeamSection() {
                 -20 0 -74 84 -75 115 0 11 5 67 11 125 12 108 19 533 9 560 -3 8 -10 52 -16
                 97 -7 45 -23 119 -36 165 -14 46 -25 94 -25 107 0 13 -14 44 -31 70 -18 25
                 -46 78 -64 116 -43 95 -94 172 -159 243 -105 112 -146 129 -411 168 -16 2 -46
-                -3 -65 -12z"/>
-                </g>
+                -3 -65 -12z"
+								/>
+							</g>
 
-                {/*shub*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(16)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M10715 8900 c-16 -11 -38 -20 -48 -20 -10 0 -40 -11 -67 -25 -27 -14
+							{/*shub*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(16)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M10715 8900 c-16 -11 -38 -20 -48 -20 -10 0 -40 -11 -67 -25 -27 -14
                 -62 -25 -77 -25 -15 0 -60 -16 -99 -35 -74 -37 -73 -35 -124 -150 -27 -60 -30
                 -189 -6 -245 8 -20 18 -68 21 -108 l8 -72 -37 -40 c-43 -47 -46 -77 -16 -168
                 24 -74 54 -127 92 -166 26 -26 58 -107 58 -147 0 -31 48 -59 101 -59 36 0 66
                 -10 125 -40 43 -22 91 -40 107 -40 43 0 90 -26 145 -81 50 -49 107 -79 121
                 -63 5 5 17 32 27 59 10 28 43 78 75 115 37 43 66 89 84 134 27 70 65 272 70
                 381 5 85 40 234 65 266 23 33 26 82 6 121 -32 62 -112 159 -136 165 -29 7
-                -103 63 -194 144 -75 68 -89 76 -175 100 -82 24 -89 24 -126 -1z"/>
-                <path d="M9920 7329 c-52 -21 -122 -45 -155 -55 -33 -10 -80 -26 -103 -36 -53
+                -103 63 -194 144 -75 68 -89 76 -175 100 -82 24 -89 24 -126 -1z"
+								/>
+								<path
+									d="M9920 7329 c-52 -21 -122 -45 -155 -55 -33 -10 -80 -26 -103 -36 -53
                 -22 -148 -101 -168 -140 -19 -36 -38 -233 -30 -301 l7 -52 94 -58 c94 -58 154
                 -115 203 -192 14 -22 39 -62 57 -90 17 -27 58 -94 90 -147 32 -54 60 -98 64
                 -98 3 0 29 28 56 62 28 34 64 76 81 92 29 29 32 38 38 118 6 68 3 99 -10 140
                 -26 82 -38 103 -62 106 -32 5 -98 110 -123 197 -12 40 10 293 27 322 12 19 39
-                163 32 167 -2 1 -46 -15 -98 -35z"/>
-                <path d="M11114 7203 c-8 -9 -12 -23 -9 -32 3 -8 9 -59 12 -113 l6 -98 -29 -6
+                163 32 167 -2 1 -46 -15 -98 -35z"
+								/>
+								<path
+									d="M11114 7203 c-8 -9 -12 -23 -9 -32 3 -8 9 -59 12 -113 l6 -98 -29 -6
                 c-28 -5 -30 -8 -30 -57 0 -51 -28 -146 -62 -217 -12 -25 -25 -36 -43 -38 -22
                 -3 -28 -10 -33 -40 -4 -20 -19 -60 -34 -88 -95 -180 -104 -202 -98 -246 3 -24
                 9 -75 14 -115 13 -108 23 -119 222 -258 36 -25 70 -45 75 -45 17 0 55 86 55
                 123 0 49 19 106 55 167 18 30 58 102 90 160 35 63 82 131 121 173 35 38 64 73
                 64 77 0 14 111 92 166 116 78 34 89 64 63 164 -25 96 -42 117 -122 160 -36 19
                 -70 44 -75 55 -9 20 -183 115 -210 115 -7 0 -31 9 -53 20 -60 31 -126 41 -145
-                23z"/>
-                </g>
+                23z"
+								/>
+							</g>
 
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(17)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M12463 8600 c-53 -4 -81 -13 -110 -32 -21 -14 -48 -29 -60 -33 -16
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(17)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M12463 8600 c-53 -4 -81 -13 -110 -32 -21 -14 -48 -29 -60 -33 -16
                 -4 -40 -43 -90 -143 -37 -75 -80 -155 -95 -177 l-27 -40 14 -185 c7 -102 17
                 -196 22 -210 14 -42 91 -136 147 -179 75 -56 101 -111 109 -228 6 -79 4 -97
                 -12 -125 -10 -18 -26 -62 -35 -98 -14 -56 -22 -69 -54 -89 -59 -39 -111 -65
@@ -1737,12 +2538,20 @@ function TeamSection() {
                 -45 71 -114 299 -21 71 -31 90 -50 97 -33 13 -161 147 -174 184 -7 17 -18 46
                 -26 64 -37 85 -1 331 59 414 17 23 19 37 13 97 -4 51 -2 81 8 108 23 60 38
                 182 30 253 -4 39 -19 90 -36 127 -30 63 -32 64 -168 152 -22 14 -132 50 -225
-                72 -44 11 -93 26 -108 34 -30 16 -39 16 -154 5z"/>
-                </g>
+                72 -44 11 -93 26 -108 34 -30 16 -39 16 -154 5z"
+								/>
+							</g>
 
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(18)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M11790 9099 c-19 -5 -66 -7 -105 -4 l-70 6 -145 -73 c-102 -51 -149
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(18)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M11790 9099 c-19 -5 -66 -7 -105 -4 l-70 6 -145 -73 c-102 -51 -149
                 -81 -160 -100 -8 -14 -27 -46 -42 -71 -31 -51 -47 -111 -48 -177 0 -42 6 -53
                 65 -124 l64 -77 -4 -76 c-3 -56 0 -83 11 -105 9 -17 17 -45 19 -62 2 -17 13
                 -68 24 -114 25 -100 29 -266 7 -297 -7 -11 -17 -31 -21 -45 -24 -82 -100 -139
@@ -1752,13 +2561,21 @@ function TeamSection() {
                 102 11 10 52 156 115 406 31 121 74 270 95 333 44 123 49 185 21 256 -12 31
                 -13 67 -8 189 7 140 10 155 39 217 17 36 43 84 57 106 32 49 50 90 50 113 0
                 10 9 35 21 57 32 60 23 129 -30 235 -24 47 -53 96 -66 110 -12 14 -40 51 -60
-                84 -46 73 -100 133 -136 152 -31 16 -143 17 -199 3z"/>
-                </g>
+                84 -46 73 -100 133 -136 152 -31 16 -143 17 -199 3z"
+								/>
+							</g>
 
-                {/*meghna*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(19)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M14120 6901 c-41 -20 -93 -48 -115 -63 -52 -35 -145 -131 -145 -151
+							{/*meghna*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(19)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M14120 6901 c-41 -20 -93 -48 -115 -63 -52 -35 -145 -131 -145 -151
                 0 -8 -13 -44 -30 -79 -16 -34 -30 -73 -30 -85 0 -13 -17 -49 -37 -80 -50 -79
                 -75 -148 -77 -211 -1 -42 3 -53 17 -58 23 -7 22 -41 -4 -83 -16 -26 -20 -45
                 -16 -75 3 -23 1 -63 -5 -90 -8 -36 -7 -54 2 -71 10 -19 9 -32 -4 -71 -9 -26
@@ -1779,13 +2596,21 @@ function TeamSection() {
                 -11 71 -12 109 0 39 -4 74 -7 80 -4 5 -8 60 -9 120 -2 90 -7 119 -23 151 -12
                 21 -21 52 -21 67 0 15 -6 45 -14 65 -8 21 -17 50 -20 64 -3 16 -29 46 -63 74
                 -32 27 -65 56 -74 65 -8 10 -39 30 -67 44 -46 24 -59 26 -122 20 -55 -5 -74
-                -4 -88 8 -11 10 -39 15 -82 15 -55 0 -77 -5 -140 -36z"/>
-                </g>
+                -4 -88 8 -11 10 -39 15 -82 15 -55 0 -77 -5 -140 -36z"
+								/>
+							</g>
 
-                {/*caden*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(20)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M14426 8959 c-21 -5 -50 -17 -65 -28 -14 -10 -41 -23 -60 -29 -31
+							{/*caden*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(20)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M14426 8959 c-21 -5 -50 -17 -65 -28 -14 -10 -41 -23 -60 -29 -31
                 -11 -83 -54 -153 -127 -73 -76 -93 -193 -63 -370 9 -55 18 -134 20 -175 3 -78
                 30 -167 61 -201 9 -11 30 -19 45 -19 25 0 30 -5 44 -52 19 -64 19 -143 1 -196
                 -25 -71 -29 -141 -11 -242 15 -91 17 -97 60 -137 54 -51 56 -72 19 -194 -21
@@ -1798,13 +2623,21 @@ function TeamSection() {
                 48 -3 264 44 347 28 49 28 53 11 68 -10 9 -46 28 -82 42 -151 61 -189 84 -221
                 129 -18 25 -35 45 -39 45 -13 0 -39 93 -39 141 0 100 18 147 76 204 l54 52 -1
                 94 c0 72 -5 101 -19 126 -13 22 -20 63 -25 135 -9 120 -32 191 -85 263 -57 76
-                -88 101 -180 143 -131 61 -215 74 -314 51z"/>
-                </g>
+                -88 101 -180 143 -131 61 -215 74 -314 51z"
+								/>
+							</g>
 
-                {/*brandon*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(21)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M15670 7733 c-107 -18 -264 -111 -350 -206 -68 -76 -77 -92 -98 -191
+							{/*brandon*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(21)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M15670 7733 c-107 -18 -264 -111 -350 -206 -68 -76 -77 -92 -98 -191
                 -14 -64 -16 -97 -9 -156 4 -41 10 -138 12 -215 3 -77 7 -155 10 -173 5 -29 65
                 -103 91 -113 6 -2 30 -44 53 -93 39 -80 42 -94 38 -145 -7 -74 -34 -188 -53
                 -220 -22 -38 -117 -101 -151 -101 -15 0 -42 -9 -59 -19 -18 -11 -42 -21 -55
@@ -1828,13 +2661,21 @@ function TeamSection() {
                 44 -74 37 -92 51 -120 94 -17 27 -32 54 -32 59 0 6 -20 41 -45 79 -43 65 -55
                 109 -36 129 11 13 31 97 31 132 0 17 8 33 20 41 14 8 20 23 20 48 0 39 15 104
                 33 141 13 28 4 132 -16 168 -11 21 -12 38 -5 69 6 27 6 85 -2 166 -10 116 -14
-                129 -45 176 -36 55 -133 134 -218 177 -81 41 -225 71 -287 60z"/>
-                </g>
+                129 -45 176 -36 55 -133 134 -218 177 -81 41 -225 71 -287 60z"
+								/>
+							</g>
 
-                {/*benny*/}
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(22)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M17165 6940 c-22 -4 -53 -13 -70 -19 -16 -6 -60 -20 -97 -31 -51 -16
+							{/*benny*/}
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(22)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M17165 6940 c-22 -4 -53 -13 -70 -19 -16 -6 -60 -20 -97 -31 -51 -16
                 -75 -31 -102 -61 -20 -21 -36 -45 -36 -51 0 -7 -25 -65 -56 -130 -53 -110 -56
                 -122 -56 -192 0 -40 6 -93 12 -116 6 -23 10 -74 9 -114 -4 -145 72 -396 146
                 -484 22 -27 24 -34 14 -53 -6 -12 -19 -50 -28 -83 -15 -57 -20 -63 -77 -102
@@ -1858,12 +2699,20 @@ function TeamSection() {
                 -187 86 -166 80 -360 164 -380 164 -5 0 -40 33 -78 73 -61 63 -75 86 -108 170
                 l-39 97 23 75 c19 67 26 77 56 92 47 22 68 52 92 133 27 88 21 167 -15 201
                 -13 12 -24 32 -24 44 0 12 -7 64 -16 116 -17 100 -51 176 -126 276 -48 66
-                -166 144 -248 165 -45 12 -111 28 -130 32 -8 2 -33 0 -55 -4z"/>
-                </g>
+                -166 144 -248 165 -45 12 -111 28 -130 32 -8 2 -33 0 -55 -4z"
+								/>
+							</g>
 
-                <g transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none" onMouseOver = {()=>setHoverID(23)} onMouseOut = {()=>setHoverID(0)} fillOpacity={0}>
-                <path d="M13730 7750 c-30 -32 -63 -59 -72 -59 -9 -1 -20 -5 -23 -11 -3 -5
+							<g
+								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
+								fill="#000000"
+								stroke="none"
+								onMouseOver={() => setHoverID(23)}
+								onMouseOut={() => setHoverID(0)}
+								fillOpacity={0}
+							>
+								<path
+									d="M13730 7750 c-30 -32 -63 -59 -72 -59 -9 -1 -20 -5 -23 -11 -3 -5
                 -20 -10 -36 -10 -16 0 -39 -8 -50 -19 -17 -15 -37 -19 -119 -19 l-99 -1 -56
                 -55 -55 -56 0 -120 c0 -107 2 -123 20 -142 16 -17 20 -36 20 -90 0 -37 6 -85
                 14 -105 14 -40 28 -113 47 -251 11 -81 12 -83 56 -119 25 -20 59 -57 76 -82
@@ -1881,40 +2730,57 @@ function TeamSection() {
                 10 66 6 3 10 21 10 40 0 19 5 37 10 40 6 3 10 35 10 71 0 61 -2 66 -40 105
                 -34 35 -40 48 -40 85 0 23 -4 46 -10 49 -5 3 -10 14 -10 24 0 21 -27 78 -41
                 87 -5 3 -16 0 -24 -6 -17 -14 -29 -7 -77 43 -14 15 -35 27 -46 27 -11 0 -43
-                23 -71 50 l-51 50 -83 -1 -82 0 -55 -59z"/>
-                <path d="M14886 5982 c-3 -6 0 -30 9 -54 18 -52 18 -58 4 -58 -16 0 -33 -20
+                23 -71 50 l-51 50 -83 -1 -82 0 -55 -59z"
+								/>
+								<path
+									d="M14886 5982 c-3 -6 0 -30 9 -54 18 -52 18 -58 4 -58 -16 0 -33 -20
                 -53 -64 -14 -30 -17 -54 -13 -102 4 -61 6 -63 72 -129 65 -65 69 -67 117 -67
                 27 0 55 5 61 11 6 6 21 11 33 11 20 0 23 7 30 56 14 112 -9 284 -38 284 -4 0
-                -14 14 -23 30 -9 17 -33 41 -54 55 -41 28 -134 45 -145 27z"/>
-                </g>
-                </svg>
-                </SvgPhone>
+                -14 14 -23 30 -9 17 -33 41 -54 55 -41 28 -134 45 -145 27z"
+								/>
+							</g>
+						</svg>
+					</SvgPhone>
+				</HoverContainer>
+			</TeamContainer>
 
-                </HoverContainer>
-            </TeamContainer>
-
-            <TextContainer style={{display: hoverID === 0 ? "flex":"none"}}>
-                <TitleText>Meet The Team</TitleText>
-                <SmallSpacer/>
-                <BodyText>
-                    At MEG we are proud of our members diverse interests and backgrounds. Each one of us
-                    has our own unique strengths and viewpoints that, when put together, can create extraordinary
-                    solutions. We'd love for you to get to know us better and join the team in the future.
-                </BodyText>
-                <SmallSpacer/>
-                <BodyText><b>(Hover over or tap the picture to learn about one of us!)</b> </BodyText>
-            </TextContainer>
-            <TextContainer style={{display: hoverID !== 0 ? "flex":"none"}}>
-                <TitleText>{names[hoverID]}</TitleText>
-                <SmallSpacer/>
-                <BodyText><b>Year:</b> {years[hoverID]}</BodyText>
-                <BodyText><b>Major:</b> {majors[hoverID]}</BodyText>
-                <BodyText><b>About Me:</b> {abouts[hoverID]}</BodyText>
-                <BodyText><b>Past Projects:</b> {projects[hoverID]}</BodyText>
-                <SmallSpacer/>
-            </TextContainer>
-        </SectionContainer>
-    );
+			<TextContainer style={{ display: hoverID === 0 ? "flex" : "none" }}>
+				<TitleText>Meet The Team</TitleText>
+				<SmallSpacer />
+				<BodyText>
+					At MEG we are proud of our members diverse interests and
+					backgrounds. Each one of us has our own unique strengths and
+					viewpoints that, when put together, can create extraordinary
+					solutions. We'd love for you to get to know us better and
+					join the team in the future.
+				</BodyText>
+				<SmallSpacer />
+				<BodyText>
+					<b>
+						(Hover over or tap the picture to learn about one of
+						us!)
+					</b>{" "}
+				</BodyText>
+			</TextContainer>
+			<TextContainer style={{ display: hoverID !== 0 ? "flex" : "none" }}>
+				<TitleText>{names[hoverID]}</TitleText>
+				<SmallSpacer />
+				<BodyText>
+					<b>Year:</b> {years[hoverID]}
+				</BodyText>
+				<BodyText>
+					<b>Major:</b> {majors[hoverID]}
+				</BodyText>
+				<BodyText>
+					<b>About Me:</b> {abouts[hoverID]}
+				</BodyText>
+				<BodyText>
+					<b>Past Projects:</b> {projects[hoverID]}
+				</BodyText>
+				<SmallSpacer />
+			</TextContainer>
+		</SectionContainer>
+	);
 }
 
 export default TeamSection;

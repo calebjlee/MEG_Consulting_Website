@@ -15,7 +15,7 @@ const SectionContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  align-content: center;
+    align-content: center;
   position: sticky;
   flex-wrap: wrap;
   top: -1px;

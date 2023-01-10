@@ -225,13 +225,13 @@ const SoonContainer = styled.div`
 
 function MenuSection() {
 	const eventDates = [
-		"1/10/2023, 4:00",
-		"1/12/2023, 6:00",
-		"1/13/2023, 4:00",
-		"1/17/2023, 1:00",
-		"1/18/2023, 7:00",
-		"1/20/2023, 5:00",
-		"1/22/2023, 1:00",
+		"1/10/2023, 4:00 PM",
+		"1/12/2023, 6:00 PM",
+		"1/13/2023, 4:00 PM",
+		"1/17/2023, 1:00 PM",
+		"1/18/2023, 7:00 PM",
+		"1/20/2023, 5:00 PM",
+		"1/22/2023, 1:00 PM",
 	];
 	const eventImages = [
 		league,
@@ -278,11 +278,11 @@ function MenuSection() {
 		);
 		//For debugging:
 		//const d = Date.parse("9/20/2022")
-        for (let i = 0; i < eventDates.length; i++ ){
-            if (d < Date.parse(eventDates[i])){
-                return(i)
-            }
-        }
+		for (let i = 0; i < eventDates.length; i++) {
+			if (d < Date.parse(eventDates[i])) {
+				return i;
+			}
+		}
 	}
 
 	const eventID = eventDateDetector();
@@ -344,7 +344,7 @@ function MenuSection() {
 								Want to stay up to date on the newest from MEG?
 								Sign up on our{" "}
 								<a
-									href="https://docs.google.com/forms/d/e/1FAIpQLSeHCJl6mIQEAhO2DPE_1x8zasWhHH_C8zrzZ_AK3pMhmnZ0BQ/viewform"
+									href="https://docs.google.com/forms/d/e/1FAIpQLScXWp50EI5w0HOCHTq3noxwFNYfJq_AGgZpjOzu1k-iU_xcSw/viewform?vc=0&c=0&w=1&flr=0"
 									target="_blank"
 									style={{
 										fontWeight: 700,

@@ -63,6 +63,24 @@ import lawder0 from "../../Images/Team/headshots/lawder0.png";
 import lawder1 from "../../Images/Team/headshots/lawder1.png";
 import christine0 from "../../Images/Team/headshots/christine0.png";
 import christine1 from "../../Images/Team/headshots/christine1.png";
+import vivek0 from "../../Images/Team/headshots/vivek0.png";
+import debangi0 from "../../Images/Team/headshots/debangi0.png";
+import chris0 from "../../Images/Team/headshots/chris0.png";
+import prah0 from "../../Images/Team/headshots/prah0.png";
+import siri0 from "../../Images/Team/headshots/siri0.png";
+import ilakiya0 from "../../Images/Team/headshots/ilakiya0.png";
+import patrick0 from "../../Images/Team/headshots/patrick0.png";
+import amory0 from "../../Images/Team/headshots/amory0.png";
+import vivek1 from "../../Images/Team/headshots/vivek1.png";
+import debangi1 from "../../Images/Team/headshots/debangi1.png";
+import chris1 from "../../Images/Team/headshots/chris1.png";
+import prah1 from "../../Images/Team/headshots/prah1.png";
+import siri1 from "../../Images/Team/headshots/siri1.png";
+import ilakiya1 from "../../Images/Team/headshots/ilakiya1.png";
+import patrick1 from "../../Images/Team/headshots/patrick1.png";
+import amory1 from "../../Images/Team/headshots/amory1.png";
+import shubh0 from "../../Images/Team/headshots/shubh0.png";
+import shubh1 from "../../Images/Team/headshots/shubh1.png";
 
 const SectionContainer = styled.div`
 	width: 100vw;
@@ -194,7 +212,7 @@ function RosterSection() {
 			name: "Charlie Schuetze",
 			image0: charlie0,
 			image1: charlie1,
-			position: "VP of Internal Development",
+			position: "VP of Recruitment",
 			ID: 5,
 			url: "https://linkedin.com/in/charlie-schuetze",
 		},
@@ -218,9 +236,17 @@ function RosterSection() {
 			name: "Anish Vankayalapati",
 			image0: anish0,
 			image1: anish1,
-			position: "VP of External",
+			position: "VP of External Development",
 			ID: 21,
 			url: "https://linkedin.com/in/anish-vankayalapati-6b4914223",
+		},
+		{
+			name: "Shubh Yadav",
+			image0: shubh0,
+			image1: shubh1,
+			url: "https://www.linkedin.com/in/shubhyadav/",
+			ID: 46,
+			position: "VP of Internal Development",
 		},
 	];
 
@@ -357,14 +383,6 @@ function RosterSection() {
 			url: "https://www.linkedin.com/in/caden-rubischko-7a3a08206/",
 		},
 		{
-			name: "Anthony Remick",
-			image0: anthony0,
-			image1: anthony1,
-			position: "Analyst",
-			ID: 15,
-			url: "https://www.linkedin.com/in/anthony-remick",
-		},
-		{
 			name: "Genta Gollopeni",
 			image0: genta0,
 			image1: genta1,
@@ -379,14 +397,6 @@ function RosterSection() {
 			position: "Analyst",
 			ID: 19,
 			url: "https://www.linkedin.com/mwlite/in/tylan-porterfield-780a221bb",
-		},
-		{
-			name: "Jack Watson",
-			image0: jack0,
-			image1: jack1,
-			position: "Analyst",
-			ID: 23,
-			url: "https://www.linkedin.com/in/jack-m-watson/",
 		},
 		{
 			name: "Manan Jain",
@@ -436,9 +446,88 @@ function RosterSection() {
 			ID: 31,
 			url: "https://www.linkedin.com/in/lawder-desantis-50a733232",
 		},
+		{
+			name: "Chris Zheng",
+			image0: chris0,
+			image1: chris1,
+			url: "https://www.linkedin.com/in/christopher-zheng-1aa1b6253/",
+			ID: 35,
+		},
+		{
+			name: "Prah Pant",
+			image0: prah0,
+			image1: prah1,
+			url: "https://www.linkedin.com/in/prahlad-pant-a41919252/",
+			ID: 36,
+		},
+		{
+			name: "Siri Pattipati",
+			image0: siri0,
+			image1: siri1,
+			url: "https://www.linkedin.com/in/siri-pattipati-87a155216/",
+			ID: 37,
+		},
+		{
+			name: "Ilakiya Rajaguru",
+			image0: ilakiya0,
+			image1: ilakiya1,
+			url: "https://www.linkedin.com/in/ilakiya-rajaguru-9a9530232/",
+			ID: 38,
+		},
+		{
+			name: "Patrick Li",
+			image0: patrick0,
+			image1: patrick1,
+			url: "https://www.linkedin.com/in/patrick-li-6a9296247/",
+			ID: 39,
+		},
+		{
+			name: "Amory Tin",
+			image0: amory0,
+			image1: amory1,
+			url: "https://www.linkedin.com/in/amory-tin/",
+			ID: 40,
+		},
 	];
 
-	const managerData = [];
+	const managerData = [
+		{
+			name: "Kapil Pownikar",
+			image0: kapil0,
+			image1: kapil1,
+			url: "https://www.linkedin.com/in/kapil-pownikar/",
+			ID: 41,
+			Position: "Project Manager",
+		},
+		{
+			name: "Jack Watson",
+			image0: jack0,
+			image1: jack1,
+			url: "https://www.linkedin.com/in/jack-m-watson/",
+			ID: 42,
+		},
+		{
+			name: "Anthony Remick",
+			image0: anthony0,
+			image1: anthony1,
+			url: "https://www.linkedin.com/in/anthony-remick/",
+			ID: 43,
+		},
+		{
+			name: "Debangi Mohanta",
+			image0: debangi0,
+			image1: debangi1,
+			url: "https://www.linkedin.com/in/debangi-mohanta-777057218/",
+			ID: 44,
+		},
+		{
+			name: "Vivek Nukala",
+			image0: vivek0,
+			image1: vivek1,
+			url: "https://www.linkedin.com/in/vivek-r-nukala/",
+			ID: 45,
+		},
+	];
 
 	return (
 		<SectionContainer>
@@ -520,25 +609,36 @@ function RosterSection() {
 					</a>
 				))}
 			</PositionContainer>
-			{/*<PositionContainer>
-            <SmallSpacer/>
-            <TextContainer>
-                <TitleText style={{marginLeft: "2vmin"}}>Project Managers</TitleText>
-            </TextContainer>
-            <NewLine/>
-            {managerData.map((data) => (
-                <CardContainer >
-                    <CardImage style={{backgroundImage: `url(${data.image0})`}} />
-                    <CardImageHover onMouseEnter={()=>setHoverID2(data.ID)} onMouseLeave={()=>setHoverID2(0)} style={{opacity: hoverID2 === data.ID ? "100%":"0%", backgroundImage: `url(${data.image1})`}}/>
-                    <NewLine/>
-                    <TextContainer>
-                        <CardTitle>{data.name}</CardTitle>
-                        <TinySpacer/>
-                        <CardHeader>{data.position}</CardHeader>
-                    </TextContainer>
-                </CardContainer>
-            ))}
-            </PositionContainer>*/}
+			<PositionContainer>
+				<SmallSpacer />
+				<TextContainer>
+					<TitleText style={{ marginLeft: "2vmin" }}>
+						Project Managers
+					</TitleText>
+				</TextContainer>
+				<NewLine />
+				{managerData.map((data) => (
+					<CardContainer>
+						<CardImage
+							style={{ backgroundImage: `url(${data.image0})` }}
+						/>
+						<CardImageHover
+							onMouseEnter={() => setHoverID2(data.ID)}
+							onMouseLeave={() => setHoverID2(0)}
+							style={{
+								opacity: hoverID2 === data.ID ? "100%" : "0%",
+								backgroundImage: `url(${data.image1})`,
+							}}
+						/>
+						<NewLine />
+						<TextContainer>
+							<CardTitle>{data.name}</CardTitle>
+							<TinySpacer />
+							<CardHeader>{data.position}</CardHeader>
+						</TextContainer>
+					</CardContainer>
+				))}
+			</PositionContainer>
 			<PositionContainer>
 				<SmallSpacer />
 				<TextContainer>

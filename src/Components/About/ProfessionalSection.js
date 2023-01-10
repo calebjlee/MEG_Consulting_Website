@@ -23,7 +23,7 @@ const TextContainer = styled.div`
 
 const TitleText = styled.h1`
   display: inline-block;
-  font-size: 8vmin;
+  font-size: 7.5vmin;
   font-family: futura-pt, sans-serif;
   margin: 0;
   padding: 0;

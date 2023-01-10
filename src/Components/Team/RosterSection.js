@@ -431,14 +431,6 @@ function RosterSection() {
 			url: "https://www.linkedin.com/in/maxymw/",
 		},
 		{
-			name: "Kapil Pownikar",
-			image0: kapil0,
-			image1: kapil1,
-			position: "Analyst",
-			ID: 24,
-			url: "https://www.linkedin.com/in/kapil-pownikar",
-		},
-		{
 			name: "Lawder Desantis",
 			image0: lawder0,
 			image1: lawder1,

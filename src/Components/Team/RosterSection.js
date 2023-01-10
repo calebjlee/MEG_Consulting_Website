@@ -452,6 +452,7 @@ function RosterSection() {
 			image1: chris1,
 			url: "https://www.linkedin.com/in/christopher-zheng-1aa1b6253/",
 			ID: 35,
+			position: "Analyst",
 		},
 		{
 			name: "Prah Pant",
@@ -459,6 +460,7 @@ function RosterSection() {
 			image1: prah1,
 			url: "https://www.linkedin.com/in/prahlad-pant-a41919252/",
 			ID: 36,
+			position: "Analyst",
 		},
 		{
 			name: "Siri Pattipati",
@@ -466,6 +468,7 @@ function RosterSection() {
 			image1: siri1,
 			url: "https://www.linkedin.com/in/siri-pattipati-87a155216/",
 			ID: 37,
+			position: "Analyst",
 		},
 		{
 			name: "Ilakiya Rajaguru",
@@ -473,6 +476,7 @@ function RosterSection() {
 			image1: ilakiya1,
 			url: "https://www.linkedin.com/in/ilakiya-rajaguru-9a9530232/",
 			ID: 38,
+			position: "Analyst",
 		},
 		{
 			name: "Patrick Li",
@@ -480,6 +484,7 @@ function RosterSection() {
 			image1: patrick1,
 			url: "https://www.linkedin.com/in/patrick-li-6a9296247/",
 			ID: 39,
+			position: "Analyst",
 		},
 		{
 			name: "Amory Tin",
@@ -487,6 +492,7 @@ function RosterSection() {
 			image1: amory1,
 			url: "https://www.linkedin.com/in/amory-tin/",
 			ID: 40,
+			position: "Analyst",
 		},
 	];
 
@@ -497,7 +503,7 @@ function RosterSection() {
 			image1: kapil1,
 			url: "https://www.linkedin.com/in/kapil-pownikar/",
 			ID: 41,
-			Position: "Project Manager",
+			position: "Project Manager",
 		},
 		{
 			name: "Jack Watson",
@@ -505,6 +511,7 @@ function RosterSection() {
 			image1: jack1,
 			url: "https://www.linkedin.com/in/jack-m-watson/",
 			ID: 42,
+			position: "Project Manager",
 		},
 		{
 			name: "Anthony Remick",
@@ -512,6 +519,7 @@ function RosterSection() {
 			image1: anthony1,
 			url: "https://www.linkedin.com/in/anthony-remick/",
 			ID: 43,
+			position: "Project Manager",
 		},
 		{
 			name: "Debangi Mohanta",
@@ -519,6 +527,7 @@ function RosterSection() {
 			image1: debangi1,
 			url: "https://www.linkedin.com/in/debangi-mohanta-777057218/",
 			ID: 44,
+			position: "Project Manager",
 		},
 		{
 			name: "Vivek Nukala",
@@ -526,6 +535,7 @@ function RosterSection() {
 			image1: vivek1,
 			url: "https://www.linkedin.com/in/vivek-r-nukala/",
 			ID: 45,
+			position: "Project Manager",
 		},
 	];
 

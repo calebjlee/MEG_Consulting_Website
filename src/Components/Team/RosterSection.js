@@ -204,7 +204,7 @@ function RosterSection() {
 			name: "Priyanka Madhavan",
 			image0: pri0,
 			image1: pri1,
-			position: "VP of Recruitment",
+			position: "President",
 			ID: 3,
 			url: "https://www.linkedin.com/in/primadhavan/",
 		},

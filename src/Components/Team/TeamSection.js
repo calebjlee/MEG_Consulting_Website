@@ -1,28 +1,19 @@
 import styled from "styled-components";
-import team from "../../Images/Team/team.jpg";
-import alejandro from "../../Images/Team/shadows/alejandro.png";
-import anish from "../../Images/Team/shadows/anish.png";
-import anthony from "../../Images/Team/shadows/anthony.png";
-import ashley from "../../Images/Team/shadows/ashley.png";
-import benny from "../../Images/Team/shadows/benny.png";
-import brandon from "../../Images/Team/shadows/brandon.png";
-import caden from "../../Images/Team/shadows/caden.png";
-import charlie from "../../Images/Team/shadows/charlie.png";
-import dylan from "../../Images/Team/shadows/dylan.png";
-import jacob from "../../Images/Team/shadows/jacob.png";
-import kapil from "../../Images/Team/shadows/kapil.png";
-import kiran from "../../Images/Team/shadows/kiran.png";
-import lizzy from "../../Images/Team/shadows/lizzy.png";
-import manan from "../../Images/Team/shadows/manan.png";
-import meghna from "../../Images/Team/shadows/meghna.png";
-import nakul from "../../Images/Team/shadows/nakul.png";
-import pri from "../../Images/Team/shadows/pri.png";
-import rachelle from "../../Images/Team/shadows/rachelle.png";
-import ragini from "../../Images/Team/shadows/ragini.png";
-import shub from "../../Images/Team/shadows/shub.png";
-import vinnie from "../../Images/Team/shadows/vinnie.png";
-import zevik from "../../Images/Team/shadows/zevik.png";
-import andrew from "../../Images/Team/shadows/andrew.png";
+import team from "../../Images/Team/team1.jpg";
+import vivek from "../../Images/Team/shadows/vivek.png";
+import sydney from "../../Images/Team/shadows/sydney.png";
+import siri from "../../Images/Team/shadows/siri.png";
+import prah from "../../Images/Team/shadows/prah.png";
+import mythily from "../../Images/Team/shadows/mythily.png";
+import lucky from "../../Images/Team/shadows/lucky.png";
+import luca from "../../Images/Team/shadows/luca.png";
+import leo from "../../Images/Team/shadows/leo.png";
+import hannah from "../../Images/Team/shadows/hannah.png";
+import joe from "../../Images/Team/shadows/joe.png";
+import aman from "../../Images/Team/shadows/aman.png";
+import amory from "../../Images/Team/shadows/amory.png";
+import chris from "../../Images/Team/shadows/chris.png";
+import debangi from "../../Images/Team/shadows/debangi.png";
 
 import React, { useState } from "react";
 import NextSection from "../General/NextSection";
@@ -151,133 +142,54 @@ function TeamSection() {
 	const [hoverID1, setHoverID1] = useState(0);
 	const names = [
 		"YOU SHOULD NOT BE SEEING THIS",
-		"Andrew Zhou",
-		"Kapil Pownikar",
-		"Ashley Winger",
-		"Ragini Chaudhari",
-		"Elizabeth Lu",
-		"Anish Vankayalapati",
-		"Anthony Remick",
-		"Manan Jain",
-		"Kiran Sequeira",
-		"Zevik Citron",
-		"Nakul Chadha",
-		"Priyanka Madhavan",
-		"Vincent Larsson",
-		"Jacob Blumenstein",
-		"Rachelle Deng",
-		"Shubh Yadav",
-		"Charlie Schuetze",
-		"Dylan Roussel",
-		"Meghna Gupta",
-		"Caden Rubischko",
-		"Brandon Geng",
-		"Benny Shaevsky",
-		"Alejandro Borrego",
+		"Vivek Nukala",
+		"Sydney Gaynor",
+		"Siri Pattipati",
+		"Prah Pant",
+		"Mythily Lokam",
+		"Ilakiya Rajaguru",
+		"Luca Diomede",
+		"Leo Leone",
+		"Hannah Soderstrom",
+		"Joe Henley",
+		"Aman Shah",
+		"Amory Tin",
+		"Chris Zheng",
+		"Debangi Mohanta",
 	];
-	const majors = [
-		"YOU SHOULD NOT BE SEEING THIS",
-		"BBA",
-		"Economics & Computer Science",
-		"BBA",
-		"BHS & Economics",
-		"Computer Science",
-		"BBA and Computer Science",
-		"Computer Science",
-		"BBA",
-		"Computer Science",
-		"BBA",
-		"BBA",
-		"Mechanical Engineering and BBA",
-		"Industrial Operations",
-		"BBA",
-		"BBA",
-		"BBA",
-		"BBA",
-		"BBA",
-		"Mechanical Engineering",
-		"BBA",
-		"BBA and Computer Science",
-		"BBA",
-		"CS",
+	const tv = [
+		"you should not be seeing this",
+		"The Good Place",
+		"Little Fires Everywhere",
+		"The Office",
+		"Community",
+		"Gilmore Girls",
+		"Fabulous Lives of Bollywood Wives",
+		"Stranger Things",
+		"Baseball",
+		"Lucifer",
+		"Nathan For You",
+		"Arrow",
+		"Pretty Little Liars",
+		"Outer Banks",
+		"The Bear",
 	];
-	const years = [
-		"YOU SHOULD NOT BE SEEING THIS",
-		"Sophomore",
-		"Sophomore",
-		"Junior",
-		"Sophomore",
-		"Senior",
-		"Sophomore",
-		"Sophomore",
-		"Sophomore",
-		"Junior",
-		"Sophomore",
-		"Graduated",
-		"Junior",
-		"Senior",
-		"Junior",
-		"Junior",
-		"Sophomore",
-		"Junior",
-		"Junior",
-		"Junior",
-		"Junior",
-		"Senior",
-		"Junior",
-		"Junior",
-	];
-	const abouts = [
-		"YOU SHOULD NOT BE SEEING THIS",
-		"I like to cook and play ping-pong",
-		"I have 5 cats, all are strays :)",
-		"I run an Etsy store selling necklaces and bracelets",
-		"I love skiing",
-		"I enjoy a making good cup of pourover, playing tennis, and meeting new people!",
-		"I like to play soccer, basketball, and volleyball",
-		"I like Hockey, baseball, skiing",
-		"I’ve been scuba diving for the past 7 years and was once chased by a 7-foot fish",
-		"In my free time, I love playing the piano or going for walks in the Arb!",
-		"In my spare time I like to flip samples and cook up beats in FL Studio",
-		"I’m currently working at Morgan Stanley",
-		"I love photography and the outdoors!",
-		"I love playing hockey, learned from my dad to skate backwards before I could skate forwards",
-		"I like writing alternative rock music",
-		"I've met 8 Olympic figure skaters!",
-		"I Love playing soccer, coin collecting, and photography",
-		"I’m a Golf enthusiast, banjo player in training, future pilot and scuba diving connoisseur",
-		"Anything outdoors is my hobby, I love to travel and get lost",
-		"I like cooking, music, and dogs",
-		"I enjoy fishing and hockey",
-		"I got Franz Wagner sick once",
-		"I have seen Michigan play football in 6 states",
-		"I sat in the Stanley Cup as a baby",
-	];
-	const projects = [
-		"YOU SHOULD NOT BE SEEING THIS",
-		"Argus Farm Stop",
-		"Kaufmann Insurance",
-		"Argus Farm Stop",
-		"Emagine",
-		"MCity, Community Action Network, Freezer Recycling, TREMEC ",
-		"Workforce Software, Zoominfo (2)",
-		"ZoomInfo (1)",
-		"Kaufman Insurance ",
-		"Community Action Network, Workforce, ZoomInfo 2",
-		"MadDog Ventures, ZoomInfo (1)",
-		"Second to None, Give and Take",
-		"Academic Innovation, Gritter Real Estate, Zingerman's Service Network",
-		"M City, Second to None, Cayman Chemical, HSHV, TREMEC",
-		"Workforce, Filson, Cayman Chemicals",
-		"Avicenna Healthcare, Hope Clinic",
-		"Bouma Real Estate, Kaufman Insurance",
-		"Gritter Real Estate, MadDog Ventures, Beer City Dog Biscuits",
-		"Argus Farmstop, CAN Group, Exchange Capital Wealth Management",
-		"Beer City Dog Biscuits",
-		"Emagine",
-		"CAN Group, M&B Cupboard, Hope Clinic",
-		"Underground Printing, Kaufman (Atain), MadDog Technology",
-		"Argus Farm Stop",
+	const fear = [
+		"you should not be seeing this",
+		"Being Buried Alive",
+		"Porta-Potties",
+		"Worms",
+		"Spiders",
+		"My Sink Drain",
+		"Clowns",
+		"Heights",
+		"Clowns",
+		"Any Flying Bug",
+		"Dorm Shower Floors",
+		"Heights",
+		"Ghosts and Wasps",
+		"Spiders",
+		"Failure",
 	];
 
 	return (
@@ -304,192 +216,106 @@ function TeamSection() {
 						fontSize: "4vmin",
 					}}
 				>
-					Hover Over to Meet Our Team
+					Hover to Meet Our New Members
 				</TitleText>
 				<TeamImage src={team}></TeamImage>
 				<ShadowContainer
 					style={{
-						opacity:
-							hoverID === 1 ? "0" : hoverID === 0 ? "0" : "1",
+						opacity: hoverID === 1 ? "0" : hoverID === 0 ? "0" : 1,
 					}}
 				>
-					<TeamImage src={andrew}></TeamImage>
+					<TeamImage src={vivek}></TeamImage>
 				</ShadowContainer>
 				<ShadowContainer
 					style={{
-						opacity:
-							hoverID === 2 ? "0" : hoverID === 0 ? "0" : "1",
+						opacity: hoverID === 2 ? "0" : hoverID === 0 ? "0" : 1,
 					}}
 				>
-					<TeamImage src={kapil}></TeamImage>
+					<TeamImage src={sydney}></TeamImage>
 				</ShadowContainer>
 				<ShadowContainer
 					style={{
-						opacity:
-							hoverID === 3 ? "0" : hoverID === 0 ? "0" : "1",
+						opacity: hoverID === 3 ? "0" : hoverID === 0 ? "0" : 1,
 					}}
 				>
-					<TeamImage src={ashley}></TeamImage>
+					<TeamImage src={siri}></TeamImage>
 				</ShadowContainer>
 				<ShadowContainer
 					style={{
-						opacity:
-							hoverID === 4 ? "0" : hoverID === 0 ? "0" : "1",
+						opacity: hoverID === 4 ? "0" : hoverID === 0 ? "0" : 1,
 					}}
 				>
-					<TeamImage src={ragini}></TeamImage>
+					<TeamImage src={prah}></TeamImage>
 				</ShadowContainer>
 				<ShadowContainer
 					style={{
-						opacity:
-							hoverID === 5 ? "0" : hoverID === 0 ? "0" : "1",
+						opacity: hoverID === 5 ? "0" : hoverID === 0 ? "0" : 4,
 					}}
 				>
-					<TeamImage src={lizzy}></TeamImage>
+					<TeamImage src={mythily}></TeamImage>
 				</ShadowContainer>
 				<ShadowContainer
 					style={{
-						opacity:
-							hoverID === 6 ? "0" : hoverID === 0 ? "0" : "1",
+						opacity: hoverID === 6 ? "0" : hoverID === 0 ? "0" : 4,
 					}}
 				>
-					<TeamImage src={anish}></TeamImage>
+					<TeamImage src={lucky}></TeamImage>
 				</ShadowContainer>
 				<ShadowContainer
 					style={{
-						opacity:
-							hoverID === 7 ? "0" : hoverID === 0 ? "0" : "1",
+						opacity: hoverID === 7 ? "0" : hoverID === 0 ? "0" : 4,
 					}}
 				>
-					<TeamImage src={anthony}></TeamImage>
+					<TeamImage src={luca}></TeamImage>
 				</ShadowContainer>
 				<ShadowContainer
 					style={{
-						opacity:
-							hoverID === 8 ? "0" : hoverID === 0 ? "0" : "1",
+						opacity: hoverID === 8 ? "0" : hoverID === 0 ? "0" : 4,
 					}}
 				>
-					<TeamImage src={manan}></TeamImage>
+					<TeamImage src={leo}></TeamImage>
 				</ShadowContainer>
 				<ShadowContainer
 					style={{
-						opacity:
-							hoverID === 9 ? "0" : hoverID === 0 ? "0" : "1",
+						opacity: hoverID === 9 ? "0" : hoverID === 0 ? "0" : 4,
 					}}
 				>
-					<TeamImage src={kiran}></TeamImage>
+					<TeamImage src={hannah}></TeamImage>
 				</ShadowContainer>
 				<ShadowContainer
 					style={{
-						opacity:
-							hoverID === 10 ? "0" : hoverID === 0 ? "0" : "1",
+						opacity: hoverID === 10 ? "0" : hoverID === 0 ? "0" : 4,
 					}}
 				>
-					<TeamImage src={zevik}></TeamImage>
+					<TeamImage src={joe}></TeamImage>
 				</ShadowContainer>
 				<ShadowContainer
 					style={{
-						opacity:
-							hoverID === 11 ? "0" : hoverID === 0 ? "0" : "1",
+						opacity: hoverID === 11 ? "0" : hoverID === 0 ? "0" : 4,
 					}}
 				>
-					<TeamImage src={nakul}></TeamImage>
+					<TeamImage src={aman}></TeamImage>
 				</ShadowContainer>
 				<ShadowContainer
 					style={{
-						opacity:
-							hoverID === 12 ? "0" : hoverID === 0 ? "0" : "1",
+						opacity: hoverID === 12 ? "0" : hoverID === 0 ? "0" : 4,
 					}}
 				>
-					<TeamImage src={pri}></TeamImage>
+					<TeamImage src={amory}></TeamImage>
 				</ShadowContainer>
 				<ShadowContainer
 					style={{
-						opacity:
-							hoverID === 13 ? "0" : hoverID === 0 ? "0" : "1",
+						opacity: hoverID === 13 ? "0" : hoverID === 0 ? "0" : 4,
 					}}
 				>
-					<TeamImage src={vinnie}></TeamImage>
+					<TeamImage src={chris}></TeamImage>
 				</ShadowContainer>
 				<ShadowContainer
 					style={{
-						opacity:
-							hoverID === 14 ? "0" : hoverID === 0 ? "0" : "1",
+						opacity: hoverID === 14 ? "0" : hoverID === 0 ? "0" : 4,
 					}}
 				>
-					<TeamImage src={jacob}></TeamImage>
-				</ShadowContainer>
-				<ShadowContainer
-					style={{
-						opacity:
-							hoverID === 15 ? "0" : hoverID === 0 ? "0" : "1",
-					}}
-				>
-					<TeamImage src={rachelle}></TeamImage>
-				</ShadowContainer>
-				<ShadowContainer
-					style={{
-						opacity:
-							hoverID === 16 ? "0" : hoverID === 0 ? "0" : "1",
-					}}
-				>
-					<TeamImage src={shub}></TeamImage>
-				</ShadowContainer>
-				<ShadowContainer
-					style={{
-						opacity:
-							hoverID === 17 ? "0" : hoverID === 0 ? "0" : "1",
-					}}
-				>
-					<TeamImage src={charlie}></TeamImage>
-				</ShadowContainer>
-				<ShadowContainer
-					style={{
-						opacity:
-							hoverID === 18 ? "0" : hoverID === 0 ? "0" : "1",
-					}}
-				>
-					<TeamImage src={dylan}></TeamImage>
-				</ShadowContainer>
-				<ShadowContainer
-					style={{
-						opacity:
-							hoverID === 19 ? "0" : hoverID === 0 ? "0" : "1",
-					}}
-				>
-					<TeamImage src={meghna}></TeamImage>
-				</ShadowContainer>
-				<ShadowContainer
-					style={{
-						opacity:
-							hoverID === 20 ? "0" : hoverID === 0 ? "0" : "1",
-					}}
-				>
-					<TeamImage src={caden}></TeamImage>
-				</ShadowContainer>
-				<ShadowContainer
-					style={{
-						opacity:
-							hoverID === 21 ? "0" : hoverID === 0 ? "0" : "1",
-					}}
-				>
-					<TeamImage src={brandon}></TeamImage>
-				</ShadowContainer>
-				<ShadowContainer
-					style={{
-						opacity:
-							hoverID === 22 ? "0" : hoverID === 0 ? "0" : "1",
-					}}
-				>
-					<TeamImage src={benny}></TeamImage>
-				</ShadowContainer>
-				<ShadowContainer
-					style={{
-						opacity:
-							hoverID === 23 ? "0" : hoverID === 0 ? "0" : "1",
-					}}
-				>
-					<TeamImage src={alejandro}></TeamImage>
+					<TeamImage src={debangi}></TeamImage>
 				</ShadowContainer>
 				<HoverContainer>
 					<SvgDesktop>
@@ -497,747 +323,440 @@ function TeamSection() {
 							version="1.0"
 							xmlns="http://www.w3.org/2000/svg"
 							width="55vw"
-							viewBox="0 0 1911.000000 1147.000000"
+							viewBox="0 0 1200.000000 706.000000"
 							preserveAspectRatio="xMidYMid meet"
 						>
-							{/*Andrew */}
-							<g
-								fillOpacity={0}
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(1)}
-								onMouseOut={() => setHoverID(0)}
-							>
-								<path
-									d="M1620 9131 c-128 -35 -204 -89 -297 -212 -64 -84 -76 -125 -68 -241
-                4 -69 2 -104 -6 -120 -26 -47 -11 -208 25 -276 23 -43 63 -80 95 -87 29 -6 29
-                -6 36 -100 8 -108 1 -178 -21 -196 -8 -7 -21 -27 -29 -45 -13 -32 -62 -83
-                -151 -159 -26 -22 -56 -48 -66 -58 -26 -24 -122 -57 -168 -57 -20 0 -41 -5
-                -46 -10 -6 -6 -48 -24 -95 -41 -87 -32 -112 -40 -189 -59 -87 -23 -213 -86
-                -238 -119 -23 -32 -58 -129 -79 -218 -12 -54 -17 -150 -20 -463 -6 -512 9
-                -716 77 -1027 43 -197 80 -250 246 -355 63 -39 120 -78 126 -86 9 -10 2 -32
-                -30 -98 -26 -52 -42 -98 -42 -120 0 -60 59 -213 117 -301 74 -114 153 -271
-                153 -303 0 -23 77 -190 124 -270 8 -14 55 -99 105 -190 91 -165 180 -280 219
-                -280 8 0 23 -7 33 -16 30 -27 39 -9 33 69 -4 49 -1 101 10 160 9 49 16 112 15
-                140 -1 29 1 77 5 107 7 62 -3 150 -34 295 -19 87 -21 120 -16 250 3 83 8 166
-                11 185 3 19 10 96 15 170 11 141 22 243 39 345 32 193 76 414 86 440 12 29 55
-                63 173 133 29 18 58 32 63 32 5 0 17 4 27 9 56 31 139 61 167 61 18 0 39 8 47
-                18 30 33 92 167 110 237 9 38 29 113 43 165 17 61 30 143 36 230 5 74 19 178
-                29 230 11 52 25 120 30 150 6 31 24 76 40 100 17 25 30 55 30 68 0 12 11 49
-                25 82 14 33 25 68 25 79 0 22 -44 61 -69 61 -10 0 -21 4 -26 8 -6 5 -32 17
-                -60 27 -27 10 -62 28 -77 41 -15 12 -31 24 -35 26 -4 1 -26 28 -49 58 -35 48
-                -42 66 -53 143 -15 99 -15 98 65 192 46 55 114 172 114 198 0 9 11 52 25 94
-                14 43 31 93 36 112 11 34 24 258 22 382 -2 126 -91 278 -183 314 -25 10 -61
-                30 -80 45 -63 48 -123 63 -260 66 -95 2 -141 -2 -190 -15z"
-								/>
-								<path
-									d="M692 4458 c-11 -24 -47 -92 -81 -153 l-62 -110 1 -100 c1 -55 0 -116
-                -2 -135 -3 -34 -1 -36 72 -75 66 -35 76 -44 82 -75 25 -123 42 -224 49 -286 4
-                -39 22 -134 40 -210 31 -134 32 -147 34 -369 1 -177 6 -255 21 -340 21 -124
-                22 -148 5 -665 -7 -232 -19 -418 -31 -510 -10 -80 -21 -199 -25 -265 -4 -66
-                -8 -138 -10 -160 -2 -22 -9 -187 -15 -367 -13 -367 -13 -371 62 -521 5 -10 12
-                -41 15 -68 l6 -49 543 0 544 0 1 53 c1 28 3 212 4 407 2 195 7 630 11 965 5
-                336 8 630 8 655 0 46 -53 162 -160 351 -24 42 -143 274 -265 515 -122 242
-                -266 522 -319 624 -54 102 -170 328 -259 504 -163 320 -222 426 -240 426 -6 0
-                -19 -19 -29 -42z"
-								/>
-							</g>
-
-							{/*Kapil */}
-							<g
-								fillOpacity={0}
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(2)}
-								onMouseOut={() => setHoverID(0)}
-							>
-								<path
-									d="M4724 6955 c-12 -19 -27 -23 -100 -29 -52 -4 -91 -2 -98 3 -7 6 -22
-                8 -34 4 -12 -3 -28 0 -35 6 -8 6 -17 8 -21 4 -3 -4 -35 -6 -71 -5 -69 2 -134
-                -17 -171 -50 -11 -10 -24 -18 -30 -18 -16 -1 -194 -177 -194 -192 0 -8 -11
-                -25 -25 -38 -14 -13 -25 -29 -25 -36 0 -6 -7 -18 -17 -25 -9 -8 -27 -36 -39
-                -64 -13 -27 -33 -57 -46 -66 -21 -16 -22 -25 -23 -151 -1 -93 -6 -150 -18
-                -188 -9 -30 -17 -82 -19 -114 -3 -58 -2 -60 31 -83 19 -13 46 -23 60 -23 19 0
-                32 -9 43 -28 9 -15 44 -58 78 -95 56 -61 65 -67 101 -67 39 0 41 -2 64 -54 27
-                -61 25 -114 -7 -155 -10 -13 -18 -27 -18 -32 0 -17 -88 -128 -140 -176 -8 -8
-                -53 -37 -100 -65 -46 -27 -97 -60 -112 -73 -42 -35 -287 -152 -381 -182 -133
-                -41 -173 -66 -201 -122 -39 -76 -53 -162 -60 -361 -4 -102 -9 -232 -11 -290
-                -15 -337 -15 -520 -1 -735 13 -207 18 -239 46 -325 17 -52 42 -138 56 -190 13
-                -52 37 -114 52 -138 15 -24 38 -64 52 -88 14 -24 49 -85 79 -135 l54 -92 -12
-                -56 c-7 -31 -18 -97 -25 -146 -8 -50 -26 -138 -40 -195 -15 -58 -36 -168 -46
-                -245 -11 -77 -29 -167 -40 -200 -11 -33 -45 -145 -76 -250 -57 -197 -65 -222
-                -96 -292 -27 -63 -27 -82 3 -105 37 -28 149 -37 168 -14 17 20 37 21 45 1 3
-                -8 12 -15 19 -15 11 0 16 -26 21 -112 9 -145 24 -341 33 -441 5 -43 4 -85 0
-                -93 -4 -8 -12 -66 -17 -129 -8 -97 -7 -121 6 -155 l16 -40 912 0 912 0 18 118
-                c17 120 35 211 62 317 29 115 35 140 45 194 5 30 12 57 14 61 2 3 9 46 15 95
-                6 49 16 96 23 104 9 10 12 89 12 281 0 241 2 270 18 287 20 23 22 46 5 72 -15
-                24 6 77 77 196 102 171 183 364 200 479 4 27 22 79 40 115 41 83 51 120 70
-                255 9 60 20 117 25 127 22 39 1 231 -33 311 -19 46 -34 118 -47 233 -11 104
-                -22 162 -46 260 -15 61 -16 80 -4 162 10 74 10 118 0 221 -9 95 -9 156 -1 237
-                5 61 13 190 16 287 8 205 -2 277 -43 322 -42 45 -149 110 -357 216 -225 114
-                -293 162 -335 234 -16 29 -38 60 -49 70 -11 10 -22 38 -26 67 -4 27 -15 60
-                -26 73 -26 33 -25 99 1 136 11 16 27 46 34 68 13 36 43 101 52 111 2 2 10 -2
-                18 -8 19 -16 26 -11 62 41 15 24 38 55 50 70 18 22 21 38 19 105 -2 106 32
-                267 67 312 14 18 17 33 12 55 -4 17 -6 58 -6 90 2 57 -29 190 -49 211 -5 5 -9
-                20 -9 33 0 13 -13 36 -28 50 -61 58 -102 91 -119 96 -10 3 -26 19 -35 36 -12
-                21 -25 30 -42 30 -15 0 -27 7 -31 19 -3 10 -27 41 -53 68 -55 60 -95 73 -118
-                38z"
-								/>
-							</g>
-
-							{/* Ashley */}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(3)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M6765 6543 c-103 -44 -210 -128 -265 -208 -44 -64 -109 -273 -121
-                -390 -6 -55 -14 -118 -19 -141 -24 -105 -40 -468 -26 -575 l8 -66 -93 -45
-                c-52 -25 -114 -53 -139 -64 -75 -31 -242 -124 -291 -161 -56 -42 -69 -68 -69
-                -131 0 -26 -6 -57 -14 -68 -11 -15 -14 -45 -12 -115 2 -54 -4 -135 -13 -189
-                -20 -122 -23 -922 -3 -942 7 -7 12 -24 12 -40 0 -15 7 -52 15 -84 8 -31 17
-                -97 21 -148 4 -53 15 -112 27 -141 11 -27 23 -70 28 -95 4 -25 12 -70 17 -101
-                6 -34 7 -70 2 -90 -40 -152 -50 -204 -50 -252 0 -50 -23 -134 -53 -192 -11
-                -22 -33 -92 -49 -155 -29 -121 -79 -234 -174 -402 -31 -53 -64 -120 -75 -148
-                -17 -46 -18 -53 -4 -79 13 -27 13 -31 -8 -57 -22 -28 -22 -33 -19 -288 2 -218
-                0 -261 -12 -275 -9 -10 -19 -55 -26 -111 -6 -52 -17 -120 -25 -150 -32 -129
-                -55 -236 -55 -252 0 -10 -9 -44 -19 -75 -19 -59 -37 -165 -44 -261 l-4 -52
-                1287 0 1287 0 -3 108 c-2 66 3 141 12 197 9 50 20 128 25 175 5 47 14 121 19
-                165 6 44 14 145 20 225 13 189 19 256 25 305 3 22 5 43 5 47 0 4 12 29 27 55
-                61 110 70 138 77 239 7 98 28 182 70 284 15 36 40 99 56 140 15 41 38 102 50
-                135 23 61 59 299 66 430 1 39 6 104 10 145 5 58 1 98 -15 175 -16 79 -22 147
-                -25 325 -4 224 -22 376 -51 446 -7 17 -16 49 -19 71 -4 22 -27 68 -51 104 -55
-                80 -115 197 -115 224 0 12 -4 25 -9 31 -14 14 -106 280 -126 364 -55 231 -77
-                305 -113 376 -22 44 -51 112 -66 153 -24 67 -27 87 -26 205 3 254 -47 714 -97
-                896 -14 52 -29 115 -32 140 -8 57 -66 161 -125 227 -52 57 -155 124 -236 151
-                -37 13 -98 21 -185 25 -124 6 -133 5 -190 -20z"
-								/>
-							</g>
-
-							{/*ragini*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(4)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M2758 7581 c-108 -26 -185 -76 -320 -206 -46 -45 -128 -227 -150
-                -334 -10 -52 -22 -99 -25 -105 -4 -5 -10 -69 -14 -141 -12 -210 -26 -283 -103
-                -538 -45 -153 -71 -201 -111 -205 -17 -2 -43 -9 -60 -16 -16 -8 -57 -26 -90
-                -41 -166 -74 -262 -135 -300 -191 -11 -17 -26 -62 -34 -100 -7 -38 -21 -114
-                -31 -169 -11 -55 -26 -152 -35 -215 -8 -63 -18 -128 -21 -145 -9 -49 -35 -400
-                -41 -552 -5 -141 1 -197 38 -323 15 -49 14 -192 -1 -350 -7 -74 -14 -180 -15
-                -235 l-3 -100 86 -175 c48 -96 96 -197 106 -223 21 -55 61 -107 82 -107 22 0
-                84 -104 84 -141 0 -21 32 -94 92 -208 131 -253 146 -280 184 -338 19 -28 34
-                -55 34 -60 0 -4 24 -45 54 -90 30 -46 72 -120 95 -165 23 -46 63 -119 90 -164
-                55 -92 168 -301 292 -539 17 -33 46 -78 63 -100 47 -60 83 -117 91 -145 4 -14
-                24 -56 45 -95 21 -38 57 -106 80 -150 85 -162 151 -281 170 -305 16 -21 22
-                -23 46 -15 61 22 96 160 74 289 -10 61 -18 81 -37 94 -71 50 -73 52 -63 75 36
-                90 77 208 102 297 33 120 36 131 78 260 17 52 35 131 41 175 14 114 37 236 64
-                340 13 50 26 119 30 155 3 36 13 88 22 116 21 67 13 102 -43 199 -26 44 -57
-                101 -69 126 -13 25 -34 59 -48 75 -29 34 -51 84 -61 135 -3 19 -26 98 -51 174
-                -39 119 -47 158 -56 274 -12 164 -12 705 0 816 5 44 12 154 16 245 7 216 22
-                317 54 382 31 62 64 83 190 123 105 34 320 134 375 176 61 46 179 119 191 119
-                19 0 155 157 171 197 9 21 24 47 34 58 29 33 32 88 8 148 -31 77 -45 89 -89
-                82 -34 -6 -39 -3 -82 45 -26 29 -61 74 -78 100 -27 42 -37 49 -74 55 -24 3
-                -49 13 -56 21 -8 10 -21 13 -36 9 -27 -6 -101 23 -122 48 -18 23 -40 129 -41
-                197 0 30 -11 100 -24 155 -13 55 -27 123 -31 150 -13 91 -54 326 -59 334 -3 4
-                -16 57 -30 117 -14 60 -29 126 -34 146 -11 42 -134 273 -162 303 -10 11 -23
-                32 -29 47 -7 18 -28 36 -59 52 -27 14 -64 38 -83 53 -18 15 -47 29 -63 30
-                -158 12 -175 11 -248 -6z"
-								/>
-							</g>
-
-							{/*lizzy*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(5)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M3590 8080 c-100 -8 -118 -13 -216 -61 -73 -36 -217 -173 -245 -233
-                -10 -22 -34 -62 -53 -87 -42 -57 -54 -110 -33 -142 8 -13 47 -40 86 -61 39
-                -20 71 -44 71 -51 0 -8 16 -36 37 -62 46 -61 125 -228 148 -313 10 -36 28
-                -105 42 -155 22 -82 36 -159 78 -420 7 -49 21 -120 29 -156 9 -37 20 -109 26
-                -160 5 -52 17 -116 26 -142 14 -40 24 -52 68 -77 28 -17 62 -30 76 -30 14 -1
-                36 -7 50 -15 28 -16 86 -20 94 -6 14 21 8 179 -8 234 -24 79 -18 190 19 374 3
-                11 32 53 65 93 33 39 60 76 60 81 0 25 189 199 216 199 3 0 18 9 34 20 40 28
-                43 66 16 183 -31 130 -42 184 -56 277 -6 41 -20 98 -30 125 -70 185 -96 246
-                -126 295 -18 30 -36 67 -40 83 -6 26 -56 77 -75 77 -5 0 -43 27 -84 60 -69 54
-                -127 82 -165 78 -8 0 -58 -4 -110 -8z"
-								/>
-							</g>
-
-							{/*anish*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(6)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M5186 7794 c-21 -8 -55 -27 -75 -42 -20 -15 -45 -33 -56 -40 -92 -58
-                -114 -76 -125 -103 -7 -17 -34 -48 -59 -69 -72 -61 -84 -109 -77 -296 10 -256
-                18 -319 44 -347 13 -13 26 -37 31 -52 5 -19 17 -32 37 -39 17 -6 61 -38 98
-                -71 37 -33 79 -66 93 -73 17 -9 23 -20 20 -32 -3 -10 1 -27 8 -37 6 -10 23
-                -49 38 -88 21 -57 25 -87 25 -165 -1 -52 -4 -100 -9 -106 -5 -6 -20 -44 -34
-                -85 -20 -56 -27 -102 -32 -194 -6 -119 -6 -121 -45 -177 -25 -38 -46 -58 -58
-                -58 -22 0 -73 -63 -96 -120 -8 -19 -22 -42 -31 -52 -8 -9 -19 -38 -24 -62 -7
-                -40 -5 -52 21 -102 17 -31 30 -68 30 -83 1 -15 24 -58 58 -106 66 -92 156
-                -165 272 -222 41 -20 104 -53 140 -74 36 -21 81 -44 100 -50 19 -7 71 -34 116
-                -61 100 -59 126 -58 182 10 106 129 231 232 281 232 11 0 22 4 25 9 3 4 25 11
-                48 15 26 4 58 20 84 41 23 19 49 35 57 35 8 0 26 11 39 24 24 21 26 31 32 142
-                3 65 10 204 16 308 10 173 10 190 -6 207 -9 11 -22 19 -28 19 -22 0 -192 88
-                -210 109 -11 12 -35 31 -53 42 -18 11 -54 47 -79 80 -44 57 -92 89 -135 89
-                -12 0 -38 26 -70 70 -28 39 -55 70 -59 70 -11 0 -50 126 -50 162 0 17 9 45 19
-                62 11 17 27 58 37 91 21 74 40 105 66 105 33 0 75 28 86 57 9 25 26 114 52
-                291 5 29 16 64 24 77 9 13 16 33 16 43 0 11 9 31 21 45 26 34 18 86 -22 144
-                -16 23 -29 44 -29 48 0 4 -14 26 -31 50 -18 24 -48 77 -68 117 -36 73 -37 73
-                -121 116 -46 23 -99 57 -118 75 l-33 32 -172 2 c-128 1 -182 -2 -211 -13z"
-								/>
-							</g>
-
-							{/*anthony*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(7)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M4285 9156 c-114 -40 -267 -105 -303 -129 -39 -26 -118 -148 -137
-                -211 -7 -24 -23 -62 -34 -84 -28 -55 -27 -94 4 -130 17 -21 26 -47 31 -88 3
-                -33 13 -70 22 -84 9 -14 19 -41 23 -60 9 -43 50 -143 68 -164 8 -9 25 -22 39
-                -29 38 -18 54 -76 50 -178 -2 -66 -7 -92 -20 -106 -25 -27 -22 -51 10 -98 15
-                -23 49 -97 76 -165 26 -69 55 -140 62 -158 8 -18 14 -44 14 -59 0 -14 4 -42 9
-                -62 5 -20 15 -70 21 -111 20 -131 51 -254 71 -282 10 -15 19 -32 19 -37 0 -26
-                48 -32 259 -32 152 -1 225 3 241 11 23 12 23 12 16 194 -9 223 -20 296 -52
-                353 -21 35 -25 51 -19 80 4 22 1 63 -8 102 -9 36 -24 102 -34 146 -15 65 -17
-                98 -10 175 9 119 50 244 88 271 58 41 114 269 113 465 -1 113 -3 126 -28 175
-                -16 30 -45 74 -65 99 -20 25 -48 61 -61 80 -37 55 -60 70 -112 70 -38 0 -54 6
-                -82 30 -31 28 -43 31 -118 36 -70 4 -94 1 -153 -20z"
-								/>
-							</g>
-
-							{/*manan*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(8)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M6115 8753 c-65 -14 -246 -77 -277 -96 -40 -24 -133 -124 -165 -178
-                -32 -52 -51 -126 -57 -219 -4 -56 -13 -99 -26 -125 -24 -47 -26 -99 -4 -151
-                19 -46 98 -150 123 -164 14 -7 20 -25 23 -70 4 -50 9 -65 35 -93 17 -17 47
-                -66 68 -107 20 -41 44 -84 54 -95 36 -41 82 -125 88 -159 4 -28 -1 -51 -25
-                -99 -32 -66 -69 -231 -79 -349 -7 -77 -25 -108 -66 -108 -35 0 -64 -26 -82
-                -73 -19 -50 -8 -118 28 -177 12 -19 42 -82 67 -140 89 -204 172 -346 222 -381
-                18 -12 44 -32 58 -45 30 -28 157 -98 223 -125 l48 -19 9 26 c6 14 15 72 21
-                128 12 119 69 325 105 379 28 43 127 139 177 172 63 41 127 59 209 57 70 -2
-                78 0 89 20 15 28 5 127 -20 182 -20 45 -70 90 -141 126 -60 30 -120 78 -120
-                96 0 8 -32 49 -72 92 -39 42 -96 113 -125 157 -30 44 -70 103 -90 130 -34 49
-                -35 52 -30 122 6 79 14 99 64 158 19 22 52 78 75 125 22 47 50 95 61 108 20
-                21 22 33 20 125 -2 68 4 136 17 204 11 56 21 112 21 125 2 50 -22 130 -67 217
-                -48 95 -95 147 -142 156 -15 3 -38 12 -52 20 -81 47 -106 55 -175 54 -38 -1
-                -79 -3 -90 -6z"
-								/>
-							</g>
-
-							{/*kiran*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(9)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M7975 7711 c-11 -5 -36 -10 -56 -10 -69 -2 -99 -13 -156 -62 -32 -26
-                -74 -62 -94 -78 -76 -65 -106 -133 -129 -301 -5 -36 -7 -84 -4 -107 5 -32 1
-                -50 -15 -76 -24 -39 -27 -100 -7 -138 7 -14 16 -36 19 -50 4 -13 27 -47 52
-                -76 25 -28 45 -56 45 -62 0 -5 9 -16 20 -24 31 -22 50 -80 50 -155 l0 -69 -42
-                -12 c-23 -7 -76 -35 -116 -62 -41 -27 -92 -54 -113 -59 -22 -6 -39 -16 -39
-                -23 0 -7 17 -37 37 -67 35 -52 53 -103 75 -215 5 -27 18 -86 29 -130 10 -44
-                23 -111 28 -150 6 -38 17 -110 26 -160 8 -49 15 -130 15 -180 0 -49 7 -117 14
-                -150 8 -33 17 -89 21 -125 4 -36 20 -98 36 -138 16 -40 29 -78 29 -84 0 -22
-                49 -75 82 -88 34 -13 98 -67 98 -82 0 -5 13 -37 30 -72 32 -69 63 -96 110 -96
-                56 0 90 69 127 259 6 33 68 92 125 120 27 12 50 27 54 32 3 5 12 9 20 9 8 0
-                33 9 54 19 22 10 62 24 90 31 63 15 129 84 154 160 15 46 33 205 32 285 0 53
-                24 214 64 420 53 277 53 279 31 299 -20 18 -141 56 -179 56 -27 0 -90 41 -143
-                93 -50 48 -77 109 -85 190 -6 62 -4 73 26 140 18 39 43 83 56 97 72 76 87 105
-                99 188 6 44 4 57 -11 74 -17 18 -19 35 -16 137 4 164 -6 206 -70 287 -29 37
-                -70 84 -91 104 -53 51 -146 99 -188 98 -19 0 -65 2 -104 6 -38 3 -79 2 -90 -3z"
-								/>
-							</g>
-
-							{/*zevik*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(10)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M7068 9353 c-43 -4 -54 -10 -121 -76 -40 -40 -84 -90 -97 -112 -12
-                -22 -33 -56 -46 -75 -32 -48 -55 -145 -57 -240 -2 -65 -5 -80 -19 -83 -49 -13
-                -73 -121 -46 -210 16 -53 84 -125 126 -133 38 -8 47 -34 56 -161 5 -77 4 -83
-                -18 -100 -13 -10 -31 -34 -41 -53 -9 -19 -75 -92 -146 -163 -109 -108 -134
-                -138 -162 -200 -19 -39 -54 -97 -80 -128 -41 -51 -47 -63 -57 -137 l-12 -82
-                53 -73 c30 -39 67 -92 83 -117 16 -25 37 -54 47 -65 10 -11 47 -52 83 -92 36
-                -40 66 -80 66 -90 0 -20 71 -78 138 -112 55 -28 107 -75 121 -108 6 -16 17
-                -64 24 -108 l13 -80 65 -6 c82 -7 168 -47 268 -122 41 -32 79 -57 85 -57 26 1
-                65 49 85 105 21 61 20 93 -6 130 -7 11 -13 29 -13 40 0 12 -11 31 -24 44 -20
-                19 -24 35 -29 112 -10 134 24 265 118 464 30 63 55 124 55 137 1 21 22 54 115
-                175 16 21 52 54 80 74 31 22 51 43 53 58 4 27 -32 69 -95 109 -23 14 -52 44
-                -65 65 -13 21 -37 61 -55 88 -17 26 -35 63 -38 81 -4 18 -13 42 -21 53 -9 15
-                -10 45 -4 125 9 123 21 160 50 160 53 0 115 59 160 153 31 66 24 146 -17 189
-                -26 27 -28 34 -26 106 1 42 3 94 4 114 2 25 -7 61 -28 105 -17 38 -37 88 -45
-                113 -18 56 -74 97 -145 107 -26 3 -81 23 -121 44 -72 38 -76 39 -170 37 -54
-                -1 -118 -3 -144 -5z"
-								/>
-							</g>
-
-							{/*nakul*/}
-
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(11)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M8640 8521 c0 -5 -11 -11 -23 -15 -13 -3 -40 -19 -61 -35 -21 -17
-                -52 -35 -69 -41 -50 -16 -146 -159 -147 -217 0 -29 -16 -123 -40 -228 -5 -23
-                -5 -59 0 -85 5 -25 9 -48 10 -51 0 -4 -11 -10 -24 -13 -14 -3 -28 -16 -32 -29
-                -4 -12 -10 -24 -14 -27 -4 -3 -10 -24 -13 -48 -4 -37 -2 -46 21 -68 15 -13 35
-                -27 45 -30 9 -3 17 -9 17 -14 0 -5 40 -50 89 -100 100 -103 101 -106 106 -270
-                2 -59 9 -113 20 -144 15 -41 16 -54 6 -82 -9 -25 -9 -39 -1 -55 16 -29 -3 -73
-                -44 -101 -53 -38 -96 -84 -96 -103 0 -10 -12 -52 -26 -94 -43 -125 -22 -180
-                115 -298 85 -74 143 -99 247 -110 51 -5 54 -5 64 21 5 15 10 39 10 54 0 42 69
-                149 125 195 28 22 77 68 111 102 55 55 69 63 140 84 43 12 92 25 107 28 37 7
-                30 22 -29 59 -66 43 -160 113 -196 147 l-30 27 4 135 c3 130 4 134 31 162 15
-                16 27 32 27 36 0 4 8 16 17 27 10 11 25 39 34 62 13 34 33 57 56 64 6 1 45
-                164 50 207 5 46 4 48 -26 60 -29 11 -31 14 -31 63 0 34 5 54 13 57 22 8 34
-                103 33 242 -2 117 -4 136 -26 180 -33 66 -87 95 -176 95 -59 0 -64 2 -85 33
-                -28 40 -38 47 -66 47 -12 0 -33 11 -47 25 -21 20 -35 25 -79 25 -31 0 -61 6
-                -73 15 -21 16 -44 19 -44 6z"
-								/>
-							</g>
-
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(12)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M9360 6773 c-14 -3 -31 -9 -37 -15 -7 -6 -84 -46 -170 -90 -87 -44
-                -164 -89 -172 -101 -9 -12 -36 -42 -61 -67 -52 -51 -109 -145 -121 -199 -4
-                -20 -19 -67 -33 -106 -13 -38 -27 -94 -30 -124 -4 -29 -8 -57 -11 -61 -3 -6
-                -13 -44 -46 -195 -4 -22 -13 -89 -19 -150 -6 -60 -15 -141 -20 -180 -6 -38
-                -12 -99 -15 -134 -7 -89 -40 -157 -102 -209 -28 -23 -57 -42 -65 -42 -8 0 -18
-                -4 -24 -10 -5 -5 -55 -27 -110 -48 -86 -32 -108 -45 -151 -90 -43 -45 -51 -60
-                -57 -105 -4 -28 -13 -65 -21 -82 -63 -141 -66 -644 -6 -899 6 -22 8 -43 5 -48
-                -3 -4 0 -15 5 -25 6 -10 25 -103 42 -208 27 -158 32 -216 32 -345 0 -85 -5
-                -166 -10 -180 -6 -15 -7 -53 -2 -95 4 -38 8 -110 9 -160 0 -79 3 -94 24 -120
-                19 -24 26 -27 38 -17 13 10 14 5 6 -41 -6 -28 -11 -81 -13 -117 -2 -36 -10
-                -96 -19 -135 -8 -38 -22 -116 -30 -172 -10 -63 -25 -121 -40 -150 -13 -27 -29
-                -69 -36 -93 -7 -25 -29 -81 -50 -125 -58 -121 -100 -270 -93 -327 7 -62 -12
-                -138 -49 -189 -47 -66 -59 -112 -69 -284 -16 -274 -36 -429 -84 -650 -14 -66
-                -28 -131 -30 -145 -9 -55 -24 -157 -30 -198 l-5 -42 1274 0 1274 0 11 68 c13
-                78 31 267 36 366 2 38 8 97 14 130 6 34 15 93 22 131 6 39 15 93 19 120 5 28
-                9 89 9 137 1 48 6 99 11 114 6 15 13 78 16 138 3 61 7 117 10 125 14 42 27
-                176 29 323 2 91 7 174 13 183 5 10 48 32 95 51 48 18 101 43 118 56 29 21 31
-                26 26 68 -6 41 -82 285 -111 355 -24 56 -49 160 -53 221 -6 77 8 129 52 194
-                19 29 35 57 35 63 0 5 10 24 23 41 69 92 106 224 90 321 -7 35 -7 71 -2 89 15
-                53 10 451 -7 551 -9 50 -18 137 -20 195 -4 88 -1 120 19 199 25 97 23 165 -5
-                198 -27 34 -77 207 -78 273 0 20 -7 46 -16 59 -9 13 -18 46 -20 75 -6 73 -14
-                107 -34 136 -23 33 -75 138 -85 170 -17 57 -96 210 -130 250 -20 24 -48 64
-                -61 89 -14 25 -38 66 -54 91 -66 99 -108 202 -119 290 -18 140 -20 147 -56
-                190 -19 23 -35 52 -35 65 0 12 -7 28 -15 35 -8 7 -15 18 -15 24 0 30 -116 241
-                -159 289 -26 29 -56 66 -66 83 -26 41 -152 153 -190 169 -108 46 -151 56 -195
-                48z"
-								/>
-							</g>
-
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(13)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M9050 9559 c-97 -23 -256 -99 -304 -145 -18 -18 -40 -47 -49 -66 -9
-                -19 -26 -43 -38 -54 -39 -35 -96 -166 -119 -274 -12 -56 -10 -121 9 -220 22
-                -120 39 -154 86 -171 32 -12 35 -16 35 -54 0 -60 16 -75 80 -80 91 -7 154 -34
-                192 -83 26 -34 38 -42 65 -42 46 0 134 -20 159 -37 46 -30 63 -98 67 -264 3
-                -129 0 -163 -15 -208 -22 -67 -24 -120 -3 -127 39 -15 -3 -251 -51 -289 -7 -5
-                -31 -45 -54 -89 -22 -43 -51 -92 -64 -110 -20 -25 -25 -48 -31 -127 -9 -115 1
-                -150 53 -197 153 -138 244 -192 322 -192 30 0 52 6 60 15 8 9 13 64 15 162 3
-                166 12 205 55 223 16 7 35 22 43 34 8 11 43 35 78 53 60 30 273 100 364 119
-                42 10 41 8 62 113 2 13 21 40 41 60 55 53 72 82 72 121 0 40 -34 120 -50 120
-                -6 0 -35 11 -64 24 -29 13 -95 38 -146 56 -52 17 -120 46 -151 66 -31 19 -76
-                41 -99 49 -47 16 -213 104 -271 142 -35 23 -36 26 -47 116 -20 166 14 301 85
-                335 29 14 42 31 69 89 18 39 38 98 45 130 7 32 19 72 28 88 12 24 15 67 15
-                210 l1 180 -32 55 c-41 70 -85 116 -127 134 -18 7 -60 41 -93 75 -33 33 -72
-                65 -87 71 -40 15 -110 11 -206 -11z"
-								/>
-								<path
-									d="M8195 8005 c-47 -23 -112 -43 -195 -60 -143 -29 -248 -61 -280 -85
-                l-22 -16 39 -38 c21 -21 63 -50 93 -65 52 -25 63 -26 219 -26 l164 0 11 45 c8
-                33 18 48 39 58 27 13 27 13 27 118 0 77 -3 104 -12 104 -7 -1 -44 -16 -83 -35z"
-								/>
-							</g>
-
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(14)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M10305 7661 c-27 -4 -63 -15 -80 -26 -52 -34 -166 -138 -180 -165
-                -13 -26 -29 -97 -45 -204 -5 -32 -16 -67 -26 -77 -13 -14 -19 -51 -27 -146
-                l-10 -128 51 -101 c32 -64 63 -111 83 -127 25 -19 37 -41 52 -93 28 -101 32
-                -191 10 -231 -61 -108 -107 -173 -138 -198 -43 -32 -42 -49 5 -118 40 -59 48
-                -84 64 -191 15 -98 39 -155 115 -276 22 -36 48 -78 57 -94 9 -16 34 -52 55
-                -79 44 -55 108 -177 150 -286 15 -40 46 -102 68 -138 30 -47 43 -79 47 -121
-                11 -95 18 -105 62 -97 20 4 55 15 77 24 22 10 66 28 98 41 48 19 70 37 131
-                106 94 108 102 133 87 286 -22 222 -19 236 73 473 20 50 35 100 36 112 0 24
-                -55 93 -74 93 -7 0 -21 9 -31 20 -10 11 -23 20 -29 20 -47 2 -166 143 -166
-                197 0 18 -5 52 -11 76 -17 61 10 178 55 241 18 26 41 76 51 112 15 54 21 64
-                40 64 12 0 29 8 37 18 37 41 88 179 88 236 0 28 24 73 50 93 33 25 16 125 -51
-                306 -16 42 -32 104 -36 137 -8 84 -43 120 -138 144 -38 9 -108 29 -155 43
-                -199 60 -213 63 -305 62 -49 -1 -112 -5 -140 -8z"
-								/>
-							</g>
-
-							{/*rachelle*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(15)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M11660 6664 c-19 -9 -54 -26 -78 -37 -57 -27 -225 -209 -280 -302
-                -45 -76 -135 -297 -146 -358 -10 -54 -51 -172 -106 -309 -73 -177 -75 -194
-                -60 -344 17 -172 17 -233 -2 -269 -29 -53 -160 -179 -208 -199 -156 -67 -191
-                -87 -201 -114 -13 -32 -5 -143 13 -174 7 -13 13 -34 14 -48 1 -14 7 -61 14
-                -105 6 -44 10 -120 7 -170 -2 -49 0 -121 5 -160 5 -38 11 -86 13 -105 2 -19 8
-                -53 13 -75 31 -123 42 -346 21 -446 -6 -30 -12 -133 -13 -229 l-1 -175 -47
-                -97 c-27 -53 -48 -101 -48 -106 0 -5 -8 -16 -17 -23 -29 -24 -96 -178 -90
-                -208 10 -52 60 -207 83 -261 35 -82 121 -330 129 -375 2 -11 11 -49 20 -85 14
-                -56 15 -118 11 -470 -8 -656 -30 -841 -142 -1193 -19 -59 -37 -135 -41 -167
-                l-6 -60 1213 0 1213 0 -7 53 c-8 56 -8 495 -1 507 3 4 7 95 11 201 3 107 10
-                206 16 221 11 29 14 878 3 988 -3 36 -10 99 -14 140 -7 62 -5 86 10 135 10 33
-                19 71 19 84 0 29 12 70 50 171 34 88 63 183 80 260 7 30 20 69 28 85 13 25 16
-                72 16 270 1 161 -3 255 -12 285 -6 25 -14 68 -16 95 -8 95 -46 325 -56 345 -5
-                10 -10 30 -10 44 0 38 -29 142 -56 199 -13 29 -24 62 -24 74 0 12 -4 25 -10
-                28 -5 3 -10 27 -10 53 0 33 -9 65 -30 105 -16 32 -30 69 -30 82 0 13 -4 27
-                -10 30 -5 3 -10 21 -10 38 0 18 -8 46 -19 63 -10 17 -22 41 -26 55 -13 42 -99
-                181 -120 192 -11 6 -49 24 -84 39 -35 15 -70 36 -78 48 -8 11 -22 20 -31 20
-                -20 0 -74 84 -75 115 0 11 5 67 11 125 12 108 19 533 9 560 -3 8 -10 52 -16
-                97 -7 45 -23 119 -36 165 -14 46 -25 94 -25 107 0 13 -14 44 -31 70 -18 25
-                -46 78 -64 116 -43 95 -94 172 -159 243 -105 112 -146 129 -411 168 -16 2 -46
-                -3 -65 -12z"
-								/>
-							</g>
-
-							{/*shub*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(16)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M10715 8900 c-16 -11 -38 -20 -48 -20 -10 0 -40 -11 -67 -25 -27 -14
-                -62 -25 -77 -25 -15 0 -60 -16 -99 -35 -74 -37 -73 -35 -124 -150 -27 -60 -30
-                -189 -6 -245 8 -20 18 -68 21 -108 l8 -72 -37 -40 c-43 -47 -46 -77 -16 -168
-                24 -74 54 -127 92 -166 26 -26 58 -107 58 -147 0 -31 48 -59 101 -59 36 0 66
-                -10 125 -40 43 -22 91 -40 107 -40 43 0 90 -26 145 -81 50 -49 107 -79 121
-                -63 5 5 17 32 27 59 10 28 43 78 75 115 37 43 66 89 84 134 27 70 65 272 70
-                381 5 85 40 234 65 266 23 33 26 82 6 121 -32 62 -112 159 -136 165 -29 7
-                -103 63 -194 144 -75 68 -89 76 -175 100 -82 24 -89 24 -126 -1z"
-								/>
-								<path
-									d="M9920 7329 c-52 -21 -122 -45 -155 -55 -33 -10 -80 -26 -103 -36 -53
-                -22 -148 -101 -168 -140 -19 -36 -38 -233 -30 -301 l7 -52 94 -58 c94 -58 154
-                -115 203 -192 14 -22 39 -62 57 -90 17 -27 58 -94 90 -147 32 -54 60 -98 64
-                -98 3 0 29 28 56 62 28 34 64 76 81 92 29 29 32 38 38 118 6 68 3 99 -10 140
-                -26 82 -38 103 -62 106 -32 5 -98 110 -123 197 -12 40 10 293 27 322 12 19 39
-                163 32 167 -2 1 -46 -15 -98 -35z"
-								/>
-								<path
-									d="M11114 7203 c-8 -9 -12 -23 -9 -32 3 -8 9 -59 12 -113 l6 -98 -29 -6
-                c-28 -5 -30 -8 -30 -57 0 -51 -28 -146 -62 -217 -12 -25 -25 -36 -43 -38 -22
-                -3 -28 -10 -33 -40 -4 -20 -19 -60 -34 -88 -95 -180 -104 -202 -98 -246 3 -24
-                9 -75 14 -115 13 -108 23 -119 222 -258 36 -25 70 -45 75 -45 17 0 55 86 55
-                123 0 49 19 106 55 167 18 30 58 102 90 160 35 63 82 131 121 173 35 38 64 73
-                64 77 0 14 111 92 166 116 78 34 89 64 63 164 -25 96 -42 117 -122 160 -36 19
-                -70 44 -75 55 -9 20 -183 115 -210 115 -7 0 -31 9 -53 20 -60 31 -126 41 -145
-                23z"
-								/>
-							</g>
-
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(17)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M12463 8600 c-53 -4 -81 -13 -110 -32 -21 -14 -48 -29 -60 -33 -16
-                -4 -40 -43 -90 -143 -37 -75 -80 -155 -95 -177 l-27 -40 14 -185 c7 -102 17
-                -196 22 -210 14 -42 91 -136 147 -179 75 -56 101 -111 109 -228 6 -79 4 -97
-                -12 -125 -10 -18 -26 -62 -35 -98 -14 -56 -22 -69 -54 -89 -59 -39 -111 -65
-                -232 -117 -92 -38 -125 -58 -169 -101 -54 -52 -54 -53 -35 -74 10 -12 36 -30
-                56 -40 24 -12 45 -34 58 -59 11 -22 25 -40 30 -40 6 0 44 -32 85 -71 77 -73
-                175 -209 204 -283 9 -22 28 -61 41 -85 50 -88 54 -97 61 -136 4 -22 16 -74 27
-                -115 44 -163 63 -510 42 -768 l-13 -161 34 -67 c19 -37 39 -69 46 -71 23 -8
-                43 45 54 143 24 226 30 288 42 479 9 140 18 209 29 229 25 47 118 106 343 219
-                116 58 226 112 245 121 19 9 67 43 105 77 39 33 87 69 108 80 41 22 49 36 72
-                135 23 101 20 163 -11 205 -14 19 -34 53 -44 76 -10 23 -29 49 -42 57 -24 16
-                -45 71 -114 299 -21 71 -31 90 -50 97 -33 13 -161 147 -174 184 -7 17 -18 46
-                -26 64 -37 85 -1 331 59 414 17 23 19 37 13 97 -4 51 -2 81 8 108 23 60 38
-                182 30 253 -4 39 -19 90 -36 127 -30 63 -32 64 -168 152 -22 14 -132 50 -225
-                72 -44 11 -93 26 -108 34 -30 16 -39 16 -154 5z"
-								/>
-							</g>
-
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(18)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M11790 9099 c-19 -5 -66 -7 -105 -4 l-70 6 -145 -73 c-102 -51 -149
-                -81 -160 -100 -8 -14 -27 -46 -42 -71 -31 -51 -47 -111 -48 -177 0 -42 6 -53
-                65 -124 l64 -77 -4 -76 c-3 -56 0 -83 11 -105 9 -17 17 -45 19 -62 2 -17 13
-                -68 24 -114 25 -100 29 -266 7 -297 -7 -11 -17 -31 -21 -45 -24 -82 -100 -139
-                -186 -140 -41 0 -49 -5 -92 -49 -93 -97 -109 -186 -56 -302 34 -74 40 -78 156
-                -114 45 -14 132 -52 194 -85 62 -33 117 -60 122 -60 15 0 115 -60 119 -70 2
-                -6 13 -12 26 -15 36 -7 40 -13 35 -53 -5 -39 13 -148 25 -156 6 -4 145 82 163
-                102 11 10 52 156 115 406 31 121 74 270 95 333 44 123 49 185 21 256 -12 31
-                -13 67 -8 189 7 140 10 155 39 217 17 36 43 84 57 106 32 49 50 90 50 113 0
-                10 9 35 21 57 32 60 23 129 -30 235 -24 47 -53 96 -66 110 -12 14 -40 51 -60
-                84 -46 73 -100 133 -136 152 -31 16 -143 17 -199 3z"
-								/>
-							</g>
-
-							{/*meghna*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(19)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M14120 6901 c-41 -20 -93 -48 -115 -63 -52 -35 -145 -131 -145 -151
-                0 -8 -13 -44 -30 -79 -16 -34 -30 -73 -30 -85 0 -13 -17 -49 -37 -80 -50 -79
-                -75 -148 -77 -211 -1 -42 3 -53 17 -58 23 -7 22 -41 -4 -83 -16 -26 -20 -45
-                -16 -75 3 -23 1 -63 -5 -90 -8 -36 -7 -54 2 -71 10 -19 9 -32 -4 -71 -9 -26
-                -22 -54 -29 -63 -8 -9 -20 -45 -26 -81 -7 -36 -19 -83 -26 -105 -27 -76 -41
-                -160 -35 -213 5 -46 3 -53 -15 -58 -11 -4 -51 -21 -90 -39 -38 -18 -78 -35
-                -87 -38 -20 -7 -44 -57 -83 -172 -62 -184 -64 -199 -63 -444 0 -149 -3 -234
-                -10 -248 -20 -37 -35 -327 -22 -428 14 -108 9 -577 -8 -709 -7 -49 -21 -141
-                -33 -205 -11 -64 -25 -172 -30 -241 -4 -69 -13 -156 -20 -193 -15 -90 -6 -156
-                42 -302 37 -115 60 -217 78 -350 5 -33 25 -124 45 -202 33 -131 35 -144 22
-                -175 -39 -92 -49 -204 -52 -548 l-2 -335 -26 -59 c-40 -90 -66 -236 -66 -368
-                0 -98 3 -120 23 -158 l22 -45 1143 -3 1143 -2 -6 161 c-4 129 -2 168 10 197 9
-                19 27 90 41 156 l26 121 -2 480 c-1 263 -4 484 -8 490 -4 5 -10 172 -13 370
-                -5 330 -8 368 -29 455 -12 52 -25 111 -27 130 -3 19 -9 40 -13 45 -11 15 -30
-                110 -30 153 0 39 19 137 45 237 42 156 79 420 95 680 6 94 18 222 26 285 21
-                162 30 605 15 755 -21 208 -39 293 -80 380 -22 44 -42 91 -46 105 -4 14 -29
-                70 -55 126 -44 92 -53 105 -106 142 -33 23 -67 42 -77 42 -17 0 -113 25 -194
-                51 -39 12 -133 101 -153 144 -9 20 -14 78 -16 170 -1 77 -6 158 -12 180 -6 22
-                -11 71 -12 109 0 39 -4 74 -7 80 -4 5 -8 60 -9 120 -2 90 -7 119 -23 151 -12
-                21 -21 52 -21 67 0 15 -6 45 -14 65 -8 21 -17 50 -20 64 -3 16 -29 46 -63 74
-                -32 27 -65 56 -74 65 -8 10 -39 30 -67 44 -46 24 -59 26 -122 20 -55 -5 -74
-                -4 -88 8 -11 10 -39 15 -82 15 -55 0 -77 -5 -140 -36z"
-								/>
-							</g>
-
-							{/*caden*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(20)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M14426 8959 c-21 -5 -50 -17 -65 -28 -14 -10 -41 -23 -60 -29 -31
-                -11 -83 -54 -153 -127 -73 -76 -93 -193 -63 -370 9 -55 18 -134 20 -175 3 -78
-                30 -167 61 -201 9 -11 30 -19 45 -19 25 0 30 -5 44 -52 19 -64 19 -143 1 -196
-                -25 -71 -29 -141 -11 -242 15 -91 17 -97 60 -137 54 -51 56 -72 19 -194 -21
-                -68 -25 -99 -21 -162 3 -69 7 -81 33 -108 26 -27 33 -30 69 -24 85 14 119 10
-                186 -22 56 -26 73 -41 111 -94 25 -35 48 -77 51 -94 3 -16 10 -59 17 -95 6
-                -36 18 -76 27 -89 8 -13 17 -49 19 -80 2 -31 9 -90 16 -131 6 -41 10 -95 10
-                -120 -2 -50 24 -144 44 -161 10 -8 37 -8 100 1 90 11 133 27 171 62 16 15 29
-                19 49 14 29 -8 66 14 155 87 45 37 46 40 53 108 3 39 13 83 21 99 28 54 9 133
-                -68 289 -7 14 -25 32 -42 41 -60 33 -70 67 -71 241 -1 86 -4 161 -8 168 -30
-                48 -3 264 44 347 28 49 28 53 11 68 -10 9 -46 28 -82 42 -151 61 -189 84 -221
-                129 -18 25 -35 45 -39 45 -13 0 -39 93 -39 141 0 100 18 147 76 204 l54 52 -1
-                94 c0 72 -5 101 -19 126 -13 22 -20 63 -25 135 -9 120 -32 191 -85 263 -57 76
-                -88 101 -180 143 -131 61 -215 74 -314 51z"
-								/>
-							</g>
-
-							{/*brandon*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(21)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M15670 7733 c-107 -18 -264 -111 -350 -206 -68 -76 -77 -92 -98 -191
-                -14 -64 -16 -97 -9 -156 4 -41 10 -138 12 -215 3 -77 7 -155 10 -173 5 -29 65
-                -103 91 -113 6 -2 30 -44 53 -93 39 -80 42 -94 38 -145 -7 -74 -34 -188 -53
-                -220 -22 -38 -117 -101 -151 -101 -15 0 -42 -9 -59 -19 -18 -11 -42 -21 -55
-                -23 -16 -2 -30 -15 -41 -38 -23 -47 -22 -83 2 -105 36 -33 62 -123 76 -269 7
-                -77 18 -144 24 -150 5 -5 47 -29 92 -51 87 -44 130 -89 144 -150 4 -16 10 -37
-                15 -47 5 -10 13 -26 17 -35 5 -10 24 -65 42 -123 18 -58 43 -118 55 -135 40
-                -53 63 -203 70 -450 7 -241 -1 -373 -39 -652 -14 -98 -26 -218 -27 -268 -4
-                -177 -23 -317 -81 -570 -69 -301 -69 -280 -8 -513 29 -110 31 -125 17 -140
-                -40 -46 -50 -109 -53 -352 -3 -234 -13 -380 -33 -475 -5 -27 -15 -84 -21 -125
-                -19 -122 -31 -181 -50 -255 -21 -80 -44 -209 -60 -340 -13 -104 -23 -527 -17
-                -750 l2 -80 198 -3 198 -2 -7 37 c-4 21 -10 45 -15 54 -4 8 -11 39 -15 68 -7
-                56 2 101 41 186 30 67 43 150 44 270 0 55 5 132 11 170 13 95 13 341 -1 390
-                -16 55 -17 267 -2 340 7 33 19 98 27 145 9 47 26 139 40 204 14 66 30 165 36
-                220 17 156 19 166 36 166 29 0 48 70 56 210 4 74 12 189 17 255 6 66 15 210
-                22 320 6 110 14 265 19 345 4 80 13 246 20 370 11 221 29 411 49 520 6 30 13
-                105 16 167 2 62 13 166 24 230 20 121 41 334 41 411 0 54 19 74 104 102 37 12
-                70 28 73 36 3 8 10 14 17 14 6 0 37 16 68 35 32 19 79 41 105 49 92 29 184 65
-                209 81 16 11 35 14 57 10 36 -7 139 22 162 46 8 8 26 61 41 119 14 58 30 113
-                35 122 7 13 1 31 -25 70 -19 29 -49 91 -67 138 -17 47 -38 92 -46 101 -7 9
-                -73 40 -146 69 -72 29 -139 59 -148 66 -8 8 -25 14 -37 14 -13 0 -62 20 -110
-                44 -74 37 -92 51 -120 94 -17 27 -32 54 -32 59 0 6 -20 41 -45 79 -43 65 -55
-                109 -36 129 11 13 31 97 31 132 0 17 8 33 20 41 14 8 20 23 20 48 0 39 15 104
-                33 141 13 28 4 132 -16 168 -11 21 -12 38 -5 69 6 27 6 85 -2 166 -10 116 -14
-                129 -45 176 -36 55 -133 134 -218 177 -81 41 -225 71 -287 60z"
-								/>
-							</g>
-
-							{/*benny*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(22)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M17165 6940 c-22 -4 -53 -13 -70 -19 -16 -6 -60 -20 -97 -31 -51 -16
-                -75 -31 -102 -61 -20 -21 -36 -45 -36 -51 0 -7 -25 -65 -56 -130 -53 -110 -56
-                -122 -56 -192 0 -40 6 -93 12 -116 6 -23 10 -74 9 -114 -4 -145 72 -396 146
-                -484 22 -27 24 -34 14 -53 -6 -12 -19 -50 -28 -83 -15 -57 -20 -63 -77 -102
-                -34 -23 -76 -45 -95 -49 -19 -4 -46 -16 -61 -26 -14 -11 -31 -19 -37 -19 -6 0
-                -19 -4 -29 -9 -29 -16 -105 -48 -157 -67 -27 -10 -68 -29 -89 -42 -22 -14 -55
-                -31 -73 -38 -18 -8 -33 -18 -33 -23 0 -5 -31 -22 -70 -37 -116 -45 -111 -33
-                -129 -299 -6 -83 -15 -164 -20 -180 -16 -55 -34 -190 -37 -285 -2 -90 -10
-                -162 -33 -310 -18 -110 -31 -249 -36 -375 -8 -199 -17 -329 -23 -340 -4 -5
-                -10 -100 -14 -210 -4 -110 -13 -281 -18 -380 -6 -99 -13 -250 -15 -335 -3 -85
-                -10 -168 -15 -184 -6 -16 -10 -50 -10 -75 0 -47 39 -255 64 -345 36 -125 59
-                -247 60 -321 3 -90 31 -245 54 -290 16 -33 35 -114 57 -255 13 -80 38 -171 96
-                -354 5 -15 16 -85 25 -155 8 -69 27 -168 40 -219 14 -51 24 -109 23 -130 -1
-                -20 -2 -63 -1 -95 l2 -57 1058 2 c705 2 1056 6 1055 13 -8 51 -28 258 -31 330
-                -2 50 -6 146 -10 214 -4 68 -3 203 1 300 l8 176 32 28 c17 15 70 40 116 55 52
-                16 93 37 107 52 13 14 37 40 54 58 l30 33 -4 132 c-3 93 -11 154 -26 207 -41
-                146 -43 163 -19 183 12 9 27 17 35 17 21 0 34 34 34 92 0 71 28 362 41 418 6
-                25 17 52 26 62 19 21 10 87 -17 120 -16 20 -16 26 -4 50 11 21 14 100 14 400
-                0 205 -1 402 -2 438 0 36 0 119 1 185 2 107 -7 300 -26 515 -3 41 -12 84 -19
-                95 -6 11 -15 45 -19 75 -20 173 -49 339 -76 445 -23 89 -32 156 -38 260 -9
-                164 -23 206 -73 224 -18 7 -46 19 -61 27 -16 8 -33 14 -37 14 -5 0 -89 39
-                -187 86 -166 80 -360 164 -380 164 -5 0 -40 33 -78 73 -61 63 -75 86 -108 170
-                l-39 97 23 75 c19 67 26 77 56 92 47 22 68 52 92 133 27 88 21 167 -15 201
-                -13 12 -24 32 -24 44 0 12 -7 64 -16 116 -17 100 -51 176 -126 276 -48 66
-                -166 144 -248 165 -45 12 -111 28 -130 32 -8 2 -33 0 -55 -4z"
-								/>
-							</g>
-
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(23)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M13730 7750 c-30 -32 -63 -59 -72 -59 -9 -1 -20 -5 -23 -11 -3 -5
-                -20 -10 -36 -10 -16 0 -39 -8 -50 -19 -17 -15 -37 -19 -119 -19 l-99 -1 -56
-                -55 -55 -56 0 -120 c0 -107 2 -123 20 -142 16 -17 20 -36 20 -90 0 -37 6 -85
-                14 -105 14 -40 28 -113 47 -251 11 -81 12 -83 56 -119 25 -20 59 -57 76 -82
-                30 -44 32 -52 35 -156 4 -98 1 -116 -18 -158 -44 -93 -286 -256 -346 -233 -10
-                4 -26 -4 -44 -24 -15 -16 -32 -30 -36 -30 -4 0 -19 -11 -33 -24 -33 -30 -318
-                -176 -393 -200 -20 -6 -24 -46 -19 -172 2 -44 -1 -74 -8 -78 -7 -5 -11 -44
-                -11 -102 0 -53 -4 -103 -9 -112 -13 -25 -34 -240 -34 -358 -1 -108 2 -117 53
-                -141 14 -6 40 -15 58 -18 22 -5 52 -26 88 -61 29 -30 58 -54 63 -54 5 0 33
-                -24 62 -52 l54 -53 139 0 139 0 -2 90 c-1 50 3 113 9 140 6 28 15 85 20 128
-                15 130 56 188 170 239 36 16 76 35 90 43 14 8 41 23 61 34 25 14 42 33 53 62
-                25 61 46 184 46 265 0 56 6 84 26 128 25 54 25 60 20 213 -3 87 -8 196 -12
-                243 -4 64 -2 87 8 95 7 5 28 40 47 78 19 37 37 67 40 67 9 0 27 48 42 110 7
-                30 21 70 31 88 10 18 18 41 18 52 0 22 144 170 165 170 8 0 15 4 15 8 0 11
-                117 72 137 72 8 0 32 18 53 40 21 22 44 40 50 40 27 0 40 30 40 89 0 33 5 63
-                10 66 6 3 10 21 10 40 0 19 5 37 10 40 6 3 10 35 10 71 0 61 -2 66 -40 105
-                -34 35 -40 48 -40 85 0 23 -4 46 -10 49 -5 3 -10 14 -10 24 0 21 -27 78 -41
-                87 -5 3 -16 0 -24 -6 -17 -14 -29 -7 -77 43 -14 15 -35 27 -46 27 -11 0 -43
-                23 -71 50 l-51 50 -83 -1 -82 0 -55 -59z"
-								/>
-								<path
-									d="M14886 5982 c-3 -6 0 -30 9 -54 18 -52 18 -58 4 -58 -16 0 -33 -20
-                -53 -64 -14 -30 -17 -54 -13 -102 4 -61 6 -63 72 -129 65 -65 69 -67 117 -67
-                27 0 55 5 61 11 6 6 21 11 33 11 20 0 23 7 30 56 14 112 -9 284 -38 284 -4 0
-                -14 14 -23 30 -9 17 -33 41 -54 55 -41 28 -134 45 -145 27z"
-								/>
+							<g>
+								{/*vivek */}
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(1)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M4240 6318 c-30 -12 -60 -28 -66 -37 -7 -9 -26 -32 -43 -51 -38 -44
+									-43 -68 -41 -214 1 -79 9 -105 50 -156 15 -18 22 -47 26 -95 6 -66 4 -72 -26
+									-118 -38 -56 -51 -64 -205 -116 -65 -22 -129 -50 -142 -63 -32 -30 -46 -87
+									-48 -198 0 -68 -7 -116 -24 -170 -24 -78 -48 -110 -85 -110 -11 0 -27 -4 -34
+									-9 -28 -17 13 -52 131 -113 143 -73 215 -128 224 -169 3 -16 8 -29 12 -29 16
+									1 43 56 51 106 14 84 17 90 71 129 28 20 62 56 77 80 22 37 41 52 112 87 74
+									36 96 42 168 46 75 4 82 6 83 26 3 61 -9 126 -25 126 -20 0 -43 31 -60 80 -21
+									61 -13 180 17 237 19 37 20 47 9 76 -24 65 -4 177 32 177 8 0 26 14 41 32 27
+									32 27 32 22 163 -7 180 -11 194 -80 254 -45 38 -53 41 -107 41 -32 0 -64 2
+									-72 4 -7 2 -38 -5 -68 -16z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(2)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M7621 6336 c-7 -8 -32 -25 -56 -36 -75 -36 -120 -90 -140 -167 -18
+								-68 -50 -234 -64 -328 -4 -27 -12 -60 -19 -72 -7 -12 -11 -32 -10 -45 1 -13
+								-8 -52 -20 -88 -40 -123 -46 -165 -33 -249 21 -132 10 -119 104 -124 111 -7
+								143 -15 191 -49 117 -83 115 -82 142 -69 14 6 33 11 44 11 15 0 20 10 25 58 4
+								31 13 98 20 147 8 50 16 135 20 189 6 112 24 163 76 218 53 56 83 72 108 56
+								32 -20 43 0 26 47 -8 22 -14 59 -15 82 0 23 -4 44 -9 47 -4 3 -11 28 -15 55
+								-7 55 -23 91 -74 171 -36 56 -78 99 -98 100 -6 0 -19 9 -29 20 -10 11 -26 20
+								-36 20 -10 0 -21 5 -24 10 -4 6 -10 8 -14 6 -19 -12 -75 -16 -81 -6 -5 7 -11
+								6 -19 -4z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(3)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M4495 5137 c-16 -5 -59 -13 -95 -18 -156 -21 -220 -44 -220 -79 0
+								-12 -5 -17 -13 -14 -19 7 -33 -14 -41 -58 -5 -29 -16 -43 -49 -65 -31 -21 -46
+								-41 -57 -73 -9 -25 -26 -67 -38 -93 -12 -27 -22 -57 -22 -67 0 -11 -9 -24 -19
+								-30 -23 -12 -43 -67 -43 -116 0 -19 -3 -34 -8 -34 -4 0 -10 -34 -12 -77 -4
+								-51 -10 -80 -20 -87 -18 -13 -38 -50 -44 -79 -2 -12 -13 -29 -23 -37 -16 -12
+								-20 -27 -19 -70 1 -42 -7 -71 -31 -123 -17 -38 -38 -95 -46 -128 -9 -32 -24
+								-73 -34 -91 -10 -18 -26 -60 -36 -93 -9 -33 -23 -78 -30 -100 -22 -66 -45
+								-194 -45 -251 0 -34 7 -69 19 -92 19 -37 129 -142 199 -191 19 -13 42 -37 52
+								-53 19 -32 16 -52 -31 -207 -17 -57 -18 -67 -5 -86 8 -12 28 -27 44 -34 l29
+								-12 6 -135 7 -135 65 -132 c62 -125 66 -140 81 -252 9 -66 22 -142 30 -170 15
+								-60 30 -316 24 -435 -2 -47 -4 -114 -3 -150 1 -36 2 -123 3 -195 1 -71 7 -161
+								15 -200 8 -38 19 -112 25 -164 9 -67 24 -123 52 -192 l39 -98 -26 -47 c-14
+								-25 -37 -63 -51 -83 -32 -47 -31 -82 4 -119 52 -55 151 -70 220 -33 34 18 41
+								42 40 127 -2 108 10 205 35 294 19 69 21 104 24 435 2 198 4 374 5 390 2 47
+								26 214 38 275 7 33 9 83 5 125 -18 188 -6 596 16 537 11 -28 14 -146 5 -161
+								-4 -6 -3 -18 4 -26 14 -17 20 -102 26 -364 2 -112 8 -209 13 -215 11 -13 32
+								-113 38 -176 2 -25 8 -182 13 -350 8 -261 12 -318 31 -395 29 -119 36 -251 15
+								-312 -24 -71 -21 -110 13 -144 25 -25 37 -29 83 -29 78 0 139 33 156 84 12 36
+								10 43 -16 95 -19 37 -31 79 -36 123 -6 59 -2 81 29 183 19 64 35 129 35 144 0
+								21 12 38 51 71 60 51 60 57 9 188 l-33 81 22 58 c13 35 21 78 20 108 -1 28 4
+								102 10 165 32 338 33 360 11 451 -15 64 -20 118 -20 226 0 157 15 248 54 332
+								24 52 25 63 26 250 0 108 4 233 9 278 9 86 16 101 93 194 21 26 38 53 38 62 0
+								8 7 20 16 28 26 21 54 86 54 123 0 46 -17 163 -36 246 -8 36 -14 75 -14 86 0
+								36 -40 156 -64 194 -13 19 -33 64 -45 100 -12 36 -26 74 -31 85 -4 11 -14 36
+								-21 55 -28 75 -62 109 -185 190 -35 23 -96 110 -105 150 -16 72 -14 168 4 188
+								22 25 22 58 -3 92 -17 24 -18 30 -5 46 7 11 10 23 5 29 -11 13 -60 159 -60
+								179 0 22 -47 51 -115 70 -33 10 -64 23 -70 30 -7 9 -18 10 -40 3z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(4)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M4635 5797 c-11 -7 -26 -20 -33 -29 -7 -10 -22 -18 -32 -18 -22 0
+									-100 -77 -100 -99 0 -8 -8 -23 -17 -33 -11 -12 -17 -37 -17 -78 -1 -33 -5 -60
+									-9 -60 -11 0 0 -101 12 -113 6 -6 11 -20 11 -31 0 -25 28 -61 54 -70 10 -3 17
+									-9 14 -11 -2 -3 1 -31 7 -62 l12 -58 73 -27 c40 -15 80 -34 89 -43 14 -13 32
+									-69 58 -175 3 -14 10 -28 15 -31 5 -3 4 -17 -3 -32 -10 -21 -8 -30 8 -54 34
+									-48 34 -51 11 -72 -17 -16 -22 -33 -23 -73 -2 -81 15 -180 35 -208 10 -14 64
+									-56 121 -95 64 -43 111 -83 123 -103 10 -18 36 -81 56 -140 38 -109 58 -132
+									79 -93 6 11 11 48 11 83 -1 35 4 99 9 143 5 44 10 132 10 195 1 85 8 146 28
+									236 14 66 23 131 20 145 -7 27 -122 96 -247 149 -77 32 -144 86 -161 129 -10
+									24 -8 28 40 116 21 39 74 81 97 77 17 -3 40 60 43 118 1 30 4 63 7 72 3 10 -4
+									38 -15 64 -12 26 -21 55 -21 65 0 10 -9 23 -20 29 -11 6 -20 15 -20 21 0 6 -9
+									23 -20 39 -11 15 -17 30 -14 33 14 14 -72 76 -131 94 -50 16 -134 16 -160 0z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(5)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M7327 5272 c-13 -12 -17 -13 -17 -3 0 11 -3 11 -15 1 -8 -7 -15 -18
+							-15 -26 0 -7 -19 -26 -42 -43 -24 -16 -57 -44 -75 -63 -35 -37 -103 -135 -103
+							-149 0 -5 -11 -16 -24 -24 -13 -9 -32 -37 -41 -63 -19 -49 -73 -153 -84 -162
+							-18 -14 -51 -96 -51 -127 0 -19 -4 -32 -9 -29 -22 14 -38 -6 -36 -45 1 -23 -3
+							-43 -11 -50 -8 -6 -14 -8 -14 -5 0 13 -25 -18 -37 -45 -6 -15 -9 -36 -6 -48 4
+							-15 1 -21 -10 -21 -9 0 -21 -9 -27 -20 -6 -11 -18 -20 -26 -20 -8 0 -13 -4
+							-10 -9 3 -5 2 -29 -3 -54 -6 -32 -4 -54 5 -77 8 -18 14 -41 14 -51 0 -11 4
+							-19 9 -19 9 0 17 -50 25 -147 2 -24 8 -48 14 -56 6 -7 20 -46 31 -87 12 -41
+							25 -76 31 -78 15 -5 70 -107 70 -131 0 -11 4 -21 10 -21 5 0 7 -7 4 -15 -4
+							-10 0 -15 11 -15 9 0 13 -4 10 -10 -3 -5 -2 -10 4 -10 5 0 14 7 19 16 15 26
+							47 1 73 -56 12 -27 26 -50 30 -50 4 0 10 -8 13 -17 3 -10 25 -26 48 -36 25
+							-10 83 -56 136 -106 89 -84 92 -89 92 -131 0 -43 -23 -121 -43 -148 -6 -7 -18
+							-10 -31 -6 -12 4 -35 8 -52 10 -16 1 -52 16 -79 33 -30 19 -62 31 -82 31 -40
+							0 -80 19 -108 50 -11 12 -40 36 -65 53 -69 46 -119 97 -145 147 -13 25 -42 63
+							-64 85 -35 34 -41 45 -41 81 0 25 6 49 16 58 18 18 15 32 -26 118 -32 68 -37
+							62 -44 -44 -4 -67 13 -177 31 -200 22 -29 105 -261 124 -349 11 -52 27 -116
+							34 -144 50 -171 56 -230 55 -510 0 -148 -4 -342 -8 -430 -11 -241 -7 -262 78
+							-460 73 -169 73 -171 82 -290 6 -81 21 -164 44 -255 20 -74 46 -176 59 -227
+							27 -105 50 -324 40 -389 -7 -48 4 -57 25 -20 9 17 10 39 5 68 -11 66 -13 535
+							-3 608 6 36 11 138 13 228 4 187 12 270 32 327 31 89 42 229 48 624 2 189 8
+							318 14 324 14 14 38 -8 50 -46 15 -50 21 -314 10 -438 -15 -176 -12 -303 11
+							-449 11 -74 25 -169 31 -210 5 -41 15 -95 23 -120 22 -71 35 -138 46 -235 6
+							-49 15 -108 21 -130 5 -22 16 -144 24 -271 7 -127 19 -261 26 -298 9 -53 9
+							-81 -1 -126 -7 -33 -10 -66 -7 -74 3 -8 -7 -33 -23 -55 -16 -22 -32 -51 -36
+							-65 l-6 -26 201 0 c173 0 201 2 201 15 0 8 23 37 52 64 l52 49 -2 66 c-2 48
+							-9 78 -27 109 -13 25 -27 70 -31 105 -5 51 -3 70 15 111 33 77 26 157 -22 271
+							-8 19 -18 73 -22 120 -13 161 -34 279 -74 402 -89 274 -91 342 -16 667 19 80
+							46 186 60 236 66 226 86 403 61 536 -14 75 -21 162 -29 349 -2 37 1 45 18 48
+							30 6 75 52 96 99 11 23 31 50 46 61 l27 20 3 178 c1 99 6 258 10 354 l8 175
+							24 0 c19 0 26 8 39 48 12 38 19 47 36 45 16 -2 21 4 28 35 8 39 -11 147 -31
+							171 -6 7 -20 42 -31 78 -18 58 -41 95 -59 92 -13 -2 -41 22 -41 36 0 8 -25 40
+							-56 71 -52 53 -94 131 -94 177 0 7 -7 20 -15 28 -8 9 -15 26 -15 38 0 13 -9
+							31 -20 41 -11 10 -23 34 -26 54 -4 20 -14 47 -23 60 -9 14 -16 29 -17 35 0 6
+							-2 16 -2 22 -1 7 -11 14 -23 17 -15 4 -23 0 -26 -14 -8 -31 -22 -22 -28 19
+							-10 58 -24 88 -48 100 -34 16 -61 25 -69 24 -4 -1 -10 9 -14 23 -3 14 -9 23
+							-13 20 -4 -2 -27 2 -52 9 -83 24 -105 26 -122 8z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(6)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M8060 5798 c0 -29 -22 -38 -51 -21 -27 16 -29 15 -69 -11 -26 -17
+									-40 -33 -36 -41 3 -8 -6 -22 -20 -33 -31 -22 -54 -100 -54 -182 0 -67 -38
+									-373 -48 -381 -4 -4 -24 -12 -44 -18 l-37 -12 19 -21 c11 -12 27 -46 36 -77 8
+									-31 22 -66 30 -78 39 -61 58 -102 65 -138 16 -86 35 -117 132 -210 79 -76 97
+									-99 106 -136 7 -24 22 -66 35 -94 37 -79 50 -148 36 -190 -10 -31 -20 -40 -42
+									-36 -4 0 -10 -9 -13 -22 -18 -64 -27 -77 -55 -77 l-28 0 -7 -303 c-4 -167 -4
+									-317 -1 -335 9 -36 -6 -68 -34 -77 -13 -4 -31 -28 -44 -58 -25 -56 -57 -90
+									-94 -102 l-24 -7 7 -146 c3 -81 13 -178 22 -217 30 -139 8 -342 -62 -575 -14
+									-47 -43 -168 -66 -270 -60 -275 -58 -359 17 -585 18 -55 37 -118 43 -140 14
+									-55 41 -249 41 -298 0 -64 20 -117 47 -123 61 -16 101 30 88 100 -5 26 -2 46
+									12 73 33 62 35 105 22 377 -12 260 -12 261 10 304 19 38 32 94 62 272 5 30 12
+									159 15 285 6 197 4 243 -11 315 -24 121 -24 532 1 507 2 -2 12 -31 22 -63 15
+									-51 17 -96 14 -334 -2 -171 1 -322 9 -400 9 -82 13 -307 13 -660 1 -486 3
+									-539 19 -582 15 -40 16 -53 5 -91 -9 -35 -9 -51 2 -76 15 -37 31 -42 127 -38
+									93 3 122 27 133 109 4 30 22 85 40 123 32 68 33 75 37 220 2 83 7 202 12 265
+									5 66 5 248 0 425 -4 171 -9 452 -9 625 -1 277 2 328 19 419 11 57 23 106 26
+									109 3 3 14 7 25 9 22 3 64 -52 56 -73 -4 -10 78 -104 91 -104 10 0 44 45 59
+									78 11 25 13 42 5 65 -16 53 -25 127 -26 217 -1 100 -12 259 -25 385 -5 50 -12
+									108 -14 130 -2 22 -9 63 -14 90 -5 28 -10 122 -11 210 -2 88 -8 185 -15 215
+									-9 41 -10 78 -3 143 7 60 6 95 -1 110 -18 38 -50 180 -56 248 -4 43 -46 118
+									-87 156 -21 20 -41 44 -44 54 -3 9 -19 22 -34 27 -27 9 -31 18 -50 104 -11 51
+									-23 117 -27 145 -4 29 -10 51 -14 48 -4 -2 -10 34 -13 81 -3 57 -10 91 -20
+									102 -10 11 -15 33 -14 59 2 49 -19 93 -45 93 -12 0 -18 7 -18 21 0 30 -20 61
+									-35 55 -7 -2 -21 6 -29 19 -19 28 -38 40 -83 50 -25 5 -33 3 -33 -7z m262
+									-410 c-9 -9 -12 -7 -12 12 0 19 3 21 12 12 9 -9 9 -15 0 -24z"
+									/>
+									<path
+										d="M7648 5080 c5 -36 10 -38 21 -7 5 14 4 25 -3 29 -19 13 -23 9 -18
+									-22z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(7)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M6694 6480 c-6 -6 -30 -12 -55 -14 -126 -11 -154 -30 -198 -136 -13
+								-30 -30 -65 -39 -78 l-15 -23 -14 21 c-12 17 -21 20 -44 15 -22 -5 -29 -3 -29
+								8 0 30 -28 41 -78 31 -42 -8 -47 -12 -50 -39 -2 -16 -8 -35 -13 -42 -27 -32
+								-11 -205 21 -237 6 -6 10 -29 10 -52 0 -23 7 -58 15 -78 14 -34 14 -39 -1 -66
+								-17 -28 -17 -30 7 -62 14 -18 35 -50 48 -70 l22 -37 -70 -36 c-46 -23 -75 -45
+								-84 -62 -24 -46 -29 -132 -13 -203 8 -36 17 -86 21 -112 8 -59 26 -78 73 -78
+								47 0 94 -28 131 -80 34 -47 51 -114 51 -203 0 -62 12 -98 27 -83 4 4 10 64 13
+								132 6 141 1 132 98 165 34 11 76 32 92 45 38 33 68 114 75 211 12 147 69 348
+								116 413 17 22 20 37 16 67 -6 35 -4 40 23 55 19 11 33 28 36 46 6 29 35 64 84
+								101 21 16 25 28 26 74 0 31 5 62 10 69 6 7 11 37 12 67 2 46 -3 61 -33 106
+								-19 29 -52 63 -72 75 -21 12 -42 29 -46 36 -5 10 -16 12 -29 8 -11 -3 -23 -2
+								-27 4 -4 7 -95 52 -105 52 -1 0 -7 -5 -12 -10z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(8)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M5387 6374 c-4 -4 -18 -9 -30 -9 -12 -1 -48 -13 -79 -27 -68 -32 -76
+							-51 -58 -141 7 -34 14 -127 15 -207 2 -153 10 -184 53 -224 41 -36 35 -106
+							-13 -146 -17 -14 -84 -44 -183 -83 -61 -23 -67 -33 -77 -130 -6 -55 -14 -75
+							-44 -114 -20 -27 -44 -54 -54 -61 -9 -7 -24 -28 -32 -45 -9 -18 -22 -43 -30
+							-57 -8 -14 -15 -35 -15 -47 0 -34 64 -99 123 -125 29 -12 108 -51 176 -85 130
+							-66 134 -66 147 -16 6 23 78 63 114 63 36 0 81 30 95 63 26 62 44 153 46 227
+							1 41 8 111 17 155 8 44 15 95 16 113 1 17 4 32 8 32 3 0 29 23 56 52 67 69 74
+							105 33 156 -26 30 -31 45 -31 89 0 42 5 57 26 80 14 15 41 56 61 90 30 55 34
+							71 34 131 0 66 -23 152 -41 152 -4 0 -21 13 -36 28 -16 16 -56 37 -89 47 -33
+							11 -65 23 -72 28 -17 12 -126 21 -136 11z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(9)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M6916 5814 c-56 -20 -142 -115 -162 -178 -8 -28 -19 -60 -24 -71 -10
+							-25 -21 -70 -25 -110 -22 -215 -52 -317 -105 -355 -14 -9 -49 -25 -79 -35 -30
+							-10 -66 -29 -79 -42 -22 -22 -23 -29 -17 -92 7 -69 -9 -220 -27 -255 -6 -12
+							-7 -16 0 -12 5 3 16 -2 25 -12 12 -14 13 -27 5 -75 -10 -57 -10 -59 18 -86 45
+							-44 159 -134 193 -153 19 -10 37 -32 47 -57 14 -35 19 -39 35 -31 27 15 69 80
+							69 107 0 13 4 31 10 41 20 36 63 150 91 242 40 130 57 168 100 218 21 24 61
+							91 90 148 58 116 98 159 195 208 49 25 54 30 54 61 0 19 -5 46 -12 62 -6 15
+							-13 51 -15 78 -6 100 -8 110 -23 108 -16 -3 -30 32 -50 123 -12 52 -51 97
+							-132 152 -53 36 -113 42 -182 16z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(10)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M9283 6567 c-3 -5 -11 -6 -18 -3 -13 5 -89 -28 -117 -51 -7 -6 -29
+							-10 -48 -8 -19 1 -40 -4 -48 -11 -7 -8 -24 -14 -36 -14 -26 0 -84 -61 -90 -94
+							-3 -12 -10 -47 -16 -79 -11 -55 -11 -59 12 -81 12 -12 30 -25 39 -28 19 -7 31
+							-57 23 -97 -5 -25 -2 -32 25 -46 40 -20 51 -49 51 -134 0 -84 12 -97 84 -94
+							55 2 72 -6 101 -51 l19 -29 -26 -21 c-27 -22 -27 -36 -2 -138 5 -22 -4 -43
+							-48 -110 -90 -137 -151 -244 -200 -348 -17 -36 -51 -94 -77 -130 -72 -100 -74
+							-108 -163 -455 l-63 -250 0 -190 c0 -177 16 -326 36 -349 4 -4 71 -9 148 -11
+							78 -1 144 -4 146 -7 3 -3 1 -17 -5 -32 -5 -15 -10 -42 -10 -59 -1 -18 -7 -43
+							-15 -57 -21 -36 -18 -73 8 -138 16 -38 23 -70 20 -97 -3 -22 -1 -50 4 -63 5
+							-14 4 -73 -3 -145 -19 -190 -17 -277 10 -396 26 -114 44 -297 56 -586 5 -120
+							15 -210 28 -270 51 -224 51 -218 5 -236 -16 -7 -77 -12 -136 -13 -103 -1 -110
+							-3 -127 -26 -26 -34 -30 -54 -16 -81 16 -32 144 -66 301 -79 66 -6 163 -16
+							215 -22 158 -19 279 -22 296 -7 26 22 10 179 -27 256 -16 33 -34 87 -40 120
+							-5 32 -16 78 -24 103 -15 50 -28 448 -16 490 7 23 21 12 230 -195 123 -121
+							250 -251 282 -288 66 -76 67 -81 23 -169 -13 -26 -24 -58 -24 -72 0 -15 -21
+							-48 -61 -91 -57 -63 -60 -70 -54 -104 15 -78 46 -80 185 -10 117 59 221 151
+							259 231 33 69 58 97 80 91 21 -5 51 20 134 114 33 38 45 59 42 75 -5 23 -12
+							31 -101 103 -27 22 -75 66 -107 98 -98 98 -142 127 -192 127 l-43 0 -109 132
+							c-60 73 -130 160 -155 193 -26 33 -74 89 -108 125 -34 36 -77 88 -97 117 -19
+							29 -56 68 -82 88 -69 54 -74 70 -42 119 23 36 26 51 27 131 0 50 5 100 12 112
+							7 12 12 48 12 81 0 52 4 65 38 113 80 114 115 154 142 166 33 14 35 24 46 173
+							8 115 7 129 -8 300 -13 138 -15 301 -10 725 3 228 -10 458 -28 480 -4 5 -11
+							33 -15 60 -4 28 -13 64 -20 80 -7 17 -24 55 -38 87 -14 31 -43 78 -64 106 -22
+							27 -46 72 -53 98 -15 57 -26 73 -56 84 -15 6 -26 26 -38 71 -10 34 -14 64 -9
+							68 17 12 63 117 63 143 0 15 6 33 13 40 8 7 18 27 24 43 5 17 12 28 14 25 6
+							-7 49 33 49 47 0 40 -111 168 -137 158 -7 -2 -13 0 -13 6 0 5 -10 13 -23 18
+							-13 5 -37 21 -54 35 -16 14 -33 23 -36 19 -4 -3 -17 2 -31 10 -26 17 -113 20
+							-123 4z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(11)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M3317 5700 c-14 -16 -32 -30 -39 -30 -22 0 -115 -102 -133 -145 -4
+								-11 -7 -36 -6 -56 2 -26 -5 -44 -25 -68 l-27 -32 20 -22 c38 -41 88 -170 98
+								-250 9 -68 -3 -91 -67 -135 -69 -46 -192 -109 -230 -116 -50 -9 -113 -54 -137
+								-96 -14 -25 -21 -56 -21 -88 0 -28 -4 -54 -10 -57 -5 -3 -10 -17 -10 -30 0
+								-13 -8 -43 -18 -67 -12 -27 -24 -95 -32 -184 -11 -127 -11 -149 5 -219 19 -87
+								16 -152 -11 -238 l-18 -58 27 -79 c15 -44 31 -119 37 -167 5 -49 16 -113 25
+								-143 8 -30 15 -71 15 -90 0 -49 13 -65 50 -62 29 3 30 2 30 -37 0 -22 5 -43
+								11 -47 7 -4 8 -36 4 -99 -5 -58 -3 -126 5 -178 9 -67 9 -101 0 -159 -7 -40
+								-14 -125 -15 -188 -5 -208 -15 -338 -30 -402 -12 -55 -24 -135 -40 -283 -3
+								-22 -11 -96 -19 -165 -8 -69 -17 -205 -20 -304 -5 -175 -5 -178 17 -197 12
+								-10 28 -18 35 -19 15 0 16 -44 1 -73 -14 -26 -13 -281 1 -307 18 -34 52 -39
+								179 -30 133 10 151 36 117 170 -39 154 -39 225 -1 530 18 146 27 390 16 445
+								-9 46 -7 56 26 130 19 44 45 127 58 185 56 260 117 510 137 568 40 114 48 87
+								59 -208 4 -129 13 -287 19 -350 7 -70 8 -173 3 -265 -4 -82 -6 -156 -4 -163 1
+								-7 -5 -51 -14 -97 -9 -47 -18 -166 -21 -271 -4 -163 -7 -191 -26 -227 -18 -35
+								-21 -57 -19 -147 1 -57 5 -108 10 -113 4 -4 35 -13 68 -20 33 -7 78 -25 100
+								-40 52 -36 127 -57 225 -62 103 -6 128 4 124 47 -5 53 -15 69 -101 153 -45 44
+								-88 96 -97 115 -15 33 -14 42 7 145 12 61 30 198 39 305 30 332 63 581 111
+								835 15 77 29 157 32 177 7 45 -3 88 -20 88 -6 0 -20 7 -31 15 -16 12 -17 18
+								-6 47 7 18 16 51 20 73 5 22 14 58 20 80 26 91 27 89 -32 134 -238 184 -265
+								233 -228 402 11 52 27 112 35 134 8 22 19 66 25 97 6 31 23 74 36 94 14 20 34
+								73 45 117 11 44 33 106 49 136 15 31 31 71 35 90 8 40 59 144 90 186 61 82 97
+								208 92 320 -4 104 -28 129 -203 221 -175 92 -199 116 -129 130 42 8 70 40 80
+								91 4 21 14 51 22 67 11 21 13 44 9 86 -6 47 -3 63 17 101 14 26 27 71 31 111
+								6 60 4 70 -19 105 -27 42 -27 42 -70 77 -29 24 -29 25 -7 26 12 0 22 4 22 9 0
+								5 -19 9 -42 9 -55 0 -117 7 -125 16 -10 9 -63 7 -106 -5 -48 -13 -75 -4 -83
+								27 -8 31 -17 30 -47 -6z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(12)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M6062 5202 c3 -10 0 -26 -7 -36 -12 -16 -92 -51 -142 -63 -42 -10
+							-104 -91 -137 -182 -22 -61 -38 -89 -54 -96 -15 -6 -24 -21 -28 -45 -3 -19 -9
+							-43 -15 -52 -5 -10 -9 -33 -9 -51 0 -18 -7 -58 -16 -87 -18 -61 -13 -129 11
+							-166 24 -38 18 -59 -22 -78 -60 -29 -143 -87 -156 -110 -8 -14 -12 -82 -13
+							-216 0 -128 -6 -234 -17 -310 -13 -88 -15 -127 -7 -168 8 -44 7 -59 -6 -84
+							-14 -27 -15 -59 -11 -212 5 -155 9 -193 31 -269 32 -108 68 -194 112 -270 19
+							-32 37 -70 41 -85 3 -15 15 -40 25 -57 10 -16 18 -38 18 -47 0 -9 13 -25 30
+							-34 16 -10 32 -24 34 -31 3 -7 1 -93 -4 -191 -6 -97 -8 -220 -5 -272 10 -175
+							14 -342 20 -755 11 -878 17 -1005 48 -1052 4 -7 3 -22 -4 -34 -14 -28 -7 -88
+							16 -123 17 -25 20 -26 121 -26 117 0 124 4 124 80 0 29 13 68 40 123 42 86 42
+							86 41 266 -1 40 6 105 14 145 8 39 17 88 20 109 4 21 15 63 26 94 28 83 40
+							159 49 333 11 192 33 403 59 580 12 74 21 152 21 173 0 73 47 26 60 -59 4 -33
+							19 -102 33 -154 13 -52 28 -117 31 -145 4 -27 16 -84 27 -125 11 -41 27 -111
+							34 -156 8 -44 26 -105 39 -135 14 -30 27 -76 31 -104 11 -82 68 -244 100 -285
+							12 -15 43 -182 43 -230 0 -14 2 -65 5 -115 6 -100 -5 -173 -32 -204 -10 -12
+							-24 -41 -31 -66 -10 -37 -10 -52 2 -83 l14 -37 122 -3 121 -3 26 50 c18 37 25
+							66 25 111 0 56 2 61 26 70 14 6 38 10 53 10 31 0 61 27 61 56 0 10 10 34 21
+							53 20 33 20 40 9 130 -6 53 -18 114 -26 136 -8 23 -14 50 -14 61 0 11 -17 78
+							-39 149 -21 72 -44 157 -52 190 -7 33 -16 65 -21 71 -4 6 -12 71 -17 145 -9
+							129 -11 138 -61 259 -110 267 -103 240 -104 395 -1 77 3 286 8 465 9 332 8
+							344 -30 500 -27 114 -31 133 -54 235 -12 55 -38 138 -57 185 -19 47 -46 111
+							-59 144 -14 32 -22 61 -18 65 4 3 9 -1 12 -9 3 -8 22 -31 42 -50 21 -19 54
+							-64 75 -98 24 -41 53 -75 83 -95 25 -18 72 -56 105 -84 40 -36 71 -54 95 -58
+							21 -3 69 -21 107 -40 47 -22 88 -35 125 -37 l55 -3 22 60 c38 104 29 147 -46
+							210 -19 17 -51 46 -71 66 -19 20 -56 48 -81 62 -53 30 -99 80 -99 107 0 24
+							-56 77 -89 83 -20 4 -33 17 -46 44 -10 21 -33 63 -51 94 -56 94 -90 214 -108
+							392 -20 189 -35 237 -77 237 -15 0 -34 7 -41 16 -7 9 -32 37 -56 61 -25 26
+							-41 51 -38 59 3 9 -2 14 -14 14 -29 0 -33 1 -54 16 -16 11 -19 28 -21 126 -1
+							62 -6 122 -12 133 -6 11 -11 58 -12 105 -2 96 -23 155 -73 207 -31 32 -49 39
+							-118 48 -19 2 -40 11 -46 20 -9 12 -13 13 -16 3 -3 -9 -15 -2 -34 20 -32 36
+							-49 41 -42 14z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(13)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M3139 6282 c-10 -2 -19 -11 -22 -21 -2 -11 -22 -23 -51 -31 -26 -7
+							-46 -19 -46 -26 0 -26 -1 -29 -26 -61 -49 -64 -59 -102 -59 -215 1 -117 13
+							-155 52 -164 35 -9 53 -42 53 -96 0 -71 -24 -112 -94 -157 -56 -35 -199 -85
+							-306 -106 -19 -3 -42 -8 -51 -11 -17 -5 -33 -49 -44 -124 -9 -54 -39 -174 -54
+							-213 -6 -16 -11 -39 -11 -53 0 -13 -11 -70 -24 -127 -61 -261 -64 -549 -6
+							-657 7 -14 9 -40 5 -71 -7 -46 8 -141 25 -164 4 -5 15 -31 24 -56 13 -33 28
+							-53 56 -70 24 -15 41 -34 45 -51 4 -15 12 -31 19 -37 8 -6 13 -48 15 -120 7
+							-283 22 -603 31 -666 8 -50 8 -133 -1 -295 -11 -214 -8 -589 7 -772 7 -77 7
+							-78 40 -90 19 -7 34 -18 34 -25 0 -7 4 -13 9 -13 4 0 11 33 15 73 7 88 23 197
+							41 297 20 107 38 367 30 421 -4 27 -2 71 6 105 6 33 11 97 9 144 -2 47 -3 147
+							-3 223 0 83 -4 137 -10 137 -6 0 -7 17 -4 41 5 38 3 42 -23 52 -18 7 -35 24
+							-44 46 -22 49 -56 187 -56 226 0 17 -9 74 -20 125 -11 51 -20 95 -20 96 0 1
+							-8 10 -17 20 -16 16 -16 21 9 93 24 70 25 82 16 151 -18 141 -20 292 -5 334
+							12 36 12 41 -5 58 -17 17 -17 20 -3 35 26 26 33 54 25 111 -3 29 -3 55 0 57 4
+							3 13 25 20 50 8 28 16 42 20 34 5 -8 10 -5 14 9 12 37 93 99 146 112 26 6 81
+							30 122 53 41 23 87 49 102 57 37 19 136 118 136 135 0 8 -16 30 -35 50 -18 20
+							-42 58 -51 83 -9 26 -23 63 -32 82 -9 19 -15 51 -14 70 1 19 4 66 6 103 2 55
+							7 73 28 95 14 15 34 41 46 58 12 17 37 39 57 48 19 9 51 36 71 61 33 39 40 43
+							69 38 48 -8 59 19 52 121 -8 114 -19 186 -27 186 -5 0 -13 12 -19 28 -20 49
+							-33 66 -98 123 -13 10 -23 16 -23 13 0 -3 -17 4 -37 16 -24 14 -46 20 -64 16
+							-15 -3 -29 -2 -31 2 -2 4 -10 6 -19 4z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(14)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M5787 5654 c-2 -3 -22 -5 -43 -6 -32 -1 -47 -9 -80 -43 -23 -23 -45
+							-51 -48 -63 -4 -12 -14 -22 -23 -22 -8 0 -13 -6 -10 -12 2 -7 -2 -28 -9 -47
+							-8 -18 -14 -44 -14 -58 0 -13 -6 -26 -14 -29 -11 -4 -13 -12 -6 -28 5 -15 2
+							-34 -11 -62 l-18 -39 -2 30 c-2 41 -16 -59 -22 -160 -3 -44 -5 -84 -6 -88 -1
+							-5 -9 -6 -20 -2 -13 4 -24 -4 -43 -32 -13 -21 -27 -46 -31 -55 -5 -14 -13 -16
+							-38 -11 -28 5 -31 4 -26 -11 4 -11 1 -19 -10 -23 -9 -4 -19 -1 -21 5 -2 7 -16
+							-6 -32 -29 -25 -38 -27 -45 -15 -73 11 -26 10 -45 -7 -121 -19 -89 -31 -200
+							-42 -403 -3 -57 -9 -114 -12 -128 -6 -24 16 -71 42 -87 7 -4 15 -26 19 -50 9
+							-55 28 -90 58 -110 23 -15 26 -14 49 11 37 39 48 65 48 114 0 46 36 128 70
+							160 11 10 22 29 26 42 6 27 74 76 173 125 34 18 64 38 67 46 3 7 -2 25 -12 40
+							-15 23 -16 36 -6 113 6 48 14 119 17 157 3 42 19 108 40 167 43 123 50 136 93
+							175 63 56 123 82 204 89 l74 7 -13 89 c-8 49 -20 106 -28 125 -8 20 -15 50
+							-16 67 -1 44 -11 65 -39 79 -16 8 -26 23 -28 41 -2 18 -11 30 -22 33 -11 3
+							-22 13 -25 22 -7 21 -63 53 -71 40 -4 -7 -12 -5 -22 4 -15 14 -84 21 -95 11z"
+									/>
+								</g>
 							</g>
 						</svg>
 					</SvgDesktop>
@@ -1250,744 +769,437 @@ function TeamSection() {
 							viewBox="0 0 1911.000000 1147.000000"
 							preserveAspectRatio="xMidYMid meet"
 						>
-							{/*Andrew */}
-							<g
-								fillOpacity={0}
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(1)}
-								onMouseOut={() => setHoverID(0)}
-							>
-								<path
-									d="M1620 9131 c-128 -35 -204 -89 -297 -212 -64 -84 -76 -125 -68 -241
-                4 -69 2 -104 -6 -120 -26 -47 -11 -208 25 -276 23 -43 63 -80 95 -87 29 -6 29
-                -6 36 -100 8 -108 1 -178 -21 -196 -8 -7 -21 -27 -29 -45 -13 -32 -62 -83
-                -151 -159 -26 -22 -56 -48 -66 -58 -26 -24 -122 -57 -168 -57 -20 0 -41 -5
-                -46 -10 -6 -6 -48 -24 -95 -41 -87 -32 -112 -40 -189 -59 -87 -23 -213 -86
-                -238 -119 -23 -32 -58 -129 -79 -218 -12 -54 -17 -150 -20 -463 -6 -512 9
-                -716 77 -1027 43 -197 80 -250 246 -355 63 -39 120 -78 126 -86 9 -10 2 -32
-                -30 -98 -26 -52 -42 -98 -42 -120 0 -60 59 -213 117 -301 74 -114 153 -271
-                153 -303 0 -23 77 -190 124 -270 8 -14 55 -99 105 -190 91 -165 180 -280 219
-                -280 8 0 23 -7 33 -16 30 -27 39 -9 33 69 -4 49 -1 101 10 160 9 49 16 112 15
-                140 -1 29 1 77 5 107 7 62 -3 150 -34 295 -19 87 -21 120 -16 250 3 83 8 166
-                11 185 3 19 10 96 15 170 11 141 22 243 39 345 32 193 76 414 86 440 12 29 55
-                63 173 133 29 18 58 32 63 32 5 0 17 4 27 9 56 31 139 61 167 61 18 0 39 8 47
-                18 30 33 92 167 110 237 9 38 29 113 43 165 17 61 30 143 36 230 5 74 19 178
-                29 230 11 52 25 120 30 150 6 31 24 76 40 100 17 25 30 55 30 68 0 12 11 49
-                25 82 14 33 25 68 25 79 0 22 -44 61 -69 61 -10 0 -21 4 -26 8 -6 5 -32 17
-                -60 27 -27 10 -62 28 -77 41 -15 12 -31 24 -35 26 -4 1 -26 28 -49 58 -35 48
-                -42 66 -53 143 -15 99 -15 98 65 192 46 55 114 172 114 198 0 9 11 52 25 94
-                14 43 31 93 36 112 11 34 24 258 22 382 -2 126 -91 278 -183 314 -25 10 -61
-                30 -80 45 -63 48 -123 63 -260 66 -95 2 -141 -2 -190 -15z"
-								/>
-								<path
-									d="M692 4458 c-11 -24 -47 -92 -81 -153 l-62 -110 1 -100 c1 -55 0 -116
-                -2 -135 -3 -34 -1 -36 72 -75 66 -35 76 -44 82 -75 25 -123 42 -224 49 -286 4
-                -39 22 -134 40 -210 31 -134 32 -147 34 -369 1 -177 6 -255 21 -340 21 -124
-                22 -148 5 -665 -7 -232 -19 -418 -31 -510 -10 -80 -21 -199 -25 -265 -4 -66
-                -8 -138 -10 -160 -2 -22 -9 -187 -15 -367 -13 -367 -13 -371 62 -521 5 -10 12
-                -41 15 -68 l6 -49 543 0 544 0 1 53 c1 28 3 212 4 407 2 195 7 630 11 965 5
-                336 8 630 8 655 0 46 -53 162 -160 351 -24 42 -143 274 -265 515 -122 242
-                -266 522 -319 624 -54 102 -170 328 -259 504 -163 320 -222 426 -240 426 -6 0
-                -19 -19 -29 -42z"
-								/>
-							</g>
-
-							{/*Kapil */}
-							<g
-								fillOpacity={0}
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(2)}
-								onMouseOut={() => setHoverID(0)}
-							>
-								<path
-									d="M4724 6955 c-12 -19 -27 -23 -100 -29 -52 -4 -91 -2 -98 3 -7 6 -22
-                8 -34 4 -12 -3 -28 0 -35 6 -8 6 -17 8 -21 4 -3 -4 -35 -6 -71 -5 -69 2 -134
-                -17 -171 -50 -11 -10 -24 -18 -30 -18 -16 -1 -194 -177 -194 -192 0 -8 -11
-                -25 -25 -38 -14 -13 -25 -29 -25 -36 0 -6 -7 -18 -17 -25 -9 -8 -27 -36 -39
-                -64 -13 -27 -33 -57 -46 -66 -21 -16 -22 -25 -23 -151 -1 -93 -6 -150 -18
-                -188 -9 -30 -17 -82 -19 -114 -3 -58 -2 -60 31 -83 19 -13 46 -23 60 -23 19 0
-                32 -9 43 -28 9 -15 44 -58 78 -95 56 -61 65 -67 101 -67 39 0 41 -2 64 -54 27
-                -61 25 -114 -7 -155 -10 -13 -18 -27 -18 -32 0 -17 -88 -128 -140 -176 -8 -8
-                -53 -37 -100 -65 -46 -27 -97 -60 -112 -73 -42 -35 -287 -152 -381 -182 -133
-                -41 -173 -66 -201 -122 -39 -76 -53 -162 -60 -361 -4 -102 -9 -232 -11 -290
-                -15 -337 -15 -520 -1 -735 13 -207 18 -239 46 -325 17 -52 42 -138 56 -190 13
-                -52 37 -114 52 -138 15 -24 38 -64 52 -88 14 -24 49 -85 79 -135 l54 -92 -12
-                -56 c-7 -31 -18 -97 -25 -146 -8 -50 -26 -138 -40 -195 -15 -58 -36 -168 -46
-                -245 -11 -77 -29 -167 -40 -200 -11 -33 -45 -145 -76 -250 -57 -197 -65 -222
-                -96 -292 -27 -63 -27 -82 3 -105 37 -28 149 -37 168 -14 17 20 37 21 45 1 3
-                -8 12 -15 19 -15 11 0 16 -26 21 -112 9 -145 24 -341 33 -441 5 -43 4 -85 0
-                -93 -4 -8 -12 -66 -17 -129 -8 -97 -7 -121 6 -155 l16 -40 912 0 912 0 18 118
-                c17 120 35 211 62 317 29 115 35 140 45 194 5 30 12 57 14 61 2 3 9 46 15 95
-                6 49 16 96 23 104 9 10 12 89 12 281 0 241 2 270 18 287 20 23 22 46 5 72 -15
-                24 6 77 77 196 102 171 183 364 200 479 4 27 22 79 40 115 41 83 51 120 70
-                255 9 60 20 117 25 127 22 39 1 231 -33 311 -19 46 -34 118 -47 233 -11 104
-                -22 162 -46 260 -15 61 -16 80 -4 162 10 74 10 118 0 221 -9 95 -9 156 -1 237
-                5 61 13 190 16 287 8 205 -2 277 -43 322 -42 45 -149 110 -357 216 -225 114
-                -293 162 -335 234 -16 29 -38 60 -49 70 -11 10 -22 38 -26 67 -4 27 -15 60
-                -26 73 -26 33 -25 99 1 136 11 16 27 46 34 68 13 36 43 101 52 111 2 2 10 -2
-                18 -8 19 -16 26 -11 62 41 15 24 38 55 50 70 18 22 21 38 19 105 -2 106 32
-                267 67 312 14 18 17 33 12 55 -4 17 -6 58 -6 90 2 57 -29 190 -49 211 -5 5 -9
-                20 -9 33 0 13 -13 36 -28 50 -61 58 -102 91 -119 96 -10 3 -26 19 -35 36 -12
-                21 -25 30 -42 30 -15 0 -27 7 -31 19 -3 10 -27 41 -53 68 -55 60 -95 73 -118
-                38z"
-								/>
-							</g>
-
-							{/* Ashley */}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(3)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M6765 6543 c-103 -44 -210 -128 -265 -208 -44 -64 -109 -273 -121
-                -390 -6 -55 -14 -118 -19 -141 -24 -105 -40 -468 -26 -575 l8 -66 -93 -45
-                c-52 -25 -114 -53 -139 -64 -75 -31 -242 -124 -291 -161 -56 -42 -69 -68 -69
-                -131 0 -26 -6 -57 -14 -68 -11 -15 -14 -45 -12 -115 2 -54 -4 -135 -13 -189
-                -20 -122 -23 -922 -3 -942 7 -7 12 -24 12 -40 0 -15 7 -52 15 -84 8 -31 17
-                -97 21 -148 4 -53 15 -112 27 -141 11 -27 23 -70 28 -95 4 -25 12 -70 17 -101
-                6 -34 7 -70 2 -90 -40 -152 -50 -204 -50 -252 0 -50 -23 -134 -53 -192 -11
-                -22 -33 -92 -49 -155 -29 -121 -79 -234 -174 -402 -31 -53 -64 -120 -75 -148
-                -17 -46 -18 -53 -4 -79 13 -27 13 -31 -8 -57 -22 -28 -22 -33 -19 -288 2 -218
-                0 -261 -12 -275 -9 -10 -19 -55 -26 -111 -6 -52 -17 -120 -25 -150 -32 -129
-                -55 -236 -55 -252 0 -10 -9 -44 -19 -75 -19 -59 -37 -165 -44 -261 l-4 -52
-                1287 0 1287 0 -3 108 c-2 66 3 141 12 197 9 50 20 128 25 175 5 47 14 121 19
-                165 6 44 14 145 20 225 13 189 19 256 25 305 3 22 5 43 5 47 0 4 12 29 27 55
-                61 110 70 138 77 239 7 98 28 182 70 284 15 36 40 99 56 140 15 41 38 102 50
-                135 23 61 59 299 66 430 1 39 6 104 10 145 5 58 1 98 -15 175 -16 79 -22 147
-                -25 325 -4 224 -22 376 -51 446 -7 17 -16 49 -19 71 -4 22 -27 68 -51 104 -55
-                80 -115 197 -115 224 0 12 -4 25 -9 31 -14 14 -106 280 -126 364 -55 231 -77
-                305 -113 376 -22 44 -51 112 -66 153 -24 67 -27 87 -26 205 3 254 -47 714 -97
-                896 -14 52 -29 115 -32 140 -8 57 -66 161 -125 227 -52 57 -155 124 -236 151
-                -37 13 -98 21 -185 25 -124 6 -133 5 -190 -20z"
-								/>
-							</g>
-
-							{/*ragini*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(4)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M2758 7581 c-108 -26 -185 -76 -320 -206 -46 -45 -128 -227 -150
-                -334 -10 -52 -22 -99 -25 -105 -4 -5 -10 -69 -14 -141 -12 -210 -26 -283 -103
-                -538 -45 -153 -71 -201 -111 -205 -17 -2 -43 -9 -60 -16 -16 -8 -57 -26 -90
-                -41 -166 -74 -262 -135 -300 -191 -11 -17 -26 -62 -34 -100 -7 -38 -21 -114
-                -31 -169 -11 -55 -26 -152 -35 -215 -8 -63 -18 -128 -21 -145 -9 -49 -35 -400
-                -41 -552 -5 -141 1 -197 38 -323 15 -49 14 -192 -1 -350 -7 -74 -14 -180 -15
-                -235 l-3 -100 86 -175 c48 -96 96 -197 106 -223 21 -55 61 -107 82 -107 22 0
-                84 -104 84 -141 0 -21 32 -94 92 -208 131 -253 146 -280 184 -338 19 -28 34
-                -55 34 -60 0 -4 24 -45 54 -90 30 -46 72 -120 95 -165 23 -46 63 -119 90 -164
-                55 -92 168 -301 292 -539 17 -33 46 -78 63 -100 47 -60 83 -117 91 -145 4 -14
-                24 -56 45 -95 21 -38 57 -106 80 -150 85 -162 151 -281 170 -305 16 -21 22
-                -23 46 -15 61 22 96 160 74 289 -10 61 -18 81 -37 94 -71 50 -73 52 -63 75 36
-                90 77 208 102 297 33 120 36 131 78 260 17 52 35 131 41 175 14 114 37 236 64
-                340 13 50 26 119 30 155 3 36 13 88 22 116 21 67 13 102 -43 199 -26 44 -57
-                101 -69 126 -13 25 -34 59 -48 75 -29 34 -51 84 -61 135 -3 19 -26 98 -51 174
-                -39 119 -47 158 -56 274 -12 164 -12 705 0 816 5 44 12 154 16 245 7 216 22
-                317 54 382 31 62 64 83 190 123 105 34 320 134 375 176 61 46 179 119 191 119
-                19 0 155 157 171 197 9 21 24 47 34 58 29 33 32 88 8 148 -31 77 -45 89 -89
-                82 -34 -6 -39 -3 -82 45 -26 29 -61 74 -78 100 -27 42 -37 49 -74 55 -24 3
-                -49 13 -56 21 -8 10 -21 13 -36 9 -27 -6 -101 23 -122 48 -18 23 -40 129 -41
-                197 0 30 -11 100 -24 155 -13 55 -27 123 -31 150 -13 91 -54 326 -59 334 -3 4
-                -16 57 -30 117 -14 60 -29 126 -34 146 -11 42 -134 273 -162 303 -10 11 -23
-                32 -29 47 -7 18 -28 36 -59 52 -27 14 -64 38 -83 53 -18 15 -47 29 -63 30
-                -158 12 -175 11 -248 -6z"
-								/>
-							</g>
-
-							{/*lizzy*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(5)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M3590 8080 c-100 -8 -118 -13 -216 -61 -73 -36 -217 -173 -245 -233
-                -10 -22 -34 -62 -53 -87 -42 -57 -54 -110 -33 -142 8 -13 47 -40 86 -61 39
-                -20 71 -44 71 -51 0 -8 16 -36 37 -62 46 -61 125 -228 148 -313 10 -36 28
-                -105 42 -155 22 -82 36 -159 78 -420 7 -49 21 -120 29 -156 9 -37 20 -109 26
-                -160 5 -52 17 -116 26 -142 14 -40 24 -52 68 -77 28 -17 62 -30 76 -30 14 -1
-                36 -7 50 -15 28 -16 86 -20 94 -6 14 21 8 179 -8 234 -24 79 -18 190 19 374 3
-                11 32 53 65 93 33 39 60 76 60 81 0 25 189 199 216 199 3 0 18 9 34 20 40 28
-                43 66 16 183 -31 130 -42 184 -56 277 -6 41 -20 98 -30 125 -70 185 -96 246
-                -126 295 -18 30 -36 67 -40 83 -6 26 -56 77 -75 77 -5 0 -43 27 -84 60 -69 54
-                -127 82 -165 78 -8 0 -58 -4 -110 -8z"
-								/>
-							</g>
-
-							{/*anish*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(6)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M5186 7794 c-21 -8 -55 -27 -75 -42 -20 -15 -45 -33 -56 -40 -92 -58
-                -114 -76 -125 -103 -7 -17 -34 -48 -59 -69 -72 -61 -84 -109 -77 -296 10 -256
-                18 -319 44 -347 13 -13 26 -37 31 -52 5 -19 17 -32 37 -39 17 -6 61 -38 98
-                -71 37 -33 79 -66 93 -73 17 -9 23 -20 20 -32 -3 -10 1 -27 8 -37 6 -10 23
-                -49 38 -88 21 -57 25 -87 25 -165 -1 -52 -4 -100 -9 -106 -5 -6 -20 -44 -34
-                -85 -20 -56 -27 -102 -32 -194 -6 -119 -6 -121 -45 -177 -25 -38 -46 -58 -58
-                -58 -22 0 -73 -63 -96 -120 -8 -19 -22 -42 -31 -52 -8 -9 -19 -38 -24 -62 -7
-                -40 -5 -52 21 -102 17 -31 30 -68 30 -83 1 -15 24 -58 58 -106 66 -92 156
-                -165 272 -222 41 -20 104 -53 140 -74 36 -21 81 -44 100 -50 19 -7 71 -34 116
-                -61 100 -59 126 -58 182 10 106 129 231 232 281 232 11 0 22 4 25 9 3 4 25 11
-                48 15 26 4 58 20 84 41 23 19 49 35 57 35 8 0 26 11 39 24 24 21 26 31 32 142
-                3 65 10 204 16 308 10 173 10 190 -6 207 -9 11 -22 19 -28 19 -22 0 -192 88
-                -210 109 -11 12 -35 31 -53 42 -18 11 -54 47 -79 80 -44 57 -92 89 -135 89
-                -12 0 -38 26 -70 70 -28 39 -55 70 -59 70 -11 0 -50 126 -50 162 0 17 9 45 19
-                62 11 17 27 58 37 91 21 74 40 105 66 105 33 0 75 28 86 57 9 25 26 114 52
-                291 5 29 16 64 24 77 9 13 16 33 16 43 0 11 9 31 21 45 26 34 18 86 -22 144
-                -16 23 -29 44 -29 48 0 4 -14 26 -31 50 -18 24 -48 77 -68 117 -36 73 -37 73
-                -121 116 -46 23 -99 57 -118 75 l-33 32 -172 2 c-128 1 -182 -2 -211 -13z"
-								/>
-							</g>
-
-							{/*anthony*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(7)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M4285 9156 c-114 -40 -267 -105 -303 -129 -39 -26 -118 -148 -137
-                -211 -7 -24 -23 -62 -34 -84 -28 -55 -27 -94 4 -130 17 -21 26 -47 31 -88 3
-                -33 13 -70 22 -84 9 -14 19 -41 23 -60 9 -43 50 -143 68 -164 8 -9 25 -22 39
-                -29 38 -18 54 -76 50 -178 -2 -66 -7 -92 -20 -106 -25 -27 -22 -51 10 -98 15
-                -23 49 -97 76 -165 26 -69 55 -140 62 -158 8 -18 14 -44 14 -59 0 -14 4 -42 9
-                -62 5 -20 15 -70 21 -111 20 -131 51 -254 71 -282 10 -15 19 -32 19 -37 0 -26
-                48 -32 259 -32 152 -1 225 3 241 11 23 12 23 12 16 194 -9 223 -20 296 -52
-                353 -21 35 -25 51 -19 80 4 22 1 63 -8 102 -9 36 -24 102 -34 146 -15 65 -17
-                98 -10 175 9 119 50 244 88 271 58 41 114 269 113 465 -1 113 -3 126 -28 175
-                -16 30 -45 74 -65 99 -20 25 -48 61 -61 80 -37 55 -60 70 -112 70 -38 0 -54 6
-                -82 30 -31 28 -43 31 -118 36 -70 4 -94 1 -153 -20z"
-								/>
-							</g>
-
-							{/*manan*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(8)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M6115 8753 c-65 -14 -246 -77 -277 -96 -40 -24 -133 -124 -165 -178
-                -32 -52 -51 -126 -57 -219 -4 -56 -13 -99 -26 -125 -24 -47 -26 -99 -4 -151
-                19 -46 98 -150 123 -164 14 -7 20 -25 23 -70 4 -50 9 -65 35 -93 17 -17 47
-                -66 68 -107 20 -41 44 -84 54 -95 36 -41 82 -125 88 -159 4 -28 -1 -51 -25
-                -99 -32 -66 -69 -231 -79 -349 -7 -77 -25 -108 -66 -108 -35 0 -64 -26 -82
-                -73 -19 -50 -8 -118 28 -177 12 -19 42 -82 67 -140 89 -204 172 -346 222 -381
-                18 -12 44 -32 58 -45 30 -28 157 -98 223 -125 l48 -19 9 26 c6 14 15 72 21
-                128 12 119 69 325 105 379 28 43 127 139 177 172 63 41 127 59 209 57 70 -2
-                78 0 89 20 15 28 5 127 -20 182 -20 45 -70 90 -141 126 -60 30 -120 78 -120
-                96 0 8 -32 49 -72 92 -39 42 -96 113 -125 157 -30 44 -70 103 -90 130 -34 49
-                -35 52 -30 122 6 79 14 99 64 158 19 22 52 78 75 125 22 47 50 95 61 108 20
-                21 22 33 20 125 -2 68 4 136 17 204 11 56 21 112 21 125 2 50 -22 130 -67 217
-                -48 95 -95 147 -142 156 -15 3 -38 12 -52 20 -81 47 -106 55 -175 54 -38 -1
-                -79 -3 -90 -6z"
-								/>
-							</g>
-
-							{/*kiran*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(9)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M7975 7711 c-11 -5 -36 -10 -56 -10 -69 -2 -99 -13 -156 -62 -32 -26
-                -74 -62 -94 -78 -76 -65 -106 -133 -129 -301 -5 -36 -7 -84 -4 -107 5 -32 1
-                -50 -15 -76 -24 -39 -27 -100 -7 -138 7 -14 16 -36 19 -50 4 -13 27 -47 52
-                -76 25 -28 45 -56 45 -62 0 -5 9 -16 20 -24 31 -22 50 -80 50 -155 l0 -69 -42
-                -12 c-23 -7 -76 -35 -116 -62 -41 -27 -92 -54 -113 -59 -22 -6 -39 -16 -39
-                -23 0 -7 17 -37 37 -67 35 -52 53 -103 75 -215 5 -27 18 -86 29 -130 10 -44
-                23 -111 28 -150 6 -38 17 -110 26 -160 8 -49 15 -130 15 -180 0 -49 7 -117 14
-                -150 8 -33 17 -89 21 -125 4 -36 20 -98 36 -138 16 -40 29 -78 29 -84 0 -22
-                49 -75 82 -88 34 -13 98 -67 98 -82 0 -5 13 -37 30 -72 32 -69 63 -96 110 -96
-                56 0 90 69 127 259 6 33 68 92 125 120 27 12 50 27 54 32 3 5 12 9 20 9 8 0
-                33 9 54 19 22 10 62 24 90 31 63 15 129 84 154 160 15 46 33 205 32 285 0 53
-                24 214 64 420 53 277 53 279 31 299 -20 18 -141 56 -179 56 -27 0 -90 41 -143
-                93 -50 48 -77 109 -85 190 -6 62 -4 73 26 140 18 39 43 83 56 97 72 76 87 105
-                99 188 6 44 4 57 -11 74 -17 18 -19 35 -16 137 4 164 -6 206 -70 287 -29 37
-                -70 84 -91 104 -53 51 -146 99 -188 98 -19 0 -65 2 -104 6 -38 3 -79 2 -90 -3z"
-								/>
-							</g>
-
-							{/*zevik*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(10)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M7068 9353 c-43 -4 -54 -10 -121 -76 -40 -40 -84 -90 -97 -112 -12
-                -22 -33 -56 -46 -75 -32 -48 -55 -145 -57 -240 -2 -65 -5 -80 -19 -83 -49 -13
-                -73 -121 -46 -210 16 -53 84 -125 126 -133 38 -8 47 -34 56 -161 5 -77 4 -83
-                -18 -100 -13 -10 -31 -34 -41 -53 -9 -19 -75 -92 -146 -163 -109 -108 -134
-                -138 -162 -200 -19 -39 -54 -97 -80 -128 -41 -51 -47 -63 -57 -137 l-12 -82
-                53 -73 c30 -39 67 -92 83 -117 16 -25 37 -54 47 -65 10 -11 47 -52 83 -92 36
-                -40 66 -80 66 -90 0 -20 71 -78 138 -112 55 -28 107 -75 121 -108 6 -16 17
-                -64 24 -108 l13 -80 65 -6 c82 -7 168 -47 268 -122 41 -32 79 -57 85 -57 26 1
-                65 49 85 105 21 61 20 93 -6 130 -7 11 -13 29 -13 40 0 12 -11 31 -24 44 -20
-                19 -24 35 -29 112 -10 134 24 265 118 464 30 63 55 124 55 137 1 21 22 54 115
-                175 16 21 52 54 80 74 31 22 51 43 53 58 4 27 -32 69 -95 109 -23 14 -52 44
-                -65 65 -13 21 -37 61 -55 88 -17 26 -35 63 -38 81 -4 18 -13 42 -21 53 -9 15
-                -10 45 -4 125 9 123 21 160 50 160 53 0 115 59 160 153 31 66 24 146 -17 189
-                -26 27 -28 34 -26 106 1 42 3 94 4 114 2 25 -7 61 -28 105 -17 38 -37 88 -45
-                113 -18 56 -74 97 -145 107 -26 3 -81 23 -121 44 -72 38 -76 39 -170 37 -54
-                -1 -118 -3 -144 -5z"
-								/>
-							</g>
-
-							{/*nakul*/}
-
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(11)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M8640 8521 c0 -5 -11 -11 -23 -15 -13 -3 -40 -19 -61 -35 -21 -17
-                -52 -35 -69 -41 -50 -16 -146 -159 -147 -217 0 -29 -16 -123 -40 -228 -5 -23
-                -5 -59 0 -85 5 -25 9 -48 10 -51 0 -4 -11 -10 -24 -13 -14 -3 -28 -16 -32 -29
-                -4 -12 -10 -24 -14 -27 -4 -3 -10 -24 -13 -48 -4 -37 -2 -46 21 -68 15 -13 35
-                -27 45 -30 9 -3 17 -9 17 -14 0 -5 40 -50 89 -100 100 -103 101 -106 106 -270
-                2 -59 9 -113 20 -144 15 -41 16 -54 6 -82 -9 -25 -9 -39 -1 -55 16 -29 -3 -73
-                -44 -101 -53 -38 -96 -84 -96 -103 0 -10 -12 -52 -26 -94 -43 -125 -22 -180
-                115 -298 85 -74 143 -99 247 -110 51 -5 54 -5 64 21 5 15 10 39 10 54 0 42 69
-                149 125 195 28 22 77 68 111 102 55 55 69 63 140 84 43 12 92 25 107 28 37 7
-                30 22 -29 59 -66 43 -160 113 -196 147 l-30 27 4 135 c3 130 4 134 31 162 15
-                16 27 32 27 36 0 4 8 16 17 27 10 11 25 39 34 62 13 34 33 57 56 64 6 1 45
-                164 50 207 5 46 4 48 -26 60 -29 11 -31 14 -31 63 0 34 5 54 13 57 22 8 34
-                103 33 242 -2 117 -4 136 -26 180 -33 66 -87 95 -176 95 -59 0 -64 2 -85 33
-                -28 40 -38 47 -66 47 -12 0 -33 11 -47 25 -21 20 -35 25 -79 25 -31 0 -61 6
-                -73 15 -21 16 -44 19 -44 6z"
-								/>
-							</g>
-
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(12)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M9360 6773 c-14 -3 -31 -9 -37 -15 -7 -6 -84 -46 -170 -90 -87 -44
-                -164 -89 -172 -101 -9 -12 -36 -42 -61 -67 -52 -51 -109 -145 -121 -199 -4
-                -20 -19 -67 -33 -106 -13 -38 -27 -94 -30 -124 -4 -29 -8 -57 -11 -61 -3 -6
-                -13 -44 -46 -195 -4 -22 -13 -89 -19 -150 -6 -60 -15 -141 -20 -180 -6 -38
-                -12 -99 -15 -134 -7 -89 -40 -157 -102 -209 -28 -23 -57 -42 -65 -42 -8 0 -18
-                -4 -24 -10 -5 -5 -55 -27 -110 -48 -86 -32 -108 -45 -151 -90 -43 -45 -51 -60
-                -57 -105 -4 -28 -13 -65 -21 -82 -63 -141 -66 -644 -6 -899 6 -22 8 -43 5 -48
-                -3 -4 0 -15 5 -25 6 -10 25 -103 42 -208 27 -158 32 -216 32 -345 0 -85 -5
-                -166 -10 -180 -6 -15 -7 -53 -2 -95 4 -38 8 -110 9 -160 0 -79 3 -94 24 -120
-                19 -24 26 -27 38 -17 13 10 14 5 6 -41 -6 -28 -11 -81 -13 -117 -2 -36 -10
-                -96 -19 -135 -8 -38 -22 -116 -30 -172 -10 -63 -25 -121 -40 -150 -13 -27 -29
-                -69 -36 -93 -7 -25 -29 -81 -50 -125 -58 -121 -100 -270 -93 -327 7 -62 -12
-                -138 -49 -189 -47 -66 -59 -112 -69 -284 -16 -274 -36 -429 -84 -650 -14 -66
-                -28 -131 -30 -145 -9 -55 -24 -157 -30 -198 l-5 -42 1274 0 1274 0 11 68 c13
-                78 31 267 36 366 2 38 8 97 14 130 6 34 15 93 22 131 6 39 15 93 19 120 5 28
-                9 89 9 137 1 48 6 99 11 114 6 15 13 78 16 138 3 61 7 117 10 125 14 42 27
-                176 29 323 2 91 7 174 13 183 5 10 48 32 95 51 48 18 101 43 118 56 29 21 31
-                26 26 68 -6 41 -82 285 -111 355 -24 56 -49 160 -53 221 -6 77 8 129 52 194
-                19 29 35 57 35 63 0 5 10 24 23 41 69 92 106 224 90 321 -7 35 -7 71 -2 89 15
-                53 10 451 -7 551 -9 50 -18 137 -20 195 -4 88 -1 120 19 199 25 97 23 165 -5
-                198 -27 34 -77 207 -78 273 0 20 -7 46 -16 59 -9 13 -18 46 -20 75 -6 73 -14
-                107 -34 136 -23 33 -75 138 -85 170 -17 57 -96 210 -130 250 -20 24 -48 64
-                -61 89 -14 25 -38 66 -54 91 -66 99 -108 202 -119 290 -18 140 -20 147 -56
-                190 -19 23 -35 52 -35 65 0 12 -7 28 -15 35 -8 7 -15 18 -15 24 0 30 -116 241
-                -159 289 -26 29 -56 66 -66 83 -26 41 -152 153 -190 169 -108 46 -151 56 -195
-                48z"
-								/>
-							</g>
-
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(13)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M9050 9559 c-97 -23 -256 -99 -304 -145 -18 -18 -40 -47 -49 -66 -9
-                -19 -26 -43 -38 -54 -39 -35 -96 -166 -119 -274 -12 -56 -10 -121 9 -220 22
-                -120 39 -154 86 -171 32 -12 35 -16 35 -54 0 -60 16 -75 80 -80 91 -7 154 -34
-                192 -83 26 -34 38 -42 65 -42 46 0 134 -20 159 -37 46 -30 63 -98 67 -264 3
-                -129 0 -163 -15 -208 -22 -67 -24 -120 -3 -127 39 -15 -3 -251 -51 -289 -7 -5
-                -31 -45 -54 -89 -22 -43 -51 -92 -64 -110 -20 -25 -25 -48 -31 -127 -9 -115 1
-                -150 53 -197 153 -138 244 -192 322 -192 30 0 52 6 60 15 8 9 13 64 15 162 3
-                166 12 205 55 223 16 7 35 22 43 34 8 11 43 35 78 53 60 30 273 100 364 119
-                42 10 41 8 62 113 2 13 21 40 41 60 55 53 72 82 72 121 0 40 -34 120 -50 120
-                -6 0 -35 11 -64 24 -29 13 -95 38 -146 56 -52 17 -120 46 -151 66 -31 19 -76
-                41 -99 49 -47 16 -213 104 -271 142 -35 23 -36 26 -47 116 -20 166 14 301 85
-                335 29 14 42 31 69 89 18 39 38 98 45 130 7 32 19 72 28 88 12 24 15 67 15
-                210 l1 180 -32 55 c-41 70 -85 116 -127 134 -18 7 -60 41 -93 75 -33 33 -72
-                65 -87 71 -40 15 -110 11 -206 -11z"
-								/>
-								<path
-									d="M8195 8005 c-47 -23 -112 -43 -195 -60 -143 -29 -248 -61 -280 -85
-                l-22 -16 39 -38 c21 -21 63 -50 93 -65 52 -25 63 -26 219 -26 l164 0 11 45 c8
-                33 18 48 39 58 27 13 27 13 27 118 0 77 -3 104 -12 104 -7 -1 -44 -16 -83 -35z"
-								/>
-							</g>
-
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(14)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M10305 7661 c-27 -4 -63 -15 -80 -26 -52 -34 -166 -138 -180 -165
-                -13 -26 -29 -97 -45 -204 -5 -32 -16 -67 -26 -77 -13 -14 -19 -51 -27 -146
-                l-10 -128 51 -101 c32 -64 63 -111 83 -127 25 -19 37 -41 52 -93 28 -101 32
-                -191 10 -231 -61 -108 -107 -173 -138 -198 -43 -32 -42 -49 5 -118 40 -59 48
-                -84 64 -191 15 -98 39 -155 115 -276 22 -36 48 -78 57 -94 9 -16 34 -52 55
-                -79 44 -55 108 -177 150 -286 15 -40 46 -102 68 -138 30 -47 43 -79 47 -121
-                11 -95 18 -105 62 -97 20 4 55 15 77 24 22 10 66 28 98 41 48 19 70 37 131
-                106 94 108 102 133 87 286 -22 222 -19 236 73 473 20 50 35 100 36 112 0 24
-                -55 93 -74 93 -7 0 -21 9 -31 20 -10 11 -23 20 -29 20 -47 2 -166 143 -166
-                197 0 18 -5 52 -11 76 -17 61 10 178 55 241 18 26 41 76 51 112 15 54 21 64
-                40 64 12 0 29 8 37 18 37 41 88 179 88 236 0 28 24 73 50 93 33 25 16 125 -51
-                306 -16 42 -32 104 -36 137 -8 84 -43 120 -138 144 -38 9 -108 29 -155 43
-                -199 60 -213 63 -305 62 -49 -1 -112 -5 -140 -8z"
-								/>
-							</g>
-
-							{/*rachelle*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(15)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M11660 6664 c-19 -9 -54 -26 -78 -37 -57 -27 -225 -209 -280 -302
-                -45 -76 -135 -297 -146 -358 -10 -54 -51 -172 -106 -309 -73 -177 -75 -194
-                -60 -344 17 -172 17 -233 -2 -269 -29 -53 -160 -179 -208 -199 -156 -67 -191
-                -87 -201 -114 -13 -32 -5 -143 13 -174 7 -13 13 -34 14 -48 1 -14 7 -61 14
-                -105 6 -44 10 -120 7 -170 -2 -49 0 -121 5 -160 5 -38 11 -86 13 -105 2 -19 8
-                -53 13 -75 31 -123 42 -346 21 -446 -6 -30 -12 -133 -13 -229 l-1 -175 -47
-                -97 c-27 -53 -48 -101 -48 -106 0 -5 -8 -16 -17 -23 -29 -24 -96 -178 -90
-                -208 10 -52 60 -207 83 -261 35 -82 121 -330 129 -375 2 -11 11 -49 20 -85 14
-                -56 15 -118 11 -470 -8 -656 -30 -841 -142 -1193 -19 -59 -37 -135 -41 -167
-                l-6 -60 1213 0 1213 0 -7 53 c-8 56 -8 495 -1 507 3 4 7 95 11 201 3 107 10
-                206 16 221 11 29 14 878 3 988 -3 36 -10 99 -14 140 -7 62 -5 86 10 135 10 33
-                19 71 19 84 0 29 12 70 50 171 34 88 63 183 80 260 7 30 20 69 28 85 13 25 16
-                72 16 270 1 161 -3 255 -12 285 -6 25 -14 68 -16 95 -8 95 -46 325 -56 345 -5
-                10 -10 30 -10 44 0 38 -29 142 -56 199 -13 29 -24 62 -24 74 0 12 -4 25 -10
-                28 -5 3 -10 27 -10 53 0 33 -9 65 -30 105 -16 32 -30 69 -30 82 0 13 -4 27
-                -10 30 -5 3 -10 21 -10 38 0 18 -8 46 -19 63 -10 17 -22 41 -26 55 -13 42 -99
-                181 -120 192 -11 6 -49 24 -84 39 -35 15 -70 36 -78 48 -8 11 -22 20 -31 20
-                -20 0 -74 84 -75 115 0 11 5 67 11 125 12 108 19 533 9 560 -3 8 -10 52 -16
-                97 -7 45 -23 119 -36 165 -14 46 -25 94 -25 107 0 13 -14 44 -31 70 -18 25
-                -46 78 -64 116 -43 95 -94 172 -159 243 -105 112 -146 129 -411 168 -16 2 -46
-                -3 -65 -12z"
-								/>
-							</g>
-
-							{/*shub*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(16)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M10715 8900 c-16 -11 -38 -20 -48 -20 -10 0 -40 -11 -67 -25 -27 -14
-                -62 -25 -77 -25 -15 0 -60 -16 -99 -35 -74 -37 -73 -35 -124 -150 -27 -60 -30
-                -189 -6 -245 8 -20 18 -68 21 -108 l8 -72 -37 -40 c-43 -47 -46 -77 -16 -168
-                24 -74 54 -127 92 -166 26 -26 58 -107 58 -147 0 -31 48 -59 101 -59 36 0 66
-                -10 125 -40 43 -22 91 -40 107 -40 43 0 90 -26 145 -81 50 -49 107 -79 121
-                -63 5 5 17 32 27 59 10 28 43 78 75 115 37 43 66 89 84 134 27 70 65 272 70
-                381 5 85 40 234 65 266 23 33 26 82 6 121 -32 62 -112 159 -136 165 -29 7
-                -103 63 -194 144 -75 68 -89 76 -175 100 -82 24 -89 24 -126 -1z"
-								/>
-								<path
-									d="M9920 7329 c-52 -21 -122 -45 -155 -55 -33 -10 -80 -26 -103 -36 -53
-                -22 -148 -101 -168 -140 -19 -36 -38 -233 -30 -301 l7 -52 94 -58 c94 -58 154
-                -115 203 -192 14 -22 39 -62 57 -90 17 -27 58 -94 90 -147 32 -54 60 -98 64
-                -98 3 0 29 28 56 62 28 34 64 76 81 92 29 29 32 38 38 118 6 68 3 99 -10 140
-                -26 82 -38 103 -62 106 -32 5 -98 110 -123 197 -12 40 10 293 27 322 12 19 39
-                163 32 167 -2 1 -46 -15 -98 -35z"
-								/>
-								<path
-									d="M11114 7203 c-8 -9 -12 -23 -9 -32 3 -8 9 -59 12 -113 l6 -98 -29 -6
-                c-28 -5 -30 -8 -30 -57 0 -51 -28 -146 -62 -217 -12 -25 -25 -36 -43 -38 -22
-                -3 -28 -10 -33 -40 -4 -20 -19 -60 -34 -88 -95 -180 -104 -202 -98 -246 3 -24
-                9 -75 14 -115 13 -108 23 -119 222 -258 36 -25 70 -45 75 -45 17 0 55 86 55
-                123 0 49 19 106 55 167 18 30 58 102 90 160 35 63 82 131 121 173 35 38 64 73
-                64 77 0 14 111 92 166 116 78 34 89 64 63 164 -25 96 -42 117 -122 160 -36 19
-                -70 44 -75 55 -9 20 -183 115 -210 115 -7 0 -31 9 -53 20 -60 31 -126 41 -145
-                23z"
-								/>
-							</g>
-
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(17)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M12463 8600 c-53 -4 -81 -13 -110 -32 -21 -14 -48 -29 -60 -33 -16
-                -4 -40 -43 -90 -143 -37 -75 -80 -155 -95 -177 l-27 -40 14 -185 c7 -102 17
-                -196 22 -210 14 -42 91 -136 147 -179 75 -56 101 -111 109 -228 6 -79 4 -97
-                -12 -125 -10 -18 -26 -62 -35 -98 -14 -56 -22 -69 -54 -89 -59 -39 -111 -65
-                -232 -117 -92 -38 -125 -58 -169 -101 -54 -52 -54 -53 -35 -74 10 -12 36 -30
-                56 -40 24 -12 45 -34 58 -59 11 -22 25 -40 30 -40 6 0 44 -32 85 -71 77 -73
-                175 -209 204 -283 9 -22 28 -61 41 -85 50 -88 54 -97 61 -136 4 -22 16 -74 27
-                -115 44 -163 63 -510 42 -768 l-13 -161 34 -67 c19 -37 39 -69 46 -71 23 -8
-                43 45 54 143 24 226 30 288 42 479 9 140 18 209 29 229 25 47 118 106 343 219
-                116 58 226 112 245 121 19 9 67 43 105 77 39 33 87 69 108 80 41 22 49 36 72
-                135 23 101 20 163 -11 205 -14 19 -34 53 -44 76 -10 23 -29 49 -42 57 -24 16
-                -45 71 -114 299 -21 71 -31 90 -50 97 -33 13 -161 147 -174 184 -7 17 -18 46
-                -26 64 -37 85 -1 331 59 414 17 23 19 37 13 97 -4 51 -2 81 8 108 23 60 38
-                182 30 253 -4 39 -19 90 -36 127 -30 63 -32 64 -168 152 -22 14 -132 50 -225
-                72 -44 11 -93 26 -108 34 -30 16 -39 16 -154 5z"
-								/>
-							</g>
-
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(18)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M11790 9099 c-19 -5 -66 -7 -105 -4 l-70 6 -145 -73 c-102 -51 -149
-                -81 -160 -100 -8 -14 -27 -46 -42 -71 -31 -51 -47 -111 -48 -177 0 -42 6 -53
-                65 -124 l64 -77 -4 -76 c-3 -56 0 -83 11 -105 9 -17 17 -45 19 -62 2 -17 13
-                -68 24 -114 25 -100 29 -266 7 -297 -7 -11 -17 -31 -21 -45 -24 -82 -100 -139
-                -186 -140 -41 0 -49 -5 -92 -49 -93 -97 -109 -186 -56 -302 34 -74 40 -78 156
-                -114 45 -14 132 -52 194 -85 62 -33 117 -60 122 -60 15 0 115 -60 119 -70 2
-                -6 13 -12 26 -15 36 -7 40 -13 35 -53 -5 -39 13 -148 25 -156 6 -4 145 82 163
-                102 11 10 52 156 115 406 31 121 74 270 95 333 44 123 49 185 21 256 -12 31
-                -13 67 -8 189 7 140 10 155 39 217 17 36 43 84 57 106 32 49 50 90 50 113 0
-                10 9 35 21 57 32 60 23 129 -30 235 -24 47 -53 96 -66 110 -12 14 -40 51 -60
-                84 -46 73 -100 133 -136 152 -31 16 -143 17 -199 3z"
-								/>
-							</g>
-
-							{/*meghna*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(19)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M14120 6901 c-41 -20 -93 -48 -115 -63 -52 -35 -145 -131 -145 -151
-                0 -8 -13 -44 -30 -79 -16 -34 -30 -73 -30 -85 0 -13 -17 -49 -37 -80 -50 -79
-                -75 -148 -77 -211 -1 -42 3 -53 17 -58 23 -7 22 -41 -4 -83 -16 -26 -20 -45
-                -16 -75 3 -23 1 -63 -5 -90 -8 -36 -7 -54 2 -71 10 -19 9 -32 -4 -71 -9 -26
-                -22 -54 -29 -63 -8 -9 -20 -45 -26 -81 -7 -36 -19 -83 -26 -105 -27 -76 -41
-                -160 -35 -213 5 -46 3 -53 -15 -58 -11 -4 -51 -21 -90 -39 -38 -18 -78 -35
-                -87 -38 -20 -7 -44 -57 -83 -172 -62 -184 -64 -199 -63 -444 0 -149 -3 -234
-                -10 -248 -20 -37 -35 -327 -22 -428 14 -108 9 -577 -8 -709 -7 -49 -21 -141
-                -33 -205 -11 -64 -25 -172 -30 -241 -4 -69 -13 -156 -20 -193 -15 -90 -6 -156
-                42 -302 37 -115 60 -217 78 -350 5 -33 25 -124 45 -202 33 -131 35 -144 22
-                -175 -39 -92 -49 -204 -52 -548 l-2 -335 -26 -59 c-40 -90 -66 -236 -66 -368
-                0 -98 3 -120 23 -158 l22 -45 1143 -3 1143 -2 -6 161 c-4 129 -2 168 10 197 9
-                19 27 90 41 156 l26 121 -2 480 c-1 263 -4 484 -8 490 -4 5 -10 172 -13 370
-                -5 330 -8 368 -29 455 -12 52 -25 111 -27 130 -3 19 -9 40 -13 45 -11 15 -30
-                110 -30 153 0 39 19 137 45 237 42 156 79 420 95 680 6 94 18 222 26 285 21
-                162 30 605 15 755 -21 208 -39 293 -80 380 -22 44 -42 91 -46 105 -4 14 -29
-                70 -55 126 -44 92 -53 105 -106 142 -33 23 -67 42 -77 42 -17 0 -113 25 -194
-                51 -39 12 -133 101 -153 144 -9 20 -14 78 -16 170 -1 77 -6 158 -12 180 -6 22
-                -11 71 -12 109 0 39 -4 74 -7 80 -4 5 -8 60 -9 120 -2 90 -7 119 -23 151 -12
-                21 -21 52 -21 67 0 15 -6 45 -14 65 -8 21 -17 50 -20 64 -3 16 -29 46 -63 74
-                -32 27 -65 56 -74 65 -8 10 -39 30 -67 44 -46 24 -59 26 -122 20 -55 -5 -74
-                -4 -88 8 -11 10 -39 15 -82 15 -55 0 -77 -5 -140 -36z"
-								/>
-							</g>
-
-							{/*caden*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(20)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M14426 8959 c-21 -5 -50 -17 -65 -28 -14 -10 -41 -23 -60 -29 -31
-                -11 -83 -54 -153 -127 -73 -76 -93 -193 -63 -370 9 -55 18 -134 20 -175 3 -78
-                30 -167 61 -201 9 -11 30 -19 45 -19 25 0 30 -5 44 -52 19 -64 19 -143 1 -196
-                -25 -71 -29 -141 -11 -242 15 -91 17 -97 60 -137 54 -51 56 -72 19 -194 -21
-                -68 -25 -99 -21 -162 3 -69 7 -81 33 -108 26 -27 33 -30 69 -24 85 14 119 10
-                186 -22 56 -26 73 -41 111 -94 25 -35 48 -77 51 -94 3 -16 10 -59 17 -95 6
-                -36 18 -76 27 -89 8 -13 17 -49 19 -80 2 -31 9 -90 16 -131 6 -41 10 -95 10
-                -120 -2 -50 24 -144 44 -161 10 -8 37 -8 100 1 90 11 133 27 171 62 16 15 29
-                19 49 14 29 -8 66 14 155 87 45 37 46 40 53 108 3 39 13 83 21 99 28 54 9 133
-                -68 289 -7 14 -25 32 -42 41 -60 33 -70 67 -71 241 -1 86 -4 161 -8 168 -30
-                48 -3 264 44 347 28 49 28 53 11 68 -10 9 -46 28 -82 42 -151 61 -189 84 -221
-                129 -18 25 -35 45 -39 45 -13 0 -39 93 -39 141 0 100 18 147 76 204 l54 52 -1
-                94 c0 72 -5 101 -19 126 -13 22 -20 63 -25 135 -9 120 -32 191 -85 263 -57 76
-                -88 101 -180 143 -131 61 -215 74 -314 51z"
-								/>
-							</g>
-
-							{/*brandon*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(21)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M15670 7733 c-107 -18 -264 -111 -350 -206 -68 -76 -77 -92 -98 -191
-                -14 -64 -16 -97 -9 -156 4 -41 10 -138 12 -215 3 -77 7 -155 10 -173 5 -29 65
-                -103 91 -113 6 -2 30 -44 53 -93 39 -80 42 -94 38 -145 -7 -74 -34 -188 -53
-                -220 -22 -38 -117 -101 -151 -101 -15 0 -42 -9 -59 -19 -18 -11 -42 -21 -55
-                -23 -16 -2 -30 -15 -41 -38 -23 -47 -22 -83 2 -105 36 -33 62 -123 76 -269 7
-                -77 18 -144 24 -150 5 -5 47 -29 92 -51 87 -44 130 -89 144 -150 4 -16 10 -37
-                15 -47 5 -10 13 -26 17 -35 5 -10 24 -65 42 -123 18 -58 43 -118 55 -135 40
-                -53 63 -203 70 -450 7 -241 -1 -373 -39 -652 -14 -98 -26 -218 -27 -268 -4
-                -177 -23 -317 -81 -570 -69 -301 -69 -280 -8 -513 29 -110 31 -125 17 -140
-                -40 -46 -50 -109 -53 -352 -3 -234 -13 -380 -33 -475 -5 -27 -15 -84 -21 -125
-                -19 -122 -31 -181 -50 -255 -21 -80 -44 -209 -60 -340 -13 -104 -23 -527 -17
-                -750 l2 -80 198 -3 198 -2 -7 37 c-4 21 -10 45 -15 54 -4 8 -11 39 -15 68 -7
-                56 2 101 41 186 30 67 43 150 44 270 0 55 5 132 11 170 13 95 13 341 -1 390
-                -16 55 -17 267 -2 340 7 33 19 98 27 145 9 47 26 139 40 204 14 66 30 165 36
-                220 17 156 19 166 36 166 29 0 48 70 56 210 4 74 12 189 17 255 6 66 15 210
-                22 320 6 110 14 265 19 345 4 80 13 246 20 370 11 221 29 411 49 520 6 30 13
-                105 16 167 2 62 13 166 24 230 20 121 41 334 41 411 0 54 19 74 104 102 37 12
-                70 28 73 36 3 8 10 14 17 14 6 0 37 16 68 35 32 19 79 41 105 49 92 29 184 65
-                209 81 16 11 35 14 57 10 36 -7 139 22 162 46 8 8 26 61 41 119 14 58 30 113
-                35 122 7 13 1 31 -25 70 -19 29 -49 91 -67 138 -17 47 -38 92 -46 101 -7 9
-                -73 40 -146 69 -72 29 -139 59 -148 66 -8 8 -25 14 -37 14 -13 0 -62 20 -110
-                44 -74 37 -92 51 -120 94 -17 27 -32 54 -32 59 0 6 -20 41 -45 79 -43 65 -55
-                109 -36 129 11 13 31 97 31 132 0 17 8 33 20 41 14 8 20 23 20 48 0 39 15 104
-                33 141 13 28 4 132 -16 168 -11 21 -12 38 -5 69 6 27 6 85 -2 166 -10 116 -14
-                129 -45 176 -36 55 -133 134 -218 177 -81 41 -225 71 -287 60z"
-								/>
-							</g>
-
-							{/*benny*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(22)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M17165 6940 c-22 -4 -53 -13 -70 -19 -16 -6 -60 -20 -97 -31 -51 -16
-                -75 -31 -102 -61 -20 -21 -36 -45 -36 -51 0 -7 -25 -65 -56 -130 -53 -110 -56
-                -122 -56 -192 0 -40 6 -93 12 -116 6 -23 10 -74 9 -114 -4 -145 72 -396 146
-                -484 22 -27 24 -34 14 -53 -6 -12 -19 -50 -28 -83 -15 -57 -20 -63 -77 -102
-                -34 -23 -76 -45 -95 -49 -19 -4 -46 -16 -61 -26 -14 -11 -31 -19 -37 -19 -6 0
-                -19 -4 -29 -9 -29 -16 -105 -48 -157 -67 -27 -10 -68 -29 -89 -42 -22 -14 -55
-                -31 -73 -38 -18 -8 -33 -18 -33 -23 0 -5 -31 -22 -70 -37 -116 -45 -111 -33
-                -129 -299 -6 -83 -15 -164 -20 -180 -16 -55 -34 -190 -37 -285 -2 -90 -10
-                -162 -33 -310 -18 -110 -31 -249 -36 -375 -8 -199 -17 -329 -23 -340 -4 -5
-                -10 -100 -14 -210 -4 -110 -13 -281 -18 -380 -6 -99 -13 -250 -15 -335 -3 -85
-                -10 -168 -15 -184 -6 -16 -10 -50 -10 -75 0 -47 39 -255 64 -345 36 -125 59
-                -247 60 -321 3 -90 31 -245 54 -290 16 -33 35 -114 57 -255 13 -80 38 -171 96
-                -354 5 -15 16 -85 25 -155 8 -69 27 -168 40 -219 14 -51 24 -109 23 -130 -1
-                -20 -2 -63 -1 -95 l2 -57 1058 2 c705 2 1056 6 1055 13 -8 51 -28 258 -31 330
-                -2 50 -6 146 -10 214 -4 68 -3 203 1 300 l8 176 32 28 c17 15 70 40 116 55 52
-                16 93 37 107 52 13 14 37 40 54 58 l30 33 -4 132 c-3 93 -11 154 -26 207 -41
-                146 -43 163 -19 183 12 9 27 17 35 17 21 0 34 34 34 92 0 71 28 362 41 418 6
-                25 17 52 26 62 19 21 10 87 -17 120 -16 20 -16 26 -4 50 11 21 14 100 14 400
-                0 205 -1 402 -2 438 0 36 0 119 1 185 2 107 -7 300 -26 515 -3 41 -12 84 -19
-                95 -6 11 -15 45 -19 75 -20 173 -49 339 -76 445 -23 89 -32 156 -38 260 -9
-                164 -23 206 -73 224 -18 7 -46 19 -61 27 -16 8 -33 14 -37 14 -5 0 -89 39
-                -187 86 -166 80 -360 164 -380 164 -5 0 -40 33 -78 73 -61 63 -75 86 -108 170
-                l-39 97 23 75 c19 67 26 77 56 92 47 22 68 52 92 133 27 88 21 167 -15 201
-                -13 12 -24 32 -24 44 0 12 -7 64 -16 116 -17 100 -51 176 -126 276 -48 66
-                -166 144 -248 165 -45 12 -111 28 -130 32 -8 2 -33 0 -55 -4z"
-								/>
-							</g>
-
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(23)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M13730 7750 c-30 -32 -63 -59 -72 -59 -9 -1 -20 -5 -23 -11 -3 -5
-                -20 -10 -36 -10 -16 0 -39 -8 -50 -19 -17 -15 -37 -19 -119 -19 l-99 -1 -56
-                -55 -55 -56 0 -120 c0 -107 2 -123 20 -142 16 -17 20 -36 20 -90 0 -37 6 -85
-                14 -105 14 -40 28 -113 47 -251 11 -81 12 -83 56 -119 25 -20 59 -57 76 -82
-                30 -44 32 -52 35 -156 4 -98 1 -116 -18 -158 -44 -93 -286 -256 -346 -233 -10
-                4 -26 -4 -44 -24 -15 -16 -32 -30 -36 -30 -4 0 -19 -11 -33 -24 -33 -30 -318
-                -176 -393 -200 -20 -6 -24 -46 -19 -172 2 -44 -1 -74 -8 -78 -7 -5 -11 -44
-                -11 -102 0 -53 -4 -103 -9 -112 -13 -25 -34 -240 -34 -358 -1 -108 2 -117 53
-                -141 14 -6 40 -15 58 -18 22 -5 52 -26 88 -61 29 -30 58 -54 63 -54 5 0 33
-                -24 62 -52 l54 -53 139 0 139 0 -2 90 c-1 50 3 113 9 140 6 28 15 85 20 128
-                15 130 56 188 170 239 36 16 76 35 90 43 14 8 41 23 61 34 25 14 42 33 53 62
-                25 61 46 184 46 265 0 56 6 84 26 128 25 54 25 60 20 213 -3 87 -8 196 -12
-                243 -4 64 -2 87 8 95 7 5 28 40 47 78 19 37 37 67 40 67 9 0 27 48 42 110 7
-                30 21 70 31 88 10 18 18 41 18 52 0 22 144 170 165 170 8 0 15 4 15 8 0 11
-                117 72 137 72 8 0 32 18 53 40 21 22 44 40 50 40 27 0 40 30 40 89 0 33 5 63
-                10 66 6 3 10 21 10 40 0 19 5 37 10 40 6 3 10 35 10 71 0 61 -2 66 -40 105
-                -34 35 -40 48 -40 85 0 23 -4 46 -10 49 -5 3 -10 14 -10 24 0 21 -27 78 -41
-                87 -5 3 -16 0 -24 -6 -17 -14 -29 -7 -77 43 -14 15 -35 27 -46 27 -11 0 -43
-                23 -71 50 l-51 50 -83 -1 -82 0 -55 -59z"
-								/>
-								<path
-									d="M14886 5982 c-3 -6 0 -30 9 -54 18 -52 18 -58 4 -58 -16 0 -33 -20
-                -53 -64 -14 -30 -17 -54 -13 -102 4 -61 6 -63 72 -129 65 -65 69 -67 117 -67
-                27 0 55 5 61 11 6 6 21 11 33 11 20 0 23 7 30 56 14 112 -9 284 -38 284 -4 0
-                -14 14 -23 30 -9 17 -33 41 -54 55 -41 28 -134 45 -145 27z"
-								/>
+							<g>
+								{/*vivek */}
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(1)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M4240 6318 c-30 -12 -60 -28 -66 -37 -7 -9 -26 -32 -43 -51 -38 -44
+							-43 -68 -41 -214 1 -79 9 -105 50 -156 15 -18 22 -47 26 -95 6 -66 4 -72 -26
+							-118 -38 -56 -51 -64 -205 -116 -65 -22 -129 -50 -142 -63 -32 -30 -46 -87
+							-48 -198 0 -68 -7 -116 -24 -170 -24 -78 -48 -110 -85 -110 -11 0 -27 -4 -34
+							-9 -28 -17 13 -52 131 -113 143 -73 215 -128 224 -169 3 -16 8 -29 12 -29 16
+							1 43 56 51 106 14 84 17 90 71 129 28 20 62 56 77 80 22 37 41 52 112 87 74
+							36 96 42 168 46 75 4 82 6 83 26 3 61 -9 126 -25 126 -20 0 -43 31 -60 80 -21
+							61 -13 180 17 237 19 37 20 47 9 76 -24 65 -4 177 32 177 8 0 26 14 41 32 27
+							32 27 32 22 163 -7 180 -11 194 -80 254 -45 38 -53 41 -107 41 -32 0 -64 2
+							-72 4 -7 2 -38 -5 -68 -16z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(2)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M7621 6336 c-7 -8 -32 -25 -56 -36 -75 -36 -120 -90 -140 -167 -18
+						-68 -50 -234 -64 -328 -4 -27 -12 -60 -19 -72 -7 -12 -11 -32 -10 -45 1 -13
+						-8 -52 -20 -88 -40 -123 -46 -165 -33 -249 21 -132 10 -119 104 -124 111 -7
+						143 -15 191 -49 117 -83 115 -82 142 -69 14 6 33 11 44 11 15 0 20 10 25 58 4
+						31 13 98 20 147 8 50 16 135 20 189 6 112 24 163 76 218 53 56 83 72 108 56
+						32 -20 43 0 26 47 -8 22 -14 59 -15 82 0 23 -4 44 -9 47 -4 3 -11 28 -15 55
+						-7 55 -23 91 -74 171 -36 56 -78 99 -98 100 -6 0 -19 9 -29 20 -10 11 -26 20
+						-36 20 -10 0 -21 5 -24 10 -4 6 -10 8 -14 6 -19 -12 -75 -16 -81 -6 -5 7 -11
+						6 -19 -4z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(3)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M4495 5137 c-16 -5 -59 -13 -95 -18 -156 -21 -220 -44 -220 -79 0
+						-12 -5 -17 -13 -14 -19 7 -33 -14 -41 -58 -5 -29 -16 -43 -49 -65 -31 -21 -46
+						-41 -57 -73 -9 -25 -26 -67 -38 -93 -12 -27 -22 -57 -22 -67 0 -11 -9 -24 -19
+						-30 -23 -12 -43 -67 -43 -116 0 -19 -3 -34 -8 -34 -4 0 -10 -34 -12 -77 -4
+						-51 -10 -80 -20 -87 -18 -13 -38 -50 -44 -79 -2 -12 -13 -29 -23 -37 -16 -12
+						-20 -27 -19 -70 1 -42 -7 -71 -31 -123 -17 -38 -38 -95 -46 -128 -9 -32 -24
+						-73 -34 -91 -10 -18 -26 -60 -36 -93 -9 -33 -23 -78 -30 -100 -22 -66 -45
+						-194 -45 -251 0 -34 7 -69 19 -92 19 -37 129 -142 199 -191 19 -13 42 -37 52
+						-53 19 -32 16 -52 -31 -207 -17 -57 -18 -67 -5 -86 8 -12 28 -27 44 -34 l29
+						-12 6 -135 7 -135 65 -132 c62 -125 66 -140 81 -252 9 -66 22 -142 30 -170 15
+						-60 30 -316 24 -435 -2 -47 -4 -114 -3 -150 1 -36 2 -123 3 -195 1 -71 7 -161
+						15 -200 8 -38 19 -112 25 -164 9 -67 24 -123 52 -192 l39 -98 -26 -47 c-14
+						-25 -37 -63 -51 -83 -32 -47 -31 -82 4 -119 52 -55 151 -70 220 -33 34 18 41
+						42 40 127 -2 108 10 205 35 294 19 69 21 104 24 435 2 198 4 374 5 390 2 47
+						26 214 38 275 7 33 9 83 5 125 -18 188 -6 596 16 537 11 -28 14 -146 5 -161
+						-4 -6 -3 -18 4 -26 14 -17 20 -102 26 -364 2 -112 8 -209 13 -215 11 -13 32
+						-113 38 -176 2 -25 8 -182 13 -350 8 -261 12 -318 31 -395 29 -119 36 -251 15
+						-312 -24 -71 -21 -110 13 -144 25 -25 37 -29 83 -29 78 0 139 33 156 84 12 36
+						10 43 -16 95 -19 37 -31 79 -36 123 -6 59 -2 81 29 183 19 64 35 129 35 144 0
+						21 12 38 51 71 60 51 60 57 9 188 l-33 81 22 58 c13 35 21 78 20 108 -1 28 4
+						102 10 165 32 338 33 360 11 451 -15 64 -20 118 -20 226 0 157 15 248 54 332
+						24 52 25 63 26 250 0 108 4 233 9 278 9 86 16 101 93 194 21 26 38 53 38 62 0
+						8 7 20 16 28 26 21 54 86 54 123 0 46 -17 163 -36 246 -8 36 -14 75 -14 86 0
+						36 -40 156 -64 194 -13 19 -33 64 -45 100 -12 36 -26 74 -31 85 -4 11 -14 36
+						-21 55 -28 75 -62 109 -185 190 -35 23 -96 110 -105 150 -16 72 -14 168 4 188
+						22 25 22 58 -3 92 -17 24 -18 30 -5 46 7 11 10 23 5 29 -11 13 -60 159 -60
+						179 0 22 -47 51 -115 70 -33 10 -64 23 -70 30 -7 9 -18 10 -40 3z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(4)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M4635 5797 c-11 -7 -26 -20 -33 -29 -7 -10 -22 -18 -32 -18 -22 0
+							-100 -77 -100 -99 0 -8 -8 -23 -17 -33 -11 -12 -17 -37 -17 -78 -1 -33 -5 -60
+							-9 -60 -11 0 0 -101 12 -113 6 -6 11 -20 11 -31 0 -25 28 -61 54 -70 10 -3 17
+							-9 14 -11 -2 -3 1 -31 7 -62 l12 -58 73 -27 c40 -15 80 -34 89 -43 14 -13 32
+							-69 58 -175 3 -14 10 -28 15 -31 5 -3 4 -17 -3 -32 -10 -21 -8 -30 8 -54 34
+							-48 34 -51 11 -72 -17 -16 -22 -33 -23 -73 -2 -81 15 -180 35 -208 10 -14 64
+							-56 121 -95 64 -43 111 -83 123 -103 10 -18 36 -81 56 -140 38 -109 58 -132
+							79 -93 6 11 11 48 11 83 -1 35 4 99 9 143 5 44 10 132 10 195 1 85 8 146 28
+							236 14 66 23 131 20 145 -7 27 -122 96 -247 149 -77 32 -144 86 -161 129 -10
+							24 -8 28 40 116 21 39 74 81 97 77 17 -3 40 60 43 118 1 30 4 63 7 72 3 10 -4
+							38 -15 64 -12 26 -21 55 -21 65 0 10 -9 23 -20 29 -11 6 -20 15 -20 21 0 6 -9
+							23 -20 39 -11 15 -17 30 -14 33 14 14 -72 76 -131 94 -50 16 -134 16 -160 0z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(5)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M7327 5272 c-13 -12 -17 -13 -17 -3 0 11 -3 11 -15 1 -8 -7 -15 -18
+					-15 -26 0 -7 -19 -26 -42 -43 -24 -16 -57 -44 -75 -63 -35 -37 -103 -135 -103
+					-149 0 -5 -11 -16 -24 -24 -13 -9 -32 -37 -41 -63 -19 -49 -73 -153 -84 -162
+					-18 -14 -51 -96 -51 -127 0 -19 -4 -32 -9 -29 -22 14 -38 -6 -36 -45 1 -23 -3
+					-43 -11 -50 -8 -6 -14 -8 -14 -5 0 13 -25 -18 -37 -45 -6 -15 -9 -36 -6 -48 4
+					-15 1 -21 -10 -21 -9 0 -21 -9 -27 -20 -6 -11 -18 -20 -26 -20 -8 0 -13 -4
+					-10 -9 3 -5 2 -29 -3 -54 -6 -32 -4 -54 5 -77 8 -18 14 -41 14 -51 0 -11 4
+					-19 9 -19 9 0 17 -50 25 -147 2 -24 8 -48 14 -56 6 -7 20 -46 31 -87 12 -41
+					25 -76 31 -78 15 -5 70 -107 70 -131 0 -11 4 -21 10 -21 5 0 7 -7 4 -15 -4
+					-10 0 -15 11 -15 9 0 13 -4 10 -10 -3 -5 -2 -10 4 -10 5 0 14 7 19 16 15 26
+					47 1 73 -56 12 -27 26 -50 30 -50 4 0 10 -8 13 -17 3 -10 25 -26 48 -36 25
+					-10 83 -56 136 -106 89 -84 92 -89 92 -131 0 -43 -23 -121 -43 -148 -6 -7 -18
+					-10 -31 -6 -12 4 -35 8 -52 10 -16 1 -52 16 -79 33 -30 19 -62 31 -82 31 -40
+					0 -80 19 -108 50 -11 12 -40 36 -65 53 -69 46 -119 97 -145 147 -13 25 -42 63
+					-64 85 -35 34 -41 45 -41 81 0 25 6 49 16 58 18 18 15 32 -26 118 -32 68 -37
+					62 -44 -44 -4 -67 13 -177 31 -200 22 -29 105 -261 124 -349 11 -52 27 -116
+					34 -144 50 -171 56 -230 55 -510 0 -148 -4 -342 -8 -430 -11 -241 -7 -262 78
+					-460 73 -169 73 -171 82 -290 6 -81 21 -164 44 -255 20 -74 46 -176 59 -227
+					27 -105 50 -324 40 -389 -7 -48 4 -57 25 -20 9 17 10 39 5 68 -11 66 -13 535
+					-3 608 6 36 11 138 13 228 4 187 12 270 32 327 31 89 42 229 48 624 2 189 8
+					318 14 324 14 14 38 -8 50 -46 15 -50 21 -314 10 -438 -15 -176 -12 -303 11
+					-449 11 -74 25 -169 31 -210 5 -41 15 -95 23 -120 22 -71 35 -138 46 -235 6
+					-49 15 -108 21 -130 5 -22 16 -144 24 -271 7 -127 19 -261 26 -298 9 -53 9
+					-81 -1 -126 -7 -33 -10 -66 -7 -74 3 -8 -7 -33 -23 -55 -16 -22 -32 -51 -36
+					-65 l-6 -26 201 0 c173 0 201 2 201 15 0 8 23 37 52 64 l52 49 -2 66 c-2 48
+					-9 78 -27 109 -13 25 -27 70 -31 105 -5 51 -3 70 15 111 33 77 26 157 -22 271
+					-8 19 -18 73 -22 120 -13 161 -34 279 -74 402 -89 274 -91 342 -16 667 19 80
+					46 186 60 236 66 226 86 403 61 536 -14 75 -21 162 -29 349 -2 37 1 45 18 48
+					30 6 75 52 96 99 11 23 31 50 46 61 l27 20 3 178 c1 99 6 258 10 354 l8 175
+					24 0 c19 0 26 8 39 48 12 38 19 47 36 45 16 -2 21 4 28 35 8 39 -11 147 -31
+					171 -6 7 -20 42 -31 78 -18 58 -41 95 -59 92 -13 -2 -41 22 -41 36 0 8 -25 40
+					-56 71 -52 53 -94 131 -94 177 0 7 -7 20 -15 28 -8 9 -15 26 -15 38 0 13 -9
+					31 -20 41 -11 10 -23 34 -26 54 -4 20 -14 47 -23 60 -9 14 -16 29 -17 35 0 6
+					-2 16 -2 22 -1 7 -11 14 -23 17 -15 4 -23 0 -26 -14 -8 -31 -22 -22 -28 19
+					-10 58 -24 88 -48 100 -34 16 -61 25 -69 24 -4 -1 -10 9 -14 23 -3 14 -9 23
+					-13 20 -4 -2 -27 2 -52 9 -83 24 -105 26 -122 8z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(6)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M8060 5798 c0 -29 -22 -38 -51 -21 -27 16 -29 15 -69 -11 -26 -17
+							-40 -33 -36 -41 3 -8 -6 -22 -20 -33 -31 -22 -54 -100 -54 -182 0 -67 -38
+							-373 -48 -381 -4 -4 -24 -12 -44 -18 l-37 -12 19 -21 c11 -12 27 -46 36 -77 8
+							-31 22 -66 30 -78 39 -61 58 -102 65 -138 16 -86 35 -117 132 -210 79 -76 97
+							-99 106 -136 7 -24 22 -66 35 -94 37 -79 50 -148 36 -190 -10 -31 -20 -40 -42
+							-36 -4 0 -10 -9 -13 -22 -18 -64 -27 -77 -55 -77 l-28 0 -7 -303 c-4 -167 -4
+							-317 -1 -335 9 -36 -6 -68 -34 -77 -13 -4 -31 -28 -44 -58 -25 -56 -57 -90
+							-94 -102 l-24 -7 7 -146 c3 -81 13 -178 22 -217 30 -139 8 -342 -62 -575 -14
+							-47 -43 -168 -66 -270 -60 -275 -58 -359 17 -585 18 -55 37 -118 43 -140 14
+							-55 41 -249 41 -298 0 -64 20 -117 47 -123 61 -16 101 30 88 100 -5 26 -2 46
+							12 73 33 62 35 105 22 377 -12 260 -12 261 10 304 19 38 32 94 62 272 5 30 12
+							159 15 285 6 197 4 243 -11 315 -24 121 -24 532 1 507 2 -2 12 -31 22 -63 15
+							-51 17 -96 14 -334 -2 -171 1 -322 9 -400 9 -82 13 -307 13 -660 1 -486 3
+							-539 19 -582 15 -40 16 -53 5 -91 -9 -35 -9 -51 2 -76 15 -37 31 -42 127 -38
+							93 3 122 27 133 109 4 30 22 85 40 123 32 68 33 75 37 220 2 83 7 202 12 265
+							5 66 5 248 0 425 -4 171 -9 452 -9 625 -1 277 2 328 19 419 11 57 23 106 26
+							109 3 3 14 7 25 9 22 3 64 -52 56 -73 -4 -10 78 -104 91 -104 10 0 44 45 59
+							78 11 25 13 42 5 65 -16 53 -25 127 -26 217 -1 100 -12 259 -25 385 -5 50 -12
+							108 -14 130 -2 22 -9 63 -14 90 -5 28 -10 122 -11 210 -2 88 -8 185 -15 215
+							-9 41 -10 78 -3 143 7 60 6 95 -1 110 -18 38 -50 180 -56 248 -4 43 -46 118
+							-87 156 -21 20 -41 44 -44 54 -3 9 -19 22 -34 27 -27 9 -31 18 -50 104 -11 51
+							-23 117 -27 145 -4 29 -10 51 -14 48 -4 -2 -10 34 -13 81 -3 57 -10 91 -20
+							102 -10 11 -15 33 -14 59 2 49 -19 93 -45 93 -12 0 -18 7 -18 21 0 30 -20 61
+							-35 55 -7 -2 -21 6 -29 19 -19 28 -38 40 -83 50 -25 5 -33 3 -33 -7z m262
+							-410 c-9 -9 -12 -7 -12 12 0 19 3 21 12 12 9 -9 9 -15 0 -24z"
+									/>
+									<path
+										d="M7648 5080 c5 -36 10 -38 21 -7 5 14 4 25 -3 29 -19 13 -23 9 -18
+							-22z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(7)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M6694 6480 c-6 -6 -30 -12 -55 -14 -126 -11 -154 -30 -198 -136 -13
+						-30 -30 -65 -39 -78 l-15 -23 -14 21 c-12 17 -21 20 -44 15 -22 -5 -29 -3 -29
+						8 0 30 -28 41 -78 31 -42 -8 -47 -12 -50 -39 -2 -16 -8 -35 -13 -42 -27 -32
+						-11 -205 21 -237 6 -6 10 -29 10 -52 0 -23 7 -58 15 -78 14 -34 14 -39 -1 -66
+						-17 -28 -17 -30 7 -62 14 -18 35 -50 48 -70 l22 -37 -70 -36 c-46 -23 -75 -45
+						-84 -62 -24 -46 -29 -132 -13 -203 8 -36 17 -86 21 -112 8 -59 26 -78 73 -78
+						47 0 94 -28 131 -80 34 -47 51 -114 51 -203 0 -62 12 -98 27 -83 4 4 10 64 13
+						132 6 141 1 132 98 165 34 11 76 32 92 45 38 33 68 114 75 211 12 147 69 348
+						116 413 17 22 20 37 16 67 -6 35 -4 40 23 55 19 11 33 28 36 46 6 29 35 64 84
+						101 21 16 25 28 26 74 0 31 5 62 10 69 6 7 11 37 12 67 2 46 -3 61 -33 106
+						-19 29 -52 63 -72 75 -21 12 -42 29 -46 36 -5 10 -16 12 -29 8 -11 -3 -23 -2
+						-27 4 -4 7 -95 52 -105 52 -1 0 -7 -5 -12 -10z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(8)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M5387 6374 c-4 -4 -18 -9 -30 -9 -12 -1 -48 -13 -79 -27 -68 -32 -76
+					-51 -58 -141 7 -34 14 -127 15 -207 2 -153 10 -184 53 -224 41 -36 35 -106
+					-13 -146 -17 -14 -84 -44 -183 -83 -61 -23 -67 -33 -77 -130 -6 -55 -14 -75
+					-44 -114 -20 -27 -44 -54 -54 -61 -9 -7 -24 -28 -32 -45 -9 -18 -22 -43 -30
+					-57 -8 -14 -15 -35 -15 -47 0 -34 64 -99 123 -125 29 -12 108 -51 176 -85 130
+					-66 134 -66 147 -16 6 23 78 63 114 63 36 0 81 30 95 63 26 62 44 153 46 227
+					1 41 8 111 17 155 8 44 15 95 16 113 1 17 4 32 8 32 3 0 29 23 56 52 67 69 74
+					105 33 156 -26 30 -31 45 -31 89 0 42 5 57 26 80 14 15 41 56 61 90 30 55 34
+					71 34 131 0 66 -23 152 -41 152 -4 0 -21 13 -36 28 -16 16 -56 37 -89 47 -33
+					11 -65 23 -72 28 -17 12 -126 21 -136 11z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(9)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M6916 5814 c-56 -20 -142 -115 -162 -178 -8 -28 -19 -60 -24 -71 -10
+					-25 -21 -70 -25 -110 -22 -215 -52 -317 -105 -355 -14 -9 -49 -25 -79 -35 -30
+					-10 -66 -29 -79 -42 -22 -22 -23 -29 -17 -92 7 -69 -9 -220 -27 -255 -6 -12
+					-7 -16 0 -12 5 3 16 -2 25 -12 12 -14 13 -27 5 -75 -10 -57 -10 -59 18 -86 45
+					-44 159 -134 193 -153 19 -10 37 -32 47 -57 14 -35 19 -39 35 -31 27 15 69 80
+					69 107 0 13 4 31 10 41 20 36 63 150 91 242 40 130 57 168 100 218 21 24 61
+					91 90 148 58 116 98 159 195 208 49 25 54 30 54 61 0 19 -5 46 -12 62 -6 15
+					-13 51 -15 78 -6 100 -8 110 -23 108 -16 -3 -30 32 -50 123 -12 52 -51 97
+					-132 152 -53 36 -113 42 -182 16z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(10)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M9283 6567 c-3 -5 -11 -6 -18 -3 -13 5 -89 -28 -117 -51 -7 -6 -29
+					-10 -48 -8 -19 1 -40 -4 -48 -11 -7 -8 -24 -14 -36 -14 -26 0 -84 -61 -90 -94
+					-3 -12 -10 -47 -16 -79 -11 -55 -11 -59 12 -81 12 -12 30 -25 39 -28 19 -7 31
+					-57 23 -97 -5 -25 -2 -32 25 -46 40 -20 51 -49 51 -134 0 -84 12 -97 84 -94
+					55 2 72 -6 101 -51 l19 -29 -26 -21 c-27 -22 -27 -36 -2 -138 5 -22 -4 -43
+					-48 -110 -90 -137 -151 -244 -200 -348 -17 -36 -51 -94 -77 -130 -72 -100 -74
+					-108 -163 -455 l-63 -250 0 -190 c0 -177 16 -326 36 -349 4 -4 71 -9 148 -11
+					78 -1 144 -4 146 -7 3 -3 1 -17 -5 -32 -5 -15 -10 -42 -10 -59 -1 -18 -7 -43
+					-15 -57 -21 -36 -18 -73 8 -138 16 -38 23 -70 20 -97 -3 -22 -1 -50 4 -63 5
+					-14 4 -73 -3 -145 -19 -190 -17 -277 10 -396 26 -114 44 -297 56 -586 5 -120
+					15 -210 28 -270 51 -224 51 -218 5 -236 -16 -7 -77 -12 -136 -13 -103 -1 -110
+					-3 -127 -26 -26 -34 -30 -54 -16 -81 16 -32 144 -66 301 -79 66 -6 163 -16
+					215 -22 158 -19 279 -22 296 -7 26 22 10 179 -27 256 -16 33 -34 87 -40 120
+					-5 32 -16 78 -24 103 -15 50 -28 448 -16 490 7 23 21 12 230 -195 123 -121
+					250 -251 282 -288 66 -76 67 -81 23 -169 -13 -26 -24 -58 -24 -72 0 -15 -21
+					-48 -61 -91 -57 -63 -60 -70 -54 -104 15 -78 46 -80 185 -10 117 59 221 151
+					259 231 33 69 58 97 80 91 21 -5 51 20 134 114 33 38 45 59 42 75 -5 23 -12
+					31 -101 103 -27 22 -75 66 -107 98 -98 98 -142 127 -192 127 l-43 0 -109 132
+					c-60 73 -130 160 -155 193 -26 33 -74 89 -108 125 -34 36 -77 88 -97 117 -19
+					29 -56 68 -82 88 -69 54 -74 70 -42 119 23 36 26 51 27 131 0 50 5 100 12 112
+					7 12 12 48 12 81 0 52 4 65 38 113 80 114 115 154 142 166 33 14 35 24 46 173
+					8 115 7 129 -8 300 -13 138 -15 301 -10 725 3 228 -10 458 -28 480 -4 5 -11
+					33 -15 60 -4 28 -13 64 -20 80 -7 17 -24 55 -38 87 -14 31 -43 78 -64 106 -22
+					27 -46 72 -53 98 -15 57 -26 73 -56 84 -15 6 -26 26 -38 71 -10 34 -14 64 -9
+					68 17 12 63 117 63 143 0 15 6 33 13 40 8 7 18 27 24 43 5 17 12 28 14 25 6
+					-7 49 33 49 47 0 40 -111 168 -137 158 -7 -2 -13 0 -13 6 0 5 -10 13 -23 18
+					-13 5 -37 21 -54 35 -16 14 -33 23 -36 19 -4 -3 -17 2 -31 10 -26 17 -113 20
+					-123 4z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(11)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M3317 5700 c-14 -16 -32 -30 -39 -30 -22 0 -115 -102 -133 -145 -4
+						-11 -7 -36 -6 -56 2 -26 -5 -44 -25 -68 l-27 -32 20 -22 c38 -41 88 -170 98
+						-250 9 -68 -3 -91 -67 -135 -69 -46 -192 -109 -230 -116 -50 -9 -113 -54 -137
+						-96 -14 -25 -21 -56 -21 -88 0 -28 -4 -54 -10 -57 -5 -3 -10 -17 -10 -30 0
+						-13 -8 -43 -18 -67 -12 -27 -24 -95 -32 -184 -11 -127 -11 -149 5 -219 19 -87
+						16 -152 -11 -238 l-18 -58 27 -79 c15 -44 31 -119 37 -167 5 -49 16 -113 25
+						-143 8 -30 15 -71 15 -90 0 -49 13 -65 50 -62 29 3 30 2 30 -37 0 -22 5 -43
+						11 -47 7 -4 8 -36 4 -99 -5 -58 -3 -126 5 -178 9 -67 9 -101 0 -159 -7 -40
+						-14 -125 -15 -188 -5 -208 -15 -338 -30 -402 -12 -55 -24 -135 -40 -283 -3
+						-22 -11 -96 -19 -165 -8 -69 -17 -205 -20 -304 -5 -175 -5 -178 17 -197 12
+						-10 28 -18 35 -19 15 0 16 -44 1 -73 -14 -26 -13 -281 1 -307 18 -34 52 -39
+						179 -30 133 10 151 36 117 170 -39 154 -39 225 -1 530 18 146 27 390 16 445
+						-9 46 -7 56 26 130 19 44 45 127 58 185 56 260 117 510 137 568 40 114 48 87
+						59 -208 4 -129 13 -287 19 -350 7 -70 8 -173 3 -265 -4 -82 -6 -156 -4 -163 1
+						-7 -5 -51 -14 -97 -9 -47 -18 -166 -21 -271 -4 -163 -7 -191 -26 -227 -18 -35
+						-21 -57 -19 -147 1 -57 5 -108 10 -113 4 -4 35 -13 68 -20 33 -7 78 -25 100
+						-40 52 -36 127 -57 225 -62 103 -6 128 4 124 47 -5 53 -15 69 -101 153 -45 44
+						-88 96 -97 115 -15 33 -14 42 7 145 12 61 30 198 39 305 30 332 63 581 111
+						835 15 77 29 157 32 177 7 45 -3 88 -20 88 -6 0 -20 7 -31 15 -16 12 -17 18
+						-6 47 7 18 16 51 20 73 5 22 14 58 20 80 26 91 27 89 -32 134 -238 184 -265
+						233 -228 402 11 52 27 112 35 134 8 22 19 66 25 97 6 31 23 74 36 94 14 20 34
+						73 45 117 11 44 33 106 49 136 15 31 31 71 35 90 8 40 59 144 90 186 61 82 97
+						208 92 320 -4 104 -28 129 -203 221 -175 92 -199 116 -129 130 42 8 70 40 80
+						91 4 21 14 51 22 67 11 21 13 44 9 86 -6 47 -3 63 17 101 14 26 27 71 31 111
+						6 60 4 70 -19 105 -27 42 -27 42 -70 77 -29 24 -29 25 -7 26 12 0 22 4 22 9 0
+						5 -19 9 -42 9 -55 0 -117 7 -125 16 -10 9 -63 7 -106 -5 -48 -13 -75 -4 -83
+						27 -8 31 -17 30 -47 -6z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(12)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M6062 5202 c3 -10 0 -26 -7 -36 -12 -16 -92 -51 -142 -63 -42 -10
+					-104 -91 -137 -182 -22 -61 -38 -89 -54 -96 -15 -6 -24 -21 -28 -45 -3 -19 -9
+					-43 -15 -52 -5 -10 -9 -33 -9 -51 0 -18 -7 -58 -16 -87 -18 -61 -13 -129 11
+					-166 24 -38 18 -59 -22 -78 -60 -29 -143 -87 -156 -110 -8 -14 -12 -82 -13
+					-216 0 -128 -6 -234 -17 -310 -13 -88 -15 -127 -7 -168 8 -44 7 -59 -6 -84
+					-14 -27 -15 -59 -11 -212 5 -155 9 -193 31 -269 32 -108 68 -194 112 -270 19
+					-32 37 -70 41 -85 3 -15 15 -40 25 -57 10 -16 18 -38 18 -47 0 -9 13 -25 30
+					-34 16 -10 32 -24 34 -31 3 -7 1 -93 -4 -191 -6 -97 -8 -220 -5 -272 10 -175
+					14 -342 20 -755 11 -878 17 -1005 48 -1052 4 -7 3 -22 -4 -34 -14 -28 -7 -88
+					16 -123 17 -25 20 -26 121 -26 117 0 124 4 124 80 0 29 13 68 40 123 42 86 42
+					86 41 266 -1 40 6 105 14 145 8 39 17 88 20 109 4 21 15 63 26 94 28 83 40
+					159 49 333 11 192 33 403 59 580 12 74 21 152 21 173 0 73 47 26 60 -59 4 -33
+					19 -102 33 -154 13 -52 28 -117 31 -145 4 -27 16 -84 27 -125 11 -41 27 -111
+					34 -156 8 -44 26 -105 39 -135 14 -30 27 -76 31 -104 11 -82 68 -244 100 -285
+					12 -15 43 -182 43 -230 0 -14 2 -65 5 -115 6 -100 -5 -173 -32 -204 -10 -12
+					-24 -41 -31 -66 -10 -37 -10 -52 2 -83 l14 -37 122 -3 121 -3 26 50 c18 37 25
+					66 25 111 0 56 2 61 26 70 14 6 38 10 53 10 31 0 61 27 61 56 0 10 10 34 21
+					53 20 33 20 40 9 130 -6 53 -18 114 -26 136 -8 23 -14 50 -14 61 0 11 -17 78
+					-39 149 -21 72 -44 157 -52 190 -7 33 -16 65 -21 71 -4 6 -12 71 -17 145 -9
+					129 -11 138 -61 259 -110 267 -103 240 -104 395 -1 77 3 286 8 465 9 332 8
+					344 -30 500 -27 114 -31 133 -54 235 -12 55 -38 138 -57 185 -19 47 -46 111
+					-59 144 -14 32 -22 61 -18 65 4 3 9 -1 12 -9 3 -8 22 -31 42 -50 21 -19 54
+					-64 75 -98 24 -41 53 -75 83 -95 25 -18 72 -56 105 -84 40 -36 71 -54 95 -58
+					21 -3 69 -21 107 -40 47 -22 88 -35 125 -37 l55 -3 22 60 c38 104 29 147 -46
+					210 -19 17 -51 46 -71 66 -19 20 -56 48 -81 62 -53 30 -99 80 -99 107 0 24
+					-56 77 -89 83 -20 4 -33 17 -46 44 -10 21 -33 63 -51 94 -56 94 -90 214 -108
+					392 -20 189 -35 237 -77 237 -15 0 -34 7 -41 16 -7 9 -32 37 -56 61 -25 26
+					-41 51 -38 59 3 9 -2 14 -14 14 -29 0 -33 1 -54 16 -16 11 -19 28 -21 126 -1
+					62 -6 122 -12 133 -6 11 -11 58 -12 105 -2 96 -23 155 -73 207 -31 32 -49 39
+					-118 48 -19 2 -40 11 -46 20 -9 12 -13 13 -16 3 -3 -9 -15 -2 -34 20 -32 36
+					-49 41 -42 14z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(13)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M3139 6282 c-10 -2 -19 -11 -22 -21 -2 -11 -22 -23 -51 -31 -26 -7
+					-46 -19 -46 -26 0 -26 -1 -29 -26 -61 -49 -64 -59 -102 -59 -215 1 -117 13
+					-155 52 -164 35 -9 53 -42 53 -96 0 -71 -24 -112 -94 -157 -56 -35 -199 -85
+					-306 -106 -19 -3 -42 -8 -51 -11 -17 -5 -33 -49 -44 -124 -9 -54 -39 -174 -54
+					-213 -6 -16 -11 -39 -11 -53 0 -13 -11 -70 -24 -127 -61 -261 -64 -549 -6
+					-657 7 -14 9 -40 5 -71 -7 -46 8 -141 25 -164 4 -5 15 -31 24 -56 13 -33 28
+					-53 56 -70 24 -15 41 -34 45 -51 4 -15 12 -31 19 -37 8 -6 13 -48 15 -120 7
+					-283 22 -603 31 -666 8 -50 8 -133 -1 -295 -11 -214 -8 -589 7 -772 7 -77 7
+					-78 40 -90 19 -7 34 -18 34 -25 0 -7 4 -13 9 -13 4 0 11 33 15 73 7 88 23 197
+					41 297 20 107 38 367 30 421 -4 27 -2 71 6 105 6 33 11 97 9 144 -2 47 -3 147
+					-3 223 0 83 -4 137 -10 137 -6 0 -7 17 -4 41 5 38 3 42 -23 52 -18 7 -35 24
+					-44 46 -22 49 -56 187 -56 226 0 17 -9 74 -20 125 -11 51 -20 95 -20 96 0 1
+					-8 10 -17 20 -16 16 -16 21 9 93 24 70 25 82 16 151 -18 141 -20 292 -5 334
+					12 36 12 41 -5 58 -17 17 -17 20 -3 35 26 26 33 54 25 111 -3 29 -3 55 0 57 4
+					3 13 25 20 50 8 28 16 42 20 34 5 -8 10 -5 14 9 12 37 93 99 146 112 26 6 81
+					30 122 53 41 23 87 49 102 57 37 19 136 118 136 135 0 8 -16 30 -35 50 -18 20
+					-42 58 -51 83 -9 26 -23 63 -32 82 -9 19 -15 51 -14 70 1 19 4 66 6 103 2 55
+					7 73 28 95 14 15 34 41 46 58 12 17 37 39 57 48 19 9 51 36 71 61 33 39 40 43
+					69 38 48 -8 59 19 52 121 -8 114 -19 186 -27 186 -5 0 -13 12 -19 28 -20 49
+					-33 66 -98 123 -13 10 -23 16 -23 13 0 -3 -17 4 -37 16 -24 14 -46 20 -64 16
+					-15 -3 -29 -2 -31 2 -2 4 -10 6 -19 4z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(14)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M5787 5654 c-2 -3 -22 -5 -43 -6 -32 -1 -47 -9 -80 -43 -23 -23 -45
+					-51 -48 -63 -4 -12 -14 -22 -23 -22 -8 0 -13 -6 -10 -12 2 -7 -2 -28 -9 -47
+					-8 -18 -14 -44 -14 -58 0 -13 -6 -26 -14 -29 -11 -4 -13 -12 -6 -28 5 -15 2
+					-34 -11 -62 l-18 -39 -2 30 c-2 41 -16 -59 -22 -160 -3 -44 -5 -84 -6 -88 -1
+					-5 -9 -6 -20 -2 -13 4 -24 -4 -43 -32 -13 -21 -27 -46 -31 -55 -5 -14 -13 -16
+					-38 -11 -28 5 -31 4 -26 -11 4 -11 1 -19 -10 -23 -9 -4 -19 -1 -21 5 -2 7 -16
+					-6 -32 -29 -25 -38 -27 -45 -15 -73 11 -26 10 -45 -7 -121 -19 -89 -31 -200
+					-42 -403 -3 -57 -9 -114 -12 -128 -6 -24 16 -71 42 -87 7 -4 15 -26 19 -50 9
+					-55 28 -90 58 -110 23 -15 26 -14 49 11 37 39 48 65 48 114 0 46 36 128 70
+					160 11 10 22 29 26 42 6 27 74 76 173 125 34 18 64 38 67 46 3 7 -2 25 -12 40
+					-15 23 -16 36 -6 113 6 48 14 119 17 157 3 42 19 108 40 167 43 123 50 136 93
+					175 63 56 123 82 204 89 l74 7 -13 89 c-8 49 -20 106 -28 125 -8 20 -15 50
+					-16 67 -1 44 -11 65 -39 79 -16 8 -26 23 -28 41 -2 18 -11 30 -22 33 -11 3
+					-22 13 -25 22 -7 21 -63 53 -71 40 -4 -7 -12 -5 -22 4 -15 14 -84 21 -95 11z"
+									/>
+								</g>
 							</g>
 						</svg>
 					</SvgTablet>
@@ -2000,744 +1212,437 @@ function TeamSection() {
 							viewBox="0 0 1911.000000 1147.000000"
 							preserveAspectRatio="xMidYMid meet"
 						>
-							{/*Andrew */}
-							<g
-								fillOpacity={0}
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(1)}
-								onMouseOut={() => setHoverID(0)}
-							>
-								<path
-									d="M1620 9131 c-128 -35 -204 -89 -297 -212 -64 -84 -76 -125 -68 -241
-                4 -69 2 -104 -6 -120 -26 -47 -11 -208 25 -276 23 -43 63 -80 95 -87 29 -6 29
-                -6 36 -100 8 -108 1 -178 -21 -196 -8 -7 -21 -27 -29 -45 -13 -32 -62 -83
-                -151 -159 -26 -22 -56 -48 -66 -58 -26 -24 -122 -57 -168 -57 -20 0 -41 -5
-                -46 -10 -6 -6 -48 -24 -95 -41 -87 -32 -112 -40 -189 -59 -87 -23 -213 -86
-                -238 -119 -23 -32 -58 -129 -79 -218 -12 -54 -17 -150 -20 -463 -6 -512 9
-                -716 77 -1027 43 -197 80 -250 246 -355 63 -39 120 -78 126 -86 9 -10 2 -32
-                -30 -98 -26 -52 -42 -98 -42 -120 0 -60 59 -213 117 -301 74 -114 153 -271
-                153 -303 0 -23 77 -190 124 -270 8 -14 55 -99 105 -190 91 -165 180 -280 219
-                -280 8 0 23 -7 33 -16 30 -27 39 -9 33 69 -4 49 -1 101 10 160 9 49 16 112 15
-                140 -1 29 1 77 5 107 7 62 -3 150 -34 295 -19 87 -21 120 -16 250 3 83 8 166
-                11 185 3 19 10 96 15 170 11 141 22 243 39 345 32 193 76 414 86 440 12 29 55
-                63 173 133 29 18 58 32 63 32 5 0 17 4 27 9 56 31 139 61 167 61 18 0 39 8 47
-                18 30 33 92 167 110 237 9 38 29 113 43 165 17 61 30 143 36 230 5 74 19 178
-                29 230 11 52 25 120 30 150 6 31 24 76 40 100 17 25 30 55 30 68 0 12 11 49
-                25 82 14 33 25 68 25 79 0 22 -44 61 -69 61 -10 0 -21 4 -26 8 -6 5 -32 17
-                -60 27 -27 10 -62 28 -77 41 -15 12 -31 24 -35 26 -4 1 -26 28 -49 58 -35 48
-                -42 66 -53 143 -15 99 -15 98 65 192 46 55 114 172 114 198 0 9 11 52 25 94
-                14 43 31 93 36 112 11 34 24 258 22 382 -2 126 -91 278 -183 314 -25 10 -61
-                30 -80 45 -63 48 -123 63 -260 66 -95 2 -141 -2 -190 -15z"
-								/>
-								<path
-									d="M692 4458 c-11 -24 -47 -92 -81 -153 l-62 -110 1 -100 c1 -55 0 -116
-                -2 -135 -3 -34 -1 -36 72 -75 66 -35 76 -44 82 -75 25 -123 42 -224 49 -286 4
-                -39 22 -134 40 -210 31 -134 32 -147 34 -369 1 -177 6 -255 21 -340 21 -124
-                22 -148 5 -665 -7 -232 -19 -418 -31 -510 -10 -80 -21 -199 -25 -265 -4 -66
-                -8 -138 -10 -160 -2 -22 -9 -187 -15 -367 -13 -367 -13 -371 62 -521 5 -10 12
-                -41 15 -68 l6 -49 543 0 544 0 1 53 c1 28 3 212 4 407 2 195 7 630 11 965 5
-                336 8 630 8 655 0 46 -53 162 -160 351 -24 42 -143 274 -265 515 -122 242
-                -266 522 -319 624 -54 102 -170 328 -259 504 -163 320 -222 426 -240 426 -6 0
-                -19 -19 -29 -42z"
-								/>
-							</g>
-
-							{/*Kapil */}
-							<g
-								fillOpacity={0}
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(2)}
-								onMouseOut={() => setHoverID(0)}
-							>
-								<path
-									d="M4724 6955 c-12 -19 -27 -23 -100 -29 -52 -4 -91 -2 -98 3 -7 6 -22
-                8 -34 4 -12 -3 -28 0 -35 6 -8 6 -17 8 -21 4 -3 -4 -35 -6 -71 -5 -69 2 -134
-                -17 -171 -50 -11 -10 -24 -18 -30 -18 -16 -1 -194 -177 -194 -192 0 -8 -11
-                -25 -25 -38 -14 -13 -25 -29 -25 -36 0 -6 -7 -18 -17 -25 -9 -8 -27 -36 -39
-                -64 -13 -27 -33 -57 -46 -66 -21 -16 -22 -25 -23 -151 -1 -93 -6 -150 -18
-                -188 -9 -30 -17 -82 -19 -114 -3 -58 -2 -60 31 -83 19 -13 46 -23 60 -23 19 0
-                32 -9 43 -28 9 -15 44 -58 78 -95 56 -61 65 -67 101 -67 39 0 41 -2 64 -54 27
-                -61 25 -114 -7 -155 -10 -13 -18 -27 -18 -32 0 -17 -88 -128 -140 -176 -8 -8
-                -53 -37 -100 -65 -46 -27 -97 -60 -112 -73 -42 -35 -287 -152 -381 -182 -133
-                -41 -173 -66 -201 -122 -39 -76 -53 -162 -60 -361 -4 -102 -9 -232 -11 -290
-                -15 -337 -15 -520 -1 -735 13 -207 18 -239 46 -325 17 -52 42 -138 56 -190 13
-                -52 37 -114 52 -138 15 -24 38 -64 52 -88 14 -24 49 -85 79 -135 l54 -92 -12
-                -56 c-7 -31 -18 -97 -25 -146 -8 -50 -26 -138 -40 -195 -15 -58 -36 -168 -46
-                -245 -11 -77 -29 -167 -40 -200 -11 -33 -45 -145 -76 -250 -57 -197 -65 -222
-                -96 -292 -27 -63 -27 -82 3 -105 37 -28 149 -37 168 -14 17 20 37 21 45 1 3
-                -8 12 -15 19 -15 11 0 16 -26 21 -112 9 -145 24 -341 33 -441 5 -43 4 -85 0
-                -93 -4 -8 -12 -66 -17 -129 -8 -97 -7 -121 6 -155 l16 -40 912 0 912 0 18 118
-                c17 120 35 211 62 317 29 115 35 140 45 194 5 30 12 57 14 61 2 3 9 46 15 95
-                6 49 16 96 23 104 9 10 12 89 12 281 0 241 2 270 18 287 20 23 22 46 5 72 -15
-                24 6 77 77 196 102 171 183 364 200 479 4 27 22 79 40 115 41 83 51 120 70
-                255 9 60 20 117 25 127 22 39 1 231 -33 311 -19 46 -34 118 -47 233 -11 104
-                -22 162 -46 260 -15 61 -16 80 -4 162 10 74 10 118 0 221 -9 95 -9 156 -1 237
-                5 61 13 190 16 287 8 205 -2 277 -43 322 -42 45 -149 110 -357 216 -225 114
-                -293 162 -335 234 -16 29 -38 60 -49 70 -11 10 -22 38 -26 67 -4 27 -15 60
-                -26 73 -26 33 -25 99 1 136 11 16 27 46 34 68 13 36 43 101 52 111 2 2 10 -2
-                18 -8 19 -16 26 -11 62 41 15 24 38 55 50 70 18 22 21 38 19 105 -2 106 32
-                267 67 312 14 18 17 33 12 55 -4 17 -6 58 -6 90 2 57 -29 190 -49 211 -5 5 -9
-                20 -9 33 0 13 -13 36 -28 50 -61 58 -102 91 -119 96 -10 3 -26 19 -35 36 -12
-                21 -25 30 -42 30 -15 0 -27 7 -31 19 -3 10 -27 41 -53 68 -55 60 -95 73 -118
-                38z"
-								/>
-							</g>
-
-							{/* Ashley */}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(3)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M6765 6543 c-103 -44 -210 -128 -265 -208 -44 -64 -109 -273 -121
-                -390 -6 -55 -14 -118 -19 -141 -24 -105 -40 -468 -26 -575 l8 -66 -93 -45
-                c-52 -25 -114 -53 -139 -64 -75 -31 -242 -124 -291 -161 -56 -42 -69 -68 -69
-                -131 0 -26 -6 -57 -14 -68 -11 -15 -14 -45 -12 -115 2 -54 -4 -135 -13 -189
-                -20 -122 -23 -922 -3 -942 7 -7 12 -24 12 -40 0 -15 7 -52 15 -84 8 -31 17
-                -97 21 -148 4 -53 15 -112 27 -141 11 -27 23 -70 28 -95 4 -25 12 -70 17 -101
-                6 -34 7 -70 2 -90 -40 -152 -50 -204 -50 -252 0 -50 -23 -134 -53 -192 -11
-                -22 -33 -92 -49 -155 -29 -121 -79 -234 -174 -402 -31 -53 -64 -120 -75 -148
-                -17 -46 -18 -53 -4 -79 13 -27 13 -31 -8 -57 -22 -28 -22 -33 -19 -288 2 -218
-                0 -261 -12 -275 -9 -10 -19 -55 -26 -111 -6 -52 -17 -120 -25 -150 -32 -129
-                -55 -236 -55 -252 0 -10 -9 -44 -19 -75 -19 -59 -37 -165 -44 -261 l-4 -52
-                1287 0 1287 0 -3 108 c-2 66 3 141 12 197 9 50 20 128 25 175 5 47 14 121 19
-                165 6 44 14 145 20 225 13 189 19 256 25 305 3 22 5 43 5 47 0 4 12 29 27 55
-                61 110 70 138 77 239 7 98 28 182 70 284 15 36 40 99 56 140 15 41 38 102 50
-                135 23 61 59 299 66 430 1 39 6 104 10 145 5 58 1 98 -15 175 -16 79 -22 147
-                -25 325 -4 224 -22 376 -51 446 -7 17 -16 49 -19 71 -4 22 -27 68 -51 104 -55
-                80 -115 197 -115 224 0 12 -4 25 -9 31 -14 14 -106 280 -126 364 -55 231 -77
-                305 -113 376 -22 44 -51 112 -66 153 -24 67 -27 87 -26 205 3 254 -47 714 -97
-                896 -14 52 -29 115 -32 140 -8 57 -66 161 -125 227 -52 57 -155 124 -236 151
-                -37 13 -98 21 -185 25 -124 6 -133 5 -190 -20z"
-								/>
-							</g>
-
-							{/*ragini*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(4)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M2758 7581 c-108 -26 -185 -76 -320 -206 -46 -45 -128 -227 -150
-                -334 -10 -52 -22 -99 -25 -105 -4 -5 -10 -69 -14 -141 -12 -210 -26 -283 -103
-                -538 -45 -153 -71 -201 -111 -205 -17 -2 -43 -9 -60 -16 -16 -8 -57 -26 -90
-                -41 -166 -74 -262 -135 -300 -191 -11 -17 -26 -62 -34 -100 -7 -38 -21 -114
-                -31 -169 -11 -55 -26 -152 -35 -215 -8 -63 -18 -128 -21 -145 -9 -49 -35 -400
-                -41 -552 -5 -141 1 -197 38 -323 15 -49 14 -192 -1 -350 -7 -74 -14 -180 -15
-                -235 l-3 -100 86 -175 c48 -96 96 -197 106 -223 21 -55 61 -107 82 -107 22 0
-                84 -104 84 -141 0 -21 32 -94 92 -208 131 -253 146 -280 184 -338 19 -28 34
-                -55 34 -60 0 -4 24 -45 54 -90 30 -46 72 -120 95 -165 23 -46 63 -119 90 -164
-                55 -92 168 -301 292 -539 17 -33 46 -78 63 -100 47 -60 83 -117 91 -145 4 -14
-                24 -56 45 -95 21 -38 57 -106 80 -150 85 -162 151 -281 170 -305 16 -21 22
-                -23 46 -15 61 22 96 160 74 289 -10 61 -18 81 -37 94 -71 50 -73 52 -63 75 36
-                90 77 208 102 297 33 120 36 131 78 260 17 52 35 131 41 175 14 114 37 236 64
-                340 13 50 26 119 30 155 3 36 13 88 22 116 21 67 13 102 -43 199 -26 44 -57
-                101 -69 126 -13 25 -34 59 -48 75 -29 34 -51 84 -61 135 -3 19 -26 98 -51 174
-                -39 119 -47 158 -56 274 -12 164 -12 705 0 816 5 44 12 154 16 245 7 216 22
-                317 54 382 31 62 64 83 190 123 105 34 320 134 375 176 61 46 179 119 191 119
-                19 0 155 157 171 197 9 21 24 47 34 58 29 33 32 88 8 148 -31 77 -45 89 -89
-                82 -34 -6 -39 -3 -82 45 -26 29 -61 74 -78 100 -27 42 -37 49 -74 55 -24 3
-                -49 13 -56 21 -8 10 -21 13 -36 9 -27 -6 -101 23 -122 48 -18 23 -40 129 -41
-                197 0 30 -11 100 -24 155 -13 55 -27 123 -31 150 -13 91 -54 326 -59 334 -3 4
-                -16 57 -30 117 -14 60 -29 126 -34 146 -11 42 -134 273 -162 303 -10 11 -23
-                32 -29 47 -7 18 -28 36 -59 52 -27 14 -64 38 -83 53 -18 15 -47 29 -63 30
-                -158 12 -175 11 -248 -6z"
-								/>
-							</g>
-
-							{/*lizzy*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(5)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M3590 8080 c-100 -8 -118 -13 -216 -61 -73 -36 -217 -173 -245 -233
-                -10 -22 -34 -62 -53 -87 -42 -57 -54 -110 -33 -142 8 -13 47 -40 86 -61 39
-                -20 71 -44 71 -51 0 -8 16 -36 37 -62 46 -61 125 -228 148 -313 10 -36 28
-                -105 42 -155 22 -82 36 -159 78 -420 7 -49 21 -120 29 -156 9 -37 20 -109 26
-                -160 5 -52 17 -116 26 -142 14 -40 24 -52 68 -77 28 -17 62 -30 76 -30 14 -1
-                36 -7 50 -15 28 -16 86 -20 94 -6 14 21 8 179 -8 234 -24 79 -18 190 19 374 3
-                11 32 53 65 93 33 39 60 76 60 81 0 25 189 199 216 199 3 0 18 9 34 20 40 28
-                43 66 16 183 -31 130 -42 184 -56 277 -6 41 -20 98 -30 125 -70 185 -96 246
-                -126 295 -18 30 -36 67 -40 83 -6 26 -56 77 -75 77 -5 0 -43 27 -84 60 -69 54
-                -127 82 -165 78 -8 0 -58 -4 -110 -8z"
-								/>
-							</g>
-
-							{/*anish*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(6)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M5186 7794 c-21 -8 -55 -27 -75 -42 -20 -15 -45 -33 -56 -40 -92 -58
-                -114 -76 -125 -103 -7 -17 -34 -48 -59 -69 -72 -61 -84 -109 -77 -296 10 -256
-                18 -319 44 -347 13 -13 26 -37 31 -52 5 -19 17 -32 37 -39 17 -6 61 -38 98
-                -71 37 -33 79 -66 93 -73 17 -9 23 -20 20 -32 -3 -10 1 -27 8 -37 6 -10 23
-                -49 38 -88 21 -57 25 -87 25 -165 -1 -52 -4 -100 -9 -106 -5 -6 -20 -44 -34
-                -85 -20 -56 -27 -102 -32 -194 -6 -119 -6 -121 -45 -177 -25 -38 -46 -58 -58
-                -58 -22 0 -73 -63 -96 -120 -8 -19 -22 -42 -31 -52 -8 -9 -19 -38 -24 -62 -7
-                -40 -5 -52 21 -102 17 -31 30 -68 30 -83 1 -15 24 -58 58 -106 66 -92 156
-                -165 272 -222 41 -20 104 -53 140 -74 36 -21 81 -44 100 -50 19 -7 71 -34 116
-                -61 100 -59 126 -58 182 10 106 129 231 232 281 232 11 0 22 4 25 9 3 4 25 11
-                48 15 26 4 58 20 84 41 23 19 49 35 57 35 8 0 26 11 39 24 24 21 26 31 32 142
-                3 65 10 204 16 308 10 173 10 190 -6 207 -9 11 -22 19 -28 19 -22 0 -192 88
-                -210 109 -11 12 -35 31 -53 42 -18 11 -54 47 -79 80 -44 57 -92 89 -135 89
-                -12 0 -38 26 -70 70 -28 39 -55 70 -59 70 -11 0 -50 126 -50 162 0 17 9 45 19
-                62 11 17 27 58 37 91 21 74 40 105 66 105 33 0 75 28 86 57 9 25 26 114 52
-                291 5 29 16 64 24 77 9 13 16 33 16 43 0 11 9 31 21 45 26 34 18 86 -22 144
-                -16 23 -29 44 -29 48 0 4 -14 26 -31 50 -18 24 -48 77 -68 117 -36 73 -37 73
-                -121 116 -46 23 -99 57 -118 75 l-33 32 -172 2 c-128 1 -182 -2 -211 -13z"
-								/>
-							</g>
-
-							{/*anthony*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(7)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M4285 9156 c-114 -40 -267 -105 -303 -129 -39 -26 -118 -148 -137
-                -211 -7 -24 -23 -62 -34 -84 -28 -55 -27 -94 4 -130 17 -21 26 -47 31 -88 3
-                -33 13 -70 22 -84 9 -14 19 -41 23 -60 9 -43 50 -143 68 -164 8 -9 25 -22 39
-                -29 38 -18 54 -76 50 -178 -2 -66 -7 -92 -20 -106 -25 -27 -22 -51 10 -98 15
-                -23 49 -97 76 -165 26 -69 55 -140 62 -158 8 -18 14 -44 14 -59 0 -14 4 -42 9
-                -62 5 -20 15 -70 21 -111 20 -131 51 -254 71 -282 10 -15 19 -32 19 -37 0 -26
-                48 -32 259 -32 152 -1 225 3 241 11 23 12 23 12 16 194 -9 223 -20 296 -52
-                353 -21 35 -25 51 -19 80 4 22 1 63 -8 102 -9 36 -24 102 -34 146 -15 65 -17
-                98 -10 175 9 119 50 244 88 271 58 41 114 269 113 465 -1 113 -3 126 -28 175
-                -16 30 -45 74 -65 99 -20 25 -48 61 -61 80 -37 55 -60 70 -112 70 -38 0 -54 6
-                -82 30 -31 28 -43 31 -118 36 -70 4 -94 1 -153 -20z"
-								/>
-							</g>
-
-							{/*manan*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(8)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M6115 8753 c-65 -14 -246 -77 -277 -96 -40 -24 -133 -124 -165 -178
-                -32 -52 -51 -126 -57 -219 -4 -56 -13 -99 -26 -125 -24 -47 -26 -99 -4 -151
-                19 -46 98 -150 123 -164 14 -7 20 -25 23 -70 4 -50 9 -65 35 -93 17 -17 47
-                -66 68 -107 20 -41 44 -84 54 -95 36 -41 82 -125 88 -159 4 -28 -1 -51 -25
-                -99 -32 -66 -69 -231 -79 -349 -7 -77 -25 -108 -66 -108 -35 0 -64 -26 -82
-                -73 -19 -50 -8 -118 28 -177 12 -19 42 -82 67 -140 89 -204 172 -346 222 -381
-                18 -12 44 -32 58 -45 30 -28 157 -98 223 -125 l48 -19 9 26 c6 14 15 72 21
-                128 12 119 69 325 105 379 28 43 127 139 177 172 63 41 127 59 209 57 70 -2
-                78 0 89 20 15 28 5 127 -20 182 -20 45 -70 90 -141 126 -60 30 -120 78 -120
-                96 0 8 -32 49 -72 92 -39 42 -96 113 -125 157 -30 44 -70 103 -90 130 -34 49
-                -35 52 -30 122 6 79 14 99 64 158 19 22 52 78 75 125 22 47 50 95 61 108 20
-                21 22 33 20 125 -2 68 4 136 17 204 11 56 21 112 21 125 2 50 -22 130 -67 217
-                -48 95 -95 147 -142 156 -15 3 -38 12 -52 20 -81 47 -106 55 -175 54 -38 -1
-                -79 -3 -90 -6z"
-								/>
-							</g>
-
-							{/*kiran*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(9)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M7975 7711 c-11 -5 -36 -10 -56 -10 -69 -2 -99 -13 -156 -62 -32 -26
-                -74 -62 -94 -78 -76 -65 -106 -133 -129 -301 -5 -36 -7 -84 -4 -107 5 -32 1
-                -50 -15 -76 -24 -39 -27 -100 -7 -138 7 -14 16 -36 19 -50 4 -13 27 -47 52
-                -76 25 -28 45 -56 45 -62 0 -5 9 -16 20 -24 31 -22 50 -80 50 -155 l0 -69 -42
-                -12 c-23 -7 -76 -35 -116 -62 -41 -27 -92 -54 -113 -59 -22 -6 -39 -16 -39
-                -23 0 -7 17 -37 37 -67 35 -52 53 -103 75 -215 5 -27 18 -86 29 -130 10 -44
-                23 -111 28 -150 6 -38 17 -110 26 -160 8 -49 15 -130 15 -180 0 -49 7 -117 14
-                -150 8 -33 17 -89 21 -125 4 -36 20 -98 36 -138 16 -40 29 -78 29 -84 0 -22
-                49 -75 82 -88 34 -13 98 -67 98 -82 0 -5 13 -37 30 -72 32 -69 63 -96 110 -96
-                56 0 90 69 127 259 6 33 68 92 125 120 27 12 50 27 54 32 3 5 12 9 20 9 8 0
-                33 9 54 19 22 10 62 24 90 31 63 15 129 84 154 160 15 46 33 205 32 285 0 53
-                24 214 64 420 53 277 53 279 31 299 -20 18 -141 56 -179 56 -27 0 -90 41 -143
-                93 -50 48 -77 109 -85 190 -6 62 -4 73 26 140 18 39 43 83 56 97 72 76 87 105
-                99 188 6 44 4 57 -11 74 -17 18 -19 35 -16 137 4 164 -6 206 -70 287 -29 37
-                -70 84 -91 104 -53 51 -146 99 -188 98 -19 0 -65 2 -104 6 -38 3 -79 2 -90 -3z"
-								/>
-							</g>
-
-							{/*zevik*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(10)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M7068 9353 c-43 -4 -54 -10 -121 -76 -40 -40 -84 -90 -97 -112 -12
-                -22 -33 -56 -46 -75 -32 -48 -55 -145 -57 -240 -2 -65 -5 -80 -19 -83 -49 -13
-                -73 -121 -46 -210 16 -53 84 -125 126 -133 38 -8 47 -34 56 -161 5 -77 4 -83
-                -18 -100 -13 -10 -31 -34 -41 -53 -9 -19 -75 -92 -146 -163 -109 -108 -134
-                -138 -162 -200 -19 -39 -54 -97 -80 -128 -41 -51 -47 -63 -57 -137 l-12 -82
-                53 -73 c30 -39 67 -92 83 -117 16 -25 37 -54 47 -65 10 -11 47 -52 83 -92 36
-                -40 66 -80 66 -90 0 -20 71 -78 138 -112 55 -28 107 -75 121 -108 6 -16 17
-                -64 24 -108 l13 -80 65 -6 c82 -7 168 -47 268 -122 41 -32 79 -57 85 -57 26 1
-                65 49 85 105 21 61 20 93 -6 130 -7 11 -13 29 -13 40 0 12 -11 31 -24 44 -20
-                19 -24 35 -29 112 -10 134 24 265 118 464 30 63 55 124 55 137 1 21 22 54 115
-                175 16 21 52 54 80 74 31 22 51 43 53 58 4 27 -32 69 -95 109 -23 14 -52 44
-                -65 65 -13 21 -37 61 -55 88 -17 26 -35 63 -38 81 -4 18 -13 42 -21 53 -9 15
-                -10 45 -4 125 9 123 21 160 50 160 53 0 115 59 160 153 31 66 24 146 -17 189
-                -26 27 -28 34 -26 106 1 42 3 94 4 114 2 25 -7 61 -28 105 -17 38 -37 88 -45
-                113 -18 56 -74 97 -145 107 -26 3 -81 23 -121 44 -72 38 -76 39 -170 37 -54
-                -1 -118 -3 -144 -5z"
-								/>
-							</g>
-
-							{/*nakul*/}
-
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(11)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M8640 8521 c0 -5 -11 -11 -23 -15 -13 -3 -40 -19 -61 -35 -21 -17
-                -52 -35 -69 -41 -50 -16 -146 -159 -147 -217 0 -29 -16 -123 -40 -228 -5 -23
-                -5 -59 0 -85 5 -25 9 -48 10 -51 0 -4 -11 -10 -24 -13 -14 -3 -28 -16 -32 -29
-                -4 -12 -10 -24 -14 -27 -4 -3 -10 -24 -13 -48 -4 -37 -2 -46 21 -68 15 -13 35
-                -27 45 -30 9 -3 17 -9 17 -14 0 -5 40 -50 89 -100 100 -103 101 -106 106 -270
-                2 -59 9 -113 20 -144 15 -41 16 -54 6 -82 -9 -25 -9 -39 -1 -55 16 -29 -3 -73
-                -44 -101 -53 -38 -96 -84 -96 -103 0 -10 -12 -52 -26 -94 -43 -125 -22 -180
-                115 -298 85 -74 143 -99 247 -110 51 -5 54 -5 64 21 5 15 10 39 10 54 0 42 69
-                149 125 195 28 22 77 68 111 102 55 55 69 63 140 84 43 12 92 25 107 28 37 7
-                30 22 -29 59 -66 43 -160 113 -196 147 l-30 27 4 135 c3 130 4 134 31 162 15
-                16 27 32 27 36 0 4 8 16 17 27 10 11 25 39 34 62 13 34 33 57 56 64 6 1 45
-                164 50 207 5 46 4 48 -26 60 -29 11 -31 14 -31 63 0 34 5 54 13 57 22 8 34
-                103 33 242 -2 117 -4 136 -26 180 -33 66 -87 95 -176 95 -59 0 -64 2 -85 33
-                -28 40 -38 47 -66 47 -12 0 -33 11 -47 25 -21 20 -35 25 -79 25 -31 0 -61 6
-                -73 15 -21 16 -44 19 -44 6z"
-								/>
-							</g>
-
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(12)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M9360 6773 c-14 -3 -31 -9 -37 -15 -7 -6 -84 -46 -170 -90 -87 -44
-                -164 -89 -172 -101 -9 -12 -36 -42 -61 -67 -52 -51 -109 -145 -121 -199 -4
-                -20 -19 -67 -33 -106 -13 -38 -27 -94 -30 -124 -4 -29 -8 -57 -11 -61 -3 -6
-                -13 -44 -46 -195 -4 -22 -13 -89 -19 -150 -6 -60 -15 -141 -20 -180 -6 -38
-                -12 -99 -15 -134 -7 -89 -40 -157 -102 -209 -28 -23 -57 -42 -65 -42 -8 0 -18
-                -4 -24 -10 -5 -5 -55 -27 -110 -48 -86 -32 -108 -45 -151 -90 -43 -45 -51 -60
-                -57 -105 -4 -28 -13 -65 -21 -82 -63 -141 -66 -644 -6 -899 6 -22 8 -43 5 -48
-                -3 -4 0 -15 5 -25 6 -10 25 -103 42 -208 27 -158 32 -216 32 -345 0 -85 -5
-                -166 -10 -180 -6 -15 -7 -53 -2 -95 4 -38 8 -110 9 -160 0 -79 3 -94 24 -120
-                19 -24 26 -27 38 -17 13 10 14 5 6 -41 -6 -28 -11 -81 -13 -117 -2 -36 -10
-                -96 -19 -135 -8 -38 -22 -116 -30 -172 -10 -63 -25 -121 -40 -150 -13 -27 -29
-                -69 -36 -93 -7 -25 -29 -81 -50 -125 -58 -121 -100 -270 -93 -327 7 -62 -12
-                -138 -49 -189 -47 -66 -59 -112 -69 -284 -16 -274 -36 -429 -84 -650 -14 -66
-                -28 -131 -30 -145 -9 -55 -24 -157 -30 -198 l-5 -42 1274 0 1274 0 11 68 c13
-                78 31 267 36 366 2 38 8 97 14 130 6 34 15 93 22 131 6 39 15 93 19 120 5 28
-                9 89 9 137 1 48 6 99 11 114 6 15 13 78 16 138 3 61 7 117 10 125 14 42 27
-                176 29 323 2 91 7 174 13 183 5 10 48 32 95 51 48 18 101 43 118 56 29 21 31
-                26 26 68 -6 41 -82 285 -111 355 -24 56 -49 160 -53 221 -6 77 8 129 52 194
-                19 29 35 57 35 63 0 5 10 24 23 41 69 92 106 224 90 321 -7 35 -7 71 -2 89 15
-                53 10 451 -7 551 -9 50 -18 137 -20 195 -4 88 -1 120 19 199 25 97 23 165 -5
-                198 -27 34 -77 207 -78 273 0 20 -7 46 -16 59 -9 13 -18 46 -20 75 -6 73 -14
-                107 -34 136 -23 33 -75 138 -85 170 -17 57 -96 210 -130 250 -20 24 -48 64
-                -61 89 -14 25 -38 66 -54 91 -66 99 -108 202 -119 290 -18 140 -20 147 -56
-                190 -19 23 -35 52 -35 65 0 12 -7 28 -15 35 -8 7 -15 18 -15 24 0 30 -116 241
-                -159 289 -26 29 -56 66 -66 83 -26 41 -152 153 -190 169 -108 46 -151 56 -195
-                48z"
-								/>
-							</g>
-
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(13)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M9050 9559 c-97 -23 -256 -99 -304 -145 -18 -18 -40 -47 -49 -66 -9
-                -19 -26 -43 -38 -54 -39 -35 -96 -166 -119 -274 -12 -56 -10 -121 9 -220 22
-                -120 39 -154 86 -171 32 -12 35 -16 35 -54 0 -60 16 -75 80 -80 91 -7 154 -34
-                192 -83 26 -34 38 -42 65 -42 46 0 134 -20 159 -37 46 -30 63 -98 67 -264 3
-                -129 0 -163 -15 -208 -22 -67 -24 -120 -3 -127 39 -15 -3 -251 -51 -289 -7 -5
-                -31 -45 -54 -89 -22 -43 -51 -92 -64 -110 -20 -25 -25 -48 -31 -127 -9 -115 1
-                -150 53 -197 153 -138 244 -192 322 -192 30 0 52 6 60 15 8 9 13 64 15 162 3
-                166 12 205 55 223 16 7 35 22 43 34 8 11 43 35 78 53 60 30 273 100 364 119
-                42 10 41 8 62 113 2 13 21 40 41 60 55 53 72 82 72 121 0 40 -34 120 -50 120
-                -6 0 -35 11 -64 24 -29 13 -95 38 -146 56 -52 17 -120 46 -151 66 -31 19 -76
-                41 -99 49 -47 16 -213 104 -271 142 -35 23 -36 26 -47 116 -20 166 14 301 85
-                335 29 14 42 31 69 89 18 39 38 98 45 130 7 32 19 72 28 88 12 24 15 67 15
-                210 l1 180 -32 55 c-41 70 -85 116 -127 134 -18 7 -60 41 -93 75 -33 33 -72
-                65 -87 71 -40 15 -110 11 -206 -11z"
-								/>
-								<path
-									d="M8195 8005 c-47 -23 -112 -43 -195 -60 -143 -29 -248 -61 -280 -85
-                l-22 -16 39 -38 c21 -21 63 -50 93 -65 52 -25 63 -26 219 -26 l164 0 11 45 c8
-                33 18 48 39 58 27 13 27 13 27 118 0 77 -3 104 -12 104 -7 -1 -44 -16 -83 -35z"
-								/>
-							</g>
-
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(14)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M10305 7661 c-27 -4 -63 -15 -80 -26 -52 -34 -166 -138 -180 -165
-                -13 -26 -29 -97 -45 -204 -5 -32 -16 -67 -26 -77 -13 -14 -19 -51 -27 -146
-                l-10 -128 51 -101 c32 -64 63 -111 83 -127 25 -19 37 -41 52 -93 28 -101 32
-                -191 10 -231 -61 -108 -107 -173 -138 -198 -43 -32 -42 -49 5 -118 40 -59 48
-                -84 64 -191 15 -98 39 -155 115 -276 22 -36 48 -78 57 -94 9 -16 34 -52 55
-                -79 44 -55 108 -177 150 -286 15 -40 46 -102 68 -138 30 -47 43 -79 47 -121
-                11 -95 18 -105 62 -97 20 4 55 15 77 24 22 10 66 28 98 41 48 19 70 37 131
-                106 94 108 102 133 87 286 -22 222 -19 236 73 473 20 50 35 100 36 112 0 24
-                -55 93 -74 93 -7 0 -21 9 -31 20 -10 11 -23 20 -29 20 -47 2 -166 143 -166
-                197 0 18 -5 52 -11 76 -17 61 10 178 55 241 18 26 41 76 51 112 15 54 21 64
-                40 64 12 0 29 8 37 18 37 41 88 179 88 236 0 28 24 73 50 93 33 25 16 125 -51
-                306 -16 42 -32 104 -36 137 -8 84 -43 120 -138 144 -38 9 -108 29 -155 43
-                -199 60 -213 63 -305 62 -49 -1 -112 -5 -140 -8z"
-								/>
-							</g>
-
-							{/*rachelle*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(15)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M11660 6664 c-19 -9 -54 -26 -78 -37 -57 -27 -225 -209 -280 -302
-                -45 -76 -135 -297 -146 -358 -10 -54 -51 -172 -106 -309 -73 -177 -75 -194
-                -60 -344 17 -172 17 -233 -2 -269 -29 -53 -160 -179 -208 -199 -156 -67 -191
-                -87 -201 -114 -13 -32 -5 -143 13 -174 7 -13 13 -34 14 -48 1 -14 7 -61 14
-                -105 6 -44 10 -120 7 -170 -2 -49 0 -121 5 -160 5 -38 11 -86 13 -105 2 -19 8
-                -53 13 -75 31 -123 42 -346 21 -446 -6 -30 -12 -133 -13 -229 l-1 -175 -47
-                -97 c-27 -53 -48 -101 -48 -106 0 -5 -8 -16 -17 -23 -29 -24 -96 -178 -90
-                -208 10 -52 60 -207 83 -261 35 -82 121 -330 129 -375 2 -11 11 -49 20 -85 14
-                -56 15 -118 11 -470 -8 -656 -30 -841 -142 -1193 -19 -59 -37 -135 -41 -167
-                l-6 -60 1213 0 1213 0 -7 53 c-8 56 -8 495 -1 507 3 4 7 95 11 201 3 107 10
-                206 16 221 11 29 14 878 3 988 -3 36 -10 99 -14 140 -7 62 -5 86 10 135 10 33
-                19 71 19 84 0 29 12 70 50 171 34 88 63 183 80 260 7 30 20 69 28 85 13 25 16
-                72 16 270 1 161 -3 255 -12 285 -6 25 -14 68 -16 95 -8 95 -46 325 -56 345 -5
-                10 -10 30 -10 44 0 38 -29 142 -56 199 -13 29 -24 62 -24 74 0 12 -4 25 -10
-                28 -5 3 -10 27 -10 53 0 33 -9 65 -30 105 -16 32 -30 69 -30 82 0 13 -4 27
-                -10 30 -5 3 -10 21 -10 38 0 18 -8 46 -19 63 -10 17 -22 41 -26 55 -13 42 -99
-                181 -120 192 -11 6 -49 24 -84 39 -35 15 -70 36 -78 48 -8 11 -22 20 -31 20
-                -20 0 -74 84 -75 115 0 11 5 67 11 125 12 108 19 533 9 560 -3 8 -10 52 -16
-                97 -7 45 -23 119 -36 165 -14 46 -25 94 -25 107 0 13 -14 44 -31 70 -18 25
-                -46 78 -64 116 -43 95 -94 172 -159 243 -105 112 -146 129 -411 168 -16 2 -46
-                -3 -65 -12z"
-								/>
-							</g>
-
-							{/*shub*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(16)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M10715 8900 c-16 -11 -38 -20 -48 -20 -10 0 -40 -11 -67 -25 -27 -14
-                -62 -25 -77 -25 -15 0 -60 -16 -99 -35 -74 -37 -73 -35 -124 -150 -27 -60 -30
-                -189 -6 -245 8 -20 18 -68 21 -108 l8 -72 -37 -40 c-43 -47 -46 -77 -16 -168
-                24 -74 54 -127 92 -166 26 -26 58 -107 58 -147 0 -31 48 -59 101 -59 36 0 66
-                -10 125 -40 43 -22 91 -40 107 -40 43 0 90 -26 145 -81 50 -49 107 -79 121
-                -63 5 5 17 32 27 59 10 28 43 78 75 115 37 43 66 89 84 134 27 70 65 272 70
-                381 5 85 40 234 65 266 23 33 26 82 6 121 -32 62 -112 159 -136 165 -29 7
-                -103 63 -194 144 -75 68 -89 76 -175 100 -82 24 -89 24 -126 -1z"
-								/>
-								<path
-									d="M9920 7329 c-52 -21 -122 -45 -155 -55 -33 -10 -80 -26 -103 -36 -53
-                -22 -148 -101 -168 -140 -19 -36 -38 -233 -30 -301 l7 -52 94 -58 c94 -58 154
-                -115 203 -192 14 -22 39 -62 57 -90 17 -27 58 -94 90 -147 32 -54 60 -98 64
-                -98 3 0 29 28 56 62 28 34 64 76 81 92 29 29 32 38 38 118 6 68 3 99 -10 140
-                -26 82 -38 103 -62 106 -32 5 -98 110 -123 197 -12 40 10 293 27 322 12 19 39
-                163 32 167 -2 1 -46 -15 -98 -35z"
-								/>
-								<path
-									d="M11114 7203 c-8 -9 -12 -23 -9 -32 3 -8 9 -59 12 -113 l6 -98 -29 -6
-                c-28 -5 -30 -8 -30 -57 0 -51 -28 -146 -62 -217 -12 -25 -25 -36 -43 -38 -22
-                -3 -28 -10 -33 -40 -4 -20 -19 -60 -34 -88 -95 -180 -104 -202 -98 -246 3 -24
-                9 -75 14 -115 13 -108 23 -119 222 -258 36 -25 70 -45 75 -45 17 0 55 86 55
-                123 0 49 19 106 55 167 18 30 58 102 90 160 35 63 82 131 121 173 35 38 64 73
-                64 77 0 14 111 92 166 116 78 34 89 64 63 164 -25 96 -42 117 -122 160 -36 19
-                -70 44 -75 55 -9 20 -183 115 -210 115 -7 0 -31 9 -53 20 -60 31 -126 41 -145
-                23z"
-								/>
-							</g>
-
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(17)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M12463 8600 c-53 -4 -81 -13 -110 -32 -21 -14 -48 -29 -60 -33 -16
-                -4 -40 -43 -90 -143 -37 -75 -80 -155 -95 -177 l-27 -40 14 -185 c7 -102 17
-                -196 22 -210 14 -42 91 -136 147 -179 75 -56 101 -111 109 -228 6 -79 4 -97
-                -12 -125 -10 -18 -26 -62 -35 -98 -14 -56 -22 -69 -54 -89 -59 -39 -111 -65
-                -232 -117 -92 -38 -125 -58 -169 -101 -54 -52 -54 -53 -35 -74 10 -12 36 -30
-                56 -40 24 -12 45 -34 58 -59 11 -22 25 -40 30 -40 6 0 44 -32 85 -71 77 -73
-                175 -209 204 -283 9 -22 28 -61 41 -85 50 -88 54 -97 61 -136 4 -22 16 -74 27
-                -115 44 -163 63 -510 42 -768 l-13 -161 34 -67 c19 -37 39 -69 46 -71 23 -8
-                43 45 54 143 24 226 30 288 42 479 9 140 18 209 29 229 25 47 118 106 343 219
-                116 58 226 112 245 121 19 9 67 43 105 77 39 33 87 69 108 80 41 22 49 36 72
-                135 23 101 20 163 -11 205 -14 19 -34 53 -44 76 -10 23 -29 49 -42 57 -24 16
-                -45 71 -114 299 -21 71 -31 90 -50 97 -33 13 -161 147 -174 184 -7 17 -18 46
-                -26 64 -37 85 -1 331 59 414 17 23 19 37 13 97 -4 51 -2 81 8 108 23 60 38
-                182 30 253 -4 39 -19 90 -36 127 -30 63 -32 64 -168 152 -22 14 -132 50 -225
-                72 -44 11 -93 26 -108 34 -30 16 -39 16 -154 5z"
-								/>
-							</g>
-
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(18)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M11790 9099 c-19 -5 -66 -7 -105 -4 l-70 6 -145 -73 c-102 -51 -149
-                -81 -160 -100 -8 -14 -27 -46 -42 -71 -31 -51 -47 -111 -48 -177 0 -42 6 -53
-                65 -124 l64 -77 -4 -76 c-3 -56 0 -83 11 -105 9 -17 17 -45 19 -62 2 -17 13
-                -68 24 -114 25 -100 29 -266 7 -297 -7 -11 -17 -31 -21 -45 -24 -82 -100 -139
-                -186 -140 -41 0 -49 -5 -92 -49 -93 -97 -109 -186 -56 -302 34 -74 40 -78 156
-                -114 45 -14 132 -52 194 -85 62 -33 117 -60 122 -60 15 0 115 -60 119 -70 2
-                -6 13 -12 26 -15 36 -7 40 -13 35 -53 -5 -39 13 -148 25 -156 6 -4 145 82 163
-                102 11 10 52 156 115 406 31 121 74 270 95 333 44 123 49 185 21 256 -12 31
-                -13 67 -8 189 7 140 10 155 39 217 17 36 43 84 57 106 32 49 50 90 50 113 0
-                10 9 35 21 57 32 60 23 129 -30 235 -24 47 -53 96 -66 110 -12 14 -40 51 -60
-                84 -46 73 -100 133 -136 152 -31 16 -143 17 -199 3z"
-								/>
-							</g>
-
-							{/*meghna*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(19)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M14120 6901 c-41 -20 -93 -48 -115 -63 -52 -35 -145 -131 -145 -151
-                0 -8 -13 -44 -30 -79 -16 -34 -30 -73 -30 -85 0 -13 -17 -49 -37 -80 -50 -79
-                -75 -148 -77 -211 -1 -42 3 -53 17 -58 23 -7 22 -41 -4 -83 -16 -26 -20 -45
-                -16 -75 3 -23 1 -63 -5 -90 -8 -36 -7 -54 2 -71 10 -19 9 -32 -4 -71 -9 -26
-                -22 -54 -29 -63 -8 -9 -20 -45 -26 -81 -7 -36 -19 -83 -26 -105 -27 -76 -41
-                -160 -35 -213 5 -46 3 -53 -15 -58 -11 -4 -51 -21 -90 -39 -38 -18 -78 -35
-                -87 -38 -20 -7 -44 -57 -83 -172 -62 -184 -64 -199 -63 -444 0 -149 -3 -234
-                -10 -248 -20 -37 -35 -327 -22 -428 14 -108 9 -577 -8 -709 -7 -49 -21 -141
-                -33 -205 -11 -64 -25 -172 -30 -241 -4 -69 -13 -156 -20 -193 -15 -90 -6 -156
-                42 -302 37 -115 60 -217 78 -350 5 -33 25 -124 45 -202 33 -131 35 -144 22
-                -175 -39 -92 -49 -204 -52 -548 l-2 -335 -26 -59 c-40 -90 -66 -236 -66 -368
-                0 -98 3 -120 23 -158 l22 -45 1143 -3 1143 -2 -6 161 c-4 129 -2 168 10 197 9
-                19 27 90 41 156 l26 121 -2 480 c-1 263 -4 484 -8 490 -4 5 -10 172 -13 370
-                -5 330 -8 368 -29 455 -12 52 -25 111 -27 130 -3 19 -9 40 -13 45 -11 15 -30
-                110 -30 153 0 39 19 137 45 237 42 156 79 420 95 680 6 94 18 222 26 285 21
-                162 30 605 15 755 -21 208 -39 293 -80 380 -22 44 -42 91 -46 105 -4 14 -29
-                70 -55 126 -44 92 -53 105 -106 142 -33 23 -67 42 -77 42 -17 0 -113 25 -194
-                51 -39 12 -133 101 -153 144 -9 20 -14 78 -16 170 -1 77 -6 158 -12 180 -6 22
-                -11 71 -12 109 0 39 -4 74 -7 80 -4 5 -8 60 -9 120 -2 90 -7 119 -23 151 -12
-                21 -21 52 -21 67 0 15 -6 45 -14 65 -8 21 -17 50 -20 64 -3 16 -29 46 -63 74
-                -32 27 -65 56 -74 65 -8 10 -39 30 -67 44 -46 24 -59 26 -122 20 -55 -5 -74
-                -4 -88 8 -11 10 -39 15 -82 15 -55 0 -77 -5 -140 -36z"
-								/>
-							</g>
-
-							{/*caden*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(20)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M14426 8959 c-21 -5 -50 -17 -65 -28 -14 -10 -41 -23 -60 -29 -31
-                -11 -83 -54 -153 -127 -73 -76 -93 -193 -63 -370 9 -55 18 -134 20 -175 3 -78
-                30 -167 61 -201 9 -11 30 -19 45 -19 25 0 30 -5 44 -52 19 -64 19 -143 1 -196
-                -25 -71 -29 -141 -11 -242 15 -91 17 -97 60 -137 54 -51 56 -72 19 -194 -21
-                -68 -25 -99 -21 -162 3 -69 7 -81 33 -108 26 -27 33 -30 69 -24 85 14 119 10
-                186 -22 56 -26 73 -41 111 -94 25 -35 48 -77 51 -94 3 -16 10 -59 17 -95 6
-                -36 18 -76 27 -89 8 -13 17 -49 19 -80 2 -31 9 -90 16 -131 6 -41 10 -95 10
-                -120 -2 -50 24 -144 44 -161 10 -8 37 -8 100 1 90 11 133 27 171 62 16 15 29
-                19 49 14 29 -8 66 14 155 87 45 37 46 40 53 108 3 39 13 83 21 99 28 54 9 133
-                -68 289 -7 14 -25 32 -42 41 -60 33 -70 67 -71 241 -1 86 -4 161 -8 168 -30
-                48 -3 264 44 347 28 49 28 53 11 68 -10 9 -46 28 -82 42 -151 61 -189 84 -221
-                129 -18 25 -35 45 -39 45 -13 0 -39 93 -39 141 0 100 18 147 76 204 l54 52 -1
-                94 c0 72 -5 101 -19 126 -13 22 -20 63 -25 135 -9 120 -32 191 -85 263 -57 76
-                -88 101 -180 143 -131 61 -215 74 -314 51z"
-								/>
-							</g>
-
-							{/*brandon*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(21)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M15670 7733 c-107 -18 -264 -111 -350 -206 -68 -76 -77 -92 -98 -191
-                -14 -64 -16 -97 -9 -156 4 -41 10 -138 12 -215 3 -77 7 -155 10 -173 5 -29 65
-                -103 91 -113 6 -2 30 -44 53 -93 39 -80 42 -94 38 -145 -7 -74 -34 -188 -53
-                -220 -22 -38 -117 -101 -151 -101 -15 0 -42 -9 -59 -19 -18 -11 -42 -21 -55
-                -23 -16 -2 -30 -15 -41 -38 -23 -47 -22 -83 2 -105 36 -33 62 -123 76 -269 7
-                -77 18 -144 24 -150 5 -5 47 -29 92 -51 87 -44 130 -89 144 -150 4 -16 10 -37
-                15 -47 5 -10 13 -26 17 -35 5 -10 24 -65 42 -123 18 -58 43 -118 55 -135 40
-                -53 63 -203 70 -450 7 -241 -1 -373 -39 -652 -14 -98 -26 -218 -27 -268 -4
-                -177 -23 -317 -81 -570 -69 -301 -69 -280 -8 -513 29 -110 31 -125 17 -140
-                -40 -46 -50 -109 -53 -352 -3 -234 -13 -380 -33 -475 -5 -27 -15 -84 -21 -125
-                -19 -122 -31 -181 -50 -255 -21 -80 -44 -209 -60 -340 -13 -104 -23 -527 -17
-                -750 l2 -80 198 -3 198 -2 -7 37 c-4 21 -10 45 -15 54 -4 8 -11 39 -15 68 -7
-                56 2 101 41 186 30 67 43 150 44 270 0 55 5 132 11 170 13 95 13 341 -1 390
-                -16 55 -17 267 -2 340 7 33 19 98 27 145 9 47 26 139 40 204 14 66 30 165 36
-                220 17 156 19 166 36 166 29 0 48 70 56 210 4 74 12 189 17 255 6 66 15 210
-                22 320 6 110 14 265 19 345 4 80 13 246 20 370 11 221 29 411 49 520 6 30 13
-                105 16 167 2 62 13 166 24 230 20 121 41 334 41 411 0 54 19 74 104 102 37 12
-                70 28 73 36 3 8 10 14 17 14 6 0 37 16 68 35 32 19 79 41 105 49 92 29 184 65
-                209 81 16 11 35 14 57 10 36 -7 139 22 162 46 8 8 26 61 41 119 14 58 30 113
-                35 122 7 13 1 31 -25 70 -19 29 -49 91 -67 138 -17 47 -38 92 -46 101 -7 9
-                -73 40 -146 69 -72 29 -139 59 -148 66 -8 8 -25 14 -37 14 -13 0 -62 20 -110
-                44 -74 37 -92 51 -120 94 -17 27 -32 54 -32 59 0 6 -20 41 -45 79 -43 65 -55
-                109 -36 129 11 13 31 97 31 132 0 17 8 33 20 41 14 8 20 23 20 48 0 39 15 104
-                33 141 13 28 4 132 -16 168 -11 21 -12 38 -5 69 6 27 6 85 -2 166 -10 116 -14
-                129 -45 176 -36 55 -133 134 -218 177 -81 41 -225 71 -287 60z"
-								/>
-							</g>
-
-							{/*benny*/}
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(22)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M17165 6940 c-22 -4 -53 -13 -70 -19 -16 -6 -60 -20 -97 -31 -51 -16
-                -75 -31 -102 -61 -20 -21 -36 -45 -36 -51 0 -7 -25 -65 -56 -130 -53 -110 -56
-                -122 -56 -192 0 -40 6 -93 12 -116 6 -23 10 -74 9 -114 -4 -145 72 -396 146
-                -484 22 -27 24 -34 14 -53 -6 -12 -19 -50 -28 -83 -15 -57 -20 -63 -77 -102
-                -34 -23 -76 -45 -95 -49 -19 -4 -46 -16 -61 -26 -14 -11 -31 -19 -37 -19 -6 0
-                -19 -4 -29 -9 -29 -16 -105 -48 -157 -67 -27 -10 -68 -29 -89 -42 -22 -14 -55
-                -31 -73 -38 -18 -8 -33 -18 -33 -23 0 -5 -31 -22 -70 -37 -116 -45 -111 -33
-                -129 -299 -6 -83 -15 -164 -20 -180 -16 -55 -34 -190 -37 -285 -2 -90 -10
-                -162 -33 -310 -18 -110 -31 -249 -36 -375 -8 -199 -17 -329 -23 -340 -4 -5
-                -10 -100 -14 -210 -4 -110 -13 -281 -18 -380 -6 -99 -13 -250 -15 -335 -3 -85
-                -10 -168 -15 -184 -6 -16 -10 -50 -10 -75 0 -47 39 -255 64 -345 36 -125 59
-                -247 60 -321 3 -90 31 -245 54 -290 16 -33 35 -114 57 -255 13 -80 38 -171 96
-                -354 5 -15 16 -85 25 -155 8 -69 27 -168 40 -219 14 -51 24 -109 23 -130 -1
-                -20 -2 -63 -1 -95 l2 -57 1058 2 c705 2 1056 6 1055 13 -8 51 -28 258 -31 330
-                -2 50 -6 146 -10 214 -4 68 -3 203 1 300 l8 176 32 28 c17 15 70 40 116 55 52
-                16 93 37 107 52 13 14 37 40 54 58 l30 33 -4 132 c-3 93 -11 154 -26 207 -41
-                146 -43 163 -19 183 12 9 27 17 35 17 21 0 34 34 34 92 0 71 28 362 41 418 6
-                25 17 52 26 62 19 21 10 87 -17 120 -16 20 -16 26 -4 50 11 21 14 100 14 400
-                0 205 -1 402 -2 438 0 36 0 119 1 185 2 107 -7 300 -26 515 -3 41 -12 84 -19
-                95 -6 11 -15 45 -19 75 -20 173 -49 339 -76 445 -23 89 -32 156 -38 260 -9
-                164 -23 206 -73 224 -18 7 -46 19 -61 27 -16 8 -33 14 -37 14 -5 0 -89 39
-                -187 86 -166 80 -360 164 -380 164 -5 0 -40 33 -78 73 -61 63 -75 86 -108 170
-                l-39 97 23 75 c19 67 26 77 56 92 47 22 68 52 92 133 27 88 21 167 -15 201
-                -13 12 -24 32 -24 44 0 12 -7 64 -16 116 -17 100 -51 176 -126 276 -48 66
-                -166 144 -248 165 -45 12 -111 28 -130 32 -8 2 -33 0 -55 -4z"
-								/>
-							</g>
-
-							<g
-								transform="translate(0.000000,1147.000000) scale(0.100000,-0.100000)"
-								fill="#000000"
-								stroke="none"
-								onMouseOver={() => setHoverID(23)}
-								onMouseOut={() => setHoverID(0)}
-								fillOpacity={0}
-							>
-								<path
-									d="M13730 7750 c-30 -32 -63 -59 -72 -59 -9 -1 -20 -5 -23 -11 -3 -5
-                -20 -10 -36 -10 -16 0 -39 -8 -50 -19 -17 -15 -37 -19 -119 -19 l-99 -1 -56
-                -55 -55 -56 0 -120 c0 -107 2 -123 20 -142 16 -17 20 -36 20 -90 0 -37 6 -85
-                14 -105 14 -40 28 -113 47 -251 11 -81 12 -83 56 -119 25 -20 59 -57 76 -82
-                30 -44 32 -52 35 -156 4 -98 1 -116 -18 -158 -44 -93 -286 -256 -346 -233 -10
-                4 -26 -4 -44 -24 -15 -16 -32 -30 -36 -30 -4 0 -19 -11 -33 -24 -33 -30 -318
-                -176 -393 -200 -20 -6 -24 -46 -19 -172 2 -44 -1 -74 -8 -78 -7 -5 -11 -44
-                -11 -102 0 -53 -4 -103 -9 -112 -13 -25 -34 -240 -34 -358 -1 -108 2 -117 53
-                -141 14 -6 40 -15 58 -18 22 -5 52 -26 88 -61 29 -30 58 -54 63 -54 5 0 33
-                -24 62 -52 l54 -53 139 0 139 0 -2 90 c-1 50 3 113 9 140 6 28 15 85 20 128
-                15 130 56 188 170 239 36 16 76 35 90 43 14 8 41 23 61 34 25 14 42 33 53 62
-                25 61 46 184 46 265 0 56 6 84 26 128 25 54 25 60 20 213 -3 87 -8 196 -12
-                243 -4 64 -2 87 8 95 7 5 28 40 47 78 19 37 37 67 40 67 9 0 27 48 42 110 7
-                30 21 70 31 88 10 18 18 41 18 52 0 22 144 170 165 170 8 0 15 4 15 8 0 11
-                117 72 137 72 8 0 32 18 53 40 21 22 44 40 50 40 27 0 40 30 40 89 0 33 5 63
-                10 66 6 3 10 21 10 40 0 19 5 37 10 40 6 3 10 35 10 71 0 61 -2 66 -40 105
-                -34 35 -40 48 -40 85 0 23 -4 46 -10 49 -5 3 -10 14 -10 24 0 21 -27 78 -41
-                87 -5 3 -16 0 -24 -6 -17 -14 -29 -7 -77 43 -14 15 -35 27 -46 27 -11 0 -43
-                23 -71 50 l-51 50 -83 -1 -82 0 -55 -59z"
-								/>
-								<path
-									d="M14886 5982 c-3 -6 0 -30 9 -54 18 -52 18 -58 4 -58 -16 0 -33 -20
-                -53 -64 -14 -30 -17 -54 -13 -102 4 -61 6 -63 72 -129 65 -65 69 -67 117 -67
-                27 0 55 5 61 11 6 6 21 11 33 11 20 0 23 7 30 56 14 112 -9 284 -38 284 -4 0
-                -14 14 -23 30 -9 17 -33 41 -54 55 -41 28 -134 45 -145 27z"
-								/>
+							<g>
+								{/*vivek */}
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(1)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M4240 6318 c-30 -12 -60 -28 -66 -37 -7 -9 -26 -32 -43 -51 -38 -44
+							-43 -68 -41 -214 1 -79 9 -105 50 -156 15 -18 22 -47 26 -95 6 -66 4 -72 -26
+							-118 -38 -56 -51 -64 -205 -116 -65 -22 -129 -50 -142 -63 -32 -30 -46 -87
+							-48 -198 0 -68 -7 -116 -24 -170 -24 -78 -48 -110 -85 -110 -11 0 -27 -4 -34
+							-9 -28 -17 13 -52 131 -113 143 -73 215 -128 224 -169 3 -16 8 -29 12 -29 16
+							1 43 56 51 106 14 84 17 90 71 129 28 20 62 56 77 80 22 37 41 52 112 87 74
+							36 96 42 168 46 75 4 82 6 83 26 3 61 -9 126 -25 126 -20 0 -43 31 -60 80 -21
+							61 -13 180 17 237 19 37 20 47 9 76 -24 65 -4 177 32 177 8 0 26 14 41 32 27
+							32 27 32 22 163 -7 180 -11 194 -80 254 -45 38 -53 41 -107 41 -32 0 -64 2
+							-72 4 -7 2 -38 -5 -68 -16z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(2)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M7621 6336 c-7 -8 -32 -25 -56 -36 -75 -36 -120 -90 -140 -167 -18
+						-68 -50 -234 -64 -328 -4 -27 -12 -60 -19 -72 -7 -12 -11 -32 -10 -45 1 -13
+						-8 -52 -20 -88 -40 -123 -46 -165 -33 -249 21 -132 10 -119 104 -124 111 -7
+						143 -15 191 -49 117 -83 115 -82 142 -69 14 6 33 11 44 11 15 0 20 10 25 58 4
+						31 13 98 20 147 8 50 16 135 20 189 6 112 24 163 76 218 53 56 83 72 108 56
+						32 -20 43 0 26 47 -8 22 -14 59 -15 82 0 23 -4 44 -9 47 -4 3 -11 28 -15 55
+						-7 55 -23 91 -74 171 -36 56 -78 99 -98 100 -6 0 -19 9 -29 20 -10 11 -26 20
+						-36 20 -10 0 -21 5 -24 10 -4 6 -10 8 -14 6 -19 -12 -75 -16 -81 -6 -5 7 -11
+						6 -19 -4z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(3)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M4495 5137 c-16 -5 -59 -13 -95 -18 -156 -21 -220 -44 -220 -79 0
+						-12 -5 -17 -13 -14 -19 7 -33 -14 -41 -58 -5 -29 -16 -43 -49 -65 -31 -21 -46
+						-41 -57 -73 -9 -25 -26 -67 -38 -93 -12 -27 -22 -57 -22 -67 0 -11 -9 -24 -19
+						-30 -23 -12 -43 -67 -43 -116 0 -19 -3 -34 -8 -34 -4 0 -10 -34 -12 -77 -4
+						-51 -10 -80 -20 -87 -18 -13 -38 -50 -44 -79 -2 -12 -13 -29 -23 -37 -16 -12
+						-20 -27 -19 -70 1 -42 -7 -71 -31 -123 -17 -38 -38 -95 -46 -128 -9 -32 -24
+						-73 -34 -91 -10 -18 -26 -60 -36 -93 -9 -33 -23 -78 -30 -100 -22 -66 -45
+						-194 -45 -251 0 -34 7 -69 19 -92 19 -37 129 -142 199 -191 19 -13 42 -37 52
+						-53 19 -32 16 -52 -31 -207 -17 -57 -18 -67 -5 -86 8 -12 28 -27 44 -34 l29
+						-12 6 -135 7 -135 65 -132 c62 -125 66 -140 81 -252 9 -66 22 -142 30 -170 15
+						-60 30 -316 24 -435 -2 -47 -4 -114 -3 -150 1 -36 2 -123 3 -195 1 -71 7 -161
+						15 -200 8 -38 19 -112 25 -164 9 -67 24 -123 52 -192 l39 -98 -26 -47 c-14
+						-25 -37 -63 -51 -83 -32 -47 -31 -82 4 -119 52 -55 151 -70 220 -33 34 18 41
+						42 40 127 -2 108 10 205 35 294 19 69 21 104 24 435 2 198 4 374 5 390 2 47
+						26 214 38 275 7 33 9 83 5 125 -18 188 -6 596 16 537 11 -28 14 -146 5 -161
+						-4 -6 -3 -18 4 -26 14 -17 20 -102 26 -364 2 -112 8 -209 13 -215 11 -13 32
+						-113 38 -176 2 -25 8 -182 13 -350 8 -261 12 -318 31 -395 29 -119 36 -251 15
+						-312 -24 -71 -21 -110 13 -144 25 -25 37 -29 83 -29 78 0 139 33 156 84 12 36
+						10 43 -16 95 -19 37 -31 79 -36 123 -6 59 -2 81 29 183 19 64 35 129 35 144 0
+						21 12 38 51 71 60 51 60 57 9 188 l-33 81 22 58 c13 35 21 78 20 108 -1 28 4
+						102 10 165 32 338 33 360 11 451 -15 64 -20 118 -20 226 0 157 15 248 54 332
+						24 52 25 63 26 250 0 108 4 233 9 278 9 86 16 101 93 194 21 26 38 53 38 62 0
+						8 7 20 16 28 26 21 54 86 54 123 0 46 -17 163 -36 246 -8 36 -14 75 -14 86 0
+						36 -40 156 -64 194 -13 19 -33 64 -45 100 -12 36 -26 74 -31 85 -4 11 -14 36
+						-21 55 -28 75 -62 109 -185 190 -35 23 -96 110 -105 150 -16 72 -14 168 4 188
+						22 25 22 58 -3 92 -17 24 -18 30 -5 46 7 11 10 23 5 29 -11 13 -60 159 -60
+						179 0 22 -47 51 -115 70 -33 10 -64 23 -70 30 -7 9 -18 10 -40 3z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(4)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M4635 5797 c-11 -7 -26 -20 -33 -29 -7 -10 -22 -18 -32 -18 -22 0
+							-100 -77 -100 -99 0 -8 -8 -23 -17 -33 -11 -12 -17 -37 -17 -78 -1 -33 -5 -60
+							-9 -60 -11 0 0 -101 12 -113 6 -6 11 -20 11 -31 0 -25 28 -61 54 -70 10 -3 17
+							-9 14 -11 -2 -3 1 -31 7 -62 l12 -58 73 -27 c40 -15 80 -34 89 -43 14 -13 32
+							-69 58 -175 3 -14 10 -28 15 -31 5 -3 4 -17 -3 -32 -10 -21 -8 -30 8 -54 34
+							-48 34 -51 11 -72 -17 -16 -22 -33 -23 -73 -2 -81 15 -180 35 -208 10 -14 64
+							-56 121 -95 64 -43 111 -83 123 -103 10 -18 36 -81 56 -140 38 -109 58 -132
+							79 -93 6 11 11 48 11 83 -1 35 4 99 9 143 5 44 10 132 10 195 1 85 8 146 28
+							236 14 66 23 131 20 145 -7 27 -122 96 -247 149 -77 32 -144 86 -161 129 -10
+							24 -8 28 40 116 21 39 74 81 97 77 17 -3 40 60 43 118 1 30 4 63 7 72 3 10 -4
+							38 -15 64 -12 26 -21 55 -21 65 0 10 -9 23 -20 29 -11 6 -20 15 -20 21 0 6 -9
+							23 -20 39 -11 15 -17 30 -14 33 14 14 -72 76 -131 94 -50 16 -134 16 -160 0z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(5)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M7327 5272 c-13 -12 -17 -13 -17 -3 0 11 -3 11 -15 1 -8 -7 -15 -18
+					-15 -26 0 -7 -19 -26 -42 -43 -24 -16 -57 -44 -75 -63 -35 -37 -103 -135 -103
+					-149 0 -5 -11 -16 -24 -24 -13 -9 -32 -37 -41 -63 -19 -49 -73 -153 -84 -162
+					-18 -14 -51 -96 -51 -127 0 -19 -4 -32 -9 -29 -22 14 -38 -6 -36 -45 1 -23 -3
+					-43 -11 -50 -8 -6 -14 -8 -14 -5 0 13 -25 -18 -37 -45 -6 -15 -9 -36 -6 -48 4
+					-15 1 -21 -10 -21 -9 0 -21 -9 -27 -20 -6 -11 -18 -20 -26 -20 -8 0 -13 -4
+					-10 -9 3 -5 2 -29 -3 -54 -6 -32 -4 -54 5 -77 8 -18 14 -41 14 -51 0 -11 4
+					-19 9 -19 9 0 17 -50 25 -147 2 -24 8 -48 14 -56 6 -7 20 -46 31 -87 12 -41
+					25 -76 31 -78 15 -5 70 -107 70 -131 0 -11 4 -21 10 -21 5 0 7 -7 4 -15 -4
+					-10 0 -15 11 -15 9 0 13 -4 10 -10 -3 -5 -2 -10 4 -10 5 0 14 7 19 16 15 26
+					47 1 73 -56 12 -27 26 -50 30 -50 4 0 10 -8 13 -17 3 -10 25 -26 48 -36 25
+					-10 83 -56 136 -106 89 -84 92 -89 92 -131 0 -43 -23 -121 -43 -148 -6 -7 -18
+					-10 -31 -6 -12 4 -35 8 -52 10 -16 1 -52 16 -79 33 -30 19 -62 31 -82 31 -40
+					0 -80 19 -108 50 -11 12 -40 36 -65 53 -69 46 -119 97 -145 147 -13 25 -42 63
+					-64 85 -35 34 -41 45 -41 81 0 25 6 49 16 58 18 18 15 32 -26 118 -32 68 -37
+					62 -44 -44 -4 -67 13 -177 31 -200 22 -29 105 -261 124 -349 11 -52 27 -116
+					34 -144 50 -171 56 -230 55 -510 0 -148 -4 -342 -8 -430 -11 -241 -7 -262 78
+					-460 73 -169 73 -171 82 -290 6 -81 21 -164 44 -255 20 -74 46 -176 59 -227
+					27 -105 50 -324 40 -389 -7 -48 4 -57 25 -20 9 17 10 39 5 68 -11 66 -13 535
+					-3 608 6 36 11 138 13 228 4 187 12 270 32 327 31 89 42 229 48 624 2 189 8
+					318 14 324 14 14 38 -8 50 -46 15 -50 21 -314 10 -438 -15 -176 -12 -303 11
+					-449 11 -74 25 -169 31 -210 5 -41 15 -95 23 -120 22 -71 35 -138 46 -235 6
+					-49 15 -108 21 -130 5 -22 16 -144 24 -271 7 -127 19 -261 26 -298 9 -53 9
+					-81 -1 -126 -7 -33 -10 -66 -7 -74 3 -8 -7 -33 -23 -55 -16 -22 -32 -51 -36
+					-65 l-6 -26 201 0 c173 0 201 2 201 15 0 8 23 37 52 64 l52 49 -2 66 c-2 48
+					-9 78 -27 109 -13 25 -27 70 -31 105 -5 51 -3 70 15 111 33 77 26 157 -22 271
+					-8 19 -18 73 -22 120 -13 161 -34 279 -74 402 -89 274 -91 342 -16 667 19 80
+					46 186 60 236 66 226 86 403 61 536 -14 75 -21 162 -29 349 -2 37 1 45 18 48
+					30 6 75 52 96 99 11 23 31 50 46 61 l27 20 3 178 c1 99 6 258 10 354 l8 175
+					24 0 c19 0 26 8 39 48 12 38 19 47 36 45 16 -2 21 4 28 35 8 39 -11 147 -31
+					171 -6 7 -20 42 -31 78 -18 58 -41 95 -59 92 -13 -2 -41 22 -41 36 0 8 -25 40
+					-56 71 -52 53 -94 131 -94 177 0 7 -7 20 -15 28 -8 9 -15 26 -15 38 0 13 -9
+					31 -20 41 -11 10 -23 34 -26 54 -4 20 -14 47 -23 60 -9 14 -16 29 -17 35 0 6
+					-2 16 -2 22 -1 7 -11 14 -23 17 -15 4 -23 0 -26 -14 -8 -31 -22 -22 -28 19
+					-10 58 -24 88 -48 100 -34 16 -61 25 -69 24 -4 -1 -10 9 -14 23 -3 14 -9 23
+					-13 20 -4 -2 -27 2 -52 9 -83 24 -105 26 -122 8z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(6)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M8060 5798 c0 -29 -22 -38 -51 -21 -27 16 -29 15 -69 -11 -26 -17
+							-40 -33 -36 -41 3 -8 -6 -22 -20 -33 -31 -22 -54 -100 -54 -182 0 -67 -38
+							-373 -48 -381 -4 -4 -24 -12 -44 -18 l-37 -12 19 -21 c11 -12 27 -46 36 -77 8
+							-31 22 -66 30 -78 39 -61 58 -102 65 -138 16 -86 35 -117 132 -210 79 -76 97
+							-99 106 -136 7 -24 22 -66 35 -94 37 -79 50 -148 36 -190 -10 -31 -20 -40 -42
+							-36 -4 0 -10 -9 -13 -22 -18 -64 -27 -77 -55 -77 l-28 0 -7 -303 c-4 -167 -4
+							-317 -1 -335 9 -36 -6 -68 -34 -77 -13 -4 -31 -28 -44 -58 -25 -56 -57 -90
+							-94 -102 l-24 -7 7 -146 c3 -81 13 -178 22 -217 30 -139 8 -342 -62 -575 -14
+							-47 -43 -168 -66 -270 -60 -275 -58 -359 17 -585 18 -55 37 -118 43 -140 14
+							-55 41 -249 41 -298 0 -64 20 -117 47 -123 61 -16 101 30 88 100 -5 26 -2 46
+							12 73 33 62 35 105 22 377 -12 260 -12 261 10 304 19 38 32 94 62 272 5 30 12
+							159 15 285 6 197 4 243 -11 315 -24 121 -24 532 1 507 2 -2 12 -31 22 -63 15
+							-51 17 -96 14 -334 -2 -171 1 -322 9 -400 9 -82 13 -307 13 -660 1 -486 3
+							-539 19 -582 15 -40 16 -53 5 -91 -9 -35 -9 -51 2 -76 15 -37 31 -42 127 -38
+							93 3 122 27 133 109 4 30 22 85 40 123 32 68 33 75 37 220 2 83 7 202 12 265
+							5 66 5 248 0 425 -4 171 -9 452 -9 625 -1 277 2 328 19 419 11 57 23 106 26
+							109 3 3 14 7 25 9 22 3 64 -52 56 -73 -4 -10 78 -104 91 -104 10 0 44 45 59
+							78 11 25 13 42 5 65 -16 53 -25 127 -26 217 -1 100 -12 259 -25 385 -5 50 -12
+							108 -14 130 -2 22 -9 63 -14 90 -5 28 -10 122 -11 210 -2 88 -8 185 -15 215
+							-9 41 -10 78 -3 143 7 60 6 95 -1 110 -18 38 -50 180 -56 248 -4 43 -46 118
+							-87 156 -21 20 -41 44 -44 54 -3 9 -19 22 -34 27 -27 9 -31 18 -50 104 -11 51
+							-23 117 -27 145 -4 29 -10 51 -14 48 -4 -2 -10 34 -13 81 -3 57 -10 91 -20
+							102 -10 11 -15 33 -14 59 2 49 -19 93 -45 93 -12 0 -18 7 -18 21 0 30 -20 61
+							-35 55 -7 -2 -21 6 -29 19 -19 28 -38 40 -83 50 -25 5 -33 3 -33 -7z m262
+							-410 c-9 -9 -12 -7 -12 12 0 19 3 21 12 12 9 -9 9 -15 0 -24z"
+									/>
+									<path
+										d="M7648 5080 c5 -36 10 -38 21 -7 5 14 4 25 -3 29 -19 13 -23 9 -18
+							-22z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(7)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M6694 6480 c-6 -6 -30 -12 -55 -14 -126 -11 -154 -30 -198 -136 -13
+						-30 -30 -65 -39 -78 l-15 -23 -14 21 c-12 17 -21 20 -44 15 -22 -5 -29 -3 -29
+						8 0 30 -28 41 -78 31 -42 -8 -47 -12 -50 -39 -2 -16 -8 -35 -13 -42 -27 -32
+						-11 -205 21 -237 6 -6 10 -29 10 -52 0 -23 7 -58 15 -78 14 -34 14 -39 -1 -66
+						-17 -28 -17 -30 7 -62 14 -18 35 -50 48 -70 l22 -37 -70 -36 c-46 -23 -75 -45
+						-84 -62 -24 -46 -29 -132 -13 -203 8 -36 17 -86 21 -112 8 -59 26 -78 73 -78
+						47 0 94 -28 131 -80 34 -47 51 -114 51 -203 0 -62 12 -98 27 -83 4 4 10 64 13
+						132 6 141 1 132 98 165 34 11 76 32 92 45 38 33 68 114 75 211 12 147 69 348
+						116 413 17 22 20 37 16 67 -6 35 -4 40 23 55 19 11 33 28 36 46 6 29 35 64 84
+						101 21 16 25 28 26 74 0 31 5 62 10 69 6 7 11 37 12 67 2 46 -3 61 -33 106
+						-19 29 -52 63 -72 75 -21 12 -42 29 -46 36 -5 10 -16 12 -29 8 -11 -3 -23 -2
+						-27 4 -4 7 -95 52 -105 52 -1 0 -7 -5 -12 -10z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(8)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M5387 6374 c-4 -4 -18 -9 -30 -9 -12 -1 -48 -13 -79 -27 -68 -32 -76
+					-51 -58 -141 7 -34 14 -127 15 -207 2 -153 10 -184 53 -224 41 -36 35 -106
+					-13 -146 -17 -14 -84 -44 -183 -83 -61 -23 -67 -33 -77 -130 -6 -55 -14 -75
+					-44 -114 -20 -27 -44 -54 -54 -61 -9 -7 -24 -28 -32 -45 -9 -18 -22 -43 -30
+					-57 -8 -14 -15 -35 -15 -47 0 -34 64 -99 123 -125 29 -12 108 -51 176 -85 130
+					-66 134 -66 147 -16 6 23 78 63 114 63 36 0 81 30 95 63 26 62 44 153 46 227
+					1 41 8 111 17 155 8 44 15 95 16 113 1 17 4 32 8 32 3 0 29 23 56 52 67 69 74
+					105 33 156 -26 30 -31 45 -31 89 0 42 5 57 26 80 14 15 41 56 61 90 30 55 34
+					71 34 131 0 66 -23 152 -41 152 -4 0 -21 13 -36 28 -16 16 -56 37 -89 47 -33
+					11 -65 23 -72 28 -17 12 -126 21 -136 11z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(9)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M6916 5814 c-56 -20 -142 -115 -162 -178 -8 -28 -19 -60 -24 -71 -10
+					-25 -21 -70 -25 -110 -22 -215 -52 -317 -105 -355 -14 -9 -49 -25 -79 -35 -30
+					-10 -66 -29 -79 -42 -22 -22 -23 -29 -17 -92 7 -69 -9 -220 -27 -255 -6 -12
+					-7 -16 0 -12 5 3 16 -2 25 -12 12 -14 13 -27 5 -75 -10 -57 -10 -59 18 -86 45
+					-44 159 -134 193 -153 19 -10 37 -32 47 -57 14 -35 19 -39 35 -31 27 15 69 80
+					69 107 0 13 4 31 10 41 20 36 63 150 91 242 40 130 57 168 100 218 21 24 61
+					91 90 148 58 116 98 159 195 208 49 25 54 30 54 61 0 19 -5 46 -12 62 -6 15
+					-13 51 -15 78 -6 100 -8 110 -23 108 -16 -3 -30 32 -50 123 -12 52 -51 97
+					-132 152 -53 36 -113 42 -182 16z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(10)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M9283 6567 c-3 -5 -11 -6 -18 -3 -13 5 -89 -28 -117 -51 -7 -6 -29
+					-10 -48 -8 -19 1 -40 -4 -48 -11 -7 -8 -24 -14 -36 -14 -26 0 -84 -61 -90 -94
+					-3 -12 -10 -47 -16 -79 -11 -55 -11 -59 12 -81 12 -12 30 -25 39 -28 19 -7 31
+					-57 23 -97 -5 -25 -2 -32 25 -46 40 -20 51 -49 51 -134 0 -84 12 -97 84 -94
+					55 2 72 -6 101 -51 l19 -29 -26 -21 c-27 -22 -27 -36 -2 -138 5 -22 -4 -43
+					-48 -110 -90 -137 -151 -244 -200 -348 -17 -36 -51 -94 -77 -130 -72 -100 -74
+					-108 -163 -455 l-63 -250 0 -190 c0 -177 16 -326 36 -349 4 -4 71 -9 148 -11
+					78 -1 144 -4 146 -7 3 -3 1 -17 -5 -32 -5 -15 -10 -42 -10 -59 -1 -18 -7 -43
+					-15 -57 -21 -36 -18 -73 8 -138 16 -38 23 -70 20 -97 -3 -22 -1 -50 4 -63 5
+					-14 4 -73 -3 -145 -19 -190 -17 -277 10 -396 26 -114 44 -297 56 -586 5 -120
+					15 -210 28 -270 51 -224 51 -218 5 -236 -16 -7 -77 -12 -136 -13 -103 -1 -110
+					-3 -127 -26 -26 -34 -30 -54 -16 -81 16 -32 144 -66 301 -79 66 -6 163 -16
+					215 -22 158 -19 279 -22 296 -7 26 22 10 179 -27 256 -16 33 -34 87 -40 120
+					-5 32 -16 78 -24 103 -15 50 -28 448 -16 490 7 23 21 12 230 -195 123 -121
+					250 -251 282 -288 66 -76 67 -81 23 -169 -13 -26 -24 -58 -24 -72 0 -15 -21
+					-48 -61 -91 -57 -63 -60 -70 -54 -104 15 -78 46 -80 185 -10 117 59 221 151
+					259 231 33 69 58 97 80 91 21 -5 51 20 134 114 33 38 45 59 42 75 -5 23 -12
+					31 -101 103 -27 22 -75 66 -107 98 -98 98 -142 127 -192 127 l-43 0 -109 132
+					c-60 73 -130 160 -155 193 -26 33 -74 89 -108 125 -34 36 -77 88 -97 117 -19
+					29 -56 68 -82 88 -69 54 -74 70 -42 119 23 36 26 51 27 131 0 50 5 100 12 112
+					7 12 12 48 12 81 0 52 4 65 38 113 80 114 115 154 142 166 33 14 35 24 46 173
+					8 115 7 129 -8 300 -13 138 -15 301 -10 725 3 228 -10 458 -28 480 -4 5 -11
+					33 -15 60 -4 28 -13 64 -20 80 -7 17 -24 55 -38 87 -14 31 -43 78 -64 106 -22
+					27 -46 72 -53 98 -15 57 -26 73 -56 84 -15 6 -26 26 -38 71 -10 34 -14 64 -9
+					68 17 12 63 117 63 143 0 15 6 33 13 40 8 7 18 27 24 43 5 17 12 28 14 25 6
+					-7 49 33 49 47 0 40 -111 168 -137 158 -7 -2 -13 0 -13 6 0 5 -10 13 -23 18
+					-13 5 -37 21 -54 35 -16 14 -33 23 -36 19 -4 -3 -17 2 -31 10 -26 17 -113 20
+					-123 4z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(11)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M3317 5700 c-14 -16 -32 -30 -39 -30 -22 0 -115 -102 -133 -145 -4
+						-11 -7 -36 -6 -56 2 -26 -5 -44 -25 -68 l-27 -32 20 -22 c38 -41 88 -170 98
+						-250 9 -68 -3 -91 -67 -135 -69 -46 -192 -109 -230 -116 -50 -9 -113 -54 -137
+						-96 -14 -25 -21 -56 -21 -88 0 -28 -4 -54 -10 -57 -5 -3 -10 -17 -10 -30 0
+						-13 -8 -43 -18 -67 -12 -27 -24 -95 -32 -184 -11 -127 -11 -149 5 -219 19 -87
+						16 -152 -11 -238 l-18 -58 27 -79 c15 -44 31 -119 37 -167 5 -49 16 -113 25
+						-143 8 -30 15 -71 15 -90 0 -49 13 -65 50 -62 29 3 30 2 30 -37 0 -22 5 -43
+						11 -47 7 -4 8 -36 4 -99 -5 -58 -3 -126 5 -178 9 -67 9 -101 0 -159 -7 -40
+						-14 -125 -15 -188 -5 -208 -15 -338 -30 -402 -12 -55 -24 -135 -40 -283 -3
+						-22 -11 -96 -19 -165 -8 -69 -17 -205 -20 -304 -5 -175 -5 -178 17 -197 12
+						-10 28 -18 35 -19 15 0 16 -44 1 -73 -14 -26 -13 -281 1 -307 18 -34 52 -39
+						179 -30 133 10 151 36 117 170 -39 154 -39 225 -1 530 18 146 27 390 16 445
+						-9 46 -7 56 26 130 19 44 45 127 58 185 56 260 117 510 137 568 40 114 48 87
+						59 -208 4 -129 13 -287 19 -350 7 -70 8 -173 3 -265 -4 -82 -6 -156 -4 -163 1
+						-7 -5 -51 -14 -97 -9 -47 -18 -166 -21 -271 -4 -163 -7 -191 -26 -227 -18 -35
+						-21 -57 -19 -147 1 -57 5 -108 10 -113 4 -4 35 -13 68 -20 33 -7 78 -25 100
+						-40 52 -36 127 -57 225 -62 103 -6 128 4 124 47 -5 53 -15 69 -101 153 -45 44
+						-88 96 -97 115 -15 33 -14 42 7 145 12 61 30 198 39 305 30 332 63 581 111
+						835 15 77 29 157 32 177 7 45 -3 88 -20 88 -6 0 -20 7 -31 15 -16 12 -17 18
+						-6 47 7 18 16 51 20 73 5 22 14 58 20 80 26 91 27 89 -32 134 -238 184 -265
+						233 -228 402 11 52 27 112 35 134 8 22 19 66 25 97 6 31 23 74 36 94 14 20 34
+						73 45 117 11 44 33 106 49 136 15 31 31 71 35 90 8 40 59 144 90 186 61 82 97
+						208 92 320 -4 104 -28 129 -203 221 -175 92 -199 116 -129 130 42 8 70 40 80
+						91 4 21 14 51 22 67 11 21 13 44 9 86 -6 47 -3 63 17 101 14 26 27 71 31 111
+						6 60 4 70 -19 105 -27 42 -27 42 -70 77 -29 24 -29 25 -7 26 12 0 22 4 22 9 0
+						5 -19 9 -42 9 -55 0 -117 7 -125 16 -10 9 -63 7 -106 -5 -48 -13 -75 -4 -83
+						27 -8 31 -17 30 -47 -6z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(12)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M6062 5202 c3 -10 0 -26 -7 -36 -12 -16 -92 -51 -142 -63 -42 -10
+					-104 -91 -137 -182 -22 -61 -38 -89 -54 -96 -15 -6 -24 -21 -28 -45 -3 -19 -9
+					-43 -15 -52 -5 -10 -9 -33 -9 -51 0 -18 -7 -58 -16 -87 -18 -61 -13 -129 11
+					-166 24 -38 18 -59 -22 -78 -60 -29 -143 -87 -156 -110 -8 -14 -12 -82 -13
+					-216 0 -128 -6 -234 -17 -310 -13 -88 -15 -127 -7 -168 8 -44 7 -59 -6 -84
+					-14 -27 -15 -59 -11 -212 5 -155 9 -193 31 -269 32 -108 68 -194 112 -270 19
+					-32 37 -70 41 -85 3 -15 15 -40 25 -57 10 -16 18 -38 18 -47 0 -9 13 -25 30
+					-34 16 -10 32 -24 34 -31 3 -7 1 -93 -4 -191 -6 -97 -8 -220 -5 -272 10 -175
+					14 -342 20 -755 11 -878 17 -1005 48 -1052 4 -7 3 -22 -4 -34 -14 -28 -7 -88
+					16 -123 17 -25 20 -26 121 -26 117 0 124 4 124 80 0 29 13 68 40 123 42 86 42
+					86 41 266 -1 40 6 105 14 145 8 39 17 88 20 109 4 21 15 63 26 94 28 83 40
+					159 49 333 11 192 33 403 59 580 12 74 21 152 21 173 0 73 47 26 60 -59 4 -33
+					19 -102 33 -154 13 -52 28 -117 31 -145 4 -27 16 -84 27 -125 11 -41 27 -111
+					34 -156 8 -44 26 -105 39 -135 14 -30 27 -76 31 -104 11 -82 68 -244 100 -285
+					12 -15 43 -182 43 -230 0 -14 2 -65 5 -115 6 -100 -5 -173 -32 -204 -10 -12
+					-24 -41 -31 -66 -10 -37 -10 -52 2 -83 l14 -37 122 -3 121 -3 26 50 c18 37 25
+					66 25 111 0 56 2 61 26 70 14 6 38 10 53 10 31 0 61 27 61 56 0 10 10 34 21
+					53 20 33 20 40 9 130 -6 53 -18 114 -26 136 -8 23 -14 50 -14 61 0 11 -17 78
+					-39 149 -21 72 -44 157 -52 190 -7 33 -16 65 -21 71 -4 6 -12 71 -17 145 -9
+					129 -11 138 -61 259 -110 267 -103 240 -104 395 -1 77 3 286 8 465 9 332 8
+					344 -30 500 -27 114 -31 133 -54 235 -12 55 -38 138 -57 185 -19 47 -46 111
+					-59 144 -14 32 -22 61 -18 65 4 3 9 -1 12 -9 3 -8 22 -31 42 -50 21 -19 54
+					-64 75 -98 24 -41 53 -75 83 -95 25 -18 72 -56 105 -84 40 -36 71 -54 95 -58
+					21 -3 69 -21 107 -40 47 -22 88 -35 125 -37 l55 -3 22 60 c38 104 29 147 -46
+					210 -19 17 -51 46 -71 66 -19 20 -56 48 -81 62 -53 30 -99 80 -99 107 0 24
+					-56 77 -89 83 -20 4 -33 17 -46 44 -10 21 -33 63 -51 94 -56 94 -90 214 -108
+					392 -20 189 -35 237 -77 237 -15 0 -34 7 -41 16 -7 9 -32 37 -56 61 -25 26
+					-41 51 -38 59 3 9 -2 14 -14 14 -29 0 -33 1 -54 16 -16 11 -19 28 -21 126 -1
+					62 -6 122 -12 133 -6 11 -11 58 -12 105 -2 96 -23 155 -73 207 -31 32 -49 39
+					-118 48 -19 2 -40 11 -46 20 -9 12 -13 13 -16 3 -3 -9 -15 -2 -34 20 -32 36
+					-49 41 -42 14z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(13)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M3139 6282 c-10 -2 -19 -11 -22 -21 -2 -11 -22 -23 -51 -31 -26 -7
+					-46 -19 -46 -26 0 -26 -1 -29 -26 -61 -49 -64 -59 -102 -59 -215 1 -117 13
+					-155 52 -164 35 -9 53 -42 53 -96 0 -71 -24 -112 -94 -157 -56 -35 -199 -85
+					-306 -106 -19 -3 -42 -8 -51 -11 -17 -5 -33 -49 -44 -124 -9 -54 -39 -174 -54
+					-213 -6 -16 -11 -39 -11 -53 0 -13 -11 -70 -24 -127 -61 -261 -64 -549 -6
+					-657 7 -14 9 -40 5 -71 -7 -46 8 -141 25 -164 4 -5 15 -31 24 -56 13 -33 28
+					-53 56 -70 24 -15 41 -34 45 -51 4 -15 12 -31 19 -37 8 -6 13 -48 15 -120 7
+					-283 22 -603 31 -666 8 -50 8 -133 -1 -295 -11 -214 -8 -589 7 -772 7 -77 7
+					-78 40 -90 19 -7 34 -18 34 -25 0 -7 4 -13 9 -13 4 0 11 33 15 73 7 88 23 197
+					41 297 20 107 38 367 30 421 -4 27 -2 71 6 105 6 33 11 97 9 144 -2 47 -3 147
+					-3 223 0 83 -4 137 -10 137 -6 0 -7 17 -4 41 5 38 3 42 -23 52 -18 7 -35 24
+					-44 46 -22 49 -56 187 -56 226 0 17 -9 74 -20 125 -11 51 -20 95 -20 96 0 1
+					-8 10 -17 20 -16 16 -16 21 9 93 24 70 25 82 16 151 -18 141 -20 292 -5 334
+					12 36 12 41 -5 58 -17 17 -17 20 -3 35 26 26 33 54 25 111 -3 29 -3 55 0 57 4
+					3 13 25 20 50 8 28 16 42 20 34 5 -8 10 -5 14 9 12 37 93 99 146 112 26 6 81
+					30 122 53 41 23 87 49 102 57 37 19 136 118 136 135 0 8 -16 30 -35 50 -18 20
+					-42 58 -51 83 -9 26 -23 63 -32 82 -9 19 -15 51 -14 70 1 19 4 66 6 103 2 55
+					7 73 28 95 14 15 34 41 46 58 12 17 37 39 57 48 19 9 51 36 71 61 33 39 40 43
+					69 38 48 -8 59 19 52 121 -8 114 -19 186 -27 186 -5 0 -13 12 -19 28 -20 49
+					-33 66 -98 123 -13 10 -23 16 -23 13 0 -3 -17 4 -37 16 -24 14 -46 20 -64 16
+					-15 -3 -29 -2 -31 2 -2 4 -10 6 -19 4z"
+									/>
+								</g>
+								<g
+									fillOpacity={0}
+									transform="translate(0.000000,706.000000) scale(0.100000,-0.100000)"
+									fill="#000000"
+									stroke="none"
+									onMouseOver={() => setHoverID(14)}
+									onMouseOut={() => setHoverID(0)}
+								>
+									<path
+										d="M5787 5654 c-2 -3 -22 -5 -43 -6 -32 -1 -47 -9 -80 -43 -23 -23 -45
+					-51 -48 -63 -4 -12 -14 -22 -23 -22 -8 0 -13 -6 -10 -12 2 -7 -2 -28 -9 -47
+					-8 -18 -14 -44 -14 -58 0 -13 -6 -26 -14 -29 -11 -4 -13 -12 -6 -28 5 -15 2
+					-34 -11 -62 l-18 -39 -2 30 c-2 41 -16 -59 -22 -160 -3 -44 -5 -84 -6 -88 -1
+					-5 -9 -6 -20 -2 -13 4 -24 -4 -43 -32 -13 -21 -27 -46 -31 -55 -5 -14 -13 -16
+					-38 -11 -28 5 -31 4 -26 -11 4 -11 1 -19 -10 -23 -9 -4 -19 -1 -21 5 -2 7 -16
+					-6 -32 -29 -25 -38 -27 -45 -15 -73 11 -26 10 -45 -7 -121 -19 -89 -31 -200
+					-42 -403 -3 -57 -9 -114 -12 -128 -6 -24 16 -71 42 -87 7 -4 15 -26 19 -50 9
+					-55 28 -90 58 -110 23 -15 26 -14 49 11 37 39 48 65 48 114 0 46 36 128 70
+					160 11 10 22 29 26 42 6 27 74 76 173 125 34 18 64 38 67 46 3 7 -2 25 -12 40
+					-15 23 -16 36 -6 113 6 48 14 119 17 157 3 42 19 108 40 167 43 123 50 136 93
+					175 63 56 123 82 204 89 l74 7 -13 89 c-8 49 -20 106 -28 125 -8 20 -15 50
+					-16 67 -1 44 -11 65 -39 79 -16 8 -26 23 -28 41 -2 18 -11 30 -22 33 -11 3
+					-22 13 -25 22 -7 21 -63 53 -71 40 -4 -7 -12 -5 -22 4 -15 14 -84 21 -95 11z"
+									/>
+								</g>
 							</g>
 						</svg>
 					</SvgPhone>
@@ -2745,37 +1650,31 @@ function TeamSection() {
 			</TeamContainer>
 
 			<TextContainer style={{ display: hoverID === 0 ? "flex" : "none" }}>
-				<TitleText>Meet The Team</TitleText>
+				<TitleText style={{ textAlign: "center" }}>
+					Meet The New Members
+				</TitleText>
 				<SmallSpacer />
 				<BodyText>
-					At MEG we are proud of our members diverse interests and
-					backgrounds. Each one of us has our own unique strengths and
-					viewpoints that, when put together, can create extraordinary
-					solutions. We'd love for you to get to know us better and
-					join the team in the future.
+					Meet the Fall 2022 Member Class. We're so happy these
+					amazing new members are with us! To be part of the next MEG
+					class consider coming to our recruiting events and applying.
 				</BodyText>
 				<SmallSpacer />
 				<BodyText>
 					<b>
-						(Hover over or tap the picture to learn about one of
-						us!)
-					</b>{" "}
+						(Hover over or tap the picture to learn about one of our
+						new members!)
+					</b>
 				</BodyText>
 			</TextContainer>
 			<TextContainer style={{ display: hoverID !== 0 ? "flex" : "none" }}>
 				<TitleText>{names[hoverID]}</TitleText>
 				<SmallSpacer />
 				<BodyText>
-					<b>Year:</b> {years[hoverID]}
+					<b>Biggest Fear:</b> {fear[hoverID]}
 				</BodyText>
 				<BodyText>
-					<b>Major:</b> {majors[hoverID]}
-				</BodyText>
-				<BodyText>
-					<b>About Me:</b> {abouts[hoverID]}
-				</BodyText>
-				<BodyText>
-					<b>Past Projects:</b> {projects[hoverID]}
+					<b>Favorite TV Show:</b> {tv[hoverID]}
 				</BodyText>
 				<SmallSpacer />
 			</TextContainer>

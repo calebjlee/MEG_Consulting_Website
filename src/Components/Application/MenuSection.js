@@ -315,7 +315,7 @@ function MenuSection() {
 				</FaqContainer>
 				<CenterContainer>
 					<a
-						href="https://forms.gle/954i5LTCcaungiSRA"
+						href="https://forms.gle/2je14Wz3Y4HFsW6J7"
 						target="_blank"
 						style={{ textDecoration: "none" }}
 					>

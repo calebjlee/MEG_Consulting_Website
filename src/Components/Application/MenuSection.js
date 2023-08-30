@@ -225,7 +225,7 @@ const SoonContainer = styled.div`
 
 function MenuSection() {
 	const eventDates = [
-		"1/10/2023, 4:00 PM",
+		"9/10/2023, 4:00 PM",
 		"1/12/2023, 6:00 PM",
 		"1/13/2023, 4:00 PM",
 		"1/17/2023, 1:00 PM",

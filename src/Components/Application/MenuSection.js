@@ -225,42 +225,36 @@ const SoonContainer = styled.div`
 
 function MenuSection() {
 	const eventDates = [
-		"1/10/2023, 4:00 PM",
-		"1/12/2023, 6:00 PM",
-		"1/13/2023, 4:00 PM",
-		"1/17/2023, 1:00 PM",
-		"1/18/2023, 7:00 PM",
-		"1/20/2023, 5:00 PM",
-		"1/22/2023, 1:00 PM",
+		"9/6/2023, 6:00 PM",
+		"9/10/2023, 10:00 AM",
+		"9/15/2023, 4:30 PM",
+		"9/17/2023, 2:00 PM",
+		"9/18/2023, 5:30 PM",
+		"9/19/2023, 11:59 PM",
+		
 	];
 	const eventImages = [
-		league,
 		ross,
 		mass,
 		workshop,
 		coffee,
-		mass,
 		dei,
 		apply,
 	];
 	const eventName = [
-		"Winterfest",
 		"Meet the Clubs",
-		"Mass Meeting 1",
+		"Mass Meeting",
 		"Resume & Case Workshop",
 		"Coffee Chats",
-		"Mass Meeting 2",
 		"DEI Event",
 		"Application Due",
 	];
 	const eventLocation = [
-		"The League",
 		"Winter Garden",
-		"B1580",
-		"R1220",
-		"B1560",
-		"B1560",
-		"B0560",
+		"Robertson Auditorium",
+		"R1230",
+		"B3570",
+		"B0570",
 	];
 	const eventTime = [
 		"1/10 at 4:00 P.M.",
@@ -315,7 +309,7 @@ function MenuSection() {
 				</FaqContainer>
 				<CenterContainer>
 					<a
-						href="https://forms.gle/2je14Wz3Y4HFsW6J7"
+						href="https://docs.google.com/forms/d/e/1FAIpQLScO_vQ4z4RiysvbpFC_C0KJoQW5TLcumGB959fLUKk86s-zUA/viewform"
 						target="_blank"
 						style={{ textDecoration: "none" }}
 					>
@@ -344,7 +338,7 @@ function MenuSection() {
 								Want to stay up to date on the newest from MEG?
 								Sign up on our{" "}
 								<a
-									href="https://docs.google.com/forms/d/e/1FAIpQLScXWp50EI5w0HOCHTq3noxwFNYfJq_AGgZpjOzu1k-iU_xcSw/viewform?vc=0&c=0&w=1&flr=0"
+									href="https://docs.google.com/forms/d/e/1FAIpQLSeinwgRh_18xFgbYsgxsgCWwXCSqfyGY4WmioYd69-W97VmEQ/viewform"
 									target="_blank"
 									style={{
 										fontWeight: 700,

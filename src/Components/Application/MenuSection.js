@@ -225,12 +225,12 @@ const SoonContainer = styled.div`
 
 function MenuSection() {
 	const eventDates = [
-		"9/6/2023, 6:00 PM",
-		"9/10/2023, 10:00 AM",
-		"9/15/2023, 4:30 PM",
-		"9/17/2023, 2:00 PM",
-		"9/18/2023, 5:30 PM",
-		"9/19/2023, 11:59 PM",
+		"1/18/2023, 5:30 PM",
+		"1/20/2023, 1:30 PM",
+		"1/23/2023 - 1/24/2023, Sign-up Online",
+		"1/26/2024, 4:00 PM",
+		"1/28/2024, 5:30 PM",
+		"1/30/2024, 11:59 PM",
 		
 	];
 	const eventImages = [
@@ -242,19 +242,19 @@ function MenuSection() {
 		apply,
 	];
 	const eventName = [
-		"Meet the Clubs",
+		"Ross Meet the Clubs",
 		"Mass Meeting",
+		"1:1 Coffee Chats",
 		"Resume & Case Workshop",
-		"Coffee Chats",
-		"DEI Event",
+		"DEI Panel",
 		"Application Due",
 	];
 	const eventLocation = [
 		"Winter Garden",
-		"Robertson Auditorium",
-		"R1230",
-		"B3570",
-		"B0570",
+		"B1580",
+		"Virtual",
+		"R0320",
+		"B1580",
 	];
 	const eventTime = [
 		"1/10 at 4:00 P.M.",
@@ -309,7 +309,7 @@ function MenuSection() {
 				</FaqContainer>
 				<CenterContainer>
 					<a
-						href="https://docs.google.com/forms/d/e/1FAIpQLScO_vQ4z4RiysvbpFC_C0KJoQW5TLcumGB959fLUKk86s-zUA/viewform"
+						href="https://docs.google.com/forms/d/e/1FAIpQLSfevZ9aiFnZLPglsGB13E7hcuNwgG7xIN79tYGv1goVIeb4Fw/viewform"
 						target="_blank"
 						style={{ textDecoration: "none" }}
 					>

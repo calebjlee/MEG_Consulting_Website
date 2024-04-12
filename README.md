@@ -2,8 +2,27 @@
 
 ## Getting Started
 
-Run `npm install` (use node version 16.0 ish)
-Run `npm run dev` to start the website. http://localhost:3000/ to access the website locally
+# Prerequisites
+- Node.js and an IDE. I would recommend VS Code. [Links to download here](https://code.visualstudio.com/Download).
+- Create a folder and run `git clone https://github.com/calebjlee/MEG_Consulting_Website.git`.
+- Run `npm install`.
+- Run `npm run dev` to start the website. Visit [http://localhost:3000/](http://localhost:3000/) to access the website locally.
+
+## To commit your changes to GitHub:
+1. Create a new branch: `git branch Your_Name`.
+2. Checkout to that branch: `git checkout Your_Name`.
+3. Make sure that you are on the right branch with the command: `git branch`.
+
+## Pushing your changes:
+```
+git add .
+git commit -m "Your Update Message"
+git push --set-upstream origin Your_Name
+```
+You can merge the branch or have someone review your pull request.
+
+## Getting updated changes from others:
+To get updated changes from other people onto your computer, run `git pull`.
 
 ## Website Link
 

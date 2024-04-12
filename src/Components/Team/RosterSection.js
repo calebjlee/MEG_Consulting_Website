@@ -201,12 +201,12 @@ function RosterSection() {
 
 	const eboardData = [
 		{
-			name: "Priyanka Madhavan",
-			image0: pri0,
-			image1: pri1,
+			name: "Vivek Nukala",
+			image0: vivek0,
+			image1: vivek1,
 			position: "President",
 			ID: 3,
-			url: "https://www.linkedin.com/in/primadhavan/",
+			url: "https://www.linkedin.com/in/vivek-r-nukala/",
 		},
 		{
 			name: "Charlie Schuetze",

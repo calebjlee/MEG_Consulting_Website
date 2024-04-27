@@ -225,6 +225,14 @@ function RosterSection() {
 			url: "https://www.linkedin.com/in/kiran-sequeira",
 		},
 		{
+			name: "Prah Pant",
+			image0: prah0,
+			image1: prah1,
+			position: "VP of Client Acquisition",
+			ID: 29,
+			url: "https://www.linkedin.com/in/kiran-sequeira",
+		},
+		{
 			name: "Ragini Chaudhari",
 			image0: ragini0,
 			image1: ragini1,

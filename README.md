@@ -5,6 +5,7 @@
 # Prerequisites
 - Node.js and an IDE. I would recommend VS Code. [Links to download here](https://code.visualstudio.com/Download) [Links to download here](https://nodejs.org/en/download/current).
 - Create a folder and run `git clone https://github.com/calebjlee/MEG_Consulting_Website.git`.
+- Run `cd MEG_Consulting_Website`
 - Run `npm install`.
 - Run `npm run dev` to start the website. Visit [http://localhost:3000/](http://localhost:3000/) to access the website locally.
 

@@ -75,8 +75,8 @@ function DifferentSection() {
         <TitleTextBold>PEOPLE COME FIRST</TitleTextBold>
         <SmallSpacer />
         <BodyText>
-          MEG Consulting is a pro-bono consulting group at the University of
-          Michigan. From local startups to million dollar companies, members
+          MEG Consulting is a premier consulting group at the University of
+          Michigan. From local startups to Fortune 500 companies, members
           have the opportunity to provide the solutions for real world problems.
           At our core, we believe in treating our people with kindness and
           respect. From the executive board to our applicants, we strive to

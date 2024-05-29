@@ -15,6 +15,8 @@ import amory from "../../Images/Team/shadows/amory.png";
 import chris from "../../Images/Team/shadows/chris.png";
 import debangi from "../../Images/Team/shadows/debangi.png";
 
+import teamf23 from "../../Images/Team/teamf23.jpg";
+
 import React, { useState } from "react";
 import NextSection from "../General/NextSection";
 
@@ -216,9 +218,9 @@ function TeamSection() {
 						fontSize: "4vmin",
 					}}
 				>
-					Hover to Meet Our New Members
+					______________________________
 				</TitleText>
-				<TeamImage src={team}></TeamImage>
+				<TeamImage src={teamf23}></TeamImage>
 				<ShadowContainer
 					style={{
 						opacity: hoverID === 1 ? "0" : hoverID === 0 ? "0" : 1,
@@ -1651,19 +1653,18 @@ function TeamSection() {
 
 			<TextContainer style={{ display: hoverID === 0 ? "flex" : "none" }}>
 				<TitleText style={{ textAlign: "center" }}>
-					Meet The New Members
+					Meet The Members
 				</TitleText>
 				<SmallSpacer />
 				<BodyText>
-					Meet the Fall 2022 Member Class. We're so happy these
-					amazing new members are with us! To be part of the next MEG
+					Meet the Fall 2023 Members. We're so happy these
+					amazing members are with us! To be part of the next MEG
 					class consider coming to our recruiting events and applying.
 				</BodyText>
 				<SmallSpacer />
 				<BodyText>
 					<b>
-						(Hover over or tap the picture to learn about one of our
-						new members!)
+						______________________________
 					</b>
 				</BodyText>
 			</TextContainer>

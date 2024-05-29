@@ -82,6 +82,77 @@ import amory1 from "../../Images/Team/headshots/amory1.png";
 import shubh0 from "../../Images/Team/headshots/shubh0.png";
 import shubh1 from "../../Images/Team/headshots/shubh1.png";
 
+import aditivadakath0 from "../../Images/Team/headshots/aditivadakath0.png";
+import aditivadakath1 from "../../Images/Team/headshots/aditivadakath1.png";
+import amorytin0 from "../../Images/Team/headshots/amorytin0.png";
+import amorytin1 from "../../Images/Team/headshots/amorytin1.png";
+import anishthatiparthi0 from "../../Images/Team/headshots/anishthatiparthi0.png";
+import anishthatiparthi1 from "../../Images/Team/headshots/anishthatiparthi1.png";
+import aravrajesh0 from "../../Images/Team/headshots/aravrajesh0.png";
+import aravrajesh1 from "../../Images/Team/headshots/aravrajesh1.png";
+import azratokovic0 from "../../Images/Team/headshots/azratokovic0.png";
+import azratokovic1 from "../../Images/Team/headshots/azratokovic1.png";
+import caleblee0 from "../../Images/Team/headshots/caleblee0.png";
+import caleblee1 from "../../Images/Team/headshots/caleblee1.png";
+import cynthiali0 from "../../Images/Team/headshots/cynthiali0.png";
+import cynthiali1 from "../../Images/Team/headshots/cynthiali1.png";
+import debangimohanta0 from "../../Images/Team/headshots/debangimohanta0.png";
+import debangimohanta1 from "../../Images/Team/headshots/debangimohanta1.png";
+import evakumer0 from "../../Images/Team/headshots/evakumer0.png";
+import evakumer1 from "../../Images/Team/headshots/evakumer1.png";
+import ilakiyarajaguru0 from "../../Images/Team/headshots/ilakiyarajaguru0.png";
+import ilakiyarajaguru1 from "../../Images/Team/headshots/ilakiyarajaguru1.png";
+import isabellaxu0 from "../../Images/Team/headshots/isabellaxu0.png";
+import isabellaxu1 from "../../Images/Team/headshots/isabellaxu1.png";
+import isseihata0 from "../../Images/Team/headshots/isseihata0.png";
+import isseihata1 from "../../Images/Team/headshots/isseihata1.png";
+import jessicatran0 from "../../Images/Team/headshots/jessicatran0.png";
+import jessicatran1 from "../../Images/Team/headshots/jessicatran1.png";
+import johnlee0 from "../../Images/Team/headshots/johnlee0.png";
+import johnlee1 from "../../Images/Team/headshots/johnlee1.png";
+import joyren0 from "../../Images/Team/headshots/joyren0.png";
+import joyren1 from "../../Images/Team/headshots/joyren1.png";
+import juliazhang0 from "../../Images/Team/headshots/juliazhang0.png";
+import juliazhang1 from "../../Images/Team/headshots/juliazhang1.png";
+import kaitlynko0 from "../../Images/Team/headshots/kaitlynko0.png";
+import kaitlynko1 from "../../Images/Team/headshots/kaitlynko1.png";
+import leoleone0 from "../../Images/Team/headshots/leoleone0.png";
+import leoleone1 from "../../Images/Team/headshots/leoleone1.png";
+import minseokkim0 from "../../Images/Team/headshots/minseokkim0.png";
+import minseokkim1 from "../../Images/Team/headshots/minseokkim1.png";
+import natashashimon0 from "../../Images/Team/headshots/natashashimon0.png";
+import natashashimon1 from "../../Images/Team/headshots/natashashimon1.png";
+import niyatikashyap0 from "../../Images/Team/headshots/niyatikashyap0.png";
+import niyatikashyap1 from "../../Images/Team/headshots/niyatikashyap1.png";
+import patrickli0 from "../../Images/Team/headshots/patrickli0.png";
+import patrickli1 from "../../Images/Team/headshots/patrickli1.png";
+import prahpant0 from "../../Images/Team/headshots/prahpant0.png";
+import prahpant1 from "../../Images/Team/headshots/prahpant1.png";
+import rheamisra0 from "../../Images/Team/headshots/rheamisra0.png";
+import rheamisra1 from "../../Images/Team/headshots/rheamisra1.png";
+import saathvikhari0 from "../../Images/Team/headshots/saathvikhari0.png";
+import saathvikhari1 from "../../Images/Team/headshots/saathvikhari1.png";
+import shivarajan0 from "../../Images/Team/headshots/shivarajan0.png";
+import shivarajan1 from "../../Images/Team/headshots/shivarajan1.png";
+import siripattipati0 from "../../Images/Team/headshots/siripattipati0.png";
+import siripattipati1 from "../../Images/Team/headshots/siripattipati1.png";
+import sophierichards0 from "../../Images/Team/headshots/sophierichards0.png";
+import sophierichards1 from "../../Images/Team/headshots/sophierichards1.png";
+import sriyanmadugula0 from "../../Images/Team/headshots/sriyanmadugula0.png";
+import sriyanmadugula1 from "../../Images/Team/headshots/sriyanmadugula1.png";
+import sydneygaynor0 from "../../Images/Team/headshots/sydneygaynor0.png";
+import sydneygaynor1 from "../../Images/Team/headshots/sydneygaynor1.png";
+import sydneygoad0 from "../../Images/Team/headshots/sydneygoad0.png";
+import sydneygoad1 from "../../Images/Team/headshots/sydneygoad1.png";
+import varuntalluri0 from "../../Images/Team/headshots/varuntalluri0.png";
+import varuntalluri1 from "../../Images/Team/headshots/varuntalluri1.png";
+import viveknukala0 from "../../Images/Team/headshots/viveknukala0.png";
+import viveknukala1 from "../../Images/Team/headshots/viveknukala1.png";
+import yaseenmetwally0 from "../../Images/Team/headshots/yaseenmetwally0.png";
+import yaseenmetwally1 from "../../Images/Team/headshots/yaseenmetwally1.png";
+import zafirmakeragha0 from "../../Images/Team/headshots/zafirmakeragha0.png";
+import zafirmakeragha1 from "../../Images/Team/headshots/zafirmakeragha1.png";
+
 const SectionContainer = styled.div`
 	width: 100vw;
 	height: fit-content;
@@ -163,6 +234,17 @@ const TextContainer = styled.div`
 	padding-right: 2vmin;
 `;
 
+const TextContainerHover = styled.div`
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-left: 2vmin;
+	padding-right: 2vmin;
+`;
+
 const TitleText = styled.h1`
 	display: inline-block;
 	font-size: 6vmin;
@@ -196,347 +278,400 @@ const CardHeader = styled.h2`
 	color: #4d4d4d;
 `;
 
+const CardHeaderHover = styled.div`
+	display: inline-block;
+	font-size: 2.5vmin;
+	font-family: futura-pt, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-weight: 600;
+	text-align: left;
+	color: #4d4d4d;
+`;
+
 function RosterSection() {
 	const [hoverID2, setHoverID2] = useState(0);
 
 	const eboardData = [
 		{
 			name: "Vivek Nukala",
-			image0: vivek0,
-			image1: vivek1,
+			image0: viveknukala0,
+			image1: viveknukala1,
 			position: "President",
-			ID: 3,
+			major: "BBA 2025",
+			ID: 101,
 			url: "https://www.linkedin.com/in/vivek-r-nukala/",
 		},
 		{
-			name: "Charlie Schuetze",
-			image0: charlie0,
-			image1: charlie1,
+			name: "Patrick Li",
+			image0: patrickli0,
+			image1: patrickli1,
 			position: "VP of Recruitment",
-			ID: 5,
-			url: "https://linkedin.com/in/charlie-schuetze",
+			major: "BBA & Political Science 2026",
+			ID: 102,
+			url: "https://www.linkedin.com/in/patrickli2/",
 		},
 		{
-			name: "Kiran Sequeira",
-			image0: kiran0,
-			image1: kiran1,
+			name: "Debangi Mohanta",
+			image0: debangimohanta0,
+			image1: debangimohanta1,
 			position: "VP of Operations",
-			ID: 29,
-			url: "https://www.linkedin.com/in/kiran-sequeira",
+			major: "CS 2025",
+			ID: 103,
+			url: "https://www.linkedin.com/in/debangi-mohanta-777057218/",
 		},
 		{
 			name: "Prah Pant",
-			image0: prah0,
-			image1: prah1,
+			image0: prahpant0,
+			image1: prahpant1,
 			position: "VP of Client Acquisition",
-			ID: 29,
-			url: "https://www.linkedin.com/in/kiran-sequeira",
+			major: "BBA 2026",
+			ID: 104,
+			url: "https://www.linkedin.com/in/prahpant/",
 		},
 		{
-			name: "Ragini Chaudhari",
-			image0: ragini0,
-			image1: ragini1,
+			name: "Min-Seok Kim",
+			image0: minseokkim0,
+			image1: minseokkim1,
 			position: "VP of Community Engagement",
-			ID: 17,
-			url: "https://www.linkedin.com/in/ragini-chaudhari-178369191/",
+			major: "BBA 2026",
+			ID: 105,
+			url: "https://www.linkedin.com/in/min-seok-kim-6a7245252/",
 		},
 		{
-			name: "Anish Vankayalapati",
-			image0: anish0,
-			image1: anish1,
+			name: "Amory Tin",
+			image0: amorytin0,
+			image1: amorytin1,
 			position: "VP of External Development",
-			ID: 21,
-			url: "https://linkedin.com/in/anish-vankayalapati-6b4914223",
+			major: "BBA 2026",
+			ID: 106,
+			url: "https://www.linkedin.com/in/amory-tin/",
 		},
 		{
-			name: "Shubh Yadav",
-			image0: shubh0,
-			image1: shubh1,
-			url: "https://www.linkedin.com/in/shubhyadav/",
-			ID: 46,
+			name: "Leo Leone",
+			image0: leoleone0,
+			image1: leoleone1,
 			position: "VP of Internal Development",
+			major: "BBA & Information Analysis 2026",
+			ID: 107,
+			url: "https://www.linkedin.com/in/leo-leone-792515223/",
 		},
 	];
 
-	const seniorData = [
+	const managerData = [
 		{
-			name: "Brandon Geng",
-			image0: brandon0,
-			image1: brandon1,
-			position: "Senior Advisor",
-			ID: 7,
-			url: "https://www.linkedin.com/in/brandon-geng-5b99241b6/",
+			name: "Julia Zhang",
+			image0: juliazhang0,
+			image1: juliazhang1,
+			url: "https://www.linkedin.com/in/julia-m-zhang/",
+			ID: 108,
+			position: "Project Manager",
+			major: "BBA 2026",
 		},
 		{
-			name: "Jacob Blumenstein",
-			image0: jacob0,
-			image1: jacob1,
-			position: "Senior Advisor",
-			ID: 30,
-			url: "https://www.linkedin.com/in/jacobblumenstein/",
+			name: "Sophie Richards",
+			image0: sophierichards0,
+			image1: sophierichards1,
+			url: "https://www.linkedin.com/in/sophrich/",
+			ID: 109,
+			position: "Project Manager",
+			major: "BBA 2026",
 		},
 		{
-			name: "Rachelle Deng",
-			image0: rachelle0,
-			image1: rachelle1,
-			position: "Senior Advisor",
-			ID: 4,
-			url: "https://www.linkedin.com/in/rachelle-deng-4a7203202/",
+			name: "Eva Kumer",
+			image0: evakumer0,
+			image1: evakumer1,
+			url: "https://www.linkedin.com/in/evakumer/",
+			ID: 110,
+			position: "Project Manager",
+			major: "BBA 2026",
 		},
 		{
-			name: "Vincent Larsson",
-			image0: vinnie0,
-			image1: vinnie1,
-			position: "Senior Advisor",
-			ID: 1,
-			url: "https://www.linkedin.com/in/vinnielarsson",
+			name: "Ilakiya Rajaguru",
+			image0: ilakiyarajaguru0,
+			image1: ilakiyarajaguru1,
+			url: "https://www.linkedin.com/in/ilakiya-rajaguru-9a9530232/",
+			ID: 111,
+			position: "Project Manager",
+			major: "BBA 2026",
 		},
 		{
-			name: "Benny Shaevsky",
-			image0: benny0,
-			image1: benny1,
-			position: "Senior Advisor",
-			ID: 2,
-			url: "https://www.linkedin.com/in/benny-shaevsky",
+			name: "Yaseen Metwally",
+			image0: yaseenmetwally0,
+			image1: yaseenmetwally1,
+			url: "https://www.linkedin.com/in/yaseen-metwally-745067216/",
+			ID: 112,
+			position: "Project Manager",
+			major: "BBA & Chemical Engineering 2026",
 		},
 		{
-			name: "Lizzy Lu",
-			image0: lizzy0,
-			image1: lizzy1,
-			position: "Senior Advisor",
-			ID: 8,
-			url: "https://www.linkedin.com/in/elizabeth-lu/",
+			name: "Saathvik Hari",
+			image0: saathvikhari0,
+			image1: saathvikhari1,
+			url: "https://www.linkedin.com/in/saathvik-hari/",
+			ID: 113,
+			position: "Project Manager",
+			major: "DS & Economics 2026",
 		},
 		{
-			name: "Ben Millen",
-			image0: ben0,
-			image1: ben1,
-			position: "Senior Advisor",
-			ID: 9,
-			url: "https://www.linkedin.com/in/benjmillen",
-		},
-		{
-			name: "Hana Yu",
-			image0: hana0,
-			image1: hana1,
-			position: "Senior Advisor",
-			ID: 10,
-			url: "https://www.linkedin.com/in/hanayu2001/",
-		},
-		{
-			name: "Kate Miele ",
-			image0: kate0,
-			image1: kate1,
-			position: "Senior Advisor",
-			ID: 11,
-			url: "https://www.linkedin.com/in/kate-miele-320",
-		},
-		{
-			name: "Jackie Newman",
-			image0: jackie0,
-			image1: jackie1,
-			position: "Analyst",
-			ID: 18,
-			url: "https://www.linkedin.com/in/newman-jacqueline/",
-		},
-		{
-			name: "Brianna Patel",
-			image0: brianna0,
-			image1: brianna1,
-			position: "Senior Advisor",
-			ID: 12,
-			url: "https://www.linkedin.com/in/brianna-patel/",
-		},
-		{
-			name: "Carly May",
-			image0: carly0,
-			image1: carly1,
-			position: "Senior Advisor",
-			ID: 27,
-			url: "https://www.linkedin.com/in/carly-may-b33792194",
-		},
-		{
-			name: "Madelyn Woodrow",
-			image0: madelyn0,
-			image1: madelyn1,
-			position: "Senior Advisor",
-			ID: 28,
-			url: "https://www.linkedin.com/in/madelyn-woodrow-1446661a0",
-		},
-		{
-			name: "Christine Yan",
-			image0: christine0,
-			image1: christine1,
-			position: "Senior Advisor",
-			ID: 32,
-			url: "https://www.linkedin.com/in/christineyan-915",
+			name: "Jessica Tran",
+			image0: jessicatran0,
+			image1: jessicatran1,
+			url: "https://www.linkedin.com/in/jessica-tran-39582a205/",
+			ID: 114,
+			position: "Project Manager",
+			major: "BBA 2026",
 		},
 	];
 
 	const analystData = [
 		{
-			name: "Alejandro Borrego",
-			image0: alejandro0,
-			image1: alejandro1,
+			name: "Sydney Gaynor",
+			image0: sydneygaynor0,
+			image1: sydneygaynor1,
 			position: "Analyst",
-			ID: 13,
-			url: "https://www.linkedin.com/in/alejandro-borrego-8329671b1",
+			major: "BBA 2026",
+			ID: 115,
+			url: "https://www.linkedin.com/in/sydney-gaynor/",
 		},
 		{
-			name: "Caden Rubischko",
-			image0: caden0,
-			image1: caden1,
+			name: "Kaitlyn Ko",
+			image0: kaitlynko0,
+			image1: kaitlynko1,
 			position: "Analyst",
-			ID: 14,
-			url: "https://www.linkedin.com/in/caden-rubischko-7a3a08206/",
+			major: "BBA 2027",
+			ID: 116,
+			url: "https://www.linkedin.com/in/kaitlyn-ko-a59a17255/",
 		},
 		{
-			name: "Genta Gollopeni",
-			image0: genta0,
-			image1: genta1,
+			name: "Sydney Goad",
+			image0: sydneygoad0,
+			image1: sydneygoad1,
 			position: "Analyst",
-			ID: 16,
-			url: "https://www.linkedin.com/in/gentagollopeni",
+			major: "BBA 2027",
+			ID: 117,
+			url: "https://www.linkedin.com/in/sydney-goad13/",
 		},
 		{
-			name: "Tylan Porterfield",
-			image0: tylan0,
-			image1: tylan1,
+			name: "Caleb Lee",
+			image0: caleblee0,
+			image1: caleblee1,
 			position: "Analyst",
-			ID: 19,
-			url: "https://www.linkedin.com/mwlite/in/tylan-porterfield-780a221bb",
+			major: "DS 2027",
+			ID: 118,
+			url: "https://www.linkedin.com/in/calebjl/",
 		},
 		{
-			name: "Manan Jain",
-			image0: manan0,
-			image1: manan1,
+			name: "Arav Rajesh",
+			image0: aravrajesh0,
+			image1: aravrajesh1,
 			position: "Analyst",
-			ID: 25,
-			url: "https://www.linkedin.com/in/manan-jain1803/",
+			major: "Economics & Statistics 2027",
+			ID: 119,
+			url: "https://www.linkedin.com/in/arav-rajesh/",
 		},
 		{
-			name: "John Zhou",
-			image0: john0,
-			image1: john1,
+			name: "Zafir Maker-Agha",
+			image0: zafirmakeragha0,
+			image1: zafirmakeragha1,
 			position: "Analyst",
-			ID: 26,
-			url: "https://www.linkedin.com/in/john-zhou-45a878166/",
+			major: "BBA & Sustainability 2026",
+			ID: 120,
+			url: "https://www.linkedin.com/in/zafir-maker-agha/",
 		},
 		{
-			name: "Dylan Roussel",
-			image0: dylan0,
-			image1: dylan1,
+			name: "John Lee",
+			image0: johnlee0,
+			image1: johnlee1,
 			position: "Analyst",
-			ID: 20,
-			url: "https://www.linkedin.com/in/dylan-roussel-4a79891b4/",
+			major: "BBA 2027",
+			ID: 121,
+			url: "https://www.linkedin.com/in/john-y-lee/",
 		},
 		{
-			name: "Maxym Wolberg",
-			image0: maxym0,
-			image1: maxym1,
+			name: "Isabella Xu",
+			image0: isabellaxu0,
+			image1: isabellaxu1,
 			position: "Analyst",
-			ID: 22,
-			url: "https://www.linkedin.com/in/maxymw/",
+			major: "Economics 2027",
+			ID: 122,
+			url: "https://www.linkedin.com/in/isabellaaxu/",
+		},
+		{
+			name: "Joy Ren",
+			image0: joyren0,
+			image1: joyren1,
+			position: "Analyst",
+			major: "CS & Pre-Law 2027",
+			ID: 123,
+			url: "https://www.linkedin.com/in/joyxren/",
+		},
+		{
+			name: "Anish Thatiparthi",
+			image0: anishthatiparthi0,
+			image1: anishthatiparthi1,
+			url: "https://www.linkedin.com/in/anish-thatiparthi/",
+			ID: 124,
+			position: "Analyst",
+			major: "BBA 2027",
+		},
+		{
+			name: "Niyati Kashyap",
+			image0: niyatikashyap0,
+			image1: niyatikashyap1,
+			url: "https://www.linkedin.com/in/niyati-kashyap/",
+			ID: 125,
+			position: "Analyst",
+			major: "DS 2026",
+		},
+		{
+			name: "Cynthia Li",
+			image0: cynthiali0,
+			image1: cynthiali1,
+			url: "https://www.linkedin.com/in/cynthiajli100/",
+			ID: 126,
+			position: "Analyst",
+			major: "BBA 2027",
+		},
+		{
+			name: "Rhea Misra",
+			image0: rheamisra0,
+			image1: rheamisra1,
+			url: "https://www.linkedin.com/in/rhea-misra-b15401245/",
+			ID: 127,
+			position: "Analyst",
+			major: "CS & IOE 2027",
+		},
+		{
+			name: "Varun Talluri",
+			image0: varuntalluri0,
+			image1: varuntalluri1,
+			url: "https://www.linkedin.com/in/varun-talluri/",
+			ID: 128,
+			position: "Analyst",
+			major: "BBA & CS 2027",
+		},
+		{
+			name: "Sriyan Madugula",
+			image0: sriyanmadugula0,
+			image1: sriyanmadugula1,
+			url: "https://www.linkedin.com/in/sriyanm/",
+			ID: 129,
+			position: "Analyst",
+			major: "BBA & CS 2027",
+		},
+		{
+			name: "Natasha Shimon",
+			image0: natashashimon0,
+			image1: natashashimon1,
+			url: "https://www.linkedin.com/in/natasha-shimon-10676b249/",
+			ID: 130,
+			position: "Analyst",
+			major: "LSA Undecided 2027",
+		},
+		{
+			name: "Issei Hata",
+			image0: isseihata0,
+			image1: isseihata1,
+			url: "https://www.linkedin.com/in/isseihata/",
+			ID: 131,
+			position: "Analyst",
+			major: "Math 2027",
+		},
+		{
+			name: "Shiva Rajan",
+			image0: shivarajan0,
+			image1: shivarajan1,
+			url: "https://www.linkedin.com/in/shiva-rajan78/",
+			ID: 132,
+			position: "Analyst",
+			major: "BBA 2027",
+		},
+		{
+			name: "Aditi Vadakath",
+			image0: aditivadakath0,
+			image1: aditivadakath1,
+			url: "https://www.linkedin.com/in/aditi-vadakath/",
+			ID: 133,
+			position: "Analyst",
+			major: "BBA 2027",
+		},
+		{
+			name: "Siri Pattipati",
+			image0: siripattipati0,
+			image1: siripattipati1,
+			url: "https://www.linkedin.com/in/siri-pattipati/",
+			ID: 134,
+			position: "Member",
+			major: "BBA 2026",
+		},
+		{
+			name: "Azra Tokovic",
+			image0: azratokovic0,
+			image1: azratokovic1,
+			url: "https://www.linkedin.com/in/azra-tokovic/",
+			ID: 135,
+			position: "Member",
+			major: "BBA 2026",
+		},
+	];
+
+	const seniorData = [
+		{
+			name: "Charlie Schuetze",
+			image0: charlie0,
+			image1: charlie1,
+			position: "Senior Advisor",
+			major: "BBA 2024",
+			ID: 5,
+			url: "https://linkedin.com/in/charlie-schuetze",
+		},
+		{
+			name: "Priyanka Madhavan",
+			image0: pri0,
+			image1: pri1,
+			position: "Senior Advisor",
+			major: "BBA & Mechanical Engineering 2024",
+			ID: 3,
+			url: "https://www.linkedin.com/in/primadhavan/",
 		},
 		{
 			name: "Lawder Desantis",
 			image0: lawder0,
 			image1: lawder1,
-			position: "Analyst",
+			position: "Senior Advisor",
+			major: "Economics 2025",
 			ID: 31,
 			url: "https://www.linkedin.com/in/lawder-desantis-50a733232",
 		},
-		{
-			name: "Chris Zheng",
-			image0: chris0,
-			image1: chris1,
-			url: "https://www.linkedin.com/in/christopher-zheng-1aa1b6253/",
-			ID: 35,
-			position: "Analyst",
-		},
-		{
-			name: "Prah Pant",
-			image0: prah0,
-			image1: prah1,
-			url: "https://www.linkedin.com/in/prahlad-pant-a41919252/",
-			ID: 36,
-			position: "Analyst",
-		},
-		{
-			name: "Siri Pattipati",
-			image0: siri0,
-			image1: siri1,
-			url: "https://www.linkedin.com/in/siri-pattipati-87a155216/",
-			ID: 37,
-			position: "Analyst",
-		},
-		{
-			name: "Ilakiya Rajaguru",
-			image0: ilakiya0,
-			image1: ilakiya1,
-			url: "https://www.linkedin.com/in/ilakiya-rajaguru-9a9530232/",
-			ID: 38,
-			position: "Analyst",
-		},
-		{
-			name: "Patrick Li",
-			image0: patrick0,
-			image1: patrick1,
-			url: "https://www.linkedin.com/in/patrick-li-6a9296247/",
-			ID: 39,
-			position: "Analyst",
-		},
-		{
-			name: "Amory Tin",
-			image0: amory0,
-			image1: amory1,
-			url: "https://www.linkedin.com/in/amory-tin/",
-			ID: 40,
-			position: "Analyst",
-		},
-	];
-
-	const managerData = [
 		{
 			name: "Kapil Pownikar",
 			image0: kapil0,
 			image1: kapil1,
 			url: "https://www.linkedin.com/in/kapil-pownikar/",
 			ID: 41,
-			position: "Project Manager",
+			position: "Senior Advisor",
+			major: "DS & Math 2025",
 		},
 		{
-			name: "Jack Watson",
-			image0: jack0,
-			image1: jack1,
-			url: "https://www.linkedin.com/in/jack-m-watson/",
-			ID: 42,
-			position: "Project Manager",
+			name: "Anish Vankayalapati",
+			image0: anish0,
+			image1: anish1,
+			position: "Senior Advisor",
+			major: "BBA & CS 2025",
+			ID: 21,
+			url: "https://linkedin.com/in/anish-vankayalapati-6b4914223",
 		},
 		{
-			name: "Anthony Remick",
-			image0: anthony0,
-			image1: anthony1,
-			url: "https://www.linkedin.com/in/anthony-remick/",
-			ID: 43,
-			position: "Project Manager",
+			name: "Rachelle Deng",
+			image0: rachelle0,
+			image1: rachelle1,
+			position: "Senior Advisor",
+			major: "BBA 2024",
+			ID: 4,
+			url: "https://www.linkedin.com/in/rachelle-deng-4a7203202/",
 		},
-		{
-			name: "Debangi Mohanta",
-			image0: debangi0,
-			image1: debangi1,
-			url: "https://www.linkedin.com/in/debangi-mohanta-777057218/",
-			ID: 44,
-			position: "Project Manager",
-		},
-		{
-			name: "Vivek Nukala",
-			image0: vivek0,
-			image1: vivek1,
-			url: "https://www.linkedin.com/in/vivek-r-nukala/",
-			ID: 45,
-			position: "Project Manager",
-		},
+		
 	];
 
 	return (
@@ -574,7 +709,20 @@ function RosterSection() {
 							<TextContainer>
 								<CardTitle>{data.name}</CardTitle>
 								<TinySpacer />
-								<CardHeader>{data.position}</CardHeader>
+								<CardHeader>
+									{hoverID2 === data.ID ? data.major : data.position}
+								</CardHeader>
+
+								<CardHeaderHover
+								onMouseEnter={() => setHoverID2(data.ID)}
+								onMouseLeave={() => setHoverID2(0)}
+								style={{
+									opacity:
+										hoverID2 === data.ID ? "1" : "0",
+									backgroundImage:`url(${data.image1})`,
+								}}
+								/>
+
 							</TextContainer>
 						</CardContainer>
 					</a>
@@ -644,8 +792,20 @@ function RosterSection() {
 						<TextContainer>
 							<CardTitle>{data.name}</CardTitle>
 							<TinySpacer />
-							<CardHeader>{data.position}</CardHeader>
-						</TextContainer>
+							<CardHeader>
+									{hoverID2 === data.ID ? data.major : data.position}
+								</CardHeader>
+
+								<CardHeaderHover
+								onMouseEnter={() => setHoverID2(data.ID)}
+								onMouseLeave={() => setHoverID2(0)}
+								style={{
+									opacity:
+										hoverID2 === data.ID ? "1" : "0",
+									backgroundImage:`url(${data.image1})`,
+								}}
+								/>
+							</TextContainer>
 					</CardContainer>
 				))}
 			</PositionContainer>
@@ -682,7 +842,19 @@ function RosterSection() {
 							<TextContainer>
 								<CardTitle>{data.name}</CardTitle>
 								<TinySpacer />
-								<CardHeader>{data.position}</CardHeader>
+								<CardHeader>
+									{hoverID2 === data.ID ? data.major : data.position}
+								</CardHeader>
+
+								<CardHeaderHover
+								onMouseEnter={() => setHoverID2(data.ID)}
+								onMouseLeave={() => setHoverID2(0)}
+								style={{
+									opacity:
+										hoverID2 === data.ID ? "1" : "0",
+									backgroundImage:`url(${data.image1})`,
+								}}
+								/>
 							</TextContainer>
 						</CardContainer>
 					</a>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import journey from "../../Images/About/journey.jpg";
-import NextSection from "../../Components/General/NextSection.js";
+import NextSection from "../General/NextSection.js";
 
 const SectionContainer = styled.div`
   width: 100vw;

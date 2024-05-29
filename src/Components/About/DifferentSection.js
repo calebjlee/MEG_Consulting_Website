@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import NextSection from "../../Components/General/NextSection.js";
+import NextSection from "../General/NextSection.js";
 
 {/*First Text Section*/}
 
@@ -75,11 +75,11 @@ function DifferentSection() {
         <TitleTextBold>PEOPLE COME FIRST</TitleTextBold>
         <SmallSpacer />
         <BodyText>
-          MEG Consulting is a pro-bono consulting group at the University of
-          Michigan. From local startups to million dollar companies, members
+          MEG Consulting is a premier consulting group at the University of
+          Michigan. From local startups to Fortune 500 companies, members
           have the opportunity to provide the solutions for real world problems.
           At our core, we believe in treating our people with kindness and
-          respect. From the executive board to our applicants, we strive to
+          respect. From the executive board to our analysts, we strive to
           create an environment where everyone can learn and grow. We see our
           people as not only business professionals but also as our mentors,
           teachers, peers, and most importantly, friends.

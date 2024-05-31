@@ -3,85 +3,25 @@ import { useState } from "react";
 
 import brandon0 from "../../Images/Team/headshots/brandon0.png";
 import brandon1 from "../../Images/Team/headshots/brandon1.png";
-import vinnie0 from "../../Images/Team/headshots/vinnie0.png";
-import vinnie1 from "../../Images/Team/headshots/vinnie1.png";
-import benny0 from "../../Images/Team/headshots/benny0.png";
-import benny1 from "../../Images/Team/headshots/benny1.png";
 import pri0 from "../../Images/Team/headshots/pri0.png";
 import pri1 from "../../Images/Team/headshots/pri1.png";
 import rachelle0 from "../../Images/Team/headshots/rachelle0.png";
 import rachelle1 from "../../Images/Team/headshots/rachelle1.png";
-import lizzy0 from "../../Images/Team/headshots/lizzy0.png";
-import lizzy1 from "../../Images/Team/headshots/lizzy1.png";
-import ben0 from "../../Images/Team/headshots/ben0.png";
-import ben1 from "../../Images/Team/headshots/ben1.png";
-import hana0 from "../../Images/Team/headshots/hana0.png";
-import hana1 from "../../Images/Team/headshots/hana1.png";
-import kate0 from "../../Images/Team/headshots/kate0.png";
-import kate1 from "../../Images/Team/headshots/kate1.png";
-import brianna0 from "../../Images/Team/headshots/bri0.png";
-import brianna1 from "../../Images/Team/headshots/bri1.png";
-import alejandro0 from "../../Images/Team/headshots/alejandro0.png";
-import caden0 from "../../Images/Team/headshots/caden0.png";
-import anthony0 from "../../Images/Team/headshots/anthony0.png";
-import genta0 from "../../Images/Team/headshots/genta0.png";
-import ragini0 from "../../Images/Team/headshots/ragini0.png";
-import jackie0 from "../../Images/Team/headshots/jackie0.png";
-import tylan0 from "../../Images/Team/headshots/tylan0.png";
-import alejandro1 from "../../Images/Team/headshots/alejandro1.png";
-import caden1 from "../../Images/Team/headshots/caden1.png";
-import anthony1 from "../../Images/Team/headshots/anthony1.png";
-import genta1 from "../../Images/Team/headshots/genta1.png";
-import ragini1 from "../../Images/Team/headshots/ragini1.png";
-import jackie1 from "../../Images/Team/headshots/jackie1.png";
-import tylan1 from "../../Images/Team/headshots/tylan1.png";
-import dylan1 from "../../Images/Team/headshots/dylan1.png";
-import anish1 from "../../Images/Team/headshots/anish1.png";
-import maxym1 from "../../Images/Team/headshots/maxym1.png";
-import jack1 from "../../Images/Team/headshots/jack1.png";
-import dylan0 from "../../Images/Team/headshots/dylan0.png";
 import anish0 from "../../Images/Team/headshots/anish0.png";
-import maxym0 from "../../Images/Team/headshots/maxym0.png";
-import jack0 from "../../Images/Team/headshots/jack0.png";
+import anish1 from "../../Images/Team/headshots/anish1.png";
 import charlie0 from "../../Images/Team/headshots/charlie0.png";
 import charlie1 from "../../Images/Team/headshots/charlie1.png";
 import kapil0 from "../../Images/Team/headshots/kapil0.png";
 import kapil1 from "../../Images/Team/headshots/kapil1.png";
-import manan0 from "../../Images/Team/headshots/manan0.png";
-import john0 from "../../Images/Team/headshots/john0.png";
-import manan1 from "../../Images/Team/headshots/manan1.png";
-import john1 from "../../Images/Team/headshots/john1.png";
-import jacob0 from "../../Images/Team/headshots/jacob0.png";
-import kiran0 from "../../Images/Team/headshots/kiran0.png";
-import carly0 from "../../Images/Team/headshots/carly0.png";
-import madelyn0 from "../../Images/Team/headshots/madelyn0.png";
-import jacob1 from "../../Images/Team/headshots/jacob1.png";
-import kiran1 from "../../Images/Team/headshots/kiran1.png";
-import carly1 from "../../Images/Team/headshots/carly1.png";
-import madelyn1 from "../../Images/Team/headshots/madelyn1.png";
 import lawder0 from "../../Images/Team/headshots/lawder0.png";
 import lawder1 from "../../Images/Team/headshots/lawder1.png";
-import christine0 from "../../Images/Team/headshots/christine0.png";
-import christine1 from "../../Images/Team/headshots/christine1.png";
-import vivek0 from "../../Images/Team/headshots/vivek0.png";
-import debangi0 from "../../Images/Team/headshots/debangi0.png";
-import chris0 from "../../Images/Team/headshots/chris0.png";
-import prah0 from "../../Images/Team/headshots/prah0.png";
-import siri0 from "../../Images/Team/headshots/siri0.png";
-import ilakiya0 from "../../Images/Team/headshots/ilakiya0.png";
-import patrick0 from "../../Images/Team/headshots/patrick0.png";
-import amory0 from "../../Images/Team/headshots/amory0.png";
-import vivek1 from "../../Images/Team/headshots/vivek1.png";
-import debangi1 from "../../Images/Team/headshots/debangi1.png";
-import chris1 from "../../Images/Team/headshots/chris1.png";
-import prah1 from "../../Images/Team/headshots/prah1.png";
-import siri1 from "../../Images/Team/headshots/siri1.png";
-import ilakiya1 from "../../Images/Team/headshots/ilakiya1.png";
-import patrick1 from "../../Images/Team/headshots/patrick1.png";
-import amory1 from "../../Images/Team/headshots/amory1.png";
+
+import jack0 from "../../Images/Team/headshots/jack0.png";
+import jack1 from "../../Images/Team/headshots/jack1.png";
+import ragini0 from "../../Images/Team/headshots/ragini0.png";
+import ragini1 from "../../Images/Team/headshots/ragini1.png";
 import shubh0 from "../../Images/Team/headshots/shubh0.png";
 import shubh1 from "../../Images/Team/headshots/shubh1.png";
-
 
 import aditivadakath0 from "../../Images/Team/headshots/aditivadakath0.png";
 import aditivadakath1 from "../../Images/Team/headshots/aditivadakath1.png";
@@ -377,30 +317,12 @@ function RosterSection() {
 			url: "https://www.linkedin.com/in/evakumer/",
 		},
 		{
-			name: "Ilakiya Rajaguru",
-			image0: ilakiyarajaguru0,
-			image1: ilakiyarajaguru1,
-			position: "Project Manager",
-			major: "BBA 2026",
-			ID: 111,
-			url: "https://www.linkedin.com/in/ilakiya-rajaguru-9a9530232/",
-		},
-		{
-			name: "Yaseen Metwally",
-			image0: yaseenmetwally0,
-			image1: yaseenmetwally1,
-			position: "Project Manager",
-			major: "BBA & Chemical Engineering 2026",
-			ID: 112,
-			url: "hhttps://www.linkedin.com/in/yaseen-metwally-745067216/",
-		},
-		{
 			name: "Saathvik Hari",
 			image0: saathvikhari0,
 			image1: saathvikhari1,
 			position: "Project Manager",
 			major: "Economics & DS 2026",
-			ID: 113,
+			ID: 111,
 			url: "https://www.linkedin.com/in/saathvik-hari/",
 		},
 		{
@@ -409,10 +331,27 @@ function RosterSection() {
 			image1: jessicatran1,
 			position: "Project Manager",
 			major: "BBA 2026",
-			ID: 114,
+			ID: 112,
 			url: "https://www.linkedin.com/in/jessica-tran-39582a205/",
 		},
-		
+		{
+			name: "Ilakiya Rajaguru",
+			image0: ilakiyarajaguru0,
+			image1: ilakiyarajaguru1,
+			position: "Project Manager",
+			major: "BBA 2026",
+			ID: 113,
+			url: "https://www.linkedin.com/in/ilakiya-rajaguru-9a9530232/",
+		},
+		{
+			name: "Yaseen Metwally",
+			image0: yaseenmetwally0,
+			image1: yaseenmetwally1,
+			position: "Project Manager",
+			major: "BBA & Chemical Engineering 2026",
+			ID: 114,
+			url: "hhttps://www.linkedin.com/in/yaseen-metwally-745067216/",
+		},
 	];
 
 	const analystData = [
@@ -498,48 +437,12 @@ function RosterSection() {
 			url: "https://www.linkedin.com/in/joyxren/",
 		},
 		{
-			name: "Anish Thatiparthi",
-			image0: anishthatiparthi0,
-			image1: anishthatiparthi1,
-			position: "Analyst",
-			major: "BBA 2027",
-			ID: 124,
-			url: "https://www.linkedin.com/in/anish-thatiparthi/",
-		},
-		{
-			name: "Niyati Kashyap",
-			image0: niyatikashyap0,
-			image1: niyatikashyap1,
-			position: "Analyst",
-			major: "DS 2026",
-			ID: 125,
-			url: "https://www.linkedin.com/in/niyati-kashyap/",
-		},
-		{
-			name: "Cynthia Lia",
-			image0: cynthiali0,
-			image1: cynthiali1,
-			position: "Analyst",
-			major: "BBA 2027",
-			ID: 126,
-			url: "https://www.linkedin.com/in/cynthiajli100/",
-		},
-		{
-			name: "Rhea Misra",
-			image0: rheamisra0,
-			image1: rheamisra1,
-			position: "Analyst",
-			major: "IOE & CS 2027",
-			ID: 127,
-			url: "https://www.linkedin.com/in/rhea-misra-b15401245/",
-		},
-		{
 			name: "Varun Talluri",
 			image0: varuntalluri0,
 			image1: varuntalluri1,
 			position: "Analyst",
 			major: "BBA & CS 2027",
-			ID: 128,
+			ID: 124,
 			url: "https://www.linkedin.com/in/varun-talluri/",
 		},
 		{
@@ -548,7 +451,7 @@ function RosterSection() {
 			image1: sriyanmadugula1,
 			position: "Analyst",
 			major: "BBA & CS 2027",
-			ID: 129,
+			ID: 125,
 			url: "https://www.linkedin.com/in/sriyanm/",
 		},
 		{
@@ -557,7 +460,7 @@ function RosterSection() {
 			image1: natashashimon1,
 			position: "Analyst",
 			major: "LSA Undecided 2027",
-			ID: 130,
+			ID: 126,
 			url: "https://www.linkedin.com/in/natasha-shimon-10676b249/",
 		},
 		{
@@ -566,7 +469,7 @@ function RosterSection() {
 			image1: isseihata1,
 			position: "Analyst",
 			major: "Economics & Math 2027",
-			ID: 131,
+			ID: 127,
 			url: "https://www.linkedin.com/in/isseihata/",
 		},
 		{
@@ -575,7 +478,7 @@ function RosterSection() {
 			image1: shivarajan1,
 			position: "Analyst",
 			major: "BBA 2027",
-			ID: 132,
+			ID: 128,
 			url: "https://www.linkedin.com/in/shiva-rajan78/",
 		},
 		{
@@ -584,8 +487,44 @@ function RosterSection() {
 			image1: aditivadakath1,
 			position: "Analyst",
 			major: "BBA 2027",
-			ID: 133,
+			ID: 129,
 			url: "https://www.linkedin.com/in/aditi-vadakath/",
+		},
+		{
+			name: "Anish Thatiparthi",
+			image0: anishthatiparthi0,
+			image1: anishthatiparthi1,
+			position: "Analyst",
+			major: "BBA 2027",
+			ID: 130,
+			url: "https://www.linkedin.com/in/anish-thatiparthi/",
+		},
+		{
+			name: "Niyati Kashyap",
+			image0: niyatikashyap0,
+			image1: niyatikashyap1,
+			position: "Analyst",
+			major: "DS 2026",
+			ID: 131,
+			url: "https://www.linkedin.com/in/niyati-kashyap/",
+		},
+		{
+			name: "Cynthia Lia",
+			image0: cynthiali0,
+			image1: cynthiali1,
+			position: "Analyst",
+			major: "BBA 2027",
+			ID: 132,
+			url: "https://www.linkedin.com/in/cynthiajli100/",
+		},
+		{
+			name: "Rhea Misra",
+			image0: rheamisra0,
+			image1: rheamisra1,
+			position: "Analyst",
+			major: "IOE & CS 2027",
+			ID: 133,
+			url: "https://www.linkedin.com/in/rhea-misra-b15401245/",
 		},
 
 		{
@@ -639,21 +578,12 @@ function RosterSection() {
 			url: "https://www.linkedin.com/in/lawder-desantis-50a733232",
 		},
 		{
-			name: "Kapil Pownikar",
-			image0: kapil0,
-			image1: kapil1,
-			position: "Senior Advisor",
-			major: "Math & DS 2025",
-			ID: 4,
-			url: "https://www.linkedin.com/in/kapil-pownikar/",
-		},
-		{
 			name: "Anish Vankayalapati",
 			image0: anish0,
 			image1: anish1,
 			position: "Senior Advisor",
 			major: "BBA & CS 2025",
-			ID: 5,
+			ID: 4,
 			url: "https://linkedin.com/in/anish-vankayalapati-6b4914223",
 		},
 
@@ -663,10 +593,18 @@ function RosterSection() {
 			image1: rachelle1,
 			position: "Senior Advisor",
 			major: "BBA 2024",
-			ID: 6,
+			ID: 5,
 			url: "https://www.linkedin.com/in/rachelle-deng-4a7203202/",
 		},
-		
+		{
+			name: "Kapil Pownikar",
+			image0: kapil0,
+			image1: kapil1,
+			position: "Senior Advisor",
+			major: "Math & DS 2025",
+			ID: 6,
+			url: "https://www.linkedin.com/in/kapil-pownikar/",
+		},
 	];
 
 	return (

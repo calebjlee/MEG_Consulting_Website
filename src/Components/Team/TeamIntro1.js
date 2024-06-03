@@ -1,14 +1,13 @@
 import styled from "styled-components";
-import jump from "../../Images/Team/jump.png";
 import NextSection from "../General/NextSection";
 
 import megdocks from "../../Images/Team/megdocks.png";
-
+import jump from "../../Images/Team/jump.png";
 
 const SectionContainer = styled.div`
   width: 100vw;
   height: 150vh;
-  background-image: url(${megdocks});
+  background-image: url(${jump});
   background-repeat: no-repeat;
   background-size: auto 60vh;
   background-position: center 20%;

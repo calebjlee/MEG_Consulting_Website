@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const TimelineContainer = styled.div`
 	height: 27vh;
 	width: 57vw;
-	outline: solid 0.3vh #1e1e1e;
+	outline: solid 3px #1e1e1e;
 	margin: 0.15vh;
 	padding-right: 0.3vw;
 	background-color: transparent; /* Transparent background */

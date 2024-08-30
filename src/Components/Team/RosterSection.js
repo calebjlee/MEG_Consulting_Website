@@ -257,7 +257,7 @@ function RosterSection() {
 			position: "VP Client Acquisition",
 			major: "BBA 2026",
 			ID: 104,
-			url: "https://www.linkedin.com/in/prahlad-pant-a41919252/",
+			url: "https://www.linkedin.com/in/prahpant/",
 		},
 		{
 			name: "Amory Tin",
@@ -639,35 +639,41 @@ function RosterSection() {
 				</TextContainer>
 				<NewLine />
 				{managerData.map((data) => (
-					<CardContainer>
-						<CardImage
-							style={{ backgroundImage: `url(${data.image0})` }}
-						/>
-						<CardImageHover
-							onMouseEnter={() => setHoverID2(data.ID)}
-							onMouseLeave={() => setHoverID2(0)}
-							style={{
-								opacity: hoverID2 === data.ID ? "100%" : "0%",
-								backgroundImage: `url(${data.image1})`,
-							}}
-						/>
-						<NewLine />
-						<TextContainer>
-							<CardTitle>{data.name}</CardTitle>
-							<TinySpacer />
-							<CardHeader>
-                    				{hoverID2 === data.ID ? data.major : data.position}
-                				</CardHeader>
-
-							<CardHeaderHover
+					<a
+					href={data.url}
+					target="_blank"
+					style={{ textDecoration: "none" }}
+					>
+						<CardContainer>
+							<CardImage
+								style={{ backgroundImage: `url(${data.image0})` }}
+							/>
+							<CardImageHover
 								onMouseEnter={() => setHoverID2(data.ID)}
 								onMouseLeave={() => setHoverID2(0)}
 								style={{
+									opacity: hoverID2 === data.ID ? "100%" : "0%",
 									backgroundImage: `url(${data.image1})`,
 								}}
-                			/>
-						</TextContainer>
-					</CardContainer>
+							/>
+							<NewLine />
+							<TextContainer>
+								<CardTitle>{data.name}</CardTitle>
+								<TinySpacer />
+								<CardHeader>
+										{hoverID2 === data.ID ? data.major : data.position}
+									</CardHeader>
+
+								<CardHeaderHover
+									onMouseEnter={() => setHoverID2(data.ID)}
+									onMouseLeave={() => setHoverID2(0)}
+									style={{
+										backgroundImage: `url(${data.image1})`,
+									}}
+								/>
+							</TextContainer>
+						</CardContainer>
+					</a>
 				))}
 			</PositionContainer>
 			<PositionContainer>

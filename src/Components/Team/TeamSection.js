@@ -213,7 +213,7 @@ function TeamSection() {
 						width: "100%",
 						textAlign: "center",
 						color: "white",
-						opacity: hoverID1 ? "0%" : "100%",
+						opacity: hoverID1 ? "0%" : "0%",
 						zIndex: "999",
 						fontSize: "4vmin",
 					}}
@@ -221,103 +221,104 @@ function TeamSection() {
 					______________________________
 				</TitleText>
 				<TeamImage src={teamf23}></TeamImage>
+				<TeamImage src={teamf23}></TeamImage>
 				<ShadowContainer
 					style={{
 						opacity: hoverID === 1 ? "0" : hoverID === 0 ? "0" : 1,
 					}}
 				>
-					<TeamImage src={vivek}></TeamImage>
+					<TeamImage src={teamf23}></TeamImage>
 				</ShadowContainer>
 				<ShadowContainer
 					style={{
 						opacity: hoverID === 2 ? "0" : hoverID === 0 ? "0" : 1,
 					}}
 				>
-					<TeamImage src={sydney}></TeamImage>
+					<TeamImage src={teamf23}></TeamImage>
 				</ShadowContainer>
 				<ShadowContainer
 					style={{
 						opacity: hoverID === 3 ? "0" : hoverID === 0 ? "0" : 1,
 					}}
 				>
-					<TeamImage src={siri}></TeamImage>
+					<TeamImage src={teamf23}></TeamImage>
 				</ShadowContainer>
 				<ShadowContainer
 					style={{
 						opacity: hoverID === 4 ? "0" : hoverID === 0 ? "0" : 1,
 					}}
 				>
-					<TeamImage src={prah}></TeamImage>
+					<TeamImage src={teamf23}></TeamImage>
 				</ShadowContainer>
 				<ShadowContainer
 					style={{
 						opacity: hoverID === 5 ? "0" : hoverID === 0 ? "0" : 4,
 					}}
 				>
-					<TeamImage src={mythily}></TeamImage>
+					<TeamImage src={teamf23}></TeamImage>
 				</ShadowContainer>
 				<ShadowContainer
 					style={{
 						opacity: hoverID === 6 ? "0" : hoverID === 0 ? "0" : 4,
 					}}
 				>
-					<TeamImage src={lucky}></TeamImage>
+					<TeamImage src={teamf23}></TeamImage>
 				</ShadowContainer>
 				<ShadowContainer
 					style={{
 						opacity: hoverID === 7 ? "0" : hoverID === 0 ? "0" : 4,
 					}}
 				>
-					<TeamImage src={luca}></TeamImage>
+					<TeamImage src={teamf23}></TeamImage>
 				</ShadowContainer>
 				<ShadowContainer
 					style={{
 						opacity: hoverID === 8 ? "0" : hoverID === 0 ? "0" : 4,
 					}}
 				>
-					<TeamImage src={leo}></TeamImage>
+					<TeamImage src={teamf23}></TeamImage>
 				</ShadowContainer>
 				<ShadowContainer
 					style={{
 						opacity: hoverID === 9 ? "0" : hoverID === 0 ? "0" : 4,
 					}}
 				>
-					<TeamImage src={hannah}></TeamImage>
+					<TeamImage src={teamf23}></TeamImage>
 				</ShadowContainer>
 				<ShadowContainer
 					style={{
 						opacity: hoverID === 10 ? "0" : hoverID === 0 ? "0" : 4,
 					}}
 				>
-					<TeamImage src={joe}></TeamImage>
+					<TeamImage src={teamf23}></TeamImage>
 				</ShadowContainer>
 				<ShadowContainer
 					style={{
 						opacity: hoverID === 11 ? "0" : hoverID === 0 ? "0" : 4,
 					}}
 				>
-					<TeamImage src={aman}></TeamImage>
+					<TeamImage src={teamf23}></TeamImage>
 				</ShadowContainer>
 				<ShadowContainer
 					style={{
 						opacity: hoverID === 12 ? "0" : hoverID === 0 ? "0" : 4,
 					}}
 				>
-					<TeamImage src={amory}></TeamImage>
+					<TeamImage src={teamf23}></TeamImage>
 				</ShadowContainer>
 				<ShadowContainer
 					style={{
 						opacity: hoverID === 13 ? "0" : hoverID === 0 ? "0" : 4,
 					}}
 				>
-					<TeamImage src={chris}></TeamImage>
+					<TeamImage src={teamf23}></TeamImage>
 				</ShadowContainer>
 				<ShadowContainer
 					style={{
 						opacity: hoverID === 14 ? "0" : hoverID === 0 ? "0" : 4,
 					}}
 				>
-					<TeamImage src={debangi}></TeamImage>
+					<TeamImage src={teamf23}></TeamImage>
 				</ShadowContainer>
 				<HoverContainer>
 					<SvgDesktop>
@@ -1654,6 +1655,7 @@ function TeamSection() {
 			<TextContainer style={{ display: hoverID === 0 ? "flex" : "none" }}>
 				<TitleText style={{ textAlign: "center" }}>
 					Meet The Members
+					Meet The Members
 				</TitleText>
 				<SmallSpacer />
 				<BodyText>
@@ -1668,14 +1670,16 @@ function TeamSection() {
 					</b>
 				</BodyText>
 			</TextContainer>
+			
 			<TextContainer style={{ display: hoverID !== 0 ? "flex" : "none" }}>
-				<TitleText>{names[hoverID]}</TitleText>
+			<TitleText style={{ textAlign: "center" }}>
+					Meet The Members
+				</TitleText>
 				<SmallSpacer />
 				<BodyText>
-					<b>Biggest Fear:</b> {fear[hoverID]}
-				</BodyText>
-				<BodyText>
-					<b>Favorite TV Show:</b> {tv[hoverID]}
+					Meet the Fall 2023 Class. We're so happy these
+					amazing members are with us! To be part of the next MEG
+					class consider coming to our recruiting events and applying.
 				</BodyText>
 				<SmallSpacer />
 			</TextContainer>

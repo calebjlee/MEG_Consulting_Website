@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import timeline from "../../Images/Application/timeline.png";
+import TimelineComponent from "./TimelineComponent";
 import coffee from "../../Images/Application/coffee.png";
 import north from "../../Images/Application/north.png";
 import central from "../../Images/Application/central.png";
@@ -54,25 +54,25 @@ const LogoContainer = styled.div`
 	}
 `;
 
-const TimelineContainer = styled.div`
-	height: 27vh;
-	width: 57vw;
-	outline: solid 3px #1e1e1e;
-	margin: 1.5px;
-	padding-right: 3px;
-	background-image: url(${timeline});
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-	position: relative;
+// const TimelineContainer = styled.div`
+// 	height: 27vh;
+// 	width: 57vw;
+// 	outline: solid 3px #1e1e1e;
+// 	margin: 1.5px;
+// 	padding-right: 3px;
+// 	background-image: url(${timeline});
+// 	background-size: contain;
+// 	background-position: center;
+// 	background-repeat: no-repeat;
+// 	position: relative;
 
-	@media (max-aspect-ratio: 1217/835) {
-		width: 79vw;
-	}
-	@media (max-aspect-ratio: 610/835) {
-		padding-right: 1vw;
-	}
-`;
+// 	@media (max-aspect-ratio: 1217/835) {
+// 		width: 79vw;
+// 	}
+// 	@media (max-aspect-ratio: 610/835) {
+// 		padding-right: 1vw;
+// 	}
+// `;
 
 const InfoContainer = styled.div`
 	height: 54vh;
@@ -292,7 +292,7 @@ function MenuSection() {
 						</TitleText>
 					</TextContainer>
 				</LogoContainer>
-				<TimelineContainer></TimelineContainer>
+				<TimelineComponent></TimelineComponent>
 				<NewLine />
 				<FaqContainer>
 					<TextContainer>

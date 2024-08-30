@@ -3,82 +3,23 @@ import { useState } from "react";
 
 import brandon0 from "../../Images/Team/headshots/brandon0.png";
 import brandon1 from "../../Images/Team/headshots/brandon1.png";
-import vinnie0 from "../../Images/Team/headshots/vinnie0.png";
-import vinnie1 from "../../Images/Team/headshots/vinnie1.png";
-import benny0 from "../../Images/Team/headshots/benny0.png";
-import benny1 from "../../Images/Team/headshots/benny1.png";
 import pri0 from "../../Images/Team/headshots/pri0.png";
 import pri1 from "../../Images/Team/headshots/pri1.png";
 import rachelle0 from "../../Images/Team/headshots/rachelle0.png";
 import rachelle1 from "../../Images/Team/headshots/rachelle1.png";
-import lizzy0 from "../../Images/Team/headshots/lizzy0.png";
-import lizzy1 from "../../Images/Team/headshots/lizzy1.png";
-import ben0 from "../../Images/Team/headshots/ben0.png";
-import ben1 from "../../Images/Team/headshots/ben1.png";
-import hana0 from "../../Images/Team/headshots/hana0.png";
-import hana1 from "../../Images/Team/headshots/hana1.png";
-import kate0 from "../../Images/Team/headshots/kate0.png";
-import kate1 from "../../Images/Team/headshots/kate1.png";
-import brianna0 from "../../Images/Team/headshots/bri0.png";
-import brianna1 from "../../Images/Team/headshots/bri1.png";
-import alejandro0 from "../../Images/Team/headshots/alejandro0.png";
-import caden0 from "../../Images/Team/headshots/caden0.png";
-import anthony0 from "../../Images/Team/headshots/anthony0.png";
-import genta0 from "../../Images/Team/headshots/genta0.png";
-import ragini0 from "../../Images/Team/headshots/ragini0.png";
-import jackie0 from "../../Images/Team/headshots/jackie0.png";
-import tylan0 from "../../Images/Team/headshots/tylan0.png";
-import alejandro1 from "../../Images/Team/headshots/alejandro1.png";
-import caden1 from "../../Images/Team/headshots/caden1.png";
-import anthony1 from "../../Images/Team/headshots/anthony1.png";
-import genta1 from "../../Images/Team/headshots/genta1.png";
-import ragini1 from "../../Images/Team/headshots/ragini1.png";
-import jackie1 from "../../Images/Team/headshots/jackie1.png";
-import tylan1 from "../../Images/Team/headshots/tylan1.png";
-import dylan1 from "../../Images/Team/headshots/dylan1.png";
-import anish1 from "../../Images/Team/headshots/anish1.png";
-import maxym1 from "../../Images/Team/headshots/maxym1.png";
-import jack1 from "../../Images/Team/headshots/jack1.png";
-import dylan0 from "../../Images/Team/headshots/dylan0.png";
 import anish0 from "../../Images/Team/headshots/anish0.png";
-import maxym0 from "../../Images/Team/headshots/maxym0.png";
-import jack0 from "../../Images/Team/headshots/jack0.png";
+import anish1 from "../../Images/Team/headshots/anish1.png";
 import charlie0 from "../../Images/Team/headshots/charlie0.png";
 import charlie1 from "../../Images/Team/headshots/charlie1.png";
 import kapil0 from "../../Images/Team/headshots/kapil0.png";
 import kapil1 from "../../Images/Team/headshots/kapil1.png";
-import manan0 from "../../Images/Team/headshots/manan0.png";
-import john0 from "../../Images/Team/headshots/john0.png";
-import manan1 from "../../Images/Team/headshots/manan1.png";
-import john1 from "../../Images/Team/headshots/john1.png";
-import jacob0 from "../../Images/Team/headshots/jacob0.png";
-import kiran0 from "../../Images/Team/headshots/kiran0.png";
-import carly0 from "../../Images/Team/headshots/carly0.png";
-import madelyn0 from "../../Images/Team/headshots/madelyn0.png";
-import jacob1 from "../../Images/Team/headshots/jacob1.png";
-import kiran1 from "../../Images/Team/headshots/kiran1.png";
-import carly1 from "../../Images/Team/headshots/carly1.png";
-import madelyn1 from "../../Images/Team/headshots/madelyn1.png";
 import lawder0 from "../../Images/Team/headshots/lawder0.png";
 import lawder1 from "../../Images/Team/headshots/lawder1.png";
-import christine0 from "../../Images/Team/headshots/christine0.png";
-import christine1 from "../../Images/Team/headshots/christine1.png";
-import vivek0 from "../../Images/Team/headshots/vivek0.png";
-import debangi0 from "../../Images/Team/headshots/debangi0.png";
-import chris0 from "../../Images/Team/headshots/chris0.png";
-import prah0 from "../../Images/Team/headshots/prah0.png";
-import siri0 from "../../Images/Team/headshots/siri0.png";
-import ilakiya0 from "../../Images/Team/headshots/ilakiya0.png";
-import patrick0 from "../../Images/Team/headshots/patrick0.png";
-import amory0 from "../../Images/Team/headshots/amory0.png";
-import vivek1 from "../../Images/Team/headshots/vivek1.png";
-import debangi1 from "../../Images/Team/headshots/debangi1.png";
-import chris1 from "../../Images/Team/headshots/chris1.png";
-import prah1 from "../../Images/Team/headshots/prah1.png";
-import siri1 from "../../Images/Team/headshots/siri1.png";
-import ilakiya1 from "../../Images/Team/headshots/ilakiya1.png";
-import patrick1 from "../../Images/Team/headshots/patrick1.png";
-import amory1 from "../../Images/Team/headshots/amory1.png";
+
+import jack0 from "../../Images/Team/headshots/jack0.png";
+import jack1 from "../../Images/Team/headshots/jack1.png";
+import ragini0 from "../../Images/Team/headshots/ragini0.png";
+import ragini1 from "../../Images/Team/headshots/ragini1.png";
 import shubh0 from "../../Images/Team/headshots/shubh0.png";
 import shubh1 from "../../Images/Team/headshots/shubh1.png";
 
@@ -306,16 +247,16 @@ function RosterSection() {
 			name: "Patrick Li",
 			image0: patrickli0,
 			image1: patrickli1,
-			position: "VP of Recruitment",
+			position: "VP Recruitment",
 			major: "BBA & Political Science 2026",
 			ID: 102,
-			url: "https://www.linkedin.com/in/patrickli2/",
+			url: "https://www.linkedin.com/in/patrick-li-6a9296247/",
 		},
 		{
 			name: "Debangi Mohanta",
 			image0: debangimohanta0,
 			image1: debangimohanta1,
-			position: "VP of Operations",
+			position: "VP Operations & Finance",
 			major: "CS 2025",
 			ID: 103,
 			url: "https://www.linkedin.com/in/debangi-mohanta-777057218/",
@@ -324,169 +265,114 @@ function RosterSection() {
 			name: "Prah Pant",
 			image0: prahpant0,
 			image1: prahpant1,
-			position: "VP of Client Acquisition",
+			position: "VP Client Acquisition",
 			major: "BBA 2026",
 			ID: 104,
 			url: "https://www.linkedin.com/in/prahpant/",
 		},
 		{
-			name: "Min-Seok Kim",
-			image0: minseokkim0,
-			image1: minseokkim1,
-			position: "VP of Community Engagement",
-			major: "BBA 2026",
-			ID: 105,
-			url: "https://www.linkedin.com/in/min-seok-kim-6a7245252/",
-		},
-		{
 			name: "Amory Tin",
 			image0: amorytin0,
 			image1: amorytin1,
-			position: "VP of External Development",
+			position: "VP External",
 			major: "BBA 2026",
-			ID: 106,
+			ID: 105,
 			url: "https://www.linkedin.com/in/amory-tin/",
 		},
 		{
 			name: "Leo Leone",
 			image0: leoleone0,
 			image1: leoleone1,
-			position: "VP of Internal Development",
-			major: "BBA & Information Analysis 2026",
-			ID: 107,
+			position: "VP Internal",
+			major: "BBA & Information Analytics 2026",
+			ID: 106,
 			url: "https://www.linkedin.com/in/leo-leone-792515223/",
 		},
+		{
+			name: "Min-Seok Kim",
+			image0: minseokkim0,
+			image1: minseokkim1,
+			position: "VP Community Engagement",
+			major: "BBA 2026",
+			ID: 107,
+			url: "https://www.linkedin.com/in/min-seok-kim-6a7245252/",
+		},
 	];
-
 	const managerData = [
-		{
-			name: "Julia Zhang",
-			image0: juliazhang0,
-			image1: juliazhang1,
-			url: "https://www.linkedin.com/in/julia-m-zhang/",
-			ID: 108,
-			position: "Project Manager",
-			major: "BBA 2026",
-		},
-		{
-			name: "Sophie Richards",
-			image0: sophierichards0,
-			image1: sophierichards1,
-			url: "https://www.linkedin.com/in/sophrich/",
-			ID: 109,
-			position: "Project Manager",
-			major: "BBA 2026",
-		},
-		{
-			name: "Eva Kumer",
-			image0: evakumer0,
-			image1: evakumer1,
-			url: "https://www.linkedin.com/in/evakumer/",
-			ID: 110,
-			position: "Project Manager",
-			major: "BBA 2026",
-		},
-		{
-			name: "Ilakiya Rajaguru",
-			image0: ilakiyarajaguru0,
-			image1: ilakiyarajaguru1,
-			url: "https://www.linkedin.com/in/ilakiya-rajaguru-9a9530232/",
-			ID: 111,
-			position: "Project Manager",
-			major: "BBA 2026",
-		},
-		{
-			name: "Yaseen Metwally",
-			image0: yaseenmetwally0,
-			image1: yaseenmetwally1,
-			url: "https://www.linkedin.com/in/yaseen-metwally-745067216/",
-			ID: 112,
-			position: "Project Manager",
-			major: "BBA & Chemical Engineering 2026",
-		},
 		{
 			name: "Saathvik Hari",
 			image0: saathvikhari0,
 			image1: saathvikhari1,
-			url: "https://www.linkedin.com/in/saathvik-hari/",
-			ID: 113,
 			position: "Project Manager",
-			major: "DS & Economics 2026",
+			major: "Economics & DS 2026",
+			ID: 111,
+			url: "https://www.linkedin.com/in/saathvik-hari/",
 		},
 		{
 			name: "Jessica Tran",
 			image0: jessicatran0,
 			image1: jessicatran1,
-			url: "https://www.linkedin.com/in/jessica-tran-39582a205/",
-			ID: 114,
 			position: "Project Manager",
 			major: "BBA 2026",
-		},
-	];
-
-	const analystData = [
-		{
-			name: "Sydney Gaynor",
-			image0: sydneygaynor0,
-			image1: sydneygaynor1,
-			position: "Analyst",
-			major: "BBA 2026",
-			ID: 115,
-			url: "https://www.linkedin.com/in/sydney-gaynor/",
+			ID: 112,
+			url: "https://www.linkedin.com/in/jessica-tran-39582a205/",
 		},
 		{
 			name: "Kaitlyn Ko",
 			image0: kaitlynko0,
 			image1: kaitlynko1,
-			position: "Analyst",
+			position: "Project Manager",
 			major: "BBA 2027",
-			ID: 116,
-			url: "https://www.linkedin.com/in/kaitlyn-ko-a59a17255/",
+			ID: 113,
+			url: "https://www.linkedin.com/in/kaitlyn-ko-a59a17255//",
+		},
+		{
+			name: "John Lee",
+			image0: johnlee0,
+			image1: johnlee1,
+			position: "Project Manager",
+			major: "BBA 2027",
+			ID: 114,
+			url: "https://www.linkedin.com/in/john-y-lee/",
 		},
 		{
 			name: "Sydney Goad",
 			image0: sydneygoad0,
 			image1: sydneygoad1,
-			position: "Analyst",
+			position: "Project Manager",
 			major: "BBA 2027",
-			ID: 117,
+			ID: 115,
 			url: "https://www.linkedin.com/in/sydney-goad13/",
 		},
 		{
-			name: "Caleb Lee",
-			image0: caleblee0,
-			image1: caleblee1,
-			position: "Analyst",
-			major: "DS 2027",
-			ID: 118,
-			url: "https://www.linkedin.com/in/calebjl/",
+			name: "Aditi Vadakath",
+			image0: aditivadakath0,
+			image1: aditivadakath1,
+			position: "Project Manager",
+			major: "BBA 2027",
+			ID: 116,
+			url: "https://www.linkedin.com/in/aditi-vadakath/",
 		},
 		{
-			name: "Arav Rajesh",
-			image0: aravrajesh0,
-			image1: aravrajesh1,
-			position: "Analyst",
-			major: "Economics & Statistics 2027",
-			ID: 119,
-			url: "https://www.linkedin.com/in/arav-rajesh/",
+			name: "Rhea Misra",
+			image0: rheamisra0,
+			image1: rheamisra1,
+			position: "Project Manager",
+			major: "IOE & CS 2027",
+			ID: 117,
+			url: "https://www.linkedin.com/in/rhea-misra-b15401245/",
 		},
+	];
+
+	const analystData = [
 		{
 			name: "Zafir Maker-Agha",
 			image0: zafirmakeragha0,
 			image1: zafirmakeragha1,
 			position: "Analyst",
 			major: "BBA & Sustainability 2026",
-			ID: 120,
-			url: "https://www.linkedin.com/in/zafir-maker-agha/",
-		},
-		{
-			name: "John Lee",
-			image0: johnlee0,
-			image1: johnlee1,
-			position: "Analyst",
-			major: "BBA 2027",
 			ID: 121,
-			url: "https://www.linkedin.com/in/john-y-lee/",
+			url: "https://www.linkedin.com/in/zafir-maker-agha/",
 		},
 		{
 			name: "Isabella Xu",
@@ -507,151 +393,135 @@ function RosterSection() {
 			url: "https://www.linkedin.com/in/joyxren/",
 		},
 		{
-			name: "Anish Thatiparthi",
-			image0: anishthatiparthi0,
-			image1: anishthatiparthi1,
-			url: "https://www.linkedin.com/in/anish-thatiparthi/",
-			ID: 124,
-			position: "Analyst",
-			major: "BBA 2027",
-		},
-		{
-			name: "Niyati Kashyap",
-			image0: niyatikashyap0,
-			image1: niyatikashyap1,
-			url: "https://www.linkedin.com/in/niyati-kashyap/",
-			ID: 125,
-			position: "Analyst",
-			major: "DS 2026",
-		},
-		{
-			name: "Cynthia Li",
-			image0: cynthiali0,
-			image1: cynthiali1,
-			url: "https://www.linkedin.com/in/cynthiajli100/",
-			ID: 126,
-			position: "Analyst",
-			major: "BBA 2027",
-		},
-		{
-			name: "Rhea Misra",
-			image0: rheamisra0,
-			image1: rheamisra1,
-			url: "https://www.linkedin.com/in/rhea-misra-b15401245/",
-			ID: 127,
-			position: "Analyst",
-			major: "CS & IOE 2027",
-		},
-		{
 			name: "Varun Talluri",
 			image0: varuntalluri0,
 			image1: varuntalluri1,
-			url: "https://www.linkedin.com/in/varun-talluri/",
-			ID: 128,
 			position: "Analyst",
 			major: "BBA & CS 2027",
+			ID: 124,
+			url: "https://www.linkedin.com/in/varun-talluri/",
 		},
 		{
 			name: "Sriyan Madugula",
 			image0: sriyanmadugula0,
 			image1: sriyanmadugula1,
-			url: "https://www.linkedin.com/in/sriyanm/",
-			ID: 129,
 			position: "Analyst",
 			major: "BBA & CS 2027",
+			ID: 125,
+			url: "https://www.linkedin.com/in/sriyanm/",
 		},
 		{
 			name: "Natasha Shimon",
 			image0: natashashimon0,
 			image1: natashashimon1,
-			url: "https://www.linkedin.com/in/natasha-shimon-10676b249/",
-			ID: 130,
 			position: "Analyst",
 			major: "LSA Undecided 2027",
+			ID: 126,
+			url: "https://www.linkedin.com/in/natasha-shimon-10676b249/",
 		},
 		{
 			name: "Issei Hata",
 			image0: isseihata0,
 			image1: isseihata1,
-			url: "https://www.linkedin.com/in/isseihata/",
-			ID: 131,
 			position: "Analyst",
-			major: "Math 2027",
+			major: "Economics & Math 2027",
+			ID: 127,
+			url: "https://www.linkedin.com/in/isseihata/",
 		},
 		{
 			name: "Shiva Rajan",
 			image0: shivarajan0,
 			image1: shivarajan1,
-			url: "https://www.linkedin.com/in/shiva-rajan78/",
-			ID: 132,
 			position: "Analyst",
 			major: "BBA 2027",
+			ID: 128,
+			url: "https://www.linkedin.com/in/shiva-rajan78/",
 		},
 		{
-			name: "Aditi Vadakath",
-			image0: aditivadakath0,
-			image1: aditivadakath1,
-			url: "https://www.linkedin.com/in/aditi-vadakath/",
-			ID: 133,
+			name: "Cynthia Lia",
+			image0: cynthiali0,
+			image1: cynthiali1,
 			position: "Analyst",
 			major: "BBA 2027",
+			ID: 129,
+			url: "https://www.linkedin.com/in/cynthiajli100/",
+		},
+		{
+			name: "Anish Thatiparthi",
+			image0: anishthatiparthi0,
+			image1: anishthatiparthi1,
+			position: "Analyst",
+			major: "BBA 2027",
+			ID: 130,
+			url: "https://www.linkedin.com/in/anish-thatiparthi/",
+		},
+		{
+			name: "Niyati Kashyap",
+			image0: niyatikashyap0,
+			image1: niyatikashyap1,
+			position: "Analyst",
+			major: "DS 2026",
+			ID: 131,
+			url: "https://www.linkedin.com/in/niyati-kashyap/",
+		},
+		{
+			name: "Caleb Lee",
+			image0: caleblee0,
+			image1: caleblee1,
+			position: "Analyst",
+			major: "DS 2027",
+			ID: 132,
+			url: "https://www.linkedin.com/in/calebjl/",
+		},
+		{
+			name: "Arav Rajesh",
+			image0: aravrajesh0,
+			image1: aravrajesh1,
+			position: "Analyst",
+			major: "Economics & Statistics 2027",
+			ID: 133,
+			url: "https://www.linkedin.com/in/arav-rajesh/",
 		},
 		{
 			name: "Siri Pattipati",
 			image0: siripattipati0,
 			image1: siripattipati1,
-			url: "https://www.linkedin.com/in/siri-pattipati/",
-			ID: 134,
 			position: "Member",
 			major: "BBA 2026",
+			ID: 134,
+			url: "https://www.linkedin.com/in/siri-pattipati-87a155216/",
 		},
 		{
 			name: "Azra Tokovic",
 			image0: azratokovic0,
 			image1: azratokovic1,
-			url: "https://www.linkedin.com/in/azra-tokovic/",
-			ID: 135,
 			position: "Member",
 			major: "BBA 2026",
+			ID: 135,
+			url: "https://www.linkedin.com/in/azra-tokovic/",
 		},
+		{
+			name: "Sydney Gaynor",
+			image0: sydneygaynor0,
+			image1: sydneygaynor1,
+			position: "Member",
+			major: "BBA 2026",
+			ID: 136,
+			url: "https://www.linkedin.com/in/sydney-gaynor/",
+		},
+		
 	];
 
+
 	const seniorData = [
-		{
-			name: "Charlie Schuetze",
-			image0: charlie0,
-			image1: charlie1,
-			position: "Senior Advisor",
-			major: "BBA 2024",
-			ID: 5,
-			url: "https://linkedin.com/in/charlie-schuetze",
-		},
-		{
-			name: "Priyanka Madhavan",
-			image0: pri0,
-			image1: pri1,
-			position: "Senior Advisor",
-			major: "BBA & Mechanical Engineering 2024",
-			ID: 3,
-			url: "https://www.linkedin.com/in/primadhavan/",
-		},
 		{
 			name: "Lawder Desantis",
 			image0: lawder0,
 			image1: lawder1,
 			position: "Senior Advisor",
 			major: "Economics 2025",
-			ID: 31,
+			ID: 1,
 			url: "https://www.linkedin.com/in/lawder-desantis-50a733232",
-		},
-		{
-			name: "Kapil Pownikar",
-			image0: kapil0,
-			image1: kapil1,
-			url: "https://www.linkedin.com/in/kapil-pownikar/",
-			ID: 41,
-			position: "Senior Advisor",
-			major: "DS & Math 2025",
 		},
 		{
 			name: "Anish Vankayalapati",
@@ -659,19 +529,63 @@ function RosterSection() {
 			image1: anish1,
 			position: "Senior Advisor",
 			major: "BBA & CS 2025",
-			ID: 21,
+			ID: 2,
 			url: "https://linkedin.com/in/anish-vankayalapati-6b4914223",
 		},
 		{
-			name: "Rachelle Deng",
-			image0: rachelle0,
-			image1: rachelle1,
+			name: "Kapil Pownikar",
+			image0: kapil0,
+			image1: kapil1,
 			position: "Senior Advisor",
-			major: "BBA 2024",
-			ID: 4,
-			url: "https://www.linkedin.com/in/rachelle-deng-4a7203202/",
+			major: "Math & DS 2025",
+			ID: 3,
+			url: "https://www.linkedin.com/in/kapil-pownikar/",
 		},
-		
+		{
+			name: "Ilakiya Rajaguru",
+			image0: ilakiyarajaguru0,
+			image1: ilakiyarajaguru1,
+			position: "Junior Advisor",
+			major: "BBA 2026",
+			ID: 4,
+			url: "https://www.linkedin.com/in/ilakiya-rajaguru-9a9530232/",
+		},
+		{
+			name: "Yaseen Metwally",
+			image0: yaseenmetwally0,
+			image1: yaseenmetwally1,
+			position: "Junior Advisor",
+			major: "BBA & Chemical Engineering 2026",
+			ID: 5,
+			url: "https://www.linkedin.com/in/yaseen-metwally-745067216/",
+		},
+		{
+			name: "Julia Zhang",
+			image0: juliazhang0,
+			image1: juliazhang1,
+			position: "Junior Advisor",
+			major: "BBA 2026",
+			ID: 108,
+			url: "https://www.linkedin.com/in/julia-m-zhang/",
+		},
+		{
+			name: "Sophie Richards",
+			image0: sophierichards0,
+			image1: sophierichards1,
+			position: "Junior Advisor",
+			major: "BBA 2026",
+			ID: 109,
+			url: "https://www.linkedin.com/in/sophrich/",
+		},
+		{
+			name: "Eva Kumer",
+			image0: evakumer0,
+			image1: evakumer1,
+			position: "Junior Advisor",
+			major: "BBA 2026",
+			ID: 110,
+			url: "https://www.linkedin.com/in/evakumer/",
+		},
 	];
 
 	return (
@@ -710,63 +624,22 @@ function RosterSection() {
 								<CardTitle>{data.name}</CardTitle>
 								<TinySpacer />
 								<CardHeader>
-									{hoverID2 === data.ID ? data.major : data.position}
-								</CardHeader>
+                    				{hoverID2 === data.ID ? data.major : data.position}
+                				</CardHeader>
 
-								<CardHeaderHover
+							<CardHeaderHover
 								onMouseEnter={() => setHoverID2(data.ID)}
 								onMouseLeave={() => setHoverID2(0)}
 								style={{
-									opacity:
-										hoverID2 === data.ID ? "1" : "0",
-									backgroundImage:`url(${data.image1})`,
-								}}
-								/>
-
-							</TextContainer>
-						</CardContainer>
-					</a>
-				))}
-			</PositionContainer>
-			<PositionContainer>
-				<SmallSpacer />
-				<TextContainer>
-					<TitleText style={{ marginLeft: "2vmin" }}>
-						Senior Advisors
-					</TitleText>
-				</TextContainer>
-				<NewLine />
-				{seniorData.map((data) => (
-					<a
-						href={data.url}
-						target="_blank"
-						style={{ textDecoration: "none" }}
-					>
-						<CardContainer>
-							<CardImage
-								style={{
-									backgroundImage: `url(${data.image0})`,
-								}}
-							/>
-							<CardImageHover
-								onMouseEnter={() => setHoverID2(data.ID)}
-								onMouseLeave={() => setHoverID2(0)}
-								style={{
-									opacity:
-										hoverID2 === data.ID ? "100%" : "0%",
 									backgroundImage: `url(${data.image1})`,
 								}}
-							/>
-							<NewLine />
-							<TextContainer>
-								<CardTitle>{data.name}</CardTitle>
-								<TinySpacer />
-								<CardHeader>{data.position}</CardHeader>
+                			/>
 							</TextContainer>
 						</CardContainer>
 					</a>
 				))}
 			</PositionContainer>
+
 			<PositionContainer>
 				<SmallSpacer />
 				<TextContainer>
@@ -776,37 +649,41 @@ function RosterSection() {
 				</TextContainer>
 				<NewLine />
 				{managerData.map((data) => (
-					<CardContainer>
-						<CardImage
-							style={{ backgroundImage: `url(${data.image0})` }}
-						/>
-						<CardImageHover
-							onMouseEnter={() => setHoverID2(data.ID)}
-							onMouseLeave={() => setHoverID2(0)}
-							style={{
-								opacity: hoverID2 === data.ID ? "100%" : "0%",
-								backgroundImage: `url(${data.image1})`,
-							}}
-						/>
-						<NewLine />
-						<TextContainer>
-							<CardTitle>{data.name}</CardTitle>
-							<TinySpacer />
-							<CardHeader>
-									{hoverID2 === data.ID ? data.major : data.position}
-								</CardHeader>
-
-								<CardHeaderHover
+					<a
+					href={data.url}
+					target="_blank"
+					style={{ textDecoration: "none" }}
+					>
+						<CardContainer>
+							<CardImage
+								style={{ backgroundImage: `url(${data.image0})` }}
+							/>
+							<CardImageHover
 								onMouseEnter={() => setHoverID2(data.ID)}
 								onMouseLeave={() => setHoverID2(0)}
 								style={{
-									opacity:
-										hoverID2 === data.ID ? "1" : "0",
-									backgroundImage:`url(${data.image1})`,
+									opacity: hoverID2 === data.ID ? "100%" : "0%",
+									backgroundImage: `url(${data.image1})`,
 								}}
+							/>
+							<NewLine />
+							<TextContainer>
+								<CardTitle>{data.name}</CardTitle>
+								<TinySpacer />
+								<CardHeader>
+										{hoverID2 === data.ID ? data.major : data.position}
+									</CardHeader>
+
+								<CardHeaderHover
+									onMouseEnter={() => setHoverID2(data.ID)}
+									onMouseLeave={() => setHoverID2(0)}
+									style={{
+										backgroundImage: `url(${data.image1})`,
+									}}
 								/>
 							</TextContainer>
-					</CardContainer>
+						</CardContainer>
+					</a>
 				))}
 			</PositionContainer>
 			<PositionContainer>
@@ -843,18 +720,66 @@ function RosterSection() {
 								<CardTitle>{data.name}</CardTitle>
 								<TinySpacer />
 								<CardHeader>
-									{hoverID2 === data.ID ? data.major : data.position}
-								</CardHeader>
+                    				{hoverID2 === data.ID ? data.major : data.position}
+                				</CardHeader>
 
-								<CardHeaderHover
+							<CardHeaderHover
+								onMouseEnter={() => setHoverID2(data.ID)}
+								onMouseLeave={() => setHoverID2(0)}
+								style={{
+									backgroundImage: `url(${data.image1})`,
+								}}
+                			/>
+							</TextContainer>
+						</CardContainer>
+					</a>
+				))}
+			</PositionContainer>
+
+			<PositionContainer>
+				<SmallSpacer />
+				<TextContainer>
+					<TitleText style={{ marginLeft: "2vmin" }}>
+						Senior Advisors
+					</TitleText>
+				</TextContainer>
+				<NewLine />
+				{seniorData.map((data) => (
+					<a
+						href={data.url}
+						target="_blank"
+						style={{ textDecoration: "none" }}
+					>
+						<CardContainer>
+							<CardImage
+								style={{
+									backgroundImage: `url(${data.image0})`,
+								}}
+							/>
+							<CardImageHover
 								onMouseEnter={() => setHoverID2(data.ID)}
 								onMouseLeave={() => setHoverID2(0)}
 								style={{
 									opacity:
-										hoverID2 === data.ID ? "1" : "0",
-									backgroundImage:`url(${data.image1})`,
+										hoverID2 === data.ID ? "100%" : "0%",
+									backgroundImage: `url(${data.image1})`,
 								}}
-								/>
+							/>
+							<NewLine />
+							<TextContainer>
+								<CardTitle>{data.name}</CardTitle>
+								<TinySpacer />
+								<CardHeader>
+                    				{hoverID2 === data.ID ? data.major : data.position}
+                				</CardHeader>
+
+							<CardHeaderHover
+								onMouseEnter={() => setHoverID2(data.ID)}
+								onMouseLeave={() => setHoverID2(0)}
+								style={{
+									backgroundImage: `url(${data.image1})`,
+								}}
+                			/>
 							</TextContainer>
 						</CardContainer>
 					</a>

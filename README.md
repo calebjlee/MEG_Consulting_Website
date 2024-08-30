@@ -5,6 +5,7 @@
 # Prerequisites
 - Node.js and an IDE. I would recommend VS Code. [Links to download here](https://code.visualstudio.com/Download) [Links to download here](https://nodejs.org/en/download/current).
 - Create a folder and run `git clone https://github.com/calebjlee/MEG_Consulting_Website.git`.
+- Run `cd MEG_Consulting_Website`
 - Run `npm install`.
 - Run `npm run dev` to start the website. Visit [http://localhost:3000/](http://localhost:3000/) to access the website locally.
 
@@ -26,11 +27,11 @@ To get updated changes from other people onto your computer, run `git pull`.
 
 ## Website Link
 
-[www.megconsulting.org](https://www.megconsulting.org/)
+[www.meg-consulting.org](https://www.meg-consulting.org/)
 
 ## About This Project
 
-MEG Consulting is a pro-bono consulting club at the University of Michigan. This project is source code for the MEG Consulting website which is 100% MEG member made. This website is made with potential applicants in mind. For potential clients see [megconsulting.org/clients](https://www.megconsulting.org/clients)
+MEG Consulting is a pro-bono consulting club at the University of Michigan. This project is source code for the MEG Consulting website which is 100% MEG member made. This website is made with potential applicants in mind. For potential clients see [meg-consulting.org/clients](https://www.meg-consulting.org/clients)
 
 ## Technologies Used
 
@@ -61,7 +62,7 @@ MEG Consulting is a pro-bono consulting club at the University of Michigan. This
 
 [Brandon Geng](https://github.com/brandongeng)
 
-This website was made by MEG members. Are you interested in website development and a UM undergraduate? Consider applying to MEG and joining the website team. You can learn more about applying [here](https://www.megconsulting.org/application).
+This website was made by MEG members. Are you interested in website development and a UM undergraduate? Consider applying to MEG and joining the website team. You can learn more about applying [here](https://www.meg-consulting.org/application).
 
 ## Issues
 

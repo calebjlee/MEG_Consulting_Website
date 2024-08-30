@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import door from "../../Images/About/door.png";
 import town from "../../Images/About/town1.jpg";
-import NextSection from "../../Components/General/NextSection.js";
+import NextSection from "../General/NextSection.js";
 import { useState, useEffect } from "react";
 
 {/*Door section including door, background image and text section*/}
@@ -197,7 +197,7 @@ function DoorSection() {
           <BodyTitleText>COME ONE COME ALL</BodyTitleText>
           <SmallSpacer />
           <BodyText>
-          At MEG Consulting we encourage everyone and anyone to apply. Our members study everything from business administration to computer science, and we continue to look for students pursuing whatever their passions are. We come from all over the world including cities like Tokyo, Jakarta, and Grand Rapids. All you need is an eagerness to learn and a strong commitment to finding the best solutions for our clients.
+          At MEG Consulting we encourage everyone and anyone to apply. Our members study everything from business administration to computer science, and we continue to look for students pursuing whatever their passions are. We come from all over the United States and even abroad. The only prerequisite for applying is an unyielding desire to learn and a strong commitment to finding the best solutions for our clients.
           </BodyText>
         </TextContainer>
       </ShiftContainer>

@@ -225,12 +225,12 @@ const SoonContainer = styled.div`
 
 function MenuSection() {
 	const eventDates = [
-		"1/18/2023, 5:30 PM",
-		"1/20/2023, 1:30 PM",
-		"1/23/2023 - 1/24/2023, Sign-up Online",
-		"1/26/2024, 4:00 PM",
-		"1/28/2024, 5:30 PM",
-		"1/30/2024, 11:59 PM",
+		"9/4/2024, 5:30 PM",
+		"9/8/2024, 4:30 PM",
+		"9/15/2024 3:30 PM",
+		"9/17/2024, 5:30 PM",
+		"9/20/2024, 4:00 PM",
+		"9/24/2024, 11:59 PM",
 		
 	];
 	const eventImages = [
@@ -242,19 +242,19 @@ function MenuSection() {
 		apply,
 	];
 	const eventName = [
-		"Ross Meet the Clubs",
+		"BBA Meet the Clubs",
 		"Mass Meeting",
-		"1:1 Coffee Chats",
 		"Resume & Case Workshop",
 		"DEI Panel",
+		"Coffee Chats",
 		"Application Due",
 	];
 	const eventLocation = [
 		"Winter Garden",
-		"B1580",
-		"Virtual",
-		"R0320",
-		"B1580",
+		"Blau Colloquium",
+		"B0570",
+		"B0570",
+		"Various locations",
 	];
 	const eventTime = [
 		"1/10 at 4:00 P.M.",
@@ -338,7 +338,7 @@ function MenuSection() {
 								Want to stay up to date on the newest from MEG?
 								Sign up on our{" "}
 								<a
-									href="https://docs.google.com/forms/d/e/1FAIpQLSeKuLPOBPjHo_vfaFXJ5CY29n9uW8Mwcyod7w5jBa5lAkRfkw/viewform"
+									href="https://docs.google.com/forms/d/e/1FAIpQLSdcxlt29MbQN0GHOJi9F1r_Q3O_bmUbQBwBw1q-eayuGWo2Vw/viewform?usp=sf_link"
 									target="_blank"
 									style={{
 										fontWeight: 700,

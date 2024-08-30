@@ -7,7 +7,7 @@ import DifferentSection from "../Components/About/DifferentSection";
 import EmployerSection from "../Components/About/EmployerSection";
 import JourneySection from "../Components/About/JourneySection";
 import ProfessionalSection from "../Components/About/ProfessionalSection";
-import DoorSection from "../Components/About/DoorScetion";
+import DoorSection from "../Components/About/DoorSection";
 import ToProjectSection from "../Components/About/ToProjectSection";
 
 import { useEffect } from 'react' 

@@ -175,6 +175,17 @@ const TextContainer = styled.div`
 	padding-right: 2vmin;
 `;
 
+const TextContainerHover = styled.div`
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-left: 2vmin;
+	padding-right: 2vmin;
+`;
+
 const TitleText = styled.h1`
 	display: inline-block;
 	font-size: 6vmin;
@@ -286,7 +297,6 @@ function RosterSection() {
 			ID: 107,
 			url: "https://www.linkedin.com/in/min-seok-kim-6a7245252/",
 		},
-	
 	];
 	const managerData = [
 		{

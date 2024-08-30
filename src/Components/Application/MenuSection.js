@@ -255,15 +255,15 @@ function MenuSection() {
 		"B0570",
 		"B0570",
 		"Various locations",
+		"Online",
 	];
 	const eventTime = [
-		"1/10 at 4:00 P.M.",
-		"1/12 at 6:00 P.M.",
-		"1/13 at 4:00 P.M.",
-		"1/17 at 1:00 P.M.",
-		"1/18 at 7:00 P.M.",
-		"1/20 at 5:00 P.M.",
-		"1/22 at 1:00 P.M.",
+		"9/4 at 5:30-7:30 P.M.",
+		"9/8 at 4:30-5:30 P.M.",
+		"9/15 at 3:30-5:00 P.M.",
+		"9/17 at 5:30-7:00 P.M.",
+		"9/20 at 4:00-6:00 P.M.",
+		"TBD",
 	];
 
 	function eventDateDetector() {

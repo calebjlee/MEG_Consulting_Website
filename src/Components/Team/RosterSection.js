@@ -547,7 +547,7 @@ function RosterSection() {
 			position: "Junior Advisor",
 			major: "BBA & Chemical Engineering 2026",
 			ID: 5,
-			url: "hhttps://www.linkedin.com/in/yaseen-metwally-745067216/",
+			url: "https://www.linkedin.com/in/yaseen-metwally-745067216/",
 		},
 		{
 			name: "Julia Zhang",

@@ -90,6 +90,8 @@ import anishthatiparthi0 from "../../Images/Team/headshots/anishthatiparthi0.png
 import anishthatiparthi1 from "../../Images/Team/headshots/anishthatiparthi1.png";
 import aravrajesh0 from "../../Images/Team/headshots/aravrajesh0.png";
 import aravrajesh1 from "../../Images/Team/headshots/aravrajesh1.png";
+import avakurtz0 from "../../Images/Team/headshots/avakurtz0.png";
+import avakurtz1 from "../../Images/Team/headshots/avakurtz1.png";
 import azratokovic0 from "../../Images/Team/headshots/azratokovic0.png";
 import azratokovic1 from "../../Images/Team/headshots/azratokovic1.png";
 import caleblee0 from "../../Images/Team/headshots/caleblee0.png";
@@ -606,11 +608,20 @@ function RosterSection() {
 			major: "BBA 2026",
 		},
 		{
+			name: "Ava Kurtz",
+			image0: avakurtz0,
+			image1: avakurtz1,
+			url: "https://www.linkedin.com/in/ava-kurtz-/",
+			ID: 135,
+			position: "Member",
+			major: "Econ 2026",
+		},
+		{
 			name: "Azra Tokovic",
 			image0: azratokovic0,
 			image1: azratokovic1,
 			url: "https://www.linkedin.com/in/azra-tokovic/",
-			ID: 135,
+			ID: 136,
 			position: "Member",
 			major: "BBA 2026",
 		},

@@ -162,6 +162,7 @@ function PracticeSection(){
             <TitleText onClick={()=>{setClickID(0); setDisplayID(0)}} style={{transform: clickID !== 0 ? "translateY(-50vh)":"translateY(0)"}}>Practice, Tips, and More!</TitleText>
             <SmallSpacer/>
             <SelectionContainer>
+                
                 <OptionContainer onClick={()=>handleOptionClick(1)} onMouseEnter={()=>{setHoverID(1)}} onMouseLeave={()=>{setHoverID(0)}}
                 style={{backgroundColor: clickID !== 1 && hoverID === 1 ? "#D5BFED":"#E0CFF2",
                 boxShadow: clickID !== 1 && hoverID === 1 ? ".25vw .25vw .5vw grey":"none",
@@ -174,6 +175,7 @@ function PracticeSection(){
                     </CoverContainer>
                     <OutlineContainer style={{clipPath: clickID === 1 ? "circle(200% at 0% 0%)":"circle(0% at 0% 0%)"}}/>
                 </OptionContainer>
+                
                 <OptionContainer onClick={()=>handleOptionClick(2)} onMouseEnter={()=>{setHoverID(2)}} onMouseLeave={()=>{setHoverID(0)}}
                 style={{backgroundColor: clickID !== 2 && hoverID === 2 ? "#D5BFED":"#E0CFF2", 
                 boxShadow: clickID !== 2 && hoverID === 2 ? ".25vw .25vw .5vw grey":"none", 
@@ -186,19 +188,20 @@ function PracticeSection(){
                     </CoverContainer>
                     <OutlineContainer style={{clipPath: clickID === 2 ? "circle(200% at 0% 0%)":"circle(0% at 0% 0%)"}}/>
                 </OptionContainer>
+                
                 <OptionContainer onClick={()=>handleOptionClick(3)} onMouseEnter={()=>{setHoverID(3)}} onMouseLeave={()=>{setHoverID(0)}}
                 style={{backgroundColor: clickID !== 3 && hoverID === 3 ? "#D5BFED":"#E0CFF2",
                 boxShadow: clickID !== 3 && hoverID === 3 ? ".25vw .25vw .5vw grey":"none", 
                 opacity: clickID === 3 ? "0%":"100%", 
-                /*pointerEvents: clickID !== 0 ? "none":"auto",*/
-                pointerEvents: "none",
+                pointerEvents: clickID !== 0 ? "none":"auto",
                 transform: clickID !== 0 && clickID !== 3 ? "translateY(100vh)":"translateY(0)"}}>
                     <CoverContainer>
                         <OptionImage src={case1} alt="Briefcase Case Interview" style={{filter:"grayscale(100%)"}}/>
-                        <HeaderText>Mock Case *Coming Soon* </HeaderText>
+                        <HeaderText>Mock Case</HeaderText>
                     </CoverContainer>
                     <OutlineContainer style={{clipPath: clickID === 3 ? "circle(200% at 0% 0%)":"circle(0% at 0% 0%)"}}/>
-                </OptionContainer>                
+                </OptionContainer>  
+
             </SelectionContainer>
             <WrittenSection display = {displayID}/>
             <BehavioralSection display = {displayID}/>

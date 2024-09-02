@@ -449,13 +449,13 @@ function RosterSection() {
 			url: "https://www.linkedin.com/in/cynthiajli100/",
 		},
 		{
-			name: "Anish Thatiparthi",
-			image0: anishthatiparthi0,
-			image1: anishthatiparthi1,
+			name: "Arav Rajesh",
+			image0: aravrajesh0,
+			image1: aravrajesh1,
 			position: "Analyst",
-			major: "BBA 2027",
+			major: "Economics & Statistics 2027",
 			ID: 130,
-			url: "https://www.linkedin.com/in/anish-thatiparthi/",
+			url: "https://www.linkedin.com/in/arav-rajesh/",
 		},
 		{
 			name: "Niyati Kashyap",
@@ -476,13 +476,13 @@ function RosterSection() {
 			url: "https://www.linkedin.com/in/calebjl/",
 		},
 		{
-			name: "Arav Rajesh",
-			image0: aravrajesh0,
-			image1: aravrajesh1,
+			name: "Anish Thatiparthi",
+			image0: anishthatiparthi0,
+			image1: anishthatiparthi1,
 			position: "Analyst",
-			major: "Economics & Statistics 2027",
+			major: "BBA 2027",
 			ID: 133,
-			url: "https://www.linkedin.com/in/arav-rajesh/",
+			url: "https://www.linkedin.com/in/anish-thatiparthi/",
 		},
 		{
 			name: "Siri Pattipati",
@@ -506,11 +506,8 @@ function RosterSection() {
 			name: "Azra Tokovic",
 			image0: azratokovic0,
 			image1: azratokovic1,
-<<<<<<< HEAD
 			url: "https://www.linkedin.com/in/azra-tokovic/",
 			ID: 136,
-=======
->>>>>>> 3e54b79abc9d5c8fec5d676aeff2790f86e0df8f
 			position: "Member",
 			major: "BBA 2026",
 			ID: 135,

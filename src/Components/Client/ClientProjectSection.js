@@ -201,14 +201,14 @@ function ClientProjectSection (){
                 <ProjectContainer style={{background: "#E6ECEF"}}>
                     <TextContainer>
                         <TitleText>
-                            ZoomInfo 
+                            Siemens Healthineers 
                         </TitleText>
                         <HeaderText>
-                            Algorithms and Data Collection for a Software Company
+                            subheading here
                         </HeaderText>
                         <Spacer/>
                         <BodyText>
-                            ZoomInfo Technologies Inc. is an American subscription-based software as a service company that sells access to its database of information about business people and companies to sales, marketing and recruiting professionals. ZoomInfo provided our team with a list of professional softwares and asked us to collect additional information and categorize each software. Our team provided the company with a web scrapping algorithm to gather important data about the softwares in question. We also provided a tentative machine learning algorithm to classify each software based on its properties. With the work we did, ZoomInfo was able to get all the data and analysis that they needed.
+                            Siemens Healthineers is a medical technology (OTCMKTS: SMMNY) is a medical technology company. They specialize in imagining, diagnostics, and advanced therapy. MEG was tasked with conducting an analysis of the U.S. manufacturing network for radiopharmaceuticals and the strategic considerations PETNET should pursue.
                         </BodyText>
                     </TextContainer>
                     <NewLine/>
@@ -218,14 +218,14 @@ function ClientProjectSection (){
                 <ProjectContainer style={{background: "#E6EFEB"}}>
                     <TextContainer>
                         <TitleText>
-                            Filson 
+                            La-Z-Boy 
                         </TitleText>
                         <HeaderText>
-                            Supply Chain Ideas for an Outdoors Clothing Company
+                            subheading here
                         </HeaderText>
                         <Spacer/>
                         <BodyText>
-                            Filson is an American privately owned outfitter and manufacturer of goods for outdoor enthusiasts. We worked on handling Filson's unmet demand problem. The company designs, manufactures, distributes and sells men's and women's outdoor clothing, accessories and luggage. We worked through analyzing purchasing and waitlisting data to find problem areas using Excel for analysis. After identifying pain points, we addressed these issues by suggesting using UX/operational changes to their website to better customer experience. We also created a forecasting initiative based on the data we got so that Filson could better predict future demand for their products.
+                            La-Z-Boy (NYSE: LZB) is a top 10 American-made furniture brand headquartered in Michigan. They are well-known for their recliners and sofas, and are available at their brand stores, comfort studios, and third party dealers. MEG was responsible for identifying pricing strategies through analyzing the prices of several competitor dealers utilizing web scraping and creating an online pricing tool through dashboards in a data visualization tool.
                         </BodyText>
                     </TextContainer>
                     <Logo src={filson}/>
@@ -234,14 +234,14 @@ function ClientProjectSection (){
                 <ProjectContainer style={{background: "#E6ECEF"}}>
                     <TextContainer>
                         <TitleText>
-                            Beer City Dog Biscuits 
+                            Domino's
                         </TitleText>
                         <HeaderText>
-                            Multichannel Marketing for a Michigan Non-Profit
+                            subheading here
                         </HeaderText>
                         <Spacer/>
                         <BodyText>
-                            Beer City Dog Biscuits is a Non-profit company that provides vocational training for adults with Developmental Disabilities. 100% of their proceeds are reinvested back into the company and the people that they help. Beer City Dog Biscuits came to use asking us to find ways to sustain the business by connecting and retaining key donors. Out team created a multichannel marketing campaign to increase the presence of the brand in an effort to capture more donors. Our solution combined social media marketing, direct marketing, special events and more to create a comprehensive solution that would reach the most people.
+                            Domino’s (NYSE: DPZ) is a multibillion dollar Quick Service Restaurant (QSR) that you may have had a slice of pizza from! MEG was able to optimize their kitchen layout leveraging artificial intelligence to decrease the flowtime of their pizzas.
                         </BodyText>
                     </TextContainer>
                     <Logo src={bcdb}/>
@@ -250,14 +250,14 @@ function ClientProjectSection (){
                 <ProjectContainer style={{background: "#E6EFEB"}}>
                     <TextContainer>
                         <TitleText>
-                            Ringle
+                            GE Aerospace
                         </TitleText>
                         <HeaderText>
-                            Employee Acquisition Solutions for a Tutoring Company
+                            subheading here
                         </HeaderText>
                         <Spacer/>
                         <BodyText>
-                            Ringle is an English language tutoring company based in South Korea. Their customer base consists of adult professionals living in Asia. Their tutors are mostly from elite universities in the United States or the Untied Kingdom. Ringle asked us to find ways to acquire more tutors, especially within major U.S. Universities. Our team came back with a 22 page report that laid out a tutor outreach program. These solutions  ranged from social media strategies to graphic design ideas and were all backed up by rigorous analysis of Ringle's own data and outside research that we did. 
+                            GE Aerospace (NYSE: GE) is one of the largest aircraft engine manufacturers. They tasked MEG with forecasting the growth of a new aircraft manufacturer over the next 5 years.
                         </BodyText>
                     </TextContainer>
                     <Logo src = {ringle}/>

@@ -31,6 +31,8 @@ import anishthatiparthi0 from "../../Images/Team/headshots/anishthatiparthi0.png
 import anishthatiparthi1 from "../../Images/Team/headshots/anishthatiparthi1.png";
 import aravrajesh0 from "../../Images/Team/headshots/aravrajesh0.png";
 import aravrajesh1 from "../../Images/Team/headshots/aravrajesh1.png";
+import avakurtz0 from "../../Images/Team/headshots/avakurtz0.png";
+import avakurtz1 from "../../Images/Team/headshots/avakurtz1.png";
 import azratokovic0 from "../../Images/Team/headshots/azratokovic0.png";
 import azratokovic1 from "../../Images/Team/headshots/azratokovic1.png";
 import caleblee0 from "../../Images/Team/headshots/caleblee0.png";
@@ -447,13 +449,13 @@ function RosterSection() {
 			url: "https://www.linkedin.com/in/cynthiajli100/",
 		},
 		{
-			name: "Anish Thatiparthi",
-			image0: anishthatiparthi0,
-			image1: anishthatiparthi1,
+			name: "Arav Rajesh",
+			image0: aravrajesh0,
+			image1: aravrajesh1,
 			position: "Analyst",
-			major: "BBA 2027",
+			major: "Economics & Statistics 2027",
 			ID: 130,
-			url: "https://www.linkedin.com/in/anish-thatiparthi/",
+			url: "https://www.linkedin.com/in/arav-rajesh/",
 		},
 		{
 			name: "Niyati Kashyap",
@@ -474,13 +476,13 @@ function RosterSection() {
 			url: "https://www.linkedin.com/in/calebjl/",
 		},
 		{
-			name: "Arav Rajesh",
-			image0: aravrajesh0,
-			image1: aravrajesh1,
+			name: "Anish Thatiparthi",
+			image0: anishthatiparthi0,
+			image1: anishthatiparthi1,
 			position: "Analyst",
-			major: "Economics & Statistics 2027",
+			major: "BBA 2027",
 			ID: 133,
-			url: "https://www.linkedin.com/in/arav-rajesh/",
+			url: "https://www.linkedin.com/in/anish-thatiparthi/",
 		},
 		{
 			name: "Siri Pattipati",
@@ -492,9 +494,20 @@ function RosterSection() {
 			url: "https://www.linkedin.com/in/siri-pattipati-87a155216/",
 		},
 		{
+			name: "Ava Kurtz",
+			image0: avakurtz0,
+			image1: avakurtz1,
+			url: "https://www.linkedin.com/in/ava-kurtz-/",
+			ID: 135,
+			position: "Member",
+			major: "Econ 2026",
+		},
+		{
 			name: "Azra Tokovic",
 			image0: azratokovic0,
 			image1: azratokovic1,
+			url: "https://www.linkedin.com/in/azra-tokovic/",
+			ID: 136,
 			position: "Member",
 			major: "BBA 2026",
 			ID: 135,

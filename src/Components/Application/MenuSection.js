@@ -309,7 +309,7 @@ function MenuSection() {
 				</FaqContainer>
 				<CenterContainer>
 					<a
-						href="https://docs.google.com/forms/d/e/1FAIpQLSfevZ9aiFnZLPglsGB13E7hcuNwgG7xIN79tYGv1goVIeb4Fw/viewform"
+						href="https://docs.google.com/forms/d/1nPqP4E-sKAsZMw_n8plqhcjk1FPE1iJEeF6kYTSKH14/viewform"
 						target="_blank"
 						style={{ textDecoration: "none" }}
 					>

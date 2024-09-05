@@ -92,7 +92,7 @@ const TimelineComponent = () => {
 		},
 		{
 			title: "DEI Panel",
-			location: "B0570",
+			location: "TBD",
 			date: "9/16",
 			time: "5:30-7:00 pm"
 		},

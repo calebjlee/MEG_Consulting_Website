@@ -49,7 +49,7 @@ const TimelineTextGroup = styled.div`
   transform: ${({ position }) => (position === 7 ? 'translate(-52.5%)' : 'translateX(-67%)')};
   text-align: center;
   font-size: 1vw;
-  ${({ position }) => (position % 2 === 0 ? 'top: 4vh;' : 'top: -8vh;')} /* Alternating top/bottom positioning */
+  ${({ position }) => (position % 2 === 0 ? 'top: 5vh;' : 'top: -9vh;')} /* Alternating top/bottom positioning */
 `;
 
 const TimelineComponent = () => {
@@ -79,6 +79,12 @@ const TimelineComponent = () => {
 			time: "4:30-5:30 pm"
 		},
 		{
+			title: "Coffee Chats",
+			location: "Various Locations",
+			date: "9/13",
+			time: "4:00-6:00 pm"
+		},
+		{
 			title: "Resume & Case Workshop",
 			location: "B0570",
 			date: "9/15",
@@ -87,14 +93,8 @@ const TimelineComponent = () => {
 		{
 			title: "DEI Panel",
 			location: "B0570",
-			date: "9/17",
+			date: "9/16",
 			time: "5:30-7:00 pm"
-		},
-		{
-			title: "Coffee Chats",
-			location: "Various Locations",
-			date: "9/20",
-			time: "4:00-6:00 pm"
 		},
 		{
 			title: "Application Due",

@@ -227,10 +227,10 @@ function MenuSection() {
 	const eventDates = [
 		"9/4/2024, 5:30 PM",
 		"9/8/2024, 4:30 PM",
-		"9/15/2024 3:30 PM",
-		"9/17/2024, 5:30 PM",
-		"9/20/2024, 4:00 PM",
-		"9/24/2024, 11:59 PM",
+		"9/13/2024 4:00 PM",
+		"9/15/2024, 3:30 PM",
+		"9/16/2024, 5:30 PM",
+		"9/17/2024, 11:59 PM",
 		
 	];
 	const eventImages = [
@@ -244,9 +244,9 @@ function MenuSection() {
 	const eventName = [
 		"BBA Meet the Clubs",
 		"Mass Meeting",
+		"Coffee Chats",
 		"Resume & Case Workshop",
 		"DEI Panel",
-		"Coffee Chats",
 		"Application Due",
 	];
 	const eventLocation = [

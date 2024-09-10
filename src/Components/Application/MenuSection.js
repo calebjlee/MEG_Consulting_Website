@@ -236,8 +236,8 @@ function MenuSection() {
 	const eventImages = [
 		ross,
 		mass,
-		workshop,
 		coffee,
+		workshop,
 		dei,
 		apply,
 	];
@@ -252,18 +252,18 @@ function MenuSection() {
 	const eventLocation = [
 		"Winter Garden",
 		"Blau Colloquium",
+		"Various Locations",
 		"B0570",
-		"B0570",
-		"Various locations",
+		"TBD",
 		"Online",
 	];
 	const eventTime = [
 		"9/4 at 5:30-7:30 P.M.",
 		"9/8 at 4:30-5:30 P.M.",
-		"9/15 at 3:30-5:00 P.M.",
-		"9/17 at 5:30-7:00 P.M.",
-		"9/20 at 4:00-6:00 P.M.",
-		"TBD",
+		"9/13 at 3:30-5:00 P.M.",
+		"9/15 at 5:30-7:00 P.M.",
+		"9/16 at 4:00-6:00 P.M.",
+		"9/17 at 11:59 P.M.",
 	];
 
 	function eventDateDetector() {

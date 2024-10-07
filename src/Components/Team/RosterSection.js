@@ -440,7 +440,7 @@ function RosterSection() {
 			url: "https://www.linkedin.com/in/shiva-rajan78/",
 		},
 		{
-			name: "Cynthia Lia",
+			name: "Cynthia Li",
 			image0: cynthiali0,
 			image1: cynthiali1,
 			position: "Analyst",

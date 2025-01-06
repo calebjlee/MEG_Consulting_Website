@@ -70,27 +70,27 @@ const Spacer = styled.div`
 function ProjectHome() {
   return (
     <SectionContainer>
-      <NextSection ScrollNext={301} ScrollAlready={0} color="black" />
+      <NextSection ScrollNext={151} ScrollAlready={0} color="black" />
       <TitleTextContainer style={{ transform: "translate(0,75%)" }}>
         <TitleText style={{ transform: "translate(0,100%)" }}>
-          OUR PROJECTS
+          OUR CLIENTS
         </TitleText>
       </TitleTextContainer>
       <LineBreak />
       <TitleTextContainer style={{ transform: "translate(0,37.5%)" }}>
         <TitleText style={{ transform: "translate(0,100%)" }}>
-          OUR PROJECTS
+          OUR CLIENTS
         </TitleText>
       </TitleTextContainer>
       <LineBreak />
       <TitleTextContainer>
         <TitleText style={{ transform: "translate(0,100%)" }}>
-          OUR PROJECTS
+          OUR CLIENTS
         </TitleText>
       </TitleTextContainer>
       <LineBreak />
       <TitleTextContainer>
-        <TitleTextStill>OUR PROJECTS</TitleTextStill>
+        <TitleTextStill>OUR CLIENTS</TitleTextStill>
       </TitleTextContainer>
       <Spacer />
     </SectionContainer>

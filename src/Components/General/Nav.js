@@ -268,7 +268,7 @@ function Nav(props) {
           style={{ textDecoration: "none", color: "#1e1e1e" }}
         >
           <NavTextContainer>
-            <NavText>Projects</NavText>
+            <NavText>Clients</NavText>
           </NavTextContainer>
         </Link>
         <Link to="/team" style={{ textDecoration: "none", color: "#1e1e1e" }}>

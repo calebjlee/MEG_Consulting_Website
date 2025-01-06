@@ -293,7 +293,7 @@ function App() {
 		],
 		[
 			"WHO WE WORK WITH",
-			"OUR PAST PROJECTS",
+			"OUR PAST CLIENTS",
 			"THE IMPACT WE'VE MADE",
 			"THE FRAMEWORKS WE USE",
 			"WHAT YOU CAN ADD",
@@ -439,7 +439,7 @@ function App() {
 				<Link to="/projects" style={{ textDecoration: "none" }}>
 					<HomeNavContainer>
 						<HomeNavText
-							data-title="OUR PROJECTS"
+							data-title="OUR CLIENTS"
 							onMouseEnter={() => {
 								setScrollID(2);
 							}}
@@ -453,7 +453,7 @@ function App() {
 										: "none",
 							}}
 						>
-							OUR PROJECTS
+							OUR CLIENTS
 						</HomeNavText>
 					</HomeNavContainer>
 				</Link>

@@ -20,7 +20,7 @@ const TextContainer = styled.div`
 
 const TitleText = styled.h1`
   font-size: 8vmin;
-  font-family: 'Futura PT', sans-serif;
+  font-family: futura-pt, sans-serif;
   margin: 0 0 20px 0;
   font-weight: 900;
   text-align: left;
@@ -110,6 +110,7 @@ const TextContent = styled.div`
   display: flex;
   flex-direction: column;
   width: 60%;
+  font-family: futura-pt, sans-serif;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -122,10 +123,12 @@ const Description = styled.p`
   font-size: 1.2em;
   color: #333333;
   margin-bottom: 1em;
+  font-family: futura-pt, sans-serif;
 `;
 
 const ClientName = styled.h3`
   font-size: 1.5em;
+  font-family: futura-pt, sans-serif;
   margin: 0;
   color: #1e1e1e;
 `;
@@ -133,6 +136,7 @@ const ClientName = styled.h3`
 const DateText = styled.p`
   font-size: 0.9em;
   color: gray;
+  font-family: futura-pt, sans-serif;
 `;
 
 const DotsContainer = styled.div`

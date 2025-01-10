@@ -26,7 +26,7 @@ const TextContainer = styled.div`
 
 const TitleText = styled.h1`
   font-size: 8vmin;
-  font-family: 'Futura PT', sans-serif;
+  font-family: futura-pt, sans-serif;
   margin: 0 0 20px 0;
   font-weight: 900;
   text-align: left;

@@ -151,7 +151,7 @@ function BuildingSection() {
         <TitleText>EXPLORE YOUR </TitleText>
         <TitleText>BUSINESS POTENTIAL</TitleText>
         <LineBreak />
-        <OutlineText>We provide a wide array of consulting services to all different types of organizations, ranging from social enterprises with under 5 employees to international nonprofits with 1000+ employees. Primarily, we strive to help our clients overcome their most pressing business challenges or capitalize on their largest opportunities by providing data-backed recommendations that align with our client’s top-line strategy and mission.</OutlineText>
+        <OutlineText>We are a multidisciplinary student-led, premier consulting group at the University of Michigan dedicated to serving the local and global community. Collaborate with companies ranging from local nonprofits to Fortune 500s, spanning industries like retail, sports, and healthcare. Our diverse clients and broad range of project scopes, such as marketing campaigns, talent acquisition, and UX design, strive to tackle relevant business challenges in the community while equipping our members with the essential analytical and presentational skills to succeed in their chosen fields. Our analysts provide research-backed recommendations through extensive market research and data analysis in order to promote strategies aligning with the company's unique goals and mission.</OutlineText>
       </TextContainer>
       <ImageContainer>
         <ImageCoverContainer>

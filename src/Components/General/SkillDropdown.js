@@ -53,7 +53,7 @@ const DetailLine = styled.div`
   line-height: 1.6;
 `;
 
-const SkillDropdown = ({ title, location, scope, description }) => {
+const SkillDropdown = ({ title, client, scope }) => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [maxHeight, setMaxHeight] = useState(0);
   const dropdownRef = useRef(null);
@@ -79,9 +79,8 @@ const SkillDropdown = ({ title, location, scope, description }) => {
       </SkillContainer>
       <SmallSpacer />
       <DropdownContent ref={dropdownRef} maxHeight={maxHeight}>
-        <DetailLine><strong>Location:</strong> {location}</DetailLine>
-        <DetailLine><strong>Scope:</strong> {scope}</DetailLine>
-        <DetailLine><strong>Description:</strong> {description}</DetailLine>
+        <DetailLine><strong>Client:</strong> {client}</DetailLine>
+        <DetailLine><strong>Project Scope:</strong> {scope}</DetailLine>
       </DropdownContent>
     </div>
   );

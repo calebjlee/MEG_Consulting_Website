@@ -41,28 +41,24 @@ const SkillsSection = () => {
         <TitleText>OUR CAPABILITIES</TitleText>
       <TextContainer>
         <SkillDropdown
-          title="STRATEGY"
-          location="Regional nonprofit bakery"
-          scope="Operations digitalization and capacity modeling"
-          description="Digitalized company operations through creating user-friendly supply tracking system and capacity projection model. Resolved multiple logistics issues, allowing owners to focus on expanding the organization while ensuring they had the resources to do so."
+          title="CUSTOMER RETENTION"
+          client="Fortune 500 Midwest Retailer"
+          scope="Orchestrated customer acquisition and retention campaign for $21B retailer by studying Gen Z retail preferences and competitor loyalty programs. Launched Qualtrics survey, focus group and conducted internal analysis in order to deliver UI/UX recommendations and new features ideas for rewards app of 8M users."
         />
         <SkillDropdown
-          title="OPERATIONS"
-          location="San Francisco, CA"
-          scope="UI/UX for mobile applications"
-          description="Redesigned core mobile app interfaces, increasing user engagement by 30%."
+          title="TALENT ACQUISITION"
+          client="Global Furniture Brand"
+          scope="Curated employer branding strategy for a large furniture company by analyzing successful case studies, conducting a social media audit, and synthesizing internal hiring data. Compiled research to construct a sustainable talent acquisition model and develop new campaigns that boost minority visibility by 10%."
         />
         <SkillDropdown
-          title="FINANCE"
-          location="Remote"
-          scope="Full-stack application development"
-          description="Built scalable backend services and integrated APIs for e-commerce platform."
+          title="MARKET GROWTH"
+          client="International Fast-Food Chain"
+          scope="Formulated a burger franchise's market expansion strategy through regional analysis to restructure store fleet, as well as ideated initiatives such as food trucks and pop-ups to expand beyond traditional walk-in stores and capture untapped customer bases."
         />
         <SkillDropdown
-          title="DATA ANALYTICS"
-          location="Remote"
-          scope="Full-stack application development"
-          description="Built scalable backend services and integrated APIs for e-commerce platform."
+          title="COMMUNITY OUTREACH"
+          client="Local Nonprofit Animal Shelter"
+          scope="Engineered strategic initiatives for mid-sized city animal shelter to promote services and establish robust local partnerships by evaluating demographics, pet care accessibility and district culture through census data, online forums and outreach to identify priority areas."
         />
       </TextContainer>
     </SectionContainer>

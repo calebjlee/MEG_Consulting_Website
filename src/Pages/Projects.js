@@ -41,7 +41,7 @@ function Projects() {
       <ProjectHome />
       <BuildingSection />
       <SkillsSection />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
       <PastClientsSection />
       <JoinSection />
       {/* <BuildingSection1 /> */}

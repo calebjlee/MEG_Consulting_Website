@@ -63,7 +63,7 @@ function JoinSection() {
         <TitleText>Come Join Us!</TitleText>
         <SmallSpacer />
         <BodyText>
-            We want to take your business to the next level! We are always looking for new clients to work with and new projects to take on. If you have a problem in mind that you would like to solve, please reach out to us at megconsulting@umich.edu and we will get back to you as soon as possible.
+        We want to take your business to the next level! We are always looking for new clients to work with, so if you would like to collaborate with us on a future project please reach out to meg.eboard@umich.edu.
         </BodyText>
       </TextContainer>
       <Spacer />

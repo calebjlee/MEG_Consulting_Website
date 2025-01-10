@@ -16,6 +16,7 @@ import zingermans from '../../Images/Projects/Clients/zingermans.png';
 import zoominfo from '../../Images/Projects/Clients/zoominfo.png';
 import washtenawdairy from '../../Images/Projects/Clients/washtenawdairy.png';
 import dematic from '../../Images/Projects/Clients/dematic.png';
+import ge_aerospace from '../../Images/Projects/Clients/ge_aerospace.png';
 
 const SectionContainer = styled.div`
   width: 100vw;
@@ -74,12 +75,13 @@ function SummarySection() {
     mosburger,
     nba,
     siemens,
-    sisterpie,
+    // sisterpie,
     smitten,
     soulcycle,
     zingermans,
     zoominfo,
     washtenawdairy,
+    ge_aerospace,
   ];
 
   return (

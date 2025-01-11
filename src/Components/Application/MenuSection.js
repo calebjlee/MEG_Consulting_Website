@@ -225,15 +225,17 @@ const SoonContainer = styled.div`
 
 function MenuSection() {
 	const eventDates = [
-		"9/4/2024, 5:30 PM",
-		"9/8/2024, 4:30 PM",
-		"9/13/2024 4:00 PM",
-		"9/15/2024, 3:30 PM",
-		"9/16/2024, 5:30 PM",
-		"9/17/2024, 11:59 PM",
+		"1/14/2025, 4:00 PM",
+		"1/16/2025, 5:30 PM",
+		"1/19/2025 1:30 PM",
+		"1/24/2025, 4:00 PM",
+		"1/26/2025, 3:30 PM",
+		"1/28/2025, 7:00 PM",
+		"1/29/2025, 11:59 PM",
 		
 	];
 	const eventImages = [
+		central,
 		ross,
 		mass,
 		coffee,
@@ -242,28 +244,31 @@ function MenuSection() {
 		apply,
 	];
 	const eventName = [
+		"Winterfest",
 		"BBA Meet the Clubs",
 		"Mass Meeting",
 		"Coffee Chats",
 		"Resume & Case Workshop",
-		"DEI Panel",
+		"DEI Event",
 		"Application Due",
 	];
 	const eventLocation = [
-		"Winter Garden",
+		"Michigan Union",
+		"Ross Winter Garden",
 		"Blau Colloquium",
 		"Various Locations",
-		"B0570",
-		"R0420",
+		"R0210",
+		"B1580",
 		"Online",
 	];
 	const eventTime = [
-		"9/4 at 5:30-7:30 P.M.",
-		"9/8 at 4:30-5:30 P.M.",
-		"9/13 at 3:30-5:00 P.M.",
-		"9/15 at 5:30-7:00 P.M.",
-		"9/16 at 8:00-9:00 P.M.",
-		"9/17 at 11:59 P.M.",
+		"1/14 at 4:00-7:00 P.M.",
+		"1/16 at 5:30-7:30 P.M.",
+		"1/19 at 1:30-2:30 P.M.",
+		"1/24 at 4:00-6:00 P.M.",
+		"1/26 at 3:30-5:00 P.M.",
+		"1/28 at 7:00-8:30 P.M.",
+		"1/29 at 11:59 P.M.",
 	];
 
 	function eventDateDetector() {

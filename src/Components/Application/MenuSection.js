@@ -314,7 +314,7 @@ function MenuSection() {
 				</FaqContainer>
 				<CenterContainer>
 					<a
-						href="https://docs.google.com/forms/d/1nPqP4E-sKAsZMw_n8plqhcjk1FPE1iJEeF6kYTSKH14/viewform"
+						href="https://forms.gle/VsHqtF2fPJLtRp4c9"
 						target="_blank"
 						style={{ textDecoration: "none" }}
 					>
@@ -343,7 +343,7 @@ function MenuSection() {
 								Want to stay up to date on the newest from MEG?
 								Sign up on our{" "}
 								<a
-									href="https://docs.google.com/forms/d/e/1FAIpQLSdcxlt29MbQN0GHOJi9F1r_Q3O_bmUbQBwBw1q-eayuGWo2Vw/viewform?usp=sf_link"
+									href="https://forms.gle/r7yyJxQ77dyaQ7YQ8"
 									target="_blank"
 									style={{
 										fontWeight: 700,

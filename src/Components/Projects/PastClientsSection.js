@@ -17,6 +17,9 @@ import zoominfo from '../../Images/Projects/Clients/zoominfo.png';
 import washtenawdairy from '../../Images/Projects/Clients/washtenawdairy.png';
 import dematic from '../../Images/Projects/Clients/dematic.png';
 import ge_aerospace from '../../Images/Projects/Clients/ge_aerospace.png';
+import amway from '../../Images/Projects/Clients/amway.png';
+import cityofa2 from '../../Images/Projects/Clients/cityofa2.png';
+import greendoor from '../../Images/Projects/Clients/greendoor.png';
 
 const SectionContainer = styled.div`
   width: 100vw;
@@ -66,22 +69,26 @@ const ClientLogo = styled.img`
 
 function SummarySection() {
   const clients = [
+    mcdonalds,
     dominos,
     ford,
     gm,
-    lazboy,
-    mcdonalds,
-    michigan,
-    mosburger,
     nba,
     siemens,
-    // sisterpie,
+    ge_aerospace,
+    lazboy,
+    amway,
+    michigan,
+    cityofa2,
+    mosburger,
+    sisterpie,
     smitten,
     soulcycle,
     zingermans,
     zoominfo,
     washtenawdairy,
-    ge_aerospace,
+    greendoor,
+    dematic,
   ];
 
   return (

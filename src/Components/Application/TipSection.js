@@ -177,7 +177,7 @@ function TipSection(){
                         <TitleText>What is a case interview and how do I do well on it?</TitleText>
                         <BsPlusLg style={{marginRight:"1vw", marginLeft:"5vw", transform: clickId === 7 ? "rotate(45deg)":"none", transition: "transform .5s", fontSize: "3vmin", flexShrink:0}}/>
                     </TitleTextContainer>
-                    <BodyText ref={measuredRef6}>A case interview is a type of recruiting interview where the interviewer gives you a business problem and asks you to solve it. These interviews can be intimidating, as a lot of applicants have no experience with casing. However, if you've never even heard about casing, you should know that we aren't looking for a perfect case and even the best applicants we've seen struggle a bit with the case. To learn the basics of casing come to our Case/Resume Workshop &#40;9/16 3-5 pm, B2560&#41;</BodyText>
+                    <BodyText ref={measuredRef6}>A case interview is a type of recruiting interview where the interviewer gives you a business problem and asks you to solve it. These interviews can be intimidating, as a lot of applicants have no experience with casing. However, if you've never even heard about casing, you should know that we aren't looking for a perfect case and even the best applicants we've seen struggle a bit with the case. To learn the basics of casing come to our Case/Resume Workshop.</BodyText>
                 </TipContainer>
                 
             </ContentContainer>

@@ -225,45 +225,50 @@ const SoonContainer = styled.div`
 
 function MenuSection() {
 	const eventDates = [
-		"9/4/2024, 5:30 PM",
-		"9/8/2024, 4:30 PM",
-		"9/15/2024 3:30 PM",
-		"9/17/2024, 5:30 PM",
-		"9/20/2024, 4:00 PM",
-		"9/24/2024, 11:59 PM",
+		"1/14/2025, 4:00 PM",
+		"1/16/2025, 5:30 PM",
+		"1/19/2025 1:30 PM",
+		"1/24/2025, 4:00 PM",
+		"1/26/2025, 3:30 PM",
+		"1/28/2025, 7:00 PM",
+		"1/29/2025, 11:59 PM",
 		
 	];
 	const eventImages = [
+		central,
 		ross,
 		mass,
-		workshop,
 		coffee,
+		workshop,
 		dei,
 		apply,
 	];
 	const eventName = [
+		"Winterfest",
 		"BBA Meet the Clubs",
 		"Mass Meeting",
-		"Resume & Case Workshop",
-		"DEI Panel",
 		"Coffee Chats",
+		"Resume & Case Workshop",
+		"DEI Event",
 		"Application Due",
 	];
 	const eventLocation = [
-		"Winter Garden",
+		"Michigan Union",
+		"Ross Winter Garden",
 		"Blau Colloquium",
-		"B0570",
-		"B0570",
-		"Various locations",
+		"Various Locations",
+		"R0210",
+		"B1580",
+		"Online",
 	];
 	const eventTime = [
-		"1/10 at 4:00 P.M.",
-		"1/12 at 6:00 P.M.",
-		"1/13 at 4:00 P.M.",
-		"1/17 at 1:00 P.M.",
-		"1/18 at 7:00 P.M.",
-		"1/20 at 5:00 P.M.",
-		"1/22 at 1:00 P.M.",
+		"1/14 at 4:00-7:00 P.M.",
+		"1/16 at 5:30-7:30 P.M.",
+		"1/19 at 1:30-2:30 P.M.",
+		"1/24 at 4:00-6:00 P.M.",
+		"1/26 at 3:30-5:00 P.M.",
+		"1/28 at 7:00-8:30 P.M.",
+		"1/29 at 11:59 P.M.",
 	];
 
 	function eventDateDetector() {
@@ -309,7 +314,7 @@ function MenuSection() {
 				</FaqContainer>
 				<CenterContainer>
 					<a
-						href="https://docs.google.com/forms/d/e/1FAIpQLSfevZ9aiFnZLPglsGB13E7hcuNwgG7xIN79tYGv1goVIeb4Fw/viewform"
+						href="https://forms.gle/VsHqtF2fPJLtRp4c9"
 						target="_blank"
 						style={{ textDecoration: "none" }}
 					>
@@ -338,7 +343,7 @@ function MenuSection() {
 								Want to stay up to date on the newest from MEG?
 								Sign up on our{" "}
 								<a
-									href="https://docs.google.com/forms/d/e/1FAIpQLSdcxlt29MbQN0GHOJi9F1r_Q3O_bmUbQBwBw1q-eayuGWo2Vw/viewform?usp=sf_link"
+									href="https://forms.gle/r7yyJxQ77dyaQ7YQ8"
 									target="_blank"
 									style={{
 										fontWeight: 700,

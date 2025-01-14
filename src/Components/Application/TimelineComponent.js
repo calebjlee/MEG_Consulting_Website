@@ -49,7 +49,7 @@ const TimelineTextGroup = styled.div`
   transform: ${({ position }) => (position === 7 ? 'translate(-52.5%)' : 'translateX(-67%)')};
   text-align: center;
   font-size: 1vw;
-  ${({ position }) => (position % 2 === 0 ? 'top: 4vh;' : 'top: -8vh;')} /* Alternating top/bottom positioning */
+  ${({ position }) => (position % 2 === 0 ? 'top: 5vh;' : 'top: -9vh;')} /* Alternating top/bottom positioning */
 `;
 
 const TimelineComponent = () => {
@@ -61,46 +61,46 @@ const TimelineComponent = () => {
 			time: ""
 		},
 		{
-			title: "Festifall",
-			location: "Diag Table A8",
-			date: "8/28",
-			time: "6:00-8:30 pm"
+			title: "Winterfest",
+			location: "Michigan Union",
+			date: "1/14",
+			time: "4:00-7:00 pm"
 		},
 		{
 			title: "BBA Meet The Clubs",
 			location: "Ross Winter Garden",
-			date: "9/4",
+			date: "1/16",
 			time: "5:30-7:30 pm"
 		},
 		{
 			title: "Mass Meeting",
 			location: "Blau Colloquium",
-			date: "9/8",
-			time: "4:30-5:30 pm"
-		},
-		{
-			title: "Resume & Case Workshop",
-			location: "B0570",
-			date: "9/15",
-			time: "3:30-5:00 pm"
-		},
-		{
-			title: "DEI Panel",
-			location: "B0570",
-			date: "9/17",
-			time: "5:30-7:00 pm"
+			date: "1/19",
+			time: "1:30-2:30 pm"
 		},
 		{
 			title: "Coffee Chats",
 			location: "Various Locations",
-			date: "9/20",
+			date: "1/24",
 			time: "4:00-6:00 pm"
+		},
+		{
+			title: "Resume & Case Workshop",
+			location: "R0210",
+			date: "1/26",
+			time: "3:30-5:00 pm"
+		},
+		{
+			title: "DEI Event",
+			location: "B1580",
+			date: "1/28",
+			time: "8:00-9:00 pm"
 		},
 		{
 			title: "Application Due",
 			location: "Online",
-			date: "TBA",
-			time: ""
+			date: "1/28",
+			time: "11:59 pm"
 		},
 	];
 

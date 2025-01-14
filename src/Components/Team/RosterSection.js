@@ -3,44 +3,41 @@ import { useState } from "react";
 
 import brandon0 from "../../Images/Team/headshots/brandon0.png";
 import brandon1 from "../../Images/Team/headshots/brandon1.png";
-import pri0 from "../../Images/Team/headshots/pri0.png";
-import pri1 from "../../Images/Team/headshots/pri1.png";
-import rachelle0 from "../../Images/Team/headshots/rachelle0.png";
-import rachelle1 from "../../Images/Team/headshots/rachelle1.png";
 import anish0 from "../../Images/Team/headshots/anish0.png";
 import anish1 from "../../Images/Team/headshots/anish1.png";
-import charlie0 from "../../Images/Team/headshots/charlie0.png";
-import charlie1 from "../../Images/Team/headshots/charlie1.png";
 import kapil0 from "../../Images/Team/headshots/kapil0.png";
 import kapil1 from "../../Images/Team/headshots/kapil1.png";
 import lawder0 from "../../Images/Team/headshots/lawder0.png";
 import lawder1 from "../../Images/Team/headshots/lawder1.png";
 
-import jack0 from "../../Images/Team/headshots/jack0.png";
-import jack1 from "../../Images/Team/headshots/jack1.png";
-import ragini0 from "../../Images/Team/headshots/ragini0.png";
-import ragini1 from "../../Images/Team/headshots/ragini1.png";
-import shubh0 from "../../Images/Team/headshots/shubh0.png";
-import shubh1 from "../../Images/Team/headshots/shubh1.png";
-
 import aditivadakath0 from "../../Images/Team/headshots/aditivadakath0.png";
 import aditivadakath1 from "../../Images/Team/headshots/aditivadakath1.png";
+import alishagandhi0 from "../../Images/Team/headshots/alishagandhi0.png";
+import alishagandhi1 from "../../Images/Team/headshots/alishagandhi1.png";
 import amorytin0 from "../../Images/Team/headshots/amorytin0.png";
 import amorytin1 from "../../Images/Team/headshots/amorytin1.png";
 import anishthatiparthi0 from "../../Images/Team/headshots/anishthatiparthi0.png";
 import anishthatiparthi1 from "../../Images/Team/headshots/anishthatiparthi1.png";
 import aravrajesh0 from "../../Images/Team/headshots/aravrajesh0.png";
 import aravrajesh1 from "../../Images/Team/headshots/aravrajesh1.png";
+import archansenthilvanan0 from "../../Images/Team/headshots/archansenthilvanan0.png";
+import archansenthilvanan1 from "../../Images/Team/headshots/archansenthilvanan1.png";
 import avakurtz0 from "../../Images/Team/headshots/avakurtz0.png";
 import avakurtz1 from "../../Images/Team/headshots/avakurtz1.png";
 import azratokovic0 from "../../Images/Team/headshots/azratokovic0.png";
 import azratokovic1 from "../../Images/Team/headshots/azratokovic1.png";
 import caleblee0 from "../../Images/Team/headshots/caleblee0.png";
 import caleblee1 from "../../Images/Team/headshots/caleblee1.png";
+import chloetjakra0 from "../../Images/Team/headshots/chloetjakra0.png";
+import chloetjakra1 from "../../Images/Team/headshots/chloetjakra1.png";
 import cynthiali0 from "../../Images/Team/headshots/cynthiali0.png";
 import cynthiali1 from "../../Images/Team/headshots/cynthiali1.png";
+import davidliu0 from "../../Images/Team/headshots/davidliu0.png";
+import davidliu1 from "../../Images/Team/headshots/davidliu1.png";
 import debangimohanta0 from "../../Images/Team/headshots/debangimohanta0.png";
 import debangimohanta1 from "../../Images/Team/headshots/debangimohanta1.png";
+import dylanwang0 from "../../Images/Team/headshots/dylanwang0.png";
+import dylanwang1 from "../../Images/Team/headshots/dylanwang1.png";
 import evakumer0 from "../../Images/Team/headshots/evakumer0.png";
 import evakumer1 from "../../Images/Team/headshots/evakumer1.png";
 import ilakiyarajaguru0 from "../../Images/Team/headshots/ilakiyarajaguru0.png";
@@ -51,6 +48,8 @@ import isseihata0 from "../../Images/Team/headshots/isseihata0.png";
 import isseihata1 from "../../Images/Team/headshots/isseihata1.png";
 import jessicatran0 from "../../Images/Team/headshots/jessicatran0.png";
 import jessicatran1 from "../../Images/Team/headshots/jessicatran1.png";
+import jiwoobaik0 from "../../Images/Team/headshots/jiwoobaik0.png";
+import jiwoobaik1 from "../../Images/Team/headshots/jiwoobaik1.png";
 import johnlee0 from "../../Images/Team/headshots/johnlee0.png";
 import johnlee1 from "../../Images/Team/headshots/johnlee1.png";
 import joyren0 from "../../Images/Team/headshots/joyren0.png";
@@ -59,24 +58,38 @@ import juliazhang0 from "../../Images/Team/headshots/juliazhang0.png";
 import juliazhang1 from "../../Images/Team/headshots/juliazhang1.png";
 import kaitlynko0 from "../../Images/Team/headshots/kaitlynko0.png";
 import kaitlynko1 from "../../Images/Team/headshots/kaitlynko1.png";
+import kasenko0 from "../../Images/Team/headshots/kasenko0.png";
+import kasenko1 from "../../Images/Team/headshots/kasenko1.png";
 import leoleone0 from "../../Images/Team/headshots/leoleone0.png";
 import leoleone1 from "../../Images/Team/headshots/leoleone1.png";
+import michellebaik0 from "../../Images/Team/headshots/michellebaik0.png";
+import michellebaik1 from "../../Images/Team/headshots/michellebaik1.png";
 import minseokkim0 from "../../Images/Team/headshots/minseokkim0.png";
 import minseokkim1 from "../../Images/Team/headshots/minseokkim1.png";
 import natashashimon0 from "../../Images/Team/headshots/natashashimon0.png";
 import natashashimon1 from "../../Images/Team/headshots/natashashimon1.png";
+import nathanlucken0 from "../../Images/Team/headshots/nathanlucken0.png";
+import nathanlucken1 from "../../Images/Team/headshots/nathanlucken1.png";
 import niyatikashyap0 from "../../Images/Team/headshots/niyatikashyap0.png";
 import niyatikashyap1 from "../../Images/Team/headshots/niyatikashyap1.png";
 import patrickli0 from "../../Images/Team/headshots/patrickli0.png";
 import patrickli1 from "../../Images/Team/headshots/patrickli1.png";
 import prahpant0 from "../../Images/Team/headshots/prahpant0.png";
 import prahpant1 from "../../Images/Team/headshots/prahpant1.png";
+import rafaelopperman0 from "../../Images/Team/headshots/rafaelopperman0.png";
+import rafaelopperman1 from "../../Images/Team/headshots/rafaelopperman1.png";
+import rahilkakar0 from "../../Images/Team/headshots/rahilkakar0.png";
+import rahilkakar1 from "../../Images/Team/headshots/rahilkakar1.png";
+import reesebower0 from "../../Images/Team/headshots/reesebower0.png";
+import reesebower1 from "../../Images/Team/headshots/reesebower1.png";
 import rheamisra0 from "../../Images/Team/headshots/rheamisra0.png";
 import rheamisra1 from "../../Images/Team/headshots/rheamisra1.png";
 import saathvikhari0 from "../../Images/Team/headshots/saathvikhari0.png";
 import saathvikhari1 from "../../Images/Team/headshots/saathvikhari1.png";
 import shivarajan0 from "../../Images/Team/headshots/shivarajan0.png";
 import shivarajan1 from "../../Images/Team/headshots/shivarajan1.png";
+import simrynjawanda0 from "../../Images/Team/headshots/simrynjawanda0.png";
+import simrynjawanda1 from "../../Images/Team/headshots/simrynjawanda1.png";
 import siripattipati0 from "../../Images/Team/headshots/siripattipati0.png";
 import siripattipati1 from "../../Images/Team/headshots/siripattipati1.png";
 import sophierichards0 from "../../Images/Team/headshots/sophierichards0.png";
@@ -296,44 +309,74 @@ function RosterSection() {
 	];
 	const managerData = [
 		{
-			name: "Saathvik Hari",
-			image0: saathvikhari0,
-			image1: saathvikhari1,
-			position: "Project Manager",
-			major: "Economics & DS 2026",
-			ID: 111,
-			url: "https://www.linkedin.com/in/saathvik-hari/",
-		},
-		{
-			name: "Jessica Tran",
-			image0: jessicatran0,
-			image1: jessicatran1,
-			position: "Project Manager",
-			major: "BBA 2026",
-			ID: 112,
-			url: "https://www.linkedin.com/in/jessica-tran-39582a205/",
-		},
-		{
-			name: "Aditi Vadakath",
-			image0: aditivadakath0,
-			image1: aditivadakath1,
+			name: "Alisha Gandhi",
+			image0: alishagandhi0,
+			image1: alishagandhi1,
 			position: "Project Manager",
 			major: "BBA 2027",
-			ID: 116,
-			url: "https://www.linkedin.com/in/aditi-vadakath/",
+			ID: 138,
+			url: "https://www.linkedin.com/in/alishasgandhi/",
 		},
-	];
-
-	const analystData = [
+		{
+			name: "Archan Senthilvanan",
+			image0: archansenthilvanan0,
+			image1: archansenthilvanan1,
+			position: "Project Manager",
+			major: "BBA 2027",
+			ID: 139,
+			url: "https://www.linkedin.com/in/archan-senthilvanan/",
+		},
+		{
+			name: "Cynthia Li",
+			image0: cynthiali0,
+			image1: cynthiali1,
+			position: "Project Manager",
+			major: "BBA 2027",
+			ID: 129,
+			url: "https://www.linkedin.com/in/cynthiajli100/",
+		},
+		{
+			name: "Issei Hata",
+			image0: isseihata0,
+			image1: isseihata1,
+			position: "Project Manager",
+			major: "Economics & Math 2027",
+			ID: 127,
+			url: "https://www.linkedin.com/in/isseihata/",
+		},
+		{
+			name: "Jiwoo Baik",
+			image0: jiwoobaik0,
+			image1: jiwoobaik1,
+			position: "Project Manager",
+			major: "Econ 2027",
+			ID: 143,
+			url: "https://www.linkedin.com/in/jiwoo-baik/",
+		},
+		{
+			name: "Shiva Rajan",
+			image0: shivarajan0,
+			image1: shivarajan1,
+			position: "Project Manager",
+			major: "BBA 2027",
+			ID: 128,
+			url: "https://www.linkedin.com/in/shiva-rajan78/",
+		},
+		
 		{
 			name: "Zafir Maker-Agha",
 			image0: zafirmakeragha0,
 			image1: zafirmakeragha1,
-			position: "Analyst",
+			position: "Project Manager",
 			major: "BBA & Sustainability 2026",
 			ID: 121,
 			url: "https://www.linkedin.com/in/zafir-maker-agha/",
 		},
+		
+	];
+
+	const analystData = [
+		
 		{
 			name: "Joy Ren",
 			image0: joyren0,
@@ -362,33 +405,6 @@ function RosterSection() {
 			url: "https://www.linkedin.com/in/natasha-shimon-10676b249/",
 		},
 		{
-			name: "Issei Hata",
-			image0: isseihata0,
-			image1: isseihata1,
-			position: "Analyst",
-			major: "Economics & Math 2027",
-			ID: 127,
-			url: "https://www.linkedin.com/in/isseihata/",
-		},
-		{
-			name: "Shiva Rajan",
-			image0: shivarajan0,
-			image1: shivarajan1,
-			position: "Analyst",
-			major: "BBA 2027",
-			ID: 128,
-			url: "https://www.linkedin.com/in/shiva-rajan78/",
-		},
-		{
-			name: "Cynthia Lia",
-			image0: cynthiali0,
-			image1: cynthiali1,
-			position: "Analyst",
-			major: "BBA 2027",
-			ID: 129,
-			url: "https://www.linkedin.com/in/cynthiajli100/",
-		},
-		{
 			name: "Arav Rajesh",
 			image0: aravrajesh0,
 			image1: aravrajesh1,
@@ -407,15 +423,6 @@ function RosterSection() {
 			url: "https://www.linkedin.com/in/niyati-kashyap/",
 		},
 		{
-			name: "Caleb Lee",
-			image0: caleblee0,
-			image1: caleblee1,
-			position: "Analyst",
-			major: "DS 2027",
-			ID: 132,
-			url: "https://www.linkedin.com/in/calebjl/",
-		},
-		{
 			name: "Anish Thatiparthi",
 			image0: anishthatiparthi0,
 			image1: anishthatiparthi1,
@@ -423,6 +430,105 @@ function RosterSection() {
 			major: "BBA 2027",
 			ID: 133,
 			url: "https://www.linkedin.com/in/anish-thatiparthi/",
+		},
+		{
+			name: "Chloe Tjakra",
+			image0: chloetjakra0,
+			image1: chloetjakra1,
+			position: "Analyst",
+			major: "DS 2028",
+			ID: 140,
+			url: "https://www.linkedin.com/in/chloe-tjakra-ba566a336/",
+		},
+		{
+			name: "David Liu",
+			image0: davidliu0,
+			image1: davidliu1,
+			position: "Analyst",
+			major: "BBA 2028",
+			ID: 141,
+			url: "https://www.linkedin.com/in/https://www.linkedin.com/in/david-liu-826950294/",
+		},
+		{
+			name: "Dylan Wang",
+			image0: dylanwang0,
+			image1: dylanwang1,
+			position: "Analyst",
+			major: "BBA 2028",
+			ID: 142,
+			url: "https://www.linkedin.com/in/dylan-wang-018047261/",
+		},
+		{
+			name: "Kasen Ko",
+			image0: kasenko0,
+			image1: kasenko1,
+			position: "Analyst",
+			major: "BBA 2028",
+			ID: 144,
+			url: "https://www.linkedin.com/in/kasen-ko-/",
+		},
+		{
+			name: "Michelle Baik",
+			image0: michellebaik0,
+			image1: michellebaik1,
+			position: "Analyst",
+			major: "BBA 2028",
+			ID: 145,
+			url: "https://www.linkedin.com/in/michelle-baik24/",
+		},
+		{
+			name: "Nathan Lucken",
+			image0: nathanlucken0,
+			image1: nathanlucken1,
+			position: "Analyst",
+			major: "BBA 2028",
+			ID: 146,
+			url: "https://www.linkedin.com/in/nathanlucken/",
+		},
+		{
+			name: "Reese Bower",
+			image0: reesebower0,
+			image1: reesebower1,
+			position: "Analyst",
+			major: "Econ & Pub Policy 2028",
+			ID: 147,
+			url: "https://www.linkedin.com/in/reese-bower-79657b330/",
+		},
+		{
+			name: "Rahil Kakar",
+			image0: rahilkakar0,
+			image1: rahilkakar1,
+			position: "Analyst",
+			major: "BBA 2028",
+			ID: 148,
+			url: "https://www.linkedin.com/in/rahil-kakar/",
+		},
+		{
+			name: "Rafael Opperman",
+			image0: rafaelopperman0,
+			image1: rafaelopperman1,
+			position: "Analyst",
+			major: "IOE 2027",
+			ID: 149,
+			url: "https://www.linkedin.com/in/rafael-opperman-906739289/",
+		},
+		{
+			name: "Simryn Jawanda",
+			image0: simrynjawanda0,
+			image1: simrynjawanda1,
+			position: "Analyst",
+			major: "BBA 2028",
+			ID: 150,
+			url: "https://www.linkedin.com/in/simryn-jawanda-a25531207/",
+		},
+		{
+			name: "Caleb Lee",
+			image0: caleblee0,
+			image1: caleblee1,
+			position: "Member",
+			major: "DS 2027",
+			ID: 132,
+			url: "https://www.linkedin.com/in/calebjl/",
 		},
 		{
 			name: "Siri Pattipati",
@@ -450,15 +556,44 @@ function RosterSection() {
 			ID: 136,
 			position: "Member",
 			major: "BBA 2026",
-		}, {
+		}, 
+		{
+			name: "Saathvik Hari",
+			image0: saathvikhari0,
+			image1: saathvikhari1,
+			position: "Member",
+			major: "Economics & DS 2026",
+			ID: 111,
+			url: "https://www.linkedin.com/in/saathvik-hari/",
+		},
+		{
+			name: "Jessica Tran",
+			image0: jessicatran0,
+			image1: jessicatran1,
+			position: "Member",
+			major: "BBA 2026",
+			ID: 112,
+			url: "https://www.linkedin.com/in/jessica-tran-39582a205/",
+		},
+		{
+			name: "Aditi Vadakath",
+			image0: aditivadakath0,
+			image1: aditivadakath1,
+			position: "Member",
+			major: "BBA 2027",
+			ID: 116,
+			url: "https://www.linkedin.com/in/aditi-vadakath/",
+		},
+		{
 			name: "Sydney Gaynor",
 			image0: sydneygaynor0,
 			image1: sydneygaynor1,
-			position: "Analyst",
+			position: "Member",
 			major: "BBA 2026",
 			ID: 137,
 			url: "https://www.linkedin.com/in/sydney-gaynor/",
-		}, {
+		}, 
+		{
 			name: "Vivek Nukala",
 			image0: viveknukala0,
 			image1: viveknukala1,
@@ -510,8 +645,7 @@ function RosterSection() {
 			major: "BBA 2026",
 			ID: 107,
 			url: "https://www.linkedin.com/in/min-seok-kim-6a7245252/",
-		},
-		
+		},	
 	];
 
 

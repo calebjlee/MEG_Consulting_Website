@@ -46,7 +46,8 @@ const TeamContainer = styled.div`
 `;
 
 const TeamImage = styled.img`
-	width: 55vw;
+	// width: 55vw;
+	width: 100%;
 	@media (max-aspect-ratio: 1233/870) {
 		width: 50vw;
 	}

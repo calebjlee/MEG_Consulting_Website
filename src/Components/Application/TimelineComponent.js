@@ -99,7 +99,7 @@ const TimelineComponent = () => {
 		{
 			title: "Application Due",
 			location: "Online",
-			date: "1/28",
+			date: "1/29",
 			time: "11:59 pm"
 		},
 	];

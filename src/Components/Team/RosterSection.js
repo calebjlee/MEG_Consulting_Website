@@ -109,6 +109,26 @@ import yaseenmetwally1 from "../../Images/Team/headshots/yaseenmetwally1.png";
 import zafirmakeragha0 from "../../Images/Team/headshots/zafirmakeragha0.png";
 import zafirmakeragha1 from "../../Images/Team/headshots/zafirmakeragha1.png";
 
+
+import alexhayes0 from "../../Images/Team/headshots/alexhayes0.png";
+import alexhayes1 from "../../Images/Team/headshots/alexhayes1.png";
+import briankang0 from "../../Images/Team/headshots/briankang0.png";
+import briankang1 from "../../Images/Team/headshots/briankang1.png";
+import briankim0 from "../../Images/Team/headshots/briankim0.png";
+import briankim1 from "../../Images/Team/headshots/briankim1.png";
+import dylanchee0 from "../../Images/Team/headshots/dylanchee0.png";
+import dylanchee1 from "../../Images/Team/headshots/dylanchee1.png";
+import ericaqin0 from "../../Images/Team/headshots/ericaqin0.png";
+import ericaqin1 from "../../Images/Team/headshots/ericaqin1.png";
+import evelynchao0 from "../../Images/Team/headshots/evelynchao0.png";
+import evelynchao1 from "../../Images/Team/headshots/evelynchao1.png";
+import hojundo0 from "../../Images/Team/headshots/hojundo0.png";
+import hojundo1 from "../../Images/Team/headshots/hojundo1.png";
+import oliviaheithoff0 from "../../Images/Team/headshots/oliviaheithoff0.png";
+import oliviaheithoff1 from "../../Images/Team/headshots/oliviaheithoff1.png";
+import zacharyyoonkim0 from "../../Images/Team/headshots/zacharyyoonkim0.png";
+import zacharyyoonkim1 from "../../Images/Team/headshots/zacharyyoonkim1.png";
+
 const SectionContainer = styled.div`
 	width: 100vw;
 	height: fit-content;
@@ -378,6 +398,214 @@ function RosterSection() {
 	const analystData = [
 		
 		{
+			name: "Natasha Shimon",
+			image0: natashashimon0,
+			image1: natashashimon1,
+			position: "Analyst",
+			major: "LSA Undecided 2027",
+			ID: 126,
+			url: "https://www.linkedin.com/in/natasha-shimon-10676b249/",
+		},
+		{
+			name: "Michelle Baik",
+			image0: michellebaik0,
+			image1: michellebaik1,
+			position: "Analyst",
+			major: "BBA 2028",
+			ID: 145,
+			url: "https://www.linkedin.com/in/michelle-baik24/",
+		},
+		{
+			name: "Rahil Kakar",
+			image0: rahilkakar0,
+			image1: rahilkakar1,
+			position: "Analyst",
+			major: "BBA 2028",
+			ID: 148,
+			url: "https://www.linkedin.com/in/rahil-kakar/",
+		},
+
+		{
+			name: "Kasen Ko",
+			image0: kasenko0,
+			image1: kasenko1,
+			position: "Analyst",
+			major: "BBA 2028",
+			ID: 144,
+			url: "https://www.linkedin.com/in/kasen-ko-/",
+		},
+		{
+			name: "Dylan Chee",
+			image0: dylanchee0,
+			image1: dylanchee1,
+			position: "Analyst",
+			major: "Econ 2028",
+			ID: 154,
+			url: "https://www.linkedin.com/in/dylan-chee/",
+		},
+		{
+			name: "Evelyn Chao",
+			image0: evelynchao0,
+			image1: evelynchao1,
+			position: "Analyst",
+			major: "BBA 2028",
+			ID: 156,
+			url: "https://www.linkedin.com/in/evelyn-chao0616/",
+		},
+
+		{
+			name: "Alex Hayes",
+			image0: alexhayes0,
+			image1: alexhayes1,
+			position: "Analyst",
+			major: "Mechanical Engineering 2028",
+			ID: 151,
+			url: "https://www.linkedin.com/in/alexander-john-hayes/",
+		},
+		{
+			name: "Erica Qin",
+			image0: ericaqin0,
+			image1: ericaqin1,
+			position: "Analyst",
+			major: "BBA 2028",
+			ID: 155,
+			url: "https://www.linkedin.com/in/erica-qin/",
+		},
+		{
+			name: "Olivia Heithoff",
+			image0: oliviaheithoff0,
+			image1: oliviaheithoff1,
+			position: "Analyst",
+			major: "BBA 2028",
+			ID: 158,
+			url: "https://www.linkedin.com/in/olivia-heithoff/",
+		},
+
+		{
+			name: "Chloe Tjakra",
+			image0: chloetjakra0,
+			image1: chloetjakra1,
+			position: "Analyst",
+			major: "DS 2028",
+			ID: 140,
+			url: "https://www.linkedin.com/in/chloe-tjakra-ba566a336/",
+		},
+		{
+			name: "Nathan Lucken",
+			image0: nathanlucken0,
+			image1: nathanlucken1,
+			position: "Analyst",
+			major: "BBA 2028",
+			ID: 146,
+			url: "https://www.linkedin.com/in/nathanlucken/",
+		},
+		{
+			name: "Zachary Yoon-Kim",
+			image0: zacharyyoonkim0,
+			image1: zacharyyoonkim1,
+			position: "Analyst",
+			major: "Econ & CS 2028",
+			ID: 159,
+			url: "https://www.linkedin.com/in/zachary-yoon-kim/",
+		},
+
+		{
+			name: "David Liu",
+			image0: davidliu0,
+			image1: davidliu1,
+			position: "Analyst",
+			major: "BBA 2028",
+			ID: 141,
+			url: "https://www.linkedin.com/in/https://www.linkedin.com/in/david-liu-826950294/",
+		},
+		{
+			name: "Brian Kim",
+			image0: briankim0,
+			image1: briankim1,
+			position: "Analyst",
+			major: "BBA 2027",
+			ID: 153,
+			url: "https://www.linkedin.com/in/brian-kim11/",
+		},
+		{
+			name: "Hojun Do",
+			image0: hojundo0,
+			image1: hojundo1,
+			position: "Analyst",
+			major: "BBA 2028",
+			ID: 157,
+			url: "https://www.linkedin.com/in/hojun-do/",
+		},
+		
+		{
+			name: "Reese Bower",
+			image0: reesebower0,
+			image1: reesebower1,
+			position: "Analyst",
+			major: "Econ & Pub Policy 2028",
+			ID: 147,
+			url: "https://www.linkedin.com/in/reese-bower-79657b330/",
+		},
+		{
+			name: "Simryn Jawanda",
+			image0: simrynjawanda0,
+			image1: simrynjawanda1,
+			position: "Analyst",
+			major: "BBA 2028",
+			ID: 150,
+			url: "https://www.linkedin.com/in/simryn-jawanda-a25531207/",
+		},
+		{
+			name: "Brian Kang",
+			image0: briankang0,
+			image1: briankang1,
+			position: "Analyst",
+			major: "BBA 2028",
+			ID: 152,
+			url: "https://www.linkedin.com/in/sangyeon-kang/",
+		},
+		
+		{
+			name: "Rafael Opperman",
+			image0: rafaelopperman0,
+			image1: rafaelopperman1,
+			position: "Analyst",
+			major: "IOE 2027",
+			ID: 149,
+			url: "https://www.linkedin.com/in/rafael-opperman-906739289/",
+		},
+		{
+			name: "Dylan Wang",
+			image0: dylanwang0,
+			image1: dylanwang1,
+			position: "Analyst",
+			major: "BBA 2028",
+			ID: 142,
+			url: "https://www.linkedin.com/in/dylan-wang-018047261/",
+		},
+		
+		
+
+
+		{
+			name: "Caleb Lee",
+			image0: caleblee0,
+			image1: caleblee1,
+			position: "Member",
+			major: "DS 2027",
+			ID: 132,
+			url: "https://www.linkedin.com/in/calebjl/",
+		},
+		{
+			name: "Aditi Vadakath",
+			image0: aditivadakath0,
+			image1: aditivadakath1,
+			position: "Member",
+			major: "BBA 2027",
+			ID: 116,
+			url: "https://www.linkedin.com/in/aditi-vadakath/",
+		},
+		{
 			name: "Joy Ren",
 			image0: joyren0,
 			image1: joyren1,
@@ -396,15 +624,6 @@ function RosterSection() {
 			url: "https://www.linkedin.com/in/sriyanm/",
 		},
 		{
-			name: "Natasha Shimon",
-			image0: natashashimon0,
-			image1: natashashimon1,
-			position: "Analyst",
-			major: "LSA Undecided 2027",
-			ID: 126,
-			url: "https://www.linkedin.com/in/natasha-shimon-10676b249/",
-		},
-		{
 			name: "Arav Rajesh",
 			image0: aravrajesh0,
 			image1: aravrajesh1,
@@ -414,15 +633,6 @@ function RosterSection() {
 			url: "https://www.linkedin.com/in/arav-rajesh/",
 		},
 		{
-			name: "Niyati Kashyap",
-			image0: niyatikashyap0,
-			image1: niyatikashyap1,
-			position: "Analyst",
-			major: "DS 2026",
-			ID: 131,
-			url: "https://www.linkedin.com/in/niyati-kashyap/",
-		},
-		{
 			name: "Anish Thatiparthi",
 			image0: anishthatiparthi0,
 			image1: anishthatiparthi1,
@@ -430,105 +640,6 @@ function RosterSection() {
 			major: "BBA 2027",
 			ID: 133,
 			url: "https://www.linkedin.com/in/anish-thatiparthi/",
-		},
-		{
-			name: "Chloe Tjakra",
-			image0: chloetjakra0,
-			image1: chloetjakra1,
-			position: "Analyst",
-			major: "DS 2028",
-			ID: 140,
-			url: "https://www.linkedin.com/in/chloe-tjakra-ba566a336/",
-		},
-		{
-			name: "David Liu",
-			image0: davidliu0,
-			image1: davidliu1,
-			position: "Analyst",
-			major: "BBA 2028",
-			ID: 141,
-			url: "https://www.linkedin.com/in/https://www.linkedin.com/in/david-liu-826950294/",
-		},
-		{
-			name: "Dylan Wang",
-			image0: dylanwang0,
-			image1: dylanwang1,
-			position: "Analyst",
-			major: "BBA 2028",
-			ID: 142,
-			url: "https://www.linkedin.com/in/dylan-wang-018047261/",
-		},
-		{
-			name: "Kasen Ko",
-			image0: kasenko0,
-			image1: kasenko1,
-			position: "Analyst",
-			major: "BBA 2028",
-			ID: 144,
-			url: "https://www.linkedin.com/in/kasen-ko-/",
-		},
-		{
-			name: "Michelle Baik",
-			image0: michellebaik0,
-			image1: michellebaik1,
-			position: "Analyst",
-			major: "BBA 2028",
-			ID: 145,
-			url: "https://www.linkedin.com/in/michelle-baik24/",
-		},
-		{
-			name: "Nathan Lucken",
-			image0: nathanlucken0,
-			image1: nathanlucken1,
-			position: "Analyst",
-			major: "BBA 2028",
-			ID: 146,
-			url: "https://www.linkedin.com/in/nathanlucken/",
-		},
-		{
-			name: "Reese Bower",
-			image0: reesebower0,
-			image1: reesebower1,
-			position: "Analyst",
-			major: "Econ & Pub Policy 2028",
-			ID: 147,
-			url: "https://www.linkedin.com/in/reese-bower-79657b330/",
-		},
-		{
-			name: "Rahil Kakar",
-			image0: rahilkakar0,
-			image1: rahilkakar1,
-			position: "Analyst",
-			major: "BBA 2028",
-			ID: 148,
-			url: "https://www.linkedin.com/in/rahil-kakar/",
-		},
-		{
-			name: "Rafael Opperman",
-			image0: rafaelopperman0,
-			image1: rafaelopperman1,
-			position: "Analyst",
-			major: "IOE 2027",
-			ID: 149,
-			url: "https://www.linkedin.com/in/rafael-opperman-906739289/",
-		},
-		{
-			name: "Simryn Jawanda",
-			image0: simrynjawanda0,
-			image1: simrynjawanda1,
-			position: "Analyst",
-			major: "BBA 2028",
-			ID: 150,
-			url: "https://www.linkedin.com/in/simryn-jawanda-a25531207/",
-		},
-		{
-			name: "Caleb Lee",
-			image0: caleblee0,
-			image1: caleblee1,
-			position: "Member",
-			major: "DS 2027",
-			ID: 132,
-			url: "https://www.linkedin.com/in/calebjl/",
 		},
 		{
 			name: "Siri Pattipati",
@@ -576,15 +687,6 @@ function RosterSection() {
 			url: "https://www.linkedin.com/in/jessica-tran-39582a205/",
 		},
 		{
-			name: "Aditi Vadakath",
-			image0: aditivadakath0,
-			image1: aditivadakath1,
-			position: "Member",
-			major: "BBA 2027",
-			ID: 116,
-			url: "https://www.linkedin.com/in/aditi-vadakath/",
-		},
-		{
 			name: "Sydney Gaynor",
 			image0: sydneygaynor0,
 			image1: sydneygaynor1,
@@ -594,21 +696,13 @@ function RosterSection() {
 			url: "https://www.linkedin.com/in/sydney-gaynor/",
 		}, 
 		{
-			name: "Vivek Nukala",
-			image0: viveknukala0,
-			image1: viveknukala1,
-			position: "Member",
-			major: "BBA 2025",
-			ID: 101,
-			url: "https://www.linkedin.com/in/vivek-r-nukala/",
-		}, {
-			name: "Debangi Mohanta",
-			image0: debangimohanta0,
-			image1: debangimohanta1,
-			position: "Member",
-			major: "CS 2025",
-			ID: 103,
-			url: "https://www.linkedin.com/in/debangi-mohanta-777057218/",
+			name: "Niyati Kashyap",
+			image0: niyatikashyap0,
+			image1: niyatikashyap1,
+			position: "Analyst",
+			major: "DS 2026",
+			ID: 131,
+			url: "https://www.linkedin.com/in/niyati-kashyap/",
 		},
 		{
 			name: "Prah Pant",
@@ -645,7 +739,24 @@ function RosterSection() {
 			major: "BBA 2026",
 			ID: 107,
 			url: "https://www.linkedin.com/in/min-seok-kim-6a7245252/",
-		},	
+		},
+		{
+			name: "Vivek Nukala",
+			image0: viveknukala0,
+			image1: viveknukala1,
+			position: "Member",
+			major: "BBA 2025",
+			ID: 101,
+			url: "https://www.linkedin.com/in/vivek-r-nukala/",
+		}, {
+			name: "Debangi Mohanta",
+			image0: debangimohanta0,
+			image1: debangimohanta1,
+			position: "Member",
+			major: "CS 2025",
+			ID: 103,
+			url: "https://www.linkedin.com/in/debangi-mohanta-777057218/",
+		},
 	];
 
 

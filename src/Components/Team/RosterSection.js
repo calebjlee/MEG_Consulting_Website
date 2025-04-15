@@ -124,8 +124,11 @@ import evelynchao0 from "../../Images/Team/headshots/evelynchao0.png";
 import evelynchao1 from "../../Images/Team/headshots/evelynchao1.png";
 import hojundo0 from "../../Images/Team/headshots/hojundo0.png";
 import hojundo1 from "../../Images/Team/headshots/hojundo1.png";
+<<<<<<< HEAD
 import nacharamanathan0 from "../../Images/Team/headshots/nacharamanathan0.png";
 import nacharamanathan1 from "../../Images/Team/headshots/nacharamanathan0.png";
+=======
+>>>>>>> 75b4a5c8a8b04441941228edb1ba7bff46961464
 import oliviaheithoff0 from "../../Images/Team/headshots/oliviaheithoff0.png";
 import oliviaheithoff1 from "../../Images/Team/headshots/oliviaheithoff1.png";
 import zacharyyoonkim0 from "../../Images/Team/headshots/zacharyyoonkim0.png";
@@ -585,6 +588,7 @@ function RosterSection() {
 			ID: 142,
 			url: "https://www.linkedin.com/in/dylan-wang-018047261/",
 		},
+<<<<<<< HEAD
 		{
 			name: "Nacha Ramanathan",
 			image0: nacharamanathan0,
@@ -594,6 +598,9 @@ function RosterSection() {
 			ID: 143,
 			url: "https://www.linkedin.com/in/nacha-ramanathan/",
 		},
+=======
+		
+>>>>>>> 75b4a5c8a8b04441941228edb1ba7bff46961464
 		
 
 

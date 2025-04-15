@@ -588,7 +588,6 @@ function RosterSection() {
 			ID: 142,
 			url: "https://www.linkedin.com/in/dylan-wang-018047261/",
 		},
-<<<<<<< HEAD
 		{
 			name: "Nacha Ramanathan",
 			image0: nacharamanathan0,
@@ -598,9 +597,6 @@ function RosterSection() {
 			ID: 143,
 			url: "https://www.linkedin.com/in/nacha-ramanathan/",
 		},
-=======
-		
->>>>>>> 75b4a5c8a8b04441941228edb1ba7bff46961464
 		
 
 

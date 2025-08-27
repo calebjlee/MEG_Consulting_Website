@@ -61,45 +61,39 @@ const TimelineComponent = () => {
 			time: ""
 		},
 		{
-			title: "Winterfest",
-			location: "Michigan Union",
-			date: "1/14",
-			time: "4:00-7:00 pm"
+			title: "Festifall",
+			location: "Table A023",
+			date: "8/27",
+			time: "4:30-6:30 pm"
 		},
 		{
-			title: "BBA Meet The Clubs",
+			title: "Meet The Clubs",
 			location: "Ross Winter Garden",
-			date: "1/16",
+			date: "9/2",
 			time: "5:30-7:30 pm"
 		},
 		{
 			title: "Mass Meeting",
-			location: "Blau Colloquium",
-			date: "1/19",
-			time: "1:30-2:30 pm"
+			location: "Tauber Colloquium",
+			date: "9/8",
+			time: "5:30-6:30 pm"
 		},
 		{
-			title: "Coffee Chats",
-			location: "Various Locations",
-			date: "1/24",
-			time: "4:00-6:00 pm"
+			title: "Speed Dating",
+			location: "R0320",
+			date: "9/14",
+			time: "7:00-8:00 pm or 8:00-9:00 pm"
 		},
 		{
-			title: "Resume & Case Workshop",
-			location: "R0210",
-			date: "1/26",
-			time: "3:30-5:00 pm"
-		},
-		{
-			title: "DEI Event",
-			location: "B1580",
-			date: "1/28",
-			time: "8:00-9:00 pm"
+			title: "DEI/Career Panel",
+			location: "R0320",
+			date: "9/15",
+			time: "5:00-6:30 pm"
 		},
 		{
 			title: "Application Due",
 			location: "Online",
-			date: "1/29",
+			date: "9/15",
 			time: "11:59 pm"
 		},
 	];

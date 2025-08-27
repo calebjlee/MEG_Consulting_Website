@@ -225,50 +225,43 @@ const SoonContainer = styled.div`
 
 function MenuSection() {
 	const eventDates = [
-		"1/14/2025, 4:00 PM",
-		"1/16/2025, 5:30 PM",
-		"1/19/2025 1:30 PM",
-		"1/24/2025, 4:00 PM",
-		"1/26/2025, 3:30 PM",
-		"1/28/2025, 7:00 PM",
-		"1/29/2025, 11:59 PM",
-		
+		"8/27/2025, 4:30 PM",
+		"9/2/2025, 5:30 PM",
+		"9/8/2025 5:30 PM",
+		"9/14/2025, 7:00 PM",
+		"9/15/2025, 5:00 PM",
 	];
 	const eventImages = [
 		central,
 		ross,
 		mass,
 		coffee,
-		workshop,
 		dei,
 		apply,
 	];
 	const eventName = [
-		"Winterfest",
-		"BBA Meet the Clubs",
+		"Festifall",
+		"Meet the Clubs",
 		"Mass Meeting",
-		"Coffee Chats",
-		"Resume & Case Workshop",
-		"DEI Event",
+		"Speed Dating",
+		"DEI/Career Panel",
 		"Application Due",
 	];
 	const eventLocation = [
-		"Michigan Union",
+		"Table A023",
 		"Ross Winter Garden",
-		"Blau Colloquium",
-		"Various Locations",
-		"R0210",
-		"B1580",
+		"Tauber Colloquium",
+		"R0320",
+		"R0320",
 		"Online",
 	];
 	const eventTime = [
-		"1/14 at 4:00-7:00 P.M.",
-		"1/16 at 5:30-7:30 P.M.",
-		"1/19 at 1:30-2:30 P.M.",
-		"1/24 at 4:00-6:00 P.M.",
-		"1/26 at 3:30-5:00 P.M.",
-		"1/28 at 7:00-8:30 P.M.",
-		"1/29 at 11:59 P.M.",
+		"8/27 at 4:30-6:30 P.M.",
+		"9/2 at 5:30-7:30 P.M.",
+		"9/8 at 5:30-7:30 P.M.",
+		"9/14 at 7:00-8:00 P.M. or 8:00-9:00 P.M.",
+		"9/15 at 5:00-6:30 P.M.",
+		"9/15 by 11:59 P.M.",
 	];
 
 	function eventDateDetector() {
@@ -314,7 +307,7 @@ function MenuSection() {
 				</FaqContainer>
 				<CenterContainer>
 					<a
-						href="https://forms.gle/VsHqtF2fPJLtRp4c9"
+						href="https://docs.google.com/forms/d/e/1FAIpQLSddsGu-R24vzjGjUELwf8eMnUWdstzsLjaXn0AaSHcAXbBX_Q/viewform"
 						target="_blank"
 						style={{ textDecoration: "none" }}
 					>
@@ -343,7 +336,7 @@ function MenuSection() {
 								Want to stay up to date on the newest from MEG?
 								Sign up on our{" "}
 								<a
-									href="https://forms.gle/r7yyJxQ77dyaQ7YQ8"
+									href="https://docs.google.com/forms/d/e/1FAIpQLSf1gM7JqPUXBbpBuQcYsdy-OafphJg_upk60FAhppKqUSne8Q/viewform?usp=header"
 									target="_blank"
 									style={{
 										fontWeight: 700,

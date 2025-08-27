@@ -88,7 +88,7 @@ function LookingSection() {
             <YouContainer>YOU!</YouContainer>
           </BodyContainer>
           <SmallSpacer/>
-          <a href= "https://docs.google.com/forms/d/e/1FAIpQLSdh3faFFoNpZKF-Q6CLQAeP7_G77OPiAYzIyuvizfB8JkjAYA/viewform" target="_blank">
+          <a href= "https://docs.google.com/forms/d/e/1FAIpQLSddsGu-R24vzjGjUELwf8eMnUWdstzsLjaXn0AaSHcAXbBX_Q/viewform" target="_blank">
             <TitleText style={{textAlign: "right", width: "100%", textDecoration: "underline"}}>Apply Now</TitleText>
           </a>
         </TextContainer>

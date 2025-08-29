@@ -257,7 +257,7 @@ function MenuSection() {
 	];
 	const eventTime = [
 		"8/27 at 4:30-6:30 P.M.",
-		"9/2 at 5:30-7:30 P.M.",
+		"9/3 at 5:30-7:30 P.M.",
 		"9/8 at 5:30-7:30 P.M.",
 		"9/14 at 7:00-8:00 P.M. or 8:00-9:00 P.M.",
 		"9/15 at 5:00-6:30 P.M.",

@@ -69,7 +69,7 @@ const TimelineComponent = () => {
 		{
 			title: "Meet The Clubs",
 			location: "Ross Winter Garden",
-			date: "9/2",
+			date: "9/3",
 			time: "5:30-7:30 pm"
 		},
 		{

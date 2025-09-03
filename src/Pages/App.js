@@ -312,6 +312,13 @@ function App() {
 			"HOW TO APPLY",
 			"COME JOIN THE FAMILY",
 		],
+		[
+			"Michigan X McKinsey Strategy Invitational",
+			"MMSI",
+			"Michigan X McKinsey Strategy Invitational",
+			"MMSI",
+			"Michigan X McKinsey Strategy Invitational",
+		],
 	];
 
 	const [firstAnimation, setFirstAnimation] = useState(true);
@@ -501,6 +508,29 @@ function App() {
 						</HomeNavText>
 					</HomeNavContainer>
 				</Link>
+				<LineBreak />
+				<a href="https://themmsi.com" target="_blank" 
+				  rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+					<HomeNavContainer>
+						<HomeNavText
+							data-title="MMSI"
+							onMouseEnter={() => {
+								setScrollID(5);
+							}}
+							onMouseLeave={() => {
+								setScrollID(0);
+							}}
+							style={{
+								WebkitTextStroke:
+									setScrollID !== 5 || setScrollID !== 0
+										? "1px #E0CFF2"
+										: "none",
+							}}
+						>
+							MMSI
+						</HomeNavText>
+					</HomeNavContainer>
+				</a>
 			</HomePageContainer>
 			<LoadContainer
 				style={{ display: firstAnimation ? "flex" : "none" }}

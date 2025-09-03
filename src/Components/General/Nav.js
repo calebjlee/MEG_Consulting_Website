@@ -281,6 +281,11 @@ function Nav(props) {
             <NavText>Application</NavText>
           </NavTextContainer>
         </Link>
+        <a href="https://themmsi.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "#1e1e1e" }}>
+          <NavTextContainer>
+            <NavText>MMSI</NavText>
+          </NavTextContainer>
+        </a>
       </NavSelectionContainer>
 
       <NavSelectionContainer
@@ -327,6 +332,9 @@ function Nav(props) {
           <Link to="/application" style={{ textDecoration: "none", color: "#1e1e1e" }}> 
             <DropdownLink>Application</DropdownLink>
           </Link>
+          <a href="https://themmsi.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "#1e1e1e" }}>
+            <DropdownLink>MMSI</DropdownLink>
+          </a>
         </DropdownContent>
       </DropdownContainer>
 

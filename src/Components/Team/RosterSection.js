@@ -356,7 +356,7 @@ function RosterSection() {
 			position: "Project Manager",
 			major: "BBA 2027",
 			ID: 129,
-			url: "https://www.linkedin.com/in/cynthiajli100/",
+			url: "https://www.linkedin.com/in/cynthia-j-li/",
 		},
 		{
 			name: "Issei Hata",

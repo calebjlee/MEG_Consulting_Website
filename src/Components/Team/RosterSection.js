@@ -125,11 +125,12 @@ import evelynchao1 from "../../Images/Team/headshots/evelynchao1.png";
 import hojundo0 from "../../Images/Team/headshots/hojundo0.png";
 import hojundo1 from "../../Images/Team/headshots/hojundo1.png";
 import nacharamanathan0 from "../../Images/Team/headshots/nacharamanathan0.png";
-import nacharamanathan1 from "../../Images/Team/headshots/nacharamanathan0.png";
+import nacharamanathan1 from "../../Images/Team/headshots/nacharamanathan1.png";
 import oliviaheithoff0 from "../../Images/Team/headshots/oliviaheithoff0.png";
 import oliviaheithoff1 from "../../Images/Team/headshots/oliviaheithoff1.png";
 import zacharyyoonkim0 from "../../Images/Team/headshots/zacharyyoonkim0.png";
 import zacharyyoonkim1 from "../../Images/Team/headshots/zacharyyoonkim1.png";
+
 
 const SectionContainer = styled.div`
 	width: 100vw;

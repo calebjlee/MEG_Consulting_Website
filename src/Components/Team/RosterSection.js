@@ -848,55 +848,94 @@ function RosterSection() {
 
 	return (
 		<SectionContainer>
-			<PositionContainer>
-				<SmallSpacer />
-				<TextContainer>
-					<TitleText style={{ marginLeft: "2vmin" }}>
-						Executive Board
-					</TitleText>
-				</TextContainer>
-				<NewLine />
-				{eboardData.map((data) => (
-					<a
-						href={data.url}
-						target="_blank"
-						style={{ textDecoration: "none" }}
-					>
-						<CardContainer>
-							<CardImage
-								style={{
-									backgroundImage: `url(${data.image0})`,
-								}}
-							/>
-							<CardImageHover
-								onMouseEnter={() => setHoverID2(data.ID)}
-								onMouseLeave={() => setHoverID2(0)}
-								style={{
-									opacity:
-										hoverID2 === data.ID ? "100%" : "0%",
-									backgroundImage: `url(${data.image1})`,
-								}}
-							/>
-							<NewLine />
-							<TextContainer>
-								<CardTitle>{data.name}</CardTitle>
-								<TinySpacer />
-								<CardHeader>
-                    				{hoverID2 === data.ID ? data.major : data.position}
-                				</CardHeader>
+<PositionContainer>
+		<SmallSpacer />
+		<TextContainer>
+			<TitleText style={{ marginLeft: "2vmin" }}>
+				Executive Board
+			</TitleText>
+		</TextContainer>
 
-							<CardHeaderHover
-								onMouseEnter={() => setHoverID2(data.ID)}
-								onMouseLeave={() => setHoverID2(0)}
-								style={{
-									backgroundImage: `url(${data.image1})`,
-								}}
-                			/>
-							</TextContainer>
-						</CardContainer>
-					</a>
-				))}
-			</PositionContainer>
+		<NewLine />
+
+		{/* president on top row alone */}
+		<a
+			href={eboardData[0].url}
+			target="_blank"
+			style={{ textDecoration: "none" }}
+		>
+			<CardContainer style={{ margin: "0 auto" }}>
+				<CardImage
+					style={{
+						backgroundImage: `url(${eboardData[0].image0})`,
+					}}
+				/>
+				<CardImageHover
+					onMouseEnter={() => setHoverID2(eboardData[0].ID)}
+					onMouseLeave={() => setHoverID2(0)}
+					style={{
+						opacity: hoverID2 === eboardData[0].ID ? "100%" : "0%",
+						backgroundImage: `url(${eboardData[0].image1})`,
+					}}
+				/>
+				<NewLine />
+				<TextContainer>
+					<CardTitle>{eboardData[0].name}</CardTitle>
+					<TinySpacer />
+					<CardHeader>
+						{hoverID2 === eboardData[0].ID
+							? eboardData[0].major
+							: eboardData[0].position}
+					</CardHeader>
+				</TextContainer>
+			</CardContainer>
+		</a>
+		<NewLine />
+
+		<div
+			style={{
+				display: "flex",
+				flexWrap: "wrap",
+				justifyContent: "center",
+				gap: "2rem",
+			}}
+		>
+			{eboardData.slice(1).map((data) => (
+				<a
+					key={data.ID}
+					href={data.url}
+					target="_blank"
+					style={{ textDecoration: "none" }}
+				>
+					<CardContainer>
+						<CardImage
+							style={{
+								backgroundImage: `url(${data.image0})`,
+							}}
+						/>
+						<CardImageHover
+							onMouseEnter={() => setHoverID2(data.ID)}
+							onMouseLeave={() => setHoverID2(0)}
+							style={{
+								opacity: hoverID2 === data.ID ? "100%" : "0%",
+								backgroundImage: `url(${data.image1})`,
+							}}
+						/>
+						<NewLine />
+						<TextContainer>
+							<CardTitle>{data.name}</CardTitle>
+							<TinySpacer />
+							<CardHeader>
+								{hoverID2 === data.ID
+									? data.major
+									: data.position}
+							</CardHeader>
+						</TextContainer>
+					</CardContainer>
+				</a>
+			))}
+		</div>
+	</PositionContainer>
 
 			<PositionContainer>
 				<SmallSpacer />

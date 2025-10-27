@@ -400,6 +400,15 @@ function RosterSection() {
 
 	const analystData = [
 		{
+			name: "Chris Bai",
+			image0: chrisbai0,
+			image1: chrisbai1,
+			position: "Junior Analyst",
+			major: "BBA 2029",
+			ID: 160,
+			url: "https://www.linkedin.com/in/cjbai/",
+		},
+		{
 			name: "Solomon DeYoung",
 			image0: solomondeyoung0,
 			image1: solomondeyoung1,

@@ -1091,7 +1091,7 @@ function RosterSection() {
 				<SmallSpacer />
 				<TextContainer>
 					<TitleText style={{ marginLeft: "2vmin" }}>
-						Senior Advisors
+						Advisors
 					</TitleText>
 				</TextContainer>
 				<NewLine />

@@ -741,7 +741,7 @@ function RosterSection() {
 			image0: natashashimon0,
 			image1: natashashimon1,
 			position: "Junior Advisor",
-			major: "LSA Undecided 2027",
+			major: "Data Science 2027",
 			ID: 126,
 			url: "https://www.linkedin.com/in/natasha-shimon-10676b249/",
 		},
